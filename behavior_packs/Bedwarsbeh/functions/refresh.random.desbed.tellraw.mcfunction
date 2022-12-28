@@ -1,0 +1,1 @@
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players random @s desbed_tell_num 1 5

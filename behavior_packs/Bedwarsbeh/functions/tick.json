@@ -1,0 +1,14 @@
+{
+    "values": [
+      "function_tick/function_tick",
+      "game_repeat",
+      "ore_spawner",
+      "refresh_coin_get",
+      "refresh_xp_get",
+      "refresh.random.desbed.tellraw",
+      "RandomDamageUID",
+      "test_game_uid/test_game_uid",
+      "shop_buy/clear_items",
+      "shop_buy/give_items"
+    ]
+}

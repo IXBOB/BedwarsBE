@@ -1,0 +1,15 @@
+scoreboard players set @a[tag=!registered] "总击杀数" 0
+scoreboard players set @a[tag=!registered] "胜场数" 0
+scoreboard players set @a[tag=!registered] "等级" 0
+scoreboard players set @a[tag=!registered] "等级经验" 0
+scoreboard players set @a[tag=!registered] "硬币数" 0
+scoreboard players set @a[tag=!registered] "总游戏数" 0
+scoreboard players set @a[tag=!registered] "当局经验" 0
+scoreboard players set @a[tag=!registered] "当局硬币" 0
+scoreboard players set @a[tag=!registered] "分队" 0
+scoreboard players set @a[tag=!registered] still_need_xp 0
+scoreboard players set @a[tag=!registered] health 20
+scoreboard players set @a[tag=!registered] menu_page 1
+scoreboard players set @a[tag=!registered] select_particle 1
+scoreboard players random @a[tag=!registered] uid 0 999999999
+tag @a[tag=!registered] add registered
