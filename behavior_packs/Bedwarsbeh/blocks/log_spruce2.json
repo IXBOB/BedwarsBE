@@ -1,0 +1,11 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:log_spruce2"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:blue_stained_glass2"
+		},
+		"components": {
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "blend",
+					"texture": "blue_stained_glass2"
+				}
+			},
+            "minecraft:explosion_resistance": 9999.0
+		}
+	}
+}
