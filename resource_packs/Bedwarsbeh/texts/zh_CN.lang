@@ -11,3 +11,8 @@ death.attack.inWall=§c%1$s§7 在墙里窒息而亡	#
 death.fell.accident.generic=§c%1$s §7从高处摔了下来	#
 death.attack.magma=§c%1$s §7发现地面是岩浆	#
 death.attack.fall=§c%1$s §7落地过猛	#
+
+item.gold_ingot.name=Gold Ingot
+item.iron_ingot.name=Iron Ingot
+item.diamond.name=Diamond
+item.emerald.name=Emerald
