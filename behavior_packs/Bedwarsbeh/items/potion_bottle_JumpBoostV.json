@@ -1,0 +1,49 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "bedwars:potion_bottle_JumpBoostV",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:icon": {
+                "texture": "potion_bottle_JumpBoostV"
+            },
+            "minecraft:display_name": {
+                "value": "跳跃药水 30秒"
+            },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.potion"
+            },
+            "minecraft:use_duration": 1.6,
+            "minecraft:food": {
+                "can_always_eat": true,
+                "nutrition": 4,
+                "saturation_modifier": "low",
+                "on_consume": {
+                    "event": "on_consume",
+                    "target": "self"
+                }
+            },
+            "minecraft:use_animation": "drink",
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:allow_off_hand": false,
+            "minecraft:foil": true
+        },
+        "events": {
+            "on_consume": {
+                "sequence": [
+                    {
+                        "add_mob_effect": {
+                            "effect": "jump_boost",
+                            "duration": 30,
+                            "amplifier": 4,
+                            "target": "holder"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

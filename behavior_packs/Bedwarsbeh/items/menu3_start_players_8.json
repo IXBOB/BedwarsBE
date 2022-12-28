@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:menu3_start_players_8"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "seeds_wheat"
+			},
+			"minecraft:display_name": {
+				"value": "Minimum players to start the game: §a8"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

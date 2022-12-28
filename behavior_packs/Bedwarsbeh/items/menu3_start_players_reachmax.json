@@ -1,0 +1,17 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:menu3_start_players_reachmax"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "gold_nugget"
+			},
+			"minecraft:display_name": {
+				"value": "§cIt is no longer possible\nto add the required players."
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

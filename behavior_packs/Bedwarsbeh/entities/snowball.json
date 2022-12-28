@@ -1,0 +1,74 @@
+{
+ "minecraft:entity": {
+    "format_version": "1.2.0",
+
+  "component_groups": {
+   "minecraft:exploding": {
+    "minecraft:explode": {
+     "fuseLength": 0,
+     "fuseLit": true,
+     "power": 2,
+     "causesFire": true,
+     "fireAffectedByGriefing": false,
+     "destroyAffectedByGriefing": true
+    }
+   }
+  },
+
+  "components": {
+   "minecraft:identifier": {
+    "id": "minecraft:snowball"
+   },
+   "minecraft:collision_box": {
+    "width": 0.5,
+    "height": 0.5
+   },
+   "minecraft:scale": {
+    "value": 2.5
+   },
+   "minecraft:projectile": {
+    
+    "onHit": {      "spawn_chance": {
+            "firstSpawnChance": 1,
+            "firstSpawnCount": 1,
+            "spawnMob": "fireball",
+            "spawnBaby": false
+          },
+     "definition_event": {
+      "affectProjectile": true,
+      "eventTrigger": {
+            "event": "minecraft:explode",
+            "target": "self"
+      }
+     }
+    },
+    "power": 1.5,
+    "gravity": 0,
+    "inertia": 1,
+    "uncertaintyBase": 0,
+    "uncertaintyMultiplier": 0,
+    "anchor": 1,
+    "offset": [ 0, -0.1, 0 ],
+    "reflectOnHurt": true,
+    "catchFire": false
+   },
+   "minecraft:physics": {
+   }
+  },
+  "events": {
+   "minecraft:explode": {
+    "add": {
+     "component_groups": [
+      "minecraft:exploding"
+     ]
+    },
+    "run_command":{
+      "command" : [
+      "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air 0 replace wool"
+      ],
+      "target" : "self"
+    }
+   }
+  }
+ }
+}

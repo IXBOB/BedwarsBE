@@ -1,0 +1,39 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:ixbob_npc",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "all_of": [
+                                            {
+                                                "test": "has_tag",
+                                                "value": "registered"
+                                            },
+                                            {
+                                                "test": "has_tag",
+                                                "subject": "other",
+                                                "value": "registered"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "deals_damage": false
+                    }
+                ]
+            }
+        }
+    }
+}

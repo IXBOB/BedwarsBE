@@ -1,0 +1,315 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "test_death",
+          "health_display"
+        ]
+      },
+      "animations": {
+        "test_death": "controller.animation.bedwars.test_death",
+        "health_display": "controller.animation.bedwars.health_display"
+      }
+    },
+    "component_groups": {
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [
+            0.0,
+            0.0
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {}
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "has_tag",
+                        "value": "team1"
+                      },
+                      {
+                        "test": "has_tag",
+                        "subject": "other",
+                        "value": "team1"
+                      }
+                    ]
+                  },
+                  {
+                    "all_of": [
+                      {
+                        "test": "has_tag",
+                        "value": "team2"
+                      },
+                      {
+                        "test": "has_tag",
+                        "subject": "other",
+                        "value": "team2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          },
+          {
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "fatal"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "bedwars:set_other_fatal_damage_uid",
+              "target": "other"
+            }
+          }
+        ]
+      },
+      "minecraft:on_death": {
+        "event": "bedwars:set_self_fatal_damage_uid",
+        "target": "self"
+      },
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "player"
+        ]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": {
+          "filters": {
+            "all_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "self",
+                "value": "bad_omen"
+              },
+              {
+                "test": "is_in_village",
+                "subject": "self",
+                "value": true
+              }
+            ]
+          },
+          "event": "minecraft:trigger_raid"
+        }
+      }
+    },
+    "events": {
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
+        }
+      },
+      "bedwars:set_other_fatal_damage_uid": {
+        "run_command": {
+          "command": [
+            "tag @s add set_other_fatal_damage_uid",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_other_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
+            "tag @s remove set_other_fatal_damage_uid"
+          ]
+        }
+      },
+      "bedwars:set_self_fatal_damage_uid": {
+        "run_command": {
+          "command": [
+            "tag @s add set_self_fatal_damage_uid",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
+            "tag @s remove set_self_fatal_damage_uid"
+          ]
+        }
+      },
+      "bedwars:player_die": {
+        "run_command": {
+          "command": [
+            "tag @s add fatal_damage_died",
+            "scoreboard players operation @a[scores={分队=1..2}] damage_uid.cache = @s fatal_damage_uid",
+            "execute @a[scores={分队=1..2}] ~~~ scoreboard players operation @s fatal_damage_uid -= @s damage_uid.cache",
+            "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 击杀数 1",
+            "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 总击杀数 1",
+            "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add xp_get_kill",
+            "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add coin_get_kill",
+            "scoreboard players random @e[type=armor_stand,name=main] kill_tell_num 1 2",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"%%2\",\"with\":{\"rawtext\":[{\"selector\":\"@s[scores={分队=2}]\"},{\"text\":\"§b\"},{\"text\":\"§c\"}]}},{\"selector\":\"@s\"},{\"text\":\" §7killed \"},{\"translate\":\"%%2\",\"with\":{\"rawtext\":[{\"selector\":\"@a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]\"},{\"text\":\"§b\"},{\"text\":\"§c\"}]}},{\"selector\":\"@a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]\"} ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"%%2\",\"with\":{\"rawtext\":[{\"selector\":\"@s[scores={分队=2}]\"},{\"text\":\"§b\"},{\"text\":\"§c\"}]}},{\"selector\":\"@s\"},{\"text\":\" §7killed \"},{\"translate\":\"%%2\",\"with\":{\"rawtext\":[{\"selector\":\"@a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]\"},{\"text\":\"§b\"},{\"text\":\"§c\"}]}},{\"selector\":\"@a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]\"} ] }",
+            "tag @a remove fatal_damage_died",
+            "scoreboard players reset * fatal_damage_uid",
+            "scoreboard players reset * damage_uid.cache"
+          ]
+        }
+      }
+    }
+  }
+}
