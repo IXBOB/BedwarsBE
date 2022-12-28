@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:ixbob_npc",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/ixbob_npc"},
+            "geometry": {"default":"geometry.ixbob_npc"},
+            "render_controllers": ["controller.render.default"],
+            "enable_attachables": false,
+            "hide_armor": false
+        }
+    }
+}

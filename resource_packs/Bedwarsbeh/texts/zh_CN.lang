@@ -1,0 +1,13 @@
+entity.snowball.name=火焰弹	#
+item.snowball.name=火焰弹	#
+tile.bedwars:tnt2_block.name=炸药	#
+death.attack.generic=§c%1$s§7 掉入了虚空	#
+death.attack.arrow=§c%1$s§7 被 §e%2$s§7 射杀	#
+death.attack.lava=§c%1$s§7 试图在岩浆里游泳	#
+death.attack.mob=§c%1$s§7 被 §e%2$s§7 击败了	#
+death.attack.player=§c%1$s§7 被 §e%2$s§7 击败了	#
+death.fell.killer=§c%1$s§7 注定要摔死	#
+death.attack.inWall=§c%1$s§7 在墙里窒息而亡	#
+death.fell.accident.generic=§c%1$s §7从高处摔了下来	#
+death.attack.magma=§c%1$s §7发现地面是岩浆	#
+death.attack.fall=§c%1$s §7落地过猛	#

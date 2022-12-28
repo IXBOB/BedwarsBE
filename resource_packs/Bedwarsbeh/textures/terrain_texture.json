@@ -1,0 +1,512 @@
+{
+	"resource_pack_name": "bedwars_resourse",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"buy_red_wool_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_red_wool_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_red_wool_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_red_wool_block_east": {
+			"textures": "textures/blocks/buy_red_wool_block"
+		},
+		"buy_red_wool_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_red_wool_block_west": {												//WEST
+			"textures": "textures/blocks/buy_red_wool_block"
+		},
+		"buy_blue_wool_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_blue_wool_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_blue_wool_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_blue_wool_block_east": {
+			"textures": "textures/blocks/buy_blue_wool_block"
+		},
+		"buy_blue_wool_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_blue_wool_block_west": {												//WEST
+			"textures": "textures/blocks/buy_blue_wool_block"
+		},
+		"buy_end_stone_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_end_stone_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_end_stone_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_end_stone_block_east": {
+			"textures": "textures/blocks/buy_end_stone_block"
+		},
+		"buy_end_stone_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_end_stone_block_west": {												//WEST
+			"textures": "textures/blocks/buy_end_stone_block"
+		},
+		"buy_planks_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_planks_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_planks_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_planks_block_east": {
+			"textures": "textures/blocks/buy_planks_block"
+		},
+		"buy_planks_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_planks_block_west": {												//WEST
+			"textures": "textures/blocks/buy_planks_block"
+		},
+		"buy_red_glass_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_red_glass_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_red_glass_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_red_glass_block_east": {
+			"textures": "textures/blocks/buy_red_glass_block"
+		},
+		"buy_red_glass_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_red_glass_block_west": {												//WEST
+			"textures": "textures/blocks/buy_red_glass_block"
+		},
+		"buy_blue_glass_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_blue_glass_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_blue_glass_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_blue_glass_block_east": {
+			"textures": "textures/blocks/buy_blue_glass_block"
+		},
+		"buy_blue_glass_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_blue_glass_block_west": {												//WEST
+			"textures": "textures/blocks/buy_blue_glass_block"
+		},
+		"buy_upgrade_armor_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_upgrade_armor_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_upgrade_armor_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_upgrade_armor_block_east": {
+			"textures": "textures/blocks/buy_upgrade_armor_block"
+		},
+		"buy_upgrade_armor_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_upgrade_armor_block_west": {												//WEST
+			"textures": "textures/blocks/buy_upgrade_armor_block"
+		},
+		"buy_upgrade_sword_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_upgrade_sword_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_upgrade_sword_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_upgrade_sword_block_east": {
+			"textures": "textures/blocks/buy_upgrade_sword_block"
+		},
+		"buy_upgrade_sword_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_upgrade_sword_block_west": {												//WEST
+			"textures": "textures/blocks/buy_upgrade_sword_block"
+		},
+		"buy_upgrade_pickaxe_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_upgrade_pickaxe_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_upgrade_pickaxe_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_upgrade_pickaxe_block_east": {
+			"textures": "textures/blocks/buy_upgrade_pickaxe_block"
+		},
+		"buy_upgrade_pickaxe_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_upgrade_pickaxe_block_west": {												//WEST
+			"textures": "textures/blocks/buy_upgrade_pickaxe_block"
+		},
+		"buy_upgrade_axe_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_upgrade_axe_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_upgrade_axe_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_upgrade_axe_block_east": {
+			"textures": "textures/blocks/buy_upgrade_axe_block"
+		},
+		"buy_upgrade_axe_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_upgrade_axe_block_west": {												//WEST
+			"textures": "textures/blocks/buy_upgrade_axe_block"
+		},
+		"buy_bow_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_bow_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_bow_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_bow_block_east": {
+			"textures": "textures/blocks/buy_bow_block"
+		},
+		"buy_bow_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_bow_block_west": {												//WEST
+			"textures": "textures/blocks/buy_bow_block"
+		},
+		"buy_arrow_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_arrow_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_arrow_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_arrow_block_east": {
+			"textures": "textures/blocks/buy_arrow_block"
+		},
+		"buy_arrow_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_arrow_block_west": {												//WEST
+			"textures": "textures/blocks/buy_arrow_block"
+		},
+		"team_upgrade_protection_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"team_upgrade_protection_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"team_upgrade_protection_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"team_upgrade_protection_block_east": {
+			"textures": "textures/blocks/team_upgrade_protection_block"
+		},
+		"team_upgrade_protection_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"team_upgrade_protection_block_west": {												//WEST
+			"textures": "textures/blocks/team_upgrade_protection_block"
+		},
+		"team_upgrade_sharpness_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"team_upgrade_sharpness_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"team_upgrade_sharpness_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"team_upgrade_sharpness_block_east": {
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
+		},
+		"team_upgrade_sharpness_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"team_upgrade_sharpness_block_west": {												//WEST
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
+		},
+		"team_upgrade_trigger_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"team_upgrade_trigger_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"team_upgrade_trigger_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"team_upgrade_trigger_block_east": {
+			"textures": "textures/blocks/team_upgrade_trigger_block"
+		},
+		"team_upgrade_trigger_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"team_upgrade_trigger_block_west": {												//WEST
+			"textures": "textures/blocks/team_upgrade_trigger_block"
+		},
+		"buy_golden_apple_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_golden_apple_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_golden_apple_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_golden_apple_block_east": {
+			"textures": "textures/blocks/buy_golden_apple_block"
+		},
+		"buy_golden_apple_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_golden_apple_block_west": {												//WEST
+			"textures": "textures/blocks/buy_golden_apple_block"
+		},
+		"buy_fireball_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_fireball_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_fireball_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_fireball_block_east": {
+			"textures": "textures/blocks/buy_fireball_block"
+		},
+		"buy_fireball_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_fireball_block_west": {												//WEST
+			"textures": "textures/blocks/buy_fireball_block"
+		},
+		"buy_jump_potion_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_jump_potion_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_jump_potion_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_jump_potion_block_east": {
+			"textures": "textures/blocks/buy_jump_potion_block"
+		},
+		"buy_jump_potion_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_jump_potion_block_west": {												//WEST
+			"textures": "textures/blocks/buy_jump_potion_block"
+		},
+		"buy_xp_bottle_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_xp_bottle_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_xp_bottle_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_xp_bottle_block_east": {
+			"textures": "textures/blocks/buy_xp_bottle_block"
+		},
+		"buy_xp_bottle_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_xp_bottle_block_west": {												//WEST
+			"textures": "textures/blocks/buy_xp_bottle_block"
+		},
+		"buy_jiuyuanpingtai_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_jiuyuanpingtai_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_jiuyuanpingtai_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_jiuyuanpingtai_block_east": {
+			"textures": "textures/blocks/buy_jiuyuanpingtai_block"
+		},
+		"buy_jiuyuanpingtai_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_jiuyuanpingtai_block_west": {												//WEST
+			"textures": "textures/blocks/buy_jiuyuanpingtai_block"
+		},
+		"buy_road_egg_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_road_egg_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_road_egg_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_road_egg_block_east": {
+			"textures": "textures/blocks/buy_road_egg_block"
+		},
+		"buy_road_egg_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_road_egg_block_west": {												//WEST
+			"textures": "textures/blocks/buy_road_egg_block"
+		},
+		"buy_tnt_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+		},
+		"buy_tnt_block_down": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_down"
+		},
+		"buy_tnt_block_north": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+		},
+		"buy_tnt_block_east": {
+			"textures": "textures/blocks/buy_tnt_block"
+		},
+		"buy_tnt_block_south": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+		},
+		"buy_tnt_block_west": {												//WEST
+			"textures": "textures/blocks/buy_tnt_block"
+		},
+		"tnt2_block_up": {
+			"textures": "textures/blocks/tnt2/tnt2_top"
+		},
+		"tnt2_block_down": {
+			"textures": "textures/blocks/tnt2/tnt2_bottom"
+		},
+		"tnt2_block_north": {
+			"textures": "textures/blocks/tnt2/tnt2_side"
+		},
+		"tnt2_block_east": {
+			"textures": "textures/blocks/tnt2/tnt2_side"
+		},
+		"tnt2_block_south": {
+			"textures": "textures/blocks/tnt2/tnt2_side"
+		},
+		"tnt2_block_west": {												//WEST
+			"textures": "textures/blocks/tnt2/tnt2_side"
+		},
+		"red_stained_glass2_up": {
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"red_stained_glass2_down": {
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"red_stained_glass2_north": {
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"red_stained_glass2_east": {
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"red_stained_glass2_south": {
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"red_stained_glass2_west": {												//WEST
+			"textures": "textures/blocks/red_stained_glass2/glass_red"
+		},
+		"blue_stained_glass2_up": {
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"blue_stained_glass2_down": {
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"blue_stained_glass2_north": {
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"blue_stained_glass2_east": {
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"blue_stained_glass2_south": {
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"blue_stained_glass2_west": {												//WEST
+			"textures": "textures/blocks/blue_stained_glass2/glass_blue"
+		},
+		"log_spruce2_up": {
+			"textures": "textures/blocks/log_spruce2/log_spruce_top2"
+		},
+		"log_spruce2_down": {
+			"textures": "textures/blocks/log_spruce2/log_spruce_top2"
+		},
+		"log_spruce2_north": {
+			"textures": "textures/blocks/log_spruce2/log_spruce_side2"
+		},
+		"log_spruce2_east": {
+			"textures": "textures/blocks/log_spruce2/log_spruce_side2"
+		},
+		"log_spruce2_south": {
+			"textures": "textures/blocks/log_spruce2/log_spruce_side2"
+		},
+		"log_spruce2_west": {												//WEST
+			"textures": "textures/blocks/log_spruce2/log_spruce_side2"
+		},
+		"map_diamond_block_up": {
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_diamond_block_down": {
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_diamond_block_north": {
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_diamond_block_east": {
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_diamond_block_south": {
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_diamond_block_west": {												//WEST
+			"textures": "textures/blocks/map_diamond_block"
+		},
+		"map_emerald_block_up": {
+			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_emerald_block_down": {
+			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_emerald_block_north": {
+			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_emerald_block_east": {
+			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_emerald_block_south": {
+			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_emerald_block_west": {												//WEST
+			"textures": "textures/blocks/map_emerald_block"
+		}
+	}
+}
