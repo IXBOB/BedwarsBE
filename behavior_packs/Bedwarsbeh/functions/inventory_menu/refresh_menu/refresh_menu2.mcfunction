@@ -1,0 +1,12 @@
+
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},tag=refresh_menu2] ~~~ clear @s
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 0 bedwars:menu_back 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=!0},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 10 bedwars:menu2_particle_none_click 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=0},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 10 bedwars:menu2_particle_none_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=!1,等级=5..},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 11 bedwars:menu2_particle_villagerhappy_click 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=!1,等级=..4},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 11 bedwars:menu2_particle_villagerhappy_disabled 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=1},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 11 bedwars:menu2_particle_villagerhappy_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=!2,等级=10..},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_click 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=!2,等级=..9},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_disabled 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2,select_particle=2},tag=refresh_menu2] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=refresh_menu2] ~~~ tag @s remove refresh_menu2
