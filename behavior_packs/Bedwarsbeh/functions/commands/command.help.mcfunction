@@ -1,0 +1,2 @@
+execute @a[tag=op,tag=command.help] ~~~ tellraw @s { "rawtext" : [ { "text" : "§a§lShowing help page 1 of 2\nenter /tag @s add command.help.<number> to go to the specified page\n§r§f/tag <player> add op\n/tag <player> remove op\n/tag @s add set.start.players.<number>"} ] }
+execute @a[tag=op,tag=command.help] ~~~ tag @s remove command.help
