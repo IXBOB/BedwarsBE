@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+      "controller.animation.bedwars.test_death": { //检测玩家死亡
+        "initial_state": "on_detect",
+        "states": {
+          "on_detect": {
+            "transitions": [{"on_death":"!q.is_alive"}]
+          },
+          "on_death": {
+            "transitions": [{"on_detect":"q.is_alive"}],
+            "on_entry": ["@s bedwars:player_die"]
+          }
+        }
+      }
+    }
+  }
