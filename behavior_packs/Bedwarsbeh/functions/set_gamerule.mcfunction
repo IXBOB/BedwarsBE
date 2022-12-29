@@ -30,5 +30,7 @@ gamerule spawnradius 0
 gamerule randomtickspeed 0
 #关闭生物战利品
 gamerule domobloot false
+#关闭内置死亡信息
+gamerule showdeathmessages false
 #模式简单
 difficulty easy
