@@ -350,9 +350,6 @@ execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.8,tag=!se
 execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§r§fLevel: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级"}},{ "text" : "    §r§fExp: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级经验"}},{ "text" : "§b / 1000\n" },{ "text" : "§r§fCoins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "硬币数"}},{ "text" : "\n§r§fTotal kills: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总击杀数"}},{ "text" : "\n§r§fTotal wins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "胜场数"}},{ "text" : "   §r§fTotal games: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总游戏数"}} ] }
 #等待玩家时设置等待显示计分板
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,function_tick=20}] ~~~ function set_gameSTART0_waiting_scoreboard
-#开始倒计时-1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0
 #设置计分板游戏倒计时
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,function_tick=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
 execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ scoreboard players reset RESETTING... "等待显示"
@@ -580,3 +577,6 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[
 
 #停止升级的声音
 #execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ stopsound @a random.levelup
+#开始倒计时-1
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0
