@@ -21,6 +21,14 @@ execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..4},t
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..5},tag=set.start.players.6] ~~~ title @a subtitle §cCountdown was cancelled
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..6},tag=set.start.players.7] ~~~ title @a subtitle §cCountdown was cancelled
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..7},tag=set.start.players.8] ~~~ title @a subtitle §cCountdown was cancelled
+#人数不满足清空经验条倒计时
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..1},tag=set.start.players.2] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..2},tag=set.start.players.3] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..3},tag=set.start.players.4] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..4},tag=set.start.players.5] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..5},tag=set.start.players.6] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..6},tag=set.start.players.7] ~~~ xp -99999l @a
+execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..7},tag=set.start.players.8] ~~~ xp -99999l @a
 #人数不满足starting -> 0
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..1},tag=set.start.players.2] ~~~ scoreboard players set @s starting 0
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,"大厅人数"=..2},tag=set.start.players.3] ~~~ scoreboard players set @s starting 0
