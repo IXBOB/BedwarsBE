@@ -4,6 +4,7 @@ scoreboard players add @s egg_time -1
 execute @e[type=player,c=1] ~~~ execute @s[scores={"分队"=1}] ~~~ scoreboard players set @e[type=egg,tag=choosing_team] egg_team 1
 execute @e[type=player,c=1] ~~~ execute @s[scores={"分队"=2}] ~~~ scoreboard players set @e[type=egg,tag=choosing_team] egg_team 2
 tag @s add have_choosed_team
+tag @s remove choosing_team
 scoreboard players set @s "可生成路" 1
 execute @s ~~~ detect ~ 0 ~1 deny 0 scoreboard players set @s "可生成路" 0
 execute @s ~~~ detect ~ 0 ~ deny 0 scoreboard players set @s "可生成路" 0
