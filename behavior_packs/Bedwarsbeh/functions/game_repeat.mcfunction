@@ -259,27 +259,10 @@ execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polis
 #检测按下按钮更换地图
 execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map
 #重置结束后后复制地图选择告示牌
+#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-execute @e[type=armor_stand,name=main,tag=reset_OK,scores={gameSTART=0,starting=0,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @e[type=armor_stand,name=main,tag=reset_OK,scores={gameSTART=0,starting=0,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @e[type=armor_stand,name=main,tag=reset_OK,scores={gameSTART=0,starting=0,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-#检测按下按钮更换模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ scoreboard players add @s "游戏模式" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=!op] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §cYou can't change the map, as you do not have the OP tag" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,"游戏模式"=3..,starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0,"游戏模式"=3..,starting=0,reseting=0}] "游戏模式" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §6§lGame mode has been set to §d" },{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{"text":"§oRUSH mode"},{"text":"§r§l§dNORMAL mode"}]}} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0,reseting=0},tag=!reset_OK] ~~~ detect -202 201 -196 polished_blackstone_button 9 setblock -202 201 -196 polished_blackstone_button 1
-#游戏开始前复制游戏模式告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,"游戏模式"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 289 5 294 289 5 294 -202 200 -197
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,"游戏模式"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 289 4 294 289 4 294 -202 200 -197
 #重置结束后后复制游戏模式告示牌
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏模式"=1}] ~~~ clone 288 4 294 288 4 294 -202 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏模式"=2}] ~~~ clone 288 5 294 288 5 294 -202 200 -197
@@ -291,13 +274,7 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=1}] ~~
 execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~~ clone 288 5 294 288 5 294 -202 200 -197
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.2] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 2" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.3] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 3" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.4] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 4" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.5] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 5" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.6] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 6" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.7] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 7" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players.8] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cThe minimum number of players required to start the game has already been set to 8" } ] }
+#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
@@ -321,29 +298,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove s
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.6
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.7
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.8
-#给予tag并调整人数
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function change_start_player_count
-#检测人数
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 2
-execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "大厅人数" = @s "大厅人数"
-execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "开始倒计时" = @s "开始倒计时"
-#房主更改游戏开始所需人数时tellraw提示
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.2,tag=!set.players.2.tellrawed] ~~~ function commands/test_tag/set.players.2.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.3,tag=!set.players.3.tellrawed] ~~~ function commands/test_tag/set.players.3.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.4,tag=!set.players.4.tellrawed] ~~~ function commands/test_tag/set.players.4.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.5,tag=!set.players.5.tellrawed] ~~~ function commands/test_tag/set.players.5.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.6,tag=!set.players.6.tellrawed] ~~~ function commands/test_tag/set.players.6.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.7,tag=!set.players.7.tellrawed] ~~~ function commands/test_tag/set.players.7.tellrawed
-execute @e[type=armor_stand,scores={gameSTART=0},tag=set.start.players.8,tag=!set.players.8.tellrawed] ~~~ function commands/test_tag/set.players.8.tellrawed
-#游戏结束时大厅actionbar
-execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§r§fLevel: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级"}},{ "text" : "    §r§fExp: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级经验"}},{ "text" : "§b / 1000\n" },{ "text" : "§r§fCoins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "硬币数"}},{ "text" : "\n§r§fTotal kills: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总击杀数"}},{ "text" : "\n§r§fTotal wins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "胜场数"}},{ "text" : "   §r§fTotal games: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总游戏数"}} ] }
-#等待玩家时设置等待显示计分板
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,function_tick=20}] ~~~ function set_gameSTART0_waiting_scoreboard
-#设置计分板游戏倒计时
-execute @e[type=armor_stand,scores={gameSTART=0,starting=1,function_tick=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
-execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ scoreboard players reset RESETTING... "等待显示"
-#设置starting值
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.game.starting
 #初始化重复检测大厅人数
 scoreboard players reset * "大厅人数"
 #检测人数开始游戏相关结束================
@@ -369,10 +323,6 @@ execute @a[tag=op,tag=command.help.2] ~~~ function commands/command.help.2
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
 #游戏区域tag+degrade
 execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
-#传送结束时有分队值的玩家到大厅并清空背包
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ tp @a[scores={"分队"=1..2},tag=!insider] -200 200 -200
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ clear @a[tag=!insider]
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "分队" 0
 #检测蓝队床情况#蓝队√-游戏显示
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set "§bBLUE §a✔" "游戏显示" -5
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players reset "§bBLUE §a✔" "游戏显示"
