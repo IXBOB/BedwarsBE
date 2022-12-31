@@ -105,8 +105,6 @@ execute @e[type=armor_stand,scores={gameSTART=1..2,"红床存活"=0}] ~~~ execut
 execute @e[type=armor_stand,scores={gameSTART=1..2,"红床存活"=0}] ~~~ execute @a[scores={"存活"=0,"分队"=1}] ~~~ clear @s
 #删除屏障上的僵尸猪人
 execute @e[type=armor_stand,scores={gameSTART=1..2},name=main] ~~~ execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
-#游戏未开始时删除僵尸猪人
-execute @e[type=armor_stand,scores={gameSTART=0},name=main] ~~~ execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #删除屏障上的掉落物
 execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 #大厅跳到结构空位TP出生点
@@ -356,7 +354,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.gam
 scoreboard players reset * "大厅人数"
 #检测人数开始游戏相关结束================
 #开始游戏倒计时title
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20},tag=reset_OK] ~~~ function startgame_timer
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
 #玩家tag指令相关================
 #玩家获取或被夺去tag=op时提示
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§aYou have obtained OP permission. For help, enter /tag @s add command.help" } ] }
