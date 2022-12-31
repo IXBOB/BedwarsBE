@@ -369,12 +369,6 @@ execute @a[tag=!op,tag=command.help.2] ~~~ tag @s remove command.help.2
 execute @a[tag=op,tag=command.help] ~~~ function commands/command.help
 execute @a[tag=op,tag=command.help.1] ~~~ function commands/command.help.1
 execute @a[tag=op,tag=command.help.2] ~~~ function commands/command.help.2
-#command.set.player.ban.negative
-execute @a[tag=command.set.player.ban.negative] ~~~ function commands/command.set.player.ban.negative
-#command.set.player.ban.cheat
-execute @a[tag=command.set.player.ban.cheat] ~~~ function commands/command.set.player.ban.cheat
-#command.set.player.ban.bad_words
-execute @a[tag=command.set.player.ban.bad_words] ~~~ function commands/command.set.player.ban.bad_words
 #玩家tag指令相关结束================
 #防止地图关键区域被破坏
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
