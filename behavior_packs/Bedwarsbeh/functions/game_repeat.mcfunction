@@ -17,7 +17,7 @@ gamerule commandblocksenabled true
 #TNT附近删除tnt2_block
 execute @e[type=tnt] ~~~ fill ~~-1~~~-1~ air 0 replace bedwars:tnt2_block
 #游戏开始初始化
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0}] ~~~ function gamestart_reset_game_settings
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
 #游戏开始玩家头顶显示血量
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard objectives setdisplay belowname health
 #重置地图
@@ -578,5 +578,5 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[
 #停止升级的声音
 #execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ stopsound @a random.levelup
 #开始倒计时-1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0
