@@ -3,7 +3,6 @@
       "function_tick/function_tick",
       "game_repeat",
       "ore_spawner",
-      "team_upgrade_TRIGGER",
       "refresh_coin_get",
       "refresh_xp_get",
       "refresh.random.desbed.tellraw",
