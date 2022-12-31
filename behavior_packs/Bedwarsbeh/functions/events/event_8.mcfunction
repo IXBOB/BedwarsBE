@@ -7,5 +7,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计�
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ scoreboard players set @s "蓝床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..2,"存活"=1}] title §c§lBed destoryed
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..2,"存活"=1}] subtitle all the beds have been destroyed
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ fill 0 185 46 0 185 46 air 0 replace bed
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ fill 0 185 -47 0 185 -47 air 0 replace bed
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ playsound mob.enderdragon.growl @a[scores={"分队"=1..2}]
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,"事件倒计时"=..0}] ~~~ scoreboard players set @s "事件倒计时" 129
