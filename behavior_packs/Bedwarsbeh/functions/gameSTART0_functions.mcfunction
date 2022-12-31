@@ -1,3 +1,25 @@
+#tag+sound20
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound20] ~~~ tag @s add sound20
+#tag+sound15
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound15] ~~~ tag @s add sound15
+#tag+sound10
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound10] ~~~ tag @s add sound10
+#tag+sound5
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound5] ~~~ tag @s add sound5
+#tag+sound4
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound4] ~~~ tag @s add sound4
+#tag+sound3
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound3] ~~~ tag @s add sound3
+#tag+sound2
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound2] ~~~ tag @s add sound2
+#tag+sound1
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound1] ~~~ tag @s add sound1
+#设置倒计时时间
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0}] ~~~ scoreboard players set @s "开始倒计时" 20
+#gameSTART=0删除TNT
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ kill @e[type=tnt]
+#重置地图
+execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function reset_map
 #游戏未开始传送游戏区玩家到大厅
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=126,dy=40,dz=126] ~~~ effect @s clear
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=126,dy=40,dz=126] ~~~ xp -99999L @s

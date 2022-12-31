@@ -20,8 +20,6 @@ execute @e[type=tnt] ~~~ fill ~~-1~~~-1~ air 0 replace bedwars:tnt2_block
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
 #游戏开始玩家头顶显示血量
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard objectives setdisplay belowname health
-#重置地图
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function reset_map
 #物品白名单
 #English(US)
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ kill @e[type=item,ry=0,rym=0,rx=0,rxm=0,name=!"Oak Planks",name=!"Red Wool",name=!"Blue Wool",name=!"End Stone",name=!"Red Stained Glass",name=!"Blue Stained Glass",name=!"TNT",name=!"Iron Ingot",name=!"Gold Ingot",name=!"Emerald",name=!"Diamond",name=!"Ender Pearl",name=!"Obsidian",name=!"Bottle o' Enchanting",name=!"Bottle of Enchanting"]
@@ -40,35 +38,12 @@ execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=snowball] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #火焰弹相关结束================
-#TNT相关================
-#gameSTART=0删除TNT
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ kill @e[type=tnt]
-#gameSTART=2删除TNT
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ kill @e[type=tnt]
 #TNT爆炸
 #tip:末影水晶爆炸逻辑在行为包中
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ scoreboard players add @e[type=tnt] tnt_time -1
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores={tnt_time=..-70}] ~~~ summon ender_crystal ~~~ minecraft:crystal_explode
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores={tnt_time=..-70}] ~~~ kill @s
 #TNT相关结束================
-#tag+sound20
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound20] ~~~ tag @s add sound20
-#tag+sound15
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound15] ~~~ tag @s add sound15
-#tag+sound10
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound10] ~~~ tag @s add sound10
-#tag+sound5
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound5] ~~~ tag @s add sound5
-#tag+sound4
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound4] ~~~ tag @s add sound4
-#tag+sound3
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound3] ~~~ tag @s add sound3
-#tag+sound2
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound2] ~~~ tag @s add sound2
-#tag+sound1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound1] ~~~ tag @s add sound1
-#设置倒计时时间
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0}] ~~~ scoreboard players set @s "开始倒计时" 20
 #更改游戏模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1..2},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
