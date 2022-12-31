@@ -302,6 +302,7 @@
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add xp_get_kill",
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add coin_get_kill",
             "scoreboard players random @e[type=armor_stand,name=main] kill_tell_num 1 5",
+            "playsound random.orb @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]",
             "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@a[tag=fatal_damage_died]\" },{ \"text\" : \"§7 was killed by §c\" },{ \"selector\" :  \"@s\" }]}",
             "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§c\" },{ \"selector\" :  \"@a[tag=fatal_damage_died]\" },{ \"text\" : \"§7 was killed by §b\" },{ \"selector\" :  \"@s\" }]}",
             "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@a[tag=fatal_damage_died]\" },{ \"text\" : \"§7 got rekt by §c\" },{ \"selector\" :  \"@s\" }]}",
