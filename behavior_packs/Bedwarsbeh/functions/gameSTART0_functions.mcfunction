@@ -67,3 +67,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.gam
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ tp @a[scores={"分队"=1..2},tag=!insider] -200 200 -200
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ clear @a[tag=!insider]
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "分队" 0
+#检测按下按钮更换地图
+execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map
+#游戏未开始tag-team
+execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team2

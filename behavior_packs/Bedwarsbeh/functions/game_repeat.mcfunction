@@ -234,9 +234,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores
 #蓝队tag+team2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] add team2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] remove team1
-#游戏未开始tag-team
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team2
 #检测有人正在重生执行相关指令
 execute @e[type=player,x=-72,y=5,z=-67,r=20,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tp @a[x=-72,y=6,z=-67,r=20] -200 200 -200
@@ -244,20 +241,12 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tp @a[x=-72,y=6,
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.red.leather.armor
 #replaceitem蓝队皮革护甲
  execute @e[type=armor_stand,scores={gameSTART=1,"蓝保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=2,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.blue.leather.armor
-#大厅按钮选项相关================
-#复制告示牌游戏未开始
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ clone 293 4 296 293 4 296 -200 200 -204
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ clone 293 4 296 293 4 296 -200 200 -204
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ setblock -200 201 -205 air
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ setblock -200 201 -205 air
 #复制告示牌游戏已开始
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ clone 293 5 296 293 5 296 -200 200 -204
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
 #检测游戏开始时按钮被按下并重置按钮
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
-#检测按下按钮更换地图
-execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map
 #重置结束后后复制地图选择告示牌
 #此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
