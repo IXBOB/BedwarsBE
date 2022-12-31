@@ -225,10 +225,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90,scores={"抬头返回time"=-90..-71}] ~~~ title @s actionbar §7■■■§e■■ Teleport to the lobby in 2 seconds ■■§7■■■
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90,scores={"抬头返回time"=-110..-91}] ~~~ title @s actionbar §7■■■■§e■ Teleport to the lobby in 1 second ■§7■■■■
 #抬头相关功能结束================
-#使用经验瓶
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=minecraft:xp_bottle] ~~~ tellraw @e[type=player,scores={"分队"=1..2,"存活"=1},r=2,c=1] { "rawtext" : [ { "text" : "§f§lXP bottle >> §6You have used an XP bottle and got 100 levels" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=minecraft:xp_bottle] ~~~ xp 100L @e[type=player,scores={"分队"=1..2,"存活"=1},r=2,c=1]
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=minecraft:xp_bottle] ~~~ kill @s
 #游戏开始设置生存模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..2},x=0,y=184,z=52,r=10,m=2]
 #游戏开始设置生存模式
