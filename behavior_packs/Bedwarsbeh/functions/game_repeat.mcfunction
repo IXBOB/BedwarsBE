@@ -169,8 +169,7 @@ execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救�
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ tag @a remove "get救援平台"
 #掉落虚空执行的操作
 #检测kill没有救援平台的玩家
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1}] ~~~ detect ~ ~ ~ structure_void 0 tellraw @a { "rawtext" : [{ "text" : "§c" },{ "selector" :  "@s" },{ "text" : "§7 fell into the void." }]}
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126,scores={"分队"=2}] ~~~ detect ~ ~ ~ structure_void 0 tellraw @a { "rawtext" : [{ "text" : "§b" },{ "selector" :  "@s" },{ "text" : "§7 fell into the void." }]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126] ~~~ detect ~ ~ ~ structure_void 0 kill @s
 #检测释放救援平台
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=127,dy=5,dz=127] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void
