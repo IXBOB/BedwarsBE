@@ -6,7 +6,7 @@ scoreboard players add @e[type=player,x=-67,y=5,z=-67,r=3] "重生时间" -1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=80}] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§7■§c■■■■ respawn in 4 seconds ■■■■§7■" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=60}] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§7■■§c■■■ respawn in 3 seconds ■■■§7■■" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=40}] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§7■■■§c■■ respawn in 2 seconds ■■§7■■■" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=20}] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§7■■■■§c■ respawn in 1 second■ §7■■■■" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=20}] ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§7■■■■§c■ respawn in 1 second ■§7■■■■" } ] }
 #clear
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ clear @e[type=player,x=-67,y=5,z=-67,r=3]
 #重生TP下一重生点
