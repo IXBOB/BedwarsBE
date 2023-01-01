@@ -9,4 +9,5 @@ execute @s[scores={desbed_tell_num=4}] ~~~ detect 0 185 46 air 0 tellraw @a { "r
 execute @s[scores={desbed_tell_num=5}] ~~~ detect 0 185 46 air 0 tellraw @a { "rawtext" : [{ "text" : "\n§f§lBED DESTRUCTION >> §c§lred bed §fwas smashed by: §b" },{ "selector" :  "@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]" },{ "text" : "\n§r" }]}
 execute @s ~~~ detect 0 185 46 air 0 tag @e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}] add get.xp.desbed
 execute @s ~~~ detect 0 185 46 air 0 tag @e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}] add get.coin.desbed
+execute @s ~~~ detect 0 185 46 air 0 function get_xp_and_coin
 execute @s ~~~ detect 0 185 46 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床存活" 0
