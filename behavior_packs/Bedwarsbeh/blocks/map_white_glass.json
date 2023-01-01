@@ -5,6 +5,14 @@
 			"identifier": "bedwars:map_white_glass"
 		},
 		"components": {
+			//basic custom glass components
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "blend",
+					"texture": "map_white_glass"
+				}
+			},
 			"minecraft:destroy_time": 99999
 		}
 	}
