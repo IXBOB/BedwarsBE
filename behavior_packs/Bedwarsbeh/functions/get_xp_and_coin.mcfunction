@@ -1,3 +1,11 @@
+#refresh_xp_get
+scoreboard players random @e[type=armor_stand,name=main] xp_get_game 10 20
+scoreboard players set @e[type=armor_stand,name=main] xp_get_desbed 200
+scoreboard players set @e[type=armor_stand,name=main] xp_get_kill 20
+#refresh_coin_get
+scoreboard players random @e[type=armor_stand,name=main] coin_get_game 5 10
+scoreboard players set @e[type=armor_stand,name=main] coin_get_desbed 100
+scoreboard players set @e[type=armor_stand,name=main] coin_get_kill 10
 #检测获取经验
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "等级经验" += @e[type=armor_stand,name=main] xp_get_game
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "当局经验" += @e[type=armor_stand,name=main] xp_get_game
