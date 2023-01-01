@@ -360,16 +360,14 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a iron
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a gold_ingot
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a diamond
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a emerald
+
 #检测装备升级
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..2},tag=up_sword] ~~~ function weapon_upgrade
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..2},tag=up_pickaxe] ~~~ function weapon_upgrade
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..2},tag=up_axe] ~~~ function weapon_upgrade
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..2},tag=up_armor] ~~~ function weapon_upgrade
+#检测搭桥蛋
+#在function gameSTART1_functions内
+
 #疾速模式速度I和急迫I
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..2,"存活"=1}] speed 1 0 true
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..2,"存活"=1}] haste 1 0 true
-#检测搭桥蛋
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ function road_egg
 #大厅滚动字体
 scoreboard players add @e[type=armor_stand,name=main] lobby_text_time -1
 execute @e[type=armor_stand,name=main,scores={lobby_text_time=-1}] ~~~ tp @e[type=armor_stand,tag=text1] -197 198.2 -202
