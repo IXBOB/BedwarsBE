@@ -307,5 +307,27 @@
 		"east": "map_emerald_block_east"
 		},
 	"sound": "stone"
+	},
+	"bedwars:map_white_glass": {
+	"textures": {
+		"up": "map_white_glass",
+		"down": "map_white_glass",
+		"north": "map_white_glass",
+		"south": "map_white_glass",
+		"west": "map_white_glass",
+		"east": "map_white_glass"
+		},
+	"sound": "glass"
+	},
+	"bedwars:map_sand": {
+	"textures": {
+		"up": "map_sand",
+		"down": "map_sand",
+		"north": "map_sand",
+		"south": "map_sand",
+		"west": "map_sand",
+		"east": "map_sand"
+		},
+	"sound": "sand"
 	}
 }

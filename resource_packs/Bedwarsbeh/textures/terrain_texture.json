@@ -507,6 +507,12 @@
 		},
 		"map_emerald_block_west": {												//WEST
 			"textures": "textures/blocks/map_emerald_block"
+		},
+		"map_white_glass": {
+			"textures": "textures/blocks/map_white_glass"
+		},
+		"map_sand": {
+			"textures": "textures/blocks/map_sand"
 		}
 	}
 }
