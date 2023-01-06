@@ -431,9 +431,6 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[
 execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 
-
-#停止升级的声音
-#execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ stopsound @a random.levelup
 #开始倒计时-1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0
