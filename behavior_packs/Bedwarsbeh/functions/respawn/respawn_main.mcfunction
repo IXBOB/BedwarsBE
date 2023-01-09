@@ -15,6 +15,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=0..,"分队"=1..2}] ~~~ effect @s invisibility 6 255 true
 #重生时虚弱
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=0..,"分队"=1..2}] ~~~ effect @s weakness 6 255 true
+#重生时删除in_void_kill
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"重生时间"=0..,"分队"=1..2}] ~~~ tag @s remove in_void_kill
 #游戏结束传送复活中红队到基地
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,x=-67,y=5,z=-67,r=3,scores={"分队"=1}] ~~~ tp @s 0 186 53 facing 0 182 0
 #游戏结束传送复活中蓝队到基地

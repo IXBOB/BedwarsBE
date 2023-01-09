@@ -289,8 +289,7 @@
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
             "tag @s remove set_self_fatal_damage_uid",
             "execute @s[tag=in_void_kill,scores={分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§c\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
-            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
-            "tag @s remove in_void_kill"
+            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}"
           ]
         }
       },

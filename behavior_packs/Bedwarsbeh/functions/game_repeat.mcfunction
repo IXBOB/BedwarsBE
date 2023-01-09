@@ -320,9 +320,9 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9..10}] ~~~ funct
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=10..11}] ~~~ function events/event_draw
 #事件相关结束================
 #游戏开始时自动获取经验和硬币
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2,"存活"=1}] add get.xp.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2,"存活"=1}] add get.coin.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ function get_xp_and_coin
+execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2}] add get.xp.game
+execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2}] add get.coin.game
+execute @a[tag=get.xp.game] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function get_xp_and_coin
 #升级
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players add @s "等级" 1
 execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s {"rawtext":[{"text":"§6§l     ■■■■■ LEVEL UP ■■■■■\n§r§6You are now at level "},{ "score" : { "name" : "@s" , "objective" : "等级"}},{"text":" ! congratulations!"}]}

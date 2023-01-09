@@ -1,16 +1,6 @@
 entity.snowball.name=fireball
 item.snowball.name=fireball
 tile.bedwars:tnt2_block.name=TNT
-death.attack.generic=§c%1$s§7 fell into the void
-death.attack.arrow=§c%1$s§7 was shot by §e%2$s
-death.attack.lava=§c%1$s§7 tried to swim in lava
-death.attack.mob=§c%1$s§7 was slained by §e%2$s§7
-death.attack.player=§c%1$s§7 was slained by §e%2$s§7
-death.fell.killer=§c%1$s§7 was doomed to fall
-death.attack.inWall=§c%1$s§7 suffocated in a wall
-death.fell.accident.generic=§c%1$s§7 fell from a high place
-death.attack.magma=§c%1$s§7 discovered floor was lava
-death.attack.fall=§c%1$s§7 hit the ground too hard
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot
