@@ -65,7 +65,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players
 #给予tag并调整人数
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function change_start_player_count
 #检测人数
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 2
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 1
 execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "大厅人数" = @s "大厅人数"
 execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "开始倒计时" = @s "开始倒计时"
 #房主更改游戏开始所需人数时tellraw提示
@@ -87,7 +87,6 @@ execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.game.starting
 #传送结束时有分队值的玩家到大厅并清空背包
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ tp @a[scores={"分队"=1..2},tag=!insider] -200 200 -200
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ clear @a[tag=!insider]
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "分队" 0
 #检测按下按钮更换地图
 execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map

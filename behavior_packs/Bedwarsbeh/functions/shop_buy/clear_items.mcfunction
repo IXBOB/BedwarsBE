@@ -1,12 +1,12 @@
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword] ~~~ function shop_buy/clear_items/clear_wooden_sword
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_wooden_sword_sharpnessI
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_wooden_sword_sharpnessII
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_stone_sword] ~~~ function shop_buy/clear_items/clear_stone_sword
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_stone_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_stone_sword_sharpnessI
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_stone_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_stone_sword_sharpnessII
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_iron_sword] ~~~ function shop_buy/clear_items/clear_iron_sword
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_iron_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_iron_sword_sharpnessI
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_iron_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_iron_sword_sharpnessII
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword] ~~~ function shop_buy/clear_items/clear_diamond_sword
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_diamond_sword_sharpnessI
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_diamond_sword_sharpnessII
+ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword] ~~~ function shop_buy/clear_items/clear_wooden_sword
+ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_wooden_sword_sharpnessI
+ execute @a[scores={"分队"=1..2},tag=clear_wooden_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_wooden_sword_sharpnessII
+ execute @a[scores={"分队"=1..2},tag=clear_stone_sword] ~~~ function shop_buy/clear_items/clear_stone_sword
+ execute @a[scores={"分队"=1..2},tag=clear_stone_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_stone_sword_sharpnessI
+ execute @a[scores={"分队"=1..2},tag=clear_stone_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_stone_sword_sharpnessII
+ execute @a[scores={"分队"=1..2},tag=clear_iron_sword] ~~~ function shop_buy/clear_items/clear_iron_sword
+ execute @a[scores={"分队"=1..2},tag=clear_iron_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_iron_sword_sharpnessI
+ execute @a[scores={"分队"=1..2},tag=clear_iron_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_iron_sword_sharpnessII
+ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword] ~~~ function shop_buy/clear_items/clear_diamond_sword
+ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword_sharpnessI] ~~~ function shop_buy/clear_items/clear_diamond_sword_sharpnessI
+ execute @a[scores={"分队"=1..2},tag=clear_diamond_sword_sharpnessII] ~~~ function shop_buy/clear_items/clear_diamond_sword_sharpnessII
