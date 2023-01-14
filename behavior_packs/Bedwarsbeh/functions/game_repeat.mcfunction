@@ -252,20 +252,13 @@ scoreboard players reset * "大厅人数"
 #开始游戏倒计时title
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
 #玩家tag指令相关================
-#玩家获取或被夺去tag=op时提示
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§aYou have obtained OP permission. For help, enter /tag @s add command.help" } ] }
+#玩家被夺去tag=op时提示
+execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§aYou have obtained OP permission. For help, enter #help" } ] }
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s add get.op.tellrawed
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cYour administrator privileges have been taken away" } ] }
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
-#command.help
-execute @a[tag=!op,tag=command.help] ~~~ tag @s remove command.help
-execute @a[tag=!op,tag=command.help.1] ~~~ tag @s remove command.help.1
-execute @a[tag=!op,tag=command.help.2] ~~~ tag @s remove command.help.2
-execute @a[tag=op,tag=command.help] ~~~ function commands/command.help
-execute @a[tag=op,tag=command.help.1] ~~~ function commands/command.help.1
-execute @a[tag=op,tag=command.help.2] ~~~ function commands/command.help.2
 #玩家tag指令相关结束================
 #防止地图关键区域被破坏
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
@@ -289,8 +282,8 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=3,function_tick=2
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add "§bDiamond III" "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add "§dObsidian piglin" "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add "§dEnder pearl piglin" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add "§4床被破坏了 warn" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add "§4§l床被破坏了" "游戏显示" -1
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add "§4BED DESTRUCTION warn" "游戏显示" -1
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add "§4§lBED DESTRUCTION" "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9,function_tick=20}] ~~~ scoreboard players add "§4Draw warn" "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=10,function_tick=20}] ~~~ scoreboard players add "§4Draw warn" "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=11,function_tick=20}] ~~~ scoreboard players add "§4§lDraw-game over" "游戏显示" -1
