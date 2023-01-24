@@ -135,10 +135,10 @@ execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functi
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ function gameSTART2_functions
 #救援平台相关================
 #检测购买救援平台
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l商店 >> §cPurchase failed, you can only have one automatic rescue platform at the same time" } ] }
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lShop >> §cPurchase failed, you can only have one automatic rescue platform at the same time" } ] }
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ xp 120L @s
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ playsound fire.ignite @s
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§l商店 >> §aYou purchased §r§6Automatic rescue platform\n§r§f§lAutomatic rescue platform >> §aThe rescue platform will be used automatically when you fall into the void!" } ] }
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lShop >> §aYou purchased §r§6Automatic rescue platform\n§r§f§lAutomatic rescue platform >> §aThe rescue platform will be used automatically when you fall into the void!" } ] }
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ playsound note.pling @s ~~~
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ tag @s add have救援平台
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ tag @a remove "get救援平台"

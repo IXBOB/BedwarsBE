@@ -82,8 +82,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard object
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..2}]
 #set事件倒计时120
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "事件倒计时" 120
-#set事件倒计时120
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set "§eNEXT EVENT" "游戏显示" 121
 #放置红石线
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ setblock 267 4 308 redstone_wire
 #set-time.sec1 0
