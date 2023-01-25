@@ -65,7 +65,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=set.start.players
 #给予tag并调整人数
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function change_start_player_count
 #检测人数
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 2
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 1
 execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "大厅人数" = @s "大厅人数"
 execute @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] ~~~ scoreboard players operation @a "开始倒计时" = @s "开始倒计时"
 #房主更改游戏开始所需人数时tellraw提示

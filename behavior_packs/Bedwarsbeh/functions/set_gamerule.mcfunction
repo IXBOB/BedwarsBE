@@ -32,5 +32,7 @@ gamerule randomtickspeed 0
 gamerule domobloot false
 #关闭内置死亡信息
 gamerule showdeathmessages false
+#打开方块掉落
+gamerule dotiledrops true
 #模式简单
 difficulty easy
