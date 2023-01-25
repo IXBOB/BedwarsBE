@@ -4,7 +4,7 @@ execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ gamerule falldamage false
 #游戏开始打开掉落伤害
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ gamerule falldamage true
 #游戏结算关闭掉落伤害
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ gamerule falldamage true
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ gamerule falldamage false
 #pvp false
 execute @e[type=armor_stand,name=main,scores={gameSTART=!1}] ~~~ gamerule pvp false
 #pvp true

@@ -339,7 +339,7 @@
 		"west": "red_wool",
 		"east": "red_wool"
 		},
-	"sound": "wool"
+	"sound": "cloth"
 	},
 	"bedwars:blue_wool": {
 	"textures": {
@@ -350,6 +350,6 @@
 		"west": "blue_wool",
 		"east": "blue_wool"
 		},
-	"sound": "wool"
+	"sound": "cloth"
 	}
 }
