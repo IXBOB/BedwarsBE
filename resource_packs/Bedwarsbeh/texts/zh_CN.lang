@@ -1,6 +1,8 @@
 entity.snowball.name=火焰弹	#
 item.snowball.name=火焰弹	#
 tile.bedwars:tnt2_block.name=炸药	#
+tile.bedwars:red_wool.name=红色羊毛	#
+tile.bedwars:blue_wool.name=蓝色羊毛	#
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot

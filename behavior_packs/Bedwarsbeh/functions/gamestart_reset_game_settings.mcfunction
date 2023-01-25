@@ -94,8 +94,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s game.time.min.2 0
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove degrade
-#tag-have救援平台
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove "have救援平台"
 #无敌时间 -> 60
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "无敌时间" 60
 #tag-铁已遍历1

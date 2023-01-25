@@ -7,6 +7,7 @@ scoreboard players set @a[tag=!registered] "总游戏数" 0
 scoreboard players set @a[tag=!registered] "当局经验" 0
 scoreboard players set @a[tag=!registered] "当局硬币" 0
 scoreboard players set @a[tag=!registered] "分队" 0
+scoreboard players set @a[tag=!registered] "存活" 0
 scoreboard players set @a[tag=!registered] still_need_xp 0
 scoreboard players set @a[tag=!registered] health 20
 tag @a[tag=!registered] add change_to_menu1

@@ -220,7 +220,7 @@
 		},
 	"sound": "wood"
 	},
-	"bedwars:buy_jiuyuanpingtai_block": {
+	"bedwars:buy_jiuyuanpingtai_block": {  //救援平台已删除，此处不再有效
 	"textures": {
 		"up": "buy_jiuyuanpingtai_block_up",
 		"down": "buy_jiuyuanpingtai_block_down",
@@ -329,5 +329,27 @@
 		"east": "map_sand"
 		},
 	"sound": "sand"
+	},
+	"bedwars:red_wool": {
+	"textures": {
+		"up": "red_wool",
+		"down": "red_wool",
+		"north": "red_wool",
+		"south": "red_wool",
+		"west": "red_wool",
+		"east": "red_wool"
+		},
+	"sound": "wool"
+	},
+	"bedwars:blue_wool": {
+	"textures": {
+		"up": "blue_wool",
+		"down": "blue_wool",
+		"north": "blue_wool",
+		"south": "blue_wool",
+		"west": "blue_wool",
+		"east": "blue_wool"
+		},
+	"sound": "wool"
 	}
 }

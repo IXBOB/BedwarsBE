@@ -347,7 +347,7 @@
 			"textures": "textures/blocks/buy_xp_bottle_block"
 		},
 		"buy_jiuyuanpingtai_block_up": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_up"
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"      //救援平台已删除，此处不再有效
 		},
 		"buy_jiuyuanpingtai_block_down": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
@@ -513,6 +513,12 @@
 		},
 		"map_sand": {
 			"textures": "textures/blocks/map_sand"
+		},
+		"red_wool": {
+			"textures": "textures/blocks/red_wool"
+		},
+		"blue_wool": {
+			"textures": "textures/blocks/blue_wool"
 		}
 	}
 }

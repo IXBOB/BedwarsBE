@@ -38,14 +38,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[score
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag=degrade_xp] ~~~ tellraw @s { "rawtext" : [ { "text" : "§lBED WARS >> §cYou lost 200 levels" }]}
 #检测经验降级
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag=degrade_xp] ~~~ tag @s remove degrade_xp
-#检测救援平台降级
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag="have救援平台"] ~~~ tag @s add degrade_救援平台
-#检测救援平台降级
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag="degrade_救援平台"] ~~~ tag @s remove "have救援平台"
-#检测救援平台降级
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag="degrade_救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§lBED WARS >> §cYou lost rescue platform" }]}
-#检测救援平台降级
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade,tag="degrade_救援平台"] ~~~ tag @s remove "degrade_救援平台"
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-67,y=5,z=-67,r=3,tag=degrade] ~~~ tag @s remove degrade
 

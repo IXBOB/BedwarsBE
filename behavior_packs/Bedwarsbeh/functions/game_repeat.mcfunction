@@ -127,32 +127,14 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床有敌"=1,"蓝�
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 206 0
 #床被摧毁spawnpoint蓝
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 206 0
-#删除玩家脚下的地图底部方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,x=-63,y=172,z=-63,dx=127,dy=9,dz=127,scores={"分队"=1..2}] ~~~ fill ~5 174 ~5 ~-5 174 ~-5 air
 #gameSTART为0时执行命令
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
 #gameSTART为2时执行命令
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ function gameSTART2_functions
-#救援平台相关================
-#检测购买救援平台
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lShop >> §cPurchase failed, you can only have one automatic rescue platform at the same time" } ] }
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ xp 120L @s
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag="get救援平台"] ~~~ playsound fire.ignite @s
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lShop >> §aYou purchased §r§6Automatic rescue platform\n§r§f§lAutomatic rescue platform >> §aThe rescue platform will be used automatically when you fall into the void!" } ] }
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ playsound note.pling @s ~~~
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",tag="get救援平台"] ~~~ tag @s add have救援平台
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ tag @a remove "get救援平台"
-#掉落虚空执行的操作
-#检测kill没有救援平台的玩家
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=!"have救援平台",x=-63,y=170,z=-63,dx=126,dy=4,dz=126] ~~~ detect ~ ~ ~ structure_void 0 kill @s
-#检测释放救援平台
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=127,dy=5,dz=127] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag=in_void] ~~~ fill ~2 175 ~2 ~-2 175 ~-2 slime 0 replace air
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag=in_void] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lAutomatic rescue platform >> §6§lAutomatic rescue platform activated!" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag=in_void] ~~~ tp @s ~ 176.4 ~
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag="have救援平台",tag=in_void] ~~~ tag @s remove "have救援平台"
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=in_void] ~~~ tag @s remove in_void
+#给掉入虚空的玩家添加kill tag
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
+#删除掉入虚空的玩家
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
 #增加游戏时间
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ scoreboard players add @s game.time.sec.1 1
 execute @e[type=armor_stand,scores={gameSTART=1,game.time.sec.1=10..}] ~~~ scoreboard players add @s game.time.sec.2 1

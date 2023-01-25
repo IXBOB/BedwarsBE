@@ -9,7 +9,7 @@ scoreboard players set @e[type=armor_stand,name=main] coin_get_kill 10
 #检测获取经验
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "等级经验" += @e[type=armor_stand,name=main] xp_get_game
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "当局经验" += @e[type=armor_stand,name=main] xp_get_game
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ tellraw @s {"rawtext":[{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={language=1}]"},{"text":"§3经验 +"},{"text":"§3Xp +"}]}},{"score":{"name":"@s","objective":"xp_get_game"}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[scores={language=1}]"},{"text":" (在线奖励)"},{"text":" (Time played)"}]}}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tellraw @a[tag=get.xp.game,x=0,y=200,z=0,c=1] {"rawtext":[{"text":"§3Xp +"},{"score":{"name":"@s","objective":"xp_get_game"}},{"text":" (Time played)"}]}
 execute @a[tag=get.xp.game,x=0,y=200,z=0,c=1] ~~~ tag @s remove get.xp.game
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.kill,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "等级经验" += @e[type=armor_stand,name=main] xp_get_kill
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[tag=get.xp.kill,x=0,y=200,z=0,c=1] ~~~ scoreboard players operation @s "当局经验" += @e[type=armor_stand,name=main] xp_get_kill

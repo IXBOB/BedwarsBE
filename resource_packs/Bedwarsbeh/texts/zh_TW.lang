@@ -1,4 +1,10 @@
-﻿item.gold_ingot.name=Gold Ingot
+﻿entity.snowball.name=火彈	#
+item.snowball.name=火彈	#
+tile.bedwars:tnt2_block.name=炸藥	#
+tile.bedwars:red_wool.name=紅色羊毛	#
+tile.bedwars:blue_wool.name=藍色羊毛	#
+
+item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot
 item.diamond.name=Diamond
 item.emerald.name=Emerald

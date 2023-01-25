@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:block_mark",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "bedwars:remove_mark":{
+                "minecraft:instant_despawn":{}
+              }
+        },
+        "events":{
+            "bedwars:mark_spawned":{
+                "run_command":{
+                    "command":[
+                        "tag @e[type=bedwars:block_mark,x=-63,y=96,z=-63,dx=127,dy=76,dz=127] add remove_block",
+                        "execute @s[tag=remove_block] ~~~ setblock ~~~ air",
+                        "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
+                        "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
+                        "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
+                        "event entity @s bedwars:remove_mark"
+                    ],
+					"target": "self"
+                }
+            },
+        "bedwars:remove_mark":{
+          "add": {
+            "component_groups": [ "bedwars:remove_mark" ]
+                }
+            }
+        }
+    }
+}
