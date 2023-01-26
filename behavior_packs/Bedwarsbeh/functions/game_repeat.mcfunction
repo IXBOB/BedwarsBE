@@ -50,20 +50,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamemode 2 @a[tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ gamemode 2 @a[tag=!insider]
-#删除物品栏多余/禁止物品
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a crafting_table
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a stick
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a wooden_button
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a wooden_pressure_plate
-#检测出生点放置方块并删除
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill -5 185 52 5 188 58 air 0 replace wool
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill 5 185 -52 -5 188 -58 air 0 replace wool
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill 5 185 -52 -5 188 -58 air 0 replace wool
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill 5 185 -52 -5 188 -58 air 0 replace stained_glass
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill -5 185 52 5 188 58 air 0 replace end_stone
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill 5 185 -52 -5 188 -58 air 0 replace end_stone
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill -5 185 52 5 188 58 air 0 replace planks
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20},name=main] ~~~ fill 5 185 -52 -5 188 -58 air 0 replace planks
 #删除出界的箭
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=arrow] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #删除出界的末影珍珠
