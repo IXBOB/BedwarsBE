@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:diamond_axe",
+			// Notice we give it the equipment category
+			"category": "equipment"
+		},
+		"components": {
+			// This allows us to have the sword in the creative category of swords
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.axe"
+			},
+			"minecraft:max_stack_size": 1,
+			// This is a new change as we want it to be equippable in the hand
+			"minecraft:hand_equipped": true,
+			"minecraft:durability": {
+				"max_durability": 99999
+			},
+			// Give it however much damage you want
+			"minecraft:damage": 2,
+			// We also let it be enchantable in the "sword" slot
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "axe"
+			},
+			// This texture is used for both inventory and the hand model
+			"minecraft:icon": {
+				"texture": "diamond_axe"
+			},
+			"minecraft:display_name": {
+				"value": "Diamond Axe"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "query.any_tag('bedwars:player_planks')"
+						},
+						"speed": 24
+					}
+				]
+			}
+		}
+	}
+}

@@ -330,26 +330,59 @@
 		},
 	"sound": "sand"
 	},
-	"bedwars:red_wool": {
+	"bedwars:player_red_wool": {
 	"textures": {
-		"up": "red_wool",
-		"down": "red_wool",
-		"north": "red_wool",
-		"south": "red_wool",
-		"west": "red_wool",
-		"east": "red_wool"
+		"up": "player_red_wool",
+		"down": "player_red_wool",
+		"north": "player_red_wool",
+		"south": "player_red_wool",
+		"west": "player_red_wool",
+		"east": "player_red_wool"
 		},
 	"sound": "cloth"
 	},
-	"bedwars:blue_wool": {
+	"bedwars:player_blue_wool": {
 	"textures": {
-		"up": "blue_wool",
-		"down": "blue_wool",
-		"north": "blue_wool",
-		"south": "blue_wool",
-		"west": "blue_wool",
-		"east": "blue_wool"
+		"up": "player_blue_wool",
+		"down": "player_blue_wool",
+		"north": "player_blue_wool",
+		"south": "player_blue_wool",
+		"west": "player_blue_wool",
+		"east": "player_blue_wool"
 		},
 	"sound": "cloth"
+	},
+	"bedwars:player_planks": {
+	"textures": {
+		"up": "player_planks",
+		"down": "player_planks",
+		"north": "player_planks",
+		"south": "player_planks",
+		"west": "player_planks",
+		"east": "player_planks"
+		},
+	"sound": "stone"
+	},
+	"bedwars:player_end_stone": {
+	"textures": {
+		"up": "player_end_stone",
+		"down": "player_end_stone",
+		"north": "player_end_stone",
+		"south": "player_end_stone",
+		"west": "player_end_stone",
+		"east": "player_end_stone"
+		},
+	"sound": "stone"
+	},
+	"bedwars:player_obsidian": {
+	"textures": {
+		"up": "player_obsidian",
+		"down": "player_obsidian",
+		"north": "player_obsidian",
+		"south": "player_obsidian",
+		"west": "player_obsidian",
+		"east": "player_obsidian"
+		},
+	"sound": "stone"
 	}
 }

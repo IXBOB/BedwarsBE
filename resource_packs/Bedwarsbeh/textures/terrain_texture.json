@@ -514,11 +514,20 @@
 		"map_sand": {
 			"textures": "textures/blocks/map_sand"
 		},
-		"red_wool": {
-			"textures": "textures/blocks/red_wool"
+		"player_red_wool": {
+			"textures": "textures/blocks/player_red_wool"
 		},
-		"blue_wool": {
-			"textures": "textures/blocks/blue_wool"
+		"player_blue_wool": {
+			"textures": "textures/blocks/player_blue_wool"
+		},
+		"player_planks": {
+			"textures": "textures/blocks/player_planks"
+		},
+		"player_end_stone": {
+			"textures": "textures/blocks/player_end_stone"
+		},
+		"player_obsidian": {
+			"textures": "textures/blocks/player_obsidian"
 		}
 	}
 }

@@ -61,6 +61,33 @@
       },
       "barrier": {
         "textures": "textures/items/barrier"
+      },
+      "wooden_pickaxe": {
+        "textures": "textures/items/wooden_pickaxe"
+      },
+      "stone_pickaxe": {
+        "textures": "textures/items/stone_pickaxe"
+      },
+      "iron_pickaxe": {
+        "textures": "textures/items/iron_pickaxe"
+      },
+      "diamond_pickaxe": {
+        "textures": "textures/items/diamond_pickaxe"
+      },
+      "wooden_axe": {
+        "textures": "textures/items/wooden_axe"
+      },
+      "stone_axe": {
+        "textures": "textures/items/stone_axe"
+      },
+      "iron_axe": {
+        "textures": "textures/items/iron_axe"
+      },
+      "diamond_axe": {
+        "textures": "textures/items/diamond_axe"
+      },
+      "shears": {
+        "textures": "textures/items/shears"
       }
     }
   }

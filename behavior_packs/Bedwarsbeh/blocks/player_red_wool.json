@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:player_red_wool"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:on_placed": {
+				"event": "bedwars:spawn_block_mark"
+			},
+			"tag:bedwars:player_red_wool": {}
+		},
+		"events": {
+			"bedwars:spawn_block_mark": {
+				"run_command": {
+					"command": [
+						"summon bedwars:block_mark ~ ~ ~",
+						"event entity @e[type=bedwars:block_mark] bedwars:mark_spawned"
+					],
+					"target": "self"
+				}
+			}
+		}
+	}
+}

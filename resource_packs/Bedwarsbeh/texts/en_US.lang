@@ -1,8 +1,8 @@
 entity.snowball.name=fireball
 item.snowball.name=fireball
 tile.bedwars:tnt2_block.name=TNT
-tile.bedwars:red_wool.name=red wool
-tile.bedwars:blue_wool.name=blue wool
+tile.bedwars:player_red_wool.name=red wool
+tile.bedwars:player_blue_wool.name=blue wool
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot

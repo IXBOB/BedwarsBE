@@ -151,6 +151,8 @@ execute @a[tag=!registered] ~~~ function player_register
 #复制计分板数值给玩家
 #无敌时间
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function gameSTART1_functions
+#复制gameSTART给玩家
+scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameSTART
 
 #抬头相关功能================
 #观战玩家抬头返回
