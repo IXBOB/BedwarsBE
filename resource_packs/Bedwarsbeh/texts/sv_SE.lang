@@ -1,8 +1,13 @@
-﻿entity.snowball.name=fireball
-item.snowball.name=fireball
+﻿entity.snowball.name=Fireball
+item.snowball.name=Fireball
 tile.bedwars:tnt2_block.name=TNT
-tile.bedwars:player_red_wool.name=red wool
-tile.bedwars:player_blue_wool.name=blue wool
+tile.bedwars:player_red_wool.name=Red Wool
+tile.bedwars:player_blue_wool.name=Blue Wool
+tile.bedwars:player_planks.name=Oak Plank
+tile.bedwars:player_end_stone.name=End Stone
+tile.bedwars:player_obsidian.name=Obsidian
+tile.bedwars:red_fangyuta.name=Compact Pop-up Tower
+tile.bedwars:blue_fangyuta.name=Compact Pop-up Tower
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot

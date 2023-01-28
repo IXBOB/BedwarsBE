@@ -115,7 +115,7 @@
         ]
       },
       "minecraft:on_death": {
-        "event": "bedwars:set_self_fatal_damage_uid-and-detect_in_void_kill",
+        "event": "bedwars:set_self_fatal_damage_uid-and-detect_in_void_kill-and-respawn",
         "target": "self"
       },
       "minecraft:experience_reward": {
@@ -282,14 +282,24 @@
           ]
         }
       },
-      "bedwars:set_self_fatal_damage_uid-and-detect_in_void_kill": {
+      "bedwars:set_self_fatal_damage_uid-and-detect_in_void_kill-and-respawn": {
         "run_command": {
           "command": [
             "tag @s add set_self_fatal_damage_uid",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
             "tag @s remove set_self_fatal_damage_uid",
             "execute @s[tag=in_void_kill,scores={分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§c\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
-            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}"
+            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
+            //respawn
+            "tag @s add change_mode_cache",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode spectator @a[tag=change_mode_cache]",
+            "tag @a remove change_mode_cache",
+            "tag @s[scores={able_to_respawn=1}] add cache_tag",
+            "scoreboard players set @s respawning 0",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=cache_tag] respawning 1",
+            "tag @s remove cache_tag",
+            "function respawn/respawn_degrade",
+            "function respawn/respawn_replaceitem"
           ]
         }
       },

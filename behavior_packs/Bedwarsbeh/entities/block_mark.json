@@ -12,11 +12,35 @@
                 "minecraft:instant_despawn":{}
               }
         },
+        "components":{
+              "minecraft:custom_hit_test": { 
+				"hitboxes": [
+					{
+						"pivot": [0, 100, 0],
+						"width": 0,
+						"height": 0
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:collision_box": {
+				"width": 0.0001,
+				"height": 0.0001
+			}
+        },
         "events":{
             "bedwars:mark_spawned":{
                 "run_command":{
                     "command":[
-                        "tag @e[type=bedwars:block_mark,x=-63,y=96,z=-63,dx=127,dy=76,dz=127] add remove_block",
+                        "tag @e[type=bedwars:block_mark,x=-63,y=92,z=-63,dx=127,dy=81,dz=127] add remove_block",
                         "tag @e[type=bedwars:block_mark,x=-5,y=185,z=52,dx=10,dy=3,dz=6] add remove_block",
                         "tag @e[type=bedwars:block_mark,x=-5,y=185,z=-58,dx=10,dy=3,dz=6] add remove_block",
                         "execute @s[tag=remove_block] ~~~ setblock ~~~ air",

@@ -16,7 +16,7 @@ execute @s ~~~ detect ~-1 0 ~1 deny 0 scoreboard players set @s "可生成路" 0
 execute @s ~~~ detect ~-1 0 ~ deny 0 scoreboard players set @s "可生成路" 0
 execute @s ~~~ detect ~-1 0 ~-1 deny 0 scoreboard players set @s "可生成路" 0
 execute @s ~~~ detect ~ ~ ~ structure_void 0 scoreboard players set @s "可生成路" 0
-execute @s[scores={egg_team=1,"可生成路"=1}] ~~~ fill ~0.3 ~-2 ~0.5 ~-0.4 ~-2 ~-0.4 wool 14 replace air
-execute @s[scores={egg_team=2,"可生成路"=1}] ~~~ fill ~0.3 ~-2 ~0.5 ~-0.4 ~-2 ~-0.4 wool 11 replace air
+execute @s[scores={egg_team=1,"可生成路"=1}] ~~~ fill ~0.3 ~-2 ~0.5 ~-0.4 ~-2 ~-0.4 bedwars:player_red_wool 0 replace air
+execute @s[scores={egg_team=2,"可生成路"=1}] ~~~ fill ~0.3 ~-2 ~0.5 ~-0.4 ~-2 ~-0.4 bedwars:player_blue_wool 0 replace air
 execute @s ~~~ playsound random.pop @a ~~~
 execute @s[scores={egg_time=..0}] ~~~ kill @s

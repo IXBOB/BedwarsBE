@@ -45,7 +45,7 @@ execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores={tnt_time=..-70}] ~~~ kill @s
 #TNT相关结束================
 #更改游戏模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1..2},tag=!insider]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=92,z=-63,dx=126,dy=112,dz=126,scores={"分队"=1..2},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamemode 2 @a[tag=!insider]
@@ -55,9 +55,9 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 #删除出界的末影珍珠
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl] ~~~ detect ~ 0 ~ deny 0 kill @s
 #红队队伍actionbar
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1},x=-63,y=174,z=-63,dx=126,dy=29,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lred\n§r§fteam member:  §c§l" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lred\n§r§fteam member:  §c§l" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #蓝队队伍actionbar
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=2},x=-63,y=174,z=-63,dx=126,dy=29,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §b§lblue\n§r§fteam member:  §b§l" },{ "selector" :  "@a[scores={分队=2,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=2},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §b§lblue\n§r§fteam member:  §b§l" },{ "selector" :  "@a[scores={分队=2,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #淘汰后玩家actionbar
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=90,rxm=-89] ~~~ detect ~ ~-1 ~ barrier 0 titleraw @s actionbar { "rawtext" : [{ "text" : "§f§l>> You are now a spectator <<" },{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{ "text" : "\n§r§c§lRed team remaining players: " },{"selector":"@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§b§lBlue team remaining players: " },{"selector":"@a[scores={分队=2,存活=1}]"},{ "text" : "\n§f>> Head up to go back to the lobby <<" } ] }
 #clear红队淘汰玩家
@@ -71,14 +71,19 @@ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @e[type=
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 #设置玩家重生时间 -> 5
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1..2}] "重生时间" 100
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1..2}] add set_respawn_time
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[scores={respawning=1}] remove set_respawn_time
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=set_respawn_time] "重生时间" 100
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a remove set_respawn
 #胜利烟花
 execute @e[type=armor_stand,scores={gameSTART=2,function_tick=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @e[type=armor_stand,scores={gameSTART=2,function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
-#红床存在spawnpoint
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=1}] -67 5 -67
-#蓝床存在spawnpoint
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=2}] -67 5 -67
+#红床存在设置able_to_respawn红并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
+#蓝床存在设置able_to_respawn蓝并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=2}] able_to_respawn 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
 #传送大厅有红分队玩家至相应基地
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,scores={"分队"=1,"存活"=1}] ~~~ tp @s 0 186 53
 #传送大厅有蓝分队玩家至相应基地
@@ -89,8 +94,6 @@ effect @a saturation 2 255 true
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126] ~~~ detect ~ ~-1 ~ barrier 0 effect @s weakness 2 255 true
 #观战区域玩家隐身
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126] ~~~ detect ~ ~-1 ~ barrier 0 effect @s invisibility 2 255 true
-#观战区域玩家删除背包
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126] ~~~ detect ~ ~-1 ~ barrier 0 clear @s
 #开始游戏后大厅玩家虚弱
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
 #开始游戏后大厅玩家抗性提升
@@ -109,10 +112,12 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard playe
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床有敌"=0,"蓝床存活"=1}] ~~~ clone 0 9 -46 0 9 -47 0 185 -47
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床有敌"=1,"蓝床存活"=1}] ~~~ function destroy_blue_bed
-#床被摧毁spawnpoint红
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 206 0
-#床被摧毁spawnpoint蓝
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 206 0
+#床被摧毁设置able_to_respawn红并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
+#床被摧毁设置able_to_respawn蓝并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
 #gameSTART为0时执行命令
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
 #gameSTART为2时执行命令
@@ -145,6 +150,7 @@ scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameS
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=90,rxm=-89] ~~~ detect ~ ~-1 ~ barrier 0 scoreboard players reset @s "抬头返回time"
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,scores={"分队"=1..2,"存活"=1}] ~~~ detect ~ ~-1 ~ barrier 0 scoreboard players reset @s "抬头返回time"
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90] ~~~ detect ~ ~-1 ~ barrier 0 scoreboard players add @s "抬头返回time" -1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90,scores={"抬头返回time"=..-130}] ~~~ gamemode adventure @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90,scores={"抬头返回time"=..-130}] ~~~ tp @s -200 200 -200 0 0
 #抬头返回title
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,rx=-89,rxm=-90,scores={"抬头返回time"=-30..-10}] ~~~ title @s actionbar §e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
@@ -164,7 +170,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] add team2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] remove team1
 #检测有人正在重生执行相关指令
-execute @e[type=player,x=-72,y=5,z=-67,r=20,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
+execute @e[type=player,scores={respawning=1}] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
 #此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
 #replaceitem红队皮革护甲
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.red.leather.armor
@@ -174,6 +180,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] 
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ clone 293 5 296 293 5 296 -200 200 -204
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
 #检测游戏开始时按钮被按下并重置按钮
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode @e[type=player,x=-200,y=201,z=-205,r=3,c=1] spectator
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
 #重置结束后后复制地图选择告示牌
@@ -233,7 +240,7 @@ execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
 #防止地图关键区域被破坏
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
 #游戏区域tag+degrade
-execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
+execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126,m=0] ~~~ tag @s add degrade
 #检测蓝队床情况#蓝队√-游戏显示
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set "§bBLUE §a✔" "游戏显示" -5
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players reset "§bBLUE §a✔" "游戏显示"

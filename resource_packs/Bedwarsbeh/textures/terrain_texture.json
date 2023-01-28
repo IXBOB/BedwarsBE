@@ -346,23 +346,23 @@
 		"buy_xp_bottle_block_west": {												//WEST
 			"textures": "textures/blocks/buy_xp_bottle_block"
 		},
-		"buy_jiuyuanpingtai_block_up": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_up"      //救援平台已删除，此处不再有效
+		"buy_fangyuta_block_up": {
+			"textures": "textures/blocks/shop_block/planks_big_oak_up"
 		},
-		"buy_jiuyuanpingtai_block_down": {
+		"buy_fangyuta_block_down": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
-		"buy_jiuyuanpingtai_block_north": {
+		"buy_fangyuta_block_north": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_north"
 		},
-		"buy_jiuyuanpingtai_block_east": {
-			"textures": "textures/blocks/buy_jiuyuanpingtai_block"
+		"buy_fangyuta_block_east": {
+			"textures": "textures/blocks/buy_fangyuta_block"
 		},
-		"buy_jiuyuanpingtai_block_south": {
+		"buy_fangyuta_block_south": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_south"
 		},
-		"buy_jiuyuanpingtai_block_west": {												//WEST
-			"textures": "textures/blocks/buy_jiuyuanpingtai_block"
+		"buy_fangyuta_block_west": {												//WEST
+			"textures": "textures/blocks/buy_fangyuta_block"
 		},
 		"buy_road_egg_block_up": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_up"
@@ -528,6 +528,12 @@
 		},
 		"player_obsidian": {
 			"textures": "textures/blocks/player_obsidian"
+		},
+		"player_fangyuta": {
+			"textures": "textures/blocks/player_fangyuta"
+		},
+		"map_prismarine_block": {
+			"textures": "textures/blocks/map_prismarine_block"
 		}
 	}
 }

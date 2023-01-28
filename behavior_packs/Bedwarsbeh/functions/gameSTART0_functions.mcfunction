@@ -18,13 +18,15 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0},tag=!sound
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,starting=0}] ~~~ scoreboard players set @s "开始倒计时" 20
 #gameSTART=0删除TNT
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ kill @e[type=tnt]
+#gameSTART=0删除僵尸猪人
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ kill @e[type=minecraft:zombie_pigman]
 #重置地图
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function reset_map
 #游戏未开始传送游戏区玩家到大厅
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=126,dy=40,dz=126] ~~~ effect @s clear
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=126,dy=40,dz=126] ~~~ xp -99999L @s
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=126,dy=40,dz=126] ~~~ tp @s -200 200 -200
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=171,z=-63,dx=127,dy=40,dz=127] ~~~ clear @s
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ effect @s clear
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ xp -99999L @s
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ tp @s -200 200 -200
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @a[x=-63,y=92,z=-63,dx=127,dy=112,dz=127] ~~~ clear @s
 #游戏未开始时删除僵尸猪人
 execute @e[type=armor_stand,scores={gameSTART=0},name=main] ~~~ execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #gamestart=0,复制告示牌游戏未开始

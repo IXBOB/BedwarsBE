@@ -220,14 +220,14 @@
 		},
 	"sound": "wood"
 	},
-	"bedwars:buy_jiuyuanpingtai_block": {  //救援平台已删除，此处不再有效
+	"bedwars:buy_fangyuta_block": {
 	"textures": {
-		"up": "buy_jiuyuanpingtai_block_up",
-		"down": "buy_jiuyuanpingtai_block_down",
-		"north": "buy_jiuyuanpingtai_block_north",
-		"south": "buy_jiuyuanpingtai_block_south",
-		"west": "buy_jiuyuanpingtai_block_west",
-		"east": "buy_jiuyuanpingtai_block_east"
+		"up": "buy_fangyuta_block_up",
+		"down": "buy_fangyuta_block_down",
+		"north": "buy_fangyuta_block_north",
+		"south": "buy_fangyuta_block_south",
+		"west": "buy_fangyuta_block_west",
+		"east": "buy_fangyuta_block_east"
 		},
 	"sound": "wood"
 	},
@@ -384,5 +384,60 @@
 		"east": "player_obsidian"
 		},
 	"sound": "stone"
+	},
+	"bedwars:red_fangyuta": {
+	"textures": {
+		"up": "player_fangyuta",
+		"down": "player_fangyuta",
+		"north": "player_fangyuta",
+		"south": "player_fangyuta",
+		"west": "player_fangyuta",
+		"east": "player_fangyuta"
+		},
+	"sound": "stone"
+	},
+	"bedwars:blue_fangyuta": {
+	"textures": {
+		"up": "player_fangyuta",
+		"down": "player_fangyuta",
+		"north": "player_fangyuta",
+		"south": "player_fangyuta",
+		"west": "player_fangyuta",
+		"east": "player_fangyuta"
+		},
+	"sound": "stone"
+	},
+	"bedwars:red_wool_particle": {
+	"textures": {
+		"up": "player_red_wool",
+		"down": "player_red_wool",
+		"north": "player_red_wool",
+		"south": "player_red_wool",
+		"west": "player_red_wool",
+		"east": "player_red_wool"
+		},
+	"sound": "cloth"
+	},
+	"bedwars:blue_wool_particle": {
+	"textures": {
+		"up": "player_blue_wool",
+		"down": "player_blue_wool",
+		"north": "player_blue_wool",
+		"south": "player_blue_wool",
+		"west": "player_blue_wool",
+		"east": "player_blue_wool"
+		},
+	"sound": "cloth"
+	},
+	"bedwars:map_prismarine_block": {
+		"textures":{
+			"up":"map_prismarine_block",
+			"down":"map_prismarine_block",
+			"north":"map_prismarine_block",
+			"south":"map_prismarine_block",
+			"west":"map_prismarine_block",
+			"east":"map_prismarine_block"
+		},
+		"sound": "stone"
 	}
 }

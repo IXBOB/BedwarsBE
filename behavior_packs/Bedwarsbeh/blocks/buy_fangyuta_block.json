@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:buy_fangyuta_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact":{
+				"event" : "bedwars:buy_fangyuta"
+			}
+		},
+		"events": {
+			"bedwars:buy_fangyuta": {
+				"run_command":{
+				  "command":[
+					"execute @s[scores={分队=1..2,gameSTART=1}] ~~~ function shop_buy/shop_buy_fangyuta"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}

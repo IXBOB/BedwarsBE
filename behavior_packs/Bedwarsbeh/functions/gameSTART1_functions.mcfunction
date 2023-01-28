@@ -17,10 +17,10 @@ scoreboard players operation @a game.time.sec.2 = @e[type=armor_stand,name=main,
 scoreboard players operation @a game.time.min.1 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.1
 scoreboard players operation @a game.time.min.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.2
 #无敌时间
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=1..},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=20..},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ effect @s instant_health 1 255 true
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lThe time of invincibility is over!" } ] }
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
+execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=1..},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
+execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=20..},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ effect @s instant_health 1 255 true
+execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lThe time of invincibility is over!" } ] }
+execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=92,z=-63,dx=126,dy=112,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
 #检测装备升级
 execute @e[type=player,scores={"分队"=1..2},tag=up_sword] ~~~ function weapon_upgrade
 execute @e[type=player,scores={"分队"=1..2},tag=up_pickaxe] ~~~ function weapon_upgrade
