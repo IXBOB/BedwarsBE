@@ -63,7 +63,7 @@ execute @e[type=armor_stand,name=reset,tag=reset_finish,scores={gameSTART=0}] ~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=7}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=14}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=20}] ~~~ scoreboard players add @s "重置百分数" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"text":"§eresetting map -  §l"},{ "score" : { "name" : "@s" , "objective" : "重置百分数"}},{"text":"% "}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"text":"§eresetting map - §l"},{ "score" : { "name" : "@s" , "objective" : "重置百分数"}},{"text":"% "}]}
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle §a§l - RESET COMPLETE -
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
