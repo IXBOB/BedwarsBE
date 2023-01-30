@@ -1,5 +1,5 @@
 {
- "minecraft:entity": {
+ "minecraft:entity": {  //Fireball
     "format_version": "1.2.0",
 
   "component_groups": {
@@ -64,7 +64,9 @@
     },
     "run_command":{
       "command" : [
-      "fill ~1 ~1 ~1 ~-1 ~-1 ~-1 air 0 replace wool"
+      "fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air 0 replace bedwars:player_red_wool",
+      "fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air 0 replace bedwars:player_blue_wool",
+      "fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air 0 replace bedwars:player_planks"
       ],
       "target" : "self"
     }

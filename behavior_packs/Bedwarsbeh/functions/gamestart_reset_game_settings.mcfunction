@@ -117,7 +117,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "raw
 #给予木剑
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 0 wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 1 shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #reset will_get_XP
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players reset * will_get_XP
 #R_iron_count_1 -> 0

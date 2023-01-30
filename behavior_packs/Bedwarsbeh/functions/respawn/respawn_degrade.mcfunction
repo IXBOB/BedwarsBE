@@ -41,6 +41,9 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[score
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2},tag=degrade] ~~~ tag @s remove degrade
 
+#转到function_replaceitem
+function respawn/respawn_replaceitem
+
 
 
 

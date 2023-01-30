@@ -10,19 +10,19 @@ execute @e[type=armor_stand,scores={gameSTART=1,"蓝锋利等级"=1},name=main] 
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝锋利等级"=2},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=2,"剑等级"=1}] ~~~ replaceitem entity @s slot.hotbar 0 bedwars:wooden_sword_sharpnessII 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝锋利等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=2,"剑等级"=1}] ~~~ replaceitem entity @s slot.hotbar 0 bedwars:wooden_sword_sharpnessIII 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem镐等级1
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=1}] ~~~ replaceitem entity @s slot.hotbar 1 wooden_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=1}] ~~~ replaceitem entity @s slot.hotbar 1 bedwars:wooden_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem镐等级2
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=2}] ~~~ replaceitem entity @s slot.hotbar 1 stone_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=2}] ~~~ replaceitem entity @s slot.hotbar 1 bedwars:stone_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem镐等级3
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=3}] ~~~ replaceitem entity @s slot.hotbar 1 iron_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"镐等级"=3}] ~~~ replaceitem entity @s slot.hotbar 1 bedwars:iron_pickaxe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem斧等级1
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=1}] ~~~ replaceitem entity @s slot.hotbar 2 wooden_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=1}] ~~~ replaceitem entity @s slot.hotbar 2 bedwars:wooden_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem斧等级2
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=2}] ~~~ replaceitem entity @s slot.hotbar 2 stone_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=2}] ~~~ replaceitem entity @s slot.hotbar 2 bedwars:stone_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem斧等级3
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=3}] ~~~ replaceitem entity @s slot.hotbar 2 iron_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2,"斧等级"=3}] ~~~ replaceitem entity @s slot.hotbar 2 bedwars:iron_axe 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem剪刀
-execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2}] ~~~ replaceitem entity @s slot.hotbar 3 shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..2}] ~~~ replaceitem entity @s slot.hotbar 3 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #replaceitem防具等1
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1}] ~~~ replaceitem entity @s slot.armor.head 0 bedwars:red_team_helmet 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1}] ~~~ replaceitem entity @s slot.armor.chest 0 bedwars:red_team_chestplate 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}

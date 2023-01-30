@@ -298,8 +298,7 @@
             "scoreboard players set @s respawning 0",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=cache_tag] respawning 1",
             "tag @s remove cache_tag",
-            "function respawn/respawn_degrade",
-            "function respawn/respawn_replaceitem"
+            "function respawn/respawn_degrade"
           ]
         }
       },
