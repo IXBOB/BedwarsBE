@@ -298,7 +298,7 @@
             "scoreboard players set @s respawning 0",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=cache_tag] respawning 1",
             "tag @s remove cache_tag",
-            "function respawn/respawn_degrade"
+            "event entity @s bedwars:respawn_command"
           ]
         }
       },
@@ -330,6 +330,13 @@
             "tag @a remove fatal_damage_died",
             "scoreboard players reset * fatal_damage_uid",
             "scoreboard players reset * damage_uid.cache"
+          ]
+        }
+      },
+      "bedwars:respawn_command":{
+        "run_command":{
+          "command": [
+            "function respawn/respawn_degrade"
           ]
         }
       }

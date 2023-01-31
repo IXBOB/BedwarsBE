@@ -14,8 +14,6 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ function se
 #打开启用命令方块
 gamerule commandblocksenabled true
 #gamerule相关结束================
-#TNT附近删除tnt2_block
-execute @e[type=tnt] ~~~ fill ~~-1~~~-1~ air 0 replace bedwars:tnt2_block
 #游戏开始初始化
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
 #游戏开始玩家头顶显示血量
@@ -38,12 +36,6 @@ execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=snowball] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #火焰弹相关结束================
-#TNT爆炸
-#tip:末影水晶爆炸逻辑在行为包中
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ scoreboard players add @e[type=tnt] tnt_time -1
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores={tnt_time=..-70}] ~~~ summon ender_crystal ~~~ minecraft:crystal_explode
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=tnt,scores={tnt_time=..-70}] ~~~ kill @s
-#TNT相关结束================
 #更改游戏模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=92,z=-63,dx=126,dy=112,dz=126,scores={"分队"=1..2},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
@@ -395,6 +387,10 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1},ta
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},tag=refresh_menu2] ~~~ function inventory_menu/refresh_menu/refresh_menu2
 #refresh_menu3
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},tag=refresh_menu3] ~~~ function inventory_menu/refresh_menu/refresh_menu3
+
+#非tag op玩家进入管理员菜单自动返回
+execute @a[tag=!insider,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
+
 #粒子显示
 execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~

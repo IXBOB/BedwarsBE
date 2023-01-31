@@ -1,12 +1,12 @@
 {
   "format_version": "1.17.30",
     "animation_controllers": {
-      "controller.animation.command.fangyuta_timer": {
+      "controller.animation.command.tnt_explode": {
         "initial_state": "run_timer",
         "states": {
           "run_timer": {
             "animations": [
-              "fangyuta_animation"
+              "tnt_explode"
            ]
          }
         }

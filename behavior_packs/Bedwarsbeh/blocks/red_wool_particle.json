@@ -15,7 +15,7 @@
 			"bedwars:set_and_block": {
 				"run_command": {
 					"command": [
-						"playsound dig.stone @a[r=5] ~ ~ ~",
+						"playsound dig.stone @a[r=15] ~ ~ ~",
 						"particle minecraft:large_explosion ~ ~ ~",
 						"setblock ~ ~ ~ bedwars:player_red_wool"
 					],

@@ -14,7 +14,8 @@
 			"bedwars:place_tnt": {
 				"run_command": {
 					"command": [
-						"summon tnt ~~~"
+						"summon tnt ~~~",
+						"setblock ~~~ air"
 					],
 					"target": "self"
 				}

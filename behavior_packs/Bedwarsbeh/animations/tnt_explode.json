@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.tnt_explode_timeline": {
+			"animation_length": 3.6,
+            "loop": false,
+			"timeline": {
+				"3.5": [
+					"/scoreboard players set @s forward_explode 1",
+					"/scoreboard players set @s behind_explode 1",
+					"/scoreboard players set @s left_explode 1",
+					"/scoreboard players set @s right_explode 1",
+					"/scoreboard players set @s up_explode 1",
+					"/scoreboard players set @s down_explode 1",
+					"/execute @s ~~~ detect ~ ~ ~1 bedwars:red_stained_glass2 0 scoreboard players set @s forward_explode 0",
+					"/execute @s ~~~ detect ~ ~ ~-1 bedwars:red_stained_glass2 0 scoreboard players set @s behind_explode 0",
+					"/execute @s ~~~ detect ~1 ~ ~ bedwars:red_stained_glass2 0 scoreboard players set @s left_explode 0",
+					"/execute @s ~~~ detect ~-1 ~ ~ bedwars:red_stained_glass2 0 scoreboard players set @s right_explode 0",
+					"/execute @s ~~~ detect ~ ~1 ~ bedwars:red_stained_glass2 0 scoreboard players set @s up_explode 0",
+					"/execute @s ~~~ detect ~ ~-1 ~ bedwars:red_stained_glass2 0 scoreboard players set @s down_explode 0",
+					"/execute @s ~~~ detect ~ ~ ~1 bedwars:blue_stained_glass2 0 scoreboard players set @s forward_explode 0",
+					"/execute @s ~~~ detect ~ ~ ~-1 bedwars:blue_stained_glass2 0 scoreboard players set @s behind_explode 0",
+					"/execute @s ~~~ detect ~1 ~ ~ bedwars:blue_stained_glass2 0 scoreboard players set @s left_explode 0",
+					"/execute @s ~~~ detect ~-1 ~ ~ bedwars:blue_stained_glass2 0 scoreboard players set @s right_explode 0",
+					"/execute @s ~~~ detect ~ ~1 ~ bedwars:blue_stained_glass2 0 scoreboard players set @s up_explode 0",
+					"/execute @s ~~~ detect ~ ~-1 ~ bedwars:blue_stained_glass2 0 scoreboard players set @s down_explode 0",
+					"/execute @s[scores={forward_explode=1}] ~~~ fill ~2 ~2 ~2 ~-2 ~-2 ~1 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={forward_explode=1}] ~~~ fill ~2 ~2 ~2 ~-2 ~-2 ~1 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={forward_explode=1}] ~~~ fill ~2 ~2 ~2 ~-2 ~-2 ~1 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={forward_explode=1}] ~~~ fill ~2 ~2 ~2 ~-2 ~-2 ~1 air 0 replace bedwars:player_planks",
+					"/execute @s[scores={behind_explode=1}] ~~~ fill ~2 ~2 ~-2 ~-2 ~-2 ~-1 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={behind_explode=1}] ~~~ fill ~2 ~2 ~-2 ~-2 ~-2 ~-1 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={behind_explode=1}] ~~~ fill ~2 ~2 ~-2 ~-2 ~-2 ~-1 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={behind_explode=1}] ~~~ fill ~2 ~2 ~-2 ~-2 ~-2 ~-1 air 0 replace bedwars:player_planks",
+					"/execute @s[scores={left_explode=1}] ~~~ fill ~2 ~2 ~-2 ~1 ~-2 ~2 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={left_explode=1}] ~~~ fill ~2 ~2 ~-2 ~1 ~-2 ~2 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={left_explode=1}] ~~~ fill ~2 ~2 ~-2 ~1 ~-2 ~2 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={left_explode=1}] ~~~ fill ~2 ~2 ~-2 ~1 ~-2 ~2 air 0 replace bedwars:player_planks",
+					"/execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~2 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~2 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~2 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~2 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_planks",
+					"/execute @s[scores={up_explode=1}] ~~~ fill ~2 ~1 ~-2 ~-2 ~2 ~2 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={up_explode=1}] ~~~ fill ~2 ~1 ~-2 ~-2 ~2 ~2 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={up_explode=1}] ~~~ fill ~2 ~1 ~-2 ~-2 ~2 ~2 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={up_explode=1}] ~~~ fill ~2 ~1 ~-2 ~-2 ~2 ~2 air 0 replace bedwars:player_planks",
+					"/execute @s[scores={down_explode=1}] ~~~ fill ~2 ~-1 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_red_wool",
+					"/execute @s[scores={down_explode=1}] ~~~ fill ~2 ~-1 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_blue_wool",
+					"/execute @s[scores={down_explode=1}] ~~~ fill ~2 ~-1 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_end_stone",
+					"/execute @s[scores={down_explode=1}] ~~~ fill ~2 ~-1 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_planks",
+					"/particle minecraft:knockback_roar_particle ~ ~ ~",
+					"/particle minecraft:knockback_roar_particle ~ ~ ~",
+					"/playsound random.explode @a[r=15]",
+					"/kill @s"
+				]
+			}
+		}
+	}
+}
