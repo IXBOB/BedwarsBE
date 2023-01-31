@@ -62,11 +62,6 @@ execute @e[type=armor_stand,scores={gameSTART=1..2},name=main] ~~~ execute @e[ty
 execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
-#设置玩家重生时间 -> 5
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1..2}] add set_respawn_time
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[scores={respawning=1}] remove set_respawn_time
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=set_respawn_time] "重生时间" 100
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a remove set_respawn
 #胜利烟花
 execute @e[type=armor_stand,scores={gameSTART=2,function_tick=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @e[type=armor_stand,scores={gameSTART=2,function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
