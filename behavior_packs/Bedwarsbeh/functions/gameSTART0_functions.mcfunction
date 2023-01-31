@@ -95,5 +95,7 @@ execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!rese
 #游戏未开始tag-team
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team1
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove team2
+#设置重生时间100
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a "重生时间" 100
 #检测有人正在重生执行相关指令
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tp @a[x=-72,y=6,z=-67,r=20] -200 200 -200
