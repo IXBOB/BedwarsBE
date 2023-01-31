@@ -28,9 +28,6 @@
 			"minecraft:icon": {
 				"texture": "stone_axe"
 			},
-			"minecraft:display_name": {
-				"value": "Stone Axe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

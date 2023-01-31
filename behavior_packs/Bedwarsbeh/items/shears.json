@@ -26,9 +26,6 @@
 			"minecraft:icon": {
 				"texture": "shears"
 			},
-			"minecraft:display_name": {
-				"value": "Shears"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

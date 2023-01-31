@@ -5,14 +5,14 @@
 			"identifier": "bedwars:blue_stained_glass2"
 		},
 		"components": {
+			"minecraft:destroy_time": 0.25,
 			"minecraft:block_light_absorption": 0,
 			"minecraft:material_instances": {
 				"*": {
 					"render_method": "blend",
 					"texture": "blue_stained_glass2"
 				}
-			},
-            "minecraft:explosion_resistance": 9999.0
+			}
 		}
 	}
 }

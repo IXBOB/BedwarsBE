@@ -10,6 +10,15 @@ tile.bedwars:red_fangyuta.name=紧凑型速建防御塔	#
 tile.bedwars:blue_fangyuta.name=紧凑型速建防御塔	#
 tile.bedwars:red_stained_glass2.name=红色染色玻璃	#
 tile.bedwars:blue_stained_glass2.name=蓝色染色玻璃	#
+item.bedwars:wooden_axe=木斧	#
+item.bedwars:wooden_pickaxe=木镐	#
+item.bedwars:stone_axe=石斧	#
+item.bedwars:stone_pickaxe=石镐	#
+item.bedwars:iron_axe=铁斧	#
+item.bedwars:iron_pickaxe=铁镐	#
+item.bedwars:diamond_axe=钻石斧	#
+item.bedwars:diamond_pickaxe=钻石镐	#
+item.bedwars:shears=剪刀	#
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot

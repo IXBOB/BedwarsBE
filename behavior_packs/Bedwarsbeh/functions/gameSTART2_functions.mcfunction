@@ -1,5 +1,3 @@
-#gameSTART=2删除TNT
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ kill @e[type=tnt]
 #游戏结算时传送屏障上红队至基地
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @a[scores={"分队"=1,respawning=1}] ~~~ detect ~ ~ ~ structure_void 0 tp @s 0 186 53 facing 0 182 0
 #游戏结算时传送屏障上蓝队至基地

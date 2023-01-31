@@ -28,9 +28,6 @@
 			"minecraft:icon": {
 				"texture": "wooden_axe"
 			},
-			"minecraft:display_name": {
-				"value": "Wooden Axe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

@@ -5,6 +5,13 @@
 			"animation_length": 3.6,
             "loop": false,
 			"timeline": {
+				"0.1":[  //删除原来的tnt2_block
+					"/fill ~ ~ ~ ~ ~-1 ~ air 0 replace bedwars:tnt2_block",
+					//gameSTART=2删除TNT
+					"/execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ kill @e[type=tnt]",
+					//gameSTART=0删除TNT
+					"/execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ kill @e[type=tnt]"
+				],
 				"3.5": [
 					"/scoreboard players set @s forward_explode 1",
 					"/scoreboard players set @s behind_explode 1",

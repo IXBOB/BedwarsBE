@@ -28,9 +28,6 @@
 			"minecraft:icon": {
 				"texture": "diamond_pickaxe"
 			},
-			"minecraft:display_name": {
-				"value": "Diamond Pickaxe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

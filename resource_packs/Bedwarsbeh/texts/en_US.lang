@@ -10,6 +10,15 @@ tile.bedwars:red_fangyuta.name=Compact Pop-up Tower
 tile.bedwars:blue_fangyuta.name=Compact Pop-up Tower
 tile.bedwars:red_stained_glass2.name=Red Stained Glass
 tile.bedwars:blue_stained_glass2.name=Blue Stained Glass
+item.bedwars:wooden_axe=Wooden Axe
+item.bedwars:wooden_pickaxe=Wooden Pickaxe
+item.bedwars:stone_axe=Stone Axe
+item.bedwars:stone_pickaxe=Stone Pickaxe
+item.bedwars:iron_axe=Iron Axe
+item.bedwars:iron_pickaxe=Iron Pickaxe
+item.bedwars:diamond_axe=Diamond Axe
+item.bedwars:diamond_pickaxe=Diamond Pickaxe
+item.bedwars:shears=Shears
 
 item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot

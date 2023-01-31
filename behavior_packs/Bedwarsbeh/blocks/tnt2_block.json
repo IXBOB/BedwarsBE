@@ -6,18 +6,17 @@
 		},
 		"components": {
 			"minecraft:destroy_time": 99999,
-			"minecraft:on_placed": {
+			"minecraft:on_player_placing": {
 				"event": "bedwars:place_tnt"
 			}
 		},
 		"events": {
 			"bedwars:place_tnt": {
 				"run_command": {
-					"command": [
-						"summon tnt ~~~",
-						"setblock ~~~ air"
+					"command":[
+						"summon tnt ~~~"
 					],
-					"target": "self"
+					"target": "block"
 				}
 			}
 		}

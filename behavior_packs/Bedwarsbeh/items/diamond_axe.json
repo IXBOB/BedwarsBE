@@ -28,9 +28,6 @@
 			"minecraft:icon": {
 				"texture": "diamond_axe"
 			},
-			"minecraft:display_name": {
-				"value": "Diamond Axe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [

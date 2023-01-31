@@ -28,9 +28,6 @@
 			"minecraft:icon": {
 				"texture": "wooden_pickaxe"
 			},
-			"minecraft:display_name": {
-				"value": "Wooden Pickaxe"
-			},
 			"minecraft:digger": {
 				"use_efficiency": true,
 				"destroy_speeds": [
