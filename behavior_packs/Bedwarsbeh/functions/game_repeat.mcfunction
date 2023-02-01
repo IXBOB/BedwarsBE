@@ -77,10 +77,6 @@ execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,scores={"分队"=2,"存活"=1}] ~~~ tp @s 0 186 -53
 #所有玩家饱和
 effect @a saturation 2 255 true
-#观战区域玩家虚弱
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126] ~~~ detect ~ ~-1 ~ barrier 0 effect @s weakness 2 255 true
-#观战区域玩家隐身
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126] ~~~ detect ~ ~-1 ~ barrier 0 effect @s invisibility 2 255 true
 #开始游戏后大厅玩家虚弱
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
 #开始游戏后大厅玩家抗性提升
@@ -138,6 +134,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=!spectator,scores={able_to_respawn=!0,"分队"=1..2,"存活"=1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=0},m=spectator] ~~~ scoreboard players add @s "抬头返回time" -1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ gamemode adventure @s
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ tag @s remove from_lobby_spectator
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ tp @s -200 200 -200 0 0
 #抬头返回title
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-30..-10,able_to_respawn=0}] ~~~ title @s actionbar §e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
@@ -166,9 +163,10 @@ execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] 
 #复制告示牌游戏已开始
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ clone 293 5 296 293 5 296 -200 200 -204
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
-#检测游戏开始时按钮被按下并重置按钮
+#检测游戏开始时按钮被按下并重置按钮(观战)
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tag @e[type=player,x=-200,y=201,z=-205,r=3,c=1] add from_lobby_spectator
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
 #重置结束后后复制地图选择告示牌
 #此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
