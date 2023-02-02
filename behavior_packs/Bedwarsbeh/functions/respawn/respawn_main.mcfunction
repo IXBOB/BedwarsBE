@@ -21,7 +21,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 #重生时删除in_void_kill
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=1..2,respawning=1}] ~~~ tag @s remove in_void_kill
 #设置游戏模式生存
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=..0,"分队"=1..2,respawning=1}] ~~~ gamemode survival
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=..0,"分队"=1..2,respawning=1,able_to_respawn=1}] ~~~ gamemode survival
 #设置无敌时间
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=..0,"分队"=1..2,respawning=1}] ~~~ scoreboard players set @s "无敌时间" 60
 #游戏结束传送复活中红队到基地
