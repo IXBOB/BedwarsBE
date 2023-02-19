@@ -1,3 +1,5 @@
+#设置title.times
+execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=1..20},tag=reset_OK,tag=sound20] ~~~ title @a times 0 40 0
 #倒计时title 20
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=20},tag=reset_OK,tag=sound20] ~~~ title @a title §e20
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=20},tag=reset_OK,tag=sound20] ~~~ playsound note.hat @a

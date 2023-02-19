@@ -393,4 +393,3 @@ execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[
 
 #开始倒计时-1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ title @a times 0 40 0

@@ -47,14 +47,13 @@
                         //蓝家
                         "tag @e[type=bedwars:block_mark,x=-5,y=183,z=-58,dx=10,dy=5,dz=6] add remove_block",
                         //顶部
-                        "tag @e[type=bedwars:block_mark,x=-5,y=206,z=-58,dx=10,dy=10,dz=6] add remove_block",
+                        "tag @e[type=bedwars:block_mark,x=-63,y=205,z=-63,dx=127,dy=10,dz=127] add remove_block",
                         //侧面
                         "tag @e[type=bedwars:block_mark,x=-68,y=90,z=-68,dx=5,dy=127,dz=5] add remove_block",
                         "tag @e[type=bedwars:block_mark,x=63,y=90,z=-68,dx=5,dy=127,dz=5] add remove_block",
                         "tag @e[type=bedwars:block_mark,x=-68,y=90,z=63,dx=5,dy=127,dz=5] add remove_block",
                         "tag @e[type=bedwars:block_mark,x=63,y=90,z=63,dx=5,dy=127,dz=5] add remove_block",
                         "execute @s[tag=remove_block] ~~~ setblock ~~~ air",
-                        "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
                         "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
                         "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~~~",
                         "event entity @s bedwars:remove_mark"
