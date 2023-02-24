@@ -288,8 +288,8 @@
             "tag @s add set_self_fatal_damage_uid",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
             "tag @s remove set_self_fatal_damage_uid",
-            "execute @s[tag=in_void_kill,scores={分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§c\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
-            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void.\" }]}",
+            "execute @s[tag=in_void_kill,scores={分队=1}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§c\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 被虚空吞噬了\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l 最终击杀！\" } ] } } ]}",
+            "execute @s[tag=in_void_kill,scores={分队=2}] ~~~ tellraw @a { \"rawtext\" : [{ \"text\" : \"§b\" },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 被虚空吞噬了\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l 最终击杀！\" } ] } } ]}",
             //respawn
             "tag @s add change_mode_cache",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode spectator @a[tag=change_mode_cache]",

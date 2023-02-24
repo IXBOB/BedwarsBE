@@ -1,2 +1,2 @@
-give @a[tag=give_arrow] arrow 8 0 {"minecraft:keep_on_death":{}} 
+give @a[tag=give_arrow] arrow 8  
 tag @a remove give_arrow
