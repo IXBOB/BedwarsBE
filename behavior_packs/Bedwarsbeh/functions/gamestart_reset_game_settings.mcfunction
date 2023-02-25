@@ -44,8 +44,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝床存活" 1
 #gameSTART -> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
-#删除掉线玩家
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ kill @a[scores={"存活"=0}]
 #重生时间 -> 5
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "重生时间" 5
 #XP清空

@@ -3,9 +3,9 @@ tellraw @a { "rawtext" : [ { "text" : "§l                  BED WARS       \n   
 execute @e[type=armor_stand,name=main] ~~~ tellraw @a { "rawtext" : [ { "text" : "Winner: §b" },{ "selector" :  "@a[scores={分队=2}]"},{ "text" : "\n\n§r§f                 Game time: §7" },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n "} ] }
 scoreboard players set @e[type=armor_stand,name=main] kill.highest 0
 scoreboard players reset * kill.cache
-tag @e remove kill.FIRST
-tag @e remove kill.SECOND
-tag @e remove kill.THIRD
+tag * remove kill.FIRST
+tag * remove kill.SECOND
+tag * remove kill.THIRD
 execute @a[scores={"分队"=1..2}] ~~~ scoreboard players operation @s kill.cache = @s 击杀数
 scoreboard players operation @e[type=armor_stand,name=main] kill.highest > @a[scores={"分队"=1..2}] 击杀数
 scoreboard players operation @a[scores={"分队"=1..2}] kill.cache -= @e[type=armor_stand,name=main] kill.highest

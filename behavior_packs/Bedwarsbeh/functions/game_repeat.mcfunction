@@ -383,7 +383,7 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=2},ta
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},tag=refresh_menu3] ~~~ function inventory_menu/refresh_menu/refresh_menu3
 
 #非tag op玩家进入管理员菜单自动返回
-execute @a[tag=!insider,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
+execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
 
 #粒子显示
 execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
