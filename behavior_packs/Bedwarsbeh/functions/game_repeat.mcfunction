@@ -37,7 +37,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #火焰弹相关结束================
 #更改游戏模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..2,respawning=0},tag=!insider]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..2,respawning=0,able_to_respawn=1},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamemode 2 @a[tag=!insider]
