@@ -361,7 +361,7 @@
 		"west": "player_planks",
 		"east": "player_planks"
 		},
-	"sound": "stone"
+	"sound": "wood"
 	},
 	"bedwars:player_end_stone": {
 	"textures": {
@@ -437,6 +437,252 @@
 			"south":"map_prismarine_block",
 			"west":"map_prismarine_block",
 			"east":"map_prismarine_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_blue_concrete_block": {
+		"textures":{
+			"up":"map_blue_concrete_block",
+			"down":"map_blue_concrete_block",
+			"north":"map_blue_concrete_block",
+			"south":"map_blue_concrete_block",
+			"west":"map_blue_concrete_block",
+			"east":"map_blue_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_blue_stained_glass_block": {
+		"textures":{
+		"up": "blue_stained_glass2_up",
+		"down": "blue_stained_glass2_down",
+		"north": "blue_stained_glass2_north",
+		"south": "blue_stained_glass2_south",
+		"west": "blue_stained_glass2_west",
+		"east": "blue_stained_glass2_east"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_bone_cross1_block": {
+		"textures":{
+			"up":"map_bone_block_side",
+			"down":"map_bone_block_side",
+			"north":"map_bone_block_top",
+			"south":"map_bone_block_top",
+			"west":"map_bone_block_side",
+			"east":"map_bone_block_side"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_bone_cross2_block": {
+		"textures":{
+			"up":"map_bone_block_side",
+			"down":"map_bone_block_side",
+			"north":"map_bone_block_side",
+			"south":"map_bone_block_side",
+			"west":"map_bone_block_top",
+			"east":"map_bone_block_top"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_bone_vertical_block": {
+		"textures":{
+			"up":"map_bone_block_top",
+			"down":"map_bone_block_top",
+			"north":"map_bone_block_side",
+			"south":"map_bone_block_side",
+			"west":"map_bone_block_side",
+			"east":"map_bone_block_side"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_cobbled_deepslate_block": {
+		"textures":{
+			"up":"map_cobbled_deepslate_block",
+			"down":"map_cobbled_deepslate_block",
+			"north":"map_cobbled_deepslate_block",
+			"south":"map_cobbled_deepslate_block",
+			"west":"map_cobbled_deepslate_block",
+			"east":"map_cobbled_deepslate_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_crying_obsidian_block": {
+		"textures":{
+			"up":"map_crying_obsidian_block",
+			"down":"map_crying_obsidian_block",
+			"north":"map_crying_obsidian_block",
+			"south":"map_crying_obsidian_block",
+			"west":"map_crying_obsidian_block",
+			"east":"map_crying_obsidian_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_cyan_concrete_block": {
+		"textures":{
+			"up":"map_cyan_concrete_block",
+			"down":"map_cyan_concrete_block",
+			"north":"map_cyan_concrete_block",
+			"south":"map_cyan_concrete_block",
+			"west":"map_cyan_concrete_block",
+			"east":"map_cyan_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_dark_prismarine_block": {
+		"textures":{
+			"up":"map_dark_prismarine_block",
+			"down":"map_dark_prismarine_block",
+			"north":"map_dark_prismarine_block",
+			"south":"map_dark_prismarine_block",
+			"west":"map_dark_prismarine_block",
+			"east":"map_dark_prismarine_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_dirt_block": {
+		"textures":{
+			"up":"map_dirt_block",
+			"down":"map_dirt_block",
+			"north":"map_dirt_block",
+			"south":"map_dirt_block",
+			"west":"map_dirt_block",
+			"east":"map_dirt_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_grass_block": {
+		"textures":{
+			"up":"map_grass_block_top",
+			"down":"map_grass_block_buttom",
+			"north":"map_grass_block_side",
+			"south":"map_grass_block_side",
+			"west":"map_grass_block_side",
+			"east":"map_grass_block_side"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_jungle_log_block": {
+		"textures":{
+			"up":"map_jungle_log_block_top",
+			"down":"map_jungle_log_block_top",
+			"north":"map_jungle_log_block_side",
+			"south":"map_jungle_log_block_side",
+			"west":"map_jungle_log_block_side",
+			"east":"map_jungle_log_block_side"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_light_blue_concrete_block": {
+		"textures":{
+			"up":"map_light_blue_concrete_block",
+			"down":"map_light_blue_concrete_block",
+			"north":"map_light_blue_concrete_block",
+			"south":"map_light_blue_concrete_block",
+			"west":"map_light_blue_concrete_block",
+			"east":"map_light_blue_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_light_blue_stained_glass_block": {
+		"textures":{
+			"up":"map_light_blue_stained_glass_block",
+			"down":"map_light_blue_stained_glass_block",
+			"north":"map_light_blue_stained_glass_block",
+			"south":"map_light_blue_stained_glass_block",
+			"west":"map_light_blue_stained_glass_block",
+			"east":"map_light_blue_stained_glass_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_obsidian_block": {
+		"textures":{
+			"up":"map_obsidian_block",
+			"down":"map_obsidian_block",
+			"north":"map_obsidian_block",
+			"south":"map_obsidian_block",
+			"west":"map_obsidian_block",
+			"east":"map_obsidian_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_prismarine_brick_block": {
+		"textures":{
+			"up":"map_prismarine_brick_block",
+			"down":"map_prismarine_brick_block",
+			"north":"map_prismarine_brick_block",
+			"south":"map_prismarine_brick_block",
+			"west":"map_prismarine_brick_block",
+			"east":"map_prismarine_brick_block"
+		},
+		"sound": "stone"
+	},	"bedwars:map_red_concrete_block": {
+		"textures":{
+			"up":"map_red_concrete_block",
+			"down":"map_red_concrete_block",
+			"north":"map_red_concrete_block",
+			"south":"map_red_concrete_block",
+			"west":"map_red_concrete_block",
+			"east":"map_red_concrete_block"
+		},
+		"sound": "stone"
+	},	"bedwars:map_red_sandstone_block": {
+		"textures":{
+			"up":"map_red_sandstone_block_top",
+			"down":"map_red_sandstone_block_top",
+			"north":"map_red_sandstone_block_side",
+			"south":"map_red_sandstone_block_side",
+			"west":"map_red_sandstone_block_side",
+			"east":"map_red_sandstone_block_side"
+		},
+		"sound": "stone"
+	},	"bedwars:map_sandstone_block": {
+		"textures":{
+			"up":"map_sandstone_block_top",
+			"down":"map_sandstone_block_top",
+			"north":"map_sandstone_block_side",
+			"south":"map_sandstone_block_side",
+			"west":"map_sandstone_block_side",
+			"east":"map_sandstone_block_side"
+		},
+		"sound": "stone"
+	},	"bedwars:map_sea_lantern_block": {
+		"textures":{
+			"up":"map_sea_lantern_block",
+			"down":"map_sea_lantern_block",
+			"north":"map_sea_lantern_block",
+			"south":"map_sea_lantern_block",
+			"west":"map_sea_lantern_block",
+			"east":"map_sea_lantern_block"
+		},
+		"sound": "stone"
+	},	"bedwars:map_stone_block": {
+		"textures":{
+			"up":"map_stone_block",
+			"down":"map_stone_block",
+			"north":"map_stone_block",
+			"south":"map_stone_block",
+			"west":"map_stone_block",
+			"east":"map_stone_block"
+		},
+		"sound": "stone"
+	},	"bedwars:map_white_concrete_block": {
+		"textures":{
+			"up":"map_white_concrete_block",
+			"down":"map_white_concrete_block",
+			"north":"map_white_concrete_block",
+			"south":"map_white_concrete_block",
+			"west":"map_white_concrete_block",
+			"east":"map_white_concrete_block"
+		},
+		"sound": "stone"
+	},	"bedwars:map_white_wool_block": {
+		"textures":{
+			"up":"map_white_wool_block",
+			"down":"map_white_wool_block",
+			"north":"map_white_wool_block",
+			"south":"map_white_wool_block",
+			"west":"map_white_wool_block",
+			"east":"map_white_wool_block"
 		},
 		"sound": "stone"
 	}

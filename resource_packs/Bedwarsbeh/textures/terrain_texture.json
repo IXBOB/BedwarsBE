@@ -534,6 +534,102 @@
 		},
 		"map_prismarine_block": {
 			"textures": "textures/blocks/map_prismarine_block"
+		},
+		"map_blue_concrete_block": {
+			"textures": "textures/blocks/map_blue_concrete_block"
+		},
+		"map_bone_block_top": {
+			"textures": "textures/blocks/map_bone_block/map_bone_block_top"
+		},
+		"map_bone_block_side": {
+			"textures": "textures/blocks/map_bone_block/map_bone_block_side"
+		},
+		"map_cobbled_deepslate_block": {
+			"textures": "textures/blocks/map_cobbled_deepslate_block"
+		},
+		"map_crying_obsidian_block": {
+			"textures": "textures/blocks/map_crying_obsidian_block"
+		},
+		"map_cyan_concrete_block": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
+		},
+		"map_dark_prismarine_block": {
+			"textures": "textures/blocks/map_dark_prismarine_block"
+		},
+		"map_dirt_block": {
+			"textures": "textures/blocks/map_dirt_block"
+		},
+		"map_grass_block_top": {
+			"textures": "textures/blocks/map_grass_block/map_grass_block_top"
+		},
+		"map_grass_block_side": {
+			"textures": "textures/blocks/map_grass_block/map_grass_block_side"
+		},
+		"map_grass_block_bottom": {
+			"textures": "textures/blocks/map_grass_block/map_grass_block_bottom"
+		},
+		"map_jungle_log_block_top": {
+			"textures": "textures/blocks/map_jungle_log_block/map_jungle_log_block_top"
+		},
+		"map_jungle_log_block_side": {
+			"textures": "textures/blocks/map_jungle_log_block/map_jungle_log_block_side"
+		},
+		"map_light_blue_concrete_block": {
+			"textures": "textures/blocks/map_light_blue_concrete_block"
+		},
+		"map_light_blue_stained_glass_block": {
+			"textures": "textures/blocks/map_light_blue_stained_glass_block"
+		},
+		"map_obsidian_block": {
+			"textures": "textures/blocks/map_obsidian_block"
+		},
+		"map_prismarine_brick_block": {
+			"textures": "textures/blocks/map_prismarine_brick_block"
+		},
+		"map_red_concrete_block": {
+			"textures": "textures/blocks/map_red_concrete_block"
+		},
+		"map_red_sandstone_block_top": {
+			"textures": "textures/blocks/map_red_sandstone_block/map_red_sandstone_block_top"
+		},
+		"map_red_sandstone_block_side": {
+			"textures": "textures/blocks/map_red_sandstone_block/map_red_sandstone_block_side"
+		},
+		"map_sandstone_block_top": {
+			"textures": "textures/blocks/map_sandstone_block/map_sandstone_block_top"
+		},
+		"map_sandstone_block_side": {
+			"textures": "textures/blocks/map_sandstone_block/map_sandstone_block_side"
+		},
+		"map_sea_lantern_block": {
+			"textures": "textures/blocks/map_sea_lantern_block"
+		},
+		"map_stone_block": {
+			"textures": "textures/blocks/map_stone_block"
+		},
+		"map_white_concrete_block": {
+			"textures": "textures/blocks/map_white_concrete_block"
+		},
+		"map_white_wool_block": {
+			"textures": "textures/blocks/map_white_wool_block"
 		}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 	}
 }

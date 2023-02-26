@@ -5,7 +5,7 @@
 			"identifier": "bedwars:player_planks"
 		},
 		"components": {
-			"minecraft:destroy_time": 4,
+			"minecraft:destroy_time": 3,
 			"minecraft:on_placed": {
 				"event": "bedwars:spawn_block_mark"
 			},

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:map_light_blue_stained_glass_block"
+		},
+
+		"components": {
+			"minecraft:destroy_time": 99999
+		},
+		"minecraft:material_instances": {
+			"*": {
+				"render_method": "blend",
+				"texture": "blue_stained_glass2"
+			}
+		}
+	}
+}
