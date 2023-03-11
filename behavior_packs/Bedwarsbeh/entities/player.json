@@ -58,7 +58,7 @@
     "components": {
       "minecraft:damage_sensor": {
         "triggers": [
-          {
+          {  //免疫队伍伤害
             "on_damage": {
               "filters": {
                 "any_of": [
@@ -110,6 +110,44 @@
               },
               "event": "bedwars:set_other_fatal_damage_uid",
               "target": "other"
+            }
+          },
+          {  //检测受到伤害的玩家
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "attack"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "bedwars:player_damaged",
+              "target": "self"
+            }
+          },
+          {  //检测伤害了玩家的玩家
+            "on_damage": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_damage",
+                    "value": "attack"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "bedwars:damaged_player_player",
+              "target": "self"
             }
           }
         ]
@@ -338,6 +376,20 @@
           "command": [
             "function respawn/respawn_degrade",
             "function respawn/respawn_degrade"
+          ]
+        }
+      },
+      "bedwars:player_damaged":{
+        "run_command":{
+          "command": [
+            "tag @s add player_damaged"
+          ]
+        }
+      },
+      "bedwars:damaged_player_player":{
+        "run_command":{
+          "command": [
+            "tag @s add damaged_player_player"
           ]
         }
       }

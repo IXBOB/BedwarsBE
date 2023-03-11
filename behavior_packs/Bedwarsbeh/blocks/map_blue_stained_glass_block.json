@@ -11,7 +11,7 @@
 		"minecraft:material_instances": {
 			"*": {
 				"render_method": "blend",
-				"texture": "blue_stained_glass2"
+				"texture": "player_blue_stained_glass"
 			}
 		}
 	}
