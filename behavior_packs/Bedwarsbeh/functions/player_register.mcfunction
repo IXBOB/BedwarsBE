@@ -13,6 +13,7 @@ scoreboard players set @a[tag=!registered] health 20
 scoreboard players set @a[tag=!registered] able_to_respawn 0
 tag @a[tag=!registered] add change_to_menu1
 scoreboard players set @a[tag=!registered] select_particle 0
+scoreboard players set @a[tag=!registered] respawning 0
 scoreboard players random @a[tag=!registered] uid 0 999999999
 gamemode 2 @a[tag=!registered]
 tag @a[tag=!registered] add registered

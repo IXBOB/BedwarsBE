@@ -38,6 +38,8 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a title §a§lGAME START
 #倒计时0 subtitle
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{"text":"§o§lRUSH MODE"},{"text":"§r§f§lNORMAL MODE"}]}} ] }
+#设置respawning
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set * respawning 0
 #红床存活 -> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红床存活" 1
 #蓝床存活 -> 1
