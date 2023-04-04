@@ -612,6 +612,12 @@
 		},
 		"map_white_wool_block": {
 			"textures": "textures/blocks/map_white_wool_block"
+		},
+		"red_bed_foot": {
+			"textures": "textures/blocks/red_bed_foot"
+		},
+		"red_bed_head": {
+			"textures": "textures/blocks/red_bed_head"
 		}
 		
 

@@ -685,5 +685,11 @@
 			"east":"map_white_wool_block"
 		},
 		"sound": "stone"
+	},	"bedwars:red_bed_foot": {
+		"textures": "red_bed_foot",
+		"sound": "stone"
+	},	"bedwars:red_bed_head": {
+		"textures": "red_bed_head",
+		"sound": "stone"
 	}
 }

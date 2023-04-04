@@ -1,0 +1,41 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:red_bed_head"
+		},
+        "components": {
+            "minecraft:material_instances": {
+              "*": {
+                "texture": "red_bed_head",
+                "render_method": "alpha_test"
+              }
+            },
+            "minecraft:pick_collision": {
+                "origin": [ -8, 0, -8 ],
+                "size": [ 16, 9, 16 ]
+            },
+            "minecraft:entity_collision": {
+              "size": [
+                16,
+                8,
+                16
+              ],
+              "origin": [
+                -8,
+                0,
+                -8
+              ]
+            },
+            "minecraft:geometry": "geometry.red_bed_head",
+            "minecraft:destroy_time": 1.0,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#00ff00",
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0
+        }
+	}
+}
