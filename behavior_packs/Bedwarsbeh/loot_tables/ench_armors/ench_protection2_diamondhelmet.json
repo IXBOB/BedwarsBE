@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "bedwars:diamond_helmet",
+          "name": "minecraft:diamond_helmet",
           "functions": [
             {
               "function": "specific_enchants",

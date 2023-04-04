@@ -374,7 +374,7 @@
       "bedwars:respawn_command":{
         "run_command":{
           "command": [
-            "function respawn/respawn_degrade",
+            "tag @s add run_respawn_command",
             "function respawn/respawn_degrade"
           ]
         }

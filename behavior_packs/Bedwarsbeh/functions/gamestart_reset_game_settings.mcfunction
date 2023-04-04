@@ -46,8 +46,8 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝床存活" 1
 #gameSTART -> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
-#重生时间 -> 5
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "重生时间" 5
+#重生时间 -> 100
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "重生时间" 100
 #XP清空
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ xp -99999L @a
 #剑等级 -> 1

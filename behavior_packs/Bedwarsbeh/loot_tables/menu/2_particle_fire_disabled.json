@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:fire_charge",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": "§r§6§l火焰\n§c[需要达到 起床战争等级 10]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

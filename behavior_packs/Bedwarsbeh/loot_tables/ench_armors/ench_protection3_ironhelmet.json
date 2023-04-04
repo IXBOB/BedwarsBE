@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "bedwars:iron_helmet",
+          "name": "minecraft:iron_helmet",
           "functions": [
             {
               "function": "specific_enchants",

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:seeds_wheat",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": "§r当前开始游戏需要的最小玩家数: §a8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

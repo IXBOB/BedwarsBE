@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "set_name",
+              "name": "§r§c已经达到下限，\n无法再减少需要的玩家数"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
