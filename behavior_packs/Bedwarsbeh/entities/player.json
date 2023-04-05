@@ -439,7 +439,7 @@
       "bedwars:test_event_blue":{
         "run_command":{
           "command": [
-            "execute @s[scores={\"分队\"=2,\"存活\"=2}] ~~~ tellraw @s { \"rawtext\" : [{ \"text\" : \"§f§lBED WARS >> §r§cYou can not destroy your own bed!\" }]}",
+            "execute @s[scores={\"分队\"=2,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{ \"text\" : \"§f§lBED WARS >> §r§cYou can not destroy your own bed!\" }]}",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"蓝床有敌\"=0,\"蓝床存活\"=1}] ~~~ setblock 0 185 -46 bedwars:blue_bed_head",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"蓝床有敌\"=0,\"蓝床存活\"=1}] ~~~ setblock 0 185 -47 bedwars:blue_bed_foot",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"蓝床有敌\"=1,\"蓝床存活\"=1}] ~~~ setblock 0 185 -46 air 0 destroy",
