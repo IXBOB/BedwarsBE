@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.red_bed_head",
+				"identifier": "geometry.blue_bed_head",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 4,
@@ -27,8 +27,6 @@
 						{
 							"origin": [-8, 3, -8],
 							"size": [16, 6, 16],
-							"pivot": [0, 0, 0],
-							"rotation": [-180, 0, 180],
 							"uv": {
 								"east": {"uv": [32, 14], "uv_size": [-32, 12]},
 								"south": {"uv": [0, 0], "uv_size": [0, 0]},
@@ -39,8 +37,6 @@
 						{
 							"origin": [5, 0, 5],
 							"size": [3, 3, 3],
-							"pivot": [0, 0, 0],
-							"rotation": [-180, 0, 180],
 							"uv": {
 								"north": {"uv": [32, 34], "uv_size": [6, 6]},
 								"east": {"uv": [52, 52], "uv_size": [12, 12]},
@@ -52,8 +48,6 @@
 						{
 							"origin": [-8, 0, 5],
 							"size": [3, 3, 3],
-							"pivot": [0, 0, 0],
-							"rotation": [-180, 0, 180],
 							"uv": {
 								"north": {"uv": [32, 26], "uv_size": [6, 6]},
 								"east": {"uv": [26, 26], "uv_size": [6, 6]},
@@ -66,7 +60,7 @@
 							"origin": [-8, 9, -8],
 							"size": [16, 0, 16],
 							"pivot": [0, 0, 0],
-							"rotation": [0, -90, 0],
+							"rotation": [0, 90, 0],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [16, 0]},
 								"east": {"uv": [0, 0], "uv_size": [16, 0]},
@@ -78,8 +72,6 @@
 						{
 							"origin": [-8, 3, 8],
 							"size": [16, 6, 0],
-							"pivot": [0, 0, 0],
-							"rotation": [-180, 0, 180],
 							"uv": {
 								"east": {"uv": [60, 16], "uv_size": [4, 48]},
 								"south": {"uv": [30, 14], "uv_size": [34, 12]},
@@ -91,8 +83,6 @@
 						{
 							"origin": [-8, 3, -8],
 							"size": [16, 0, 16],
-							"pivot": [0, 0, 0],
-							"rotation": [-180, 0, 180],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [64, 64]},
 								"east": {"uv": [0, 0], "uv_size": [13, 0]},

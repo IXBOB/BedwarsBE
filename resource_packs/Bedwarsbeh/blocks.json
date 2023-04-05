@@ -691,5 +691,11 @@
 	},	"bedwars:red_bed_head": {
 		"textures": "red_bed_head",
 		"sound": "stone"
+	},	"bedwars:blue_bed_foot": {
+		"textures": "blue_bed_foot",
+		"sound": "stone"
+	},	"bedwars:blue_bed_head": {
+		"textures": "blue_bed_head",
+		"sound": "stone"
 	}
 }

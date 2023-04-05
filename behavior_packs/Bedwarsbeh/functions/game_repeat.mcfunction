@@ -45,8 +45,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ gamemode 2 @a[ta
 #删除出界的箭
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=arrow] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #删除出界的末影珍珠
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] ~~~ kill @s
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl] ~~~ detect ~ 0 ~ deny 0 kill @s
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] ~~~ kill @s
 #红队队伍actionbar
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lred\n§r§fteam member:  §c§l" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #蓝队队伍actionbar
@@ -83,19 +83,15 @@ execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,
 #开始游戏后大厅玩家抗性提升
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] resistance 2 255 true
 #游戏开始后还原被破坏的红队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 58 air 0 clone 288 7 260 288 7 260 0 185 58
+execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 58 air 0 structure load bedwars:red_team_chest 0 185 58
 #游戏开始后还原被破坏的蓝队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 clone 288 7 259 288 7 259 0 185 -58
+execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:red_team_chest 0 185 -58
 #<红> 检测有敌人可以破坏床
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "红床有敌" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=2},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床有敌"=0,"红床存活"=1}] ~~~ clone 0 9 47 0 9 46 0 185 46
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床有敌"=1,"红床存活"=1}] ~~~ function destroy_red_bed
 #<蓝> 检测有敌人可以破坏床
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床有敌"=0,"蓝床存活"=1}] ~~~ clone 0 9 -46 0 9 -47 0 185 -47
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床有敌"=1,"蓝床存活"=1}] ~~~ function destroy_blue_bed
 #床被摧毁设置able_to_respawn红并设置重生点
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0

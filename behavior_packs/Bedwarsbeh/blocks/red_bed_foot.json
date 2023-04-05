@@ -28,7 +28,7 @@
               ]
             },
             "minecraft:geometry": "geometry.red_bed_foot",
-            "minecraft:destroy_time": 1.0,
+            "minecraft:destroy_time": 0.3,
             "minecraft:friction": 0.6,
             "minecraft:map_color": "#00ff00",
             "minecraft:flammable": {
