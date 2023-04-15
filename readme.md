@@ -1,5 +1,10 @@
-# bedwarsBE
-<br/>这是一个用于实时更新bedwarsBE的仓库。
-<br/>This is a repository for live updates of bedwarsBE.
-<br/></n>支持的MinecraftBE版本: 1.19.71
-<br/>Surpport Minecraft BE Version: 1.19.71
+#BedwarsBE
+Minecraft Bedrock Edition BedWar, created by IXBOB
+</br> Applicable version: 1.18.73
+</br>
+</br>Using the MIT open source license
+</br>International version github: https://github.com/IXBOB/BedwarsBE
+</br>China version github: https://github.com/IXBOB/BedwarsBE_CN
+</br>Change log: https://ixbob.github.io/changelog/map1.html
+</br>
+</br>Discord: https://discord.gg/NFdcTX3NPz
