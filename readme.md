@@ -1,5 +1,5 @@
 #BedwarsBE
-Minecraft Bedrock Edition BedWar, created by IXBOB
+</br>Minecraft Bedrock Edition BedWar, created by IXBOB
 </br> Applicable version: 1.18.73
 </br>
 </br>Using the MIT open source license
