@@ -1,4 +1,4 @@
-#BedwarsBE
+# BedwarsBE
 </br>Minecraft Bedrock Edition BedWar, created by IXBOB
 </br> Applicable version: 1.18.73
 </br>
