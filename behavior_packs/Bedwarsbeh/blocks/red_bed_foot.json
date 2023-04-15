@@ -1,41 +1,80 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "bedwars:red_bed_foot"
-		},
-        "components": {
-            "minecraft:material_instances": {
-              "*": {
-                "texture": "red_bed_foot",
-                "render_method": "alpha_test"
-              }
-            },
-            "minecraft:pick_collision": {
-                "origin": [ -8, 0, -8 ],
-                "size": [ 16, 9, 16 ]
-            },
-            "minecraft:entity_collision": {
-              "size": [
-                16,
-                8,
-                16
-              ],
-              "origin": [
-                -8,
-                0,
-                -8
-              ]
-            },
-            "minecraft:geometry": "geometry.red_bed_foot",
-            "minecraft:destroy_time": 0.3,
-            "minecraft:friction": 0.6,
-            "minecraft:map_color": "#00ff00",
-            "minecraft:flammable": {
-                "flame_odds": 0,
-                "burn_odds": 0
-            },
-            "minecraft:block_light_emission": 0.0
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bedwars:red_bed_foot"
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "red_bed_foot",
+          "render_method": "alpha_test"
         }
-	}
+      },
+      "minecraft:pick_collision": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          16,
+          9,
+          16
+        ]
+      },
+      "minecraft:entity_collision": {
+        "size": [
+          16,
+          8,
+          16
+        ],
+        "origin": [
+          -8,
+          0,
+          -8
+        ]
+      },
+      "minecraft:geometry": "geometry.red_bed_foot",
+      "minecraft:destroy_time": 0.3,
+      "minecraft:friction": 0.6,
+      "minecraft:map_color": "#00ff00",
+      "minecraft:flammable": {
+        "flame_odds": 0,
+        "burn_odds": 0
+      },
+      "minecraft:block_light_emission": 0.0,
+      "minecraft:on_player_destroyed": {
+        "event": "bedwars:destroy_red_bed_foot", //检测破坏床
+        "target": "self"
+      }
+    },
+    "events": {
+      "bedwars:destroy_red_bed_foot": { //检测破坏床
+        "run_command": {
+          "command": [
+            "execute @s[scores={\"分队\"=1,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{ \"text\" : \"§f§lBED WARS >> §r§cYou can not destroy your own bed!\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"红床有敌\"=0,\"红床存活\"=1}] ~~~ setblock 0 185 46 bedwars:red_bed_head",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"红床有敌\"=0,\"红床存活\"=1}] ~~~ setblock 0 185 47 bedwars:red_bed_foot",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ setblock 0 185 46 air 0 destroy",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ setblock 0 185 47 air 0 destroy",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 title @a[scores={\"分队\"=1}] title §c§l床被破坏",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 title @a[scores={\"分队\"=1}] subtitle you will no longer respawn",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 playsound mob.enderdragon.growl @a[scores={\"分队\"=2}]",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 playsound mob.wither.death @a[scores={\"分队\"=1}]",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=1}] ~~~ detect 0 185 46 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §c§lred bed §fwas destroyed by: §b\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=2}] ~~~ detect 0 185 46 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §c§lred bed §fwas incinerated by: §b\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=3}] ~~~ detect 0 185 46 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §c§lred bed §fwas memed by: §b\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=4}] ~~~ detect 0 185 46 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §c§lred bed §fwas deep fried  by : §b\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=5}] ~~~ detect 0 185 46 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §c§lred bed §fwas smashed by: §b\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 tag @e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}] add get.xp.desbed",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 tag @e[type=player,x=0,y=185,z=46,r=10,c=1,scores={分队=2}] add get.coin.desbed",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 function get_xp_and_coin",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"红床有敌\"=1,\"红床存活\"=1}] ~~~ detect 0 185 46 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] \"红床存活\" 0"
+          ],
+          "target": "player"
+        }
+      }
+    }
+  }
 }

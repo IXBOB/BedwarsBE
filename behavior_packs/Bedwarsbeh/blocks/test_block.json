@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:test_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+            "minecraft:on_player_destroyed":{
+                "event" : "bedwars:block_test", //custom event
+                "target": "self"
+            }
+		},
+		"events": {
+			"bedwars:block_test": {
+				"run_command":{
+				  "command":[
+                    "say hello"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}
