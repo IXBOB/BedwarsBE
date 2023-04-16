@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:diamond_helmet",
+          "name": "minecraft:chainmail_boots",
           "functions": [
             {
               "function": "specific_enchants",
