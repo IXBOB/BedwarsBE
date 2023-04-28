@@ -93,10 +93,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
 #床被摧毁设置able_to_respawn红并设置重生点
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
 #床被摧毁设置able_to_respawn蓝并设置重生点
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
 #gameSTART为0时执行命令
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
@@ -382,10 +382,10 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},ta
 execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
 
 #粒子显示
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 
 #开始倒计时-1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1
