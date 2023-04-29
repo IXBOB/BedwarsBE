@@ -48,11 +48,11 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl] ~~~ detect ~ 0 ~ deny 0 kill @s
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] ~~~ kill @s
 #红队队伍actionbar
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lred\n§r§fteam member:  §c§l" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lred\n§r§fteam member:  §c§l" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #蓝队队伍actionbar
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=2},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §b§lblue\n§r§fteam member:  §b§l" },{ "selector" :  "@a[scores={分队=2,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=2},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §b§lblue\n§r§fteam member:  §b§l" },{ "selector" :  "@a[scores={分队=2,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§eDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§eEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #淘汰后玩家actionbar
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=0},m=spectator] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§f§l>> You are now a spectator <<" },{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{ "text" : "\n§r§c§lRed team remaining players: " },{"selector":"@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§b§lBlue team remaining players: " },{"selector":"@a[scores={分队=2,存活=1}]"},{ "text" : "\n§f>> Head up to go back to the lobby <<" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§f§l>> You are now a spectator <<" },{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{ "text" : "\n§r§c§lRed team remaining players: " },{"selector":"@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§b§lBlue team remaining players: " },{"selector":"@a[scores={分队=2,存活=1}]"},{ "text" : "\n§f>> Head up to go back to the lobby <<" } ] }
 #clear红队淘汰玩家
 execute @e[type=armor_stand,scores={gameSTART=1..2,"红床存活"=0}] ~~~ execute @a[scores={"存活"=0,"分队"=1}] ~~~ clear @s
 #clear蓝队淘汰玩家
@@ -127,18 +127,16 @@ scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameS
 
 #抬头相关功能================
 #观战玩家抬头返回
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=0},m=spectator] ~~~ scoreboard players reset @s "抬头返回time"
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=!spectator,scores={able_to_respawn=!0,"分队"=1..2,"存活"=1}] ~~~ scoreboard players reset @s "抬头返回time"
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=0},m=spectator] ~~~ scoreboard players add @s "抬头返回time" -1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ gamemode 2 @s
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ tag @s remove from_lobby_spectator
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=..-130,able_to_respawn=0}] ~~~ tp @s -200 200 -200 0 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=!0,"分队"=1..2,"存活"=1,"出局观战"=!1}] ~~~ scoreboard players reset @s "抬头返回time"
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players add @s "抬头返回time" -1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=..-130,able_to_respawn=0,"出局观战"=1}] ~~~ function spectator_headup_back_to_lobby
 #抬头返回title
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-30..-10,able_to_respawn=0}] ~~~ title @s actionbar §e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-50..-31,able_to_respawn=0}] ~~~ title @s actionbar §7■§e■■■■ Teleport to the lobby in 4 seconds ■■■■§7■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-70..-51,able_to_respawn=0}] ~~~ title @s actionbar §7■■§e■■■ Teleport to the lobby in 3 seconds ■■■§7■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-90..-71,able_to_respawn=0}] ~~~ title @s actionbar §7■■■§e■■ Teleport to the lobby in 2 seconds ■■§7■■■
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,m=spectator,scores={"抬头返回time"=-110..-91,able_to_respawn=0}] ~~~ title @s actionbar §7■■■■§e■ Teleport to the lobby in 1 second ■§7■■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-30..-10,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-50..-31,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■§e■■■■ Teleport to the lobby in 4 seconds ■■■■§7■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-70..-51,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■§e■■■ Teleport to the lobby in 3 seconds ■■■§7■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-90..-71,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■■§e■■ Teleport to the lobby in 2 seconds ■■§7■■■
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-110..-91,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■■■§e■ Teleport to the lobby in 1 second ■§7■■■■
 #抬头相关功能结束================
 #游戏开始设置生存模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..2},x=0,y=184,z=52,r=10,m=2]
@@ -152,7 +150,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] remove team1
 #检测有人正在重生执行相关指令
 execute @e[type=player,scores={respawning=1},x=0,y=200,z=0,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
-#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
+#此处一部分指令在gameSTART0_functions，为性能考虑
 #replaceitem红队皮革护甲
 execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.red.leather.armor
 #replaceitem蓝队皮革护甲
@@ -163,10 +161,11 @@ execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ setblock 
 #检测游戏开始时按钮被按下并重置按钮(观战)
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tag @e[type=player,x=-200,y=201,z=-205,r=3,c=1] add from_lobby_spectator
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "出局观战" 1
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
 #重置结束后后复制地图选择告示牌
-#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
+#此处一部分指令在gameSTART0_functions，为性能考虑
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
@@ -181,7 +180,7 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=1}] ~~
 execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~~ clone 288 5 294 288 5 294 -202 200 -197
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
-#此处一部分指令在gameSTART0_functions，别问我为什么这么乱，一切为游戏性能考虑
+#此处一部分指令在gameSTART0_functions，为性能考虑
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
@@ -343,7 +342,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3
 #跑酷终点粒子效果
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle minecraft:totem_particle -203 223 -192
 
-
 #PARTICLE_menu
 #menu_page1
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
@@ -371,6 +369,9 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=remove_sta
 #menu3-add_start_players_required
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=add_start_players_required] ~~~ function inventory_menu/menu3-change_start_players_required/add_players
 
+#非tag op玩家进入管理员菜单自动返回
+execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
+
 #refresh_menu1
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1},tag=refresh_menu1] ~~~ function inventory_menu/refresh_menu/refresh_menu1
 #refresh_menu2
@@ -382,10 +383,10 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},ta
 execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
 
 #粒子显示
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
-execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 
 #开始倒计时-1
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1

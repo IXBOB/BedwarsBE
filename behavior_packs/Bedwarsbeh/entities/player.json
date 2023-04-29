@@ -149,6 +149,28 @@
               "event": "bedwars:damaged_player_player",
               "target": "self"
             }
+          },
+          { //实现弓箭射中玩家产生声音提示的效果
+            "on_damage": {
+              "filters": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "damager",
+                      "value": "arrow"
+                    },
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                }
+              ],
+              "target": "other",
+              "event": "bedwars:bow_hit"
+            }
           }
         ]
       },
@@ -278,7 +300,14 @@
       }
     },
     "events": {
-      "minecraft:gain_bad_omen": {
+			"bedwars:bow_hit": {
+				"run_command": {
+					"command": [
+						"playsound random.orb @s ~ ~ ~ 0.4 0.5"
+					]
+				}
+			},
+			"minecraft:gain_bad_omen": {
         "add": {
           "component_groups": [
             "minecraft:add_bad_omen"
@@ -348,16 +377,16 @@
             "execute @a[scores={分队=1..2}] ~~~ scoreboard players operation @s fatal_damage_uid -= @s damage_uid.cache",
             "scoreboard players random @e[type=armor_stand,name=main] kill_tell_num 1 5",
             "playsound random.orb @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was killed by §c \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was killed by §b \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 got rekt by §c \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 got rekt by §b \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=3}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was given the cold shoulder by §c \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=3}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was given the cold shoulder by §b \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=4}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was struck down by §c \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=4}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was struck down by §b \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=5}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was whacked with a party balloon by §c \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
-            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=5}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was whacked with a party balloon by §b \" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was killed by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was killed by §b\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 got rekt by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=2}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 got rekt by §b\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=3}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was given the cold shoulder by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=3}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was given the cold shoulder by §b\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=4}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was struck down by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=4}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was struck down by §b\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=5}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was whacked with a party balloon by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
+            "execute @e[type=armor_stand,name=main,scores={kill_tell_num=5}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=2}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§c\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was whacked with a party balloon by §b\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={红床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",
 
             
             "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 击杀数 1",

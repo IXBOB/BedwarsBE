@@ -76,3 +76,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2}] ~~~ clone -44 4 -65 -50 7 -72 -3 185 43 masked
 #疾速模式时复制蓝床保护方块
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2}] ~~~ clone -53 4 -65 -59 7 -72 -3 185 -50 masked
+#maskMode: MaskMode
+#指定是否过滤被复制方块。必须为下列之一：
+#masked — 仅复制非空气方块。会保持目的区域中原本会被替换为空气的方块不变。
+#replace — 复制所有方块，用源区域的方块覆盖目标区域中的所有方块。
+#若未定义，默认为replace。
