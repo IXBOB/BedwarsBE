@@ -6,7 +6,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=1}] ~~~ tp @s 0 186 53 facing 0 182 0
 #重生TP蓝
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=2}] ~~~ tp @s 0 186 -53 facing 0 182 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=2}] ~~~ scoreboard players set @s "出局观战" 0
 #重生时间title
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={respawning=1}] ~~~ title @s times 0 40 10
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={respawning=1,"重生时间"=0..}] ~~~ scoreboard players set @s "出局观战" 1
@@ -36,6 +35,8 @@ execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,sco
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=2}] ~~~ scoreboard players set @s "重生时间" -1
 #游戏结束传送的其他杂项设置在gameSTART2_functions
 
+#设置出局观战 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1}] ~~~ scoreboard players set @s "出局观战" 0
 #设置respawning 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=..-1,"分队"=1..2,respawning=1}] ~~~ scoreboard players set @s respawning 0
 #重置复活时间
