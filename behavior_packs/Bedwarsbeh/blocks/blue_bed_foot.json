@@ -8,7 +8,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "blue_bed_foot",
-          "render_method": "alpha_test"
+          "render_method": "double_sided"
         }
       },
       "minecraft:pick_collision": {
