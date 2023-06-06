@@ -30,7 +30,7 @@
       },
       {
         "module_name": "@minecraft/server-gametest",
-        "version": "1.0.0-beta"
+        "version": "1.2.0-beta"
       }
     ]
 }

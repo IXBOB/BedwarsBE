@@ -82,8 +82,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard object
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..2}]
 #set事件倒计时120
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "事件倒计时" 120
-#放置红石线
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ setblock 267 4 308 redstone_wire
 #set-time.sec1 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s game.time.sec.1 0
 #set-time.sec2 0
@@ -118,6 +116,22 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "raw
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 0 wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+#红队存在-> 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红队存在" 1
+#黄队存在-> 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=2}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "黄队存在" 1
+#蓝队存在-> 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=3}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝队存在" 1
+#绿队存在-> 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=4}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿队存在" 1
+#删除red_team_ace_tellrawed tag
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @s remove red_team_ace_tellrawed
+#删除blue_team_ace_tellrawed tag
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @s remove blue_team_ace_tellrawed
+#删除yellow_team_ace_tellrawed tag
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @s remove yellow_team_ace_tellrawed
+#删除green_team_ace_tellrawed tag
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @s remove green_team_ace_tellrawed
 #reset will_get_XP
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players reset * will_get_XP
 #R_iron_count_1 -> 0

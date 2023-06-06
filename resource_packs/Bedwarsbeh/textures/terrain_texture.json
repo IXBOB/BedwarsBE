@@ -227,13 +227,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_protection_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_east": {
 			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_protection_block"
 		},
 		"team_upgrade_protection_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_protection_block"
@@ -245,13 +245,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_sharpness_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_east": {
 			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_sharpness_block"
 		},
 		"team_upgrade_sharpness_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_sharpness_block"
@@ -263,13 +263,13 @@
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
 		"team_upgrade_trigger_block_north": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_north"
+			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_east": {
 			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_south": {
-			"textures": "textures/blocks/shop_block/planks_big_oak_south"
+			"textures": "textures/blocks/team_upgrade_trigger_block"
 		},
 		"team_upgrade_trigger_block_west": {												//WEST
 			"textures": "textures/blocks/team_upgrade_trigger_block"
@@ -613,6 +613,12 @@
 		"map_white_wool_block": {
 			"textures": "textures/blocks/map_white_wool_block"
 		},
+		"map_yellow_concrete_block": {
+			"textures": "textures/blocks/map_yellow_concrete_block"
+		},
+		"map_green_concrete_block": {
+			"textures": "textures/blocks/map_green_concrete_block"
+		},
 		"red_bed_foot": {
 			"textures": "textures/blocks/red_bed_foot"
 		},
@@ -624,6 +630,18 @@
 		},
 		"blue_bed_head": {
 			"textures": "textures/blocks/blue_bed_head"
+		},
+		"yellow_bed_foot": {
+			"textures": "textures/blocks/yellow_bed_foot"
+		},
+		"yellow_bed_head": {
+			"textures": "textures/blocks/yellow_bed_head"
+		},
+		"green_bed_foot": {
+			"textures": "textures/blocks/green_bed_foot"
+		},
+		"green_bed_head": {
+			"textures": "textures/blocks/green_bed_head"
 		}
 		
 
