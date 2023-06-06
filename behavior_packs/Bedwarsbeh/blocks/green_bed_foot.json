@@ -53,24 +53,26 @@
       "bedwars:destroy_green_bed_foot": { //检测破坏床
         "run_command": {
           "command": [
+            "tag @s[scores={\"分队\"=!4}] add destroy_green_bed_success",
             "execute @s[scores={\"分队\"=2,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{ \"text\" : \"§f§lBED WARS >> §r§cYou can not destroy your own bed!\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"黄床有敌\"=0,\"黄床存活\"=1}] ~~~ setblock 0 185 -46 bedwars:green_bed_head",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"黄床有敌\"=0,\"黄床存活\"=1}] ~~~ setblock 0 185 -47 bedwars:green_bed_foot",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ setblock 0 185 -46 air 0 destroy",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ setblock 0 185 -47 air 0 destroy",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 title @a[scores={\"分队\"=2}] title §c§l床被破坏",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 title @a[scores={\"分队\"=2}] subtitle you will no longer respawn",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 playsound mob.enderdragon.growl @a[scores={\"分队\"=1}]",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 playsound mob.wither.death @a[scores={\"分队\"=2}]",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=1}] ~~~ detect 0 185 -47 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §b§lgreen bed §fwas memed by: §c\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}]\" },{ \"text\" : \"\n§r\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=2}] ~~~ detect 0 185 -47 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §b§lgreen bed §fwas deep fried by: §c\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}]\" },{ \"text\" : \"\n§r\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=3}] ~~~ detect 0 185 -47 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §b§lgreen bed §fwas incinerated by: §c\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}]\" },{ \"text\" : \"\n§r\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=4}] ~~~ detect 0 185 -47 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §b§lgreen bed §fwas destroyed by: §c\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}]\" },{ \"text\" : \"\n§r\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=5}] ~~~ detect 0 185 -47 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §b§lgreen bed §fwas smashed by: §c\" },{ \"selector\" :  \"@e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}]\" },{ \"text\" : \"\n§r\" }]}",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 tag @e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}] add get.xp.desbed",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 tag @e[type=player,x=0,y=185,z=-47,r=10,c=1,scores={分队=1}] add get.coin.desbed",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 function get_xp_and_coin",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"黄床有敌\"=1,\"黄床存活\"=1}] ~~~ detect 0 185 -47 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] \"黄床存活\" 0"
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床有敌\"=0,\"绿床存活\"=1}] ~~~ setblock -46 185 0 bedwars:green_bed_head",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床有敌\"=0,\"绿床存活\"=1}] ~~~ setblock -47 185 0 bedwars:green_bed_foot",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ setblock -46 185 0 air 0 destroy",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ setblock -47 185 0 air 0 destroy",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 title @a[scores={\"分队\"=4}] title §c§lBED DESTROYED",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 title @a[scores={\"分队\"=4}] subtitle you will no longer respawn",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 playsound mob.enderdragon.growl @a[scores={\"分队\"=!4}]",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 playsound mob.wither.death @a[scores={\"分队\"=4}]",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=1}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §a§lGREEN bed §fwas memed by: §c\" },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=2}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §a§lGREEN bed §fwas deep fried by: §c\" },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=3}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §a§lGREEN bed §fwas incinerated by: §c\" },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=4}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §a§lGREEN bed §fwas destroyed by: §c\" },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=5}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§f§lBED DESTRUCTION >> §a§lGREEN bed §fwas smashed by: §c\" },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @a[tag=destroy_green_bed_success] add get.xp.desbed",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @a[tag=destroy_green_bed_success] add get.coin.desbed",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 function get_xp_and_coin",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] \"绿床存活\" 0",
+            "tag @s remove destroy_green_bed_success"
           ],
           "target": "player"
         }

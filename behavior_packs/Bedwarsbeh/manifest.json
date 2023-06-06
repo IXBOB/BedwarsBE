@@ -19,7 +19,7 @@
             "type": "script",
             "language": "javascript",
             "uuid": "0b235875-a72a-4f8f-b1ad-50f4659a58cf",
-            "version": [ 0, 0, 1 ],
+            "version": [ 0, 0, 2 ],
             "entry": "scripts/main.js"
           }
     ],
@@ -30,7 +30,7 @@
       },
       {
         "module_name": "@minecraft/server-gametest",
-        "version": "1.2.0-beta"
+        "version": "1.0.0-beta"
       }
     ]
 }

@@ -1,6 +1,3 @@
-#检测平局
-execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ testfor @a[scores={"分队"=5}]
-
 #title.times
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ title @a[scores={"分队"=5}] times 0 160 0
 #title平局
@@ -16,6 +13,3 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ difficulty peace
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset * "重置百分数"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§4§lGame draw" "游戏显示"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§eNEXT EVENT" "游戏显示"
-
-#gameSTART -> 2
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s gameSTART 2
