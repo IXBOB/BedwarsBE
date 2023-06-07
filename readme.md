@@ -1,6 +1,6 @@
 # BedwarsBE
 </br>Minecraft Bedrock Edition BedWar, created by IXBOB
-</br> Applicable version: 1.18.73
+</br> Applicable version: 1.19.81
 </br>
 </br>Using the MIT open source license
 </br>International version github: https://github.com/IXBOB/BedwarsBE
