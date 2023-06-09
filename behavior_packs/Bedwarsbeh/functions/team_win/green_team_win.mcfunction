@@ -8,7 +8,7 @@ scoreboard players set @a[scores={"分队"=4}] firework 1
 #设置计分板显示其它队全部淘汰
 scoreboard players set "§bRED §c✘" "游戏显示" -5
 scoreboard players set "§bBLUE §c✘" "游戏显示" -5
-scoreboard players set "§bYELLOW §c✘" "游戏显示" -5
+scoreboard players set "§eYELLOW §c✘" "游戏显示" -5
 #title其它队失败
 title @a[scores={"分队"=!4}] title §c§lGAME OVER
 #删除副标题
@@ -18,7 +18,10 @@ scoreboard players add @a[scores={"分队"=4}] "胜场数" 1
 #设置计分板显示其它队全部淘汰
 scoreboard players reset "§bRED §r1" "游戏显示"
 scoreboard players reset "§bBLUE §r1" "游戏显示"
-scoreboard players reset "§bYELLOW §r1" "游戏显示"
+scoreboard players reset "§eYELLOW §r1" "游戏显示"
+scoreboard players reset "§bRED §a✔" "游戏显示"
+scoreboard players reset "§bBLUE §a✔" "游戏显示"
+scoreboard players reset "§eYELLOW §a✔" "游戏显示"
 
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a remove degrade

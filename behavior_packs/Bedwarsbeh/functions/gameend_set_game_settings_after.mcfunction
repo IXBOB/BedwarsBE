@@ -60,7 +60,11 @@ scoreboard players reset * game.time.min.1
 scoreboard players reset * game.time.min.2
 #玩家头顶显示等级
 scoreboard objectives setdisplay belowname "等级"
-
+#设置各队家已重置计分板为0
+scoreboard players set @e[type=armor_stand,name=main] "红已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "黄已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "蓝已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "绿已重置" 0
 
 
 

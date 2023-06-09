@@ -226,10 +226,10 @@ execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboar
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set "§bBLUE §a✔" "游戏显示" -5
 execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players reset "§bBLUE §a✔" "游戏显示"
 #检测蓝队床情况#黄队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set "§eYELLOW §a✔" "游戏显示" -5
+execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set "§eYELLOW §a✔" "游戏显示" -6
 execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=0}] ~~~ scoreboard players reset "§eYELLOW §a✔" "游戏显示"
 #检测蓝队床情况#绿队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set "§aGREEN §a✔" "游戏显示" -5
+execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set "§aGREEN §a✔" "游戏显示" -7
 execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=0}] ~~~ scoreboard players reset "§aGREEN §a✔" "游戏显示"
 #事件系统相关================
 #事件开始初始化

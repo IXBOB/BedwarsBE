@@ -62,13 +62,13 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
 
 #百分数=90重置红家
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,function_tick=20,"重置百分数"=90}] ~~~ function reset_team_home/red
-#百分数=90重置红家
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,function_tick=20,"重置百分数"=90}] ~~~ function reset_team_home/yellow
-#百分数=90重置红家
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,function_tick=20,"重置百分数"=90}] ~~~ function reset_team_home/blue
-#百分数=90重置红家
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,function_tick=20,"重置百分数"=90}] ~~~ function reset_team_home/green
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"红已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/red
+#百分数=90重置蓝家
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"蓝已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/blue
+#百分数=90重置黄家
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"黄已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/yellow
+#百分数=90重置绿家
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"绿已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/green
 
 #疾速模式时复制红床保护方块
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ clone -44 4 -65 -50 7 -72 -3 185 43 masked

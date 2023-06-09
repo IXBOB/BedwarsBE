@@ -13,3 +13,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ difficulty peace
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset * "重置百分数"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§4§lGame draw" "游戏显示"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§eNEXT EVENT" "游戏显示"
+
+#放置倒计时区域的红石块
+setblock 267 4 310 redstone_block

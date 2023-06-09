@@ -1,56 +1,57 @@
 import { world } from "@minecraft/server";
 
-world.events.beforeChat.subscribe(async (eventData) => {
+world.beforeEvents.chatSend.subscribe((eventData) => {
 	const player = eventData.sender;
-	if (!player.isOp()) return;
+	if (!player.isOp())
+		return;
 	switch (eventData.message) {
 		case '#help':
 			eventData.cancel = true;
-			await player.runCommandAsync('function commands/command.help');
+			player.runCommandAsync('function commands/command.help');
 			break;
 		case '#help.1':
 			eventData.cancel = true;
-			await player.runCommandAsync('function commands/command.help.1');
+			player.runCommandAsync('function commands/command.help.1');
 			break;
 		case '#help.2':
 			eventData.cancel = true;
-			await player.runCommandAsync('function commands/command.help.2');
+			player.runCommandAsync('function commands/command.help.2');
 			break;
 		case '#op':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add op');
+			player.runCommandAsync('tag @s add op');
 			break;
 		case '#deop':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s remove op');
+			player.runCommandAsync('tag @s remove op');
 			break;
 		case '#set.start.2':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.2');
+			player.runCommandAsync('tag @s add set.start.players.2');
 			break;
 		case '#set.start.3':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.3');
+			player.runCommandAsync('tag @s add set.start.players.3');
 			break;
 		case '#set.start.4':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.4');
+			player.runCommandAsync('tag @s add set.start.players.4');
 			break;
 		case '#set.start.5':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.5');
+			player.runCommandAsync('tag @s add set.start.players.5');
 			break;
 		case '#set.start.6':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.6');
+			 player.runCommandAsync('tag @s add set.start.players.6');
 			break;
 		case '#set.start.7':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.7');
+			player.runCommandAsync('tag @s add set.start.players.7');
 			break;
 		case '#set.start.8':
 			eventData.cancel = true;
-			await player.runCommandAsync('tag @s add set.start.players.8');
+			player.runCommandAsync('tag @s add set.start.players.8');
 			break;
 		default: break;
 	}
