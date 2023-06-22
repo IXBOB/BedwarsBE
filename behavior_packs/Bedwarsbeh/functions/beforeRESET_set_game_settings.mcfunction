@@ -1,6 +1,6 @@
-#--------------------------计分板tag--------------------------
 #TP players
 tp @a -200 205 -200
+#--------------------------计分板、tag--------------------------
 #gameSTART -> 0
 scoreboard players set @e[type=armor_stand,name=main] gameSTART 0
 #tag - reset
@@ -35,8 +35,6 @@ scoreboard players reset * "黄床存活"
 scoreboard players reset * "绿床存活"
 #reset重生时间
 scoreboard players reset * "重生时间"
-#reset游戏显示
-scoreboard players reset * "游戏显示"
 #reset存活
 scoreboard players reset * "存活"
 #红铁time -> 2
@@ -89,14 +87,6 @@ scoreboard players reset * "蓝保护等级"
 scoreboard players reset * "蓝锋利等级"
 #reset firework
 scoreboard players reset * firework
-#set游戏显示
-scoreboard players set §r§r§r§r "游戏显示" -6
-#set游戏显示
-scoreboard players set "§7Created by IXBOB" "游戏显示" -7
-#set游戏显示
-scoreboard players set "§7mtw.so6nID9e" "游戏显示" -8
-#set游戏显示
-scoreboard players set §r§r "游戏显示" 0
 #set绿宝石等级 -> 1
 scoreboard players set @e[type=armor_stand,name=main] "绿宝石等级" 1
 #set事件倒计时120
@@ -115,16 +105,12 @@ scoreboard players reset * game.time.sec.2
 scoreboard players reset * game.time.min.1
 #reset-time.min2
 scoreboard players reset * game.time.min.2
-#set游戏显示
-scoreboard players set §r "游戏显示" -3
 #reset无敌时间
 scoreboard players reset * "无敌时间"
 #reset抬头返回time
 scoreboard players reset * "抬头返回time"
 #reset击杀数
 scoreboard players reset * "击杀数"
-#reset第一个事件
-scoreboard players reset "§a绿宝石生成点 II 级" "游戏显示"
 #显示事件 -> 0
 scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
 

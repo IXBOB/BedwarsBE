@@ -25,6 +25,32 @@ execute @s[type=armor_stand,scores={蓝铁time=..0}] ~~~ execute @e[type=armor_s
 execute @s[type=armor_stand,scores={蓝铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.blue_iron_3,scores={B_iron_count_3=1..,B_spawned_iron_3=..63}] ~~~ scoreboard players add @s B_spawned_iron_3 1
 execute @s[type=armor_stand,scores={蓝铁time=..0,游戏模式=1}] ~~~ scoreboard players set @s 蓝铁time 2
 execute @s[type=armor_stand,scores={蓝铁time=..0,游戏模式=2}] ~~~ scoreboard players set @s 蓝铁time 1
+#黄铁生成
+scoreboard players add @s 黄铁time -1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.yellow_iron_1,scores={Y_iron_count_1=..99}] Y_iron_count_1 1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.yellow_iron_2,scores={Y_iron_count_2=..99}] Y_iron_count_2 1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.yellow_iron_3,scores={Y_iron_count_3=..99}] Y_iron_count_3 1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_1,scores={Y_iron_count_1=1..,Y_spawned_iron_1=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_1,scores={Y_iron_count_1=1..,Y_spawned_iron_1=..63}] ~~~ scoreboard players add @s Y_spawned_iron_1 1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_2,scores={Y_iron_count_2=1..,Y_spawned_iron_2=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_2,scores={Y_iron_count_2=1..,Y_spawned_iron_2=..63}] ~~~ scoreboard players add @s Y_spawned_iron_2 1
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_3,scores={Y_iron_count_3=1..,Y_spawned_iron_3=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={黄铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_iron_3,scores={Y_iron_count_3=1..,Y_spawned_iron_3=..63}] ~~~ scoreboard players add @s Y_spawned_iron_3 1
+execute @s[type=armor_stand,scores={黄铁time=..0,游戏模式=1}] ~~~ scoreboard players set @s 黄铁time 2
+execute @s[type=armor_stand,scores={黄铁time=..0,游戏模式=2}] ~~~ scoreboard players set @s 黄铁time 1
+#绿铁生成
+scoreboard players add @s 绿铁time -1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.green_iron_1,scores={G_iron_count_1=..99}] G_iron_count_1 1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.green_iron_2,scores={G_iron_count_2=..99}] G_iron_count_2 1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.green_iron_3,scores={G_iron_count_3=..99}] G_iron_count_3 1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_1,scores={G_iron_count_1=1..,G_spawned_iron_1=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_1,scores={G_iron_count_1=1..,G_spawned_iron_1=..63}] ~~~ scoreboard players add @s G_spawned_iron_1 1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_2,scores={G_iron_count_2=1..,G_spawned_iron_2=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_2,scores={G_iron_count_2=1..,G_spawned_iron_2=..63}] ~~~ scoreboard players add @s G_spawned_iron_2 1
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_3,scores={G_iron_count_3=1..,G_spawned_iron_3=..63}] ~~~ structure load iron_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={绿铁time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_iron_3,scores={G_iron_count_3=1..,G_spawned_iron_3=..63}] ~~~ scoreboard players add @s G_spawned_iron_3 1
+execute @s[type=armor_stand,scores={绿铁time=..0,游戏模式=1}] ~~~ scoreboard players set @s 绿铁time 2
+execute @s[type=armor_stand,scores={绿铁time=..0,游戏模式=2}] ~~~ scoreboard players set @s 绿铁time 1
 #红家金生成
 scoreboard players add @s 红家金time -1
 execute @s[type=armor_stand,scores={红家金time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.red_gold,scores={R_gold_count=..99}] R_gold_count 8
@@ -37,6 +63,18 @@ execute @s[type=armor_stand,scores={蓝家金time=..0}] ~~~ scoreboard players a
 execute @s[type=armor_stand,scores={蓝家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.blue_gold,scores={B_gold_count=8..,B_spawned_gold=..11}] ~~~ structure load gold_ingot ~ 184 ~
 execute @s[type=armor_stand,scores={蓝家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.blue_gold,scores={B_gold_count=8..,B_spawned_gold=..11}] ~~~ scoreboard players add @s B_spawned_gold 1
 execute @s[type=armor_stand,scores={蓝家金time=..0}] ~~~ scoreboard players set @s 蓝家金time 6
+#黄家金生成
+scoreboard players add @s 黄家金time -1
+execute @s[type=armor_stand,scores={黄家金time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.yellow_gold,scores={Y_gold_count=..99}] Y_gold_count 8
+execute @s[type=armor_stand,scores={黄家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_gold,scores={Y_gold_count=8..,Y_spawned_gold=..11}] ~~~ structure load gold_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={黄家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.yellow_gold,scores={Y_gold_count=8..,Y_spawned_gold=..11}] ~~~ scoreboard players add @s Y_spawned_gold 1
+execute @s[type=armor_stand,scores={黄家金time=..0}] ~~~ scoreboard players set @s 黄家金time 6
+#绿家金生成
+scoreboard players add @s 绿家金time -1
+execute @s[type=armor_stand,scores={绿家金time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=..99}] G_gold_count 8
+execute @s[type=armor_stand,scores={绿家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=8..,G_spawned_gold=..11}] ~~~ structure load gold_ingot ~ 184 ~
+execute @s[type=armor_stand,scores={绿家金time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=8..,G_spawned_gold=..11}] ~~~ scoreboard players add @s G_spawned_gold 1
+execute @s[type=armor_stand,scores={绿家金time=..0}] ~~~ scoreboard players set @s 绿家金time 6
 #钻石生成
 scoreboard players add @s 钻石time -1
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.diamond_1,scores={diamond_count_1=..239}] diamond_count_1 30

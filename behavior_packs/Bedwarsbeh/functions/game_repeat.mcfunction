@@ -34,7 +34,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #火焰弹相关结束================
 #更改游戏模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..2,respawning=0,able_to_respawn=1},tag=!insider]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,able_to_respawn=1},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamemode 2 @a[tag=!insider,m=1]
@@ -79,30 +79,50 @@ effect @a saturation 2 255 true
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] weakness 2 255 true
 #开始游戏后大厅玩家抗性提升
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ effect @a[x=-218,y=193,z=-218,r=50] resistance 2 255 true
+
 #游戏开始后还原被破坏的红队伍箱
 execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 58 air 0 structure load bedwars:red_team_chest 0 185 58
 #游戏开始后还原被破坏的蓝队伍箱
-execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:red_team_chest 0 185 -58
+execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:blue_team_chest 0 185 -58
+#游戏开始后还原被破坏的黄队伍箱
+execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:yellow_team_chest 58 185 0
+#游戏开始后还原被破坏的绿队伍箱
+execute @e[type=armor_stand,scores={gameSTART=1..2}] ~~~ detect 0 185 -58 air 0 structure load bedwars:green_team_chest -58 185 0
+
 #<红> 检测有敌人可以破坏床
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "红床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=2},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!1},x=0,y=185,z=46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床有敌" 1
 #<蓝> 检测有敌人可以破坏床
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "蓝床有敌" 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!2},x=0,y=185,z=-46,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床有敌" 1
+#<黄> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "黄床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!3},x=46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床有敌" 1
+#<绿> 检测有敌人可以破坏床
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s "绿床有敌" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=!4},x=-46,y=185,z=0,r=7] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床有敌" 1
+
 #床被摧毁设置able_to_respawn红并设置重生点
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=1,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
 #床被摧毁设置able_to_respawn蓝并设置重生点
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2,respawning=!1}] able_to_respawn 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
+#床被摧毁设置able_to_respawn黄并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=3,respawning=!1}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=3}] 0 210 0
+#床被摧毁设置able_to_respawn绿并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=4,respawning=!1}] able_to_respawn 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=0}] ~~~ spawnpoint @a[scores={"分队"=4}] 0 210 0
+
 #gameSTART为0时执行命令
 execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ function gameSTART0_functions
 #gameSTART为2时执行命令
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ function gameSTART2_functions
 #给掉入虚空的玩家添加kill tag
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4}] ~~~ detect ~ ~ ~ structure_void 0 tag @s add in_void_kill
 #删除掉入虚空的玩家
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..2}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
 #增加游戏时间
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ scoreboard players add @s game.time.sec.1 1
 execute @e[type=armor_stand,scores={gameSTART=1,game.time.sec.1=10..}] ~~~ scoreboard players add @s game.time.sec.2 1
@@ -125,7 +145,7 @@ scoreboard players operation @a gameSTART = @e[type=armor_stand,name=main] gameS
 #抬头相关功能================
 #观战玩家抬头返回
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=!0,"分队"=1..2,"存活"=1,"出局观战"=!1}] ~~~ scoreboard players reset @s "抬头返回time"
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={able_to_respawn=!0,"分队"=1..4,"存活"=1,"出局观战"=!1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players add @s "抬头返回time" -1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=..-130,able_to_respawn=0,"出局观战"=1}] ~~~ function spectator_headup_back_to_lobby
 #抬头返回title
@@ -136,9 +156,9 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-110..-91,able_to_respawn=0,"出局观战"=1}] ~~~ title @s actionbar §7■■■■§e■ Teleport to the lobby in 1 second ■§7■■■■
 #抬头相关功能结束================
 #游戏开始设置生存模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..2},x=0,y=184,z=52,r=10,m=2]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=52,r=10,m=2]
 #游戏开始设置生存模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..2},x=0,y=184,z=-52,r=10,m=2]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=-52,r=10,m=2]
 #红队tag+team1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=1}] add team1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=1}] remove team2
@@ -218,7 +238,7 @@ execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
 #防止地图关键区域被破坏
 execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
 #游戏区域tag+degrade
-execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126,m=0] ~~~ tag @s add degrade
+execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126,m=0] ~~~ tag @s add degrade
 #检测红队床情况#红队√-游戏显示
 execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set "§cRED §a✔" "游戏显示" -4
 execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players reset "§cRED §a✔" "游戏显示"
@@ -274,8 +294,8 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9..10}] ~~~ funct
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=10..11}] ~~~ function events/event_draw
 #事件相关结束================
 #游戏开始时自动获取经验和硬币
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2}] add get.xp.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..2}] add get.coin.game
+execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4}] add get.xp.game
+execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4}] add get.coin.game
 execute @a[tag=get.xp.game] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function get_xp_and_coin
 #升级
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players add @s "等级" 1
@@ -308,7 +328,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=1,fu
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=2,function_tick=20}] ~~~ clone 310 5 311 310 5 311 4 185 55
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=3,function_tick=20}] ~~~ clone 310 6 311 310 6 311 4 185 55
 #will_get_XP
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..2,will_get_XP=1..}] ~~~ function will_get_XP
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4,will_get_XP=1..}] ~~~ function will_get_XP
 #删除背包内的铁锭，金锭，钻石，绿宝石
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a iron_ingot
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a gold_ingot
@@ -320,8 +340,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a emer
 #在function gameSTART1_functions内
 
 #疾速模式速度I和急迫I
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..2,"存活"=1}] speed 1 0 true
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..2,"存活"=1}] haste 1 0 true
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..4,"存活"=1}] speed 1 0 true
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..4,"存活"=1}] haste 1 0 true
 #大厅滚动字体
 scoreboard players add @e[type=armor_stand,name=main] lobby_text_time -1
 execute @e[type=armor_stand,name=main,scores={lobby_text_time=-1}] ~~~ tp @e[type=armor_stand,tag=text1] -197 198.2 -202

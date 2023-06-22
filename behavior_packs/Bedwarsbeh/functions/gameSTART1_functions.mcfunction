@@ -17,15 +17,15 @@ scoreboard players operation @a game.time.sec.2 = @e[type=armor_stand,name=main,
 scoreboard players operation @a game.time.min.1 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.1
 scoreboard players operation @a game.time.min.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.2
 #无敌时间
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lThe time of invincibility is over!" } ] }
-execute @a[scores={"分队"=1..2,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lThe time of invincibility is over!" } ] }
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
 #检测装备升级
-execute @e[type=player,scores={"分队"=1..2},tag=up_sword] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..2},tag=up_pickaxe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..2},tag=up_axe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..2},tag=up_armor] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4},tag=up_sword] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4},tag=up_pickaxe] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4},tag=up_axe] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4},tag=up_armor] ~~~ function weapon_upgrade
 #检测搭桥蛋
 execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=37,dz=126] ~~~ function road_egg
 #检测胜利

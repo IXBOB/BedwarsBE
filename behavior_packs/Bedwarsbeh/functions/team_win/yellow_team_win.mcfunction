@@ -6,7 +6,7 @@ function gameEND_tellraw_yellow
 #firework -> 1
 scoreboard players set @a[scores={"分队"=3}] firework 1
 #设置计分板显示其它队全部淘汰
-scoreboard players set "§bRED §c✘" "游戏显示" -5
+scoreboard players set "§cRED §c✘" "游戏显示" -5
 scoreboard players set "§bBLUE §c✘" "游戏显示" -5
 scoreboard players set "§aGREEN §c✘" "游戏显示" -5
 #title其它队失败
@@ -16,10 +16,10 @@ title @a subtitle §r
 #胜场数+1
 scoreboard players add @a[scores={"分队"=3}] "胜场数" 1
 #设置计分板显示其它队全部淘汰
-scoreboard players reset "§bRED §r1" "游戏显示"
+scoreboard players reset "§cRED §r1" "游戏显示"
 scoreboard players reset "§bBLUE §r1" "游戏显示"
 scoreboard players reset "§aGREEN §r1" "游戏显示"
-scoreboard players reset "§bRED §a✔" "游戏显示"
+scoreboard players reset "§cRED §a✔" "游戏显示"
 scoreboard players reset "§bBLUE §a✔" "游戏显示"
 scoreboard players reset "§aGREEN §a✔" "游戏显示"
 

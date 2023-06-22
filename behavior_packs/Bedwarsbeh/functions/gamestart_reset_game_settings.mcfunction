@@ -33,7 +33,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"�
 #倒计时0 TP蓝
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"分队"=2}] 0 186 -53 facing 0 182 0
 #倒计时0title.times
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={"分队"=1..2}] times 10 60 10
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a title §a§lGAME START
 #倒计时0 subtitle
@@ -51,17 +51,17 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 #gameSTART -> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
 #重生时间 -> 100
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "重生时间" 100
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "重生时间" 100
 #XP清空
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ xp -99999L @a
 #剑等级 -> 1
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "剑等级" 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "剑等级" 1
 #镐等级 -> 0
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "镐等级" 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "镐等级" 0
 #斧等级 -> 0
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "斧等级" 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
 #防具等级 -> 1
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "防具等级" 1
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "防具等级" 1
 #kill经验球
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ kill @e[type=xp_orb]
 #红陷阱等级 -> 0
@@ -77,13 +77,13 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 #蓝锋利等级 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "蓝锋利等级" 0
 #瞬间恢复
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ effect @a[scores={"分队"=1..2}] instant_health 2 255 true
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove degrade
 #setdisplay游戏显示
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard objectives setdisplay sidebar "游戏显示"
 #clear
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..2}]
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..4}]
 #set事件倒计时120
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "事件倒计时" 120
 #set-time.sec1 0
@@ -97,7 +97,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove degrade
 #无敌时间 -> 60
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "无敌时间" 60
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "无敌时间" 60
 #tag-铁已遍历1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁已遍历1
 #tag-铁已遍历2
@@ -111,15 +111,15 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁
 #tag-铁遍历3
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁遍历3
 #tellraw获得无敌时间
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..2}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lYou gained 3 seconds of invincibility" } ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lYou gained 3 seconds of invincibility" } ] }
 #击杀数 -> 0
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..2}] ~~~ scoreboard players set @s "击杀数" 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ scoreboard players set @s "击杀数" 0
 #游戏开始tellraw游戏玩法
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n                  §fBED WARS \n \n§eProtect your bed and destory the enemy\nbed. Upgrade yourself and your team by\ncollecting Iron, Gold, Emerald and Diamond\nfrom generators to access powerful\nupgrades.\n \n§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀" } ] }
 #给予木剑
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 0 wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..2}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #红队存在-> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红队存在" 1
 #黄队存在-> 1
@@ -199,6 +199,21 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a "当局硬币" 0
 #生成game_uid并赋予玩家
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players random @s game_uid 0 999999999
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players operation @a[scores={"分队"=1..2}] game_uid = @s game_uid
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players operation @a[scores={"分队"=1..4}] game_uid = @s game_uid
+#reset游戏显示
+scoreboard players reset * "游戏显示"
+#set游戏显示
+scoreboard players set §r§r "游戏显示" 0
+scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set "Map: §7Wooden Boat" "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set "Map: §7desert" "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set "Map: §7Deep Ocean" "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set "Mode: §7NORMAL" "游戏显示" -1
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set "Mode: §7§oRUSH" "游戏显示" -1
+scoreboard players set §r "游戏显示" -3
+scoreboard players set §r§r§r§r "游戏显示" -8
+scoreboard players set "§7Created by IXBOB" "游戏显示" -9
+scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
+
 #starting -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] starting 0

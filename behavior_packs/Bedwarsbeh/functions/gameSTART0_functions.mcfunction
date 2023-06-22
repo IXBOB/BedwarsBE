@@ -88,8 +88,8 @@ execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~
 #设置starting值
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.game.starting
 #传送结束时有分队值的玩家到大厅并清空背包
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ tp @a[scores={"分队"=1..2},tag=!insider] -200 200 -200
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[scores={"分队"=1..2}] "分队" 0
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ tp @a[scores={"分队"=1..4},tag=!insider] -200 200 -200
+execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "分队" 0
 #检测按下按钮更换地图
 execute @e[type=armor_stand,scores={gameSTART=0,reseting=0,starting=0},tag=!reset_OK] ~~~ detect -203 201 -196 polished_blackstone_button 9 function button_change_map
 #游戏未开始tag-team
