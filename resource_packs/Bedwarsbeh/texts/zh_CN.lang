@@ -24,3 +24,11 @@ item.gold_ingot.name=Gold Ingot
 item.iron_ingot.name=Iron Ingot
 item.diamond.name=Diamond
 item.emerald.name=Emerald
+
+text.system.back_to_lobby_wait_10=§l起床战争 >> §e您将在 10 秒后返回大厅
+text.system.back_to_lobby_wait_5=§l起床战争 >> §e您将在 5 秒后返回大厅
+text.system.back_to_lobby_wait_4=§l起床战争 >> §e您将在 4 秒后返回大厅
+text.system.back_to_lobby_wait_3=§l起床战争 >> §e您将在 3 秒后返回大厅
+text.system.back_to_lobby_wait_2=§l起床战争 >> §e您将在 2 秒后返回大厅
+text.system.back_to_lobby_wait_1=§l起床战争 >> §e您将在 1 秒后返回大厅
+text.system.lobby_before_reset_wait_15=
