@@ -1,0 +1,1373 @@
+{
+   "content" : [
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness3_diamond_sword.json"
+      },
+      {
+         "path" : "animations/fangyuta_timer.json"
+      },
+      {
+         "path" : "blocks/map_stone_block.json"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_none_click.json"
+      },
+      {
+         "path" : "blocks/map_blue_concrete_block.json"
+      },
+      {
+         "path" : "functions/gameEND_tellraw_yellow.mcfunction"
+      },
+      {
+         "path" : "animation_controllers/fangyuta_timer.json"
+      },
+      {
+         "path" : "blocks/log_spruce2.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness1_stone_sword.json"
+      },
+      {
+         "path" : "blocks/buy_bow_block.json"
+      },
+      {
+         "path" : "entities/snowball.json"
+      },
+      {
+         "path" : "animations/tnt_explode.json"
+      },
+      {
+         "path" : "animation_controllers/health_display.json"
+      },
+      {
+         "path" : "blocks/green_bed_head.json"
+      },
+      {
+         "path" : "functions/get_xp_and_coin.mcfunction"
+      },
+      {
+         "path" : "animation_controllers/player.animation_controller.json"
+      },
+      {
+         "path" : "blocks/map_dirt_block.json"
+      },
+      {
+         "path" : "animation_controllers/tnt_explode.json"
+      },
+      {
+         "path" : "blocks/buy_red_glass_block.json"
+      },
+      {
+         "path" : "blocks/blue_bed_foot.json"
+      },
+      {
+         "path" : "blocks/blue_bed_head.json"
+      },
+      {
+         "path" : "blocks/blue_fangyuta.json"
+      },
+      {
+         "path" : "blocks/player_blue_stained_glass.json"
+      },
+      {
+         "path" : "functions/team_upgrade_PROTECTIONandSHARPNESS.mcfunction"
+      },
+      {
+         "path" : "blocks/blue_wool_particle.json"
+      },
+      {
+         "path" : "blocks/buy_arrow_block.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_2.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_blue_glass_block.json"
+      },
+      {
+         "path" : "entities/armor_stand.json"
+      },
+      {
+         "path" : "blocks/map_grass_block.json"
+      },
+      {
+         "path" : "blocks/buy_upgrade_pickaxe_block.json"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_wooden_axe.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_blue_wool_block.json"
+      },
+      {
+         "path" : "blocks/buy_end_stone_block.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_fireball.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_fangyuta_block.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_blue_team_chestplate.json"
+      },
+      {
+         "path" : "items/menu2_particle_villagerhappy_disabled.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_fangyuta.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_fireball_block.json"
+      },
+      {
+         "path" : "blocks/map_bone_cross2_block.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_3.mcfunction"
+      },
+      {
+         "path" : "blocks/team_upgrade_protection_block.json"
+      },
+      {
+         "path" : "blocks/buy_planks_block.json"
+      },
+      {
+         "path" : "blocks/buy_golden_apple_block.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_red_fangyuta.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_jump_potion_block.json"
+      },
+      {
+         "path" : "blocks/map_red_concrete_block.json"
+      },
+      {
+         "path" : "items/red_team_leggings.json"
+      },
+      {
+         "path" : "blocks/buy_red_wool_block.json"
+      },
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "functions/team_win/blue_team_win.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_road_egg_block.json"
+      },
+      {
+         "path" : "blocks/buy_tnt_block.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_jump_potion.mcfunction"
+      },
+      {
+         "path" : "blocks/map_blue_stained_glass_block.json"
+      },
+      {
+         "path" : "items/menu1_particle_menu.json"
+      },
+      {
+         "path" : "blocks/buy_upgrade_armor_block.json"
+      },
+      {
+         "path" : "functions/events/event_2.mcfunction"
+      },
+      {
+         "path" : "blocks/map_green_concrete_block.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_7.mcfunction"
+      },
+      {
+         "path" : "blocks/map_dark_prismarine_block.json"
+      },
+      {
+         "path" : "blocks/buy_upgrade_axe_block.json"
+      },
+      {
+         "path" : "blocks/yellow_bed_head.json"
+      },
+      {
+         "path" : "blocks/map_white_glass.json"
+      },
+      {
+         "path" : "blocks/player_red_wool.json"
+      },
+      {
+         "path" : "blocks/buy_upgrade_sword_block.json"
+      },
+      {
+         "path" : "blocks/map_obsidian_block.json"
+      },
+      {
+         "path" : "blocks/map_jungle_block.json"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.2.tellrawed.mcfunction"
+      },
+      {
+         "path" : "blocks/buy_xp_bottle_block.json"
+      },
+      {
+         "path" : "blocks/green_bed_foot.json"
+      },
+      {
+         "path" : "blocks/map_sea_lantern_block.json"
+      },
+      {
+         "path" : "functions/will_get_XP.mcfunction"
+      },
+      {
+         "path" : "functions/reset_team_home/yellow.mcfunction"
+      },
+      {
+         "path" : "blocks/map_bone_cross1_block.json"
+      },
+      {
+         "path" : "blocks/map_bone_vertical_block.json"
+      },
+      {
+         "path" : "blocks/map_white_concrete_block.json"
+      },
+      {
+         "path" : "functions/events/event_4.mcfunction"
+      },
+      {
+         "path" : "blocks/map_red_sandstone_block.json"
+      },
+      {
+         "path" : "blocks/map_cobbled_deepslate_block.json"
+      },
+      {
+         "path" : "blocks/map_prismarine_brick_block.json"
+      },
+      {
+         "path" : "blocks/map_crying_obsidian_block.json"
+      },
+      {
+         "path" : "blocks/map_cyan_concrete_block.json"
+      },
+      {
+         "path" : "blocks/map_diamond_block.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_wooden_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "blocks/map_emerald_block.json"
+      },
+      {
+         "path" : "items/stone_sword_sharpnessI.json"
+      },
+      {
+         "path" : "blocks/map_light_blue_concrete_block.json"
+      },
+      {
+         "path" : "items/stone_sword_sharpnessIII.json"
+      },
+      {
+         "path" : "functions/inventory_menu/menu2-particle_buy/menu2-particle_buy_villagerhappy.mcfunction"
+      },
+      {
+         "path" : "blocks/map_light_blue_stained_glass_block.json"
+      },
+      {
+         "path" : "blocks/map_prismarine_block.json"
+      },
+      {
+         "path" : "blocks/map_sand.json"
+      },
+      {
+         "path" : "functions/inventory_menu/menu2-particle_buy/menu2-particle_buy_fire.mcfunction"
+      },
+      {
+         "path" : "blocks/map_sandstone_block.json"
+      },
+      {
+         "path" : "blocks/map_white_wool_block.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_red_team_boots.json"
+      },
+      {
+         "path" : "blocks/map_yellow_concrete_block.json"
+      },
+      {
+         "path" : "functions/commands/command.help.2.mcfunction"
+      },
+      {
+         "path" : "blocks/player_blue_wool.json"
+      },
+      {
+         "path" : "items/menu2_particle_fire_selected.json"
+      },
+      {
+         "path" : "blocks/player_end_stone.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_blue_team_chestplate.json"
+      },
+      {
+         "path" : "blocks/player_obsidian.json"
+      },
+      {
+         "path" : "blocks/player_planks.json"
+      },
+      {
+         "path" : "blocks/player_red_stained_glass.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_diamond_leggings.json"
+      },
+      {
+         "path" : "blocks/red_bed_foot.json"
+      },
+      {
+         "path" : "items/shears.json"
+      },
+      {
+         "path" : "blocks/red_bed_head.json"
+      },
+      {
+         "path" : "blocks/red_fangyuta.json"
+      },
+      {
+         "path" : "blocks/red_wool_particle.json"
+      },
+      {
+         "path" : "blocks/team_upgrade_sharpness_block.json"
+      },
+      {
+         "path" : "items/iron_sword_sharpnessI.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_blue_glass.mcfunction"
+      },
+      {
+         "path" : "blocks/team_upgrade_trigger_block.json"
+      },
+      {
+         "path" : "blocks/test_block.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_0.mcfunction"
+      },
+      {
+         "path" : "functions/gameend_set_game_settings.mcfunction"
+      },
+      {
+         "path" : "blocks/tnt2_block.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_1.mcfunction"
+      },
+      {
+         "path" : "blocks/yellow_bed_foot.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_red_team_chestplate.json"
+      },
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "items/menu3_start_players_reachmax.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_stone_sword_sharpnessIII.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_6.mcfunction"
+      },
+      {
+         "path" : "entities/arrow.json"
+      },
+      {
+         "path" : "entities/block_mark.json"
+      },
+      {
+         "path" : "entities/egg.json"
+      },
+      {
+         "path" : "entities/fangyuta_mark.json"
+      },
+      {
+         "path" : "entities/ixbob_npc.json"
+      },
+      {
+         "path" : "loot_tables/test.json"
+      },
+      {
+         "path" : "entities/player.json"
+      },
+      {
+         "path" : "entities/tnt.json"
+      },
+      {
+         "path" : "entities/zombie_pigman.json"
+      },
+      {
+         "path" : "functions/afterRESET_set_scoreboard_display.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_9.mcfunction"
+      },
+      {
+         "path" : "functions/beforeRESET_set_game_settings.mcfunction"
+      },
+      {
+         "path" : "functions/button_change_map.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/1_op_menu_disabled.json"
+      },
+      {
+         "path" : "functions/team_win/green_team_win.mcfunction"
+      },
+      {
+         "path" : "functions/change_start_player_count.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_chainmail_leggings.json"
+      },
+      {
+         "path" : "functions/commands/command.help.1.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_remove_start_players_required.json"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_none_selected.json"
+      },
+      {
+         "path" : "functions/commands/command.help.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.3.tellrawed.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.4.tellrawed.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.5.tellrawed.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_road_egg.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.6.tellrawed.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_red_team_helmet.json"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.7.tellrawed.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.players.8.tellrawed.mcfunction"
+      },
+      {
+         "path" : "items/iron_sword_sharpnessII.json"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.2.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_fire_disabled.json"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.3.mcfunction"
+      },
+      {
+         "path" : "items/diamond_sword_sharpnessII.json"
+      },
+      {
+         "path" : "functions/gamestart_reset_game_settings.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.4.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_upgrade_axe.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/blue_shop_team_upgrade_sharpness.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.5.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.6.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_tnt.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.7.mcfunction"
+      },
+      {
+         "path" : "functions/commands/test_tag/set.start.players.8.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_6.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/1.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_5.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/menu_page/menu_page3.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/2.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_4.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/menu_page/menu_page2.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/3.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_iron_sword.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_3.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/4.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_2.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/menu3-change_start_players_required/remove_players.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/5.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_1.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/6.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_0.mcfunction"
+      },
+      {
+         "path" : "functions/console/settings/start/count/7.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_blue_team_boots.json"
+      },
+      {
+         "path" : "functions/console/settings/start/count/8.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_1.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_10.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_blue_team_boots.json"
+      },
+      {
+         "path" : "functions/events/event_3.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_5.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_6.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_7.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/red_shop_team_upgrade_protection.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_8.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/menu3-change_start_players_required/add_players.mcfunction"
+      },
+      {
+         "path" : "functions/gameEND_calculate_kill_rankings.mcfunction"
+      },
+      {
+         "path" : "functions/events/event_draw.mcfunction"
+      },
+      {
+         "path" : "functions/function_tick/function_tick.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_diamond_leggings.json"
+      },
+      {
+         "path" : "functions/gameend_set_game_settings_after.mcfunction"
+      },
+      {
+         "path" : "functions/gameEND_tellraw_blue.mcfunction"
+      },
+      {
+         "path" : "functions/gameEND_tellraw_draw.mcfunction"
+      },
+      {
+         "path" : "functions/gameEND_tellraw_green.mcfunction"
+      },
+      {
+         "path" : "items/menu2_particle_fire_disabled.json"
+      },
+      {
+         "path" : "functions/gameEND_tellraw_red.mcfunction"
+      },
+      {
+         "path" : "functions/gameSTART0_functions.mcfunction"
+      },
+      {
+         "path" : "functions/gameSTART1_functions.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_stone_sword.mcfunction"
+      },
+      {
+         "path" : "functions/gameSTART2_functions.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_3.mcfunction"
+      },
+      {
+         "path" : "functions/game_repeat.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_wooden_pickaxe.mcfunction"
+      },
+      {
+         "path" : "functions/get_reward_information.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/change_to_menu/change_to_menu1.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/change_to_menu/change_to_menu2.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_upgrade_sword.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/change_to_menu/change_to_menu3.mcfunction"
+      },
+      {
+         "path" : "items/wooden_pickaxe.json"
+      },
+      {
+         "path" : "functions/inventory_menu/menu2-particle_buy/menu2-particle_buy_none.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_7.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/menu_page/menu_page1.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/refresh_menu/refresh_menu1.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/refresh_menu/refresh_menu2.mcfunction"
+      },
+      {
+         "path" : "functions/inventory_menu/refresh_menu/refresh_menu3.mcfunction"
+      },
+      {
+         "path" : "functions/ore_get.mcfunction"
+      },
+      {
+         "path" : "functions/ore_spawner.mcfunction"
+      },
+      {
+         "path" : "functions/player_register.mcfunction"
+      },
+      {
+         "path" : "functions/prevent_break_map_important_area.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_villagerhappy_click.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_bow.mcfunction"
+      },
+      {
+         "path" : "functions/RandomDamageUID.mcfunction"
+      },
+      {
+         "path" : "functions/refresh.random.desbed.tellraw.mcfunction"
+      },
+      {
+         "path" : "functions/refresh_starting_scoreboard.mcfunction"
+      },
+      {
+         "path" : "functions/replaceitem.blue.leather.armor.mcfunction"
+      },
+      {
+         "path" : "functions/replaceitem.red.leather.armor.mcfunction"
+      },
+      {
+         "path" : "functions/reset_map.mcfunction"
+      },
+      {
+         "path" : "functions/startgame_timer.mcfunction"
+      },
+      {
+         "path" : "functions/reset_team_home/blue.mcfunction"
+      },
+      {
+         "path" : "functions/reset_team_home/green.mcfunction"
+      },
+      {
+         "path" : "scripts/main.js"
+      },
+      {
+         "path" : "functions/reset_team_home/red.mcfunction"
+      },
+      {
+         "path" : "functions/respawn/respawn_degrade.mcfunction"
+      },
+      {
+         "path" : "functions/respawn/respawn_main.mcfunction"
+      },
+      {
+         "path" : "functions/respawn/respawn_replaceitem.mcfunction"
+      },
+      {
+         "path" : "functions/road_egg.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_0.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_1.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_2.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_4.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_5.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_reachmax.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_6.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/blue/player_count_8.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_red_team_leggings.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_1.mcfunction"
+      },
+      {
+         "path" : "items/menu3_start_players_3.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_2.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_iron_leggings.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_3.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_4.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_5.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_7.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/green/player_count_8.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_0.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_red_team_chestplate.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_4.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_5.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_wooden_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_6.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_7.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_red_team_boots.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/red/player_count_8.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/set/yellow/player_count_8.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_chainmail_leggings.json"
+      },
+      {
+         "path" : "items/blue_team_boots.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_xp_bottle.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/test/blue_player_count.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/test/green_player_count.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness3_stone_sword.json"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/test/red_player_count.mcfunction"
+      },
+      {
+         "path" : "functions/scoreboard_team_display/test/yellow_player_count.mcfunction"
+      },
+      {
+         "path" : "functions/set.game.starting.mcfunction"
+      },
+      {
+         "path" : "functions/set_gamerule.mcfunction"
+      },
+      {
+         "path" : "functions/set_gameSTART0_waiting_scoreboard.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/blue_shop_team_upgrade_protection.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/blue_shop_team_upgrade_trigger.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_diamond_sword.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_diamond_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_iron_armor.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_diamond_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_road_egg.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_iron_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_iron_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_iron_boots.json"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_stone_sword.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_stone_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_3.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_endstone.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_stone_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_wooden_sword.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_villagerhappy_disabled.json"
+      },
+      {
+         "path" : "functions/shop_buy/clear_items/clear_wooden_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_arrow.mcfunction"
+      },
+      {
+         "path" : "items/wooden_sword_sharpnessII.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_blue_fangyuta.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_blue_wool.mcfunction"
+      },
+      {
+         "path" : "items/menu3_start_players_7.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_bow.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_stone_pickaxe.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_diamond_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_iron_sword.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_diamond_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_diamond_sword_sharpnessIII.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_end_stone.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_fireball.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_golden_apple.mcfunction"
+      },
+      {
+         "path" : "items/menu2_particle_villagerhappy_selected.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_iron_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_iron_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_blue_team_helmet.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_iron_sword_sharpnessIII.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_iron_pickaxe.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_jump_potion.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_planks.mcfunction"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_iron_leggings.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_red_glass.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_red_wool.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_stone_sword_sharpnessI.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_stone_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/team_win/red_team_win.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_tnt.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_wooden_sword_sharpnessII.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_wooden_sword_sharpnessIII.mcfunction"
+      },
+      {
+         "path" : "items/blue_team_leggings.json"
+      },
+      {
+         "path" : "functions/shop_buy/give_items/give_xp_bottle.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_8.json"
+      },
+      {
+         "path" : "functions/shop_buy/red_shop_team_upgrade_sharpness.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/red_shop_team_upgrade_trigger.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_arrow.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_golden_apple.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_2.json"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_planks.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_upgrade_armor.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_stained_glass.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_buy_wool.mcfunction"
+      },
+      {
+         "path" : "functions/shop_buy/shop_upgrade_pickaxe.mcfunction"
+      },
+      {
+         "path" : "items/diamond_sword_sharpnessI.json"
+      },
+      {
+         "path" : "functions/spectator_headup_back_to_lobby.mcfunction"
+      },
+      {
+         "path" : "functions/team_blue_TRIGGER.mcfunction"
+      },
+      {
+         "path" : "functions/team_red_TRIGGER.mcfunction"
+      },
+      {
+         "path" : "functions/team_win/yellow_team_win.mcfunction"
+      },
+      {
+         "path" : "functions/test_draw.mcfunction"
+      },
+      {
+         "path" : "functions/test_game_uid/do_not_in_this_game_kick.mcfunction"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_6.json"
+      },
+      {
+         "path" : "functions/test_game_uid/test_game_uid.mcfunction"
+      },
+      {
+         "path" : "functions/test_win.mcfunction"
+      },
+      {
+         "path" : "functions/tick.json"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_chainmail_armor.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_diamond_armor.mcfunction"
+      },
+      {
+         "path" : "items/menu1_op_menu_disabled.json"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_diamond_axe.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_diamond_pickaxe.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_diamond_sword.mcfunction"
+      },
+      {
+         "path" : "items/menu3_start_players_4.json"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_iron_axe.mcfunction"
+      },
+      {
+         "path" : "functions/upgrade_weapon/buy_stone_axe.mcfunction"
+      },
+      {
+         "path" : "functions/weapon_upgrade.mcfunction"
+      },
+      {
+         "path" : "items/blue_team_chestplate.json"
+      },
+      {
+         "path" : "LICENSE"
+      },
+      {
+         "path" : "items/blue_team_helmet.json"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_7.json"
+      },
+      {
+         "path" : "items/diamond_axe.json"
+      },
+      {
+         "path" : "items/diamond_pickaxe.json"
+      },
+      {
+         "path" : "items/diamond_sword_sharpnessIII.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_diamond_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_red_team_helmet.json"
+      },
+      {
+         "path" : "items/experience_bottle.json"
+      },
+      {
+         "path" : "items/iron_axe.json"
+      },
+      {
+         "path" : "items/iron_pickaxe.json"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_5.json"
+      },
+      {
+         "path" : "items/iron_sword_sharpnessIII.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_red_team_leggings.json"
+      },
+      {
+         "path" : "items/menu1_op_menu_enabled.json"
+      },
+      {
+         "path" : "items/menu2_particle_fire_click.json"
+      },
+      {
+         "path" : "items/menu2_particle_none_click.json"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_fire_click.json"
+      },
+      {
+         "path" : "items/menu2_particle_none_selected.json"
+      },
+      {
+         "path" : "items/menu2_particle_villagerhappy_click.json"
+      },
+      {
+         "path" : "items/menu3_add_start_players_required.json"
+      },
+      {
+         "path" : "items/menu3_remove_start_players_required.json"
+      },
+      {
+         "path" : "items/menu3_start_players_2.json"
+      },
+      {
+         "path" : "items/menu3_start_players_5.json"
+      },
+      {
+         "path" : "items/menu3_start_players_6.json"
+      },
+      {
+         "path" : "items/menu3_start_players_8.json"
+      },
+      {
+         "path" : "items/menu3_start_players_reachmin.json"
+      },
+      {
+         "path" : "items/menu_back.json"
+      },
+      {
+         "path" : "items/menu_pleasewait.json"
+      },
+      {
+         "path" : "items/potion_bottle_JumpBoostV.json"
+      },
+      {
+         "path" : "items/red_team_boots.json"
+      },
+      {
+         "path" : "items/red_team_chestplate.json"
+      },
+      {
+         "path" : "items/red_team_helmet.json"
+      },
+      {
+         "path" : "items/stone_axe.json"
+      },
+      {
+         "path" : "items/stone_pickaxe.json"
+      },
+      {
+         "path" : "items/stone_sword_sharpnessII.json"
+      },
+      {
+         "path" : "items/wooden_axe.json"
+      },
+      {
+         "path" : "items/wooden_sword_sharpnessI.json"
+      },
+      {
+         "path" : "items/wooden_sword_sharpnessIII.json"
+      },
+      {
+         "path" : "loot_tables/empty.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_blue_team_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_blue_team_chestplate.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_blue_team_helmet.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_blue_team_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_chainmail_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_chainmail_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_diamond_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_iron_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection1_iron_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_blue_team_leggings.json"
+      },
+      {
+         "path" : "loot_tables/menu/3_add_start_players_required.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_chainmail_boots.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_iron_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection2_red_team_helmet.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_blue_helmet.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_blue_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_chainmail_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_diamond_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_diamond_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_red_team_boots.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_red_team_chestplate.json"
+      },
+      {
+         "path" : "loot_tables/ench_armors/ench_protection3_red_team_leggings.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness1_diamond_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness1_iron_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness1_wooden_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness2_diamond_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness2_iron_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness2_stone_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness2_wooden_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness3_iron_sword.json"
+      },
+      {
+         "path" : "loot_tables/ench_swords/ench_sharpness3_wooden_sword.json"
+      },
+      {
+         "path" : "loot_tables/menu/1_op_menu_enabled.json"
+      },
+      {
+         "path" : "loot_tables/menu/1_particle_menu.json"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_fire_selected.json"
+      },
+      {
+         "path" : "loot_tables/menu/2_particle_villagerhappy_selected.json"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_4.json"
+      },
+      {
+         "path" : "loot_tables/menu/3_start_players_reachmin.json"
+      },
+      {
+         "path" : "loot_tables/menu/back.json"
+      },
+      {
+         "path" : "loot_tables/menu/pleasewait.json"
+      }
+   ],
+   "version" : 1
+}
