@@ -14,7 +14,7 @@
 			"bedwars:buy_arrow": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..2,gameSTART=1}] ~~~ function shop_buy/shop_buy_arrow"
+					"execute @s[scores={分队=1..4,gameSTART=1}] ~~~ function shop_buy/shop_buy_arrow"
 					],
 					"target": "player"
 				  }

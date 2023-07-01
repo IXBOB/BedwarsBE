@@ -23,6 +23,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[score
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_tnt] ~~~ function shop_buy/give_items/give_tnt
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_red_wool] ~~~ function shop_buy/give_items/give_red_wool
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_blue_wool] ~~~ function shop_buy/give_items/give_blue_wool
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_yellow_wool] ~~~ function shop_buy/give_items/give_yellow_wool
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_green_wool] ~~~ function shop_buy/give_items/give_green_wool
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_xp_bottle] ~~~ function shop_buy/give_items/give_xp_bottle
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_red_fangyuta] ~~~ function shop_buy/give_items/give_red_fangyuta
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_blue_fangyuta] ~~~ function shop_buy/give_items/give_blue_fangyuta

@@ -24,7 +24,7 @@
       "bedwars:get_bottle_xp":{
         "run_command":{
           "command":[
-            "tag @s[scores={分队=1..2,\"存活\"=1}] add get_bottle_xp",
+            "tag @s[scores={分队=1..4,\"存活\"=1}] add get_bottle_xp",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove get_bottle_xp",
             "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§f§lXP bottle >> §6You used an XP bottle and got 100 levels\" } ] }",
             "execute @s[tag=get_bottle_xp] ~~~ xp 100L @s",

@@ -14,7 +14,7 @@
 			"bedwars:buy_fireball": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..2,gameSTART=1}] ~~~ function shop_buy/shop_buy_fireball"
+					"execute @s[scores={分队=1..4,gameSTART=1}] ~~~ function shop_buy/shop_buy_fireball"
 					],
 					"target": "player"
 				  }

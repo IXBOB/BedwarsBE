@@ -373,8 +373,8 @@
         "run_command": {
           "command": [
             "tag @s add fatal_damage_died",
-            "scoreboard players operation @a[scores={分队=1..2}] damage_uid.cache = @s fatal_damage_uid",
-            "execute @a[scores={分队=1..2}] ~~~ scoreboard players operation @s fatal_damage_uid -= @s damage_uid.cache",
+            "scoreboard players operation @a[scores={分队=1..4}] damage_uid.cache = @s fatal_damage_uid",
+            "execute @a[scores={分队=1..4}] ~~~ scoreboard players operation @s fatal_damage_uid -= @s damage_uid.cache",
             "scoreboard players random @e[type=armor_stand,name=main] kill_tell_num 1 5",
             "playsound random.orb @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}]",
             "execute @e[type=armor_stand,name=main,scores={kill_tell_num=1}] ~~~ execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0,分队=1}] ~~~ tellraw @a { \"rawtext\": [ { \"text\": \"§b\" }, { \"selector\": \"@a[tag=fatal_damage_died]\" }, { \"text\": \"§7 was killed by §c\" }, { \"selector\": \"@s\" }, { \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@e[type=armor_stand,name=main,scores={蓝床存活=1}]\" }, { \"text\": \"§r\" }, { \"text\": \"§b§l FINAL KILL!\" } ] } } ] }",

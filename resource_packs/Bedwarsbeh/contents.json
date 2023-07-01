@@ -103,6 +103,9 @@
          "path" : "textures/items/blue_team_helmet.png"
       },
       {
+         "path" : "textures/blocks/buy_green_wool_block.png"
+      },
+      {
          "path" : "models/blocks/green_bed_head.geo.json"
       },
       {
@@ -443,6 +446,9 @@
       },
       {
          "path" : "textures/blocks/buy_xp_bottle_block.png"
+      },
+      {
+         "path" : "textures/blocks/buy_yellow_wool_block.png"
       },
       {
          "path" : "textures/ui/title.png"

@@ -14,7 +14,7 @@
 			"bedwars:buy_upgrade_armor": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..2,gameSTART=1}] ~~~ function shop_buy/shop_upgrade_armor"
+					"execute @s[scores={分队=1..4,gameSTART=1}] ~~~ function shop_buy/shop_upgrade_armor"
 					],
 					"target": "player"
 				  }
