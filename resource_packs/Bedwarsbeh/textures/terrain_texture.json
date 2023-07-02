@@ -556,6 +556,12 @@
 		"player_blue_wool": {
 			"textures": "textures/blocks/player_blue_wool"
 		},
+		"player_yellow_wool": {
+			"textures": "textures/blocks/player_yellow_wool"
+		},
+		"player_green_wool": {
+			"textures": "textures/blocks/player_green_wool"
+		},
 		"player_planks": {
 			"textures": "textures/blocks/player_planks"
 		},

@@ -7,6 +7,6 @@ execute @a[tag=upgrade_blue_trigger] ~~~ tellraw @a[scores={"分队"=2}] { "rawt
 execute @a[tag=upgrade_blue_trigger] ~~~ playsound note.pling @s ~~~
 execute @a[tag=upgrade_blue_trigger] ~~~ xp -100L @s
 execute @a[tag=upgrade_blue_trigger] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝陷阱等级" 1
-execute @a[tag=upgrade_blue_trigger] ~~~ function team_upgrade_TRIGGER
+execute @a[tag=upgrade_blue_trigger] ~~~ function team_upgrade_trigger
 tag @a remove want_upgrade_trigger_blue
 tag @a remove upgrade_blue_trigger

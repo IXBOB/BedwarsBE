@@ -31,7 +31,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('bedwars:player_red_wool','bedwars:player_blue_wool')"
+							"tags": "query.any_tag('bedwars:player_red_wool','bedwars:player_blue_wool','bedwars:player_yellow_wool','bedwars:player_green_wool')"
 						},
 						"speed": 6
 					}

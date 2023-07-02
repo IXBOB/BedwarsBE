@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:green_wool_particle"
+		},
+		"components": {
+			"minecraft:destroy_time": 1,
+			"minecraft:on_placed": {
+				"event": "bedwars:set_and_block"
+			},
+			"tag:bedwars:player_green_wool": {}
+		},
+		"events": {
+			"bedwars:set_and_block": {
+				"run_command": {
+					"command": [
+						"playsound dig.stone @a[r=15] ~ ~ ~",
+						"particle minecraft:large_explosion ~ ~ ~",
+						"setblock ~ ~ ~ bedwars:player_green_wool"
+					],
+					"target": "self"
+				}
+			}
+		}
+	}
+}

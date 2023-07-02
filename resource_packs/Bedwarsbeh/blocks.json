@@ -378,6 +378,28 @@
 		},
 		"sound": "cloth"
 	},
+	"bedwars:player_yellow_wool": {
+		"textures": {
+			"up": "player_yellow_wool",
+			"down": "player_yellow_wool",
+			"north": "player_yellow_wool",
+			"south": "player_yellow_wool",
+			"west": "player_yellow_wool",
+			"east": "player_yellow_wool"
+		},
+		"sound": "cloth"
+	},
+	"bedwars:player_green_wool": {
+		"textures": {
+			"up": "player_green_wool",
+			"down": "player_green_wool",
+			"north": "player_green_wool",
+			"south": "player_green_wool",
+			"west": "player_green_wool",
+			"east": "player_green_wool"
+		},
+		"sound": "cloth"
+	},
 	"bedwars:player_planks": {
 		"textures": {
 			"up": "player_planks",
@@ -433,6 +455,28 @@
 		},
 		"sound": "stone"
 	},
+	"bedwars:yellow_fangyuta": {
+		"textures": {
+			"up": "player_fangyuta",
+			"down": "player_fangyuta",
+			"north": "player_fangyuta",
+			"south": "player_fangyuta",
+			"west": "player_fangyuta",
+			"east": "player_fangyuta"
+		},
+		"sound": "stone"
+	},
+	"bedwars:green_fangyuta": {
+		"textures": {
+			"up": "player_fangyuta",
+			"down": "player_fangyuta",
+			"north": "player_fangyuta",
+			"south": "player_fangyuta",
+			"west": "player_fangyuta",
+			"east": "player_fangyuta"
+		},
+		"sound": "stone"
+	},
 	"bedwars:red_wool_particle": {
 		"textures": {
 			"up": "player_red_wool",
@@ -452,6 +496,28 @@
 			"south": "player_blue_wool",
 			"west": "player_blue_wool",
 			"east": "player_blue_wool"
+		},
+		"sound": "cloth"
+	},
+	"bedwars:yellow_wool_particle": {
+		"textures": {
+			"up": "player_yellow_wool",
+			"down": "player_yellow_wool",
+			"north": "player_yellow_wool",
+			"south": "player_yellow_wool",
+			"west": "player_yellow_wool",
+			"east": "player_yellow_wool"
+		},
+		"sound": "cloth"
+	},
+	"bedwars:green_wool_particle": {
+		"textures": {
+			"up": "player_green_wool",
+			"down": "player_green_wool",
+			"north": "player_green_wool",
+			"south": "player_green_wool",
+			"west": "player_green_wool",
+			"east": "player_green_wool"
 		},
 		"sound": "cloth"
 	},
