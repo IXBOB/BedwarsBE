@@ -15,6 +15,7 @@ tile.bedwars:green_fangyuta.name=Compact Pop-up Tower
 tile.bedwars:player_red_stained_glass.name=Red Stained Glass
 tile.bedwars:player_blue_stained_glass.name=Blue Stained Glass
 item.bedwars:wooden_axe=Wooden Axe
+item.bedwars:wooden_sword=Wooden Sword	#
 item.bedwars:wooden_pickaxe=Wooden Pickaxe
 item.bedwars:stone_axe=Stone Axe
 item.bedwars:stone_pickaxe=Stone Pickaxe
@@ -29,10 +30,8 @@ item.iron_ingot.name=Iron Ingot
 item.diamond.name=Diamond
 item.emerald.name=Emerald
 
-item.gold_ingot.name=Gold Ingot
-item.iron_ingot.name=Iron Ingot
-item.diamond.name=Diamond
-item.emerald.name=Emerald
+##scoreboard若ingame需要加ingame.
+##若非ingame随便写
 
 ##SCOREBOARD
 
@@ -41,63 +40,77 @@ text.scoreboard.waitinfo.mode_2=Mode: §aRUSH #
 text.scoreboard.waitinfo.map_1=Map: §aWooden Boat   #
 text.scoreboard.waitinfo.map_2=Map: §aDesert   #
 text.scoreboard.waitinfo.map_3=Map: §aDeep Ocean   #
+text.scoreboard.waitinfo.blank_1=§r   #
+text.scoreboard.waitinfo.blank_2=§r§r   #
+text.scoreboard.waitinfo.blank_3=§r§r§r   #
+text.scoreboard.waitinfo.blank_4=§r§r§r§r   #
+text.scoreboard.waitinfo.blank_5=§r§r§r§r§r   #
+text.scoreboard.waitinfo.blank_6=§r§r§r§r§r§r   #
+text.scoreboard.waitinfo.blank_7=§r§r§r§r§r§r§r   #
 
-
-
-text.scoreboard.gameinfo.mode_normal=
-text.scoreboard.gameinfo.event_1=§aEmerald II    #
-text.scoreboard.gameinfo.event_2=§bDiamond II    #
-text.scoreboard.gameinfo.event_3=§aEmerald III   #
-text.scoreboard.gameinfo.event_4=§bDiamond III   #
-text.scoreboard.gameinfo.event_5=§dObsidian piglin   #
-text.scoreboard.gameinfo.event_6=§dEnder pearl piglin    #
-text.scoreboard.gameinfo.event_7=§4BED DESTRUCTION warn  #
-text.scoreboard.gameinfo.event_8=§4§lBED DESTRUCTION #
-text.scoreboard.gameinfo.event_9=§4Draw warn #
-text.scoreboard.gameinfo.event_10=§4Draw warn    #
-text.scoreboard.gameinfo.event_11=§4§lDraw-game over #
-
-text.scoreboard.gameinfo.red_team_normal=§cRED §a✔  #cRED
-text.scoreboard.gameinfo.red_team_left_8=§cRED §r8   #
-text.scoreboard.gameinfo.red_team_left_7=§cRED §r7   #
-text.scoreboard.gameinfo.red_team_left_6=§cRED §r6   # 
-text.scoreboard.gameinfo.red_team_left_5=§cRED §r5   # 
-text.scoreboard.gameinfo.red_team_left_4=§cRED §r4   # 
-text.scoreboard.gameinfo.red_team_left_3=§cRED §r3   # 
-text.scoreboard.gameinfo.red_team_left_2=§cRED §r2   # 
-text.scoreboard.gameinfo.red_team_left_1=§cRED §r1   #
-
-text.scoreboard.gameinfo.blue_team_normal=§bBLUE §a✔  #
-text.scoreboard.gameinfo.blue_team_left_8=§bBLUE §r8   #
-text.scoreboard.gameinfo.blue_team_left_7=§bBLUE §r7   #
-text.scoreboard.gameinfo.blue_team_left_6=§bBLUE §r6   # 
-text.scoreboard.gameinfo.blue_team_left_5=§bBLUE §r5   # 
-text.scoreboard.gameinfo.blue_team_left_4=§bBLUE §r4   # 
-text.scoreboard.gameinfo.blue_team_left_3=§bBLUE §r3   # 
-text.scoreboard.gameinfo.blue_team_left_2=§bBLUE §r2   # 
-text.scoreboard.gameinfo.blue_team_left_1=§bBLUE §r1   #
-
-text.scoreboard.gameinfo.yellow_team_normal=§eYELLOW §a✔  #
-text.scoreboard.gameinfo.yellow_team_left_8=§eYELLOW §r8   #
-text.scoreboard.gameinfo.yellow_team_left_7=§eYELLOW §r7   #
-text.scoreboard.gameinfo.yellow_team_left_6=§eYELLOW §r6   # 
-text.scoreboard.gameinfo.yellow_team_left_5=§eYELLOW §r5   # 
-text.scoreboard.gameinfo.yellow_team_left_4=§eYELLOW §r4   # 
-text.scoreboard.gameinfo.yellow_team_left_3=§eYELLOW §r3   # 
-text.scoreboard.gameinfo.yellow_team_left_2=§eYELLOW §r2   # 
-text.scoreboard.gameinfo.yellow_team_left_1=§eYELLOW §r1   #
-
-text.scoreboard.gameinfo.green_team_normal=§aGREEN §a✔ #
-text.scoreboard.gameinfo.green_team_left_8=§aGREEN §r8   #
-text.scoreboard.gameinfo.green_team_left_7=§aGREEN §r7   #
-text.scoreboard.gameinfo.green_team_left_6=§aGREEN §r6   # 
-text.scoreboard.gameinfo.green_team_left_5=§aGREEN §r5   # 
-text.scoreboard.gameinfo.green_team_left_4=§aGREEN §r4   # 
-text.scoreboard.gameinfo.green_team_left_3=§aGREEN §r3   # 
-text.scoreboard.gameinfo.green_team_left_2=§aGREEN §r2   # 
-text.scoreboard.gameinfo.green_team_left_1=§aGREEN §r1   #
-
-
+text.scoreboard.ingame.info.mode_1=Mode: §7NORMAL #
+text.scoreboard.ingame.info.mode_2=Mode: §7§oRUSH  #
+text.scoreboard.ingame.info.event_1=§aEmerald II    #
+text.scoreboard.ingame.info.event_2=§bDiamond II    #
+text.scoreboard.ingame.info.event_3=§aEmerald III   #
+text.scoreboard.ingame.info.event_4=§bDiamond III   #
+text.scoreboard.ingame.info.event_5=§dObsidian piglin   #
+text.scoreboard.ingame.info.event_6=§dEnder pearl piglin    #
+text.scoreboard.ingame.info.event_7=§4BED DESTRUCTION warn  #
+text.scoreboard.ingame.info.event_8=§4§lBED DESTRUCTION #
+text.scoreboard.ingame.info.event_9=§4Draw warn #
+text.scoreboard.ingame.info.event_10=§4Draw warn    #
+text.scoreboard.ingame.info.event_11=§4§lgame draw #
+text.scoreboard.ingame.info.creator=§7Created by IXBOB #
+text.scoreboard.ingame.info.website=§7mtw.so/6nID9e    #
+text.scoreboard.ingame.info.blank_1=§r   #
+text.scoreboard.ingame.info.blank_2=§r§r   #
+text.scoreboard.ingame.info.blank_3=§r§r§r   #
+text.scoreboard.ingame.info.blank_4=§r§r§r§r   #
+text.scoreboard.ingame.info.blank_5=§r§r§r§r§r   #
+text.scoreboard.ingame.info.blank_6=§r§r§r§r§r§r   #
+text.scoreboard.ingame.info.blank_7=§r§r§r§r§r§r§r   #
+text.scoreboard.ingame.info.red_team_normal=§cRED §a✔  #cRED
+text.scoreboard.ingame.info.red_team_left_8=§cRED §r8   #
+text.scoreboard.ingame.info.red_team_left_7=§cRED §r7   #
+text.scoreboard.ingame.info.red_team_left_6=§cRED §r6   # 
+text.scoreboard.ingame.info.red_team_left_5=§cRED §r5   # 
+text.scoreboard.ingame.info.red_team_left_4=§cRED §r4   # 
+text.scoreboard.ingame.info.red_team_left_3=§cRED §r3   # 
+text.scoreboard.ingame.info.red_team_left_2=§cRED §r2   # 
+text.scoreboard.ingame.info.red_team_left_1=§cRED §r1   #
+text.scoreboard.ingame.info.blue_team_normal=§bBLUE §a✔  #
+text.scoreboard.ingame.info.blue_team_left_8=§bBLUE §r8   #
+text.scoreboard.ingame.info.blue_team_left_7=§bBLUE §r7   #
+text.scoreboard.ingame.info.blue_team_left_6=§bBLUE §r6   # 
+text.scoreboard.ingame.info.blue_team_left_5=§bBLUE §r5   # 
+text.scoreboard.ingame.info.blue_team_left_4=§bBLUE §r4   # 
+text.scoreboard.ingame.info.blue_team_left_3=§bBLUE §r3   # 
+text.scoreboard.ingame.info.blue_team_left_2=§bBLUE §r2   # 
+text.scoreboard.ingame.info.blue_team_left_1=§bBLUE §r1   #
+text.scoreboard.ingame.info.yellow_team_normal=§eYELLOW §a✔  #
+text.scoreboard.ingame.info.yellow_team_left_8=§eYELLOW §r8   #
+text.scoreboard.ingame.info.yellow_team_left_7=§eYELLOW §r7   #
+text.scoreboard.ingame.info.yellow_team_left_6=§eYELLOW §r6   # 
+text.scoreboard.ingame.info.yellow_team_left_5=§eYELLOW §r5   # 
+text.scoreboard.ingame.info.yellow_team_left_4=§eYELLOW §r4   # 
+text.scoreboard.ingame.info.yellow_team_left_3=§eYELLOW §r3   # 
+text.scoreboard.ingame.info.yellow_team_left_2=§eYELLOW §r2   # 
+text.scoreboard.ingame.info.yellow_team_left_1=§eYELLOW §r1   #
+text.scoreboard.ingame.info.green_team_normal=§aGREEN §a✔ #
+text.scoreboard.ingame.info.green_team_left_8=§aGREEN §r8   #
+text.scoreboard.ingame.info.green_team_left_7=§aGREEN §r7   #
+text.scoreboard.ingame.info.green_team_left_6=§aGREEN §r6   # 
+text.scoreboard.ingame.info.green_team_left_5=§aGREEN §r5   # 
+text.scoreboard.ingame.info.green_team_left_4=§aGREEN §r4   # 
+text.scoreboard.ingame.info.green_team_left_3=§aGREEN §r3   # 
+text.scoreboard.ingame.info.green_team_left_2=§aGREEN §r2   # 
+text.scoreboard.ingame.info.green_team_left_1=§aGREEN §r1   #
+text.title.ingame.respawning=§cYOU DIED
+text.subtitle.ingame.respawning_4=§erespawn in §c4 §eseconds
+text.subtitle.ingame.respawning_3=§erespawn in §c3 §eseconds
+text.subtitle.ingame.respawning_2=§erespawn in §c2 §eseconds
+text.subtitle.ingame.respawning_1=§erespawn in §c1 §eseconds
 
 text.system.back_to_lobby_wait_10=§lBEDWARS >> §eReturn to the lobby in 10 seconds    #
 text.system.back_to_lobby_wait_5=§lBEDWARS >> §eReturn to the lobby in 5 seconds    #

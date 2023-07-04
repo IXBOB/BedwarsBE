@@ -117,7 +117,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores
 #游戏开始tellraw游戏玩法
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\n                  §fBED WARS \n \n§eProtect your bed and destory the enemy\nbed. Upgrade yourself and your team by\ncollecting Iron, Gold, Emerald and Diamond\nfrom generators to access powerful\nupgrades.\n \n§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀" } ] }
 #给予木剑
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 bedwars:wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #红队存在-> 1
@@ -246,6 +246,11 @@ scoreboard players set §r "游戏显示" -3
 scoreboard players set §r§r§r§r "游戏显示" -8
 scoreboard players set "§7Created by IXBOB" "游戏显示" -9
 scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
+#删除复制地图时多余的结构方块
+setblock 0 185 48 air
+setblock 0 185 -48 air
+setblock 48 185 0 air
+setblock -48 185 0 air
 
 #starting -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] starting 0

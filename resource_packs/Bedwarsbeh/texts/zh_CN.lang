@@ -15,6 +15,7 @@ tile.bedwars:green_fangyuta.name=紧凑型速建防御塔	#
 tile.bedwars:player_red_stained_glass.name=红色染色玻璃	#
 tile.bedwars:player_blue_stained_glass.name=蓝色染色玻璃	#
 item.bedwars:wooden_axe=木斧	#
+item.bedwars:wooden_sword=木剑	#
 item.bedwars:wooden_pickaxe=木镐	#
 item.bedwars:stone_axe=石斧	#
 item.bedwars:stone_pickaxe=石镐	#
@@ -83,3 +84,4 @@ text.system.lobby_before_reset_wait_1=
 text.system.lobby_start_reset_actionbar=
 text.system.lobby_reseting_title=
 text.system.lobby_reset_complete=
+
