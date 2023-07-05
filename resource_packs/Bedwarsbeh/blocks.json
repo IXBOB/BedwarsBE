@@ -323,6 +323,28 @@
 		},
 		"sound": "glass"
 	},
+	"bedwars:player_yellow_stained_glass": {
+		"textures": {
+			"up": "player_yellow_stained_glass_up",
+			"down": "player_yellow_stained_glass_down",
+			"north": "player_yellow_stained_glass_north",
+			"south": "player_yellow_stained_glass_south",
+			"west": "player_yellow_stained_glass_west",
+			"east": "player_yellow_stained_glass_east"
+		},
+		"sound": "glass"
+	},
+	"bedwars:player_green_stained_glass": {
+		"textures": {
+			"up": "player_green_stained_glass_up",
+			"down": "player_green_stained_glass_down",
+			"north": "player_green_stained_glass_north",
+			"south": "player_green_stained_glass_south",
+			"west": "player_green_stained_glass_west",
+			"east": "player_green_stained_glass_east"
+		},
+		"sound": "glass"
+	},
 	"bedwars:log_spruce2": {
 		"textures": {
 			"up": "log_spruce2_up",

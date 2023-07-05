@@ -84,7 +84,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,function_tick=20}] ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,function_tick=20}] ~~~ tag * remove from_lobby_spectator
 #设置计分板游戏倒计时
 execute @e[type=armor_stand,scores={gameSTART=0,starting=1,function_tick=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
-execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ scoreboard players reset RESETTING... "等待显示"
+execute @e[type=armor_stand,scores={gameSTART=0,starting=0..1},tag=reset_OK] ~~~ scoreboard players reset PREPARING... "等待显示"
 #设置starting值
 execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ function set.game.starting
 #传送结束时有分队值的玩家到大厅并清空背包

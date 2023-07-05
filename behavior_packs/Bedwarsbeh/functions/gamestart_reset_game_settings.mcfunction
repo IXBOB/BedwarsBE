@@ -76,6 +76,18 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "蓝保护等级" 0
 #蓝锋利等级 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "蓝锋利等级" 0
+#黄陷阱等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "黄陷阱等级" 0
+#黄保护等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "黄保护等级" 0
+#黄锋利等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "黄锋利等级" 0
+#绿陷阱等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "绿陷阱等级" 0
+#绿保护等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "绿保护等级" 0
+#绿锋利等级 -> 0
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "绿锋利等级" 0
 #瞬间恢复
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade
@@ -120,6 +132,26 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "raw
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 bedwars:wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 1 bedwars:shears 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
+#replaceitem红队皮革护甲
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1}] slot.armor.head 0 bedwars:red_team_helmet 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1}] slot.armor.chest 0 bedwars:red_team_chestplate 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1}] slot.armor.legs 0 bedwars:red_team_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1}] slot.armor.feet 0 bedwars:red_team_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+#replaceitem蓝队皮革护甲
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=2}] slot.armor.head 0 bedwars:blue_team_helmet 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=2}] slot.armor.chest 0 bedwars:blue_team_chestplate 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=2}] slot.armor.legs 0 bedwars:blue_team_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=2}] slot.armor.feet 0 bedwars:blue_team_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+#replaceitem黄队皮革护甲
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=3}] slot.armor.head 0 bedwars:yellow_team_helmet 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=3}] slot.armor.chest 0 bedwars:yellow_team_chestplate 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=3}] slot.armor.legs 0 bedwars:yellow_team_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=3}] slot.armor.feet 0 bedwars:yellow_team_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+#replaceitem绿队皮革护甲
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=4}] slot.armor.head 0 bedwars:green_team_helmet 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=4}] slot.armor.chest 0 bedwars:green_team_chestplate 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=4}] slot.armor.legs 0 bedwars:green_team_leggings 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=4}] slot.armor.feet 0 bedwars:green_team_boots 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"},"minecraft:keep_on_death":{}}
 #红队存在-> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红队存在" 1
 #黄队存在-> 1

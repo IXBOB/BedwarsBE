@@ -15,7 +15,9 @@
 				"run_command":{
 				  "command":[
 					"execute @s[scores={分队=1}] ~~~ function shop_buy/red_shop_team_upgrade_sharpness",
-					"execute @s[scores={分队=2}] ~~~ function shop_buy/blue_shop_team_upgrade_sharpness"
+					"execute @s[scores={分队=2}] ~~~ function shop_buy/blue_shop_team_upgrade_sharpness",
+					"execute @s[scores={分队=3}] ~~~ function shop_buy/yellow_shop_team_upgrade_sharpness",
+					"execute @s[scores={分队=4}] ~~~ function shop_buy/green_shop_team_upgrade_sharpness"
 					],
 					"target": "player"
 				  }

@@ -142,6 +142,9 @@
          "path" : "attachables/chainmail_leggings_protectionIII.json"
       },
       {
+         "path" : "textures/blocks/buy_green_glass_block.png"
+      },
+      {
          "path" : "attachables/red_team_helmet.json"
       },
       {
@@ -568,6 +571,9 @@
          "path" : "textures/blocks/buy_bow_block.png"
       },
       {
+         "path" : "textures/blocks/buy_yellow_glass_block.png"
+      },
+      {
          "path" : "textures/blocks/buy_end_stone_block.png"
       },
       {
@@ -712,10 +718,16 @@
          "path" : "textures/blocks/player_fangyuta.png"
       },
       {
+         "path" : "textures/blocks/player_green_stained_glass.png"
+      },
+      {
          "path" : "textures/blocks/player_red_stained_glass.png"
       },
       {
          "path" : "textures/blocks/player_red_wool.png"
+      },
+      {
+         "path" : "textures/blocks/player_yellow_stained_glass.png"
       },
       {
          "path" : "textures/blocks/player_yellow_wool.png"

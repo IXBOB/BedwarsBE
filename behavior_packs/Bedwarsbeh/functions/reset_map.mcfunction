@@ -51,7 +51,7 @@ execute @e[type=armor_stand,name=reset,tag=reset_finish,scores={gameSTART=0}] ~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=7}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=14}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=..99,function_tick=20}] ~~~ scoreboard players add @s "重置百分数" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"text":"§eresetting map - §l"},{ "score" : { "name" : "@s" , "objective" : "重置百分数"}},{"text":"% "}]}
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"text":"§epreparing map - §l"},{ "score" : { "name" : "@s" , "objective" : "重置百分数"}},{"text":"% "}]}
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle §a§l - RESET COMPLETE -
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
@@ -71,11 +71,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"黄已重�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"绿已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/green
 
 #疾速模式时复制红床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ clone -44 4 -65 -50 7 -72 -3 185 43 masked
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_red_protect -3 185 43
 #疾速模式时复制蓝床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ clone -53 4 -65 -59 7 -72 -3 185 -50 masked
-#maskMode: MaskMode
-#指定是否过滤被复制方块。必须为下列之一：
-#masked — 仅复制非空气方块。会保持目的区域中原本会被替换为空气的方块不变。
-#replace — 复制所有方块，用源区域的方块覆盖目标区域中的所有方块。
-#若未定义，默认为replace。
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_blue_protect -3 185 -50
+#疾速模式时复制黄床保护方块
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_yellow_protect 43 185 -3 90_degrees
+#疾速模式时复制绿床保护方块
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_green_protect -50 185 -3 90_degrees

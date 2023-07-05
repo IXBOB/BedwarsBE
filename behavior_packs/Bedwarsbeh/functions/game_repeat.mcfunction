@@ -24,6 +24,12 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~
 #蓝床存在将蓝非挂机玩家存活设1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=2}] "存活" 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=2}] "存活" 1
+#黄床存在将红非挂机玩家存活设1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=3}] "存活" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=3}] "存活" 1
+#绿床存在将蓝非挂机玩家存活设1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=4}] "存活" 0
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4}] "存活" 1
 #删除盔甲架主手物品
 replaceitem entity @e[type=armor_stand] slot.weapon.mainhand 0 air
 #火焰弹相关================
@@ -79,6 +85,12 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~
 #蓝床存在设置able_to_respawn蓝并设置重生点
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=2}] able_to_respawn 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=2}] 0 210 0
+#黄床存在设置able_to_respawn黄并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=3}] able_to_respawn 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=3}] 0 210 0
+#绿床存在设置able_to_respawn绿并设置重生点
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=4}] able_to_respawn 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=4}] 0 210 0
 #传送大厅有红分队玩家至相应基地
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,scores={"分队"=1,"存活"=1}] ~~~ tp @s 0 186 53
 #传送大厅有蓝分队玩家至相应基地
@@ -178,10 +190,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores
 #检测有人正在重生执行相关指令
 execute @e[type=player,scores={respawning=1},x=0,y=200,z=0,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
 #此处一部分指令在gameSTART0_functions，为性能考虑
-#replaceitem红队皮革护甲
-execute @e[type=armor_stand,scores={gameSTART=1,"红保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=1,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.red.leather.armor
-#replaceitem蓝队皮革护甲
- execute @e[type=armor_stand,scores={gameSTART=1,"蓝保护等级"=0},name=main] ~~~ execute @a[x=-63,y=176,z=-63,dx=126,dy=28,dz=126,scores={"分队"=2,"防具等级"=1,"存活"=1}] ~~~ function replaceitem.blue.leather.armor
 #复制告示牌游戏已开始
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ clone 293 5 296 293 5 296 -200 200 -204
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
@@ -343,6 +351,26 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3,fu
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=1,function_tick=20}] ~~~ clone 313 4 313 313 4 313 -4 185 -55
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=2,function_tick=20}] ~~~ clone 313 5 313 313 5 313 -4 185 -55
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=3,function_tick=20}] ~~~ clone 313 6 313 313 6 313 -4 185 -55
+#复制黄队团队升级告示牌
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1,function_tick=20}] ~~~ clone 312 4 310 312 4 310 57 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=2,function_tick=20}] ~~~ clone 312 5 310 312 5 310 57 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=3,function_tick=20}] ~~~ clone 312 6 310 312 6 310 57 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1,function_tick=20}] ~~~ clone 311 4 310 311 4 310 56 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=2,function_tick=20}] ~~~ clone 311 5 310 311 5 310 56 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3,function_tick=20}] ~~~ clone 311 6 310 311 6 310 56 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=1,function_tick=20}] ~~~ clone 310 4 310 310 4 310 55 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=2,function_tick=20}] ~~~ clone 310 5 310 310 5 310 55 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=3,function_tick=20}] ~~~ clone 310 6 310 310 6 310 55 185 -4
+#复制绿队团队升级告示牌
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1,function_tick=20}] ~~~ clone 310 4 307 310 4 307 -57 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=2,function_tick=20}] ~~~ clone 310 5 307 310 5 307 -57 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=3,function_tick=20}] ~~~ clone 310 6 307 310 6 307 -57 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1,function_tick=20}] ~~~ clone 311 4 307 311 4 307 -56 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=2,function_tick=20}] ~~~ clone 311 5 307 311 5 307 -56 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3,function_tick=20}] ~~~ clone 311 6 307 311 6 307 -56 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=1,function_tick=20}] ~~~ clone 312 4 307 312 4 307 -55 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=2,function_tick=20}] ~~~ clone 312 5 307 312 5 307 -55 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=3,function_tick=20}] ~~~ clone 312 6 307 312 6 307 -55 185 4
 #will_get_XP
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4,will_get_XP=1..}] ~~~ function will_get_XP
 #删除背包内的铁锭，金锭，钻石，绿宝石
@@ -378,6 +406,8 @@ execute @e[type=armor_stand,name=main,scores={lobby_text_time=..-480}] ~~~ score
 #检测触发陷阱
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function team_red_trigger
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3}] ~~~ function team_blue_trigger
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1..3}] ~~~ function team_yellow_trigger
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3}] ~~~ function team_green_trigger
 #跑酷终点粒子效果
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle minecraft:totem_particle -203 223 -192
 

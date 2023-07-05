@@ -47,9 +47,9 @@
                         //蓝家
                         "tag @e[type=bedwars:block_mark,x=-5,y=183,z=-58,dx=10,dy=5,dz=6] add remove_block",
                         //黄家
-                        "tag @e[type=bedwars:block_mark,x=58,y=183,z=-5,dx=-10,dy=5,dz=6] add remove_block",
+                        "tag @e[type=bedwars:block_mark,x=58,y=183,z=-5,dx=-6,dy=5,dz=10] add remove_block",
                         //绿家
-                        "tag @e[type=bedwars:block_mark,x=-58,y=183,z=5,dx=10,dy=5,dz=-6] add remove_block",
+                        "tag @e[type=bedwars:block_mark,x=-58,y=183,z=5,dx=6,dy=5,dz=-10] add remove_block",
                         //顶部
                         "tag @e[type=bedwars:block_mark,x=-63,y=205,z=-63,dx=127,dy=10,dz=127] add remove_block",
                         //侧面

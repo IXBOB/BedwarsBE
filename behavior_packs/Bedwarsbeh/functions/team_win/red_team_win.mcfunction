@@ -35,6 +35,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ effect @a instan
 #gameSTART -> 2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @s gameSTART 2
 
+
 #放置倒计时区域的红石块
 setblock 267 4 310 redstone_block
 

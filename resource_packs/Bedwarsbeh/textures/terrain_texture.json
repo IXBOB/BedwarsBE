@@ -526,6 +526,42 @@
 		"player_blue_stained_glass_west": {												//WEST
 			"textures": "textures/blocks/player_blue_stained_glass"
 		},
+		"player_yellow_stained_glass_up": {
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_yellow_stained_glass_down": {
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_yellow_stained_glass_north": {
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_yellow_stained_glass_east": {
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_yellow_stained_glass_south": {
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_yellow_stained_glass_west": {												//WEST
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"player_green_stained_glass_up": {
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"player_green_stained_glass_down": {
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"player_green_stained_glass_north": {
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"player_green_stained_glass_east": {
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"player_green_stained_glass_south": {
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"player_green_stained_glass_west": {												//WEST
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
 		"log_spruce2_up": {
 			"textures": "textures/blocks/log_spruce2/log_spruce_top2"
 		},

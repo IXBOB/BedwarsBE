@@ -1,8 +1,8 @@
 execute @s[scores={"绿床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=4}] "存活" 0
-execute @s[scores={"绿床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4},x=-63,y=92,z=-63,dx=126,dy=120,dz=126,m=0] "存活" 1
+execute @s[scores={"绿床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4}] "存活" 1
 execute @s[scores={"绿床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4,respawning=1}] "存活" 1
 scoreboard players set @s[scores={"绿床存活"=0}] "绿剩人数" 0
-execute @s[scores={"绿床存活"=0}] ~~~ execute @e[type=player,scores={"分队"=4,"存活"=1}] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=0}] "绿剩人数" 1
+execute @s[scores={"绿床存活"=0}] ~~~ execute @e[type=player,scores={"分队"=4,"存活"=1}] ~~~ scoreboard players add @e[type=armor_stand,name=main,scores={"绿床存活"=0}] "绿剩人数" 1
 execute @s[scores={"绿床存活"=0,"绿剩人数"=0}] ~~~ function scoreboard_team_display/set/green/player_count_0
 execute @s[scores={"绿床存活"=0,"绿剩人数"=1}] ~~~ function scoreboard_team_display/set/green/player_count_1
 execute @s[scores={"绿床存活"=0,"绿剩人数"=2}] ~~~ function scoreboard_team_display/set/green/player_count_2
