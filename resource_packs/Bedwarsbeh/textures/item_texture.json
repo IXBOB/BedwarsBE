@@ -26,6 +26,30 @@
       "blue_team_boots": {
         "textures": "textures/items/blue_team_boots"
       },
+      "yellow_team_helmet": {
+        "textures": "textures/items/yellow_team_helmet"
+      },
+      "yellow_team_chestplate": {
+        "textures": "textures/items/yellow_team_chestplate"
+      },
+      "yellow_team_leggings": {
+        "textures": "textures/items/yellow_team_leggings"
+      },
+      "yellow_team_boots": {
+        "textures": "textures/items/yellow_team_boots"
+      },
+      "green_team_helmet": {
+        "textures": "textures/items/green_team_helmet"
+      },
+      "green_team_chestplate": {
+        "textures": "textures/items/green_team_chestplate"
+      },
+      "green_team_leggings": {
+        "textures": "textures/items/green_team_leggings"
+      },
+      "green_team_boots": {
+        "textures": "textures/items/green_team_boots"
+      },
       "potion_bottle_JumpBoostV": {
         "textures": "textures/items/potion_bottle_JumpBoostV"
       },

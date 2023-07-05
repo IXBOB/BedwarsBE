@@ -92,6 +92,28 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:buy_yellow_glass_block": {
+		"textures": {
+			"up": "buy_yellow_glass_block_up",
+			"down": "buy_yellow_glass_block_down",
+			"north": "buy_yellow_glass_block_north",
+			"south": "buy_yellow_glass_block_south",
+			"west": "buy_yellow_glass_block_west",
+			"east": "buy_yellow_glass_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:buy_green_glass_block": {
+		"textures": {
+			"up": "buy_green_glass_block_up",
+			"down": "buy_green_glass_block_down",
+			"north": "buy_green_glass_block_north",
+			"south": "buy_green_glass_block_south",
+			"west": "buy_green_glass_block_west",
+			"east": "buy_green_glass_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:buy_upgrade_sword_block": {
 		"textures": {
 			"up": "buy_upgrade_sword_block_up",
