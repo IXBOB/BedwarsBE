@@ -9,9 +9,6 @@
 			"minecraft:icon": {
 				"texture": "iron_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§eRemove 1 required player\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

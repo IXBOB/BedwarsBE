@@ -9,9 +9,6 @@
             "minecraft:icon": {
                 "texture": "potion_bottle_JumpBoostV"
             },
-            "minecraft:display_name": {
-                "value": "Potion of Leaping\n§7Jump Boost V (00:30)"
-            },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.potion"
             },

@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "repeater"
 			},
-			"minecraft:display_name": {
-				"value": "§6OP options\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

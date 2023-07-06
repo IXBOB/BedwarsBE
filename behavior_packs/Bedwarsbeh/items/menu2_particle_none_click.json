@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "barrier"
 			},
-			"minecraft:display_name": {
-				"value": "§cNone\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

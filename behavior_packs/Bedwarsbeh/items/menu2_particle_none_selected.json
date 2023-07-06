@@ -9,9 +9,6 @@
 			"minecraft:icon": {
 				"texture": "barrier"
 			},
-			"minecraft:display_name": {
-				"value": "§cNone\n§a[selected]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

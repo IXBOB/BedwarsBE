@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "experience_bottle"
 			},
-			"minecraft:display_name": {
-				"value": "§aGreen star\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

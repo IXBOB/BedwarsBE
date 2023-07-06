@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "barrier"
 			},
-			"minecraft:display_name": {
-				"value": "§6OP options\n§cYou don't have permission to open this.\n§7Enter §o#op §r§7 if you are the map operator."
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

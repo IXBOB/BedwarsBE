@@ -16,6 +16,10 @@ scoreboard players operation @a game.time.sec.1 = @e[type=armor_stand,name=main,
 scoreboard players operation @a game.time.sec.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.sec.2
 scoreboard players operation @a game.time.min.1 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.1
 scoreboard players operation @a game.time.min.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.2
+scoreboard players operation @a "红床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床存活"
+scoreboard players operation @a "蓝床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床存活"
+scoreboard players operation @a "黄床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床存活"
+scoreboard players operation @a "绿床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床存活"
 #无敌时间
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true

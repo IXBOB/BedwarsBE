@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "fireball"
 			},
-			"minecraft:display_name": {
-				"value": "§6Fire\n§c[require 10 levels]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

@@ -54,6 +54,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "重生时间" 100
 #XP清空
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ xp -99999L @a
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s own_xp 0
 #剑等级 -> 1
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "剑等级" 1
 #镐等级 -> 0

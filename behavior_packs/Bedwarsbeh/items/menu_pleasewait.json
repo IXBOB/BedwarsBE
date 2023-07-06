@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "gunpowder"
 			},
-			"minecraft:display_name": {
-				"value": "§7§oPlease wait..."
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

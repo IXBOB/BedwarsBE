@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "iron_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§cIt is no longer possible\nto reduce the required players."
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

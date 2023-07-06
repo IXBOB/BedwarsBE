@@ -14,9 +14,6 @@
 			"minecraft:icon": {
 				"texture": "red_team_leggings"
 			},
-			"minecraft:display_name": {
-				"value": "Red leather leggings"
-			},
 			"minecraft:max_stack_size": 1,
 			// Make sure the enchantments are for legs
 			"minecraft:enchantable": {

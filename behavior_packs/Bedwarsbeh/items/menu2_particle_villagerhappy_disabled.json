@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "experience_bottle"
 			},
-			"minecraft:display_name": {
-				"value": "§aGreen star\n§c[require 5 levels]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

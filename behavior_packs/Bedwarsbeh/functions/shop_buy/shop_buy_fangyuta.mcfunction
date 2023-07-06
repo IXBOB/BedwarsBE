@@ -6,4 +6,5 @@ execute @s[lm=100,scores={分队=3}] ~~~ tag @s add give_yellow_fangyuta
 execute @s[lm=100,scores={分队=4}] ~~~ tag @s add give_green_fangyuta
 execute @s[lm=100] ~~~ tellraw @s { "rawtext" : [ { "text" : "§lShop >> §a§lYou purchased §r§6Compact Pop-up Tower" } ] }
 execute @s[lm=100] ~~~ playsound note.pling @s ~~~
+execute @s[lm=100] ~~~ scoreboard players add @s own_xp -100
 execute @s[lm=100] ~~~ xp -100L @s

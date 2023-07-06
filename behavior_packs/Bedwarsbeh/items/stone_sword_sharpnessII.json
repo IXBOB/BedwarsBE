@@ -28,9 +28,6 @@
 			// This texture is used for both inventory and the hand model
 			"minecraft:icon": {
 				"texture": "stone_sword"
-			},
-			"minecraft:display_name": {
-				"value": "Stone Sword\n§7Sharpness II\n\n§9+7 Attack Damage"
 			}
 		}
 	}

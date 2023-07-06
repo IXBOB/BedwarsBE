@@ -9,9 +9,6 @@
 			"minecraft:icon": {
 				"texture": "experience_bottle"
 			},
-			"minecraft:display_name": {
-				"value": "§aGreen star\n§a[selected]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

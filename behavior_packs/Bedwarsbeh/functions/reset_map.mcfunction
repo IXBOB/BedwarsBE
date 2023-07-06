@@ -57,8 +57,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a title §r 
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle §a§l- RESET COMPLETE -
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set §r§r§r§r§r "等待显示" -8
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set "§emtw.so/6nID9e" "等待显示" -9
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.blank_5 "等待显示" -8
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "等待显示" -9
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
 
 #百分数=90重置红家

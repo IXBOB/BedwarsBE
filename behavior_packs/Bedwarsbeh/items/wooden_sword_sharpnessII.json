@@ -28,9 +28,6 @@
 			// This texture is used for both inventory and the hand model
 			"minecraft:icon": {
 				"texture": "wooden_sword"
-			},
-			"minecraft:display_name": {
-				"value": "Wooden Sword\n§7Sharpness II\n\n§9+6 Attack Damage"
 			}
 		}
 	}

@@ -6,4 +6,5 @@ execute @s[scores={分队=3},lm=20] ~~~ tag @s add give_yellow_glass
 execute @s[scores={分队=4},lm=20] ~~~ tag @s add give_green_glass
 execute @s[lm=20] ~~~ tellraw @s { "rawtext" : [ { "text" : "§lShop >> §a§lYou purchased §r§6explosion-proof glass x4" } ] }
 execute @s[lm=20] ~~~ playsound note.pling @s ~~~
+execute @s[lm=20] ~~~ scoreboard players add @s own_xp -20
 execute @s[lm=20] ~~~ xp -20L @s

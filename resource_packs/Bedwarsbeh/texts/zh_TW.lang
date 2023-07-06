@@ -20,7 +20,7 @@ item.bedwars:diamond_axe=鑽石斧	#
 item.bedwars:diamond_pickaxe=鑽石鎬	#
 item.bedwars:shears=剪刀	#
 
-item.gold_ingot.name=Gold Ingot
+item.gold_ingot.name=Gold Ingot         ##这边一串不随语言文件更改而更改（function选择器用的name=xxx），反正玩家捡到这些物品立马就被clear了，基本看不到
 item.iron_ingot.name=Iron Ingot
 item.diamond.name=Diamond
 item.emerald.name=Emerald

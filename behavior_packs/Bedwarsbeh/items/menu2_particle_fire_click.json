@@ -8,9 +8,6 @@
 			"minecraft:icon": {
 				"texture": "fireball"
 			},
-			"minecraft:display_name": {
-				"value": "§6Fire\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

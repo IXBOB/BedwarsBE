@@ -28,9 +28,6 @@
 			// This texture is used for both inventory and the hand model
 			"minecraft:icon": {
 				"texture": "diamond_sword"
-			},
-			"minecraft:display_name": {
-				"value": "Diamond Sword\n§7Sharpness I\n\n§9+8 Attack Damage"
 			}
 		}
 	}

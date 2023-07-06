@@ -42,7 +42,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 #更改游戏模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,able_to_respawn=1},tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[x=-63,y=205,z=-63,dx=126,dy=10,dz=126,tag=!insider] ~~~ detect ~ ~-1 ~ barrier 0 gamemode 2 @s
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
 execute @e[type=armor_stand,name=main,scores={gameSTART=2,function_tick=20}] ~~~ gamemode 2 @a[tag=!insider,m=1]
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,function_tick=20}] ~~~ gamemode 2 @a[tag=!insider]
 #删除出界的箭
@@ -50,6 +50,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[ty
 #删除出界的末影珍珠
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl] ~~~ detect ~ 0 ~ deny 0 kill @s
 execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] ~~~ kill @s
+#删除disabled_content
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ kill @e[type=item,name=disabled_content]
 #红队队伍actionbar
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{ "text" : "§fteam:  §c§lRed\n§r§fteam member:  §c" },{ "selector" :  "@a[scores={分队=1,存活=1}]"},{ "text" : "\n§r§7Game time:  " },{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"text":"\n§r§bDiamond level: "},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"text":"     Next diamond: "},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"text":"\n§r§aEmerald level: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"text":"     Next emerald: "},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}},{"text":"\n§r§7Kill count: "},{"score":{"name":"@s","objective":"击杀数"}}]}}]}
 #蓝队队伍actionbar

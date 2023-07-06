@@ -10,9 +10,6 @@
      "minecraft:icon": {
        "texture": "experience_bottle"
      },
-     "minecraft:display_name": {
-       "value": "§aXP Bottle §7100 levels"
-     },
      "minecraft:on_use": {
       "on_use": {
         "event": "bedwars:get_bottle_xp",

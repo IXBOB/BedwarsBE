@@ -13,9 +13,6 @@
 			"minecraft:icon": {
 				"texture": "red_team_helmet"
 			},
-			"minecraft:display_name": {
-				"value": "Red leather helmet"
-			},
 			"minecraft:max_stack_size": 1,
 			// Helm enchantment slot
 			"minecraft:enchantable": {
