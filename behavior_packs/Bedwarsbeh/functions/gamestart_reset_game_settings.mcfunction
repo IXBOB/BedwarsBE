@@ -270,11 +270,11 @@ scoreboard players reset * "游戏显示"
 #set游戏显示
 scoreboard players set §r§r "游戏显示" 0
 scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set "Map: §7Wooden Boat" "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set "Map: §7desert" "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set "Map: §7Deep Ocean" "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set "Mode: §7NORMAL" "游戏显示" -1
-execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set "Mode: §7§oRUSH" "游戏显示" -1
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "游戏显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "游戏显示" -1
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "游戏显示" -1
 scoreboard players set §r "游戏显示" -3
 scoreboard players set §r§r§r§r "游戏显示" -8
 scoreboard players set "§7Created by IXBOB" "游戏显示" -9
