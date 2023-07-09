@@ -23,7 +23,7 @@ scoreboard players operation @a "绿床存活" = @e[type=armor_stand,name=main,s
 #无敌时间
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
-execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lThe time of invincibility is over!" } ] }
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.invincibility_over"} ] }
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
 #检测装备升级
 execute @e[type=player,scores={"分队"=1..4},tag=up_sword] ~~~ function weapon_upgrade

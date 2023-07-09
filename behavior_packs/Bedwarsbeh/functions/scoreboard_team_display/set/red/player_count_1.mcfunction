@@ -1,3 +1,3 @@
-scoreboard players reset "§cRED §a✔" "游戏显示"
-scoreboard players reset "§cRED §r2" "游戏显示"
-scoreboard players set "§cRED §r1" "游戏显示" -5
+scoreboard players reset text.scoreboard.ingameinfo.red_team_normal "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.red_team_left_2 "游戏显示"
+scoreboard players set text.scoreboard.ingameinfo.red_team_left_1 "游戏显示" -5

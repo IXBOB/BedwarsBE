@@ -35,9 +35,9 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"�
 #倒计时0title.times
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a title §a§lGAME START
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a title tellraw @a { "rawtext" : [{"translate":"text.title.ingameinfo.game_start"} ] }
 #倒计时0 subtitle
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{"text":"§o§lRUSH MODE"},{"text":"§r§f§lNORMAL MODE"}]}} ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_2"} ] },{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_1"} ] }]}} ] }
 #设置respawning
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set * respawning 0
 #红床存活 -> 1
@@ -124,7 +124,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁
 #tag-铁遍历3
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁遍历3
 #tellraw获得无敌时间
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lYou gained 3 seconds of invincibility" } ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.get_invincibility"} ] }
 #击杀数 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ scoreboard players set @s "击杀数" 0
 #游戏开始tellraw游戏玩法
@@ -268,17 +268,16 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 #reset游戏显示
 scoreboard players reset * "游戏显示"
 #set游戏显示
-scoreboard players set §r§r "游戏显示" 0
-scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
+scoreboard players set text.scoreboard.ingameinfo.blank_2 "游戏显示" 0
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "游戏显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "游戏显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "游戏显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "游戏显示" -1
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "游戏显示" -1
-scoreboard players set §r "游戏显示" -3
-scoreboard players set §r§r§r§r "游戏显示" -8
-scoreboard players set "§7Created by IXBOB" "游戏显示" -9
-scoreboard players set "§7mtw.so/6nID9e" "游戏显示" -10
+scoreboard players set text.scoreboard.ingameinfo.blank_1 "游戏显示" -3
+scoreboard players set text.scoreboard.ingameinfo.blank_4 "游戏显示" -8
+scoreboard players set text.scoreboard.ingameinfo.creator "游戏显示" -9
+scoreboard players set text.scoreboard.ingameinfo.website "游戏显示" -10
 #删除复制地图时多余的结构方块
 setblock 0 185 48 air
 setblock 0 185 -48 air

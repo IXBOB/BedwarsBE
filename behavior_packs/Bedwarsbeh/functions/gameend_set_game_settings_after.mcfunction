@@ -17,11 +17,11 @@ scoreboard players reset * firework
 #reset游戏显示
 scoreboard players reset * "游戏显示"
 #set游戏显示
-scoreboard players set §r "游戏显示" -6
+scoreboard players set text.scoreboard.gameendinfo.blank_1 "游戏显示" 0
 #set游戏显示
-scoreboard players set "§7Created by IXBOB" "游戏显示" -7
+scoreboard players set text.scoreboard.gameendinfo.creator "游戏显示" -1
 #set游戏显示
-scoreboard players set "§7Thanks for playing" "游戏显示" -8
+scoreboard players set text.scoreboard.gameendinfo.thanks "游戏显示" -2
 #tag-degrade
 tag @a remove degrade
 #setdisplay大厅显示

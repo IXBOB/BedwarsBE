@@ -1,4 +1,4 @@
-scoreboard players reset "§bBLUE §a✔" "游戏显示"
-scoreboard players reset "§bBLUE §r3" "游戏显示"
-scoreboard players reset "§bBLUE §r1" "游戏显示"
-scoreboard players set "§bBLUE §r2" "游戏显示" -5
+scoreboard players reset text.scoreboard.ingameinfo.blue_team_normal "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.blue_team_left_3 "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.blue_team_left_1 "游戏显示"
+scoreboard players set text.scoreboard.ingameinfo.blue_team_left_2 "游戏显示" -5

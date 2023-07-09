@@ -260,17 +260,17 @@ execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ functi
 #游戏区域tag+degrade
 execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126,m=0] ~~~ tag @s add degrade
 #检测红队床情况#红队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set "§cRED §a✔" "游戏显示" -4
-execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players reset "§cRED §a✔" "游戏显示"
+execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.red_team_normal "游戏显示" -4
+execute @e[type=armor_stand,scores={gameSTART=1,"红床存活"=0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.red_team_normal "游戏显示"
 #检测蓝队床情况#蓝队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set "§bBLUE §a✔" "游戏显示" -5
-execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players reset "§bBLUE §a✔" "游戏显示"
+execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.blue_team_normal "游戏显示" -5
+execute @e[type=armor_stand,scores={gameSTART=1,"蓝床存活"=0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.blue_team_normal "游戏显示"
 #检测蓝队床情况#黄队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set "§eYELLOW §a✔" "游戏显示" -6
-execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=0}] ~~~ scoreboard players reset "§eYELLOW §a✔" "游戏显示"
+execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.yellow_team_normal "游戏显示" -6
+execute @e[type=armor_stand,scores={gameSTART=1,"黄床存活"=0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.yellow_team_normal "游戏显示"
 #检测蓝队床情况#绿队√-游戏显示
-execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set "§aGREEN §a✔" "游戏显示" -7
-execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=0}] ~~~ scoreboard players reset "§aGREEN §a✔" "游戏显示"
+execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.green_team_normal "游戏显示" -7
+execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.green_team_normal "游戏显示"
 #事件系统相关================
 #事件开始初始化
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0}] ~~~ scoreboard players set text.scoreboard.ingameinfo.event_1 "游戏显示" 120

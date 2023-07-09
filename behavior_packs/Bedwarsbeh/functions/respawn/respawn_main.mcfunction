@@ -1,7 +1,7 @@
 #重生时间 -1
 scoreboard players add @e[type=player,scores={respawning=1,"重生时间"=0..}] "重生时间" -1
 #tellraw获得无敌时间
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §b§lYou gained 3 seconds of invincibility" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.get_invincibility"} ] }
 #重生TP红
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={respawning=1,"重生时间"=..-1,"分队"=1}] ~~~ tp @s 0 186 53 facing 0 182 0
 #重生TP蓝
@@ -13,15 +13,15 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 #重生时间title
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={respawning=1}] ~~~ title @s times 0 40 10
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={respawning=1,"重生时间"=0..}] ~~~ scoreboard players set @s "出局观战" 1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ title @s title §cYOU DIED
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ title @s subtitle §erespawn in §c4 §eseconds
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ title @s title §cYOU DIED
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ title @s subtitle §erespawn in §c3 §eseconds
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ title @s title §cYOU DIED
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ title @s subtitle §erespawn in §c2 §eseconds
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ title @s title §cYOU DIED
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ title @s subtitle §erespawn in §c1 §esecond
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0,respawning=1}] ~~~ title @s title §aRESPAWNED
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawning"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=80,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.respawning_4"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawning"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=60,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.respawning_3"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawning"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=40,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.respawning_2"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawning"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.respawning_1"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawned"} ] }
 
 #重生时删除in_void_kill
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=1..4,respawning=1}] ~~~ tag @s remove in_void_kill
@@ -50,5 +50,5 @@ tag @a[scores={"重生时间"=..-100}] add respawn_error
 scoreboard players set @a[tag=respawn_error] "重生时间" 100
 scoreboard players set @a[tag=respawn_error] "出局观战" 0
 tp @a[tag=respawn_error] -200 200 -200
-tellraw @a[tag=respawn_error] { "rawtext" : [ { "text" : "§f§lBED WARS >> §cYou have been teleported to the lobby." } ] }
+tellraw @a[tag=respawn_error] tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.respawn_error"} ] }
 tag @a remove respawn_error

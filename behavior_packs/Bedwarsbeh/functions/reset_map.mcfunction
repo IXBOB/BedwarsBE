@@ -54,8 +54,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"translate":"text.title.waitinfo.lobby_reseting","with":{"rawtext":[{ "score" : { "name" : "@s" , "objective" : "重置百分数"}}]}}]}
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a title text.title.waitinfo.lobby_reseting_blank
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ title @a subtitle text.subtitle.waitinfo.lobby_reset_complete
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ titleraw @a title { "rawtext" : [{"translate":"text.title.waitinfo.lobby_reseting_blank"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"text.subtitle.waitinfo.lobby_reset_complete"} ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.blank_5 "等待显示" -8
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "等待显示" -9
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0

@@ -1,4 +1,4 @@
-scoreboard players reset "§eYELLOW §a✔" "游戏显示"
-scoreboard players reset "§eYELLOW §r5" "游戏显示"
-scoreboard players reset "§eYELLOW §r3" "游戏显示"
-scoreboard players set "§eYELLOW §r4" "游戏显示" -5
+scoreboard players reset text.scoreboard.ingameinfo.yellow_team_normal "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.yellow_team_left_5 "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.yellow_team_left_3 "游戏显示"
+scoreboard players set text.scoreboard.ingameinfo.yellow_team_left_4 "游戏显示" -5
