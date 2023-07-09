@@ -27,7 +27,8 @@
 			// This texture is used for both inventory and the hand model
 			"minecraft:icon": {
 				"texture": "stone_sword"
-			}
+			},
+			"minecraft:weapon": {}
 			
 			
 			

@@ -28,7 +28,8 @@
 			// This texture is used for both inventory and the hand model
 			"minecraft:icon": {
 				"texture": "iron_sword"
-			}
+			},
+			"minecraft:weapon": {}
 		}
 	}
 }

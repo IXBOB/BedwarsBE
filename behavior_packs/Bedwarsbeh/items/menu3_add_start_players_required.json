@@ -9,9 +9,6 @@
 			"minecraft:icon": {
 				"texture": "gold_nugget"
 			},
-			"minecraft:display_name": {
-				"value": "§eAdd 1 required player\n§7[click / move to select]"
-			},
 			"minecraft:max_stack_size": 64
 		}
 	}

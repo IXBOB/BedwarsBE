@@ -38,7 +38,8 @@
 						"speed": 12
 					}
 				]
-			}
+			},
+			"minecraft:weapon": {}
 		}
 	}
 }

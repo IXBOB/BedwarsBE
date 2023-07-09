@@ -15,8 +15,6 @@
 			"minecraft:durability": {
 				"max_durability": 99999
 			},
-			// Give it however much damage you want
-			"minecraft:damage": 2,
 			// We also let it be enchantable in the "sword" slot
 			"minecraft:enchantable": {
 				"value": 10,
