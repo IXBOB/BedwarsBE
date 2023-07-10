@@ -13,6 +13,7 @@ scoreboard players set @a[tag=!registered] "存活" 0
 scoreboard players set @a[tag=!registered] "出局观战" 0
 scoreboard players set @a[tag=!registered] "抬头返回time" 0
 scoreboard players set @a[tag=!registered] own_xp 0
+scoreboard players set @a[tag=!registered] xp_cache 0
 scoreboard players set @a[tag=!registered] still_need_xp 0
 scoreboard players set @a[tag=!registered] health 20
 scoreboard players set @a[tag=!registered] able_to_respawn 0

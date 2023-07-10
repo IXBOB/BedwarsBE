@@ -50,5 +50,5 @@ tag @a[scores={"重生时间"=..-100}] add respawn_error
 scoreboard players set @a[tag=respawn_error] "重生时间" 100
 scoreboard players set @a[tag=respawn_error] "出局观战" 0
 tp @a[tag=respawn_error] -200 200 -200
-tellraw @a[tag=respawn_error] tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.respawn_error"} ] }
+tellraw @a[tag=respawn_error] { "rawtext" : [{"translate":"text.tellraw.ingameinfo.respawn_error"} ] }
 tag @a remove respawn_error

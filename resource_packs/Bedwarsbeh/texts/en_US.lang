@@ -310,6 +310,7 @@ text.tellraw.ingameinfo.get_xp_destroy_bed=§3Xp +  %s (Bed destroyed)##ok
 text.tellraw.ingameinfo.get_coin_time_played=§eCoin +  %s (Time played)##ok
 text.tellraw.ingameinfo.get_coin_kill=§eCoin +  %s (Kill)##ok
 text.tellraw.ingameinfo.get_coin_destroy_bed=§eCoin +  %s (Bed destroyed)##ok
+text.tellraw.ingameinfo.get_xplevel_kill=You get §a%s§f levels from the enemy.
 
 ##game-end
 text.scoreboard.gameendinfo.blank_1=§r##ok

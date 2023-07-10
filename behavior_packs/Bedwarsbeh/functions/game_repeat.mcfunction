@@ -193,18 +193,18 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores
 #绿队tag+team4
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=4}] add team4
 #移除非本队tag
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team2
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team3
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team3
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team2
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team2
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team3
 
 #检测有人正在重生执行相关指令
 execute @e[type=player,scores={respawning=1},x=0,y=200,z=0,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main

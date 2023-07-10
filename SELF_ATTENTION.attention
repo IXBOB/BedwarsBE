@@ -1,20 +1,9 @@
 ##This file is only used for attention the creator IXBOB to do some IMPORTANT things . You dont need to read it
 
 
-
-
-
-
-
-
-
-
-
-
-scoreboard objectives add own_xp dummy
-scoreboard objectives add 总死亡数 dummy
-scoreboard objectives add 总拆床数 dummy
-
+scoreboard objectives remove respawn_xp_cache
+scoreboard objectives add xp_cache dummy
+scoreboard objectives add got_xp dummy
 
 add tag creator_info相关功能
 更新地图时不要忘记更新creator_info.mcfunction中写的version
