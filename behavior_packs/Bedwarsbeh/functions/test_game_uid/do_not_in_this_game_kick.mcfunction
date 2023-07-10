@@ -14,6 +14,10 @@ scoreboard players set @s able_to_respawn 0
 tag @s remove have_upgraded_sword_sharpnessI
 tag @s remove have_upgraded_sword_sharpnessII
 tag @s remove have_upgraded_sword_sharpnessIII
+tag @s remove team1
+tag @s remove team2
+tag @s remove team3
+tag @s remove team4
 tp @s -200 200 -200
 tellraw @s { "rawtext" : [ { "text" : "§c§lBED WARS >> Your last game has ended. You have now been teleported back to the lobby." } ] }
 tag @s remove do_not_in_this_game

@@ -183,12 +183,29 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=52,r=10,m=2]
 #游戏开始设置生存模式
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=-52,r=10,m=2]
+
 #红队tag+team1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=1}] add team1
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=1}] remove team2
 #蓝队tag+team2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] add team2
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=2}] remove team1
+#黄队tag+team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=3}] add team3
+#绿队tag+team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=4}] add team4
+#移除非本队tag
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!1}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team3
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!2}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!3}] remove team4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team1
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team2
+execute @e[type=armor_stand,name=main,scores={gameSTART=1..2，function_tick=20}] ~~~ tag @a[scores={"分队"=!4}] remove team3
+
 #检测有人正在重生执行相关指令
 execute @e[type=player,scores={respawning=1},x=0,y=200,z=0,c=1] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ function respawn/respawn_main
 #此处一部分指令在gameSTART0_functions，为性能考虑
@@ -276,18 +293,15 @@ execute @e[type=armor_stand,scores={gameSTART=1,"绿床存活"=0}] ~~~ scoreboar
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0}] ~~~ scoreboard players set text.scoreboard.ingameinfo.event_1 "游戏显示" 120
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0}] ~~~ scoreboard players set @s "显示事件" 1
 #事件倒计时-1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1..11,function_tick=20}] ~~~ scoreboard players add @s "事件倒计时" -1
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1..8,function_tick=20}] ~~~ scoreboard players add @s "事件倒计时" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_1 "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_2 "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_3 "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_4 "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_5 "游戏显示" -1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_6 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add "§4BED DESTRUCTION warn" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add "§4§lBED DESTRUCTION" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9,function_tick=20}] ~~~ scoreboard players add "§4Draw warn" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=10,function_tick=20}] ~~~ scoreboard players add "§4Draw warn" "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=11,function_tick=20}] ~~~ scoreboard players add "§4§lDraw-game over" "游戏显示" -1
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_7 "游戏显示" -1
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.event_8 "游戏显示" -1
 #事件1
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1}] ~~~ function events/event_1
 #事件2
@@ -303,15 +317,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=5..6}] ~~~ functi
 #事件7
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6..7}] ~~~ function events/event_7
 #事件8
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7}] ~~~ function events/event_8
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8}] ~~~ function events/event_8
-#事件9
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=8}] ~~~ function events/event_9
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9}] ~~~ function events/event_9
-#事件10
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=9..10}] ~~~ function events/event_10
-#平局
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=10..11}] ~~~ function events/event_draw
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7..8}] ~~~ function events/event_8
 #事件相关结束================
 #游戏开始时自动获取经验和硬币
 execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4}] add get.xp.game

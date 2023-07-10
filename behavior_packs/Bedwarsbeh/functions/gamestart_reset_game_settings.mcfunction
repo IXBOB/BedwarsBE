@@ -128,7 +128,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores
 #击杀数 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ scoreboard players set @s "击杀数" 0
 #游戏开始tellraw游戏玩法
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n                  §fBED WARS \n \n§eProtect your bed and destory the enemy\nbed. Upgrade yourself and your team by\ncollecting Iron, Gold, Emerald and Diamond\nfrom generators to access powerful\nupgrades.\n \n§r" } ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n                  §fBED WARS \n \n§eProtect your bed and destroy the enemy\nbed. Upgrade yourself and your team by\ncollecting Iron, Gold, Emerald and Diamond\nfrom generators to access powerful\nupgrades.\n \n§r" } ] }
 #给予木剑
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 bedwars:wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
