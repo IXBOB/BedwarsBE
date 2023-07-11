@@ -5,5 +5,7 @@ scoreboard objectives remove respawn_xp_cache
 scoreboard objectives add xp_cache dummy
 scoreboard objectives add got_xp dummy
 
+
+mode=2 game_guide还没写
 add tag creator_info相关功能
 更新地图时不要忘记更新creator_info.mcfunction中写的version

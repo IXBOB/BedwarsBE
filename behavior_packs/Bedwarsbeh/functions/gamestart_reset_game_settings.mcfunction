@@ -99,8 +99,9 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove deg
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard objectives setdisplay sidebar "游戏显示"
 #clear
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..4}]
-#set事件倒计时120
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s "事件倒计时" 120
+#set事件倒计时
+execute @e[type=armor_stand,name=main,scores={starting=1,"游戏模式"=1}] ~~~ scoreboard players set @s "事件倒计时" 120
+execute @e[type=armor_stand,name=main,scores={starting=1,"游戏模式"=2}] ~~~ scoreboard players set @s "事件倒计时" 900
 #set-time.sec1 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @s game.time.sec.1 0
 #set-time.sec2 0
@@ -130,7 +131,8 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores
 #击杀数 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ scoreboard players set @s "击杀数" 0
 #游戏开始tellraw游戏玩法
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n                  §fBED WARS \n \n§eProtect your bed and destroy the enemy\nbed. Upgrade yourself and your team by\ncollecting Iron, Gold, Emerald and Diamond\nfrom generators to access powerful\nupgrades.\n \n§r" } ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.play_guide_mode_1"} ] }
+#################补全这里
 #给予木剑
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 bedwars:wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀

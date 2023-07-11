@@ -55,7 +55,7 @@
         "run_command": {
           "command": [
             "tag @s[scores={分队=!4}] add destroy_green_bed_success",
-            "execute @s[scores={分队=4,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{ \"text\" : \"§f§lBED WARS >> §r§cYou can not destroy your own bed!\" }]}",
+            "execute @s[scores={分队=4,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.destroy_self_bed_refuse\"} ] }",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床有敌\"=0,\"绿床存活\"=1}] ~~~ setblock -46 185 0 bedwars:green_bed_head",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床有敌\"=0,\"绿床存活\"=1}] ~~~ setblock -47 185 0 bedwars:green_bed_foot",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ setblock -46 185 0 air 0 destroy",

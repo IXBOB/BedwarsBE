@@ -23,9 +23,9 @@
           "command":[
             "tag @s[scores={分队=1..4,\"存活\"=1}] add get_bottle_xp",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove get_bottle_xp",
-            "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§f§lXP bottle >> §6You used an XP bottle and got 100 levels\" } ] }",
+            "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle\"} ] }",
             "execute @s[tag=get_bottle_xp] ~~~ xp 100L @s",
-            "execute @s[tag=!get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [ { \"text\" : \"§cYou don't have permission to do this.\" } ] }",
+            "execute @s[tag=!get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle_denied\"} ] }",
             "tag @s remove get_bottle_xp",
             "clear @s bedwars:xp_bottle 0 1"
             ]

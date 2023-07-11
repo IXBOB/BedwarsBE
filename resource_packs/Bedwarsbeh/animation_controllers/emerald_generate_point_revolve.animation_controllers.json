@@ -1,0 +1,10 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.emerald_generate_point_revolve.default": {
+            "states":{
+                "default":{}
+            }
+        }
+    }
+}
