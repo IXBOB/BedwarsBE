@@ -1,22 +1,16 @@
 {
    "content" : [
       {
-         "path" : ".DS_Store"
+         "path" : "attachables/red_team_helmet_protectionI.json"
       },
       {
-         "path" : "attachables/diamond_leggings_protectionIII.json"
+         "path" : "textures/blocks/team_upgrade_sharpness_block.png"
       },
       {
-         "path" : "attachables/blue_team_boots.json"
+         "path" : "attachables/chainmail_leggings_protectionI.json"
       },
       {
-         "path" : "textures/items/armor_upgrade.png"
-      },
-      {
-         "path" : "attachables/blue_team_chestplate_protectionII.json"
-      },
-      {
-         "path" : "attachables/blue_team_chestplate.json"
+         "path" : "animations/diamond_generate_point_revolve.animation.json"
       },
       {
          "path" : "attachables/red_team_chestplate_protectionIII.json"
@@ -25,13 +19,19 @@
          "path" : "attachables/blue_team_boots_protectionII.json"
       },
       {
-         "path" : "attachables/diamond_leggings_protectionII.json"
+         "path" : "animations/emerald_generate_point_revolve.animation.json"
       },
       {
-         "path" : "models/blocks/develop_source/blue_bed_head.bbmodel"
+         "path" : "attachables/diamond_leggings_protectionIII.json"
       },
       {
-         "path" : "attachables/blue_team_chestplate_protectionI.json"
+         "path" : "textures/items/armor_upgrade.png"
+      },
+      {
+         "path" : "attachables/blue_team_chestplate_protectionII.json"
+      },
+      {
+         "path" : "attachables/blue_team_boots.json"
       },
       {
          "path" : "texts/de_DE.lang"
@@ -43,13 +43,40 @@
          "path" : "attachables/chainmail_boots_protectionIII.json"
       },
       {
+         "path" : "textures/items/develop_source/green_team_boots.psd"
+      },
+      {
+         "path" : "textures/items/axe_upgrade.png"
+      },
+      {
+         "path" : "textures/blocks/map_sandstone_block/map_sandstone_block_side.png"
+      },
+      {
+         "path" : "animation_controllers/diamond_generate_point_revolve.animation_controllers.json"
+      },
+      {
          "path" : "attachables/blue_team_boots_protectionI.json"
+      },
+      {
+         "path" : "attachables/yellow_team_leggings_protectionII.json"
+      },
+      {
+         "path" : "animation_controllers/emerald_generate_point_revolve.animation_controllers.json"
       },
       {
          "path" : "textures/blocks/map_sea_lantern_block.png"
       },
       {
          "path" : "attachables/blue_team_boots_protectionIII.json"
+      },
+      {
+         "path" : "attachables/blue_team_chestplate.json"
+      },
+      {
+         "path" : "attachables/diamond_leggings_protectionII.json"
+      },
+      {
+         "path" : "attachables/blue_team_chestplate_protectionI.json"
       },
       {
          "path" : "textures/blocks/map_prismarine_block.png"
@@ -82,9 +109,6 @@
          "path" : "attachables/blue_team_helmet_protectionIII.json"
       },
       {
-         "path" : "attachables/red_team_helmet_protectionII.json"
-      },
-      {
          "path" : "attachables/chainmail_leggings_protectionII.json"
       },
       {
@@ -106,9 +130,6 @@
          "path" : "textures/blocks/map_jungle_log_block/map_jungle_log_block_side.png"
       },
       {
-         "path" : "textures/.DS_Store"
-      },
-      {
          "path" : "attachables/blue_team_leggings_protectionII.json"
       },
       {
@@ -125,18 +146,6 @@
       },
       {
          "path" : "attachables/chainmail_boots_protectionII.json"
-      },
-      {
-         "path" : "attachables/red_team_helmet_protectionI.json"
-      },
-      {
-         "path" : "textures/blocks/team_upgrade_sharpness_block.png"
-      },
-      {
-         "path" : "attachables/chainmail_leggings_protectionI.json"
-      },
-      {
-         "path" : "attachables/red_team_helmet_protectionIII.json"
       },
       {
          "path" : "textures/models/armor/develop_source/yellow_team_armor_legs.psd"
@@ -160,6 +169,9 @@
          "path" : "attachables/diamond_boots_protectionI.json"
       },
       {
+         "path" : "models/entity/npc_lobby_guide_1.geo.json"
+      },
+      {
          "path" : "attachables/diamond_boots_protectionII.json"
       },
       {
@@ -176,12 +188,6 @@
       },
       {
          "path" : "attachables/diamond_leggings_protectionI.json"
-      },
-      {
-         "path" : "textures/items/develop_source/yellow_team_helmet.psd"
-      },
-      {
-         "path" : "attachables/red_team_leggings.json"
       },
       {
          "path" : "textures/models/armor/iron_armor_main.png"
@@ -235,6 +241,9 @@
          "path" : "attachables/green_team_helmet_protectionIII.json"
       },
       {
+         "path" : "models/blocks/develop_source/blue_bed_head.geo.bbmodel"
+      },
+      {
          "path" : "attachables/green_team_leggings.json"
       },
       {
@@ -271,7 +280,22 @@
          "path" : "attachables/red_team_boots_protectionIII.json"
       },
       {
+         "path" : "models/entity/npc_lobby_guide_4.geo.json"
+      },
+      {
          "path" : "attachables/red_team_chestplate.json"
+      },
+      {
+         "path" : "attachables/red_team_helmet_protectionII.json"
+      },
+      {
+         "path" : "attachables/red_team_helmet_protectionIII.json"
+      },
+      {
+         "path" : "textures/items/develop_source/yellow_team_helmet.psd"
+      },
+      {
+         "path" : "attachables/red_team_leggings.json"
       },
       {
          "path" : "attachables/red_team_leggings_protectionI.json"
@@ -343,9 +367,6 @@
          "path" : "attachables/yellow_team_leggings_protectionI.json"
       },
       {
-         "path" : "attachables/yellow_team_leggings_protectionII.json"
-      },
-      {
          "path" : "attachables/yellow_team_leggings_protectionIII.json"
       },
       {
@@ -361,7 +382,34 @@
          "path" : "contents.json"
       },
       {
+         "path" : "entity/diamond_generate_point_revolve.json"
+      },
+      {
+         "path" : "entity/emerald_generate_point_revolve.json"
+      },
+      {
          "path" : "entity/ixbob_npc.json"
+      },
+      {
+         "path" : "textures/blocks/shop_block/planks_big_oak_down.png"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_1.json"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_2.json"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_3.json"
+      },
+      {
+         "path" : "textures/item_texture.json"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_4.json"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_5.json"
       },
       {
          "path" : "textures/items/blue_team_chestplate.png"
@@ -454,19 +502,55 @@
          "path" : "models/blocks/yellow_bed_head.geo.json"
       },
       {
-         "path" : "models/entity/ixbob_npc.json"
+         "path" : "models/entity/develop_source/npc_lobby_guide_1.bbmodel"
+      },
+      {
+         "path" : "models/entity/develop_source/npc_lobby_guide_2.bbmodel"
+      },
+      {
+         "path" : "models/entity/develop_source/npc_lobby_guide_3.bbmodel"
+      },
+      {
+         "path" : "models/entity/develop_source/npc_lobby_guide_4.bbmodel"
+      },
+      {
+         "path" : "models/entity/diamond_generate_point_revolve.geo.json"
+      },
+      {
+         "path" : "models/entity/develop_source/npc_lobby_guide_5.bbmodel"
+      },
+      {
+         "path" : "textures/items/potion_bottle_jumpboostv.png"
+      },
+      {
+         "path" : "textures/blocks/player_yellow_stained_glass.png"
+      },
+      {
+         "path" : "models/entity/emerald_generate_point_revolve.geo.json"
+      },
+      {
+         "path" : "models/entity/ixbob_npc.geo.json"
+      },
+      {
+         "path" : "textures/entity/ixbob_npc.png"
+      },
+      {
+         "path" : "texts/ru_RU.lang"
+      },
+      {
+         "path" : "models/entity/npc_lobby_guide_2.geo.json"
+      },
+      {
+         "path" : "textures/blocks/buy_fireball_block.png"
+      },
+      {
+         "path" : "models/entity/npc_lobby_guide_3.geo.json"
+      },
+      {
+         "path" : "models/entity/npc_lobby_guide_5.geo.json"
       },
       {
          "path" : "pack_icon.png"
-      },
-      {
-         "path" : "textures/models/armor/diamond_armor_main.png"
-      },
-      {
-         "path" : "texts/cs_CZ.lang"
-      },
-      {
-         "path" : "render_controllers/ixbob_npc.json"
       },
       {
          "path" : "textures/blocks/map_dark_prismarine_block.png"
@@ -476,6 +560,12 @@
       },
       {
          "path" : "sounds/random/levelup.ogg"
+      },
+      {
+         "path" : "textures/models/armor/diamond_armor_main.png"
+      },
+      {
+         "path" : "texts/cs_CZ.lang"
       },
       {
          "path" : "texts/da_DK.lang"
@@ -544,12 +634,6 @@
          "path" : "texts/pt_PT.lang"
       },
       {
-         "path" : "textures/entity/ixbob_npc.png"
-      },
-      {
-         "path" : "texts/ru_RU.lang"
-      },
-      {
          "path" : "texts/sk_SK.lang"
       },
       {
@@ -583,13 +667,7 @@
          "path" : "textures/blocks/buy_end_stone_block.png"
       },
       {
-         "path" : "textures/items/potion_bottle_jumpboostv.png"
-      },
-      {
          "path" : "textures/blocks/buy_fangyuta_block.png"
-      },
-      {
-         "path" : "textures/blocks/buy_fireball_block.png"
       },
       {
          "path" : "textures/particle/particles.png"
@@ -688,15 +766,6 @@
          "path" : "textures/blocks/map_sand.png"
       },
       {
-         "path" : "textures/items/develop_source/green_team_boots.psd"
-      },
-      {
-         "path" : "textures/items/axe_upgrade.png"
-      },
-      {
-         "path" : "textures/blocks/map_sandstone_block/map_sandstone_block_side.png"
-      },
-      {
          "path" : "textures/models/armor/blue_team_armor_main.png"
       },
       {
@@ -733,16 +802,10 @@
          "path" : "textures/blocks/player_red_wool.png"
       },
       {
-         "path" : "textures/blocks/player_yellow_stained_glass.png"
-      },
-      {
          "path" : "textures/blocks/player_yellow_wool.png"
       },
       {
          "path" : "textures/blocks/red_bed_foot.png"
-      },
-      {
-         "path" : "textures/blocks/shop_block/planks_big_oak_down.png"
       },
       {
          "path" : "textures/blocks/shop_block/planks_big_oak_east.png"
@@ -781,7 +844,10 @@
          "path" : "textures/blocks/yellow_bed_head.png"
       },
       {
-         "path" : "textures/items/.DS_Store"
+         "path" : "textures/entity/diamond_generate_point_revolve.png"
+      },
+      {
+         "path" : "textures/entity/emerald_generate_point_revolve.png"
       },
       {
          "path" : "textures/items/barrier.png"
@@ -866,9 +932,6 @@
       },
       {
          "path" : "textures/items/yellow_team_helmet.png"
-      },
-      {
-         "path" : "textures/item_texture.json"
       },
       {
          "path" : "textures/models/armor/blue_team_armor_legs.png"

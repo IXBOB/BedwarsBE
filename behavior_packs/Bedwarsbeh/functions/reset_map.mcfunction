@@ -70,10 +70,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"黄已重�
 execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"绿已重置"=0,"重置百分数"=90}] ~~~ function reset_team_home/green
 
 #疾速模式时复制红床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_red_protect -3 185 43
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_red_protect -3 185 43 0_degrees none layer_by_layer 3 
 #疾速模式时复制蓝床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_blue_protect -3 185 -50
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_blue_protect -3 185 -50 0_degrees none layer_by_layer 3 
 #疾速模式时复制黄床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_yellow_protect 43 185 -3 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_yellow_protect 43 185 -3 90_degrees none layer_by_layer 3 
 #疾速模式时复制绿床保护方块
-execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_green_protect -50 185 -3 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=0,reseting=1,"重置百分数"=95,"游戏模式"=2,function_tick=20}] ~~~ structure load bedwars:mode2_green_protect -50 185 -3 90_degrees none layer_by_layer 3 

@@ -15,7 +15,8 @@
 			},
 			"minecraft:on_placed": {
 				"event": "bedwars:spawn_block_mark"
-			}
+			},
+			"minecraft:loot": "loot_tables/empty.json"
 		},
 		"events": {
 			"bedwars:spawn_block_mark": {

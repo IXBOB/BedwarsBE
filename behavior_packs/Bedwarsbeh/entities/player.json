@@ -423,7 +423,7 @@
             "function get_xp_and_coin",
             "scoreboard players reset * got_xp",
             "scoreboard players reset * xp_cache",
-            "tag @a remove fatal_damage_died",
+            "tag * remove fatal_damage_died",
             "scoreboard players reset * fatal_damage_uid",
             "scoreboard players reset * damage_uid.cache"
           ]

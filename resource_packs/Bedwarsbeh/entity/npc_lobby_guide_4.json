@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:npc_lobby_guide_4",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/ixbob_npc"},
+            "geometry": {"default":"geometry.npc_lobby_guide_4"},
+            "render_controllers": ["controller.render.default"],
+            "enable_attachables": false,
+            "hide_armor": false
+        }
+    }
+}
