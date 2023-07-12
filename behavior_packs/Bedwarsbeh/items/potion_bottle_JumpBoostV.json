@@ -2,45 +2,41 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "bedwars:potion_bottle_JumpBoostV",
+            "identifier": "bedwars:potion_bottle_jumpboostv",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "potion_bottle_JumpBoostV"
+                "texture": "potion_bottle_jumpboostv"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.potion"
             },
+            "minecraft:potion": {
+				"type": "regular"
+			},
             "minecraft:use_duration": 1.6,
-            "minecraft:food": {
-                "can_always_eat": true,
-                "nutrition": 4,
-                "saturation_modifier": "low",
-                "on_consume": {
-                    "event": "on_consume",
-                    "target": "self"
-                }
-            },
+			"minecraft:food": {
+				"on_consume": {
+					"event": "bedwars:consume_jump_boost",
+					"target": "self"
+				},
+				"can_always_eat": true
+			},
             "minecraft:use_animation": "drink",
             "minecraft:max_stack_size": 1,
-            "minecraft:hand_equipped": true,
-            "minecraft:allow_off_hand": false,
+            "minecraft:stacked_by_data": true,
             "minecraft:foil": true
         },
-        "events": {
-            "on_consume": {
-                "sequence": [
-                    {
-                        "add_mob_effect": {
-                            "effect": "jump_boost",
-                            "duration": 30,
-                            "amplifier": 4,
-                            "target": "holder"
-                        }
-                    }
-                ]
-            }
-        }
+		"events": {
+			"bedwars:consume_jump_boost": {
+				"run_command": {
+					"command": [
+						"effect @s jump_boost 30 4"
+					],
+					"target": "holder"
+				}
+			}
+		}
     }
 }

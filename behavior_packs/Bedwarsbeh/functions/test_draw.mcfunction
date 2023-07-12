@@ -11,7 +11,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tag @a remove de
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ difficulty peaceful
 #reset重置百分数
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset * "重置百分数"
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§4§lGame draw" "游戏显示"
+execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_1_event_8 "游戏显示"
+execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_2_event_2 "游戏显示"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset "§eNEXT EVENT" "游戏显示"
 
 #放置倒计时区域的红石块

@@ -35,7 +35,7 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"�
 #倒计时0title.times
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a title tellraw @a { "rawtext" : [{"translate":"text.title.ingameinfo.game_start"} ] }
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a title { "rawtext" : [{"translate":"text.title.ingameinfo.game_start"} ] }
 #倒计时0 subtitle
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_2"} ] },{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_1"} ] }]}} ] }
 #设置respawning
@@ -95,8 +95,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove degrade
-#setdisplay游戏显示
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard objectives setdisplay sidebar "游戏显示"
 #clear
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ clear @a[scores={"分队"=1..4}]
 #set事件倒计时
@@ -131,8 +129,8 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores
 #击杀数 -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ scoreboard players set @s "击杀数" 0
 #游戏开始tellraw游戏玩法
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.play_guide_mode_1"} ] }
-#################补全这里
+execute @e[type=armor_stand,name=main,scores={starting=1,"游戏模式"=1}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line1"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line2"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line3"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line4"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line5"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line6"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line7"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line8"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_1_line9"} ] }
+execute @e[type=armor_stand,name=main,scores={starting=1,"游戏模式"=2}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line1"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line2"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line3"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line4"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line5"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line6"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line7"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line8"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.play_guide_mode_2_line9"} ] }
 #给予木剑
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ replaceitem entity @a[scores={"分队"=1..4}] slot.hotbar 0 bedwars:wooden_sword 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}}
 #给予剪刀
@@ -270,7 +268,10 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players random @s game_uid 0 999999999
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players operation @a[scores={"分队"=1..4}] game_uid = @s game_uid
 #reset游戏显示
-scoreboard players reset * "游戏显示"
+scoreboard objectives remove "游戏显示"
+scoreboard objectives add 游戏显示 dummy "§eBed Wars"
+#setdisplay游戏显示
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard objectives setdisplay sidebar "游戏显示"
 #set游戏显示
 scoreboard players set text.scoreboard.ingameinfo.blank_2 "游戏显示" 0
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "游戏显示" -2

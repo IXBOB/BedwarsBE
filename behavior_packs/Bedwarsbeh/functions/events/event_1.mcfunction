@@ -4,7 +4,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ scoreboard players set @s "事件倒计时" 122
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§lBED WARS >> §r§cAll beds have been destroyed. No one is able to respawn now." } ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§lBED WARS >> §r§eGame will draw after 600 seconds." } ] }
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players reset "§cBed self-destruct" "游戏显示"
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示"
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "红床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "蓝床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "黄床存活" 0

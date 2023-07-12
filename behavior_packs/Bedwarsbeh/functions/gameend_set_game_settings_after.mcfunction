@@ -24,8 +24,6 @@ scoreboard players set text.scoreboard.gameendinfo.creator "游戏显示" -1
 scoreboard players set text.scoreboard.gameendinfo.thanks "游戏显示" -2
 #tag-degrade
 tag @a remove degrade
-#setdisplay大厅显示
-scoreboard objectives setdisplay sidebar "大厅显示"
 #set分队 -> 0
 scoreboard players set @a "分队" 0
 #reset§c红队
