@@ -1,4 +1,4 @@
-import { world } from "@minecraft/server";
+/*import { world } from "@minecraft/server";
 
 world.beforeEvents.chatSend.subscribe((eventData) => {
 	const player = eventData.sender;
@@ -56,3 +56,4 @@ world.beforeEvents.chatSend.subscribe((eventData) => {
 		default: break;
 	}
 });
+*/
