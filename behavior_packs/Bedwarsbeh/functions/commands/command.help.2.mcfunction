@@ -1,1 +1,1 @@
-tellraw @s { "rawtext" : [ { "text" : "§a§lShowing help page 2 of 2\nenter #help.<number> to go to the specified page\n§r§fnothing on this page"} ] }
+tellraw @s { "rawtext" : [ {"translate":"text.tellraw.custom_command.help_page_2_line1"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line2"},{"text":"\n"},{"translate":"text.tellraw.custom_command.help_page_2_line3"} ] }

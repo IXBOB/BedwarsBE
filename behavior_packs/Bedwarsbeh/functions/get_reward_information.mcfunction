@@ -1,5 +1,3 @@
-tellraw @a[scores={"分队"=1..4}] { "rawtext" : [ { "text" : "§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀" } ] }
-tellraw @a[scores={"分队"=1..4}] { "rawtext" : [ { "text" : "§l                Reward Summary       \n §r§7You earned \n" } ] }
-execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§3   " },{ "score" : { "name" : "@s" , "objective" : "当局经验"}},{ "text" : " BED WARS experience" } ] }
-execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [ { "text" : "§6   " },{ "score" : { "name" : "@s" , "objective" : "当局硬币"}},{ "text" : " BED WARS coins" } ] }
-tellraw @a[scores={"分队"=1..4}] { "rawtext" : [ { "text" : "\n§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀" } ] }
+tellraw @a[scores={"分队"=1..4}] { "rawtext" : [{"translate":"text.tellraw.ingameinfo.info_line"} ] }
+execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.reward_summary_line1"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.reward_summary_line2"},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.reward_summary_line3","with":{"score":{"name":"@s","objective":"当局经验"}}},{"text":"\n"},{"translate":"text.tellraw.ingameinfo.reward_summary_line4","with":{"score":{"name":"@s","objective":"当局硬币"}}} ] }
+tellraw @a[scores={"分队"=1..4}] { "rawtext" : [{"translate":"text.tellraw.ingameinfo.info_line"} ] }

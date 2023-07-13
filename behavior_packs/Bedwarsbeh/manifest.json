@@ -13,20 +13,6 @@
             "type": "data",
             "uuid": "4e94f6b9-1e62-42ab-8764-04a50e265c3a",
             "version": [0, 0, 2]
-        },
-        {
-            "description": "Gametest Framework for Bedwars by IXBOB",
-            "type": "script",
-            "language": "javascript",
-            "uuid": "0b235875-a72a-4f8f-b1ad-50f4659a58cf",
-            "version": [ 0, 0, 2 ],
-            "entry": "scripts/main.js"
-          }
-    ],
-    "dependencies": [
-      {
-        "module_name": "@minecraft/server",
-        "version": "1.3.0"
-      }
+        }
     ]
 }

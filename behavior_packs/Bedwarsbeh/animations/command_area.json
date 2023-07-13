@@ -1,0 +1,154 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.command_area": {
+			"animation_length": 99,
+			"loop": false,
+			"timeline": {
+				"0.8": [
+					//setblock air
+					"/setblock 267 4 310 air"
+				],
+				"2.0": [
+					//显示奖励总览
+					"/function get_reward_information"
+				],
+				"4.8": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_10\"} ] }"
+				],
+				"9.6": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_5\"} ] }"
+				],
+				"10.6": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_4\"} ] }"
+				],
+				"11.6": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_3\"} ] }"
+				],
+				"12.6": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_2\"} ] }"
+				],
+				"14.2": [
+					//tellraw 返回大厅
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_1\"} ] }"
+				],
+				"15.4": [
+					//clear
+					"/clear @a"
+				],
+				"15.8": [
+					//function
+					"/function gameend_set_game_settings_after"
+				],
+				"17.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_15\"} ] }",
+					//change to menu1
+					"/tag @a add change_to_menu1"
+				],
+				"18.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_14\"} ] }"
+				],
+				"19.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_13\"} ] }"
+				],
+				"20.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_12\"} ] }"
+				],
+				"21.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_11\"} ] }"
+				],
+				"22.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_10\"} ] }"
+				],
+				"23.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_9\"} ] }"
+				],
+				"24.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_8\"} ] }"
+				],
+				"25.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_7\"} ] }"
+				],
+				"26.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_6\"} ] }"
+				],
+				"27.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_5\"} ] }"
+				],
+				"28.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_4\"} ] }"
+				],
+				"29.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_3\"} ] }"
+				],
+				"30.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_2\"} ] }"
+				],
+				"31.8": [
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_1\"} ] }"
+				],
+				"32.9": [
+					"/function beforeRESET_set_game_settings"
+				],
+				"33.0": [
+					//title.times
+					"/title @a times 0 1200 0",
+					//title
+					"/title @a title §r",
+					//subtitle
+					"/titleraw @a subtitle { \"rawtext\" : [{\"translate\":\"text.subtitle.waitinfo.lobby_start_reseting_prepare\"} ] }",
+					//tellraw即将重置
+					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_start_reseting\"} ] }"
+				],
+				"34.3": [
+					//title.times
+					"/title @a times 0 2000 0",
+					"/scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] \"重置百分数\" 0",
+					//reseting -> 1
+					"/scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] reseting 1",
+					//选择地图
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=0}] ~~~ scoreboard players random @s \"游戏地图\" 1 3",
+					//选择地图
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=1}] ~~~ scoreboard players set @s \"游戏地图\" 1",
+					//选择地图
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=2}] ~~~ scoreboard players set @s \"游戏地图\" 2",
+					//选择地图
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=3}] ~~~ scoreboard players set @s \"游戏地图\" 3"
+				],
+				"34.5": [
+					//tag + reset
+					"/tag @e[type=armor_stand,name=reset] add reset",
+					//TP
+					"/tp @e[type=armor_stand,name=reset,tag=reset] -61 1 -61",
+					//额外删除地图底部方块y174
+					"/fill 63 174 63 -63 174 -63 air",
+					//额外删除地图底部方块y175
+					"/fill 63 175 63 -63 175 -63 air",
+					//额外删除地图底部方块y176
+					"/fill 63 176 63 -63 176 -63 air",
+					"/function afterRESET_set_scoreboard_display"
+				]
+			}
+		}
+	}
+}

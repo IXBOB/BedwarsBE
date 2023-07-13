@@ -1,37 +1,15 @@
 #分队
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=player] "分队" 0
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
-#分队 1 (红)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 1
-#分队 1 (蓝)
-execute @e[type=armor_stand,name=main,scores={starting=1},tag=reset_OK] ~~~ scoreboard players set @r[type=player,scores={"分队"=0}] "分队" 2
+#分队
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ function gamestart_set_team
 #倒计时0 TP红
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"分队"=1}] 0 186 53 facing 0 182 0
 #倒计时0 TP蓝
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"分队"=2}] 0 186 -53 facing 0 182 0
+#倒计时0 TP黄
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
+#倒计时0 TP绿
+execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 #倒计时0title.times
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
@@ -112,18 +90,6 @@ execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard player
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove degrade
 #无敌时间 -> 60
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @a[scores={"分队"=1..4}] "无敌时间" 60
-#tag-铁已遍历1
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁已遍历1
-#tag-铁已遍历2
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁已遍历2
-#tag-铁已遍历3
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁已遍历3
-#tag-铁遍历1
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁遍历1
-#tag-铁遍历2
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁遍历2
-#tag-铁遍历3
-execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ tag @a remove 铁遍历3
 #tellraw获得无敌时间
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ execute @a[scores={"分队"=1..4}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.get_invincibility"} ] }
 #击杀数 -> 0
@@ -288,6 +254,13 @@ setblock 0 185 48 air
 setblock 0 185 -48 air
 setblock 48 185 0 air
 setblock -48 185 0 air
+#设置钻石生成点等级
+scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "钻石等级" 1
+scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] "钻石等级" 3
+
+#设置绿宝石生成点等级
+scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "绿宝石等级" 1
+scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] "绿宝石等级" 3
 
 #starting -> 0
 execute @e[type=armor_stand,name=main,scores={starting=1}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] starting 0

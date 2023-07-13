@@ -1,4 +1,4 @@
-tellraw @a { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§eOP changed the minimum player required to start the game to 6" } ] }
+tellraw @a { "rawtext" : [{"translate":"text.tellraw.waitinfo.set_player_count_6"} ] }
 tag @s remove set.players.2.tellrawed
 tag @s remove set.players.3.tellrawed
 tag @s remove set.players.4.tellrawed

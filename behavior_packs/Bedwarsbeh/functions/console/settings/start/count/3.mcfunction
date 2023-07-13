@@ -1,0 +1,1 @@
+tag @s add set.start.players.3

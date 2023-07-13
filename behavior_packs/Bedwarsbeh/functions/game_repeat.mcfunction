@@ -76,9 +76,6 @@ execute @e[type=armor_stand,scores={gameSTART=1..2},name=main] ~~~ execute @e[ty
 execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
-#胜利烟花
-execute @e[type=armor_stand,scores={gameSTART=2,function_tick=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
-execute @e[type=armor_stand,scores={gameSTART=2,function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 #红床存在设置able_to_respawn红并设置重生点
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=1}] able_to_respawn 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红床存活"=1}] ~~~ spawnpoint @a[scores={"分队"=1}] 0 210 0
@@ -233,13 +230,13 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 #此处一部分指令在gameSTART0_functions，为性能考虑
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
 #删除非tag=op玩家的tag
 execute @a[tag=!op,tag=set.start.players.2] ~~~ tag @s remove set.start.players.2
 execute @a[tag=!op,tag=set.start.players.3] ~~~ tag @s remove set.start.players.3
@@ -263,10 +260,10 @@ scoreboard players reset * "大厅人数"
 execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
 #玩家tag指令相关================
 #玩家被夺去tag=op时提示
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§aYou have obtained OP permission. For help, enter #help" } ] }
+execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.get_op"} ] }
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s add get.op.tellrawed
-execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [ { "text" : "§f§lBED WARS >> §r§cYour administrator privileges have been taken away" } ] }
+execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.take_away_op"} ] }
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
 #玩家tag指令相关结束================
@@ -326,7 +323,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=1
 execute @a[tag=get.xp.game] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function get_xp_and_coin
 #升级
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players add @s "等级" 1
-execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s {"rawtext":[{"text":"§6§l     ■■■■■ LEVEL UP ■■■■■\n§r§6You are now at level "},{ "score" : { "name" : "@s" , "objective" : "等级"}},{"text":" ! congratulations!"}]}
+execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.others.level_up_line1"},{"translate":"text.tellraw.others.level_up_line2","with":{"score":{"name":"@s","objective":"等级"}}} ] }
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players operation @s "等级经验" -= @e[name=main] exp_lv_up_need
 #重复复制红队商店
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:red_shop_sign1 -4 185 48

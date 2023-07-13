@@ -19,5 +19,5 @@ tag @s remove team2
 tag @s remove team3
 tag @s remove team4
 tp @s -200 200 -200
-tellraw @s { "rawtext" : [ { "text" : "§c§lBED WARS >> Your last game has ended. You have now been teleported back to the lobby." } ] }
+tellraw @s { "rawtext" : [ {"translate":"text.tellraw.others.last_game_ended"} ] }
 tag @s remove do_not_in_this_game

@@ -87,12 +87,8 @@ scoreboard players reset * "蓝保护等级"
 scoreboard players reset * "蓝锋利等级"
 #reset firework
 scoreboard players reset * firework
-#set绿宝石等级 -> 1
-scoreboard players set @e[type=armor_stand,name=main] "绿宝石等级" 1
 #显示事件 -> 0
 scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
-#set钻石等级 -> 1
-scoreboard players set @e[type=armor_stand,name=main] "钻石等级" 1
 #reset地图选择
 scoreboard players reset * "游戏地图"
 #reset-time.sec1
