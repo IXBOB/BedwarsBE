@@ -262,6 +262,9 @@
          "path" : "attachables/iron_leggings_protectionI.json"
       },
       {
+         "path" : "models/entity/npc_lobby_guide_5_enemy.geo.json"
+      },
+      {
          "path" : "attachables/iron_leggings_protectionII.json"
       },
       {
@@ -518,6 +521,9 @@
       },
       {
          "path" : "models/entity/develop_source/npc_lobby_guide_5.bbmodel"
+      },
+      {
+         "path" : "models/entity/develop_source/npc_lobby_guide_5_enemy.bbmodel"
       },
       {
          "path" : "textures/items/potion_bottle_jumpboostv.png"
@@ -850,6 +856,12 @@
          "path" : "textures/entity/emerald_generate_point_revolve.png"
       },
       {
+         "path" : "textures/items/diamond_boots.png"
+      },
+      {
+         "path" : "textures/entity/rtyoop.png"
+      },
+      {
          "path" : "textures/items/barrier.png"
       },
       {
@@ -869,9 +881,6 @@
       },
       {
          "path" : "textures/items/develop_source/yellow_team_chestplate.psd"
-      },
-      {
-         "path" : "textures/items/diamond_boots.png"
       },
       {
          "path" : "textures/items/diamond_leggings.png"

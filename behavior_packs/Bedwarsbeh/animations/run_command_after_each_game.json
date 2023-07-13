@@ -1,14 +1,10 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.command.command_area": {
-			"animation_length": 99,
+		"animation.command.run_command_after_each_game": {
+			"animation_length": 34.5,
 			"loop": false,
 			"timeline": {
-				"0.8": [
-					//setblock air
-					"/setblock 267 4 310 air"
-				],
 				"2.0": [
 					//显示奖励总览
 					"/function get_reward_information"
@@ -146,7 +142,9 @@
 					"/fill 63 175 63 -63 175 -63 air",
 					//额外删除地图底部方块y176
 					"/fill 63 176 63 -63 176 -63 air",
-					"/function afterRESET_set_scoreboard_display"
+					"/function afterRESET_set_scoreboard_display",
+					//删除自身!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+					"/event entity @s bedwars:remove_self"
 				]
 			}
 		}

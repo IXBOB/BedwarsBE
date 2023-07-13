@@ -13,5 +13,9 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ difficulty peace
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset * "重置百分数"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_1_event_8 "游戏显示"
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_2_event_2 "游戏显示"
-#放置倒计时区域的红石块
-setblock 267 4 310 redstone_block
+
+#放置执行游戏结束后指令的实体(after_g_en_exist means:--> after_game_entity_exist)
+scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=2}] after_g_en_exist 0
+execute @e[type=bedwars:run_command_after_each_game] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=2}] after_g_en_exist 1
+execute @e[type=armor_stand,name=main,scores={gameSTART=2,after_g_en_exist=0}] ~~~ summon bedwars:run_command_after_each_game ~~~
+execute @e[type=armor_stand,name=main,scores={gameSTART=2,after_g_en_exist=0}] ~~~ scoreboard players set @s after_g_en_exist 0

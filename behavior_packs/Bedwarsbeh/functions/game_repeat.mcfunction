@@ -323,7 +323,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=1
 execute @a[tag=get.xp.game] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function get_xp_and_coin
 #升级
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players add @s "等级" 1
-execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.others.level_up_line1"},{"translate":"text.tellraw.others.level_up_line2","with":{"score":{"name":"@s","objective":"等级"}}} ] }
+execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.others.level_up_line1"},{"translate":"text.tellraw.others.level_up_line2","with":{"rawtext":[{"score":{"name":"@s","objective":"等级"}}]}} ] }
 execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players operation @s "等级经验" -= @e[name=main] exp_lv_up_need
 #重复复制红队商店
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:red_shop_sign1 -4 185 48

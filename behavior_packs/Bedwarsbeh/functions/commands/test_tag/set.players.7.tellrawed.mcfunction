@@ -1,4 +1,4 @@
-tellraw @a { "rawtext" : [{"translate":"text.tellraw.waitinfo.set_player_count_7"} ] }
+tellraw @a { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_7"} ] }
 tag @s remove set.players.2.tellrawed
 tag @s remove set.players.3.tellrawed
 tag @s remove set.players.4.tellrawed
