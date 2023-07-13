@@ -33,8 +33,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿床存活"=1}] ~~~
 #删除盔甲架主手物品
 replaceitem entity @e[type=armor_stand] slot.weapon.mainhand 0 air
 #火焰弹相关================
-#游戏未开始时删除火焰弹（雪球）
-execute @e[type=armor_stand,scores={gameSTART=0}] ~~~ execute @e[type=snowball] ~~~ kill @s
 #火焰弹（雪球）出界删除
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s

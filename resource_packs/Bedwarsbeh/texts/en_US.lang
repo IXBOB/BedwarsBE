@@ -117,6 +117,10 @@ tile.red_flower.tulipOrange.name=disabled_content
 tile.red_flower.tulipPink.name=disabled_content
 tile.red_flower.tulipRed.name=disabled_content
 tile.red_flower.tulipWhite.name=disabled_content
+tile.lantern.name=disabled_content
+tile.spruceFence.name=disabled_content
+tile.acacia_button.name=disabled_content
+tile.deadbush.name=disabled_content
 
 ##scoreboard若ingame需要加ingameinfo.
 ##若非ingame随便写
@@ -288,7 +292,7 @@ text.tellraw.ingameinfo.play_guide_mode_1_line7=§efrom generators to access pow
 text.tellraw.ingameinfo.play_guide_mode_1_line8=§eupgrades.##ok
 text.tellraw.ingameinfo.play_guide_mode_1_line9=§r##ok
 text.tellraw.ingameinfo.play_guide_mode_2_line1=§r##ok
-text.tellraw.ingameinfo.play_guide_mode_2_line2=                  §fBED WARS RUSH##ok
+text.tellraw.ingameinfo.play_guide_mode_2_line2=              §fBED WARS RUSH##ok
 text.tellraw.ingameinfo.play_guide_mode_2_line3=§r##ok
 text.tellraw.ingameinfo.play_guide_mode_2_line4=§eAll generators are maxed! Your bed##ok
 text.tellraw.ingameinfo.play_guide_mode_2_line5=§ehas three layers of protection!##ok
@@ -333,7 +337,7 @@ text.tellraw.ingameinfo.get_coin_time_played=§eCoin +  %s (Time played)##ok
 text.tellraw.ingameinfo.get_coin_kill=§eCoin +  %s (Kill)##ok
 text.tellraw.ingameinfo.get_coin_destroy_bed=§eCoin +  %s (Bed destroyed)##ok
 text.tellraw.ingameinfo.get_xplevel_kill=You get §a%s§f levels from the enemy.##ok
-text.tellraw.ingameinfo.use_xp_bottle=§f§lXP bottle >> §6You used an XP bottle and got 100 levels.##ok
+text.tellraw.ingameinfo.use_xp_bottle=§6You used an XP bottle and got 100 levels.##ok
 text.tellraw.ingameinfo.use_xp_bottle_denied=§cYou can not use this right now. Please report this if you think this is a bug.##ok
 
 ##game-end

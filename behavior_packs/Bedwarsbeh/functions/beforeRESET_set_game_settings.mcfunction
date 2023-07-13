@@ -89,8 +89,6 @@ scoreboard players reset * "蓝锋利等级"
 scoreboard players reset * firework
 #set绿宝石等级 -> 1
 scoreboard players set @e[type=armor_stand,name=main] "绿宝石等级" 1
-#set事件倒计时120
-scoreboard players set @e[type=armor_stand,name=main] "事件倒计时" 120
 #显示事件 -> 0
 scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
 #set钻石等级 -> 1
