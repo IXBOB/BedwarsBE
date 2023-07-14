@@ -31,7 +31,7 @@ execute @e[type=player,scores={"分队"=1..4},tag=up_pickaxe] ~~~ function weapo
 execute @e[type=player,scores={"分队"=1..4},tag=up_axe] ~~~ function weapon_upgrade
 execute @e[type=player,scores={"分队"=1..4},tag=up_armor] ~~~ function weapon_upgrade
 #检测搭桥蛋
-execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=37,dz=126] ~~~ function road_egg
+execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=37,dz=126] ~~~ function bridge_gg
 #检测胜利
 function test_win
 #大厅actionbar

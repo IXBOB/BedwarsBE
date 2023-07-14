@@ -436,23 +436,23 @@
 		"buy_fangyuta_block_west": {												//WEST
 			"textures": "textures/blocks/buy_fangyuta_block"
 		},
-		"buy_road_egg_block_up": {
+		"buy_bridge_gg_block_up": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_up"
 		},
-		"buy_road_egg_block_down": {
+		"buy_bridge_gg_block_down": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_down"
 		},
-		"buy_road_egg_block_north": {
-			"textures": "textures/blocks/buy_road_egg_block"
+		"buy_bridge_gg_block_north": {
+			"textures": "textures/blocks/buy_bridge_gg_block"
 		},
-		"buy_road_egg_block_east": {
-			"textures": "textures/blocks/buy_road_egg_block"
+		"buy_bridge_gg_block_east": {
+			"textures": "textures/blocks/buy_bridge_gg_block"
 		},
-		"buy_road_egg_block_south": {
-			"textures": "textures/blocks/buy_road_egg_block"
+		"buy_bridge_gg_block_south": {
+			"textures": "textures/blocks/buy_bridge_gg_block"
 		},
-		"buy_road_egg_block_west": {												//WEST
-			"textures": "textures/blocks/buy_road_egg_block"
+		"buy_bridge_gg_block_west": {												//WEST
+			"textures": "textures/blocks/buy_bridge_gg_block"
 		},
 		"buy_tnt_block_up": {
 			"textures": "textures/blocks/shop_block/planks_big_oak_up"

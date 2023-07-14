@@ -22,7 +22,7 @@ tile.bedwars:yellow_fangyuta.name=Compact Pop-up Tower
 tile.bedwars:green_fangyuta.name=Compact Pop-up Tower
 item.snowball.name=Fireball
 item.bedwars:xp_bottle=§aXP Bottle §7100 levels
-item.egg.name=Road egg
+item.egg.name=Bridge egg
 item.bedwars:potion_bottle_jumpboostv=Potion of Leaping §7Jump Boost V (00:30)
 item.bedwars:wooden_sword=Wooden Sword
 item.bedwars:wooden_sword_sharpnessI=Wooden Sword §7Sharpness I
@@ -430,6 +430,44 @@ text.scoreboard.gameendinfo.blank_6=§r§r§r§r§r§r
 text.scoreboard.gameendinfo.blank_7=§r§r§r§r§r§r§r
 text.scoreboard.gameendinfo.creator=§7Created by IXBOB
 text.scoreboard.gameendinfo.thanks=§7Thanks for playing
+
+##sign
+
+text.sign.ingame.shop_arrow_mark=§r⬇
+text.sign.ingame.shop_click_the_block=§7>Click the block<
+
+text.sign.ingame.shop_8_levels=§a8 levels##wool
+text.sign.ingame.shop_20_levels=§a20 levels##glass
+text.sign.ingame.shop_32_levels=§a32 levels##end_stone & planks
+text.sign.ingame.shop_50_levels=§a50 levels##weapon_upgrade
+text.sign.ingame.shop_100_levels=§a100 levels##armor_upgrade & pop-up tower & jump_potion & xp_bottle & TNT & ONE-TIME TRAP
+text.sign.ingame.shop_200_levels=§a200 levels##bow & bridge_egg
+text.sign.ingame.shop_30_levels=§a30 levels##arrow & golden_apple
+text.sign.ingame.shop_80_levels=§a80 levels##Fireball
+text.sign.ingame.shop_300_levels=§a300 levels##team PROTECTION
+text.sign.ingame.shop_400_levels=§a400 levels##team SHARPNESS
+
+text.sign.ingame.shop_wool=§f16x Wool
+text.sign.ingame.shop_glass=§f4x Glass
+text.sign.ingame.shop_end_stone=§f16x End Stone
+text.sign.ingame.shop_planks=§f16x Planks
+text.sign.ingame.shop_sword_upgrade=§eSword Upgrade
+text.sign.ingame.shop_pickaxe_upgrade=§ePickaxe Upgrade
+text.sign.ingame.shop_axe_upgrade=§eAxe Upgrade
+text.sign.ingame.shop_armor_upgrade=§eArmor Upgrade
+text.sign.ingame.shop_bow=§fBow
+text.sign.ingame.shop_arrow=§f8x Arrow
+text.sign.ingame.shop_bridge_egg=§fBridge Egg
+text.sign.ingame.shop_pop-up_tower=§fPop-up Tower
+text.sign.ingame.shop_jump_potion=§fJump Potion(30s)
+text.sign.ingame.shop_xp_bottle=§fXp Bottle(100L)
+text.sign.ingame.shop_fireball=§fFireball
+text.sign.ingame.shop_tnt=§fTNT
+text.sign.ingame.shop_golden_apple=§fGolden Apple
+text.sign.ingame.shop_team_sharpness=§dteam SHARPNESS
+text.sign.ingame.shop_team_protection=§dteam PROTECTION
+text.sign.ingame.shop_one-time_trap=§done-time TRAP
+
 
 ##others
 text.tellraw.others.last_game_ended=§c§lYour last game has ended. You have now been teleported back to the lobby.

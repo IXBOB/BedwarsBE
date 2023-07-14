@@ -279,14 +279,14 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:buy_road_egg_block": {
+	"bedwars:buy_bridge_gg_block": {
 		"textures": {
-			"up": "buy_road_egg_block_up",
-			"down": "buy_road_egg_block_down",
-			"north": "buy_road_egg_block_north",
-			"south": "buy_road_egg_block_south",
-			"west": "buy_road_egg_block_west",
-			"east": "buy_road_egg_block_east"
+			"up": "buy_bridge_gg_block_up",
+			"down": "buy_bridge_gg_block_down",
+			"north": "buy_bridge_gg_block_north",
+			"south": "buy_bridge_gg_block_south",
+			"west": "buy_bridge_gg_block_west",
+			"east": "buy_bridge_gg_block_east"
 		},
 		"sound": "wood"
 	},
