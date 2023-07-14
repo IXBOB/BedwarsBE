@@ -119,8 +119,6 @@ gamerule pvp false
 kill @e[type=item]
 #kill经验球
 kill @e[type=xp_orb]
-#clear
-clear @a
 #设置难度为简单
 difficulty easy
 #tag+sound20

@@ -33,10 +33,6 @@
 					//tellraw 返回大厅
 					"/execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tellraw @a { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.back_to_lobby_wait_1\"} ] }"
 				],
-				"15.4": [
-					//clear
-					"/clear @a"
-				],
 				"15.8": [
 					//function
 					"/function gameend_set_game_settings_after"
