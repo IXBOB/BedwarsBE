@@ -1,7 +1,7 @@
 {
    "content" : [
       {
-         "path" : "attachables/red_team_helmet_protectionI.json"
+         "path" : "animations/bedwars_player_invisible.animation.json"
       },
       {
          "path" : "textures/blocks/team_upgrade_sharpness_block.png"
@@ -217,6 +217,9 @@
          "path" : "attachables/green_team_chestplate_protectionII.json"
       },
       {
+         "path" : "textures/blocks/buy_bridge_egg_block.png"
+      },
+      {
          "path" : "attachables/green_team_chestplate_protectionIII.json"
       },
       {
@@ -289,10 +292,16 @@
          "path" : "attachables/red_team_chestplate.json"
       },
       {
+         "path" : "attachables/red_team_helmet_protectionI.json"
+      },
+      {
          "path" : "attachables/red_team_helmet_protectionII.json"
       },
       {
          "path" : "attachables/red_team_helmet_protectionIII.json"
+      },
+      {
+         "path" : "textures/items/potion_bottle_invisibility.png"
       },
       {
          "path" : "textures/items/develop_source/yellow_team_helmet.psd"
@@ -553,6 +562,9 @@
          "path" : "models/entity/npc_lobby_guide_3.geo.json"
       },
       {
+         "path" : "particles/footprint.json"
+      },
+      {
          "path" : "models/entity/npc_lobby_guide_5.geo.json"
       },
       {
@@ -692,9 +704,6 @@
       },
       {
          "path" : "textures/blocks/buy_red_wool_block.png"
-      },
-      {
-         "path" : "textures/blocks/buy_road_egg_block.png"
       },
       {
          "path" : "textures/blocks/buy_upgrade_pickaxe_block.png"
@@ -974,6 +983,9 @@
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main.png"
+      },
+      {
+         "path" : "textures/particles/footprint.png"
       }
    ],
    "version" : 1

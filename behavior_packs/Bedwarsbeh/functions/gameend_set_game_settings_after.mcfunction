@@ -63,7 +63,10 @@ scoreboard players set @e[type=armor_stand,name=main] "红已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "黄已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "蓝已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "绿已重置" 0
-
+#删除隐身时间
+scoreboard objectives remove invisible_time
+scoreboard objectives add invisible_time dummy
+playanimation @a animation.bedwars_player_invisible default 0
 
 
 

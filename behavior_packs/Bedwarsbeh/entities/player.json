@@ -440,7 +440,12 @@
       "bedwars:player_damaged":{
         "run_command":{
           "command": [
-            "tag @s add player_damaged"
+            "tag @s add player_damaged",
+            //隐身失效
+            "tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.invisible_expired\"} ] }",
+            "scoreboard players set @s invisible_time 0",
+            "effect @s clear",
+            "playanimation @s animation.bedwars_player_invisible default 0"
           ]
         }
       },

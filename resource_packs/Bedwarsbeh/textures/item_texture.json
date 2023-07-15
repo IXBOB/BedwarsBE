@@ -53,6 +53,9 @@
       "potion_bottle_jumpboostv": {
         "textures": "textures/items/potion_bottle_jumpboostv"
       },
+      "potion_bottle_invisibility": {
+        "textures": "textures/items/potion_bottle_invisibility"
+      },
       "chainmail_boots": {
         "textures": "textures/items/chainmail_boots"
       },

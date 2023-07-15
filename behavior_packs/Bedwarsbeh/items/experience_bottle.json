@@ -4,32 +4,31 @@
     "description": {
       "identifier": "bedwars:xp_bottle"
     },
-
     "components": {
-     // This texture is used for both inventory and the hand model
-     "minecraft:icon": {
-       "texture": "experience_bottle"
-     },
-     "minecraft:on_use": {
-      "on_use": {
-        "event": "bedwars:get_bottle_xp",
-        "target": "self"
-     }
-   }
+      // This texture is used for both inventory and the hand model
+      "minecraft:icon": {
+        "texture": "experience_bottle"
+      },
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "bedwars:get_bottle_xp",
+          "target": "self"
+        }
+      }
     },
-    "events":{
-      "bedwars:get_bottle_xp":{
-        "run_command":{
-          "command":[
-            "tag @s[scores={分队=1..4,\"存活\"=1}] add get_bottle_xp",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ tag @a remove get_bottle_xp",
-            "execute @s[tag=get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle\"} ] }",
-            "execute @s[tag=get_bottle_xp] ~~~ xp 100L @s",
-            "execute @s[tag=!get_bottle_xp] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle_denied\"} ] }",
-            "tag @s remove get_bottle_xp",
-            "clear @s bedwars:xp_bottle 0 1"
-            ]
-          }
+    "events": {
+      "bedwars:get_bottle_xp": {
+        "run_command": {
+          "command": [
+            "tag @s add stop_command",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2] ~~~ tag @a[tag=stop_command,scores={分队=1..4}] remove stop_command",
+            "tellraw @s[tag=!stop_command] { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle\"} ] }",
+            "xp 100L @s[tag=!stop_command]",
+            "clear @s[tag=!stop_command] bedwars:xp_bottle 0 1",
+            "execute @s[tag=stop_command] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_item_denied\"} ] }",
+            "tag @s remove stop_command"
+          ]
+        }
       }
     }
   }
