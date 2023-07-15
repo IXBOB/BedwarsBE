@@ -1,13 +1,13 @@
 #reset(fill)1--------------------
 execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
-#reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island -47 177 36 0_degrees none layer_by_layer 20
+#reset(clone钻石点) e.g. z=36   扩大+3 --> 33
+execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island -47 177 33 0_degrees none layer_by_layer 20
 #reset(clone钻石点)
 execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island -47 177 -47 90_degrees none layer_by_layer 20
 #reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island 36 177 -47 180_degrees none layer_by_layer 20
+execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island 33 177 -47 180_degrees none layer_by_layer 20
 #reset(clone钻石点)
-execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island 36 177 36 270_degrees none layer_by_layer 20
+execute @e[type=armor_stand,scores={"游戏地图"=1,"重置百分数"=20,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_diamond_island 33 177 33 270_degrees none layer_by_layer 20
 #reset(clone绿宝石点)
 execute @e[type=armor_stand,scores={"游戏地图"=1,function_tick=20,gameSTART=0}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 structure load bedwars:map1_emerald_island -32 176 -11 0_degrees none layer_by_layer 20
 #TP盔甲架向上
