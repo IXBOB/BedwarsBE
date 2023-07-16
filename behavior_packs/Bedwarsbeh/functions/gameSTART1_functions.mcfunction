@@ -1,9 +1,9 @@
 #设置near_diamond
 tag @a remove near_diamond
-execute @e[type=player,x=-40,y=186,z=-40,r=5] ~~~ tag @s add near_diamond
-execute @e[type=player,x=-40,y=186,z=40,r=5] ~~~ tag @s add near_diamond
-execute @e[type=player,x=40,y=186,z=40,r=5] ~~~ tag @s add near_diamond
-execute @e[type=player,x=40,y=186,z=-40,r=5] ~~~ tag @s add near_diamond
+execute @e[type=player,x=-40,y=186,z=-40,r=7] ~~~ tag @s add near_diamond
+execute @e[type=player,x=-40,y=186,z=40,r=7] ~~~ tag @s add near_diamond
+execute @e[type=player,x=40,y=186,z=40,r=7] ~~~ tag @s add near_diamond
+execute @e[type=player,x=40,y=186,z=-40,r=7] ~~~ tag @s add near_diamond
 #设置near_emerald
 tag @a remove near_emerald
 execute @e[type=player,x=0,y=185,z=0,r=10] ~~~ tag @s add near_emerald

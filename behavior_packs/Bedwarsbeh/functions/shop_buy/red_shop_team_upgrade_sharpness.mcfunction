@@ -1,5 +1,5 @@
 execute @s[scores={"分队"=1},lm=400] ~~~ tag @s add want_upgrade_sharpness_red
-execute @s[scores={"分队"=1},l=399] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cYou don't have enough levels." } ] }
+execute @s[scores={"分队"=1},l=399] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_item_denied"} ] }
 execute @s[scores={"分队"=1},l=399] ~~~ playsound mob.endermen.portal @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=..2}] ~~~ execute @a[tag=want_upgrade_sharpness_red] ~~~ tag @s add upgrade_red_strength
 execute @a[tag=upgrade_red_strength] ~~~ tellraw @s { "rawtext" : [ { "text" : "§d§lYou upgraded the §r§6team SHARPNESS" } ] }

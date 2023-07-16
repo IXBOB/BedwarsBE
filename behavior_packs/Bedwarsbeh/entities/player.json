@@ -378,19 +378,23 @@
       "bedwars:set_self_fatal_damage_uid-and-detect_in_void_kill-and-respawn": {
         "run_command": {
           "command": [
-            "tag @s add set_self_fatal_damage_uid",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
-            "tag @s remove set_self_fatal_damage_uid",
-            "execute @s[tag=in_void_kill] ~~~ tellraw @a { \"rawtext\" : [{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@s[scores={分队=..1}]\"}, { \"selector\": \"@s[scores={分队=..2}]\"}, { \"selector\": \"@s[scores={分队=..3}]\"}, { \"selector\": \"@s[scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void\" },{ \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=fatal_damage_died,scores={红床存活=0,分队=1}]\" }, { \"selector\": \"@a[tag=fatal_damage_died,scores={蓝床存活=0,分队=2}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={黄床存活=0,分队=3}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={绿床存活=0,分队=4}]\" },{ \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.final_kill\"} ] } ] } } ]}",
+            "tag @s add stop_command",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[tag=stop_command] remove stop_command",
+            "execute @s[tag=!stop_command] ~~~ tag @s add set_self_fatal_damage_uid",
+            "execute @s[tag=!stop_command] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
+            "execute @s[tag=!stop_command] ~~~ tag @s remove set_self_fatal_damage_uid",
+            "execute @s[tag=in_void_kill,tag=!stop_command] ~~~ tellraw @a { \"rawtext\" : [{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@s[scores={分队=..1}]\"}, { \"selector\": \"@s[scores={分队=..2}]\"}, { \"selector\": \"@s[scores={分队=..3}]\"}, { \"selector\": \"@s[scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void\" },{ \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=fatal_damage_died,scores={红床存活=0,分队=1}]\" }, { \"selector\": \"@a[tag=fatal_damage_died,scores={蓝床存活=0,分队=2}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={黄床存活=0,分队=3}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={绿床存活=0,分队=4}]\" },{ \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.final_kill\"} ] } ] } } ]}",
             //respawn
-            "tag @s add change_mode_cache",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode spectator @a[tag=change_mode_cache]",
-            "tag @a remove change_mode_cache",
-            "tag @s[scores={able_to_respawn=1}] add cache_tag",
-            "scoreboard players set @s respawning 0",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players set @a[tag=cache_tag] respawning 1",
-            "tag @s remove cache_tag",
-            "event entity @s bedwars:respawn_command"
+            "execute @s[tag=!stop_command] ~~~ tag @s add change_mode_cache",
+            "execute @s[tag=!stop_command] ~~~ gamemode spectator @a[tag=change_mode_cache]",
+            "execute @s[tag=!stop_command] ~~~ tag @a remove change_mode_cache", //idk why i write this in this method.
+            "execute @s[tag=!stop_command] ~~~ tag @s[scores={able_to_respawn=1}] add able_to_respawn_cache_tag",
+            "execute @s[tag=!stop_command] ~~~ scoreboard players set @s respawning 0",
+            "execute @s[tag=!stop_command] ~~~ scoreboard players set @s[tag=able_to_respawn_cache_tag] respawning 1",
+            "execute @s[tag=!stop_command] ~~~ scoreboard players set @s[scores={respawning=0}] 出局观战 1",
+            "execute @s[tag=!stop_command] ~~~ tag @s remove able_to_respawn_cache_tag",
+            "execute @s[tag=!stop_command] ~~~ event entity @s bedwars:respawn_command",
+            "tag @s remove stop_command"
           ]
         }
       },

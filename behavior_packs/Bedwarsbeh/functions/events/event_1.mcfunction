@@ -1,11 +1,11 @@
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§a§lEmerald generators §ehave been upgraded to Tier §cII " } ] }
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.event_emerald_generators_upgrade_to_tier_2"} ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ scoreboard players set @s "绿宝石等级" 2
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示"
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=1,"事件倒计时"=..0}] ~~~ scoreboard players set @s "事件倒计时" 122
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§c§lAll beds have been destroyed. No one is able to respawn now." } ] } 
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.event_all_beds_destroyed"} ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示"
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..4,"存活"=1}] title §c§lBed destroyed
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..4,"存活"=1}] subtitle all the beds have been destroyed
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ titleraw @a[scores={"分队"=1..4,"存活"=1}] title { "rawtext" : [{"translate":"text.title.ingameinfo.bed_destroyed"} ] }
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ titleraw @a[scores={"分队"=1..4,"存活"=1}] subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.event_bed_all_self_destroyed"} ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "红床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "蓝床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1,"游戏模式"=2,"事件倒计时"=..0}] ~~~ scoreboard players set @s "黄床存活" 0

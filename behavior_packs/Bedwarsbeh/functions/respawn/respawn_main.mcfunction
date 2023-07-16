@@ -37,6 +37,14 @@ execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,sco
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=2}] ~~~ tp @s 0 186 -53 facing 0 182 0
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=2}] ~~~ gamemode 0 @s
 execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=2}] ~~~ scoreboard players set @s "重生时间" -1
+#游戏结束传送复活中黄队到基地
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=3}] ~~~ tp @s 53 186 0 facing 0 182 0
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=3}] ~~~ gamemode 0 @s
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=3}] ~~~ scoreboard players set @s "重生时间" -1
+#游戏结束传送复活中黄队到基地
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=4}] ~~~ tp @s -53 186 0 facing 0 182 0
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=4}] ~~~ gamemode 0 @s
+execute @e[type=armor_stand,scores={gameSTART=2}] ~~~ execute @e[type=player,scores={"重生时间"=0..,"分队"=4}] ~~~ scoreboard players set @s "重生时间" -1
 #游戏结束传送的其他杂项设置在gameSTART2_functions
 
 #设置出局观战 0

@@ -1,11 +1,11 @@
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6,"事件倒计时"=301}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_7 "游戏显示" 300
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6,"事件倒计时"=301}] ~~~ scoreboard players set @s "显示事件" 7
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=301}] ~~~ scoreboard players set @s "事件倒计时" 300
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§c§lAll beds have been destroyed. No one is able to respawn now." } ] }
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [ { "text" : "§e§lGame will draw after 300 seconds." } ] }
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.event_all_beds_destroyed"} ] }
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ tellraw @a { "rawtext" : [{"translate":"text.tellraw.ingameinfo.event_rush_draw"} ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ scoreboard players reset text.scoreboard.ingameinfo.mode_1_event_7 "游戏显示"
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..4,"存活"=1}] title §c§lBed destroyed
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ title @a[scores={"分队"=1..4,"存活"=1}] subtitle all the beds have been destroyed
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ titleraw @a[scores={"分队"=1..4,"存活"=1}] title { "rawtext" : [{"translate":"text.title.ingameinfo.bed_destroyed"} ] }
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ titleraw @a[scores={"分队"=1..4,"存活"=1}] subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.event_bed_all_self_destroyed"} ] }
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ scoreboard players set @s "红床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ scoreboard players set @s "蓝床存活" 0
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ scoreboard players set @s "黄床存活" 0

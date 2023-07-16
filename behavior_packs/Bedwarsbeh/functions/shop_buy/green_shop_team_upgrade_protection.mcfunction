@@ -1,5 +1,5 @@
 execute @s[scores={"分队"=4},lm=300] ~~~ tag @s add want_upgrade_protection_green
-execute @s[scores={"分队"=4},l=299] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cYou don't have enough levels" } ] }
+execute @s[scores={"分队"=4},l=299] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[scores={"分队"=4},l=299] ~~~ playsound mob.endermen.portal @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=..2}] ~~~ execute @a[tag=want_upgrade_protection_green] ~~~ tag @s add upgrade_green_protection
 execute @a[tag=upgrade_green_protection] ~~~ tellraw @s { "rawtext" : [ { "text" : "§d§lYou upgraded the §r§6team PROTECTION" } ] }

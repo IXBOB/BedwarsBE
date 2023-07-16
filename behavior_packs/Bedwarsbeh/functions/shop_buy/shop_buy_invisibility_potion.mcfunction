@@ -1,4 +1,4 @@
-execute @s[l=249] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cYou don't have enough levels" } ] }
+execute @s[l=249] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[l=249] ~~~ playsound mob.endermen.portal @s
 execute @s[lm=200] ~~~ tag @s add give_jump_potion
 execute @s[lm=200] ~~~ tellraw @s { "rawtext" : [ { "text" : "§aYou purchased §r§6Invisibility Potion II(30s)" } ] }
