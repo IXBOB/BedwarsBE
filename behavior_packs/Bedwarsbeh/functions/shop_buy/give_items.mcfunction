@@ -16,6 +16,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[score
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_fireball] ~~~ function shop_buy/give_items/give_fireball
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_golden_apple] ~~~ function shop_buy/give_items/give_golden_apple
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_jump_potion] ~~~ function shop_buy/give_items/give_jump_potion
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_invisibility_potion] ~~~ function shop_buy/give_items/give_invisibility_potion
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_planks] ~~~ function shop_buy/give_items/give_planks
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_bridge_egg] ~~~ function shop_buy/give_items/give_bridge_egg
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={"分队"=1..4},tag=give_red_glass] ~~~ function shop_buy/give_items/give_red_glass

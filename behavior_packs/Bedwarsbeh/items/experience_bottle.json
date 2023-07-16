@@ -21,7 +21,7 @@
         "run_command": {
           "command": [
             "tag @s add stop_command",
-            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2] ~~~ tag @a[tag=stop_command,scores={分队=1..4}] remove stop_command",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[tag=stop_command,scores={分队=1..4}] remove stop_command",
             "tellraw @s[tag=!stop_command] { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_xp_bottle\"} ] }",
             "xp 100L @s[tag=!stop_command]",
             "clear @s[tag=!stop_command] bedwars:xp_bottle 0 1",

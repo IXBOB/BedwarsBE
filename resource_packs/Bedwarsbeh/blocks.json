@@ -246,14 +246,25 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:buy_jump_potion_block": {
+	"bedwars:buy_jump_boost_potion_block": {
 		"textures": {
-			"up": "buy_jump_potion_block_up",
-			"down": "buy_jump_potion_block_down",
-			"north": "buy_jump_potion_block_north",
-			"south": "buy_jump_potion_block_south",
-			"west": "buy_jump_potion_block_west",
-			"east": "buy_jump_potion_block_east"
+			"up": "buy_jump_boost_potion_block_up",
+			"down": "buy_jump_boost_potion_block_down",
+			"north": "buy_jump_boost_potion_block_north",
+			"south": "buy_jump_boost_potion_block_south",
+			"west": "buy_jump_boost_potion_block_west",
+			"east": "buy_jump_boost_potion_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:buy_invisibility_potion_block": {
+		"textures": {
+			"up": "buy_invisibility_potion_block_up",
+			"down": "buy_invisibility_potion_block_down",
+			"north": "buy_invisibility_potion_block_north",
+			"south": "buy_invisibility_potion_block_south",
+			"west": "buy_invisibility_potion_block_west",
+			"east": "buy_invisibility_potion_block_east"
 		},
 		"sound": "wood"
 	},

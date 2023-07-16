@@ -1,4 +1,4 @@
-execute @s[l=19] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
+execute @s[l=19] ~~~ tellraw @s { "rawtext" : [ { "translate" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[l=19] ~~~ playsound mob.endermen.portal @s
 execute @s[scores={分队=1},lm=20] ~~~ tag @s add give_red_glass
 execute @s[scores={分队=2},lm=20] ~~~ tag @s add give_blue_glass

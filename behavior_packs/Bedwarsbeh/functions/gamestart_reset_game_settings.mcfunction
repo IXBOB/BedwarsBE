@@ -10,6 +10,8 @@ tp @a[scores={"分队"=2}] 0 186 -53 facing 0 182 0
 tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
 #倒计时0 TP绿
 tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
+#设置生存
+gamemode 0 @a[scores={"分队"=1..4}]
 #倒计时0title.times
 title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
@@ -253,11 +255,7 @@ scoreboard players set text.scoreboard.ingameinfo.blank_1 "游戏显示" -3
 scoreboard players set text.scoreboard.ingameinfo.blank_4 "游戏显示" -8
 scoreboard players set text.scoreboard.ingameinfo.creator "游戏显示" -9
 scoreboard players set text.scoreboard.ingameinfo.website "游戏显示" -10
-#删除复制地图时多余的结构方块
-setblock 0 185 48 air
-setblock 0 185 -48 air
-setblock 48 185 0 air
-setblock -48 185 0 air
+
 #设置钻石生成点等级
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "钻石等级" 1
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] "钻石等级" 3

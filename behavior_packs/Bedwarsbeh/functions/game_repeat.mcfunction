@@ -174,10 +174,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-90..-71,able_to_respawn=0,"出局观战"=1}] ~~~ titleraw @s actionbar { "rawtext" : [{"translate":"text.title.ingameinfo.spectator_headup_back_to_lobby_2s"} ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,scores={"抬头返回time"=-110..-91,able_to_respawn=0,"出局观战"=1}] ~~~ titleraw @s actionbar { "rawtext" : [{"translate":"text.title.ingameinfo.spectator_headup_back_to_lobby_1s"} ] }
 #抬头相关功能结束================
-#游戏开始设置生存模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=52,r=10,m=2]
-#游戏开始设置生存模式
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ gamemode 0 @a[scores={"分队"=1..4},x=0,y=184,z=-52,r=10,m=2]
 
 #红队tag+team1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[scores={"分队"=1}] add team1

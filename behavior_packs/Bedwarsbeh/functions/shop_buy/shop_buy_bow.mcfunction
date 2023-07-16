@@ -1,4 +1,4 @@
-execute @s[l=199] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
+execute @s[l=199] ~~~ tellraw @s { "rawtext" : [ { "translate" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[l=199] ~~~ playsound mob.endermen.portal @s
 execute @s[lm=200] ~~~ tag @s add give_bow
 execute @s[lm=200] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_bow"} ] }

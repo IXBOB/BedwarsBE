@@ -1,5 +1,5 @@
 execute @s[scores={"分队"=2},lm=300] ~~~ tag @s add want_upgrade_protection_blue
-execute @s[scores={"分队"=2},l=299] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
+execute @s[scores={"分队"=2},l=299] ~~~ tellraw @s { "rawtext" : [ { "translate" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[scores={"分队"=2},l=299] ~~~ playsound mob.endermen.portal @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=..2}] ~~~ execute @a[tag=want_upgrade_protection_blue] ~~~ tag @s add upgrade_blue_protection
 execute @a[tag=upgrade_blue_protection] ~~~ tellraw @s { "rawtext" : [ { "text" : "§d§lYou upgraded the §r§6team PROTECTION" } ] }

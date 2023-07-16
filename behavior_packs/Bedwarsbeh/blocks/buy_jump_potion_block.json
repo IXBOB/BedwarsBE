@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:buy_jump_potion_block"
+			"identifier": "bedwars:buy_jump_boost_potion_block"
 		},
 		"components": {
 			"minecraft:destroy_time": 99999,

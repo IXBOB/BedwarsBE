@@ -1,4 +1,4 @@
-execute @s[l=99] ~~~ tellraw @s { "rawtext" : [ { "text" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
+execute @s[l=99] ~~~ tellraw @s { "rawtext" : [ { "translate" : "text.tellraw.ingameinfo.purchase_item_denied" } ] }
 execute @s[l=99] ~~~ playsound mob.endermen.portal @s
 execute @s[lm=100,scores={分队=1}] ~~~ tag @s add give_red_fangyuta
 execute @s[lm=100,scores={分队=2}] ~~~ tag @s add give_blue_fangyuta
