@@ -6,9 +6,9 @@
 				"identifier": "geometry.diamond_generate_point_revolve",
 				"texture_width": 12,
 				"texture_height": 12,
-				"visible_bounds_width": 2,
-				"visible_bounds_height": 2.5,
-				"visible_bounds_offset": [0, 0.75, 0]
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 6,
+				"visible_bounds_offset": [0, 2, 0]
 			},
 			"bones": [
 				{
@@ -16,7 +16,7 @@
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-6, 0, -6],
+							"origin": [-6, 56, -6],
 							"size": [12, 12, 12],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [12, 12]},

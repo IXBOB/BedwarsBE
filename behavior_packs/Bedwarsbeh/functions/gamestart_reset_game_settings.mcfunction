@@ -229,6 +229,12 @@ scoreboard players set @e[type=armor_stand,name=spawn.diamond_4] spawned_diam_4 
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count 0
 #spawned_emerald -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emerald 0
+#钻岛和中岛revovle实体自动检测绑定tag
+execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_1
+execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_2
+execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_3
+execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_4
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_generate_point_revolve,c=1,r=20] add emerald_generate_point
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpnessI
 tag @a remove have_upgraded_sword_sharpnessII
@@ -251,6 +257,7 @@ execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard 
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "游戏显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "游戏显示" -1
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "游戏显示" -1
+function scoreboard_team_display/test_bed_exist_and_set
 scoreboard players set text.scoreboard.ingameinfo.blank_1 "游戏显示" -3
 scoreboard players set text.scoreboard.ingameinfo.blank_4 "游戏显示" -8
 scoreboard players set text.scoreboard.ingameinfo.creator "游戏显示" -9

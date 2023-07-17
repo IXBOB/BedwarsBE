@@ -5,17 +5,7 @@
             "identifier": "bedwars:diamond_generate_point_revolve",
             "is_spawnable": true,
             "is_summonable": true,
-            "is_experimental": false,
-            "scripts": {
-              "animate": [
-                "diamond_generate_point_revolve_animation_controller",
-                "default"
-              ]
-            },
-            "animations": {
-              "diamond_generate_point_revolve_animation_controller": "controller.animation.diamond_generate_point_revolve.default",
-              "default":"animation.diamond_generate_point_revolve.rotation"
-            }
+            "is_experimental": false
         },
         "components":{
               "minecraft:custom_hit_test": { 

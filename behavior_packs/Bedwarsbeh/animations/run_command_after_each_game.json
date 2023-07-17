@@ -35,6 +35,7 @@
 				],
 				"15.8": [
 					//function
+					"/function gameend_set_game_settings",
 					"/function gameend_set_game_settings_after"
 				],
 				"17.8": [

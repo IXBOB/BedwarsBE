@@ -2,8 +2,6 @@
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamerule falldamage false
 #关闭pvp
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ gamerule pvp false
-#玩家瞬间恢复
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ effect @a[scores={"分队"=1..4}] instant_health 15 255 true
 #重置game_uid(游戏对局内uid)
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard players reset @a game_uid
 #增加总游戏数

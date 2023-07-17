@@ -3,6 +3,7 @@
     "minecraft:client_entity": {
         "description": {
             "identifier": "bedwars:diamond_generate_point_revolve",
+            "materials": {"default":"npc"},
             "textures": {"default":"textures/entity/diamond_generate_point_revolve"},
             "geometry": {"default":"geometry.diamond_generate_point_revolve"},
             "render_controllers": ["controller.render.default"],

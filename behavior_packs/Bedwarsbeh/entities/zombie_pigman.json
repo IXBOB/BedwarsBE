@@ -484,8 +484,8 @@
         "bedwars:zombie_pigman_drop_items": {
           "run_command":{
             "command":[
-              "execute @s[name=\"§dObsidian piglin\"] ~~~ structure load obsidian ~~~",
-              "execute @s[name=\"§dEnder pearl piglin\"] ~~~ structure load ender_pearl ~~~"
+              "execute @s[name=\"§dObsidian piglin\"] ~~~ structure load obsidian ~~~ 0_degrees none true false",
+              "execute @s[name=\"§dEnder pearl piglin\"] ~~~ structure load ender_pearl ~~~ 0_degrees none true false"
               ]
             }
         }

@@ -73,8 +73,11 @@
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @a[tag=destroy_green_bed_success] add get.coin.desbed",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players add @a[tag=destroy_green_bed_success] 总拆床数 1",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 function get_xp_and_coin",
+            "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @s add test_bed_exist_and_set",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床有敌\"=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] \"绿床存活\" 0",
-            "tag @s remove destroy_green_bed_success"
+            "execute @e[type=armor_stand,name=main,tag=test_bed_exist_and_set] ~~~ function scoreboard_team_display/test_bed_exist_and_set",
+            "tag @s remove destroy_blue_bed_success",
+            "tag @s remove test_bed_exist_and_set"
           ],
           "target": "player"
         }

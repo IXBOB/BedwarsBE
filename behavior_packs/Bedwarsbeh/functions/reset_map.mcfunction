@@ -39,7 +39,7 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"绿已重置"=0,"重�
 execute @e[type=armor_stand,name=main,scores={reseting=1,"钻已重置"=0,"重置百分数"=50}] ~~~ function reset_map/diamond_island
 #重置中岛
 execute @e[type=armor_stand,name=main,scores={reseting=1,"中已重置"=0,"重置百分数"=50}] ~~~ function reset_map/emerald_island
-#重置疾速模式床保护
-execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=90,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect
 #删除多余的结构方块
-execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=99}] ~~~ function reset_map/delete_multiple_blocks
+execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/delete_multiple_blocks
+#重置疾速模式床保护
+execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=86,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect

@@ -71,8 +71,9 @@ scoreboard players set @e[type=armor_stand,name=main] "多已删除" 0
 scoreboard objectives remove invisible_time
 scoreboard objectives add invisible_time dummy
 playanimation @a animation.bedwars_player_invisible default 0
-
-
+#删除资源点旋转的实体
+kill @e[type=bedwars:diamond_generate_point_revolve]
+kill @e[type=bedwars:emerald_generate_point_revolve]
 
 
 

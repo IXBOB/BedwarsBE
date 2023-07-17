@@ -3,6 +3,7 @@
     "minecraft:client_entity": {
         "description": {
             "identifier": "bedwars:emerald_generate_point_revolve",
+            "materials": {"default":"npc"},
             "textures": {"default":"textures/entity/emerald_generate_point_revolve"},
             "geometry": {"default":"geometry.emerald_generate_point_revolve"},
             "render_controllers": ["controller.render.default"],

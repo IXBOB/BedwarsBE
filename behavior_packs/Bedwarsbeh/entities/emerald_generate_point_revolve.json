@@ -5,16 +5,7 @@
             "identifier": "bedwars:emerald_generate_point_revolve",
             "is_spawnable": true,
             "is_summonable": true,
-            "is_experimental": false,
-            "scripts": {
-              "animate": [
-                "emerald_generate_point_revolve_animation_controller"
-              ]
-            },
-            "animations": {
-              "emerald_generate_point_revolve_animation_controller": "controller.animation.emerald_generate_point_revolve.default",
-              "default":"animation.emerald_generate_point_revolve.rotation" //需要修改，具体参考fangyuta_mark
-            }
+            "is_experimental": false
         },
         "components":{
               "minecraft:custom_hit_test": { 

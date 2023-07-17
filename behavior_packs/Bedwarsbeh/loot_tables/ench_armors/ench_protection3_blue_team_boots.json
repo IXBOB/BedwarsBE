@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "bedwars:red_team_boots",
+          "name": "bedwars:blue_team_boots",
           "functions": [
             {
               "function": "specific_enchants",
@@ -16,6 +16,9 @@
                 },
                 {
                   "id": "binding_curse"
+                },
+                {
+                  "id": "binding"
                 }
               ]
             }
