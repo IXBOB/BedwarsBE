@@ -9,11 +9,12 @@ execute @a[tag=up_axe,scores={"斧等级"=0}] ~ ~ ~ function upgrade_weapon/buy_
 execute @a[tag=up_axe,scores={"斧等级"=1}] ~ ~ ~ function upgrade_weapon/buy_stone_axe
 execute @a[tag=up_axe,scores={"斧等级"=2}] ~ ~ ~ function upgrade_weapon/buy_iron_axe
 execute @a[tag=up_axe,scores={"斧等级"=3}] ~ ~ ~ function upgrade_weapon/buy_diamond_axe
-execute @a[tag=up_armor,scores={"防具等级"=1}] ~ ~ ~ function upgrade_weapon/buy_chainmail_armor
-execute @a[tag=up_armor,scores={"防具等级"=2}] ~ ~ ~ function upgrade_weapon/buy_iron_armor
-execute @a[tag=up_armor,scores={"防具等级"=3}] ~ ~ ~ function upgrade_weapon/buy_diamond_armor
-
-
+execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=1}] ~ ~ ~ function upgrade_weapon/buy_chainmail_armor
+execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=1}] ~ ~ ~ function upgrade_weapon/buy_chainmail_armor_old2
+execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=2}] ~ ~ ~ function upgrade_weapon/buy_iron_armor
+execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=2}] ~ ~ ~ function upgrade_weapon/buy_iron_armor_old2
+execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=3}] ~ ~ ~ function upgrade_weapon/buy_diamond_armor
+execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=up_armor,scores={"防具等级"=3}] ~ ~ ~ function upgrade_weapon/buy_diamond_armor_old2
 
 
 

@@ -1,5 +1,6 @@
 {
     "values": [
+      "on_join",
       "function_tick/function_tick",
       "game_repeat",
       "ore_get",

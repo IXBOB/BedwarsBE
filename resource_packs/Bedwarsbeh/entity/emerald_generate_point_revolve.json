@@ -6,9 +6,9 @@
             "materials": {"default":"npc"},
             "textures": {"default":"textures/entity/emerald_generate_point_revolve"},
             "geometry": {"default":"geometry.emerald_generate_point_revolve"},
-            "render_controllers": ["controller.render.default"],
-            "enable_attachables": false,
-            "hide_armor": false
+            "animations": { "revolve_controller": "controller.animation.revolve", "revolve": "animation.generate_point_revolve.rotation" },
+            "scripts": { "animate": [ "revolve_controller" ] },
+            "render_controllers": ["controller.render.default"]
         }
     }
 }

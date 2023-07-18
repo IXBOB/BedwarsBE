@@ -180,14 +180,14 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:team_upgrade_trigger_block": {
+	"bedwars:team_upgrade_trap_block": {
 		"textures": {
-			"up": "team_upgrade_trigger_block_up",
-			"down": "team_upgrade_trigger_block_down",
-			"north": "team_upgrade_trigger_block_north",
-			"south": "team_upgrade_trigger_block_south",
-			"west": "team_upgrade_trigger_block_west",
-			"east": "team_upgrade_trigger_block_east"
+			"up": "team_upgrade_trap_block_up",
+			"down": "team_upgrade_trap_block_down",
+			"north": "team_upgrade_trap_block_north",
+			"south": "team_upgrade_trap_block_south",
+			"west": "team_upgrade_trap_block_west",
+			"east": "team_upgrade_trap_block_east"
 		},
 		"sound": "wood"
 	},

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:blue_team_helmet_protectionIII",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:foil": true,
+			// Helmet category
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.helmet"
+			},
+			"minecraft:icon": {
+				"texture": "blue_team_helmet"
+			},
+			"minecraft:display_name": {
+				"value": "蓝色皮革帽子\n§7保护 III"
+			},
+			"minecraft:max_stack_size": 1,
+			// Helm enchantment slot
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_head"
+			},
+			"minecraft:armor": {
+				"protection": 1
+			},
+
+			// Wearable head slot
+			"minecraft:wearable": {
+				"dispensable": true,
+				"slot": "slot.armor.head"
+			},
+			"minecraft:durability": {
+				"max_durability": 25565
+			}
+		}
+	}
+}

@@ -326,45 +326,49 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:green_shop_sign1 -57 185 -4
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:green_shop_sign2 -57 185 4
 #复制红队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1,function_tick=20}] ~~~ clone 310 4 313 310 4 313 4 185 57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=2,function_tick=20}] ~~~ clone 310 5 313 310 5 313 4 185 57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=3,function_tick=20}] ~~~ clone 310 6 313 310 6 313 4 185 57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=1,function_tick=20}] ~~~ clone 310 4 312 310 4 312 4 185 56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=2,function_tick=20}] ~~~ clone 310 5 312 310 5 312 4 185 56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3,function_tick=20}] ~~~ clone 310 6 312 310 6 312 4 185 56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=1,function_tick=20}] ~~~ clone 310 4 311 310 4 311 4 185 55
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=2,function_tick=20}] ~~~ clone 310 5 311 310 5 311 4 185 55
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=3,function_tick=20}] ~~~ clone 310 6 311 310 6 311 4 185 55
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign 4 185 55 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign 4 185 55 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign 4 185 55 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign 4 185 56 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign 4 185 56 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign 4 185 56 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign 4 185 57 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign 4 185 57 0_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign 4 185 57 0_degrees
+
 #复制蓝队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1,function_tick=20}] ~~~ clone 313 4 311 313 4 311 -4 185 -57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=2,function_tick=20}] ~~~ clone 313 5 311 313 5 311 -4 185 -57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=3,function_tick=20}] ~~~ clone 313 6 311 313 6 311 -4 185 -57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=1,function_tick=20}] ~~~ clone 313 4 312 313 4 312 -4 185 -56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=2,function_tick=20}] ~~~ clone 313 5 312 313 5 312 -4 185 -56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3,function_tick=20}] ~~~ clone 313 6 312 313 6 312 -4 185 -56
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=1,function_tick=20}] ~~~ clone 313 4 313 313 4 313 -4 185 -55
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=2,function_tick=20}] ~~~ clone 313 5 313 313 5 313 -4 185 -55
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=3,function_tick=20}] ~~~ clone 313 6 313 313 6 313 -4 185 -55
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign -4 185 -55 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign -4 185 -55 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign -4 185 -55 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign -4 185 -56 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign -4 185 -56 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign -4 185 -56 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign -4 185 -57 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign -4 185 -57 180_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign -4 185 -57 180_degrees
+
 #复制黄队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1,function_tick=20}] ~~~ clone 312 4 310 312 4 310 57 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=2,function_tick=20}] ~~~ clone 312 5 310 312 5 310 57 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=3,function_tick=20}] ~~~ clone 312 6 310 312 6 310 57 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1,function_tick=20}] ~~~ clone 311 4 310 311 4 310 56 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=2,function_tick=20}] ~~~ clone 311 5 310 311 5 310 56 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3,function_tick=20}] ~~~ clone 311 6 310 311 6 310 56 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=1,function_tick=20}] ~~~ clone 310 4 310 310 4 310 55 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=2,function_tick=20}] ~~~ clone 310 5 310 310 5 310 55 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=3,function_tick=20}] ~~~ clone 310 6 310 310 6 310 55 185 -4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign 55 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign 55 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign 55 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign 56 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign 56 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign 56 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign 57 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign 57 185 -4 270_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign 57 185 -4 270_degrees
+
 #复制绿队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1,function_tick=20}] ~~~ clone 310 4 307 310 4 307 -57 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=2,function_tick=20}] ~~~ clone 310 5 307 310 5 307 -57 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=3,function_tick=20}] ~~~ clone 310 6 307 310 6 307 -57 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1,function_tick=20}] ~~~ clone 311 4 307 311 4 307 -56 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=2,function_tick=20}] ~~~ clone 311 5 307 311 5 307 -56 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3,function_tick=20}] ~~~ clone 311 6 307 311 6 307 -56 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=1,function_tick=20}] ~~~ clone 312 4 307 312 4 307 -55 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=2,function_tick=20}] ~~~ clone 312 5 307 312 5 307 -55 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=3,function_tick=20}] ~~~ clone 312 6 307 312 6 307 -55 185 4
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign -55 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign -55 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign -55 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign -56 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign -56 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign -56 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign -57 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign -57 185 4 90_degrees
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign -57 185 4 90_degrees
+
 #will_get_XP
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4,will_get_XP=1..}] ~~~ function will_get_XP
 #删除背包内的铁锭，金锭，钻石，绿宝石
@@ -398,10 +402,10 @@ execute @e[type=armor_stand,x=-198,y=197,z=-203,dx=2,dy=6,dz=2] ~~~ tp @s ~ ~0.0
 execute @e[type=armor_stand,x=-197,y=202,z=-202,r=1] ~~~ tp @s -197 5 -202
 execute @e[type=armor_stand,name=main,scores={lobby_text_time=..-480}] ~~~ scoreboard players set @s lobby_text_time 0
 #检测触发陷阱
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function team_red_trigger
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3}] ~~~ function team_blue_trigger
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1..3}] ~~~ function team_yellow_trigger
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3}] ~~~ function team_green_trigger
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function team_red_trap
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3}] ~~~ function team_blue_trap
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1..3}] ~~~ function team_yellow_trap
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3}] ~~~ function team_green_trap
 #跑酷终点粒子效果
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle minecraft:totem_particle -203 223 -192
 

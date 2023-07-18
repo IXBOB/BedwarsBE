@@ -122,6 +122,7 @@ tile.lantern.name=disabled_content
 tile.spruceFence.name=disabled_content
 tile.acacia_button.name=disabled_content
 tile.deadbush.name=disabled_content
+item.darkoak_sign.name=disabled_content
 
 ##custom_commands
 
@@ -328,6 +329,9 @@ text.title.ingameinfo.respawned=§aRESPAWNED
 text.title.ingameinfo.bed_destroyed=§cBed Destroyed
 text.subtitle.ingameinfo.bed_destroyed=you will no longer respawn
 text.subtitle.ingameinfo.event_bed_all_self_destroyed=all the beds have been destroyed
+text.title.ingameinfo.victory=§6§lVICTORY
+text.title.ingameinfo.trap_triggered=§c§ltrap triggered
+text.subtitle.ingameinfo.trap_triggered_prompt_enemy=An enemy player is near your bed
 text.title.ingameinfo.spectator_headup_back_to_lobby_5s=§e■■■■■ Teleport to the lobby in 5 seconds ■■■■■
 text.title.ingameinfo.spectator_headup_back_to_lobby_4s=§7■§e■■■■ Teleport to the lobby in 4 seconds ■■■■§7■
 text.title.ingameinfo.spectator_headup_back_to_lobby_3s=§7■■§e■■■ Teleport to the lobby in 3 seconds ■■■§7■■
@@ -490,7 +494,7 @@ text.tellraw.ingameinfo.green_win_line4=§r
 text.tellraw.ingameinfo.green_win_line5=§f                 Game time: §7
 text.tellraw.ingameinfo.green_win_line6=§r
 text.tellraw.ingameinfo.draw_line1=§l                  BED WARS       
-text.tellraw.ingameinfo.draw_line2=§r                     §eDRAW
+text.tellraw.ingameinfo.draw_line2=§r                          §eDRAW
 text.tellraw.ingameinfo.draw_line3=§r             no player wins
 text.tellraw.ingameinfo.draw_line4=§r
 text.tellraw.ingameinfo.draw_line5=§f                 Game time: §7

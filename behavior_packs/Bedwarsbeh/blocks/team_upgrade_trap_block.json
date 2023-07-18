@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:team_upgrade_trap_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact":{
+				"event" : "bedwars:team_upgrade_trap"
+			}
+		},
+		"events": {
+			"bedwars:team_upgrade_trap": {
+				"run_command":{
+				  "command":[
+					"execute @s[scores={分队=1}] ~~~ function shop_buy/red_shop_team_upgrade_trap",
+					"execute @s[scores={分队=2}] ~~~ function shop_buy/blue_shop_team_upgrade_trap",
+					"execute @s[scores={分队=3}] ~~~ function shop_buy/yellow_shop_team_upgrade_trap",
+					"execute @s[scores={分队=4}] ~~~ function shop_buy/green_shop_team_upgrade_trap"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}

@@ -1,6 +1,6 @@
 #title胜利
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ title @a[scores={"分队"=3}] times 0 160 0
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ title @a[scores={"分队"=3}] title §6§lVICTORY
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ titleraw @a[scores={"分队"=3}] title { "rawtext" : [{"translate":"text.title.ingameinfo.victory"} ] }
 #tellraw
 function gameEND_tellraw_yellow
 #firework -> 1

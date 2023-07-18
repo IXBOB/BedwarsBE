@@ -7,6 +7,7 @@ execute @a[tag=upgrade_blue_protection] ~~~ tellraw @a[scores={"分队"=2}] { "r
 execute @a[tag=upgrade_blue_protection] ~~~ playsound note.pling @s ~~~
 execute @a[tag=upgrade_blue_protection] ~~~ xp -300L @s
 execute @a[tag=upgrade_blue_protection] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝保护等级" 1
-execute @a[tag=upgrade_blue_protection] ~~~ function team_upgrade_PROTECTIONandSHARPNESS
+execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=upgrade_blue_protection] ~~~ function team_upgrade_PROTECTIONandSHARPNESS
+execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=upgrade_blue_protection] ~~~ function team_upgrade_PROTECTIONandSHARPNESS_old2
 tag @a remove want_upgrade_protection_blue
 tag @a remove upgrade_blue_protection

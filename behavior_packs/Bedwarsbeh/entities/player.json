@@ -385,8 +385,8 @@
             "execute @s[tag=!stop_command] ~~~ tag @s remove set_self_fatal_damage_uid",
             "execute @s[tag=in_void_kill,tag=!stop_command] ~~~ tellraw @a { \"rawtext\" : [{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@s[scores={分队=..1}]\"}, { \"selector\": \"@s[scores={分队=..2}]\"}, { \"selector\": \"@s[scores={分队=..3}]\"}, { \"selector\": \"@s[scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@s\" },{ \"text\" : \"§7 fell into the void\" },{ \"translate\": \"%%2\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=fatal_damage_died,scores={红床存活=0,分队=1}]\" }, { \"selector\": \"@a[tag=fatal_damage_died,scores={蓝床存活=0,分队=2}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={黄床存活=0,分队=3}]\" },{ \"selector\": \"@a[tag=fatal_damage_died,scores={绿床存活=0,分队=4}]\" },{ \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.final_kill\"} ] } ] } } ]}",
             //respawn
-            "execute @s[tag=!stop_command] ~~~ tag @s add change_mode_cache",
-            "execute @s[tag=!stop_command] ~~~ gamemode spectator @a[tag=change_mode_cache]",
+            "execute @s[tag=!stop_command] ~~~ tag @s add change_mode_cache", //
+            "execute @s[tag=!stop_command] ~~~ gamemode spectator @a[tag=change_mode_cache]", //
             "execute @s[tag=!stop_command] ~~~ tag @a remove change_mode_cache", //idk why i write this in this method.
             "execute @s[tag=!stop_command] ~~~ tag @s[scores={able_to_respawn=1}] add able_to_respawn_cache_tag",
             "execute @s[tag=!stop_command] ~~~ scoreboard players set @s respawning 0",

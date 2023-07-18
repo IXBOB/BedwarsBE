@@ -7,6 +7,7 @@ execute @a[tag=upgrade_blue_strength] ~~~ tellraw @a[scores={"分队"=2}] { "raw
 execute @a[tag=upgrade_blue_strength] ~~~ playsound note.pling @s ~~~
 execute @a[tag=upgrade_blue_strength] ~~~  xp -400L @s
 execute @a[tag=upgrade_blue_strength] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝锋利等级" 1
-execute @a[tag=upgrade_blue_strength] ~~~ function team_upgrade_PROTECTIONandSHARPNESS
+execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=upgrade_blue_strength] ~~~ function team_upgrade_PROTECTIONandSHARPNESS
+execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=upgrade_blue_strength] ~~~ function team_upgrade_PROTECTIONandSHARPNESS_old2
 tag @a remove want_upgrade_sharpness_blue
 tag @a remove upgrade_blue_strength
