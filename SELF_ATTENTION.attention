@@ -17,3 +17,6 @@ ATTENTION:
 1.add tag creator_info相关功能
    (更新地图时不要忘记更新creator_info.mcfunction中写的version)
 2.重做队伍升级(陷阱改掉,添加铁锻炉之类的功能)
+
+
+{ "rawtext" : [{"translate":"text.sign.ingame.shop_80_levels"},{"text":"\n"},{"translate":"text.sign.ingame.shop_arrow_mark"},{"text":"\n"},{"translate":"text.sign.ingame.shop_fireball"},{"text":"\n"},{"translate":"text.sign.ingame.shop_click_the_block"} ] }

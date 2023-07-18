@@ -245,6 +245,8 @@ scoreboard players set @a "当局硬币" 0
 #生成game_uid并赋予玩家
 scoreboard players random @s game_uid 0 999999999
 scoreboard players operation @a[scores={"分队"=1..4}] game_uid = @s game_uid
+#出局观战 -> 0
+scoreboard players set @a "出局观战" 0
 #reset游戏显示
 scoreboard objectives remove "游戏显示"
 scoreboard objectives add 游戏显示 dummy "§eBed Wars"

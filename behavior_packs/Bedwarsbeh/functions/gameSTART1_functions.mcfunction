@@ -26,10 +26,10 @@ execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-6
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.invincibility_over"} ] }
 execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
 #检测装备升级
-execute @e[type=player,scores={"分队"=1..4},tag=up_sword] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4},tag=up_pickaxe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4},tag=up_axe] ~~~ function weapon_upgrade
-execute @e[type=player,scores={"分队"=1..4},tag=up_armor] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_sword] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_pickaxe] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_axe] ~~~ function weapon_upgrade
+execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},tag=up_armor] ~~~ function weapon_upgrade
 #检测搭桥蛋
 execute @e[type=egg,x=-63,y=171,z=-63,dx=126,dy=44,dz=126] ~~~ function bridge_egg
 #检测胜利
