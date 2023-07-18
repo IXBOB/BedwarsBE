@@ -28,32 +28,32 @@ execute @a[x=-63,y=92,z=-63,dx=127,dy=120,dz=127] ~~~ clear @s
 #游戏未开始时删除僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #gamestart=0,复制告示牌游戏未开始
-clone 293 4 296 293 4 296 -200 200 -204
+structure load bedwars:lobby_wait_start_sign -200 200 -204
 setblock -200 201 -205 air
 #游戏重置前复制地图选择告示牌
-execute @s[scores={"地图选择"=0,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 293 4 294 293 4 294 -203 200 -197
-execute @s[scores={"地图选择"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 293 5 294 293 5 294 -203 200 -197
-execute @s[scores={"地图选择"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 293 6 294 293 6 294 -203 200 -197
-execute @s[scores={"地图选择"=3,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 293 7 294 293 7 294 -203 200 -197
+execute @s[scores={"地图选择"=0,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map0_sign -203 200 -197
+execute @s[scores={"地图选择"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map1_sign -203 200 -197
+execute @s[scores={"地图选择"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map2_sign -203 200 -197
+execute @s[scores={"地图选择"=3,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_map3_sign -203 200 -197
 #重置结束后后复制地图选择告示牌
-execute @s[scores={reseting=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @s[scores={reseting=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @s[scores={reseting=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @s[scores={starting=1,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick=20}] ~~~ clone 291 4 294 291 4 294 -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick=20}] ~~~ clone 291 5 294 291 5 294 -203 200 -197
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick=20}] ~~~ clone 291 6 294 291 6 294 -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
 #检测按下按钮更换模式
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ scoreboard players add @e[scores={starting=0,reseting=0},tag=!reset_OK] "游戏模式" 1
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=!op] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.waitinfo.change_mode_denied"} ] }
 execute @s[scores={"游戏模式"=3..,starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0,"游戏模式"=3..,starting=0,reseting=0}] "游戏模式" 1
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ tellraw @a { "rawtext" : [ {"translate":"text.tellraw.waitinfo.change_mode_success","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{"translate":"text.tellraw.waitinfo.change_mode_2"},{"translate":"text.tellraw.waitinfo.change_mode_1"}]}} ] }
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ detect -202 201 -196 polished_blackstone_button 9 setblock -202 201 -196 polished_blackstone_button 1
-#游戏开始前复制游戏模式告示牌
-execute @s[scores={"游戏模式"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 289 5 294 289 5 294 -202 200 -197
-execute @s[scores={"游戏模式"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ clone 289 4 294 289 4 294 -202 200 -197
+#游戏开始前复制可更改游戏模式告示牌
+execute @s[scores={"游戏模式"=1,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_mode1_sign -202 200 -197
+execute @s[scores={"游戏模式"=2,starting=0,reseting=0},tag=!reset_OK] ~~~ structure load bedwars:lobby_mode2_sign -202 200 -197
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 execute @s[tag=set.start.players.2] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_2_already"} ] }
 execute @s[tag=set.start.players.3] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_3_already"} ] }
@@ -101,3 +101,7 @@ execute @e[type=snowball] ~~~ kill @s
 execute @s[scores={starting=1}] ~~~ scoreboard players set * "重生时间" 100
 #设置able_to_respawn0
 execute @s[scores={starting=1}] ~~~ scoreboard players set * able_to_respawn 0
+#游戏开始初始化
+execute @s[scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
+#更改游戏模式
+gamemode 2 @a[tag=!insider]

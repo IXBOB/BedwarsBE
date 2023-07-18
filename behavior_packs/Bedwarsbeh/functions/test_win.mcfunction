@@ -22,16 +22,16 @@ execute @s[scores={"绿床存活"=0}] ~~~ execute @a[scores={"分队"=4,"存活"
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @s "绿队存在" 1
 
 #红团灭tellraw
-execute @s[scores={"红队存在"=0},tag=!red_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n§r§c§lRed Team§r§c has been wiped out!\n§r" } ] }
+execute @s[scores={"红队存在"=0},tag=!red_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "\n" },{ "translate" : "text.tellraw.ingameinfo.red_team_wiped" },{ "text" : "\n§r" } ] }
 execute @s[scores={"红队存在"=0},tag=!red_team_ace_tellrawed] ~~~ tag @s add red_team_ace_tellrawed
 #蓝团灭tellraw
-execute @s[scores={"蓝队存在"=0},tag=!blue_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n§r§b§lBlue Team§r§c has been wiped out!\n§r" } ] }
+execute @s[scores={"蓝队存在"=0},tag=!blue_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "\n" },{ "translate" : "text.tellraw.ingameinfo.blue_team_wiped" },{ "text" : "\n§r" } ] }
 execute @s[scores={"蓝队存在"=0},tag=!blue_team_ace_tellrawed] ~~~ tag @s add blue_team_ace_tellrawed
 #黄团灭tellraw
-execute @s[scores={"黄队存在"=0},tag=!yellow_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n§r§e§lYellow Team§r§c has been wiped out!\n§r" } ] }
+execute @s[scores={"黄队存在"=0},tag=!yellow_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "\n" },{ "translate" : "text.tellraw.ingameinfo.yellow_team_wiped" },{ "text" : "\n§r" } ] }
 execute @s[scores={"黄队存在"=0},tag=!yellow_team_ace_tellrawed] ~~~ tag @s add yellow_team_ace_tellrawed
 #绿团灭tellraw
-execute @s[scores={"绿队存在"=0},tag=!green_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "§r\n§r§a§lGreen Team§r§c has been wiped out!\n§r" } ] }
+execute @s[scores={"绿队存在"=0},tag=!green_team_ace_tellrawed] ~~~ tellraw @a { "rawtext" : [ { "text" : "\n" },{ "translate" : "text.tellraw.ingameinfo.green_team_wiped" },{ "text" : "\n§r" } ] }
 execute @s[scores={"绿队存在"=0},tag=!green_team_ace_tellrawed] ~~~ tag @s add green_team_ace_tellrawed
 
 #检测红队胜利

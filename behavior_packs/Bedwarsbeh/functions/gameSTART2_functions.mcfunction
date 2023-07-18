@@ -9,7 +9,7 @@ execute @a[scores={"分队"=4,respawning=0}] ~~~ detect ~ ~ ~ structure_void 0 t
 #重生中的玩家设置respawning 0
 execute @a[scores={"分队"=1..4,respawning=1}] ~~~ scoreboard players set @s respawning 0
 #gamestart=2,复制告示牌游戏未开始
-clone 293 4 296 293 4 296 -200 200 -204
+structure load bedwars:lobby_wait_start_sign -200 200 -204
 setblock -200 201 -205 air
 #玩家隐身
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
@@ -18,3 +18,20 @@ titleraw @a[x=-218,y=193,z=-218,r=50] actionbar { "rawtext" : [ { "text" : "§r�
 #胜利烟花
 execute @s[scores={function_tick=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @s[scores={function_tick=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
+#火焰弹出界删除
+execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 particle minecraft:dragon_death_explosion_emitter ~~~
+execute @e[type=snowball] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
+#更改游戏模式
+gamemode 2 @a[tag=!insider]
+#删除disabled_content
+kill @e[type=item,name=disabled_content]
+#删除背包
+clear @a[scores={"出局观战"=1,respawning=0}]
+#删除屏障上的僵尸猪人
+execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
+#删除屏障上的掉落物
+execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
+#设置重生点
+spawnpoint @a[scores={"分队"=1..4}] 0 210 0
+#抬头返回功能
+function headup_back_to_lobby

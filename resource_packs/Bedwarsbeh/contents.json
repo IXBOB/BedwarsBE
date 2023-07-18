@@ -391,10 +391,10 @@
          "path" : "contents.json"
       },
       {
-         "path" : "entity/diamond_generate_point_revolve.json"
+         "path" : "entity/diamond_point_revolve.json"
       },
       {
-         "path" : "entity/emerald_generate_point_revolve.json"
+         "path" : "entity/emerald_point_revolve.json"
       },
       {
          "path" : "entity/ixbob_npc.json"
@@ -511,10 +511,10 @@
          "path" : "models/blocks/yellow_bed_head.geo.json"
       },
       {
-         "path" : "models/entity/develop_source/diamond_generate_point_revolve.geo.bbmodel"
+         "path" : "models/entity/develop_source/diamond_point_revolve.geo.bbmodel"
       },
       {
-         "path" : "models/entity/develop_source/emerald_generate_point_revolve.geo.bbmodel"
+         "path" : "models/entity/develop_source/emerald_point_revolve.geo.bbmodel"
       },
       {
          "path" : "models/entity/develop_source/npc_lobby_guide_1.bbmodel"
@@ -529,7 +529,7 @@
          "path" : "models/entity/develop_source/npc_lobby_guide_4.bbmodel"
       },
       {
-         "path" : "models/entity/diamond_generate_point_revolve.geo.json"
+         "path" : "models/entity/diamond_point_revolve.geo.json"
       },
       {
          "path" : "models/entity/develop_source/npc_lobby_guide_5.bbmodel"
@@ -544,7 +544,7 @@
          "path" : "textures/blocks/player_yellow_stained_glass.png"
       },
       {
-         "path" : "models/entity/emerald_generate_point_revolve.geo.json"
+         "path" : "models/entity/emerald_point_revolve.geo.json"
       },
       {
          "path" : "models/entity/ixbob_npc.geo.json"
@@ -871,10 +871,10 @@
          "path" : "textures/blocks/yellow_bed_head.png"
       },
       {
-         "path" : "textures/entity/diamond_generate_point_revolve.png"
+         "path" : "textures/entity/diamond_point_revolve.png"
       },
       {
-         "path" : "textures/entity/emerald_generate_point_revolve.png"
+         "path" : "textures/entity/emerald_point_revolve.png"
       },
       {
          "path" : "textures/items/diamond_boots.png"

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:diamond_point_revolve",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/diamond_point_revolve"},
+            "geometry": {"default":"geometry.diamond_point_revolve"},
+            "animations": { "revolve_controller": "controller.animation.revolve", "revolve": "animation.generate_point_revolve.rotation" },
+            "scripts": { "animate": [ "revolve_controller" ] },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

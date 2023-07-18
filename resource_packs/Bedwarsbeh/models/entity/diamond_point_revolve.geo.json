@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.diamond_generate_point_revolve",
+				"identifier": "geometry.diamond_point_revolve",
 				"texture_width": 12,
 				"texture_height": 12,
 				"visible_bounds_width": 3,

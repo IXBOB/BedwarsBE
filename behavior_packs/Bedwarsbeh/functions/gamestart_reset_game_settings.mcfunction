@@ -30,6 +30,8 @@ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "黄�
 scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿床存活" 1
 #gameSTART -> 1
 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
+#able_to_respawn -> 1
+scoreboard players set @a[scores={"分队"=1..4}] able_to_respawn 1
 #重生时间 -> 100
 scoreboard players set @a[scores={"分队"=1..4}] "重生时间" 100
 #XP清空
@@ -135,6 +137,14 @@ execute @a[scores={"分队"=2}] ~~~ scoreboard players set @e[type=armor_stand,n
 execute @a[scores={"分队"=3}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝队存在" 1
 #绿队存在-> 1
 execute @a[scores={"分队"=4}] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿队存在" 1
+#红队tag+team1
+tag @a[scores={"分队"=1}] add team1
+#蓝队tag+team2
+tag @a[scores={"分队"=2}] add team2
+#黄队tag+team3
+tag @a[scores={"分队"=3}] add team3
+#绿队tag+team4
+tag @a[scores={"分队"=4}] add team4
 #删除red_team_ace_tellrawed tag
 tag @s remove red_team_ace_tellrawed
 #删除blue_team_ace_tellrawed tag
@@ -230,11 +240,11 @@ scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count 0
 #spawned_emerald -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emerald 0
 #钻岛和中岛revovle实体自动检测绑定tag
-execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_1
-execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_2
-execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_3
-execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_generate_point_revolve,c=1,r=20] add diamond_generate_point_4
-execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_generate_point_revolve,c=1,r=20] add emerald_generate_point
+execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_generate_point_1
+execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_generate_point_2
+execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_generate_point_3
+execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_generate_point_4
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_generate_point
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpnessI
 tag @a remove have_upgraded_sword_sharpnessII
