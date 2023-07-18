@@ -555,6 +555,68 @@ text.sign.ingame.shop_team_sharpness=§dteam SHARPNESS
 text.sign.ingame.shop_team_protection=§dteam PROTECTION
 text.sign.ingame.shop_one-time_trap=§done-time TRAP
 
+text.sign.ingame.shop_trap_effect_1=§r§7mining_fatigue I
+text.sign.ingame.shop_trap_effect_2=§rmining_fatigue II
+text.sign.ingame.shop_trap_effect_3=§efatigue II + blind
+
+text.sign.ingame.shop_team_upgrade_level_0_of_3=§7⬜⬜⬜ 0 / 3
+text.sign.ingame.shop_team_upgrade_level_1_of_3=§e⬛§7⬜⬜ 1 / 3
+text.sign.ingame.shop_team_upgrade_level_2_of_3=§e⬛⬛§7⬜ 2 / 3
+text.sign.ingame.shop_team_upgrade_level_3_of_3=§e⬛⬛⬛ 3 / 3
+text.sign.ingame.shop_team_upgrade_maxlevel=§eMAX LEVEL
+
+text.sign.lobby.waiting_for_game_start_line1=§e§oWaiting for the
+text.sign.lobby.waiting_for_game_start_line2=§e§ogame to start
+text.sign.lobby.game_has_started_spectate_option_line1=§e§oThe game has 
+text.sign.lobby.game_has_started_spectate_option_line2=§e§ostarted
+text.sign.lobby.game_has_started_spectate_option_line3=§r
+text.sign.lobby.game_has_started_spectate_option_line4=§r§fClick to watch
+text.sign.lobby.mode_1_line1=§f§lMODE
+text.sign.lobby.mode_1_line2=§r§dNormal
+text.sign.lobby.mode_1_line3=§r
+text.sign.lobby.mode_1_line4=§r§7>Click to change<
+text.sign.lobby.mode_2_line1=§f§lMODE
+text.sign.lobby.mode_2_line2=§r§dRush
+text.sign.lobby.mode_2_line3=§r
+text.sign.lobby.mode_2_line4=§r§7>Click to change<
+text.sign.lobby.mode_1_locked_line1=§f§lMODE
+text.sign.lobby.mode_1_locked_line2=§r§dNormal
+text.sign.lobby.mode_1_locked_line3=§r§cPlease change
+text.sign.lobby.mode_1_locked_line4=§r§cbefore reset
+text.sign.lobby.mode_2_locked_line1=§f§lMODE
+text.sign.lobby.mode_2_locked_line2=§r§dRush
+text.sign.lobby.mode_2_locked_line3=§r§cPlease change
+text.sign.lobby.mode_2_locked_line4=§r§cbefore reset
+text.sign.lobby.map_0_line1=§f§lMAP
+text.sign.lobby.map_0_line2=§r§f§kii§r§f Random §kii
+text.sign.lobby.map_0_line3=§r
+text.sign.lobby.map_0_line4=§r§7>Click to change<
+text.sign.lobby.map_1_line1=§f§lMAP
+text.sign.lobby.map_1_line2=§r§aWooden Boat
+text.sign.lobby.map_1_line3=§r
+text.sign.lobby.map_1_line4=§r§7>Click to change<
+text.sign.lobby.map_2_line1=§f§lMAP
+text.sign.lobby.map_2_line2=§r§6Desert
+text.sign.lobby.map_2_line3=§r
+text.sign.lobby.map_2_line4=§r§7>Click to change<
+text.sign.lobby.map_3_line1=§f§lMAP
+text.sign.lobby.map_3_line2=§r§bDeep Ocean
+text.sign.lobby.map_3_line3=§r
+text.sign.lobby.map_3_line4=§r§7>Click to change<
+text.sign.lobby.map_1_locked_line1=§f§lMAP
+text.sign.lobby.map_1_locked_line2=§r§aWooden Boat
+text.sign.lobby.map_1_locked_line3=§r§cPlease change
+text.sign.lobby.map_1_locked_line4=before reset
+text.sign.lobby.map_2_locked_line1=§f§lMAP
+text.sign.lobby.map_2_locked_line2=§r§6Desert
+text.sign.lobby.map_2_locked_line3=§r§cPlease change
+text.sign.lobby.map_2_locked_line4=before reset
+text.sign.lobby.map_3_locked_line1=§f§lMAP
+text.sign.lobby.map_3_locked_line2=§r§bDeep Ocean
+text.sign.lobby.map_3_locked_line3=§cPlease change
+text.sign.lobby.map_3_locked_line4=§cbefore reset
+
+
 
 ##others
 text.tellraw.others.last_game_ended=§c§lYour last game has ended. You have now been teleported back to the lobby.

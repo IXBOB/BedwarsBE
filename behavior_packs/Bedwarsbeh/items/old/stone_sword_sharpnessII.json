@@ -29,9 +29,7 @@
 			"minecraft:icon": {
 				"texture": "stone_sword"
 			},
-			"minecraft:display_name": {
-				"value": "石剑\n§7锋利 II\n\n§9+7 攻击伤害"
-			}
+			"minecraft:weapon": {}
 		}
 	}
 }

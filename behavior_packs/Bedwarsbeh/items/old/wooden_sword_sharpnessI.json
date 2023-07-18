@@ -29,9 +29,7 @@
 			"minecraft:icon": {
 				"texture": "wooden_sword"
 			},
-			"minecraft:display_name": {
-				"value": "木剑\n§7锋利 I\n\n§9+5 攻击伤害"
-			}
+			"minecraft:weapon": {}
 		}
 	}
 }

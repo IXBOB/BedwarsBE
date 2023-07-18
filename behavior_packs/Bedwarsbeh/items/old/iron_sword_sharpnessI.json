@@ -29,9 +29,7 @@
 			"minecraft:icon": {
 				"texture": "iron_sword"
 			},
-			"minecraft:display_name": {
-				"value": "铁剑\n§7锋利 I\n\n§9+7 攻击伤害"
-			}
+			"minecraft:weapon": {}
 		}
 	}
 }
