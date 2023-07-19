@@ -103,8 +103,8 @@ tag @a[scores={"分队"=!4}] remove team3
 #检测获取经验
 function ore_get
 #检测经验变化时重新计算经验
+execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ function test_if_score_own_xp_changed_and_recount_xp
 execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp_cache = @s own_xp
-execute @s[scores={function_tick_5=5}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ function test_if_score_own_xp_changed_and_recount_xp
 #事件系统相关================
 #事件开始初始化
 execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" 120

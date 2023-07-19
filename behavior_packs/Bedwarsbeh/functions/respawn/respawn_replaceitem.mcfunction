@@ -175,6 +175,6 @@ execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] 
 execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=3},name=main] ~~~ execute @a[scores={able_to_respawn=1,"分队"=4,"防具等级"=3},tag=run_respawn_command] ~~~ loot replace entity @s slot.armor.feet 0 loot "ench_armors/ench_protection3_iron_boots"
 
 #effect.clear
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4},tag=run_respawn_command] ~~~ effect @s clear
+effect @e[type=player,scores={"分队"=1..4},tag=run_respawn_command] clear
 #tag - run_respawn_command
 tag @s remove run_respawn_command
