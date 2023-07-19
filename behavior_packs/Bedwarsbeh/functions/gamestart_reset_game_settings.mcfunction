@@ -153,8 +153,6 @@ tag @s remove blue_team_ace_tellrawed
 tag @s remove yellow_team_ace_tellrawed
 #删除green_team_ace_tellrawed tag
 tag @s remove green_team_ace_tellrawed
-#reset will_get_XP
-scoreboard players reset * will_get_XP
 #R_iron_count_1 -> 0
 #R_iron_count_2 -> 0
 #R_iron_count_3 -> 0

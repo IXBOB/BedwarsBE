@@ -35,3 +35,10 @@ execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
 spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #抬头返回功能
 function headup_back_to_lobby
+#删除背包内的铁锭，金锭，钻石，绿宝石
+clear @a iron_ingot
+clear @a gold_ingot
+clear @a diamond
+clear @a emerald
+#检测玩家是否中途退出再加入了下一局
+function test_game_uid/test_game_uid

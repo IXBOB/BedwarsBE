@@ -108,21 +108,13 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 #此处一部分指令在gameSTART0_functions，为性能考虑
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [ { "text" : "§cSorry, The game is in progress. You can't change it now" } ] }
-#删除非tag=op玩家的tag
-execute @a[tag=!op,tag=set.start.players.2] ~~~ tag @s remove set.start.players.2
-execute @a[tag=!op,tag=set.start.players.3] ~~~ tag @s remove set.start.players.3
-execute @a[tag=!op,tag=set.start.players.4] ~~~ tag @s remove set.start.players.4
-execute @a[tag=!op,tag=set.start.players.5] ~~~ tag @s remove set.start.players.5
-execute @a[tag=!op,tag=set.start.players.6] ~~~ tag @s remove set.start.players.6
-execute @a[tag=!op,tag=set.start.players.7] ~~~ tag @s remove set.start.players.7
-execute @a[tag=!op,tag=set.start.players.8] ~~~ tag @s remove set.start.players.8
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
 #非gameSTART=0时删除玩家的tag
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.2
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.3
@@ -134,134 +126,20 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove s
 #初始化重复检测大厅人数
 scoreboard players reset * "大厅人数"
 #检测人数开始游戏相关结束================
-#开始游戏倒计时title
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..20,function_tick=20},tag=reset_OK] ~~~ function startgame_timer
 #玩家tag指令相关================
 #玩家被夺去tag=op时提示
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.get_op"} ] }
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
-execute @a[tag=op,tag=!get.op.tellrawed] ~~~ tag @s add get.op.tellrawed
-execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.take_away_op"} ] }
-execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
-execute @a[tag=!op,tag=get.op.tellrawed] ~~~ tag @s remove get.op.tellrawed
+execute @a[tag=op,tag=!get.op.tellrawed] ~~~ function on_get_op
+execute @a[tag=!op,tag=get.op.tellrawed] ~~~ function on_take_away_op
 #玩家tag指令相关结束================
-#防止地图关键区域被破坏
-execute @e[type=armor_stand,scores={gameSTART=1..2,function_tick=20}] ~~~ function prevent_break_map_important_area
 #游戏区域tag+degrade
 execute @a[tag=!degrade] ~~~ execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={"分队"=1..4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126,m=0] ~~~ tag @s add degrade
 
-#事件系统相关================
-#事件开始初始化
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" 120
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" 900
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=0}] ~~~ scoreboard players set @s "显示事件" 1
-#事件倒计时-1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1..8,function_tick=20}] ~~~ scoreboard players add @s "事件倒计时" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_2 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_3 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_4 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_5 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_7 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_8 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=2,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" -1
-execute @e[type=armor_stand,scores={gameSTART=1,"游戏模式"=2,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_2 "游戏显示" -1
-#事件1
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1}] ~~~ function events/event_1
-#事件2
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=1..2}] ~~~ function events/event_2
-#事件3
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=2..3}] ~~~ function events/event_3
-#事件4
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=3..4}] ~~~ function events/event_4
-#事件5
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=4..5}] ~~~ function events/event_5
-#事件6
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=5..6}] ~~~ function events/event_6
-#事件7
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=6..7}] ~~~ function events/event_7
-#事件8
-execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7..8}] ~~~ function events/event_8
-#事件相关结束================
 #游戏开始时自动获取经验和硬币
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4,"出局观战"=0}] add get.xp.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4,respawning=1,"出局观战"=1}] add get.xp.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4,"出局观战"=0}] add get.coin.game
-execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ tag @a[scores={"分队"=1..4,respawning=1,"出局观战"=1}] add get.coin.game
-execute @a[tag=get.xp.game] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function get_xp_and_coin
+execute @e[type=armor_stand,scores={gameSTART=1,function_tick=20,fc_tick_cycle=10}] ~~~ function add_xp_and_coin_game
 #升级
-execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players add @s "等级" 1
-execute @a[scores={"等级经验"=1000..}] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.others.level_up_line1"},{"translate":"text.tellraw.others.level_up_line2","with":{"rawtext":[{"score":{"name":"@s","objective":"等级"}}]}} ] }
-execute @a[scores={"等级经验"=1000..}] ~~~ scoreboard players operation @s "等级经验" -= @e[name=main] exp_lv_up_need
+execute @a[scores={"等级经验"=1000..}] ~~~ function player_level_up
 #重复复制红队商店
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:red_shop_sign1 -4 185 48
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:red_shop_sign2 4 185 48
-#重复复制蓝队商店
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:blue_shop_sign1 4 185 -57
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:blue_shop_sign2 -4 185 -57
-#重复复制黄队商店
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:yellow_shop_sign1 48 185 4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:yellow_shop_sign2 48 185 -4
-#重复复制绿队商店
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:green_shop_sign1 -57 185 -4
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ structure load bedwars:green_shop_sign2 -57 185 4
-#复制红队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign 4 185 55 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign 4 185 55 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign 4 185 55 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign 4 185 56 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign 4 185 56 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign 4 185 56 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign 4 185 57 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign 4 185 57 0_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign 4 185 57 0_degrees
-
-#复制蓝队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign -4 185 -55 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign -4 185 -55 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign -4 185 -55 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign -4 185 -56 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign -4 185 -56 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign -4 185 -56 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign -4 185 -57 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign -4 185 -57 180_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign -4 185 -57 180_degrees
-
-#复制黄队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign 55 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign 55 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign 55 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign 56 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign 56 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign 56 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign 57 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign 57 185 -4 270_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign 57 185 -4 270_degrees
-
-#复制绿队团队升级告示牌
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=1,function_tick=20}] ~~~ structure load bedwars:sharpness1_sign -55 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=2,function_tick=20}] ~~~ structure load bedwars:sharpness2_sign -55 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=3,function_tick=20}] ~~~ structure load bedwars:sharpness3_sign -55 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1,function_tick=20}] ~~~ structure load bedwars:protection1_sign -56 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=2,function_tick=20}] ~~~ structure load bedwars:protection2_sign -56 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3,function_tick=20}] ~~~ structure load bedwars:protection3_sign -56 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1,function_tick=20}] ~~~ structure load bedwars:trap1_sign -57 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=2,function_tick=20}] ~~~ structure load bedwars:trap2_sign -57 185 4 90_degrees
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=3,function_tick=20}] ~~~ structure load bedwars:trap3_sign -57 185 4 90_degrees
-
-#will_get_XP
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4,will_get_XP=1..}] ~~~ function will_get_XP
-#删除背包内的铁锭，金锭，钻石，绿宝石
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a iron_ingot
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a gold_ingot
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a diamond
-execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ clear @a emerald
-
-#检测装备升级
-#检测搭桥蛋
-#在function gameSTART1_functions内
-
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,function_tick=20}] ~~~ function ingame_structure_loop_replace
 #疾速模式速度I和急迫I
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..4,"存活"=1}] speed 1 0 true
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"游戏模式"=2}] ~~~ effect @a[scores={"分队"=1..4,"存活"=1}] haste 1 0 true
@@ -335,6 +213,3 @@ execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
 execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
-
-#开始倒计时-1
-execute @e[type=armor_stand,name=main,scores={starting=1,"开始倒计时"=0..,function_tick=20},tag=reset_OK] ~~~ scoreboard players add @s "开始倒计时" -1

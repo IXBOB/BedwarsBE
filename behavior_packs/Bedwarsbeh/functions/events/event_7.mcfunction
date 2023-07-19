@@ -21,3 +21,4 @@ execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计�
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ fill -47 185 0 -47 185 0 air 0 replace bedwars:green_bed_foot
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ playsound mob.enderdragon.growl @a[scores={"分队"=1..4}]
 execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=..0}] ~~~ scoreboard players set @s "事件倒计时" 301
+execute @e[type=armor_stand,scores={gameSTART=1,"显示事件"=7,"事件倒计时"=301}] ~~~ function events/event_8

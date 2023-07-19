@@ -32,11 +32,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[score
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s remove degrade_armor
 #检测经验降级
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s add degrade_xp
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ scoreboard players set @s will_get_XP 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ scoreboard players operation @s own_xp /= @e[type=armor_stand,name=main] constant_2
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ xp -99999L @s
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ scoreboard players operation @s xp_cache = @s own_xp
-execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ function api/recount_xp_by_scoreboard_xp_cache
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ function api/add_xp_by_scoreboard_xp_cache
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.respawn_lost_half_xp_levels"} ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @a[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ tag @s remove degrade_xp
 #tag-degrade

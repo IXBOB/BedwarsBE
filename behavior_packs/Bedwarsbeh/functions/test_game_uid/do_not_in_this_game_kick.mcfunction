@@ -2,7 +2,6 @@ scoreboard players reset @s "分队"
 scoreboard players reset @s "存活"
 clear @s
 effect @s clear
-scoreboard players set @s will_get_XP 0
 xp -99999l
 scoreboard players reset @s game_uid
 scoreboard players reset @s game_uid.cache
