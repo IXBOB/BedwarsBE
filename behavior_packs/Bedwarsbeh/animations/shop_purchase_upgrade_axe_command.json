@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.shop_purchase_upgrade_axe": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.1": [
+					"/execute @a[tag=shop_purchase_upgrade_axe] ~~~ function shop_purchase/shop_upgrade_axe",
+					"/tag @a[tag=shop_purchase_upgrade_axe] remove shop_purchase_upgrade_axe",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

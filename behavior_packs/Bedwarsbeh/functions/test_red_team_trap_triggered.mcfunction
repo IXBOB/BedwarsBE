@@ -1,0 +1,2 @@
+#检测红队陷阱被触发
+execute @e[type=player,scores={"分队"=!1,"出局观战"=0},x=-5,y=176,z=32,dx=10,dy=22,dz=26] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function on_red_team_trap_triggered

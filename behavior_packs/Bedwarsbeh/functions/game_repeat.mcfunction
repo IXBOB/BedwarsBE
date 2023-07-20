@@ -161,10 +161,10 @@ execute @e[type=armor_stand,x=-198,y=197,z=-203,dx=2,dy=6,dz=2] ~~~ tp @s ~ ~0.0
 execute @e[type=armor_stand,x=-197,y=202,z=-202,r=1] ~~~ tp @s -197 5 -202
 execute @e[type=armor_stand,name=main,scores={lobby_text_time=..-480}] ~~~ scoreboard players set @s lobby_text_time 0
 #检测触发陷阱
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function team_red_trap
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3}] ~~~ function team_blue_trap
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1..3}] ~~~ function team_yellow_trap
-execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3}] ~~~ function team_green_trap
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红陷阱等级"=1..3}] ~~~ function test_red_team_trap_triggered
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝陷阱等级"=1..3}] ~~~ function test_blue_team_trap_triggered
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄陷阱等级"=1..3}] ~~~ function test_yellow_team_trap_triggered
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3}] ~~~ function test_green_team_trap_triggered
 #跑酷终点粒子效果
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle minecraft:totem_particle -203 223 -192
 
@@ -183,12 +183,12 @@ execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=change_to_
 #change_to_menu3
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=change_to_menu3] ~~~ function inventory_menu/change_to_menu/change_to_menu3
 
-#menu2-particle_buy_none
-execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_buy_none] ~~~ function inventory_menu/menu2-particle_buy/menu2-particle_buy_none
-#menu2-particle_buy_villagerhappy
-execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_buy_villagerhappy] ~~~ function inventory_menu/menu2-particle_buy/menu2-particle_buy_villagerhappy
-#menu2-particle_buy_fire
-execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_buy_fire] ~~~ function inventory_menu/menu2-particle_buy/menu2-particle_buy_fire
+#menu2-particle_purchase_none
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_none] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_none
+#menu2-particle_purchase_villagerhappy
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_villagerhappy] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_villagerhappy
+#menu2-particle_purchase_fire
+execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=particle_purchase_fire] ~~~ function inventory_menu/menu2-particle_purchase/menu2-particle_purchase_fire
 
 #menu3-remove_start_players_required
 execute @e[type=player,x=-200,y=200,z=-200,r=50,scores={分队=0},tag=remove_start_players_required] ~~~ function inventory_menu/menu3-change_start_players_required/remove_players

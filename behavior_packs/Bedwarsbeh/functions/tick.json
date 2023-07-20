@@ -4,8 +4,6 @@
       "function_tick/function_tick",
       "function_tick/function_tick_5",
       "game_repeat",
-      "RandomDamageUID",
-      "shop_buy/clear_items",
-      "shop_buy/give_items"
+      "RandomDamageUID"
     ]
 }

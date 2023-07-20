@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17.30",
+    "animation_controllers": {
+      "controller.animation.command.shop_purchase_upgrade_armor": {
+        "initial_state": "run_timer",
+        "states": {
+          "run_timer": {
+            "animations": [
+              "shop_purchase_upgrade_armor"
+           ]
+         }
+        }
+     }
+   }
+}

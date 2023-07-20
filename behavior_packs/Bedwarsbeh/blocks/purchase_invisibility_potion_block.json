@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:purchase_invisibility_potion_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact":{
+				"event" : "bedwars:purchase_invisibility_potion"
+			}
+		},
+		"events": {
+			"bedwars:purchase_invisibility_potion": {
+				"run_command":{
+				  "command":[
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_invisibility_potion_command",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_invisibility_potion"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}

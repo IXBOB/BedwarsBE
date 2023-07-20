@@ -15,7 +15,7 @@
 			"minecraft:icon": {
 				"texture": "yellow_team_leggings"
 			},
-			"minecraft:weapon": {},
+
 			"minecraft:max_stack_size": 1,
 			// Make sure the enchantments are for legs
 			"minecraft:enchantable": {

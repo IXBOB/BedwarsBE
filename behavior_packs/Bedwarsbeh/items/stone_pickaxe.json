@@ -33,7 +33,7 @@
 				"destroy_speeds": [
 					{
 						"block": {
-							"tags": "query.any_tag('bedwars:player_end_stone')"
+							"tags": "query.any_tag('bedwars:player_endstone')"
 						},
 						"speed": 12
 					}

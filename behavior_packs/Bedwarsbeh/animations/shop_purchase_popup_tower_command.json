@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.shop_purchase_popup_tower": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.1": [
+					"/execute @a[tag=shop_purchase_popup_tower] ~~~ function shop_purchase/shop_purchase_popup_tower",
+					"/tag @a[tag=shop_purchase_popup_tower] remove shop_purchase_popup_tower",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

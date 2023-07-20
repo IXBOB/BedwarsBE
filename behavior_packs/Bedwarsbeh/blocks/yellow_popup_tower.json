@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:yellow_popup_tower"
+		},
+		"components": {
+			"minecraft:destroy_time": 2,
+			"minecraft:on_player_placing":{
+				"event" : "bedwars:set_popup_tower_mark_and_facing"
+			}
+		},
+		"events": {
+			"bedwars:set_popup_tower_mark_and_facing": {
+				"sequence":[
+					{
+						"run_command": {
+							"command":[
+								"summon bedwars:popup_tower_mark ~ ~ ~"
+							],
+							"target": "block"
+						}
+					},
+					{
+						"run_command": {
+							"command":[
+							"tag @s add set_popup_tower_mark_facing",
+							"execute @e[type=bedwars:popup_tower_mark] ~~~ tp @s ~~~ facing @a[tag=set_popup_tower_mark_facing]",
+							"execute @e[type=bedwars:popup_tower_mark] ~~~ scoreboard players set @s popup_tower_team 3",
+							"tag @s remove set_popup_tower_mark_facing"
+							],
+							"target": "player"
+						}
+					}
+				]
+			}
+		}
+	}
+}

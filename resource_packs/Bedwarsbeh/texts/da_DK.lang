@@ -4,10 +4,10 @@ tile.bedwars:tnt2_block.name=TNT
 tile.bedwars:player_red_wool.name=Red Wool
 tile.bedwars:player_blue_wool.name=Blue Wool
 tile.bedwars:player_planks.name=Oak Plank
-tile.bedwars:player_end_stone.name=End Stone
+tile.bedwars:player_endstone.name=End Stone
 tile.bedwars:player_obsidian.name=Obsidian
-tile.bedwars:red_fangyuta.name=Compact Pop-up Tower
-tile.bedwars:blue_fangyuta.name=Compact Pop-up Tower
+tile.bedwars:red_popup_tower.name=Compact popup_tower
+tile.bedwars:blue_popup_tower.name=Compact popup_tower
 tile.bedwars:player_red_stained_glass.name=Red Stained Glass
 tile.bedwars:player_blue_stained_glass.name=Blue Stained Glass
 item.bedwars:wooden_axe=Wooden Axe
@@ -20,7 +20,7 @@ item.bedwars:diamond_axe=Diamond Axe
 item.bedwars:diamond_pickaxe=Diamond Pickaxe
 item.bedwars:shears=Shears
 
-item.gold_ingot.name=Gold Ingot         ##这边一串不随语言文件更改而更改（function选择器用的name=xxx），反正玩家捡到这些物品立马就被clear了，基本看不到
+item.gold_ingot.name=Gold Ingot##这边一串不随语言文件更改而更改（function选择器用的name=xxx），反正玩家捡到这些物品立马就被clear了，基本看不到
 item.iron_ingot.name=Iron Ingot
 item.diamond.name=Diamond
 item.emerald.name=Emerald

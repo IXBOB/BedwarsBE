@@ -81,13 +81,13 @@ execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ scoreboard players add 
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.diamond_2,scores={diamond_count_2=..239}] diamond_count_2 30
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.diamond_3,scores={diamond_count_3=..239}] diamond_count_3 30
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.diamond_4,scores={diamond_count_4=..239}] diamond_count_4 30
-execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_1,scores={diamond_count_1=30..,spawned_diam_1=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_generate_point_1] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_1,scores={diamond_count_1=30..,spawned_diam_1=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_point_1] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_1,scores={diamond_count_1=30..,spawned_diam_1=..7}] ~~~ scoreboard players add @s spawned_diam_1 1
-execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_2,scores={diamond_count_2=30..,spawned_diam_2=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_generate_point_2] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_2,scores={diamond_count_2=30..,spawned_diam_2=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_point_2] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_2,scores={diamond_count_2=30..,spawned_diam_2=..7}] ~~~ scoreboard players add @s spawned_diam_2 1
-execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_3,scores={diamond_count_3=30..,spawned_diam_3=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_generate_point_3] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_3,scores={diamond_count_3=30..,spawned_diam_3=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_point_3] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_3,scores={diamond_count_3=30..,spawned_diam_3=..7}] ~~~ scoreboard players add @s spawned_diam_3 1
-execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_4,scores={diamond_count_4=30..,spawned_diam_4=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_generate_point_4] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_4,scores={diamond_count_4=30..,spawned_diam_4=..7}] ~~~ execute @e[type=bedwars:diamond_point_revolve,tag=diamond_point_4] ~~~ structure load diamond ~ ~ ~ 0_degrees none true false
 execute @s[type=armor_stand,scores={钻石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.diamond_4,scores={diamond_count_4=30..,spawned_diam_4=..7}] ~~~ scoreboard players add @s spawned_diam_4 1
 execute @s[type=armor_stand,scores={钻石time=..0,钻石等级=1}] ~~~ scoreboard players set @s 钻石time 35
 execute @s[type=armor_stand,scores={钻石time=..0,钻石等级=2}] ~~~ scoreboard players set @s 钻石time 20
@@ -95,7 +95,7 @@ execute @s[type=armor_stand,scores={钻石time=..0,钻石等级=3}] ~~~ scoreboa
 #绿宝石生成
 scoreboard players add @s 绿宝石time -1
 execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=..321}] emerald_count 80
-execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=80..,spawned_emerald=..3}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_generate_point] ~~~ structure load emerald ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=80..,spawned_emerald=..3}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point] ~~~ structure load emerald ~ ~ ~ 0_degrees none true false
 execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=80..,spawned_emerald=..3}] ~~~ scoreboard players add @s spawned_emerald 1
 execute @s[type=armor_stand,scores={绿宝石time=..0,绿宝石等级=1}] ~~~ scoreboard players set @s 绿宝石time 40
 execute @s[type=armor_stand,scores={绿宝石time=..0,绿宝石等级=2}] ~~~ scoreboard players set @s 绿宝石time 30

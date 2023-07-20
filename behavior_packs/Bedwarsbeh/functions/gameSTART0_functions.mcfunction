@@ -24,7 +24,7 @@ function reset_map
 execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ effect @s clear
 execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ tp @s[tag=!insider] -200 200 -200
 execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ xp -99999L @s
-execute @a[x=-63,y=92,z=-63,dx=127,dy=120,dz=127] ~~~ clear @s
+execute @a[x=-63,y=92,z=-63,dx=127,dy=120,dz=127] ~~~ clear @s[tag=!insider]
 #游戏未开始时删除僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #gamestart=0,复制告示牌游戏未开始

@@ -17,7 +17,7 @@
 				"texture": "green_team_chestplate"
 			},
 			// We give it a name
-			"minecraft:weapon": {},
+
 			// We dont want it to stack
 			"minecraft:max_stack_size": 1,
 			// We make sure it can only receive enchantments for chest pieces

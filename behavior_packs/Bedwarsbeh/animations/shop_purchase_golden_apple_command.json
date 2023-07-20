@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.shop_purchase_golden_apple": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.1": [
+					"/execute @a[tag=shop_purchase_golden_apple] ~~~ function shop_purchase/shop_purchase_golden_apple",
+					"/tag @a[tag=shop_purchase_golden_apple] remove shop_purchase_golden_apple",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

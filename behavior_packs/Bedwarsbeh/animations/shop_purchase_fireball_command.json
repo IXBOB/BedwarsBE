@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.shop_purchase_fireball": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.1": [
+					"/execute @a[tag=shop_purchase_fireball] ~~~ function shop_purchase/shop_purchase_fireball",
+					"/tag @a[tag=shop_purchase_fireball] remove shop_purchase_fireball",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

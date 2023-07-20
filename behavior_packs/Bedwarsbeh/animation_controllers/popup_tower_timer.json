@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17.30",
+    "animation_controllers": {
+      "controller.animation.command.popup_tower_timer": {
+        "initial_state": "run_timer",
+        "states": {
+          "run_timer": {
+            "animations": [
+              "popup_tower_animation"
+           ]
+         }
+        }
+     }
+   }
+}

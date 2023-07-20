@@ -14,7 +14,7 @@
 			"minecraft:icon": {
 				"texture": "diamond_boots"
 			},
-			"minecraft:weapon": {},
+
 			"minecraft:max_stack_size": 1,
 			// Enchantable feet
 			"minecraft:enchantable": {
