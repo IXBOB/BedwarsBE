@@ -133,9 +133,6 @@
          "path" : "attachables/red_team_chestplate_protectionI.json"
       },
       {
-         "path" : "textures/blocks/purchase_upgrade_team_trap_block.png"
-      },
-      {
          "path" : "textures/blocks/map_red_concrete_block.png"
       },
       {
@@ -211,10 +208,10 @@
          "path" : "attachables/green_team_chestplate_protectionII.json"
       },
       {
-         "path" : "textures/blocks/upgrade_team_trap_alarm.png"
+         "path" : "attachables/green_team_chestplate_protectionIII.json"
       },
       {
-         "path" : "attachables/green_team_chestplate_protectionIII.json"
+         "path" : "textures/blocks/upgrade_team_trap_counter_offensive.png"
       },
       {
          "path" : "attachables/yellow_team_chestplate_protectionI.json"
@@ -802,12 +799,6 @@
          "path" : "textures/blocks/purchase_red_glass_block.png"
       },
       {
-         "path" : "textures/blocks/purchase_upgrade_team_protection_block.png"
-      },
-      {
-         "path" : "textures/blocks/purchase_upgrade_team_sharpness_block.png"
-      },
-      {
          "path" : "textures/blocks/purchase_tnt_block.png"
       },
       {
@@ -815,6 +806,24 @@
       },
       {
          "path" : "textures/blocks/purchase_upgrade_pickaxe_block.png"
+      },
+      {
+         "path" : "textures/items/develop_source/green_team_leggings.psd"
+      },
+      {
+         "path" : "textures/blocks/upgrade_team_forge.png"
+      },
+      {
+         "path" : "textures/blocks/purchase_upgrade_team_protection_block.png"
+      },
+      {
+         "path" : "textures/models/armor/diamond_armor_legs.png"
+      },
+      {
+         "path" : "textures/blocks/purchase_upgrade_team_sharpness_block.png"
+      },
+      {
+         "path" : "textures/blocks/purchase_upgrade_team_trap_block.png"
       },
       {
          "path" : "textures/blocks/purchase_xp_bottle_block.png"
@@ -835,15 +844,6 @@
          "path" : "textures/blocks/red_bed_head.png"
       },
       {
-         "path" : "textures/blocks/upgrade_team_forge.png"
-      },
-      {
-         "path" : "textures/blocks/upgrade_team_trap_blind_and_slow.png"
-      },
-      {
-         "path" : "textures/blocks/upgrade_team_trap_counter_offensive.png"
-      },
-      {
          "path" : "textures/blocks/tnt2/tnt2_bottom.png"
       },
       {
@@ -854,6 +854,15 @@
       },
       {
          "path" : "textures/blocks/tnt2/tnt2_top.png"
+      },
+      {
+         "path" : "textures/blocks/upgrade_team_trap_alarm.png"
+      },
+      {
+         "path" : "textures/items/iron_pickaxe.png"
+      },
+      {
+         "path" : "textures/blocks/upgrade_team_trap_blind_and_slow.png"
       },
       {
          "path" : "textures/blocks/yellow_bed_foot.png"
@@ -889,9 +898,6 @@
          "path" : "textures/items/develop_source/green_team_helmet.psd"
       },
       {
-         "path" : "textures/items/develop_source/green_team_leggings.psd"
-      },
-      {
          "path" : "textures/items/develop_source/yellow_team_chestplate.psd"
       },
       {
@@ -911,9 +917,6 @@
       },
       {
          "path" : "textures/items/iron_leggings.png"
-      },
-      {
-         "path" : "textures/items/iron_pickaxe.png"
       },
       {
          "path" : "textures/items/iron_sword.png"
@@ -965,9 +968,6 @@
       },
       {
          "path" : "textures/models/armor/develop_source/yellow_team_armor_main.psd"
-      },
-      {
-         "path" : "textures/models/armor/diamond_armor_legs.png"
       },
       {
          "path" : "textures/models/armor/green_team_armor_legs.png"

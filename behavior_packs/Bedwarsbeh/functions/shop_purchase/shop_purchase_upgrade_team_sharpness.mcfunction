@@ -6,10 +6,10 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝锋利等级"=..2}
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄锋利等级"=..2}] ~~~ tag @a[tag=want_upgrade_sharpness,scores={"分队"=3}] add upgrade_yellow_sharpness
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿锋利等级"=..2}] ~~~ tag @a[tag=want_upgrade_sharpness,scores={"分队"=4}] add upgrade_green_sharpness
 execute @s[tag=want_upgrade_sharpness] ~~~ tellraw @s { "rawtext" : [ { "text" : "§d§lYou upgraded the §r§6team sharpness" } ] }
-execute @s[tag=upgrade_red_sharpness] ~~~ tellraw @a[scores={"分队"=1}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness_red]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
-execute @s[tag=upgrade_blue_sharpness] ~~~ tellraw @a[scores={"分队"=2}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness_blue]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
-execute @s[tag=upgrade_yellow_sharpness] ~~~ tellraw @a[scores={"分队"=3}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness_yellow]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
-execute @s[tag=upgrade_green_sharpness] ~~~ tellraw @a[scores={"分队"=4}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness_green]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
+execute @s[tag=upgrade_red_sharpness] ~~~ tellraw @a[scores={"分队"=1}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
+execute @s[tag=upgrade_blue_sharpness] ~~~ tellraw @a[scores={"分队"=2}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
+execute @s[tag=upgrade_yellow_sharpness] ~~~ tellraw @a[scores={"分队"=3}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
+execute @s[tag=upgrade_green_sharpness] ~~~ tellraw @a[scores={"分队"=4}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_sharpness]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_sharpness"}] }
 execute @s[tag=want_upgrade_sharpness] ~~~ playsound note.pling @s ~~~
 execute @s[tag=want_upgrade_sharpness] ~~~ scoreboard players add @s own_xp -400
 execute @s[tag=want_upgrade_sharpness] ~~~ xp -400L @s

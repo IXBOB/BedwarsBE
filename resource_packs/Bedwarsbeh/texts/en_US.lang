@@ -564,7 +564,7 @@ text.sign.ingame.shop_team_sharpness=§dteam SHARPNESS
 text.sign.ingame.shop_team_protection=§dteam PROTECTION
 text.sign.ingame.shop_one-time_trap=§done-time TRAP
 
-text.sign.ingame.shop_trap_effect_1=§e§7mining_fatigue I
+text.sign.ingame.shop_trap_effect_1=§emining_fatigue I
 text.sign.ingame.shop_trap_effect_2=§emining_fatigue II
 text.sign.ingame.shop_trap_effect_3=§efatigue II + blind
 
