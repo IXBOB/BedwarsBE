@@ -12,7 +12,6 @@ execute @s[tag=upgrade_yellow_protection] ~~~ tellraw @a[scores={"分队"=3}] { 
 execute @s[tag=upgrade_green_protection] ~~~ tellraw @a[scores={"分队"=4}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_protection]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_upgrade_team_protection"}] }
 execute @s[tag=want_upgrade_protection] ~~~ playsound note.pling @s ~~~
 execute @s[tag=want_upgrade_protection] ~~~ scoreboard players add @s own_xp -300
-execute @s[tag=want_upgrade_protection] ~~~ say buy
 execute @s[tag=want_upgrade_protection] ~~~ xp -300L @s
 execute @s[tag=upgrade_red_protection] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "红保护等级" 1
 execute @s[tag=upgrade_blue_protection] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝保护等级" 1
