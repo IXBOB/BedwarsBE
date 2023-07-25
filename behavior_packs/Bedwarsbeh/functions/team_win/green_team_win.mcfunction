@@ -6,22 +6,22 @@ function gameEND_tellraw_green
 #firework -> 1
 scoreboard players set @a[scores={"分队"=4}] firework 1
 #设置计分板显示其它队全部淘汰
-scoreboard players set text.scoreboard.ingameinfo.red_team_wiped_out "游戏显示" -5
-scoreboard players set text.scoreboard.ingameinfo.blue_team_wiped_out "游戏显示" -5
-scoreboard players set text.scoreboard.ingameinfo.yellow_team_wiped_out "游戏显示" -5
+scoreboard players set text.scoreboard.ingameinfo.red_team_wiped_out "显示" -5
+scoreboard players set text.scoreboard.ingameinfo.blue_team_wiped_out "显示" -5
+scoreboard players set text.scoreboard.ingameinfo.yellow_team_wiped_out "显示" -5
 #title其它队失败
-title @a[scores={"分队"=!4}] title §c§lGAME OVER
+titleraw @a[scores={"分队"=!4}] title { "rawtext" : [{"translate":"text.title.ingameinfo.gameover"} ] }
 #删除副标题
 title @a subtitle §r
 #胜场数+1
 scoreboard players add @a[scores={"分队"=4}] "胜场数" 1
 #设置计分板显示其它队全部淘汰
-scoreboard players reset text.scoreboard.ingameinfo.red_team_left_1 "游戏显示"
-scoreboard players reset text.scoreboard.ingameinfo.blue_team_left_1 "游戏显示"
-scoreboard players reset text.scoreboard.ingameinfo.yellow_team_left_1 "游戏显示"
-scoreboard players reset text.scoreboard.ingameinfo.red_team_normal "游戏显示"
-scoreboard players reset text.scoreboard.ingameinfo.blue_team_normal "游戏显示"
-scoreboard players reset text.scoreboard.ingameinfo.yellow_team_normal "游戏显示"
+scoreboard players reset text.scoreboard.ingameinfo.red_team_left_1 "显示"
+scoreboard players reset text.scoreboard.ingameinfo.blue_team_left_1 "显示"
+scoreboard players reset text.scoreboard.ingameinfo.yellow_team_left_1 "显示"
+scoreboard players reset text.scoreboard.ingameinfo.red_team_normal "显示"
+scoreboard players reset text.scoreboard.ingameinfo.blue_team_normal "显示"
+scoreboard players reset text.scoreboard.ingameinfo.yellow_team_normal "显示"
 
 #tag-degrade
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a remove degrade

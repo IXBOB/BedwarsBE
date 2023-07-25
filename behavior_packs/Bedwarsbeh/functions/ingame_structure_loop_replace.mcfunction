@@ -1,15 +1,15 @@
 #重复复制红队商店
-structure load bedwars:red_shop_sign1 -4 185 48
-structure load bedwars:red_shop_sign2 4 185 48
+structure load bedwars:shop_sign1 -4 185 48 0_degrees none
+structure load bedwars:shop_sign2 4 185 48 0_degrees none
 #重复复制蓝队商店
-structure load bedwars:blue_shop_sign1 4 185 -57
-structure load bedwars:blue_shop_sign2 -4 185 -57
+structure load bedwars:shop_sign1 48 185 4 90_degrees xz
+structure load bedwars:shop_sign2 48 185 -4 90_degrees xz
 #重复复制黄队商店
-structure load bedwars:yellow_shop_sign1 48 185 4
-structure load bedwars:yellow_shop_sign2 48 185 -4
+structure load bedwars:shop_sign1 4 185 -48 180_degrees x
+structure load bedwars:shop_sign2 -4 185 -57 0_degrees xz
 #重复复制绿队商店
-structure load bedwars:green_shop_sign1 -57 185 -4
-structure load bedwars:green_shop_sign2 -57 185 4
+structure load bedwars:shop_sign1 -57 185 -4 90_degrees none
+structure load bedwars:shop_sign2 -57 185 4 90_degrees none
 #复制红队团队升级告示牌
 execute @s[scores={"红锋利等级"=1}] ~~~ structure load bedwars:sharpness1_sign 4 185 55 0_degrees
 execute @s[scores={"红锋利等级"=2}] ~~~ structure load bedwars:sharpness2_sign 4 185 55 0_degrees

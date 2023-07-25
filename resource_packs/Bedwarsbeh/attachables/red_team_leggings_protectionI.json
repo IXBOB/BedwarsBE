@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "bedwars:red_team_leggings_protectionI",
+			"identifier": "bedwars:red_team_leggings_protection_i",
 			// These 2 are default and are required
 			"materials": {
 				"default": "armor_enchanted",

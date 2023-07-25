@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "bedwars:blue_team_chestplate_protectionIII",
+			"identifier": "bedwars:blue_team_chestplate_protection_iii",
 			// These 2 are default and are requiblue
 			"materials": {
 				"default": "armor_enchanted",

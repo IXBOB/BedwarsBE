@@ -70,47 +70,47 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_red_glass_block": {
+	"bedwars:purchase_red_stained_glass_block": {
 		"textures": {
-			"up": "purchase_red_glass_block_up",
-			"down": "purchase_red_glass_block_down",
-			"north": "purchase_red_glass_block_north",
-			"south": "purchase_red_glass_block_south",
-			"west": "purchase_red_glass_block_west",
-			"east": "purchase_red_glass_block_east"
+			"up": "purchase_red_stained_glass_block_up",
+			"down": "purchase_red_stained_glass_block_down",
+			"north": "purchase_red_stained_glass_block_north",
+			"south": "purchase_red_stained_glass_block_south",
+			"west": "purchase_red_stained_glass_block_west",
+			"east": "purchase_red_stained_glass_block_east"
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_blue_glass_block": {
+	"bedwars:purchase_blue_stained_glass_block": {
 		"textures": {
-			"up": "purchase_blue_glass_block_up",
-			"down": "purchase_blue_glass_block_down",
-			"north": "purchase_blue_glass_block_north",
-			"south": "purchase_blue_glass_block_south",
-			"west": "purchase_blue_glass_block_west",
-			"east": "purchase_blue_glass_block_east"
+			"up": "purchase_blue_stained_glass_block_up",
+			"down": "purchase_blue_stained_glass_block_down",
+			"north": "purchase_blue_stained_glass_block_north",
+			"south": "purchase_blue_stained_glass_block_south",
+			"west": "purchase_blue_stained_glass_block_west",
+			"east": "purchase_blue_stained_glass_block_east"
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_yellow_glass_block": {
+	"bedwars:purchase_yellow_stained_glass_block": {
 		"textures": {
-			"up": "purchase_yellow_glass_block_up",
-			"down": "purchase_yellow_glass_block_down",
-			"north": "purchase_yellow_glass_block_north",
-			"south": "purchase_yellow_glass_block_south",
-			"west": "purchase_yellow_glass_block_west",
-			"east": "purchase_yellow_glass_block_east"
+			"up": "purchase_yellow_stained_glass_block_up",
+			"down": "purchase_yellow_stained_glass_block_down",
+			"north": "purchase_yellow_stained_glass_block_north",
+			"south": "purchase_yellow_stained_glass_block_south",
+			"west": "purchase_yellow_stained_glass_block_west",
+			"east": "purchase_yellow_stained_glass_block_east"
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_green_glass_block": {
+	"bedwars:purchase_green_stained_glass_block": {
 		"textures": {
-			"up": "purchase_green_glass_block_up",
-			"down": "purchase_green_glass_block_down",
-			"north": "purchase_green_glass_block_north",
-			"south": "purchase_green_glass_block_south",
-			"west": "purchase_green_glass_block_west",
-			"east": "purchase_green_glass_block_east"
+			"up": "purchase_green_stained_glass_block_up",
+			"down": "purchase_green_stained_glass_block_down",
+			"north": "purchase_green_stained_glass_block_north",
+			"south": "purchase_green_stained_glass_block_south",
+			"west": "purchase_green_stained_glass_block_west",
+			"east": "purchase_green_stained_glass_block_east"
 		},
 		"sound": "wood"
 	},

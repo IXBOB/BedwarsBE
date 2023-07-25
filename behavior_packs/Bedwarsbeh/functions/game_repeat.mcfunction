@@ -25,10 +25,10 @@ execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @e[type=ender_pear
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 
-#传送大厅有红分队玩家至相应基地
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,scores={"分队"=1,"存活"=1}] ~~~ tp @s 0 186 53
-#传送大厅有蓝分队玩家至相应基地
-execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,scores={"分队"=2,"存活"=1}] ~~~ tp @s 0 186 -53
+#检测大厅有游戏内玩家移出游戏
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ tag @s add unexpected_return_to_lobby
+execute @e[type=armor_stand,scores={gameSTART=1}] ~~~ execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
+
 #所有玩家饱和
 effect @a saturation 2 255 true
 #开始游戏后大厅玩家虚弱
@@ -108,13 +108,13 @@ execute @e[type=armor_stand,name=main,tag=reset_OK,scores={"游戏模式"=2}] ~~
 #检测人数开始游戏相关================
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 #此处一部分指令在gameSTART0_functions，为性能考虑
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
-execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_danied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.4] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.5] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.change_denied"} ] }
 #非gameSTART=0时删除玩家的tag
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.2
 execute @e[type=armor_stand,name=main,scores={gameSTART=!0}] ~~~ tag @a remove set.start.players.3
@@ -168,6 +168,9 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿陷阱等级"=1..3
 #跑酷终点粒子效果
 execute @e[type=armor_stand,name=main,scores={function_tick=20}] ~~~ particle minecraft:totem_particle -203 223 -192
 
+#test in_lobby
+scoreboard players set @a in_lobby 0
+scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
 #PARTICLE_menu
 #menu_page1
 execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
@@ -207,6 +210,7 @@ execute @a[x=-200,y=200,z=-200,r=50,scores={分队=0,menu_page=3},tag=refresh_me
 
 #非tag op玩家进入管理员菜单自动返回
 execute @a[tag=!op,scores={menu_page=3}] ~~~ tag @s add change_to_menu1
+
 
 #粒子显示
 execute @e[type=armor_stand,name=main,scores={function_tick=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~

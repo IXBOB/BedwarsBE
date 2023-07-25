@@ -14,8 +14,14 @@
 			"bedwars:purchase_bow": {
 				"run_command":{
 				  "command":[
-					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ summon bedwars:shop_purchase_bow_command",
-					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1}] ~~~ tag @s add shop_purchase_bow"
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1,own_xp=..199},tag=!already_reach_maxlevel_deny] ~~~ tag @s add own_xp_too_low_deny",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny] ~~~ tag @s add purchase_denied",	
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny,tag=purchase_denied] ~~~ tellraw @s { \"rawtext\" : [ { \"translate\" : \"text.tellraw.ingameinfo.purchase_item_denied\" } ] }",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=purchase_denied] ~~~ playsound mob.endermen.portal @s",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ summon bedwars:shop_purchase_bow_command",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ tag @s add shop_purchase_bow",
+					"tag @s remove own_xp_too_low_deny",
+					"tag @s remove purchase_denied"
 					],
 					"target": "player"
 				  }

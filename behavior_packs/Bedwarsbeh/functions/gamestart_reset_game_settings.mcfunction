@@ -47,8 +47,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "剑等级" 1
 scoreboard players set @a[scores={"分队"=1..4}] "镐等级" 0
 #斧等级 -> 0
 scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
-#防具等级 -> 1
-scoreboard players set @a[scores={"分队"=1..4}] "防具等级" 1
+#护甲等级 -> 1
+scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 #kill经验球
 kill @e[type=xp_orb]
 #红陷阱等级 -> 0
@@ -244,9 +244,9 @@ execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:di
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_4
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point
 #删除附魔锋利tag
-tag @a remove have_upgraded_sword_sharpnessI
-tag @a remove have_upgraded_sword_sharpnessII
-tag @a remove have_upgraded_sword_sharpnessIII
+tag @a remove have_upgraded_sword_sharpness_i
+tag @a remove have_upgraded_sword_sharpness_ii
+tag @a remove have_upgraded_sword_sharpness_iii
 #清空当局经验和当局金币
 scoreboard players set @a "当局经验" 0
 scoreboard players set @a "当局硬币" 0
@@ -255,23 +255,19 @@ scoreboard players random @s game_uid 0 999999999
 scoreboard players operation @a[scores={"分队"=1..4}] game_uid = @s game_uid
 #出局观战 -> 0
 scoreboard players set @a "出局观战" 0
-#reset游戏显示
-scoreboard objectives remove "游戏显示"
-scoreboard objectives add 游戏显示 dummy "§eBed Wars"
-#setdisplay游戏显示
-scoreboard objectives setdisplay sidebar "游戏显示"
-#set游戏显示
-scoreboard players set text.scoreboard.ingameinfo.blank_2 "游戏显示" 0
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "游戏显示" -2
-execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "游戏显示" -1
-execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "游戏显示" -1
+#set显示
+scoreboard players reset * "显示"
+scoreboard players set text.scoreboard.ingameinfo.blank_2 "显示" 0
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "显示" -1
+execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "显示" -1
 function scoreboard_team_display/test_bed_exist_and_set
-scoreboard players set text.scoreboard.ingameinfo.blank_1 "游戏显示" -3
-scoreboard players set text.scoreboard.ingameinfo.blank_4 "游戏显示" -8
-scoreboard players set text.scoreboard.ingameinfo.creator "游戏显示" -9
-scoreboard players set text.scoreboard.ingameinfo.website "游戏显示" -10
+scoreboard players set text.scoreboard.ingameinfo.blank_1 "显示" -3
+scoreboard players set text.scoreboard.ingameinfo.blank_4 "显示" -8
+scoreboard players set text.scoreboard.ingameinfo.creator "显示" -9
+scoreboard players set text.scoreboard.ingameinfo.website "显示" -10
 
 #设置钻石生成点等级
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "钻石等级" 1

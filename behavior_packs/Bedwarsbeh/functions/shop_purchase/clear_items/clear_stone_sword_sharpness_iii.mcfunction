@@ -1,0 +1,1 @@
+clear @s bedwars:stone_sword_sharpness_iii

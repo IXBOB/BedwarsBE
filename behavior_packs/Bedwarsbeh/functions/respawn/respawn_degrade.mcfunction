@@ -23,11 +23,11 @@ execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_axe,
 #检测装备降级
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_axe,tag=run_respawn_command] ~~~ tag @s remove degrade_axe
 #检测装备降级
-execute @s[scores={able_to_respawn=1,"分队"=1..4,"防具等级"=2..},tag=degrade,tag=run_respawn_command] ~~~ tag @s add degrade_armor
+execute @s[scores={able_to_respawn=1,"分队"=1..4,"护甲等级"=2..},tag=degrade,tag=run_respawn_command] ~~~ tag @s add degrade_armor
 #检测装备降级
-execute @s[scores={able_to_respawn=1,"分队"=1..4,"防具等级"=2..},tag=degrade,tag=degrade_armor,tag=run_respawn_command] ~~~ scoreboard players add @s "防具等级" -1
+execute @s[scores={able_to_respawn=1,"分队"=1..4,"护甲等级"=2..},tag=degrade,tag=degrade_armor,tag=run_respawn_command] ~~~ scoreboard players add @s "护甲等级" -1
 #检测装备降级
-execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_armor,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.ingameinfo.respawn_armor_degrade"},{ "score" : { "name" : "@s" , "objective" : "防具等级"}}]}
+execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_armor,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.ingameinfo.respawn_armor_degrade"},{ "score" : { "name" : "@s" , "objective" : "护甲等级"}}]}
 #检测装备降级
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s remove degrade_armor
 #检测经验降级

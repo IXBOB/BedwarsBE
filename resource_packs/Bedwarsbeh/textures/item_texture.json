@@ -50,8 +50,8 @@
       "green_team_boots": {
         "textures": "textures/items/green_team_boots"
       },
-      "potion_bottle_jumpboostv": {
-        "textures": "textures/items/potion_bottle_jumpboostv"
+      "potion_bottle_jump_boost_v": {
+        "textures": "textures/items/potion_bottle_jump_boost_v"
       },
       "potion_bottle_invisibility": {
         "textures": "textures/items/potion_bottle_invisibility"

@@ -1,2 +1,1 @@
-clear @a[tag=clear_iron_sword] bedwars:iron_sword
-tag @a remove clear_iron_sword
+clear @s bedwars:iron_sword

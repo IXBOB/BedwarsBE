@@ -2,7 +2,7 @@
 	"format_version": "1.8.0",
 	"minecraft:attachable": {
 		"description": {
-			"identifier": "bedwars:chainmail_boots_protectionIII",
+			"identifier": "bedwars:chainmail_boots_protection_iii",
 			// These 2 are default and are requiblue
 			"materials": {
 				"default": "armor_enchanted",

@@ -1,2 +1,1 @@
-give @a[tag=give_bow] bow 1  
-tag @a remove give_bow
+give @s[tag=give_bow] bow 1  

@@ -14,14 +14,14 @@ spawnpoint @a -200 200 -200
 gamerule pvp false
 #reset firework
 scoreboard players reset * firework
-#reset游戏显示
-scoreboard players reset * "游戏显示"
-#set游戏显示
-scoreboard players set text.scoreboard.gameendinfo.blank_1 "游戏显示" 0
-#set游戏显示
-scoreboard players set text.scoreboard.gameendinfo.creator "游戏显示" -1
-#set游戏显示
-scoreboard players set text.scoreboard.gameendinfo.thanks "游戏显示" -2
+#reset显示
+scoreboard players reset * "显示"
+#set显示
+scoreboard players set text.scoreboard.gameendinfo.blank_1 "显示" 0
+#set显示
+scoreboard players set text.scoreboard.gameendinfo.creator "显示" -1
+#set显示
+scoreboard players set text.scoreboard.gameendinfo.thanks "显示" -2
 #tag-degrade
 tag @a remove degrade
 #set分队 -> 0

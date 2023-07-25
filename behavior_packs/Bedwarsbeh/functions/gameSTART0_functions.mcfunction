@@ -78,13 +78,13 @@ execute @s[tag=set.start.players.7,tag=!set.players.7.tellrawed] ~~~ function co
 execute @s[tag=set.start.players.8,tag=!set.players.8.tellrawed] ~~~ function commands/test_tag/set.players.8.tellrawed
 #游戏结束时大厅actionbar
 execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§r§fLevel: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级"}},{ "text" : "    §r§fExp: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级经验"}},{ "text" : "§b / 1000\n" },{ "text" : "§r§fCoins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "硬币数"}},{ "text" : "\n§r§fTotal kills: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总击杀数"}},{ "text" : "\n§r§fTotal wins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "胜场数"}},{ "text" : "   §r§fTotal games: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总游戏数"}} ] }
-#等待玩家时设置等待显示计分板
+#等待玩家时设置显示计分板
 execute @s[type=armor_stand,name=main,scores={function_tick=20}] ~~~ function set_gameSTART0_waiting_scoreboard
 #删除玩家观战tag
 execute @s[type=armor_stand,name=main,scores={function_tick=20}] ~~~ tag * remove from_lobby_spectator
 #设置计分板游戏倒计时
 execute @s[type=armor_stand,scores={starting=1,function_tick=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
-execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ scoreboard players reset text.scoreboard.waitinfo.preparing "等待显示"
+execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ scoreboard players reset text.scoreboard.waitinfo.preparing "显示"
 #设置starting值
 function set.game.starting
 #传送结束时有分队值的玩家到大厅并清空背包

@@ -112,77 +112,77 @@
 		"purchase_planks_block_west": {												//WEST
 			"textures": "textures/blocks/purchase_planks_block"
 		},
-		"purchase_red_glass_block_up": {
+		"purchase_red_stained_glass_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_red_glass_block_down": {
+		"purchase_red_stained_glass_block_down": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_red_glass_block_north": {
-			"textures": "textures/blocks/purchase_red_glass_block"
+		"purchase_red_stained_glass_block_north": {
+			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
-		"purchase_red_glass_block_east": {
-			"textures": "textures/blocks/purchase_red_glass_block"
+		"purchase_red_stained_glass_block_east": {
+			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
-		"purchase_red_glass_block_south": {
-			"textures": "textures/blocks/purchase_red_glass_block"
+		"purchase_red_stained_glass_block_south": {
+			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
-		"purchase_red_glass_block_west": {												//WEST
-			"textures": "textures/blocks/purchase_red_glass_block"
+		"purchase_red_stained_glass_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
-		"purchase_blue_glass_block_up": {
+		"purchase_blue_stained_glass_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_blue_glass_block_down": {
+		"purchase_blue_stained_glass_block_down": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_blue_glass_block_north": {
-			"textures": "textures/blocks/purchase_blue_glass_block"
+		"purchase_blue_stained_glass_block_north": {
+			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
-		"purchase_blue_glass_block_east": {
-			"textures": "textures/blocks/purchase_blue_glass_block"
+		"purchase_blue_stained_glass_block_east": {
+			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
-		"purchase_blue_glass_block_south": {
-			"textures": "textures/blocks/purchase_blue_glass_block"
+		"purchase_blue_stained_glass_block_south": {
+			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
-		"purchase_blue_glass_block_west": {												//WEST
-			"textures": "textures/blocks/purchase_blue_glass_block"
+		"purchase_blue_stained_glass_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
-		"purchase_yellow_glass_block_up": {
+		"purchase_yellow_stained_glass_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_yellow_glass_block_down": {
+		"purchase_yellow_stained_glass_block_down": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_yellow_glass_block_north": {
-			"textures": "textures/blocks/purchase_yellow_glass_block"
+		"purchase_yellow_stained_glass_block_north": {
+			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
-		"purchase_yellow_glass_block_east": {
-			"textures": "textures/blocks/purchase_yellow_glass_block"
+		"purchase_yellow_stained_glass_block_east": {
+			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
-		"purchase_yellow_glass_block_south": {
-			"textures": "textures/blocks/purchase_yellow_glass_block"
+		"purchase_yellow_stained_glass_block_south": {
+			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
-		"purchase_yellow_glass_block_west": {												//WEST
-			"textures": "textures/blocks/purchase_yellow_glass_block"
+		"purchase_yellow_stained_glass_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
-		"purchase_green_glass_block_up": {
+		"purchase_green_stained_glass_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_green_glass_block_down": {
+		"purchase_green_stained_glass_block_down": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_green_glass_block_north": {
-			"textures": "textures/blocks/purchase_green_glass_block"
+		"purchase_green_stained_glass_block_north": {
+			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
-		"purchase_green_glass_block_east": {
-			"textures": "textures/blocks/purchase_green_glass_block"
+		"purchase_green_stained_glass_block_east": {
+			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
-		"purchase_green_glass_block_south": {
-			"textures": "textures/blocks/purchase_green_glass_block"
+		"purchase_green_stained_glass_block_south": {
+			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
-		"purchase_green_glass_block_west": {												//WEST
-			"textures": "textures/blocks/purchase_green_glass_block"
+		"purchase_green_stained_glass_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
 		"purchase_upgrade_armor_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"

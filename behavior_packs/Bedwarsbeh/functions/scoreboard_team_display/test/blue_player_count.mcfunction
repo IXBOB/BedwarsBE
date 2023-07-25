@@ -1,5 +1,5 @@
 execute @s[scores={"蓝床存活"=0}] ~~~ scoreboard players set @a[scores={"分队"=2}] "存活" 0
-execute @s[scores={"蓝床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=2,"出局观战"=0}] "存活" 1
+execute @s[scores={"蓝床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=2,"出局观战"=0,in_lobby=0}] "存活" 1
 execute @s[scores={"蓝床存活"=0}] ~~~ scoreboard players set @e[type=player,scores={"分队"=2,respawning=1}] "存活" 1
 scoreboard players set @s[scores={"蓝床存活"=0}] "蓝剩人数" 0
 execute @s[scores={"蓝床存活"=0}] ~~~ execute @e[type=player,scores={"分队"=2,"存活"=1}] ~~~ scoreboard players add @e[type=armor_stand,name=main,scores={"蓝床存活"=0}] "蓝剩人数" 1

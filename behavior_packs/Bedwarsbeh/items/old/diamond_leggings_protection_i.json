@@ -1,0 +1,38 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:diamond_leggings_protection_i",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:foil": true,
+			// Boots category
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.leggings"
+			},
+			"minecraft:icon": {
+				"texture": "diamond_leggings"
+			},
+
+			"minecraft:max_stack_size": 1,
+			// Enchantable Legs
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_legs"
+			},
+			"minecraft:armor": {
+				"protection": 7
+			},
+
+			// Legs slot
+			"minecraft:wearable": {
+				"dispensable": true,
+				"slot": "slot.armor.legs"
+			},
+			"minecraft:durability": {
+				"max_durability": 25565
+			}
+		}
+	}
+}

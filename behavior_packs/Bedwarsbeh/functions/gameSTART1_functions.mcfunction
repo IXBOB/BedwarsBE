@@ -76,7 +76,7 @@ execute @a[scores={"分队"=4,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126]
 #淘汰后玩家actionbar
 titleraw @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1,"存活"=!1}] actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.spectator_information_line1"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line2"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line3"},{"selector":"@a[scores={分队=1,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line4"},{"selector":"@a[scores={分队=2,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line5"},{"selector":"@a[scores={分队=3,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line6"},{"selector":"@a[scores={分队=4,存活=1}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.spectator_information_line7"} ] }
 #删除背包
-clear @a[scores={"出局观战"=1,respawning=0}]
+execute @s[scores={function_tick=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
 #删除屏障上的僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 tp @s 0 -100 0
 #删除屏障上的掉落物
@@ -86,20 +86,21 @@ spawnpoint @a[scores={"分队"=1..4}] 0 210 0
 #增加并计算游戏时间
 execute @s[scores={function_tick=20}] ~~~ function add_and_calculate_game_time
 #抬头返回功能
-function headup_back_to_lobby
+execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
+execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
 #移除非本队tag
-tag @a[scores={"分队"=!1}] remove team2
-tag @a[scores={"分队"=!1}] remove team3
-tag @a[scores={"分队"=!1}] remove team4
-tag @a[scores={"分队"=!2}] remove team1
-tag @a[scores={"分队"=!2}] remove team3
-tag @a[scores={"分队"=!2}] remove team4
-tag @a[scores={"分队"=!3}] remove team1
-tag @a[scores={"分队"=!3}] remove team2
-tag @a[scores={"分队"=!3}] remove team4
-tag @a[scores={"分队"=!4}] remove team1
-tag @a[scores={"分队"=!4}] remove team2
-tag @a[scores={"分队"=!4}] remove team3
+tag @a[scores={"分队"=1}] remove team2
+tag @a[scores={"分队"=1}] remove team3
+tag @a[scores={"分队"=1}] remove team4
+tag @a[scores={"分队"=2}] remove team1
+tag @a[scores={"分队"=2}] remove team3
+tag @a[scores={"分队"=2}] remove team4
+tag @a[scores={"分队"=3}] remove team1
+tag @a[scores={"分队"=3}] remove team2
+tag @a[scores={"分队"=3}] remove team4
+tag @a[scores={"分队"=4}] remove team1
+tag @a[scores={"分队"=4}] remove team2
+tag @a[scores={"分队"=4}] remove team3
 #检测获取经验
 function ore_get
 #检测经验变化时重新计算经验
@@ -107,21 +108,21 @@ execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出
 execute @s[scores={function_tick_5=1}] ~~~ execute @a[scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp_cache = @s own_xp
 #事件系统相关================
 #事件开始初始化
-execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" 120
-execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" 900
+execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
+execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 #事件倒计时-1
 scoreboard players add @s[scores={"显示事件"=1..8,function_tick=20}] "事件倒计时" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_1 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_2 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_3 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_4 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_5 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_7 "游戏显示" -1
-execute @s[scores={"游戏模式"=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_8 "游戏显示" -1
-execute @s[scores={"游戏模式"=2,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_1 "游戏显示" -1
-execute @s[scores={"游戏模式"=2,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_2 "游戏显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_1 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_2 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=3,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_3 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=4,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_4 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=5,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_5 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=6,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_6 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=7,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_7 "显示" -1
+execute @s[scores={"游戏模式"=1,"显示事件"=8,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_1_event_8 "显示" -1
+execute @s[scores={"游戏模式"=2,"显示事件"=1,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_1 "显示" -1
+execute @s[scores={"游戏模式"=2,"显示事件"=2,function_tick=20}] ~~~ scoreboard players add text.scoreboard.ingameinfo.mode_2_event_2 "显示" -1
 #事件1
 execute @s[scores={"显示事件"=1}] ~~~ function events/choose_execute_event_1
 #事件2

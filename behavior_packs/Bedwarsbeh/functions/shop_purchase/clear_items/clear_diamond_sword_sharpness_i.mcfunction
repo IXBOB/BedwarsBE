@@ -1,0 +1,2 @@
+clear @a[tag=clear_diamond_sword_sharpness_i] bedwars:diamond_sword_sharpness_i
+tag @a remove clear_diamond_sword_sharpness_i
