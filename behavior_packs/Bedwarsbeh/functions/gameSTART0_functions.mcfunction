@@ -77,7 +77,7 @@ execute @s[tag=set.start.players.6,tag=!set.players.6.tellrawed] ~~~ function co
 execute @s[tag=set.start.players.7,tag=!set.players.7.tellrawed] ~~~ function commands/test_tag/set.players.7.tellrawed
 execute @s[tag=set.start.players.8,tag=!set.players.8.tellrawed] ~~~ function commands/test_tag/set.players.8.tellrawed
 #游戏结束时大厅actionbar
-execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ titleraw @s actionbar { "rawtext" : [ { "text" : "§r§fLevel: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级"}},{ "text" : "    §r§fExp: §b§l" },{ "score" : { "name" : "@s" , "objective" : "等级经验"}},{ "text" : "§b / 1000\n" },{ "text" : "§r§fCoins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "硬币数"}},{ "text" : "\n§r§fTotal kills: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总击杀数"}},{ "text" : "\n§r§fTotal wins: §e§l" },{ "score" : { "name" : "@s" , "objective" : "胜场数"}},{ "text" : "   §r§fTotal games: §e§l" },{ "score" : { "name" : "@s" , "objective" : "总游戏数"}} ] }
+execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ execute @a ~~~ function lobby_actionbar
 #等待玩家时设置显示计分板
 execute @s[type=armor_stand,name=main,scores={function_tick=20}] ~~~ function set_gameSTART0_waiting_scoreboard
 #删除玩家观战tag

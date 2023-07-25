@@ -20,14 +20,19 @@ titleraw @a title { "rawtext" : [{"translate":"text.title.ingameinfo.game_start"
 titleraw @a subtitle { "rawtext" : [{"translate":"%%2","with":{"rawtext":[{"selector":"@e[type=armor_stand,name=main,scores={游戏模式=2}]"},{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_2"} ] },{ "rawtext" : [{"translate":"text.subtitle.ingameinfo.start_mode_1"} ] }]}} ] }
 #设置respawning
 scoreboard players set * respawning 0
-#红床存活 -> 1
-scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红床存活" 1
-#蓝床存活 -> 1
-scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝床存活" 1
-#黄床存活 -> 1
-scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "黄床存活" 1
-#绿床存活 -> 1
-scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿床存活" 1
+#设置床存活
+scoreboard players set @s "红床存活" 0
+scoreboard players set @s "黄床存活" 0
+scoreboard players set @s "蓝床存活" 0
+scoreboard players set @s "绿床存活" 0
+execute @e[type=player,scores={"分队"=1},x=-200,y=200,z=-200,c=1] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "红床存活" 1
+execute @e[type=player,scores={"分队"=2},x=-200,y=200,z=-200,c=1] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "蓝床存活" 1
+execute @e[type=player,scores={"分队"=3},x=-200,y=200,z=-200,c=1] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "黄床存活" 1
+execute @e[type=player,scores={"分队"=4},x=-200,y=200,z=-200,c=1] ~~~ scoreboard players set @e[type=armor_stand,name=main,scores={starting=1}] "绿床存活" 1
+execute @s[scores={dev_mode=1}] ~~~ scoreboard players set @s "红床存活" 1
+execute @s[scores={dev_mode=1}] ~~~ scoreboard players set @s "蓝床存活" 1
+execute @s[scores={dev_mode=1}] ~~~ scoreboard players set @s "黄床存活" 1
+execute @s[scores={dev_mode=1}] ~~~ scoreboard players set @s "绿床存活" 1
 #gameSTART -> 1
 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] gameSTART 1
 #able_to_respawn -> 1

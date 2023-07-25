@@ -1,0 +1,1 @@
+scoreboard players set @e[type=armor_stand,name=main] dev_mode 0

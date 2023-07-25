@@ -85,7 +85,7 @@ item.snowball.name=Fireball
 item.bedwars:xp_bottle=§aXP Bottle §7100 levels
 item.egg.name=Bridge egg
 item.bedwars:potion_bottle_jump_boost_v=Potion of Leaping §7Jump Boost V (00:30)
-item.bedwars:potion_bottle_invisibility=Potion of invisibility §7Invisibility ii (00:30)
+item.bedwars:potion_bottle_invisibility=Potion of invisibility §7Invisibility II (00:30)
 item.bedwars:wooden_sword=Wooden Sword
 item.bedwars:wooden_sword_sharpness_i=Wooden Sword §7Sharpness I
 item.bedwars:wooden_sword_sharpness_ii=Wooden Sword §7Sharpness II
@@ -145,13 +145,13 @@ item.bedwars:menu2_particle_villagerhappy_disabled=§aGreen star §c[require 5 l
 item.bedwars:menu2_particle_villagerhappy_selected=§aGreen star §a[selected]
 item.bedwars:menu3_add_start_players_required=§eAdd 1 required player §7[click / move to select]
 item.bedwars:menu3_remove_start_players_required=§eRemove 1 required player §7[click / move to select]
-item.bedwars:menu3_start_players_2=Minimum players to start the game: §a2
-item.bedwars:menu3_start_players_3=Minimum players to start the game: §a3
-item.bedwars:menu3_start_players_4=Minimum players to start the game: §a4
-item.bedwars:menu3_start_players_5=Minimum players to start the game: §a5
-item.bedwars:menu3_start_players_6=Minimum players to start the game: §a6
-item.bedwars:menu3_start_players_7=Minimum players to start the game: §a7
-item.bedwars:menu3_start_players_8=Minimum players to start the game: §a8
+item.bedwars:menu3_start_players_2=Minimum players to start the game: §a§l2
+item.bedwars:menu3_start_players_3=Minimum players to start the game: §a§l3
+item.bedwars:menu3_start_players_4=Minimum players to start the game: §a§l4
+item.bedwars:menu3_start_players_5=Minimum players to start the game: §a§l5
+item.bedwars:menu3_start_players_6=Minimum players to start the game: §a§l6
+item.bedwars:menu3_start_players_7=Minimum players to start the game: §a§l7
+item.bedwars:menu3_start_players_8=Minimum players to start the game: §a§l8
 item.bedwars:menu3_start_players_reachmax=§cIt is no longer possible to add the required players
 item.bedwars:menu3_start_players_reachmin=§cIt is no longer possible to reduce the required players.
 
@@ -212,7 +212,6 @@ text.tellraw.custom_commands.set_player_count_5_already=§cThe minimum number of
 text.tellraw.custom_commands.set_player_count_6_already=§cThe minimum number of players required to start the game has already been set to 6
 text.tellraw.custom_commands.set_player_count_7_already=§cThe minimum number of players required to start the game has already been set to 7
 text.tellraw.custom_commands.set_player_count_8_already=§cThe minimum number of players required to start the game has already been set to 8
-
 
 ##wait
 
@@ -312,7 +311,6 @@ text.scoreboard.waitinfo.start_in_4=§aStart in 4s
 text.scoreboard.waitinfo.start_in_3=§aStart in 3s
 text.scoreboard.waitinfo.start_in_2=§aStart in 2s
 text.scoreboard.waitinfo.start_in_1=§aStart in 1s
-
 
 ##ingame
 
@@ -453,9 +451,9 @@ text.tellraw.ingameinfo.purchase_bow=§aYou purchased §r§6Bow
 text.tellraw.ingameinfo.purchase_arrow=§aYou purchased §r§6Arrow x8
 text.tellraw.ingameinfo.purchase_bridge_egg=§aYou purchased §r§6Bridge egg
 text.tellraw.ingameinfo.purchase_popup_tower=§aYou purchased §r§6Compact popup_tower
-text.tellraw.ingameinfo.purchase_jump_boost_potion=§aYou purchased §r§6Jump Potion V(45s)
-text.tellraw.ingameinfo.purchase_invisibility_potion=§aYou purchased §r§6Invisibility Potion V(30s)
-text.tellraw.ingameinfo.purchase_xp_bottle=§aYou purchased §r§6XP bottle(100L)
+text.tellraw.ingameinfo.purchase_jump_boost_potion=§aYou purchased §r§6Jump V Potion (45s)
+text.tellraw.ingameinfo.purchase_invisibility_potion=§aYou purchased §r§6Invisibility II Potion (30s)
+text.tellraw.ingameinfo.purchase_xp_bottle=§aYou purchased §r§6XP bottle (100L)
 text.tellraw.ingameinfo.purchase_fireball=§aYou purchased §r§6Fireball
 text.tellraw.ingameinfo.purchase_tnt=§aYou purchased §r§6TNT
 text.tellraw.ingameinfo.purchase_golden_apple=§aYou purchased §r§6Golden apple
@@ -578,6 +576,9 @@ text.tellraw.ingameinfo.draw_line3=§r             no player wins
 text.tellraw.ingameinfo.draw_line4=§r
 text.tellraw.ingameinfo.draw_line5=§f                 Game time: §7
 text.tellraw.ingameinfo.draw_line6=§r
+text.tellraw.ingameinfo.first_killer=     §e§l1st Killer §7
+text.tellraw.ingameinfo.second_killer=     §6§l2nd Killer §7
+text.tellraw.ingameinfo.third_killer=     §c§l3rd Killer §7
 text.tellraw.ingameinfo.reward_summary_line1=§l                Reward Summary       
 text.tellraw.ingameinfo.reward_summary_line2= §r§7You earned 
 text.tellraw.ingameinfo.reward_summary_line3=§r§3   %s  BED WARS experience
@@ -624,9 +625,9 @@ text.sign.ingame.shop_bow=§fBow
 text.sign.ingame.shop_arrow=§f8x Arrow
 text.sign.ingame.shop_bridge_egg=§fBridge Egg
 text.sign.ingame.shop_popup_tower=§fpop-up_tower
-text.sign.ingame.shop_jump_boost_potion=§fJump Potion(45s)
-text.sign.ingame.shop_invisibility_potion=§fInvisibility(30s)
-text.sign.ingame.shop_xp_bottle=§fXp Bottle(100L)
+text.sign.ingame.shop_jump_boost_potion=§fJump Potion (45s)
+text.sign.ingame.shop_invisibility_potion=§fInvisibility (30s)
+text.sign.ingame.shop_xp_bottle=§fXp Bottle (100L)
 text.sign.ingame.shop_fireball=§fFireball
 text.sign.ingame.shop_tnt=§fTNT
 text.sign.ingame.shop_golden_apple=§fGolden Apple
@@ -635,8 +636,8 @@ text.sign.ingame.shop_team_protection=§dteam PROTECTION
 text.sign.ingame.shop_one-time_trap=§done-time TRAP
 
 text.sign.ingame.shop_trap_effect_1=§emining_fatigue I
-text.sign.ingame.shop_trap_effect_2=§emining_fatigue ii
-text.sign.ingame.shop_trap_effect_3=§efatigue ii + blind
+text.sign.ingame.shop_trap_effect_2=§emining_fatigue II
+text.sign.ingame.shop_trap_effect_3=§efatigue II + blind
 
 text.sign.ingame.shop_upgrade_team_level_0_of_3=§7⬜⬜⬜ 0 / 3
 text.sign.ingame.shop_upgrade_team_level_1_of_3=§e⬛§7⬜⬜ 1 / 3
@@ -699,9 +700,16 @@ text.sign.lobby.map_3_locked_line2=§r§bDeep Ocean
 text.sign.lobby.map_3_locked_line3=§cPlease change
 text.sign.lobby.map_3_locked_line4=§r§cbefore reset
 
-
-
 ##others
+
+text.actionbar.others.lobby_information_0=§r§fDeveloper mode enabled. Disable: §o/function console/settings/dev/disable
+text.actionbar.others.lobby_information_1=§r§fLevel: §b
+text.actionbar.others.lobby_information_2=    §r§fExp: §b§l
+text.actionbar.others.lobby_information_3=§b / 1000
+text.actionbar.others.lobby_information_4=§r§fCoins: §e§l
+text.actionbar.others.lobby_information_5=§r§fTotal kills: §e§l
+text.actionbar.others.lobby_information_6=§r§fTotal wins: §e§l
+text.actionbar.others.lobby_information_7=   §r§fTotal games: §e§l
 text.tellraw.others.last_game_ended=§c§lYour last game has ended. You have now been teleported back to the lobby.
 text.tellraw.others.level_up_line1=§6§l        ■■■■■ LEVEL UP ■■■■■
 text.tellraw.others.level_up_line2=§r§6You are now at level %s ! congratulations !

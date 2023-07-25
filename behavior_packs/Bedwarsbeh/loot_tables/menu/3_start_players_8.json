@@ -9,7 +9,7 @@
           "functions": [
             {
               "function": "set_name",
-              "name": "§r当前开始游戏需要的最小玩家数: §a8"
+              "name": "§r当前开始游戏需要的最小玩家数: §a§l8"
             }
           ]
         }
