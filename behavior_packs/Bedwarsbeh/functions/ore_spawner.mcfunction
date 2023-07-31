@@ -94,9 +94,12 @@ execute @s[type=armor_stand,scores={钻石time=..0,钻石等级=2}] ~~~ scoreboa
 execute @s[type=armor_stand,scores={钻石time=..0,钻石等级=3}] ~~~ scoreboard players set @s 钻石time 15
 #绿宝石生成
 scoreboard players add @s 绿宝石time -1
-execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=..321}] emerald_count 80
-execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=80..,spawned_emerald=..3}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point] ~~~ structure load emerald ~ ~ ~ 0_degrees none true false
-execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count=80..,spawned_emerald=..3}] ~~~ scoreboard players add @s spawned_emerald 1
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_1=..321}] emerald_count_1 80
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_2=..321}] emerald_count_2 80
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_1=80..,spawned_emer_1=..3}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ structure load emerald ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_1=80..,spawned_emer_1=..3}] ~~~ scoreboard players add @s spawned_emer_1_1 1
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_2=80..,spawned_emer_2=..3}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ structure load emerald ~ ~ ~ 0_degrees none true false
+execute @s[type=armor_stand,scores={绿宝石time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_2=80..,spawned_emer_2=..3}] ~~~ scoreboard players add @s spawned_emer_2 1
 execute @s[type=armor_stand,scores={绿宝石time=..0,绿宝石等级=1}] ~~~ scoreboard players set @s 绿宝石time 40
 execute @s[type=armor_stand,scores={绿宝石time=..0,绿宝石等级=2}] ~~~ scoreboard players set @s 绿宝石time 30
 execute @s[type=armor_stand,scores={绿宝石time=..0,绿宝石等级=3}] ~~~ scoreboard players set @s 绿宝石time 20

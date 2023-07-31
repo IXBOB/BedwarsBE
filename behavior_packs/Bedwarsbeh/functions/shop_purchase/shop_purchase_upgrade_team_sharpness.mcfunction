@@ -15,7 +15,7 @@ execute @s[tag=upgrade_red_sharpness] ~~~ scoreboard players add @e[type=armor_s
 execute @s[tag=upgrade_blue_sharpness] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝锋利等级" 1
 execute @s[tag=upgrade_yellow_sharpness] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "黄锋利等级" 1
 execute @s[tag=upgrade_green_sharpness] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿锋利等级" 1
-execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=want_upgrade_sharpness] ~~~ function shop_purchase/upgrade_team/upgrade_team_sharpness
+execute @a[tag=want_upgrade_sharpness] ~~~ function shop_purchase/upgrade_team/upgrade_team_sharpness
 tag @s remove want_upgrade_sharpness
 tag @s remove upgrade_red_sharpness
 tag @s remove upgrade_blue_sharpness

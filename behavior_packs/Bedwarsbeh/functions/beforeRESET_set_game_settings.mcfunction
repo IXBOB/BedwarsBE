@@ -17,14 +17,6 @@ scoreboard players set @a "分队" 0
 scoreboard players reset @e[type=armor_stand,name=main] "开始倒计时"
 #starting -> 0
 scoreboard players set @e[type=armor_stand,name=main] starting 0
-#reset红床有敌
-scoreboard players reset * "红床有敌"
-#reset蓝床有敌
-scoreboard players reset * "蓝床有敌"
-#reset黄床有敌
-scoreboard players reset * "黄床有敌"
-#reset绿床有敌
-scoreboard players reset * "绿床有敌"
 #reset红床存活
 scoreboard players reset * "红床存活"
 #reset蓝床存活
@@ -117,20 +109,18 @@ scoreboard players reset * "无敌时间"
 scoreboard players reset * "抬头返回time"
 #reset击杀数
 scoreboard players reset * "击杀数"
-#显示事件 -> 0
-scoreboard players set @e[type=armor_stand,name=main] "显示事件" 0
 
 #--------------------------其它--------------------------
 #设置冒险模式
 gamemode 2 @a
 #设置重生点为大厅
 spawnpoint @a -200 200 -200
-#关闭pvp
-gamerule pvp false
 #kill.item
 kill @e[type=item]
 #kill经验球
 kill @e[type=xp_orb]
+#删除僵尸猪人
+event entity @e[type=zombie_pigman] bedwars:remove_self
 #设置难度为简单
 difficulty easy
 #tag+sound20

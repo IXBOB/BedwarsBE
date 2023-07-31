@@ -55,6 +55,9 @@
           "minecraft:equipment": {
             "table": "loot_tables/entities/zombified_piglin_rider_gear.json"
           }
+        },
+        "bedwars:remove_self":{
+          "minecraft:instant_despawn":{}
         }
       },
   
@@ -488,7 +491,12 @@
               "execute @s[name=\"§dEnder pearl piglin\"] ~~~ structure load ender_pearl ~~~ 0_degrees none true false"
               ]
             }
-        }
+          },
+          "bedwars:remove_self":{
+            "add": {
+              "component_groups": [ "bedwars:remove_self" ]
+                  }
+              }
       }
     }
   }

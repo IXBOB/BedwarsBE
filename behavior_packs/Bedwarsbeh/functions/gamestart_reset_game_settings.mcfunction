@@ -12,6 +12,8 @@ tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
 tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 #设置生存
 gamemode 0 @a[scores={"分队"=1..4}]
+#清空玩家末影箱
+execute @a ~~~ function clear_ender_chest
 #倒计时0title.times
 title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
@@ -56,6 +58,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
 scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 #kill经验球
 kill @e[type=xp_orb]
+#删除僵尸猪人
+event entity @e[type=minecraft:zombie_pigman] bedwars:remove_self
 #红陷阱等级 -> 0
 scoreboard players set @s "红陷阱等级" 0
 #红保护等级 -> 0
@@ -238,16 +242,19 @@ scoreboard players set @e[type=armor_stand,name=spawn.diamond_1] spawned_diam_1 
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_2] spawned_diam_2 0
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_3] spawned_diam_3 0
 scoreboard players set @e[type=armor_stand,name=spawn.diamond_4] spawned_diam_4 0
-#emerald_count -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count 0
-#spawned_emerald -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emerald 0
+#emerald_count_1 -> 0
+#emerald_count_2 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_1 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_2 0
+#spawned_emer_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_1 0
 #钻岛和中岛revovle实体自动检测绑定tag
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_1
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_2
 execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_3
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_4
-execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point_1
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20,tag=!emerald_point_1] add emerald_point_2
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpness_i
 tag @a remove have_upgraded_sword_sharpness_ii
@@ -266,6 +273,7 @@ scoreboard players set text.scoreboard.ingameinfo.blank_2 "显示" 0
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_1 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_2 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏地图"=3}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_3 "显示" -2
+execute @e[type=armor_stand,name=main,scores={"游戏地图"=4}] ~~~ scoreboard players set text.scoreboard.ingameinfo.map_4 "显示" -2
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1 "显示" -1
 execute @e[type=armor_stand,name=main,scores={"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2 "显示" -1
 function scoreboard_team_display/test_bed_exist_and_set
@@ -281,6 +289,11 @@ scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] 
 #设置绿宝石生成点等级
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=1}] "绿宝石等级" 1
 scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] "绿宝石等级" 3
+
+#事件开始初始化
+execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
+execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
+scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 
 #starting -> 0
 scoreboard players set @s starting 0

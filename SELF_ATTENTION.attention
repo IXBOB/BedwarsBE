@@ -52,17 +52,7 @@ ATTENTION:
 1.add tag creator_info相关功能
    (更新地图时不要忘记更新creator_info.mcfunction中写的version)
 2.重做队伍升级(陷阱改掉,添加铁锻炉之类的功能)
-
-
-{ "rawtext" : [{"translate":"text.sign.ingame.shop_80_levels"},{"text":"\n"},{"translate":"text.sign.ingame.shop_arrow_mark"},{"text":"\n"},{"translate":"text.sign.ingame.shop_fireball"},{"text":"\n"},{"translate":"text.sign.ingame.shop_click_the_block"} ] }
-
-/scoreboard objectives remove 游戏显示
-/scoreboard objectives remove 等待显示
-/scoreboard objectives add 显示 dummy text.scoreboard.others.display
-/scoreboard objectives setdisplay sidebar 显示
-/scoreboard objectives add in_lobby dummy
-/scoreboard objectives remove fangyuta_team
-/scoreboard objectives add popup_tower_team dummy
+3.玩家背包菜单拿起物品检测使用animation molang
 
 
 

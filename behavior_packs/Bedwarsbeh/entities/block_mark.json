@@ -8,38 +8,42 @@
             "is_experimental": false
         },
         "component_groups": {
-            "bedwars:remove_mark":{
-                "minecraft:instant_despawn":{}
-              }
+            "bedwars:remove_self": {
+                "minecraft:instant_despawn": {}
+            }
         },
-        "components":{
-              "minecraft:custom_hit_test": { 
-				"hitboxes": [
-					{
-						"pivot": [0, 100, 0],
-						"width": 0,
-						"height": 0
-					}
-				]
-			},
-			"minecraft:damage_sensor": {
-				"triggers": {
-					"deals_damage": false
-				}
-			},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": false
-			},
-			"minecraft:collision_box": {
-				"width": 0.0001,
-				"height": 0.0001
-			}
+        "components": {
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "pivot": [
+                            0,
+                            100,
+                            0
+                        ],
+                        "width": 0,
+                        "height": 0
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage": false
+                }
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.0001,
+                "height": 0.0001
+            }
         },
-        "events":{
-            "bedwars:mark_spawned":{
-                "run_command":{
-                    "command":[
+        "events": {
+            "bedwars:mark_spawned": {
+                "run_command": {
+                    "command": [
                         //底部
                         "tag @e[type=bedwars:block_mark,x=-63,y=90,z=-63,dx=127,dy=83,dz=127] add remove_block",
                         //红家
@@ -60,14 +64,16 @@
                         "execute @s[tag=remove_block] ~~~ setblock ~~~ air",
                         "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~ ~0.5 ~",
                         "execute @s[tag=remove_block] ~~~ particle minecraft:redstone_ore_dust_particle ~ ~0.5 ~",
-                        "event entity @s bedwars:remove_mark"
+                        "event entity @s bedwars:remove_self"
                     ],
-					"target": "self"
+                    "target": "self"
                 }
             },
-        "bedwars:remove_mark":{
-          "add": {
-            "component_groups": [ "bedwars:remove_mark" ]
+            "bedwars:remove_self": {
+                "add": {
+                    "component_groups": [
+                        "bedwars:remove_self"
+                    ]
                 }
             }
         }

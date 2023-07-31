@@ -11,4 +11,8 @@ execute @s[scores={"游戏地图"=3}] ~~~ structure load bedwars:map3_diamond_is
 execute @s[scores={"游戏地图"=3}] ~~~ structure load bedwars:map3_diamond_island -47 177 -47 90_degrees none layer_by_layer 15
 execute @s[scores={"游戏地图"=3}] ~~~ structure load bedwars:map3_diamond_island 29 177 -47 180_degrees none layer_by_layer 15
 execute @s[scores={"游戏地图"=3}] ~~~ structure load bedwars:map3_diamond_island 29 177 29 270_degrees none layer_by_layer 15
+execute @s[scores={"游戏地图"=4}] ~~~ structure load bedwars:map4_diamond_island -47 177 28 0_degrees none layer_by_layer 15
+execute @s[scores={"游戏地图"=4}] ~~~ structure load bedwars:map4_diamond_island -47 177 -47 90_degrees none layer_by_layer 15
+execute @s[scores={"游戏地图"=4}] ~~~ structure load bedwars:map4_diamond_island 28 177 -47 180_degrees none layer_by_layer 15
+execute @s[scores={"游戏地图"=4}] ~~~ structure load bedwars:map4_diamond_island 28 177 28 270_degrees none layer_by_layer 15
 scoreboard players set @s "钻已重置" 1

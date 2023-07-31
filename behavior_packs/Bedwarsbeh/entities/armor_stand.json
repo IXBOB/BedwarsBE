@@ -7,9 +7,18 @@
       "is_summonable": true,
       "is_experimental": false
     },
+    "component_groups": {
+        "bedwars:remove_self":{
+            "minecraft:instant_despawn":{}
+          }
+    },
     "components": {
       "minecraft:type_family": {
-        "family": [ "armor_stand", "inanimate", "mob" ]
+        "family": [
+          "armor_stand",
+          "inanimate",
+          "mob"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0.5,
@@ -22,7 +31,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -37,33 +51,36 @@
       "minecraft:nameable": {
         "alwaysShow": true
       },
-      "minecraft:persistent": {
-      },
-      "minecraft:physics": {
-      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,
         "is_pushable_by_piston": true
       },
-      "minecraft:conditional_bandwidth_optimization": {
-      },
+      "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:timer": {
         "time": 1,
         "time_down_event": {
-            "event": "bedwars:ore_spawner"
+          "event": "bedwars:ore_spawner"
         }
       }
     },
-
     "events": {
-			"bedwars:ore_spawner": {
-				"run_command":{
-				  "command":[
-          "execute @s[name=main,scores={gameSTART=1}] ~~~ function ore_spawner"
-					],
-					"target": "self"
-				  }
-			  }
+      "bedwars:ore_spawner": {
+        "run_command": {
+          "command": [
+            "execute @s[name=main,scores={gameSTART=1}] ~~~ function ore_spawner"
+          ],
+          "target": "self"
+        }
+      },
+      "bedwars:remove_self": {
+        "add": {
+          "component_groups": [
+            "bedwars:remove_self"
+          ]
+        }
+      }
     }
   }
 }

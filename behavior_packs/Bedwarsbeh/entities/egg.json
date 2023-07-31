@@ -5,7 +5,21 @@
       "identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "bridge_egg_animation_controller"
+        ]
+      },
+      "animations": {
+        "bridge_egg_animation_controller": "controller.animation.command.bridge_egg",
+        "bridge_egg_animation": "animation.command.bridge_egg"
+      }
+    },
+    "component_groups": {
+      "bedwars:remove_self": {
+        "minecraft:instant_despawn": {}
+      }
     },
     "components": {
       "minecraft:collision_box": {
@@ -39,8 +53,7 @@
         "gravity": 0.03,
         "angle_offset": 0.0
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
@@ -50,6 +63,15 @@
           "max_optimized_distance": 80.0,
           "max_dropped_ticks": 7,
           "use_motion_prediction_hints": true
+        }
+      }
+    },
+    "events": {
+      "bedwars:remove_self": {
+        "add": {
+          "component_groups": [
+            "bedwars:remove_self"
+          ]
         }
       }
     }

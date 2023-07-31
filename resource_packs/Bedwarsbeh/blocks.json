@@ -838,7 +838,7 @@
 			"west": "map_white_wool_block",
 			"east": "map_white_wool_block"
 		},
-		"sound": "stone"
+		"sound": "cloth"
 	},
 	"bedwars:map_yellow_concrete_block": {
 		"textures":{

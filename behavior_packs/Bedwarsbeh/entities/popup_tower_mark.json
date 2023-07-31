@@ -41,14 +41,14 @@
 			    }
         },
         "component_groups": {
-            "bedwars:remove_mark":{
+            "bedwars:remove_self":{
                 "minecraft:instant_despawn":{}
               }
         },
         "events":{
-        "bedwars:remove_mark":{
+        "bedwars:remove_self":{
           "add": {
-            "component_groups": [ "bedwars:remove_mark" ]
+            "component_groups": [ "bedwars:remove_self" ]
                 }
             }
         }

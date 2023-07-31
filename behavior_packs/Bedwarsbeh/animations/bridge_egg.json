@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.bridge_egg": {
+			"animation_length": 1.1,
+			"loop": false,
+			"timeline": {
+				"1.1": [
+				"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

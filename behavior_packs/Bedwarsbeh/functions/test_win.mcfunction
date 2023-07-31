@@ -43,5 +43,5 @@ execute @s[scores={"红队存在"=0,"蓝队存在"=0,"黄队存在"=1,"绿队存
 #检测绿队胜利
 execute @s[scores={"红队存在"=0,"蓝队存在"=0,"黄队存在"=0,"绿队存在"=1}] ~~~ function team_win/green_team_win
 #检测无人胜利(出现问题或全员退出)
-execute @s[scores={"红队存在"=0,"蓝队存在"=0,"黄队存在"=0,"绿队存在"=0}] ~~~ function set_draw
+execute @s[scores={"红队存在"=0,"蓝队存在"=0,"黄队存在"=0,"绿队存在"=0}] ~~~ function set_draw_condition
 execute @s[scores={gameSTART=2,"红队存在"=0,"蓝队存在"=0,"黄队存在"=0,"绿队存在"=0}] ~~~ function test_draw

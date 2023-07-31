@@ -10,8 +10,6 @@ scoreboard players set @e[type=armor_stand,name=main] gameSTART 0
 gamemode 2 @a
 #spawnpoint
 spawnpoint @a -200 200 -200
-#pvp false
-gamerule pvp false
 #reset firework
 scoreboard players reset * firework
 #reset显示
@@ -75,6 +73,7 @@ execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ kill @e[type=bedwars:d
 execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ kill @e[type=bedwars:emerald_point_revolve,c=1,r=20]
-
+#清空玩家末影箱
+execute @a ~~~ function clear_ender_chest
 
 

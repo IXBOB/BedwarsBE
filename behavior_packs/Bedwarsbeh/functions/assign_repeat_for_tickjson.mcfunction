@@ -1,0 +1,1 @@
+execute @e[type=armor_stand,name=main] ~~~ function game_repeat

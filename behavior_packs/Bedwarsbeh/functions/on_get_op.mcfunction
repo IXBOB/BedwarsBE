@@ -1,5 +1,5 @@
 tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_command.get_op"} ] }
-tag @s[scores={分队=0,menu_page=1}] add refresh_menu1
+execute @s[scores={出局观战=0,in_lobby=1,menu_page=1}] ~~~ function inventory_menu/refresh_menu/refresh_menu1
 tag @s remove set.start.players.2
 tag @s remove set.start.players.3
 tag @s remove set.start.players.4

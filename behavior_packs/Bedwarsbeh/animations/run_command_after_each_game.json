@@ -42,7 +42,7 @@
 					//tellraw即将重置
 					"/execute @e[type=armor_stand,name=main,scores={gameSTART=0}] ~~~ titleraw @a actionbar { \"rawtext\" : [{\"translate\":\"text.actionbar.waitinfo.lobby_before_reset_wait_15\"} ] }",
 					//change to menu1
-					"/tag @a add change_to_menu1"
+					"/execute @a ~~~ function inventory_menu/change_to_menu/change_to_menu1"
 				],
 				"18.8": [
 					//tellraw即将重置
@@ -120,13 +120,11 @@
 					//reseting -> 1
 					"/scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=0}] reseting 1",
 					//选择地图
-					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=0}] ~~~ scoreboard players random @s \"游戏地图\" 1 3",
-					//选择地图
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=0}] ~~~ scoreboard players random @s \"游戏地图\" 1 4",
 					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=1}] ~~~ scoreboard players set @s \"游戏地图\" 1",
-					//选择地图
 					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=2}] ~~~ scoreboard players set @s \"游戏地图\" 2",
-					//选择地图
-					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=3}] ~~~ scoreboard players set @s \"游戏地图\" 3"
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=3}] ~~~ scoreboard players set @s \"游戏地图\" 3",
+					"/execute @e[type=armor_stand,scores={gameSTART=0,\"地图选择\"=4}] ~~~ scoreboard players set @s \"游戏地图\" 4"
 				],
 				"34.5": [
 					//tag + reset
