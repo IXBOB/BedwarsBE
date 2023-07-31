@@ -12,3 +12,10 @@ scoreboard players set @e[type=armor_stand,name=main] lobby_text_num 1
 scoreboard objectives remove function_tick
 scoreboard objectives add function_tick_20 dummy
 scoreboard objectives remove lobby_text_time
+
+scoreboard objectives remove emerald_count
+scoreboard objectives add emerald_count_1 dummy
+scoreboard objectives add emerald_count_2 dummy
+scoreboard objectives remove spawned_emerald
+scoreboard objectives add spawned_emer_1 dummy
+scoreboard objectives add spawned_emer_2 dummy
