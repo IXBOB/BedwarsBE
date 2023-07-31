@@ -40,12 +40,15 @@ execute @s[scores={"地图选择"=4,starting=0,reseting=0},tag=!reset_OK] ~~~ st
 execute @s[scores={reseting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
 execute @s[scores={reseting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
 execute @s[scores={reseting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[scores={reseting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -203 200 -197
 execute @s[scores={starting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
 execute @s[scores={starting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
 execute @s[scores={starting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[scores={starting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -203 200 -197
 execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -203 200 -197
 execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -203 200 -197
 execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -203 200 -197
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -203 200 -197
 #检测按下按钮更换模式
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=op] ~~~ scoreboard players add @e[scores={starting=0,reseting=0},tag=!reset_OK] "游戏模式" 1
 execute @s[scores={starting=0,reseting=0},tag=!reset_OK] ~~~ execute @e[type=player,x=-202,y=201,z=-196,r=3,c=1] ~~~ detect -202 201 -196 polished_blackstone_button 9 execute @s[tag=!op] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.waitinfo.change_mode_denied"} ] }

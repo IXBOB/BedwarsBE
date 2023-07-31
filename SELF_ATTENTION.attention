@@ -47,6 +47,14 @@
 
 游戏区绿宝石生成点位置（绿宝石块上方一格）：0 182 0
 
+以map4红床后面的结构方块为点
+/structure load bedwars:map4_red_team_home ~-20 ~-9 ~-20
+
+/structure load bedwars:map4_red_team_home 364 0 28
+/structure load bedwars:map4_blue_team_home 364 0 -68
+/structure load bedwars:map4_yellow_team_home 412 0 -20
+/structure load bedwars:map4_green_team_home 316 0 -20
+
 ATTENTION:
 
 1.add tag creator_info相关功能

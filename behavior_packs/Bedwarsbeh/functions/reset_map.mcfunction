@@ -1,11 +1,11 @@
 #reset(fill)1--------------------
-execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick_20=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..4,function_tick_20=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
 #TP盔甲架向上
-execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick_20=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..4,function_tick_20=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
 #fill
-execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick_20=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..4,function_tick_20=20}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 fill -60 ~176 -60 60 ~176 60 air
 #TP盔甲架向上
-execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..3,function_tick_20=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
+execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..4,function_tick_20=20}] ~~~ execute @e[type=armor_stand,tag=reset,name=reset] ~~~ detect ~ ~-1 ~ barrier 0 tp @s ~ ~1 ~
 
 #删除重置时掉落的方块
 execute @e[type=armor_stand,scores={reseting=1}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 kill @e[type=falling_block]
