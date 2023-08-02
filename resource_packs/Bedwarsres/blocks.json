@@ -180,14 +180,36 @@
 		},
 		"sound": "wood"
 	},
-	"bedwars:purchase_upgrade_team_trap_block": {
+	"bedwars:purchase_team_its_a_trap_block": {
 		"textures": {
-			"up": "purchase_upgrade_team_trap_block_up",
-			"down": "purchase_upgrade_team_trap_block_down",
-			"north": "purchase_upgrade_team_trap_block_north",
-			"south": "purchase_upgrade_team_trap_block_south",
-			"west": "purchase_upgrade_team_trap_block_west",
-			"east": "purchase_upgrade_team_trap_block_east"
+			"up": "purchase_team_its_a_trap_block_up",
+			"down": "purchase_team_its_a_trap_block_down",
+			"north": "purchase_team_its_a_trap_block_north",
+			"south": "purchase_team_its_a_trap_block_south",
+			"west": "purchase_team_its_a_trap_block_west",
+			"east": "purchase_team_its_a_trap_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:purchase_team_counter-offensive_block": {
+		"textures": {
+			"up": "purchase_team_counter-offensive_block_up",
+			"down": "purchase_team_counter-offensive_block_down",
+			"north": "purchase_team_counter-offensive_block_north",
+			"south": "purchase_team_counter-offensive_block_south",
+			"west": "purchase_team_counter-offensive_block_west",
+			"east": "purchase_team_counter-offensive_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:purchase_team_alarm_trap_block": {
+		"textures": {
+			"up": "purchase_team_alarm_trap_block_up",
+			"down": "purchase_team_alarm_trap_block_down",
+			"north": "purchase_team_alarm_trap_block_north",
+			"south": "purchase_team_alarm_trap_block_south",
+			"west": "purchase_team_alarm_trap_block_west",
+			"east": "purchase_team_alarm_trap_block_east"
 		},
 		"sound": "wood"
 	},

@@ -2,18 +2,18 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "bedwars:shop_purchase_upgrade_team_trap_command",
+            "identifier": "bedwars:shop_purchase_team_alarm_trap_command",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false,
             "scripts": {
               "animate": [
-                "shop_purchase_upgrade_team_trap_animation_controller"
+                "shop_purchase_team_alarm_trap_animation_controller"
               ]
             },
             "animations": {
-              "shop_purchase_upgrade_team_trap_animation_controller": "controller.animation.command.shop_purchase_upgrade_team_trap",
-              "shop_purchase_upgrade_team_trap": "animation.command.shop_purchase_upgrade_team_trap"
+              "shop_purchase_team_alarm_trap_animation_controller": "controller.animation.command.shop_purchase_team_alarm_trap",
+              "shop_purchase_team_alarm_trap": "animation.command.shop_purchase_team_alarm_trap"
             }
         },
         "components":{

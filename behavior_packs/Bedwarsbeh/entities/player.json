@@ -430,6 +430,11 @@
             "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 总击杀数 1",
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add get.xp.kill",
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add get.coin.kill",
+            //隐身失效
+            "execute @s[scores={invisible_time=1..}] ~~~ scoreboard players set @s invisible_time 0",
+            "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true",
+            "execute @s[scores={invisible_time=1..}] ~~~ playanimation @s animation.bedwars_player_invisible default 0",
+            //*
             "function get_xp_and_coin",
             "scoreboard players reset * got_xp",
             "scoreboard players reset * xp_cache",

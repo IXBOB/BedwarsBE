@@ -328,23 +328,59 @@
 		"purchase_upgrade_team_sharpness_block_west": {												//WEST
 			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
 		},
-		"purchase_upgrade_team_trap_block_up": {
+		"purchase_team_its_a_trap_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_upgrade_team_trap_block_down": {
+		"purchase_team_its_a_trap_block_down": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
-		"purchase_upgrade_team_trap_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_team_trap_block"
+		"purchase_team_its_a_trap_block_north": {
+			"textures": "textures/blocks/purchase_team_its_a_trap_block"
 		},
-		"purchase_upgrade_team_trap_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_team_trap_block"
+		"purchase_team_its_a_trap_block_east": {
+			"textures": "textures/blocks/purchase_team_its_a_trap_block"
 		},
-		"purchase_upgrade_team_trap_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_team_trap_block"
+		"purchase_team_its_a_trap_block_south": {
+			"textures": "textures/blocks/purchase_team_its_a_trap_block"
 		},
-		"purchase_upgrade_team_trap_block_west": {												//WEST
-			"textures": "textures/blocks/purchase_upgrade_team_trap_block"
+		"purchase_team_its_a_trap_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_team_its_a_trap_block"
+		},
+		"purchase_team_counter-offensive_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_team_counter-offensive_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_team_counter-offensive_block_north": {
+			"textures": "textures/blocks/purchase_team_counter-offensive_block"
+		},
+		"purchase_team_counter-offensive_block_east": {
+			"textures": "textures/blocks/purchase_team_counter-offensive_block"
+		},
+		"purchase_team_counter-offensive_block_south": {
+			"textures": "textures/blocks/purchase_team_counter-offensive_block"
+		},
+		"purchase_team_counter-offensive_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_team_counter-offensive_block"
+		},
+		"purchase_team_alarm_trap_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_team_alarm_trap_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_team_alarm_trap_block_north": {
+			"textures": "textures/blocks/purchase_team_alarm_trap_block"
+		},
+		"purchase_team_alarm_trap_block_east": {
+			"textures": "textures/blocks/purchase_team_alarm_trap_block"
+		},
+		"purchase_team_alarm_trap_block_south": {
+			"textures": "textures/blocks/purchase_team_alarm_trap_block"
+		},
+		"purchase_team_alarm_trap_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_team_alarm_trap_block"
 		},
 		"purchase_golden_apple_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"

@@ -65,30 +65,35 @@ scoreboard players reset * "镐等级"
 scoreboard players reset * "斧等级"
 #reset护甲等级
 scoreboard players reset * "护甲等级"
-#reset红陷阱等级
-scoreboard players reset * "红陷阱等级"
-#reset红保护等级
+#reset保护等级
 scoreboard players reset * "红保护等级"
-#reset红锋利等级
-scoreboard players reset * "红锋利等级"
-#reset蓝陷阱等级
-scoreboard players reset * "蓝陷阱等级"
-#reset蓝保护等级
 scoreboard players reset * "蓝保护等级"
-#reset蓝锋利等级
-scoreboard players reset * "蓝锋利等级"
-#reset黄陷阱等级
-scoreboard players reset * "黄陷阱等级"
-#reset黄保护等级
 scoreboard players reset * "黄保护等级"
-#reset黄锋利等级
-scoreboard players reset * "黄锋利等级"
-#reset绿陷阱等级
-scoreboard players reset * "绿陷阱等级"
-#reset绿保护等级
 scoreboard players reset * "绿保护等级"
-#reset绿锋利等级
+#reset锋利等级
+scoreboard players reset * "红锋利等级"
+scoreboard players reset * "蓝锋利等级"
+scoreboard players reset * "黄锋利等级"
 scoreboard players reset * "绿锋利等级"
+#陷阱个数 -> 0
+scoreboard players set @s red_trap_sum 0
+scoreboard players set @s blue_trap_sum 0
+scoreboard players set @s yellow_trap_sum 0
+scoreboard players set @s green_trap_sum 0
+#各陷阱槽位ID -> 0
+scoreboard players set @s red_trap_1_id 0
+scoreboard players set @s blue_trap_1_id 0
+scoreboard players set @s yellow_trap_1_id 0
+scoreboard players set @s green_trap_1_id 0
+scoreboard players set @s red_trap_2_id 0
+scoreboard players set @s blue_trap_2_id 0
+scoreboard players set @s yellow_trap_2_id 0
+scoreboard players set @s green_trap_2_id 0
+scoreboard players set @s red_trap_3_id 0
+scoreboard players set @s blue_trap_3_id 0
+scoreboard players set @s yellow_trap_3_id 0
+scoreboard players set @s green_trap_3_id 0
+
 #reset firework
 scoreboard players reset * firework
 #显示事件 -> 0

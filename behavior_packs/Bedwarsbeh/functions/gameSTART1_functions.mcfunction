@@ -139,13 +139,13 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"游戏地图"=4,funct
 execute @s[scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -197
 execute @s[scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -197
 #游戏区域tag+degrade
-execute @a[scores={"分队"=1..4,"出局观战"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
+execute @e[type=player,scores={"分队"=1..4,"出局观战"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
 #游戏开始时自动获取经验和硬币
 execute @s[scores={function_tick_20=20,fc_tick_cycle=10}] ~~~ function add_xp_and_coin_game
 #检测触发陷阱
-execute @s[scores={"红陷阱等级"=1..3}] ~~~ function test_red_team_trap_triggered
-execute @s[scores={"蓝陷阱等级"=1..3}] ~~~ function test_blue_team_trap_triggered
-execute @s[scores={"黄陷阱等级"=1..3}] ~~~ function test_yellow_team_trap_triggered
-execute @s[scores={"绿陷阱等级"=1..3}] ~~~ function test_green_team_trap_triggered
+execute @s[scores={red_trap_sum=1..3}] ~~~ function test_red_team_trap_triggered
+execute @s[scores={blue_trap_sum=1..3}] ~~~ function test_blue_team_trap_triggered
+execute @s[scores={yellow_trap_sum=1..3}] ~~~ function test_yellow_team_trap_triggered
+execute @s[scores={green_trap_sum=1..3}] ~~~ function test_green_team_trap_triggered
 #RandomDamageUID
 scoreboard players random @s RandomDamageUID 1 999999999

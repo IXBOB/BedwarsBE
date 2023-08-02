@@ -68,12 +68,12 @@ scoreboard objectives remove invisible_time
 scoreboard objectives add invisible_time dummy
 playanimation @a animation.bedwars_player_invisible default 0
 #删除资源点旋转的实体
-execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
-execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
-execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
-execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ kill @e[type=bedwars:diamond_point_revolve,c=1,r=20]
-execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ kill @e[type=bedwars:emerald_point_revolve,c=1,r=20]
+execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ event entity @e[type=bedwars:diamond_point_revolve,c=1,r=20] bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ event entity @e[type=bedwars:diamond_point_revolve,c=1,r=20] bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ event entity @e[type=bedwars:diamond_point_revolve,c=1,r=20] bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ event entity @e[type=bedwars:diamond_point_revolve,c=1,r=20] bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ execute @e[type=bedwars:emerald_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 #清空玩家末影箱
-execute @a ~~~ function clear_ender_chest
+execute @a ~~~ function clear_enderchest
 
 

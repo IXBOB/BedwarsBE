@@ -13,7 +13,7 @@ tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 #设置生存
 gamemode 0 @a[scores={"分队"=1..4}]
 #清空玩家末影箱
-execute @a ~~~ function clear_ender_chest
+execute @a ~~~ function clear_enderchest
 #倒计时0title.times
 title @a[scores={"分队"=1..4}] times 10 60 10
 #倒计时0 title
@@ -60,30 +60,35 @@ scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 kill @e[type=xp_orb]
 #删除僵尸猪人
 event entity @e[type=minecraft:zombie_pigman] bedwars:remove_self
-#红陷阱等级 -> 0
-scoreboard players set @s "红陷阱等级" 0
-#红保护等级 -> 0
-scoreboard players set @s "红保护等级" 0
-#红锋利等级 -> 0
-scoreboard players set @s "红锋利等级" 0
-#蓝陷阱等级 -> 0
-scoreboard players set @s "蓝陷阱等级" 0
-#蓝保护等级 -> 0
-scoreboard players set @s "蓝保护等级" 0
-#蓝锋利等级 -> 0
-scoreboard players set @s "蓝锋利等级" 0
-#黄陷阱等级 -> 0
-scoreboard players set @s "黄陷阱等级" 0
-#黄保护等级 -> 0
-scoreboard players set @s "黄保护等级" 0
-#黄锋利等级 -> 0
-scoreboard players set @s "黄锋利等级" 0
-#绿陷阱等级 -> 0
-scoreboard players set @s "绿陷阱等级" 0
-#绿保护等级 -> 0
-scoreboard players set @s "绿保护等级" 0
-#绿锋利等级 -> 0
-scoreboard players set @s "绿锋利等级" 0
+#reset保护等级
+scoreboard players reset * "红保护等级"
+scoreboard players reset * "蓝保护等级"
+scoreboard players reset * "黄保护等级"
+scoreboard players reset * "绿保护等级"
+#reset锋利等级
+scoreboard players reset * "红锋利等级"
+scoreboard players reset * "蓝锋利等级"
+scoreboard players reset * "黄锋利等级"
+scoreboard players reset * "绿锋利等级"
+#陷阱个数 -> 0
+scoreboard players set @s red_trap_sum 0
+scoreboard players set @s blue_trap_sum 0
+scoreboard players set @s yellow_trap_sum 0
+scoreboard players set @s green_trap_sum 0
+#各陷阱槽位ID -> 0
+scoreboard players set @s red_trap_1_id 0
+scoreboard players set @s blue_trap_1_id 0
+scoreboard players set @s yellow_trap_1_id 0
+scoreboard players set @s green_trap_1_id 0
+scoreboard players set @s red_trap_2_id 0
+scoreboard players set @s blue_trap_2_id 0
+scoreboard players set @s yellow_trap_2_id 0
+scoreboard players set @s green_trap_2_id 0
+scoreboard players set @s red_trap_3_id 0
+scoreboard players set @s blue_trap_3_id 0
+scoreboard players set @s yellow_trap_3_id 0
+scoreboard players set @s green_trap_3_id 0
+
 #瞬间恢复
 effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade
