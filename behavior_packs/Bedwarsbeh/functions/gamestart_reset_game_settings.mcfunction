@@ -70,6 +70,24 @@ scoreboard players set @s "红锋利等级" 0
 scoreboard players set @s "蓝锋利等级" 0
 scoreboard players set @s "黄锋利等级" 0
 scoreboard players set @s "绿锋利等级" 0
+#陷阱个数 -> 0
+scoreboard players set @s red_trap_sum 0
+scoreboard players set @s blue_trap_sum 0
+scoreboard players set @s yellow_trap_sum 0
+scoreboard players set @s green_trap_sum 0
+#各陷阱槽位ID -> 0
+scoreboard players set @s red_trap_1_id 0
+scoreboard players set @s blue_trap_1_id 0
+scoreboard players set @s yellow_trap_1_id 0
+scoreboard players set @s green_trap_1_id 0
+scoreboard players set @s red_trap_2_id 0
+scoreboard players set @s blue_trap_2_id 0
+scoreboard players set @s yellow_trap_2_id 0
+scoreboard players set @s green_trap_2_id 0
+scoreboard players set @s red_trap_3_id 0
+scoreboard players set @s blue_trap_3_id 0
+scoreboard players set @s yellow_trap_3_id 0
+scoreboard players set @s green_trap_3_id 0
 #瞬间恢复
 effect @a[scores={"分队"=1..4}] instant_health 2 255 true
 #tag - degrade

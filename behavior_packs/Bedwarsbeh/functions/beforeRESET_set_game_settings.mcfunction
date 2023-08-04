@@ -75,24 +75,24 @@ scoreboard players reset * "红锋利等级"
 scoreboard players reset * "蓝锋利等级"
 scoreboard players reset * "黄锋利等级"
 scoreboard players reset * "绿锋利等级"
-#陷阱个数 -> 0
-scoreboard players set @s red_trap_sum 0
-scoreboard players set @s blue_trap_sum 0
-scoreboard players set @s yellow_trap_sum 0
-scoreboard players set @s green_trap_sum 0
-#各陷阱槽位ID -> 0
-scoreboard players set @s red_trap_1_id 0
-scoreboard players set @s blue_trap_1_id 0
-scoreboard players set @s yellow_trap_1_id 0
-scoreboard players set @s green_trap_1_id 0
-scoreboard players set @s red_trap_2_id 0
-scoreboard players set @s blue_trap_2_id 0
-scoreboard players set @s yellow_trap_2_id 0
-scoreboard players set @s green_trap_2_id 0
-scoreboard players set @s red_trap_3_id 0
-scoreboard players set @s blue_trap_3_id 0
-scoreboard players set @s yellow_trap_3_id 0
-scoreboard players set @s green_trap_3_id 0
+#reset陷阱个数
+scoreboard players reset * red_trap_sum
+scoreboard players reset * blue_trap_sum
+scoreboard players reset * yellow_trap_sum
+scoreboard players reset * green_trap_sum
+#reset各陷阱槽位ID
+scoreboard players reset * red_trap_1_id
+scoreboard players reset * blue_trap_1_id
+scoreboard players reset * yellow_trap_1_id
+scoreboard players reset * green_trap_1_id
+scoreboard players reset * red_trap_2_id
+scoreboard players reset * blue_trap_2_id
+scoreboard players reset * yellow_trap_2_id
+scoreboard players reset * green_trap_2_id
+scoreboard players reset * red_trap_3_id
+scoreboard players reset * blue_trap_3_id
+scoreboard players reset * yellow_trap_3_id
+scoreboard players reset * green_trap_3_id
 
 #reset firework
 scoreboard players reset * firework
