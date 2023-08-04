@@ -32,14 +32,14 @@
             }
         },
         "component_groups": {
-            "bedwars:remove_self": {
+            "bedwars:remove_diamond_generate_revolve_entity": {
                 "minecraft:instant_despawn": {}
             }
         },
         "events": {
-            "bedwars:remove_self": {
+            "bedwars:remove_diamond_generate_revolve_entity": {
                 "add": {
-                    "component_groups": ["bedwars:remove_self"]
+                    "component_groups": ["bedwars:remove_diamond_generate_revolve_entity"]
                 }
             }
         }

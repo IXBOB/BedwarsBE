@@ -9,8 +9,8 @@ scoreboard objectives setdisplay belowname health
 execute @s ~~~ detect 1 185 58 air 0 structure load bedwars:red_team_chest 1 185 58
 execute @s ~~~ detect -1 185 58 air 0 structure load bedwars:red_team_enderchest -1 185 58
 #游戏开始后还原被破坏的蓝队伍箱
-execute @s ~~~ detect -1 185 58 air 0 structure load bedwars:blue_team_chest -1 185 58
-execute @s ~~~ detect 1 185 58 air 0 structure load bedwars:blue_team_enderchest 1 185 58
+execute @s ~~~ detect -1 185 58 air 0 structure load bedwars:blue_team_chest -1 185 -58
+execute @s ~~~ detect 1 185 58 air 0 structure load bedwars:blue_team_enderchest 1 185 -58
 #游戏开始后还原被破坏的黄队伍箱
 execute @s ~~~ detect 58 185 -1 air 0 structure load bedwars:yellow_team_chest 58 185 -1
 execute @s ~~~ detect 58 185 1 air 0 structure load bedwars:yellow_team_enderchest 58 185 1

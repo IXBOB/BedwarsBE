@@ -10,7 +10,7 @@ execute @s[scores={lobby_text_num=8,language=1}] ~~~ summon armor_stand "§6gith
 execute @s[scores={lobby_text_num=9,language=1}] ~~~ summon armor_stand "§7===============" -197 198.2 -202 
 execute @s[scores={lobby_text_num=1,language=2}] ~~~ summon armor_stand "§e§lBed Wars" -197 198.2 -202
 execute @s[scores={lobby_text_num=2,language=2}] ~~~ summon armor_stand "§e§l1.3.0 International Edition" -197 198.2 -202
-execute @s[scores={lobby_text_num=3,language=2}] ~~~ summon armor_stand "§fMain author： IXBOB" -197 198.2 -202
+execute @s[scores={lobby_text_num=3,language=2}] ~~~ summon armor_stand "§fMain creator： IXBOB" -197 198.2 -202
 execute @s[scores={lobby_text_num=4,language=2}] ~~~ summon armor_stand "§fLobby buildings： 阁七ACE" -197 198.2 -202
 execute @s[scores={lobby_text_num=5,language=2}] ~~~ summon armor_stand "§aUpdate log: mtw.so/6nID9e" -197 198.2 -202
 execute @s[scores={lobby_text_num=6,language=2}] ~~~ summon armor_stand "§aFeedback: suo.nz/3d6ftS" -197 198.2 -202

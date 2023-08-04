@@ -1,1 +1,1 @@
-give @s[tag=give_bow] bow 1  
+give @s bow 1  

@@ -1,1 +1,1 @@
-give @s[tag=give_arrow] arrow 8
+give @s arrow 8
