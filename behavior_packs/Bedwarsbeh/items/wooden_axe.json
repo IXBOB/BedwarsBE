@@ -35,7 +35,7 @@
 						"block": {
 							"tags": "query.any_tag('bedwars:player_planks')"
 						},
-						"speed": 6
+						"speed": 5
 					}
 				]
 			},
