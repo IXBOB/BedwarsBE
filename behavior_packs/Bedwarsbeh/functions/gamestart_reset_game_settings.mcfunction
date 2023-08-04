@@ -233,7 +233,9 @@ scoreboard players set @e[type=armor_stand,name=spawn.diamond_4] spawned_diam_4 
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_1 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_2 0
 #spawned_emer_1 -> 0
+#spawned_emer_2 -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_1 0
+scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_2 0
 #钻岛和中岛revovle实体自动检测绑定tag
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_1
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_2

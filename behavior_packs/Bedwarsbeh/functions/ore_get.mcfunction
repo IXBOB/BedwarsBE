@@ -62,12 +62,3 @@ execute @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=8..}] ~~~
 execute @e[type=player,x=-56,y=184,z=0,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ kill @e[type=item,name="Gold Ingot",x=-56,y=184,z=0,r=1.8]
 execute @e[type=player,x=-56,y=184,z=0,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.green_gold] G_gold_count 0
 execute @e[type=player,x=-56,y=184,z=0,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.green_gold] G_spawned_gold 0
-# 绿宝石拾取
-execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_1=80..}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ execute @e[type=player,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp += @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_1=80..}] emerald_count_1
-execute @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_2=80..}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ execute @e[type=player,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players operation @s own_xp += @e[type=armor_stand,name=spawn.emerald,scores={emerald_count_2=80..}] emerald_count_2
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ execute @e[type=player,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ kill @e[type=item,name=Emerald,r=1.8]
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ execute @e[type=player,r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ kill @e[type=item,name=Emerald,r=1.8]
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ execute @e[r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_1 0
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ execute @e[r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.emerald] emerald_count_2 0
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] ~~~ execute @e[r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_1 0
-execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] ~~~ execute @e[r=1.8,c=1,scores={"分队"=1..4,"出局观战"=0}] ~~~ scoreboard players set @e[type=armor_stand,name=spawn.emerald] spawned_emer_2 0

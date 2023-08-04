@@ -5,7 +5,40 @@
 			"identifier": "bedwars:map_emerald_block"
 		},
 		"components": {
-			"minecraft:destroy_time": 99999
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_step_on": {
+				"event": "bedwars:on_step_on_emerald_block",
+				"target": "self"
+			},
+			"minecraft:on_step_off":{
+				"event" : "bedwars:on_step_off_emerald_block",
+				"target": "self"
+			}
+		},
+		"events": {
+			"bedwars:on_step_on_emerald_block": {
+				"run_command": {
+					"command": [
+						"tag @s[scores={分队=1..4,出局观战=0}] add on_step_on_emerald_block",
+						"tag @s[tag=on_step_on_emerald_block] add on_emerald_block",
+						"execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1,r=2] ~~~ tag @a[tag=on_emerald_block,r=2] add on_emerald_block_1",
+						"execute @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2,r=2] ~~~ tag @a[tag=on_emerald_block,r=2] add on_emerald_block_2",
+						"function ore_get/emerald/assign",
+						"tag @s remove on_step_on_emerald_block"
+					],
+					"target": "player"
+				}
+			},
+			"bedwars:on_step_off_emerald_block": {
+				"run_command": {
+					"command": [
+						"tag @s remove on_emerald_block",
+						"tag @s remove on_emerald_block_1",
+						"tag @s remove on_emerald_block_2"
+					],
+					"target": "player"
+				}
+			}
 		}
 	}
 }
