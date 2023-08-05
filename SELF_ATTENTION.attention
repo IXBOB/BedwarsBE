@@ -55,6 +55,18 @@
 /structure load bedwars:map4_yellow_team_home 412 0 -20
 /structure load bedwars:map4_green_team_home 316 0 -20
 
+
+
+
+
+
+villagerhappy -> villager_happy
+背包商店确认购买页相关功能需做的做完（e.g.购买成功后的操作）
+
+/scoreboard objectives add menu_page.cache dummy
+/scoreboard objectives add 需硬币数 dummy
+/scoreboard objectives add 硬币数.cache
+
 ATTENTION:
 
 1.add tag creator_info相关功能

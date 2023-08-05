@@ -1,121 +1,120 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.items",
-    "texture_data": {
-      "red_team_helmet": {
-        "textures": "textures/items/red_team_helmet"
-      },
-      "red_team_chestplate": {
-        "textures": "textures/items/red_team_chestplate"
-      },
-      "red_team_leggings": {
-        "textures": "textures/items/red_team_leggings"
-      },
-      "red_team_boots": {
-        "textures": "textures/items/red_team_boots"
-      },
-      "blue_team_helmet": {
-        "textures": "textures/items/blue_team_helmet"
-      },
-      "blue_team_chestplate": {
-        "textures": "textures/items/blue_team_chestplate"
-      },
-      "blue_team_leggings": {
-        "textures": "textures/items/blue_team_leggings"
-      },
-      "blue_team_boots": {
-        "textures": "textures/items/blue_team_boots"
-      },
-      "yellow_team_helmet": {
-        "textures": "textures/items/yellow_team_helmet"
-      },
-      "yellow_team_chestplate": {
-        "textures": "textures/items/yellow_team_chestplate"
-      },
-      "yellow_team_leggings": {
-        "textures": "textures/items/yellow_team_leggings"
-      },
-      "yellow_team_boots": {
-        "textures": "textures/items/yellow_team_boots"
-      },
-      "green_team_helmet": {
-        "textures": "textures/items/green_team_helmet"
-      },
-      "green_team_chestplate": {
-        "textures": "textures/items/green_team_chestplate"
-      },
-      "green_team_leggings": {
-        "textures": "textures/items/green_team_leggings"
-      },
-      "green_team_boots": {
-        "textures": "textures/items/green_team_boots"
-      },
-      "potion_bottle_jump_boost_v": {
-        "textures": "textures/items/potion_bottle_jump_boost_v"
-      },
-      "potion_bottle_invisibility": {
-        "textures": "textures/items/potion_bottle_invisibility"
-      },
-      "chainmail_boots": {
-        "textures": "textures/items/chainmail_boots"
-      },
-      "chainmail_leggings": {
-        "textures": "textures/items/chainmail_leggings"
-      },
-      "iron_boots": {
-        "textures": "textures/items/iron_boots"
-      },
-      "iron_leggings": {
-        "textures": "textures/items/iron_leggings"
-      },
-      "diamond_boots": {
-        "textures": "textures/items/diamond_boots"
-      },
-      "diamond_leggings": {
-        "textures": "textures/items/diamond_leggings"
-      },
-      "wooden_sword": {
-        "textures": "textures/items/wooden_sword"
-      },
-      "stone_sword": {
-        "textures": "textures/items/stone_sword"
-      },
-      "iron_sword": {
-        "textures": "textures/items/iron_sword"
-      },
-      "diamond_sword": {
-        "textures": "textures/items/diamond_sword"
-      },
-      "barrier": {
-        "textures": "textures/items/barrier"
-      },
-      "wooden_pickaxe": {
-        "textures": "textures/items/wooden_pickaxe"
-      },
-      "stone_pickaxe": {
-        "textures": "textures/items/stone_pickaxe"
-      },
-      "iron_pickaxe": {
-        "textures": "textures/items/iron_pickaxe"
-      },
-      "diamond_pickaxe": {
-        "textures": "textures/items/diamond_pickaxe"
-      },
-      "wooden_axe": {
-        "textures": "textures/items/wooden_axe"
-      },
-      "stone_axe": {
-        "textures": "textures/items/stone_axe"
-      },
-      "iron_axe": {
-        "textures": "textures/items/iron_axe"
-      },
-      "diamond_axe": {
-        "textures": "textures/items/diamond_axe"
-      },
-      "shears": {
-        "textures": "textures/items/shears"
-      }
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "red_team_helmet": {
+      "textures": "textures/items/red_team_helmet"
+    },
+    "red_team_chestplate": {
+      "textures": "textures/items/red_team_chestplate"
+    },
+    "red_team_leggings": {
+      "textures": "textures/items/red_team_leggings"
+    },
+    "red_team_boots": {
+      "textures": "textures/items/red_team_boots"
+    },
+    "blue_team_helmet": {
+      "textures": "textures/items/blue_team_helmet"
+    },
+    "blue_team_chestplate": {
+      "textures": "textures/items/blue_team_chestplate"
+    },
+    "blue_team_leggings": {
+      "textures": "textures/items/blue_team_leggings"
+    },
+    "blue_team_boots": {
+      "textures": "textures/items/blue_team_boots"
+    },
+    "yellow_team_helmet": {
+      "textures": "textures/items/yellow_team_helmet"
+    },
+    "yellow_team_chestplate": {
+      "textures": "textures/items/yellow_team_chestplate"
+    },
+    "yellow_team_leggings": {
+      "textures": "textures/items/yellow_team_leggings"
+    },
+    "yellow_team_boots": {
+      "textures": "textures/items/yellow_team_boots"
+    },
+    "green_team_helmet": {
+      "textures": "textures/items/green_team_helmet"
+    },
+    "green_team_chestplate": {
+      "textures": "textures/items/green_team_chestplate"
+    },
+    "green_team_leggings": {
+      "textures": "textures/items/green_team_leggings"
+    },
+    "green_team_boots": {
+      "textures": "textures/items/green_team_boots"
+    },
+    "potion_bottle_jump_boost_v": {
+      "textures": "textures/items/potion_bottle_jump_boost_v"
+    },
+    "potion_bottle_invisibility": {
+      "textures": "textures/items/potion_bottle_invisibility"
+    },
+    "chainmail_boots": {
+      "textures": "textures/items/chainmail_boots"
+    },
+    "chainmail_leggings": {
+      "textures": "textures/items/chainmail_leggings"
+    },
+    "iron_boots": {
+      "textures": "textures/items/iron_boots"
+    },
+    "iron_leggings": {
+      "textures": "textures/items/iron_leggings"
+    },
+    "diamond_boots": {
+      "textures": "textures/items/diamond_boots"
+    },
+    "diamond_leggings": {
+      "textures": "textures/items/diamond_leggings"
+    },
+    "wooden_sword": {
+      "textures": "textures/items/wooden_sword"
+    },
+    "stone_sword": {
+      "textures": "textures/items/stone_sword"
+    },
+    "iron_sword": {
+      "textures": "textures/items/iron_sword"
+    },
+    "diamond_sword": {
+      "textures": "textures/items/diamond_sword"
+    },
+    "barrier": {
+      "textures": "textures/items/barrier"
+    },
+    "wooden_pickaxe": {
+      "textures": "textures/items/wooden_pickaxe"
+    },
+    "stone_pickaxe": {
+      "textures": "textures/items/stone_pickaxe"
+    },
+    "iron_pickaxe": {
+      "textures": "textures/items/iron_pickaxe"
+    },
+    "diamond_pickaxe": {
+      "textures": "textures/items/diamond_pickaxe"
+    },
+    "wooden_axe": {
+      "textures": "textures/items/wooden_axe"
+    },
+    "stone_axe": {
+      "textures": "textures/items/stone_axe"
+    },
+    "iron_axe": {
+      "textures": "textures/items/iron_axe"
+    },
+    "diamond_axe": {
+      "textures": "textures/items/diamond_axe"
+    },
+    "shears": {
+      "textures": "textures/items/shears"
     }
   }
-  
+}

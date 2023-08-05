@@ -1,0 +1,1 @@
+function inventory_menu/menu999-ask_purchase_confirm/back
