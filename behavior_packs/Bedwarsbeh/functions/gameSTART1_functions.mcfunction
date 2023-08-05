@@ -74,19 +74,10 @@ execute @s[scores={function_tick_20=20}] ~~~ function add_and_calculate_game_tim
 #抬头返回功能
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
-#移除非本队tag
-tag @a[scores={"分队"=1}] remove team2
-tag @a[scores={"分队"=1}] remove team3
-tag @a[scores={"分队"=1}] remove team4
-tag @a[scores={"分队"=2}] remove team1
-tag @a[scores={"分队"=2}] remove team3
-tag @a[scores={"分队"=2}] remove team4
-tag @a[scores={"分队"=3}] remove team1
-tag @a[scores={"分队"=3}] remove team2
-tag @a[scores={"分队"=3}] remove team4
-tag @a[scores={"分队"=4}] remove team1
-tag @a[scores={"分队"=4}] remove team2
-tag @a[scores={"分队"=4}] remove team3
+
+#玩家手动变换队伍
+execute @s[scores={dev_mode=1,function_tick_5=5}] ~~~ function dev/regive_team_tag
+
 #检测获取经验
 function ore_get
 #检测经验变化时重新计算经验
