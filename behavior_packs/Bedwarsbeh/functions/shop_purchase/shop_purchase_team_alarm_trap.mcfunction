@@ -3,7 +3,7 @@ tag @s[scores={"分队"=1}] add upgrade_red_trap
 tag @s[scores={"分队"=2}] add upgrade_blue_trap
 tag @s[scores={"分队"=3}] add upgrade_yellow_trap
 tag @s[scores={"分队"=4}] add upgrade_green_trap
-tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_upgrade_team_alarm_trap"} ] }
+tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_team_alarm_trap"} ] }
 execute @s[tag=upgrade_red_trap] ~~~ tellraw @a[scores={"分队"=1}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_trap]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_team_alarm_trap"}] }
 execute @s[tag=upgrade_blue_trap] ~~~ tellraw @a[scores={"分队"=2}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_trap]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_team_alarm_trap"}] }
 execute @s[tag=upgrade_yellow_trap] ~~~ tellraw @a[scores={"分队"=3}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_trap]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_team_alarm_trap"}] }
