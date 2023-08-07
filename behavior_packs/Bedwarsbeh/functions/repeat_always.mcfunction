@@ -13,9 +13,6 @@ execute @s[scores={dev_mode=1}] ~~~ function repeat_dev
 #function_tick
 function function_tick/assign
 
-#删除盔甲架主手物品
-replaceitem entity @e[type=armor_stand] slot.weapon.mainhand 0 air
-
 #大厅跳到结构空位TP出生点
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 
