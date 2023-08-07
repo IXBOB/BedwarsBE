@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:stone_sword",
+          "name": "bedwars:stone_sword",
           "functions": [
             {
               "function": "specific_enchants",

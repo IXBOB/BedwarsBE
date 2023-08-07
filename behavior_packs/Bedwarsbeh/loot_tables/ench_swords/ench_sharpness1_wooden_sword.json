@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:wooden_sword",
+          "name": "bedwars:wooden_sword",
           "functions": [
             {
               "function": "specific_enchants",
