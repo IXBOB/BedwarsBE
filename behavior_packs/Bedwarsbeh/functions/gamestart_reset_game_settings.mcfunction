@@ -70,6 +70,11 @@ scoreboard players set @s "红锋利等级" 0
 scoreboard players set @s "蓝锋利等级" 0
 scoreboard players set @s "黄锋利等级" 0
 scoreboard players set @s "绿锋利等级" 0
+#锻炉等级 -> 0
+scoreboard players set @s "红锻炉等级" 0
+scoreboard players set @s "蓝锻炉等级" 0
+scoreboard players set @s "黄锻炉等级" 0
+scoreboard players set @s "绿锻炉等级" 0
 #陷阱个数 -> 0
 scoreboard players set @s red_trap_sum 0
 scoreboard players set @s blue_trap_sum 0

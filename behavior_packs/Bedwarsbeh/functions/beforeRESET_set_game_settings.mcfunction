@@ -37,14 +37,14 @@ scoreboard players set @e[type=armor_stand,name=main] "蓝铁time" 2
 scoreboard players set @e[type=armor_stand,name=main] "黄铁time" 2
 #绿铁time -> 2
 scoreboard players set @e[type=armor_stand,name=main] "绿铁time" 2
-#红家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "红家金time" 8
-#蓝家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "蓝家金time" 8
-#黄家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "黄家金time" 8
-#绿家金time -> 8
-scoreboard players set @e[type=armor_stand,name=main] "绿家金time" 8
+#red_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] red_gold_time 8
+#blue_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] blue_gold_time 8
+#yellow_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] yellow_gold_time 8
+#green_gold_time -> 8
+scoreboard players set @e[type=armor_stand,name=main] green_gold_time 8
 #reset§c红队
 scoreboard players reset * "§c红队"
 #reset§b蓝队
@@ -75,6 +75,11 @@ scoreboard players reset * "红锋利等级"
 scoreboard players reset * "蓝锋利等级"
 scoreboard players reset * "黄锋利等级"
 scoreboard players reset * "绿锋利等级"
+#reset锻炉等级
+scoreboard players reset * "红锻炉等级"
+scoreboard players reset * "蓝锻炉等级"
+scoreboard players reset * "黄锻炉等级"
+scoreboard players reset * "绿锻炉等级"
 #reset陷阱个数
 scoreboard players reset * red_trap_sum
 scoreboard players reset * blue_trap_sum

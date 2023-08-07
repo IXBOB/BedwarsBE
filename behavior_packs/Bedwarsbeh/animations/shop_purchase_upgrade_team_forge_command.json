@@ -1,0 +1,19 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.shop_purchase_upgrade_team_forge": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.1": [
+					"/execute @e[type=armor_stand,name=main,scores={红锻炉等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_forge,scores={分队=1}] ~~~ function shop_purchase/shop_purchase_upgrade_team_forge",
+					"/execute @e[type=armor_stand,name=main,scores={蓝锻炉等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_forge,scores={分队=2}] ~~~ function shop_purchase/shop_purchase_upgrade_team_forge",
+					"/execute @e[type=armor_stand,name=main,scores={黄锻炉等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_forge,scores={分队=3}] ~~~ function shop_purchase/shop_purchase_upgrade_team_forge",
+					"/execute @e[type=armor_stand,name=main,scores={绿锻炉等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_forge,scores={分队=4}] ~~~ function shop_purchase/shop_purchase_upgrade_team_forge",
+					"/tag @a[tag=shop_purchase_upgrade_team_forge] remove shop_purchase_upgrade_team_forge",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}
