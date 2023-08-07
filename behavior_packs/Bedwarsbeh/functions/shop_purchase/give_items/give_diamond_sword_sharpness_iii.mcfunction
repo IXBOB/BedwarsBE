@@ -1,1 +1,0 @@
-give @s bedwars:diamond_sword_sharpness_iii 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}} 

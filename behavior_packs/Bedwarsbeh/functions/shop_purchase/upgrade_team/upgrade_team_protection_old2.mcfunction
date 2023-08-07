@@ -29,6 +29,17 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3}] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iii
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:red_team_helmet_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:red_team_chestplate_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:red_team_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:red_team_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:chainmail_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:chainmail_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:iron_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"红保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=1,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iv
+
 #蓝保护
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:blue_team_helmet_protection_i
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:blue_team_chestplate_protection_i
@@ -60,6 +71,16 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3}] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iii
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:blue_team_helmet_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:blue_team_chestplate_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:blue_team_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:blue_team_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:chainmail_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:chainmail_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:iron_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"蓝保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=2,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iv
 #黄保护
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:yellow_team_helmet_protection_i
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:yellow_team_chestplate_protection_i
@@ -91,6 +112,16 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3}] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iii
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:yellow_team_helmet_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:yellow_team_chestplate_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:yellow_team_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:yellow_team_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:chainmail_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:chainmail_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:iron_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"黄保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=3,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iv
 #绿保护
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:green_team_helmet_protection_i
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=1}] ~~~ replaceitem entity @a[scores={"分队"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:green_team_chestplate_protection_i
@@ -122,3 +153,13 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3}] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iii
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=3}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iii
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.head 0 bedwars:green_team_helmet_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.chest 0 bedwars:green_team_chestplate_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:green_team_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=1},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:green_team_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:chainmail_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=2},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:chainmail_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:iron_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=3},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:iron_boots_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.legs 0 bedwars:diamond_leggings_protection_iv
+execute @e[type=armor_stand,name=main,scores={gameSTART=1,"绿保护等级"=4}] ~~~ replaceitem entity @a[scores={"分队"=4,"护甲等级"=4},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] slot.armor.feet 0 bedwars:diamond_boots_protection_iv

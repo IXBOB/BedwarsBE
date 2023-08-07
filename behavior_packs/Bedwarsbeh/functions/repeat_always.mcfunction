@@ -2,10 +2,13 @@
 function set_gamerule/set_repeat_gamerule
 
 #循环指令
-execute @s[scores={gameSTART=0}] ~~~ function gameSTART0_functions
-execute @s[scores={gameSTART=1}] ~~~ function gameSTART1_functions
-execute @s[scores={gameSTART=2}] ~~~ function gameSTART2_functions
-execute @s[scores={gameSTART=1..2}] ~~~ function gameSTART1_and_2_functions
+execute @s[scores={gameSTART=0}] ~~~ function repeat_gamestart0
+execute @s[scores={gameSTART=1}] ~~~ function repeat_gamestart1
+execute @s[scores={gameSTART=2}] ~~~ function repeat_gamestart2
+execute @s[scores={gameSTART=1..2}] ~~~ function repeat_gamestart1_2
+
+#dev
+execute @s[scores={dev_mode=1}] ~~~ function repeat_dev
 
 #function_tick
 function function_tick/assign

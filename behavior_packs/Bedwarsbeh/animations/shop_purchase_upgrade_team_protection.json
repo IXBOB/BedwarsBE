@@ -6,10 +6,10 @@
 			"loop": false,
 			"timeline": {
 				"0.1": [
-					"/execute @e[type=armor_stand,name=main,scores={红保护等级=..2}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=1}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
-					"/execute @e[type=armor_stand,name=main,scores={蓝保护等级=..2}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=2}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
-					"/execute @e[type=armor_stand,name=main,scores={黄保护等级=..2}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=3}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
-					"/execute @e[type=armor_stand,name=main,scores={绿保护等级=..2}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=4}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
+					"/execute @e[type=armor_stand,name=main,scores={红保护等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=1}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
+					"/execute @e[type=armor_stand,name=main,scores={蓝保护等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=2}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
+					"/execute @e[type=armor_stand,name=main,scores={黄保护等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=3}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
+					"/execute @e[type=armor_stand,name=main,scores={绿保护等级=..3}] ~~~ execute @a[tag=shop_purchase_upgrade_team_protection,scores={分队=4}] ~~~ function shop_purchase/shop_purchase_upgrade_team_protection",
 					"/tag @a[tag=shop_purchase_upgrade_team_protection] remove shop_purchase_upgrade_team_protection",
 					"/event entity @s bedwars:remove_self"
 				]

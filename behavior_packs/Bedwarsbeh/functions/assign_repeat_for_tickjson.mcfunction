@@ -1,1 +1,1 @@
-execute @e[type=armor_stand,name=main] ~~~ function game_repeat
+execute @e[type=armor_stand,name=main] ~~~ function repeat_always

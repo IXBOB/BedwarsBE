@@ -14,7 +14,6 @@ gamerule doimmediaterespawn true
 gamerule tntexplodes false
 #关闭命令执行提示
 execute @s[scores={dev_mode=0}] ~~~ gamerule sendcommandfeedback false
-execute @s[scores={dev_mode=1}] ~~~ gamerule sendcommandfeedback true
 #关闭重生方块爆炸
 gamerule respawnblocksexplode false
 #打开自然生命恢复

@@ -1,1 +1,0 @@
-clear @s bedwars:diamond_sword_sharpness_ii

@@ -1,0 +1,2 @@
+function dev/regive_team_tag
+function dev/set_gamerule

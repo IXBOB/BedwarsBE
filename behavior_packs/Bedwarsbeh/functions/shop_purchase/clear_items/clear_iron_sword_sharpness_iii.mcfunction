@@ -1,1 +1,0 @@
-clear @s bedwars:iron_sword_sharpness_iii
