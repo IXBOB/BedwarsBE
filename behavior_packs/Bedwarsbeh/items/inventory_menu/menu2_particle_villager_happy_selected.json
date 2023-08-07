@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "bedwars:menu2_particle_villagerhappy_selected"
+			"identifier": "bedwars:menu2_particle_villager_happy_selected"
 		},
 		"components": {
 			"minecraft:foil": true,

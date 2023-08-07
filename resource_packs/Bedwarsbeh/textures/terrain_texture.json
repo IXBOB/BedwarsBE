@@ -310,6 +310,24 @@
 		"purchase_upgrade_team_protection_block_west": {												//WEST
 			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
 		},
+		"purchase_upgrade_team_forge_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_upgrade_team_forge_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_upgrade_team_forge_block_north": {
+			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
+		},
+		"purchase_upgrade_team_forge_block_east": {
+			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
+		},
+		"purchase_upgrade_team_forge_block_south": {
+			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
+		},
+		"purchase_upgrade_team_forge_block_west": {												//WEST
+			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
+		},
 		"purchase_upgrade_team_sharpness_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},

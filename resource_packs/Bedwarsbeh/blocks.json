@@ -235,6 +235,17 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:purchase_upgrade_team_forge_block": {
+		"textures": {
+			"up": "purchase_upgrade_team_forge_block_up",
+			"down": "purchase_upgrade_team_forge_block_down",
+			"north": "purchase_upgrade_team_forge_block_north",
+			"south": "purchase_upgrade_team_forge_block_south",
+			"west": "purchase_upgrade_team_forge_block_west",
+			"east": "purchase_upgrade_team_forge_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:purchase_golden_apple_block": {
 		"textures": {
 			"up": "purchase_golden_apple_block_up",

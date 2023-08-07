@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "bedwars:menu2_particle_villagerhappy_click"
+			"identifier": "bedwars:menu2_particle_villager_happy_disabled"
 		},
 		"components": {
 			"minecraft:icon": {

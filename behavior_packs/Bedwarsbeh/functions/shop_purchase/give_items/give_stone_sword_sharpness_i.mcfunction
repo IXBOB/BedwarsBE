@@ -1,1 +1,1 @@
-give @s bedwars:stone_sword_sharpness_i 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"},"minecraft:keep_on_death":{}} 
+loot give @s loot "ench_swords/ench_sharpness_i_stone_sword"
