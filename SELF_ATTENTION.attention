@@ -66,6 +66,7 @@ sharpness1 -> sharpness_i
 villagerhappy -> villager_happy
 更改商店锋利告示牌，使其升一级时就显示满级。并删除锋利II和锋利III的.mcstructure文件
 背包商店确认购买页相关功能需做的做完（e.g.购买成功后的操作）
+@a[c=1] -> @p ?
 
 /scoreboard objectives add menu_page.cache dummy
 /scoreboard objectives add 需硬币数 dummy
