@@ -665,14 +665,17 @@ text.sign.ingame.shop_tnt=§f炸药
 text.sign.ingame.shop_golden_apple=§f金苹果
 text.sign.ingame.shop_team_sharpness=§d团队升级 锋利
 text.sign.ingame.shop_team_protection=§d团队升级 保护
-text.sign.ingame.shop_team_teap=§d团队升级 锻炉
+text.sign.ingame.shop_team_forge=§d团队升级 锻炉
+text.sign.ingame.shop_team_alarm_trap=§d报警陷阱
+text.sign.ingame.shop_team_its_a_trap=§d这是个陷阱！
+text.sign.ingame.shop_team_counter-offensive=§d反击陷阱
 
 text.sign.ingame.shop_trap_effect_1=§r挖掘疲劳 I
 text.sign.ingame.shop_trap_effect_2=§r挖掘疲劳 II
 text.sign.ingame.shop_trap_effect_3=§e疲劳 II + 失明
 
 text.sign.ingame.shop_upgrade_team_level_0_of_1=§7⬜ 0 / 1
-text.sign.ingame.shop_upgrade_team_level_1_of_1=§7⬛ 1 / 1
+text.sign.ingame.shop_upgrade_team_level_1_of_1=§e⬛ 1 / 1
 text.sign.ingame.shop_upgrade_team_level_0_of_3=§7⬜⬜⬜ 0 / 3
 text.sign.ingame.shop_upgrade_team_level_1_of_3=§e⬛§7⬜⬜ 1 / 3
 text.sign.ingame.shop_upgrade_team_level_2_of_3=§e⬛⬛§7⬜ 2 / 3
@@ -681,8 +684,12 @@ text.sign.ingame.shop_upgrade_team_level_0_of_4=§7⬜⬜⬜⬜ 0 / 4
 text.sign.ingame.shop_upgrade_team_level_1_of_4=§e⬛§7⬜⬜⬜ 1 / 4
 text.sign.ingame.shop_upgrade_team_level_2_of_4=§e⬛⬛§7⬜⬜ 2 / 4
 text.sign.ingame.shop_upgrade_team_level_3_of_4=§e⬛⬛⬛§7⬜ 3 / 4
-text.sign.ingame.shop_upgrade_team_level_4_of_4=§e⬛⬛⬛§7⬛ 4 / 4
+text.sign.ingame.shop_upgrade_team_level_4_of_4=§e⬛⬛⬛⬛ 4 / 4
 text.sign.ingame.shop_upgrade_team_maxlevel=§e已达到满级
+text.sign.ingame.shop_team_trap_slot_left_3_of_3=§7剩余陷阱槽位: 3 / 3
+text.sign.ingame.shop_team_trap_slot_left_2_of_3=§7剩余陷阱槽位: 2 / 3
+text.sign.ingame.shop_team_trap_slot_left_1_of_3=§7剩余陷阱槽位: 1 / 3
+text.sign.ingame.shop_team_trap_slot_left_0_of_3=§7剩余陷阱槽位: 0 / 3
 
 text.sign.lobby.get_op_guide_line1=§e取得更改权限:
 text.sign.lobby.get_op_guide_line2=§e请输入
