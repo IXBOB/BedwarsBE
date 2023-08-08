@@ -56,13 +56,13 @@
 /structure load bedwars:map4_green_team_home 316 0 -20
 
 
-./loot give <player> loot <loot_table: string>
+
+/scoreboard objectives add own_particle_1 dummy
+更换跑酷终点的方块，使用on_step_on触发获得粒子效果事件（own_particle_1 -> 1 并播放tellraw和声音）
 
 
 
-更改商店锋利告示牌，使其升一级时就显示满级。并删除锋利II和锋利III的.mcstructure文件
-背包商店确认购买页相关功能需做的做完（e.g.购买成功后的操作）
-@a[c=1] -> @p ?
+
 
 
 ATTENTION:
