@@ -11,18 +11,18 @@ execute @s[tag=upgrade_green_trap] ~~~ tellraw @a[scores={"分队"=4}] { "rawtex
 playsound note.pling @s ~~~
 scoreboard players add @s own_xp -100
 xp -99L @s
-execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=1},name=main] red_trap_1_id 1
-execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=1},name=main] blue_trap_1_id 1
-execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=1},name=main] yellow_trap_1_id 1
-execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=1},name=main] green_trap_1_id 1
-execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=2},name=main] red_trap_2_id 1
-execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=2},name=main] blue_trap_2_id 1
-execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=2},name=main] yellow_trap_2_id 1
-execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=2},name=main] green_trap_2_id 1
-execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=3},name=main] red_trap_3_id 1
-execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=3},name=main] blue_trap_3_id 1
-execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=3},name=main] yellow_trap_3_id 1
-execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=3},name=main] green_trap_3_id 1
+execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=0},name=main] red_trap_1_id 3
+execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=0},name=main] blue_trap_1_id 3
+execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=0},name=main] yellow_trap_1_id 3
+execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=0},name=main] green_trap_1_id 3
+execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=1},name=main] red_trap_2_id 3
+execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=1},name=main] blue_trap_2_id 3
+execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=1},name=main] yellow_trap_2_id 3
+execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=1},name=main] green_trap_2_id 3
+execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=2},name=main] red_trap_3_id 3
+execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=2},name=main] blue_trap_3_id 3
+execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=2},name=main] yellow_trap_3_id 3
+execute @s[tag=upgrade_green_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,green_trap_sum=2},name=main] green_trap_3_id 3
 execute @s[tag=upgrade_red_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] red_trap_sum 1
 execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] blue_trap_sum 1
 execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] yellow_trap_sum 1

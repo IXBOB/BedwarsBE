@@ -331,6 +331,9 @@
          "path" : "attachables/red_team_boots_protection_ii.json"
       },
       {
+         "path" : "textures/blocks/develop_source/maniac_miner.psd"
+      },
+      {
          "path" : "texts/en_GB.lang"
       },
       {
@@ -460,6 +463,9 @@
          "path" : "attachables/yellow_team_leggings_protection_iii.json"
       },
       {
+         "path" : "textures/blocks/purchase_team_miner_fatigue_trap_block.png"
+      },
+      {
          "path" : "attachables/yellow_team_leggings_protection_iv.json"
       },
       {
@@ -497,6 +503,12 @@
       },
       {
          "path" : "entity/npc_lobby_guide_5.json"
+      },
+      {
+         "path" : "font/develop_source/glyph_E1.psd"
+      },
+      {
+         "path" : "font/glyph_E1.png"
       },
       {
          "path" : "textures/items/blue_team_chestplate.png"
@@ -721,13 +733,16 @@
          "path" : "textures/blocks/blue_bed_foot.png"
       },
       {
+         "path" : "textures/blocks/log_spruce2/log_spruce_top2.png"
+      },
+      {
+         "path" : "textures/blocks/develop_source/miner_fatigue.psd"
+      },
+      {
          "path" : "textures/items/blue_team_boots.png"
       },
       {
          "path" : "textures/blocks/green_bed_head.png"
-      },
-      {
-         "path" : "textures/blocks/log_spruce2/log_spruce_top2.png"
       },
       {
          "path" : "textures/items/diamond_axe.png"
@@ -896,6 +911,9 @@
       },
       {
          "path" : "textures/blocks/purchase_upgrade_sword_block.png"
+      },
+      {
+         "path" : "textures/blocks/purchase_upgrade_team_maniac_miner_block.png"
       },
       {
          "path" : "textures/items/develop_source/green_team_leggings.psd"

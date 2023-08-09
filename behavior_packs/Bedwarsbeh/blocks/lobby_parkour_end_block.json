@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:lobby_parkour_end_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_step_on": {
+				"event": "bedwars:on_step_on_lobby_parkour_end_block",
+				"target": "self"
+			},
+			"minecraft:on_step_off":{
+				"event" : "bedwars:on_step_off_lobby_parkour_end_block",
+				"target": "self"
+			}
+		},
+		"events": {
+			"bedwars:on_step_on_lobby_parkour_end_block": {
+				"run_command": {
+					"command": [
+						"execute @s[scores={own_particle_1=0}] ~~~ function on_player_parkour_finish" 
+					],
+					"target": "player"
+				}
+			}
+		}
+	}
+}

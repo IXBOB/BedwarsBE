@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:purchase_team_its_a_trap_block" //trap ID = 1
+			"identifier": "bedwars:purchase_team_its_a_trap_block" //trap ID = 3
 		},
 		"components": {
 			"minecraft:destroy_time": 99999,
