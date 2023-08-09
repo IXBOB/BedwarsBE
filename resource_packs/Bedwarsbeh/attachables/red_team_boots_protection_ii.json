@@ -5,7 +5,7 @@
 			"identifier": "bedwars:red_team_boots_protection_ii",
 			// These 2 are default and are required
 			"materials": {
-				"default": "armor_enchanted",
+				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {

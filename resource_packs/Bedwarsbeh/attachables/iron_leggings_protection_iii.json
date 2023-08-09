@@ -5,7 +5,7 @@
 			"identifier": "bedwars:iron_leggings_protection_iii",
 			// These 2 are default and are requiblue
 			"materials": {
-				"default": "armor_enchanted",
+				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {

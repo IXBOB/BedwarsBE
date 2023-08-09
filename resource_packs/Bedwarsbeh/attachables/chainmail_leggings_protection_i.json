@@ -5,7 +5,7 @@
 			"identifier": "bedwars:chainmail_leggings_protection_i",
 			// These 2 are default and are requiblue
 			"materials": {
-				"default": "armor_enchanted",
+				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {

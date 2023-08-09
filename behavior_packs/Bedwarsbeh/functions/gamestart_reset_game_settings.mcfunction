@@ -60,6 +60,11 @@ scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
 kill @e[type=xp_orb]
 #删除僵尸猪人
 event entity @e[type=minecraft:zombie_pigman] bedwars:remove_self
+#急迫等级 -> 0
+scoreboard players set @s "红急迫等级" 0
+scoreboard players set @s "蓝急迫等级" 0
+scoreboard players set @s "黄急迫等级" 0
+scoreboard players set @s "绿急迫等级" 0
 #保护等级 -> 0
 scoreboard players set @s "红保护等级" 0
 scoreboard players set @s "蓝保护等级" 0

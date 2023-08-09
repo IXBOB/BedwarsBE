@@ -5,7 +5,7 @@
 			"identifier": "bedwars:green_team_boots_protection_i",
 			// These 2 are default and are requigreen
 			"materials": {
-				"default": "armor_enchanted",
+				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {

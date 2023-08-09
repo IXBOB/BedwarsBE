@@ -1,0 +1,42 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:purchase_team_miner_fatigue_trap_block" //trap ID = 1
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact": {
+				"event": "bedwars:purchase_team_miner_fatigue_trap"
+			}
+		},
+		"events": {
+			"bedwars:purchase_team_miner_fatigue_trap": {
+				"run_command": {
+					"command": [
+						"execute @s[scores={分队=1,出局观战=0,gameSTART=1}] ~~~ scoreboard players operation @s red_trap_sum = @e[type=armor_stand,name=main,scores={gameSTART=1}] red_trap_sum",
+						"execute @s[scores={分队=2,出局观战=0,gameSTART=1}] ~~~ scoreboard players operation @s blue_trap_sum = @e[type=armor_stand,name=main,scores={gameSTART=1}] blue_trap_sum",
+						"execute @s[scores={分队=3,出局观战=0,gameSTART=1}] ~~~ scoreboard players operation @s yellow_trap_sum = @e[type=armor_stand,name=main,scores={gameSTART=1}] yellow_trap_sum",
+						"execute @s[scores={分队=4,出局观战=0,gameSTART=1}] ~~~ scoreboard players operation @s green_trap_sum = @e[type=armor_stand,name=main,scores={gameSTART=1}] green_trap_sum",
+						"execute @s[scores={分队=1,出局观战=0,gameSTART=1,red_trap_sum=3..}] ~~~ tag @s add already_reach_maxtrap_deny",
+						"execute @s[scores={分队=2,出局观战=0,gameSTART=1,blue_trap_sum=3..}] ~~~ tag @s add already_reach_maxtrap_deny",
+						"execute @s[scores={分队=3,出局观战=0,gameSTART=1,yellow_trap_sum=3..}] ~~~ tag @s add already_reach_maxtrap_deny",
+						"execute @s[scores={分队=4,出局观战=0,gameSTART=1,green_trap_sum=3..}] ~~~ tag @s add already_reach_maxtrap_deny",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1,own_xp=..99},tag=!already_reach_maxtrap_deny] ~~~ tag @s add own_xp_too_low_deny",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=already_reach_maxtrap_deny] ~~~ tag @s add purchase_denied",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny] ~~~ tag @s add purchase_denied",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=already_reach_maxtrap_deny,tag=purchase_denied] ~~~ tellraw @s { \"rawtext\" : [ { \"translate\" : \"text.tellraw.ingameinfo.purchase_team_trap_already_maxtrap\" } ] }",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny,tag=purchase_denied] ~~~ tellraw @s { \"rawtext\" : [ { \"translate\" : \"text.tellraw.ingameinfo.purchase_item_denied\" } ] }",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=purchase_denied] ~~~ playsound mob.endermen.portal @s",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ summon bedwars:shop_purchase_team_miner_fatigue_trap_command",
+						"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ tag @s add shop_purchase_team_miner_fatigue_trap",
+						"tag @s remove already_reach_maxtrap_deny",
+						"tag @s remove own_xp_too_low_deny",
+						"tag @s remove purchase_denied"
+					],
+					"target": "player"
+				}
+			}
+		}
+	}
+}

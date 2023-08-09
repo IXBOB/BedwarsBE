@@ -5,7 +5,7 @@
 			"identifier": "bedwars:yellow_team_boots_protection_iv",
 			// These 2 are default and are requiyellow
 			"materials": {
-				"default": "armor_enchanted",
+				"default": "armor",
 				"enchanted": "armor_enchanted"
 			},
 			"textures": {
