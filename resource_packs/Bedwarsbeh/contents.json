@@ -739,6 +739,9 @@
          "path" : "textures/blocks/develop_source/miner_fatigue.psd"
       },
       {
+         "path" : "textures/blocks/get_trap_info_block.png"
+      },
+      {
          "path" : "textures/items/blue_team_boots.png"
       },
       {
