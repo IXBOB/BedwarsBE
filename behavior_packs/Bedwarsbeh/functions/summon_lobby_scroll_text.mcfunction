@@ -15,6 +15,6 @@ execute @s[scores={lobby_text_num=4,language=2}] ~~~ summon armor_stand "§fLobb
 execute @s[scores={lobby_text_num=5,language=2}] ~~~ summon armor_stand "§aUpdate log: mtw.so/6nID9e" -197 198.2 -202
 execute @s[scores={lobby_text_num=6,language=2}] ~~~ summon armor_stand "§aFeedback: suo.nz/3d6ftS" -197 198.2 -202
 execute @s[scores={lobby_text_num=7,language=2}] ~~~ summon armor_stand "§6Open source ( MIT )" -197 198.2 -202 
-execute @s[scores={lobby_text_num=8,language=2}] ~~~ summon armor_stand "§6github/IXBOB/BedwarsBE_CN" -197 198.2 -202 
+execute @s[scores={lobby_text_num=8,language=2}] ~~~ summon armor_stand "§6github/IXBOB/BedwarsBE" -197 198.2 -202 
 execute @s[scores={lobby_text_num=9,language=2}] ~~~ summon armor_stand "§7===============" -197 198.2 -202 
 scoreboard players set @s[scores={lobby_text_num=9..}] lobby_text_num 0

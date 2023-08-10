@@ -7,7 +7,9 @@
 			"timeline": {
 				"2.0": [
 					//显示奖励总览
-					"/function get_reward_information"
+					"/function get_reward_information",
+					//大厅等级提升
+					"execute @a[scores={等级经验=1000..}] ~~~ function player_level_up"
 				],
 				"4.8": [
 					//tellraw 返回大厅

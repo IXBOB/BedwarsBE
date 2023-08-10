@@ -60,6 +60,7 @@ execute @s[scores={red_gold_time=..0,红锻炉等级=0}] ~~~ scoreboard players 
 execute @s[scores={red_gold_time=..0,红锻炉等级=1}] ~~~ scoreboard players set @s red_gold_time 5
 execute @s[scores={red_gold_time=..0,红锻炉等级=2}] ~~~ scoreboard players set @s red_gold_time 4
 execute @s[scores={red_gold_time=..0,红锻炉等级=3}] ~~~ scoreboard players set @s red_gold_time 3
+execute @s[scores={red_gold_time=..0,红锻炉等级=4}] ~~~ scoreboard players set @s red_gold_time 2
 #蓝家金生成
 scoreboard players add @s blue_gold_time -1
 execute @s[scores={blue_gold_time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.blue_gold,scores={B_gold_count=..99}] B_gold_count 8
@@ -69,6 +70,7 @@ execute @s[scores={blue_gold_time=..0,蓝锻炉等级=0}] ~~~ scoreboard players
 execute @s[scores={blue_gold_time=..0,蓝锻炉等级=1}] ~~~ scoreboard players set @s blue_gold_time 5
 execute @s[scores={blue_gold_time=..0,蓝锻炉等级=2}] ~~~ scoreboard players set @s blue_gold_time 4
 execute @s[scores={blue_gold_time=..0,蓝锻炉等级=3}] ~~~ scoreboard players set @s blue_gold_time 3
+execute @s[scores={blue_gold_time=..0,蓝锻炉等级=4}] ~~~ scoreboard players set @s blue_gold_time 2
 #黄家金生成
 scoreboard players add @s yellow_gold_time -1
 execute @s[scores={yellow_gold_time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.yellow_gold,scores={Y_gold_count=..99}] Y_gold_count 8
@@ -78,15 +80,17 @@ execute @s[scores={yellow_gold_time=..0,黄锻炉等级=0}] ~~~ scoreboard playe
 execute @s[scores={yellow_gold_time=..0,黄锻炉等级=1}] ~~~ scoreboard players set @s yellow_gold_time 5
 execute @s[scores={yellow_gold_time=..0,黄锻炉等级=2}] ~~~ scoreboard players set @s yellow_gold_time 4
 execute @s[scores={yellow_gold_time=..0,黄锻炉等级=3}] ~~~ scoreboard players set @s yellow_gold_time 3
+execute @s[scores={yellow_gold_time=..0,黄锻炉等级=4}] ~~~ scoreboard players set @s yellow_gold_time 2
 #绿家金生成
 scoreboard players add @s green_gold_time -1
 execute @s[scores={green_gold_time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=..99}] G_gold_count 8
 execute @s[scores={green_gold_time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=8..,G_spawned_gold=..11}] ~~~ structure load gold_ingot ~ 184 ~ 0_degrees none true false
 execute @s[scores={green_gold_time=..0}] ~~~ execute @e[type=armor_stand,name=spawn.green_gold,scores={G_gold_count=8..,G_spawned_gold=..11}] ~~~ scoreboard players add @s G_spawned_gold 1
 execute @s[scores={green_gold_time=..0,绿锻炉等级=0}] ~~~ scoreboard players set @s green_gold_time 6
-execute @s[scores={green_gold_time=..0,绿锻炉等级=1}] ~~~ scoreboard players set @s green_gold_time 6
-execute @s[scores={green_gold_time=..0,绿锻炉等级=2}] ~~~ scoreboard players set @s green_gold_time 6
-execute @s[scores={green_gold_time=..0,绿锻炉等级=3}] ~~~ scoreboard players set @s green_gold_time 6
+execute @s[scores={green_gold_time=..0,绿锻炉等级=1}] ~~~ scoreboard players set @s green_gold_time 5
+execute @s[scores={green_gold_time=..0,绿锻炉等级=2}] ~~~ scoreboard players set @s green_gold_time 4
+execute @s[scores={green_gold_time=..0,绿锻炉等级=3}] ~~~ scoreboard players set @s green_gold_time 3
+execute @s[scores={green_gold_time=..0,绿锻炉等级=4}] ~~~ scoreboard players set @s green_gold_time 2
 #钻石生成
 scoreboard players add @s 钻石time -1
 execute @s[scores={钻石time=..0}] ~~~ scoreboard players add @e[type=armor_stand,name=spawn.diamond_1,scores={diamond_count_1=..239}] diamond_count_1 30

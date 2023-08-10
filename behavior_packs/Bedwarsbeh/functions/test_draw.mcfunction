@@ -1,8 +1,8 @@
 #title.times
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ title @a[scores={"分队"=5}] times 0 160 0
 #title平局
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ title @a[scores={"分队"=5}] title §e§lDRAW
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ title @a[scores={"分队"=5}] subtitle §cno player wins
+execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ titleraw @a[scores={"分队"=5}] title { "rawtext" : [{"translate":"text.title.ingameinfo.victory"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ titleraw @a[scores={"分队"=5}] subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.victory"} ] }
 #tellraw
 execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ function gameEND_tellraw_draw
 #tag-degrade

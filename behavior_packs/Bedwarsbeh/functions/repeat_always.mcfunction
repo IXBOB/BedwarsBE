@@ -29,9 +29,6 @@ scoreboard players reset @s "大厅人数"
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ function on_get_op
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ function on_take_away_op
 
-#升级
-execute @a[scores={"等级经验"=1000..}] ~~~ function player_level_up
-
 #大厅滚动字体
 execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,scores={function_tick_40=40}] ~~~ function summon_lobby_scroll_text
 execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,x=-198,y=197,z=-203,dx=2,dy=6,dz=2] ~~~ tp @s ~ ~0.02 ~
@@ -53,7 +50,5 @@ execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=
 execute @a[x=-200,y=200,z=-200,r=50,scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 
 #粒子显示
-execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={select_particle=1,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:villager_happy ~ ~0.2 ~
-execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
-execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={select_particle=2,respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ particle minecraft:basic_flame_particle ~ ~0.2 ~
+execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ function display_particle
+execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ function display_particle

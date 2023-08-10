@@ -81,6 +81,7 @@
 					"/execute @s[scores={down_explode=1}] ~~~ fill ~2 ~-1 ~-2 ~-2 ~-2 ~2 air 0 replace bedwars:player_planks",
 					"/particle minecraft:knockback_roar_particle ~ ~ ~",
 					"/particle minecraft:knockback_roar_particle ~ ~ ~",
+					"/damage @a[scores={分队=1..4,存活=1},r=4] 3 entity_explosion entity @s",
 					"/playsound random.explode @a[r=15]",
 					"/kill @s"
 				]
