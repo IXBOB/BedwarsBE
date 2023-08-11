@@ -6,7 +6,8 @@
 		},
 
 		"components": {
-			"minecraft:destroy_time": 99999
+			"minecraft:destroy_time": 99999,
+			"minecraft:light_emission": 15
 		}
 	}
 }

@@ -742,6 +742,18 @@
 		"map_emerald_block_west": {												//WEST
 			"textures": "textures/blocks/map_emerald_block"
 		},
+		"map_red_wool": {
+			"textures": "textures/blocks/map_red_wool"
+		},
+		"map_light_blue_wool": {
+			"textures": "textures/blocks/map_light_blue_wool"
+		},
+		"map_yellow_wool": {
+			"textures": "textures/blocks/map_yellow_wool"
+		},
+		"map_green_wool": {
+			"textures": "textures/blocks/map_green_wool"
+		},
 		"map_white_glass": {
 			"textures": "textures/blocks/map_white_glass"
 		},
@@ -807,6 +819,12 @@
 		},
 		"map_grass_block_bottom": {
 			"textures": "textures/blocks/map_grass_block/map_grass_block_bottom"
+		},
+		"map_dark_oak_log_block_top": {
+			"textures": "textures/blocks/map_dark_oak_log_block/map_dark_oak_log_block_top"
+		},
+		"map_dark_oak_log_block_side": {
+			"textures": "textures/blocks/map_dark_oak_log_block/map_dark_oak_log_block_side"
 		},
 		"map_jungle_log_block_top": {
 			"textures": "textures/blocks/map_jungle_log_block/map_jungle_log_block_top"

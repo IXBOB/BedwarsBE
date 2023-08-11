@@ -35,6 +35,8 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"钻已重置"=0,"重�
 execute @e[type=armor_stand,name=main,scores={reseting=1,"中已重置"=0,"重置百分数"=50}] ~~~ function reset_map/emerald_island
 #删除多余的结构方块
 execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/delete_multiple_blocks
+#放置获取陷阱信息方块
+execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/place_get_trap_info_block
 #重置商店方块
 execute @e[type=armor_stand,name=main,scores={reseting=1,"商已重置"=0,"重置百分数"=86}] ~~~ function reset_map/shop/assign
 #重置疾速模式床保护

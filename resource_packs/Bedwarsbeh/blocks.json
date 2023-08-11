@@ -455,6 +455,50 @@
 		},
 		"sound": "stone"
 	},
+	"bedwars:map_red_wool_block": {
+		"textures": {
+			"up": "map_red_wool",
+			"down": "map_red_wool",
+			"north": "map_red_wool",
+			"south": "map_red_wool",
+			"west": "map_red_wool",
+			"east": "map_red_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_light_blue_wool_block": {
+		"textures": {
+			"up": "map_light_blue_wool",
+			"down": "map_light_blue_wool",
+			"north": "map_light_blue_wool",
+			"south": "map_light_blue_wool",
+			"west": "map_light_blue_wool",
+			"east": "map_light_blue_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_yellow_wool_block": {
+		"textures": {
+			"up": "map_yellow_wool",
+			"down": "map_yellow_wool",
+			"north": "map_yellow_wool",
+			"south": "map_yellow_wool",
+			"west": "map_yellow_wool",
+			"east": "map_yellow_wool"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_green_wool_block": {
+		"textures": {
+			"up": "map_green_wool",
+			"down": "map_green_wool",
+			"north": "map_green_wool",
+			"south": "map_green_wool",
+			"west": "map_green_wool",
+			"east": "map_green_wool"
+		},
+		"sound": "stone"
+	},
 	"bedwars:map_white_glass": {
 		"textures": {
 			"up": "map_white_glass",
@@ -771,6 +815,17 @@
 			"south": "map_grass_block_side",
 			"west": "map_grass_block_side",
 			"east": "map_grass_block_side"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_dark_oak_log_block": {
+		"textures": {
+			"up": "map_dark_oak_log_block_top",
+			"down": "map_dark_oak_log_block_top",
+			"north": "map_dark_oak_log_block_side",
+			"south": "map_dark_oak_log_block_side",
+			"west": "map_dark_oak_log_block_side",
+			"east": "map_dark_oak_log_block_side"
 		},
 		"sound": "stone"
 	},

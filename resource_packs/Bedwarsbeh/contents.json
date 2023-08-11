@@ -673,6 +673,9 @@
          "path" : "textures/blocks/player_planks.png"
       },
       {
+         "path" : "textures/blocks/map_dark_oak_log_block/map_dark_oak_log_block_side.png"
+      },
+      {
          "path" : "texts/fr_CA.lang"
       },
       {
@@ -772,6 +775,9 @@
          "path" : "textures/blocks/map_cyan_concrete_block.png"
       },
       {
+         "path" : "textures/blocks/map_dark_oak_log_block/map_dark_oak_log_block_top.png"
+      },
+      {
          "path" : "textures/blocks/purchase_bridge_egg_block.png"
       },
       {
@@ -779,6 +785,9 @@
       },
       {
          "path" : "textures/blocks/map_grass_block/map_grass_block_side.png"
+      },
+      {
+         "path" : "textures/blocks/map_green_wool.png"
       },
       {
          "path" : "textures/blocks/map_jungle_log_block/map_jungle_log_block_side.png"
@@ -793,6 +802,9 @@
          "path" : "textures/blocks/map_light_blue_stained_glass_block.png"
       },
       {
+         "path" : "textures/blocks/map_light_blue_wool.png"
+      },
+      {
          "path" : "textures/blocks/player_blue_stained_glass.png"
       },
       {
@@ -803,6 +815,9 @@
       },
       {
          "path" : "textures/blocks/map_red_sandstone_block/map_red_sandstone_block_top.png"
+      },
+      {
+         "path" : "textures/blocks/map_red_wool.png"
       },
       {
          "path" : "textures/blocks/player_green_wool.png"
@@ -830,6 +845,9 @@
       },
       {
          "path" : "textures/blocks/map_yellow_concrete_block.png"
+      },
+      {
+         "path" : "textures/blocks/map_yellow_wool.png"
       },
       {
          "path" : "textures/blocks/player_endstone.png"
