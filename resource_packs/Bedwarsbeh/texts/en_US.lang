@@ -1,3 +1,5 @@
+text.empty= 
+
 ##IN-GAME ENTITY
 
 entity.snowball.name=Fireball
@@ -652,17 +654,19 @@ text.scoreboard.gameendinfo.thanks=§7Thanks for playing
 text.sign.ingame.shop_arrow_mark=§r⬇
 text.sign.ingame.shop_click_the_block=§7>Click the block<
 
-text.sign.ingame.shop_8_levels=§a8 levels##wool
-text.sign.ingame.shop_20_levels=§a20 levels##glass
-text.sign.ingame.shop_32_levels=§a32 levels##endstone & planks
-text.sign.ingame.shop_50_levels=§a50 levels##weapon_upgrade
-text.sign.ingame.shop_100_levels=§a100 levels##armor_upgrade & popup_tower & jump_boost_potion & xp_bottle & TNT & ONE-TIME TRAP
-text.sign.ingame.shop_200_levels=§a200 levels##bow & bridge_egg
-text.sign.ingame.shop_250_levels=§a250 levels##invisibility_potion
-text.sign.ingame.shop_30_levels=§a30 levels##arrow & golden_apple
-text.sign.ingame.shop_80_levels=§a80 levels##Fireball
-text.sign.ingame.shop_300_levels=§a300 levels##team PROTECTION
-text.sign.ingame.shop_400_levels=§a400 levels##team SHARPNESS
+text.sign.ingame.shop_8_levels=§a8 levels
+text.sign.ingame.shop_20_levels=§a20 levels
+text.sign.ingame.shop_32_levels=§a32 levels
+text.sign.ingame.shop_50_levels=§a50 levels
+text.sign.ingame.shop_100_levels=§a100 levels
+text.sign.ingame.shop_200_levels=§a200 levels
+text.sign.ingame.shop_250_levels=§a250 levels
+text.sign.ingame.shop_30_levels=§a30 levels
+text.sign.ingame.shop_80_levels=§a80 levels
+text.sign.ingame.shop_300_levels=§a300 levels
+text.sign.ingame.shop_400_levels=§a400 levels
+text.sign.ingame.shop_500_levels=§a500 levels
+text.sign.ingame.shop_600_levels=§a600 levels
 
 text.sign.ingame.shop_wool=§f16x Wool
 text.sign.ingame.shop_glass=§f4x Glass
@@ -689,7 +693,7 @@ text.sign.ingame.shop_team_forge=§dteam FORGE
 text.sign.ingame.shop_team_miner_fatigue_trap=§dMinerFatigueTrap
 text.sign.ingame.shop_team_alarm_trap=§dAlarm Trap
 text.sign.ingame.shop_team_its_a_trap=§dIt's a Trap
-text.sign.ingame.shop_team_counter-offensive=§dOffensive Trap
+text.sign.ingame.shop_team_counter-offensive_trap=§dOffensive Trap
 
 text.sign.ingame.shop_upgrade_team_level_0_of_1=§7⬜ 0 / 1
 text.sign.ingame.shop_upgrade_team_level_1_of_1=§e⬛ 1 / 1

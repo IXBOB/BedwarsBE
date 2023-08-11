@@ -1,3 +1,5 @@
+text.empty= 
+
 ##IN-GAME ENTITY
 
 entity.snowball.name=Fireball
@@ -595,7 +597,7 @@ text.tellraw.ingameinfo.yellow_team_wiped=§e§l黄队§r§c 已被团灭 ！
 text.tellraw.ingameinfo.green_team_wiped=§a§l绿队§r§c 已被团灭 ！
 text.tellraw.ingameinfo.get_xplevel_kill=您从击杀的玩家获得了 §a%s§f 级经验
 text.tellraw.ingameinfo.use_xp_bottle=§6您使用了经验存储瓶并获得了 100 级经验
-text.tellraw.ingameinfo.use_item_denied=§c抱歉，您只能在游戏中使用该物品。 如果您认为这是一个错误，请报告此问题。 请前往suo.nz/2RdCsB
+text.tellraw.ingameinfo.use_item_denied=§c抱歉，您只能在游戏中使用该物品。 如果您认为这是一个错误，请报告此问题。 请前往suo.nz/3d6ftS
 text.tellraw.ingameinfo.info_line=§a§l▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 text.tellraw.ingameinfo.red_win_line1=§l                  起床战争       
 text.tellraw.ingameinfo.red_win_line2=§r               §f胜利队伍： §c§l红队
@@ -652,17 +654,19 @@ text.scoreboard.gameendinfo.thanks=§7感谢您的游玩
 text.sign.ingame.shop_arrow_mark=§r⬇
 text.sign.ingame.shop_click_the_block=§7> 点击方块购买 <
 
-text.sign.ingame.shop_8_levels=§a8 经验##wool
-text.sign.ingame.shop_20_levels=§a20 经验##glass
-text.sign.ingame.shop_32_levels=§a32 经验##end石& planks
-text.sign.ingame.shop_50_levels=§a50 经验##weapon_upgrade
-text.sign.ingame.shop_100_levels=§a100 经验##armor_upgrade & popup_tower & jump_boost_potion & xp_bottle & TNT & ONE-TIME TRAP
-text.sign.ingame.shop_200_levels=§a200 经验##bow & bridge_egg
-text.sign.ingame.shop_250_levels=§a250 经验##invisibility_potion
-text.sign.ingame.shop_30_levels=§a30 经验##arrow & golden_apple
-text.sign.ingame.shop_80_levels=§a80 经验##Fireball
-text.sign.ingame.shop_300_levels=§a300 经验##team PROTECTION
-text.sign.ingame.shop_400_levels=§a400 经验##team SHARPNESS
+text.sign.ingame.shop_8_levels=§a8 经验
+text.sign.ingame.shop_20_levels=§a20 经验
+text.sign.ingame.shop_32_levels=§a32 经验
+text.sign.ingame.shop_50_levels=§a50 经验
+text.sign.ingame.shop_100_levels=§a100 经验
+text.sign.ingame.shop_200_levels=§a200 经验
+text.sign.ingame.shop_250_levels=§a250 经验
+text.sign.ingame.shop_30_levels=§a30 经验
+text.sign.ingame.shop_80_levels=§a80 经验
+text.sign.ingame.shop_300_levels=§a300 经验
+text.sign.ingame.shop_400_levels=§a400 经验
+text.sign.ingame.shop_500_levels=§a500 经验
+text.sign.ingame.shop_600_levels=§a600 经验
 
 text.sign.ingame.shop_wool=§f16x 羊毛
 text.sign.ingame.shop_glass=§f4x 防爆玻璃
@@ -689,7 +693,7 @@ text.sign.ingame.shop_team_forge=§d团队升级 锻炉
 text.sign.ingame.shop_team_miner_fatigue_trap=§d挖掘疲劳陷阱
 text.sign.ingame.shop_team_alarm_trap=§d报警陷阱
 text.sign.ingame.shop_team_its_a_trap=§d这是个陷阱！
-text.sign.ingame.shop_team_counter-offensive=§d反击陷阱
+text.sign.ingame.shop_team_counter-offensive_trap=§d反击陷阱
 
 text.sign.ingame.shop_upgrade_team_level_0_of_1=§7⬜ 0 / 1
 text.sign.ingame.shop_upgrade_team_level_1_of_1=§e⬛ 1 / 1
@@ -788,6 +792,6 @@ text.tellraw.others.last_game_ended=§c§l您的上一局游戏已经结束。 �
 text.tellraw.others.level_up_line1=§6§l        ■■■■■ 升 级 ■■■■■
 text.tellraw.others.level_up_line2=§r§6祝贺 ！ 您的大厅等级已经达到了 %s 级 ！
 text.scoreboard.others.display=§e起床战争
-text.tellraw.others.unexpected_return_to_lobby=§c您意外地返回了大厅，已退出本局游戏。如果您认为这是一个错误，请报告此问题。 前往 suo.nz/2RdCsB 。该问题也可能是网络环境较差造成的， 网络环境较差时可能会导致无法进入游戏， 请检查您的网络连接。
+text.tellraw.others.unexpected_return_to_lobby=§c您意外地返回了大厅，已退出本局游戏。如果您认为这是一个错误，请报告此问题。 前往 suo.nz/3d6ftS 。该问题也可能是网络环境较差造成的， 网络环境较差时可能会导致无法进入游戏， 请检查您的网络连接。
 text.tellraw.others.enabled_dev_mode=§b§o已启用开发者模式
 text.tellraw.others.disabled_dev_mode=§b§o已禁用开发者模式
