@@ -793,5 +793,5 @@ text.tellraw.others.level_up_line1=§6§l        ■■■■■ LEVEL UP ■■
 text.tellraw.others.level_up_line2=§r§6You are now at level %s ! congratulations !
 text.scoreboard.others.display=§eBed Wars
 text.tellraw.others.unexpected_return_to_lobby=§cYou have unexpectedly returned to the lobby, you are out of the game. Please report this if you believe this is a bug. github.com/IXBOB/bedwarsBE/issues . This problem may also be caused by poor network environment, poor network environment may cause you to be unable to enter the game, please check your network connection. 
-text.tellraw.others.devloper_mode_enabled=§b§oDevloper mode has been enabled.
-text.tellraw.others.devloper_mode_disabled=§b§oDevloper mode has been disabled.
+text.tellraw.others.enabled_dev_mode=§b§oDeveloper mode has been enabled.
+text.tellraw.others.disabled_dev_mode=§b§oDeveloper mode has been disabled.

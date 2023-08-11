@@ -15,3 +15,6 @@ scoreboard objectives add 蓝急迫等级 dummy
 scoreboard objectives add 黄急迫等级 dummy
 scoreboard objectives add 绿急迫等级 dummy
 scoreboard objectives add own_particle_1 dummy
+scoreboard objectives remove emerald_count
+scoreboard objectives add emerald_count_1 dummy
+scoreboard objectives add emerald_count_2 dummy

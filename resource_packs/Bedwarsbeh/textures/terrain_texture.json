@@ -835,6 +835,12 @@
 		"map_light_blue_concrete_block": {
 			"textures": "textures/blocks/map_light_blue_concrete_block"
 		},
+		"map_light_gray_concrete_block": {
+			"textures": "textures/blocks/map_light_gray_concrete_block"
+		},
+		"map_gray_concrete_block": {
+			"textures": "textures/blocks/map_gray_concrete_block"
+		},
 		"map_light_blue_stained_glass_block": {
 			"textures": "textures/blocks/map_light_blue_stained_glass_block"
 		},

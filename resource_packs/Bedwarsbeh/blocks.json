@@ -851,6 +851,28 @@
 		},
 		"sound": "stone"
 	},
+	"bedwars:map_light_gray_concrete_block": {
+		"textures": {
+			"up": "map_light_gray_concrete_block",
+			"down": "map_light_gray_concrete_block",
+			"north": "map_light_gray_concrete_block",
+			"south": "map_light_gray_concrete_block",
+			"west": "map_light_gray_concrete_block",
+			"east": "map_light_gray_concrete_block"
+		},
+		"sound": "stone"
+	},
+	"bedwars:map_gray_concrete_block": {
+		"textures": {
+			"up": "map_gray_concrete_block",
+			"down": "map_gray_concrete_block",
+			"north": "map_gray_concrete_block",
+			"south": "map_gray_concrete_block",
+			"west": "map_gray_concrete_block",
+			"east": "map_gray_concrete_block"
+		},
+		"sound": "stone"
+	},
 	"bedwars:map_light_blue_stained_glass_block": {
 		"textures": {
 			"up": "map_light_blue_stained_glass_block",

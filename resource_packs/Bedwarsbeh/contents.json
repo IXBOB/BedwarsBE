@@ -787,6 +787,12 @@
          "path" : "textures/blocks/map_grass_block/map_grass_block_side.png"
       },
       {
+         "path" : "textures/blocks/purchase_blue_wool_block.png"
+      },
+      {
+         "path" : "textures/blocks/map_gray_concrete_block.png"
+      },
+      {
          "path" : "textures/blocks/map_green_wool.png"
       },
       {
@@ -803,6 +809,12 @@
       },
       {
          "path" : "textures/blocks/map_light_blue_wool.png"
+      },
+      {
+         "path" : "textures/items/develop_source/green_team_helmet.psd"
+      },
+      {
+         "path" : "textures/blocks/map_light_gray_concrete_block.png"
       },
       {
          "path" : "textures/blocks/player_blue_stained_glass.png"
@@ -884,9 +896,6 @@
       },
       {
          "path" : "textures/blocks/purchase_blue_stained_glass_block.png"
-      },
-      {
-         "path" : "textures/blocks/purchase_blue_wool_block.png"
       },
       {
          "path" : "textures/blocks/purchase_bow_block.png"
@@ -995,9 +1004,6 @@
       },
       {
          "path" : "textures/items/develop_source/green_team_chestplate.psd"
-      },
-      {
-         "path" : "textures/items/develop_source/green_team_helmet.psd"
       },
       {
          "path" : "textures/items/develop_source/yellow_team_chestplate.psd"
