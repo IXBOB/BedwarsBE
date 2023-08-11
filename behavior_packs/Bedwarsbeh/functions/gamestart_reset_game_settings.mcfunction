@@ -75,11 +75,16 @@ scoreboard players set @s "红锋利等级" 0
 scoreboard players set @s "蓝锋利等级" 0
 scoreboard players set @s "黄锋利等级" 0
 scoreboard players set @s "绿锋利等级" 0
-#锻炉等级 -> 0
-scoreboard players set @s "红锻炉等级" 0
-scoreboard players set @s "蓝锻炉等级" 0
-scoreboard players set @s "黄锻炉等级" 0
-scoreboard players set @s "绿锻炉等级" 0
+#普通模式锻炉等级 -> 0
+scoreboard players set @s[scores={游戏模式=1}] "红锻炉等级" 0
+scoreboard players set @s[scores={游戏模式=1}] "蓝锻炉等级" 0
+scoreboard players set @s[scores={游戏模式=1}] "黄锻炉等级" 0
+scoreboard players set @s[scores={游戏模式=1}] "绿锻炉等级" 0
+#疾速模式锻炉等级 -> 4
+scoreboard players set @s[scores={游戏模式=2}] "红锻炉等级" 4
+scoreboard players set @s[scores={游戏模式=2}] "蓝锻炉等级" 4
+scoreboard players set @s[scores={游戏模式=2}] "黄锻炉等级" 4
+scoreboard players set @s[scores={游戏模式=2}] "绿锻炉等级" 4
 #陷阱个数 -> 0
 scoreboard players set @s red_trap_sum 0
 scoreboard players set @s blue_trap_sum 0

@@ -21,7 +21,7 @@ execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 execute @s[scores={function_tick_20=10}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 execute @s[scores={function_tick_20=20}] ~~~ execute @a[scores={firework=1}] ~~~ summon minecraft:fireworks_rocket
 #更改游戏模式
-gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider]
+gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider,m=!2]
 #删除背包
 clear @a[scores={"出局观战"=1,respawning=0}]
 #设置重生点

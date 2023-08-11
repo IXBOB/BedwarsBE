@@ -108,7 +108,7 @@ execute @s[scores={starting=1}] ~~~ scoreboard players set * able_to_respawn 0
 #游戏开始初始化
 execute @s[scores={starting=1,"开始倒计时"=-1}] ~~~ function gamestart_reset_game_settings
 #更改游戏模式
-gamemode 2 @a[tag=!insider]
+gamemode 2 @a[tag=!insider,m=!2]
 #游戏开始倒计时
 execute @s[scores={starting=1,"开始倒计时"=0..20,function_tick_20=20},tag=reset_OK] ~~~ function startgame_timer
 #开始倒计时-1
