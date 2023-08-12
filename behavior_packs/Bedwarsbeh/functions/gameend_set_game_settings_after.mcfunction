@@ -63,6 +63,8 @@ scoreboard players set @e[type=armor_stand,name=main] "中已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "保已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "多已删除" 0
 scoreboard players set @e[type=armor_stand,name=main] "商已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
 #删除隐身时间
 scoreboard objectives remove invisible_time
 scoreboard objectives add invisible_time dummy
@@ -75,5 +77,10 @@ execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ execute @e[type=bedwar
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ execute @e[type=bedwars:emerald_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 #清空玩家末影箱
 execute @a ~~~ function clear_enderchest
+#删除队伍实体
+event entity @e[type=bedwars:base_entity_red] bedwars:remove_self
+event entity @e[type=bedwars:base_entity_blue] bedwars:remove_self
+event entity @e[type=bedwars:base_entity_yellow] bedwars:remove_self
+event entity @e[type=bedwars:base_entity_green] bedwars:remove_self
 
 

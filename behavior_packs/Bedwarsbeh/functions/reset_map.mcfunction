@@ -27,12 +27,12 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}]
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "显示" -9
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
 
-#放置获取陷阱信息方块
-execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/place_get_trap_info_block
 #重置商店方块
-execute @e[type=armor_stand,name=main,scores={reseting=1,"商已重置"=0,"重置百分数"=86}] ~~~ function reset_map/shop/assign
+execute @e[type=armor_stand,name=main,scores={reseting=1,"商已重置"=0,"重置百分数"=35}] ~~~ function reset_map/shop/assign
 #重置疾速模式床保护
-execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=86,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect
+execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=35,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect
+#重置告示牌
+execute @s[type=armor_stand,name=main,scores={reseting=1,"牌已重置"=0,"重置百分数"=47}] ~~~ function reset_map/sign/assign
 #重置各队基地
 execute @e[type=armor_stand,name=main,scores={reseting=1,"基已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/assign
 #重置钻岛
@@ -41,3 +41,5 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"钻已重置"=0,"重�
 execute @e[type=armor_stand,name=main,scores={reseting=1,"中已重置"=0,"重置百分数"=50}] ~~~ function reset_map/emerald_island
 #删除多余的结构方块
 execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/delete_multiple_blocks
+#重置队伍实体
+execute @s[type=armor_stand,name=main,scores={reseting=1,"实已重置"=0,"重置百分数"=99}] ~~~ function reset_map/base_entity/main

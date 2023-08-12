@@ -1,5 +1,6 @@
 scoreboard players reset @s "分队"
 scoreboard players reset @s "存活"
+scoreboard players set @s "出局观战" 0
 clear @s
 effect @s clear
 xp -99999l

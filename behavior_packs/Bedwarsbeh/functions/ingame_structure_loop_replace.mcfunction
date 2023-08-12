@@ -1,15 +1,3 @@
-#重复复制红队商店
-structure load bedwars:shop_sign1 -4 185 48 0_degrees none
-structure load bedwars:shop_sign2 4 185 48 0_degrees none
-#重复复制蓝队商店
-structure load bedwars:shop_sign1 48 185 4 90_degrees xz
-structure load bedwars:shop_sign2 48 185 -4 90_degrees xz
-#重复复制黄队商店
-structure load bedwars:shop_sign1 4 185 -57 0_degrees xz
-structure load bedwars:shop_sign2 -4 185 -57 0_degrees xz
-#重复复制绿队商店
-structure load bedwars:shop_sign1 -57 185 -4 90_degrees none
-structure load bedwars:shop_sign2 -57 185 4 90_degrees none
 #复制红队团队升级告示牌
 execute @s[scores={red_trap_sum=1}] ~~~ function structure/shop_trap_slot_left_2_sign_red
 execute @s[scores={red_trap_sum=2}] ~~~ function structure/shop_trap_slot_left_1_sign_red

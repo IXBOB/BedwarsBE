@@ -1,0 +1,58 @@
+{
+  "format_version": "1.16.210",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "bedwars:base_entity_red",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "deals_damage": false
+        }
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:collision_box": {
+        "width": 0,
+        "height": 0
+      },
+      "minecraft:block_sensor": {
+        "sensor_radius": 16,
+        "on_break": [
+          {
+            "block_list": [
+              "darkoak_wall_sign"
+            ],
+            "on_block_broken": "bedwars:reset_red_team_sign"
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "bedwars:remove_self": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events": {
+      "bedwars:remove_self": {
+        "add": {
+          "component_groups": [
+            "bedwars:remove_self"
+          ]
+        }
+      },
+      "bedwars:reset_red_team_sign":{
+        "run_command":{
+          "command":[
+            "function reset_map/sign/red"
+          ]
+        }
+      }
+    }
+  }
+}

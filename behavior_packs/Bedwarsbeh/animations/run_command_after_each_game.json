@@ -38,7 +38,9 @@
 				"15.8": [
 					//function
 					"/function gameend_set_game_settings",
-					"/function gameend_set_game_settings_after"
+					"/function gameend_set_game_settings_after",
+					//出局观战 -> 0
+					"/scoreboard players set @a 出局观战 0"
 				],
 				"17.8": [
 					//tellraw即将重置
