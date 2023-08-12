@@ -22,6 +22,7 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawning"} ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=20,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.subtitle.ingameinfo.respawning_1"} ] }
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0,respawning=1}] ~~~ titleraw @s title { "rawtext" : [{"translate":"text.title.ingameinfo.respawned"} ] }
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=0,respawning=1}] ~~~ titleraw @s subtitle { "rawtext" : [{"translate":"text.empty"} ] }
 
 #设置游戏模式生存
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"重生时间"=..-1,"分队"=1..4,respawning=1}] ~~~ gamemode 0
