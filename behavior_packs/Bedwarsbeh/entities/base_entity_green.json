@@ -49,7 +49,8 @@
       "bedwars:reset_green_team_sign":{
         "run_command":{
           "command":[
-            "function reset_map/sign/green"
+            "function reset_map/sign/green",
+            "execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/refresh_all_team_upgrade_sign"
           ]
         }
       }

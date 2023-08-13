@@ -44,6 +44,10 @@ execute @s[tag=upgrade_red_forge] ~~~ scoreboard players add @e[type=armor_stand
 execute @s[tag=upgrade_blue_forge] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝锻炉等级" 1
 execute @s[tag=upgrade_yellow_forge] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "黄锻炉等级" 1
 execute @s[tag=upgrade_green_forge] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿锻炉等级" 1
+execute @s[tag=upgrade_red_forge] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/red/forge
+execute @s[tag=upgrade_blue_forge] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/blue/forge
+execute @s[tag=upgrade_yellow_forge] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/yellow/forge
+execute @s[tag=upgrade_green_forge] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/green/forge
 tag @s remove upgrade_red_forge
 tag @s remove upgrade_blue_forge
 tag @s remove upgrade_yellow_forge

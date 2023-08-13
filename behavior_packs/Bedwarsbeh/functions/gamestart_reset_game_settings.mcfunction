@@ -2,14 +2,6 @@
 scoreboard players set @e[type=player] "分队" 0
 #分队
 function gamestart_set_team
-#倒计时0 TP红
-tp @a[scores={"分队"=1}] 0 186 53 facing 0 182 0
-#倒计时0 TP蓝
-tp @a[scores={"分队"=2}] 0 186 -53 facing 0 182 0
-#倒计时0 TP黄
-tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
-#倒计时0 TP绿
-tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 #设置生存
 gamemode 0 @a[scores={"分队"=1..4}]
 #清空玩家末影箱
@@ -85,6 +77,10 @@ scoreboard players set @s[scores={游戏模式=2}] "红锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "蓝锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "黄锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "绿锻炉等级" 4
+function refresh_map/sign/red/forge
+function refresh_map/sign/blue/forge
+function refresh_map/sign/yellow/forge
+function refresh_map/sign/green/forge
 #陷阱个数 -> 0
 scoreboard players set @s red_trap_sum 0
 scoreboard players set @s blue_trap_sum 0
@@ -313,6 +309,15 @@ scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] 
 execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
 execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
+
+#TP红
+tp @a[scores={"分队"=1}] 0 186 53 facing 0 182 0
+#TP蓝
+tp @a[scores={"分队"=2}] 0 186 -53 facing 0 182 0
+#TP黄
+tp @a[scores={"分队"=3}] 53 186 0 facing 0 182 0
+#TP绿
+tp @a[scores={"分队"=4}] -53 186 0 facing 0 182 0
 
 #starting -> 0
 scoreboard players set @s starting 0

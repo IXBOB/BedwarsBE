@@ -35,7 +35,5 @@ tag @a remove set.start.players.5
 tag @a remove set.start.players.6
 tag @a remove set.start.players.7
 tag @a remove set.start.players.8
-#重复复制队伍商店告示牌
-execute @s[scores={function_tick_20=20}] ~~~ function ingame_structure_loop_replace
 #给予玩家药水效果(mode=2开局急迫，队伍疯狂矿工的急迫效果)
 function give_effect/assign

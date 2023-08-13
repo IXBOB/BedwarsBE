@@ -1,0 +1,1 @@
+execute @s[scores={"蓝锋利等级"=1}] ~~~ structure load bedwars:sharpness_i_sign -4 185 -55 180_degrees

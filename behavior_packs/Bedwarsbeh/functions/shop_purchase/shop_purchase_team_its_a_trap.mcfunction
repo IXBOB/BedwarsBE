@@ -10,7 +10,7 @@ execute @s[tag=upgrade_yellow_trap] ~~~ tellraw @a[scores={"分队"=3}] { "rawte
 execute @s[tag=upgrade_green_trap] ~~~ tellraw @a[scores={"分队"=4}] { "rawtext" : [ { "selector" :  "@a[tag=want_upgrade_trap]"},{"translate":"text.tellraw.ingameinfo.team_member_purchase_team_its_a_trap"}] }
 playsound note.pling @s ~~~
 scoreboard players add @s own_xp -100
-xp -99L @s
+xp -100L @s
 execute @s[tag=upgrade_red_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,red_trap_sum=0},name=main] red_trap_1_id 3
 execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,blue_trap_sum=0},name=main] blue_trap_1_id 3
 execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players set @e[type=armor_stand,scores={gameSTART=1,yellow_trap_sum=0},name=main] yellow_trap_1_id 3

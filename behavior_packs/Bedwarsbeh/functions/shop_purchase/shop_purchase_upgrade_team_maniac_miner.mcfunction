@@ -28,6 +28,10 @@ execute @s[tag=upgrade_red_maniac_miner] ~~~ scoreboard players add @e[type=armo
 execute @s[tag=upgrade_blue_maniac_miner] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "蓝急迫等级" 1
 execute @s[tag=upgrade_yellow_maniac_miner] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "黄急迫等级" 1
 execute @s[tag=upgrade_green_maniac_miner] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿急迫等级" 1
+execute @s[tag=upgrade_red_maniac_miner] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/red/maniac_miner
+execute @s[tag=upgrade_blue_maniac_miner] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/blue/maniac_miner
+execute @s[tag=upgrade_yellow_maniac_miner] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/yellow/maniac_miner
+execute @s[tag=upgrade_green_maniac_miner] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/green/maniac_miner
 tag @s remove upgrade_red_maniac_miner
 tag @s remove upgrade_blue_maniac_miner
 tag @s remove upgrade_yellow_maniac_miner
