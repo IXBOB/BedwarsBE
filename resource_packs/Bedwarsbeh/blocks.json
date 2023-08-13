@@ -191,6 +191,17 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:get_upgrade_and_trap_help_block": {
+		"textures": {
+			"up": "get_upgrade_and_trap_help_block_up",
+			"down": "get_upgrade_and_trap_help_block_down",
+			"north": "get_upgrade_and_trap_help_block_north",
+			"south": "get_upgrade_and_trap_help_block_south",
+			"west": "get_upgrade_and_trap_help_block_west",
+			"east": "get_upgrade_and_trap_help_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:purchase_team_miner_fatigue_trap_block": {
 		"textures": {
 			"up": "purchase_team_miner_fatigue_trap_block_up",

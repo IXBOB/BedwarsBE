@@ -310,6 +310,24 @@
 		"get_trap_info_block_west": {												//WEST
 			"textures": "textures/blocks/get_trap_info_block"
 		},
+		"get_upgrade_and_trap_help_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"get_upgrade_and_trap_help_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"get_upgrade_and_trap_help_block_north": {
+			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
+		},
+		"get_upgrade_and_trap_help_block_east": {
+			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
+		},
+		"get_upgrade_and_trap_help_block_south": {
+			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
+		},
+		"get_upgrade_and_trap_help_block_west": {												//WEST
+			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
+		},
 		"purchase_upgrade_team_sharpness_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},
