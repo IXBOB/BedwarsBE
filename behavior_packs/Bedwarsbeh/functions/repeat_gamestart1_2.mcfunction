@@ -1,5 +1,5 @@
 #开始游戏后大厅玩家抗性提升
-execute @a[tag=in_lobby] ~~~ function give_effect/gamestart1_2_lobby_effect
+execute @a[scores={in_lobby=1}] ~~~ function give_effect/gamestart1_2_lobby_effect
 #游戏开始玩家头顶显示血量
 scoreboard objectives setdisplay belowname health
 

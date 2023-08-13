@@ -745,6 +745,9 @@
          "path" : "textures/blocks/get_trap_info_block.png"
       },
       {
+         "path" : "textures/blocks/get_upgrade_and_trap_help_block.png"
+      },
+      {
          "path" : "textures/items/blue_team_boots.png"
       },
       {

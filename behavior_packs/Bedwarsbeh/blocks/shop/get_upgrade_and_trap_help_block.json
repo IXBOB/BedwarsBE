@@ -2,19 +2,19 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:get_upgrade_help_block"
+			"identifier": "bedwars:get_upgrade_and_trap_help_block"
 		},
 		"components": {
 			"minecraft:destroy_time": 99999,
 			"minecraft:on_interact":{
-				"event" : "bedwars:get_upgrade_help"
+				"event" : "bedwars:get_upgrade_and_trap_help"
 			}
 		},
 		"events": {
-			"bedwars:get_upgrade_help": {
+			"bedwars:get_upgrade_and_trap_help": {
 				"run_command":{
 				  "command":[
-					"function shop_get_upgrade_and_trap_help"
+					"function shop_get_upgrade_and_trap_help_page1"
 					],
 					"target": "player"
 				  }
