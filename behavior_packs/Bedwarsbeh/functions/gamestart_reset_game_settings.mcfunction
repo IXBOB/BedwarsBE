@@ -77,10 +77,10 @@ scoreboard players set @s[scores={游戏模式=2}] "红锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "蓝锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "黄锻炉等级" 4
 scoreboard players set @s[scores={游戏模式=2}] "绿锻炉等级" 4
-function refresh_map/sign/red/forge
-function refresh_map/sign/blue/forge
-function refresh_map/sign/yellow/forge
-function refresh_map/sign/green/forge
+function refresh_map/game/sign/red/forge
+function refresh_map/game/sign/blue/forge
+function refresh_map/game/sign/yellow/forge
+function refresh_map/game/sign/green/forge
 #陷阱个数 -> 0
 scoreboard players set @s red_trap_sum 0
 scoreboard players set @s blue_trap_sum 0
@@ -309,6 +309,9 @@ scoreboard players set @e[type=armor_stand,name=main,scores={"游戏模式"=2}] 
 execute @s[scores={"显示事件"=0,"游戏模式"=1}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_1_event_1 "显示" 120
 execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players set text.scoreboard.ingameinfo.mode_2_event_1 "显示" 900
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
+
+#复制大厅告示牌
+function refresh_map/lobby/main
 
 #TP红
 tp @a[scores={"分队"=1}] 0 186 53 facing 0 182 0

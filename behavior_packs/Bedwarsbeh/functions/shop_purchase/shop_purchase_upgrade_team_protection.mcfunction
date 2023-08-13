@@ -47,10 +47,10 @@ execute @s[tag=upgrade_yellow_protection] ~~~ scoreboard players add @e[type=arm
 execute @s[tag=upgrade_green_protection] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿保护等级" 1
 execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ execute @a[tag=want_upgrade_protection] ~~~ function shop_purchase/upgrade_team/upgrade_team_protection
 execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ execute @a[tag=want_upgrade_protection] ~~~ function shop_purchase/upgrade_team/upgrade_team_protection_old2
-execute @s[tag=upgrade_red_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/red/protection
-execute @s[tag=upgrade_blue_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/blue/protection
-execute @s[tag=upgrade_yellow_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/yellow/protection
-execute @s[tag=upgrade_green_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/green/protection
+execute @s[tag=upgrade_red_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/red/protection
+execute @s[tag=upgrade_blue_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/blue/protection
+execute @s[tag=upgrade_yellow_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/yellow/protection
+execute @s[tag=upgrade_green_protection] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/green/protection
 tag @s remove want_upgrade_protection
 tag @s remove upgrade_red_protection
 tag @s remove upgrade_blue_protection

@@ -17,10 +17,10 @@ execute @s[tag=upgrade_yellow_sharpness] ~~~ scoreboard players add @e[type=armo
 execute @s[tag=upgrade_green_sharpness] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] "绿锋利等级" 1
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,game_version=1}] ~~~ execute @a[tag=want_upgrade_sharpness] ~~~ function shop_purchase/upgrade_team/upgrade_team_sharpness
 execute @e[type=armor_stand,name=main,scores={gameSTART=1,game_version=2}] ~~~ execute @a[tag=want_upgrade_sharpness] ~~~ function shop_purchase/upgrade_team/upgrade_team_sharpness_old2
-execute @s[tag=upgrade_red_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/red/sharpness
-execute @s[tag=upgrade_blue_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/blue/sharpness
-execute @s[tag=upgrade_yellow_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/yellow/sharpness
-execute @s[tag=upgrade_green_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/green/sharpness
+execute @s[tag=upgrade_red_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/red/sharpness
+execute @s[tag=upgrade_blue_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/blue/sharpness
+execute @s[tag=upgrade_yellow_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/yellow/sharpness
+execute @s[tag=upgrade_green_sharpness] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/green/sharpness
 tag @s remove want_upgrade_sharpness
 tag @s remove upgrade_red_sharpness
 tag @s remove upgrade_blue_sharpness

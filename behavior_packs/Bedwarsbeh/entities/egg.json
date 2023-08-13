@@ -64,9 +64,23 @@
           "max_dropped_ticks": 7,
           "use_motion_prediction_hints": true
         }
+      },
+      "minecraft:timer": {
+        "time": 0.05,
+        "time_down_event": {
+          "event": "bedwars:build_bridge"
+        }
       }
     },
     "events": {
+      "bedwars:build_bridge": {
+        "run_command": {
+          "command": [
+            "execute @s[type=egg,x=-63,y=171,z=-63,dx=126,dy=44,dz=126] ~~~ function bridge_egg"
+          ],
+          "target": "self"
+        }
+      },
       "bedwars:remove_self": {
         "add": {
           "component_groups": [

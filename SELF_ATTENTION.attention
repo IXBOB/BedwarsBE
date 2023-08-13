@@ -67,8 +67,6 @@ ATTENTION:
 
 1.add tag creator_info相关功能
    (更新地图时不要忘记更新creator_info.mcfunction中写的version)
-2.重做队伍升级(陷阱改掉,添加铁锻炉之类的功能)
-3.玩家背包菜单拿起物品检测使用animation molang
 
 
 

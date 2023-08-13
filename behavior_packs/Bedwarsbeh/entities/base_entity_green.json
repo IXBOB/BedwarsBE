@@ -29,6 +29,18 @@
               "darkoak_wall_sign"
             ],
             "on_block_broken": "bedwars:reset_green_team_sign"
+          },
+          {
+            "block_list": [
+              "chest"
+            ],
+            "on_block_broken": "bedwars:reset_green_chest"
+          },
+          {
+            "block_list": [
+              "ender_chest"
+            ],
+            "on_block_broken": "bedwars:reset_green_ender_chest"
           }
         ]
       }
@@ -50,7 +62,21 @@
         "run_command":{
           "command":[
             "function reset_map/sign/green",
-            "execute @e[type=armor_stand,name=main] ~~~ function refresh_map/sign/refresh_all_team_upgrade_sign"
+            "execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/refresh_all_team_upgrade_sign"
+          ]
+        }
+      },
+      "bedwars:reset_green_chest":{
+        "run_command":{
+          "command":[
+            "structure load bedwars:green_team_chest -58 185 1"
+          ]
+        }
+      },
+      "bedwars:reset_green_ender_chest":{
+        "run_command":{
+          "command":[
+            "structure load bedwars:green_team_enderchest -58 185 -1"
           ]
         }
       }
