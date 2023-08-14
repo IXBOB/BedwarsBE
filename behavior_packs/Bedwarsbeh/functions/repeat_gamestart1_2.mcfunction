@@ -23,5 +23,3 @@ tag @a remove set.start.players.7
 tag @a remove set.start.players.8
 #给予玩家药水效果(mode=2开局急迫，队伍疯狂矿工的急迫效果)
 function give_effect/assign
-#清除背包中的木箱子
-clear @a chest

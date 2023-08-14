@@ -3,6 +3,8 @@ clear @a iron_ingot
 clear @a gold_ingot
 clear @a diamond
 clear @a emerald
+#删除背包内的木箱子
+clear @a chest
 #删除出界的箭
 execute @e[type=arrow] ~ ~ ~ detect ~ 0 ~ deny 0 kill @s
 #火焰弹出界删除

@@ -1,18 +1,6 @@
 {
    "content" : [
       {
-         "path" : "attachables/green_team_chestplate.json"
-      },
-      {
-         "path" : "animation_controllers/revolve.json"
-      },
-      {
-         "path" : "attachables/blue_team_helmet_protection_ii.json"
-      },
-      {
-         "path" : "animations/bedwars_player_invisible.animation.json"
-      },
-      {
          "path" : "texts/bg_BG.lang"
       },
       {
@@ -23,6 +11,21 @@
       },
       {
          "path" : "animations/generate_point_revolve.animation.json"
+      },
+      {
+         "path" : "attachables/green_team_chestplate.json"
+      },
+      {
+         "path" : "animation_controllers/revolve.json"
+      },
+      {
+         "path" : "attachables/yellow_team_chestplate_protection_iii.json"
+      },
+      {
+         "path" : "attachables/iron_leggings_protection_ii.json"
+      },
+      {
+         "path" : "attachables/blue_team_chestplate.json"
       },
       {
          "path" : "textures/blocks/map_dirt_block.png"
@@ -47,9 +50,6 @@
       },
       {
          "path" : "attachables/blue_team_boots_protection_iv.json"
-      },
-      {
-         "path" : "attachables/blue_team_chestplate.json"
       },
       {
          "path" : "textures/items/iron_boots.png"
@@ -101,6 +101,9 @@
       },
       {
          "path" : "attachables/blue_team_helmet_protection_i.json"
+      },
+      {
+         "path" : "attachables/blue_team_helmet_protection_ii.json"
       },
       {
          "path" : "attachables/chainmail_boots_protection_iv.json"
@@ -302,12 +305,6 @@
       },
       {
          "path" : "attachables/iron_leggings_protection_i.json"
-      },
-      {
-         "path" : "attachables/yellow_team_chestplate_protection_iii.json"
-      },
-      {
-         "path" : "attachables/iron_leggings_protection_ii.json"
       },
       {
          "path" : "models/entity/develop_source/diamond_point_revolve.geo.bbmodel"
@@ -709,6 +706,9 @@
          "path" : "texts/pl_PL.lang"
       },
       {
+         "path" : "textures/blocks/lobby_button_select_last_block.png"
+      },
+      {
          "path" : "texts/pt_BR.lang"
       },
       {
@@ -755,6 +755,12 @@
       },
       {
          "path" : "textures/blocks/green_bed_head.png"
+      },
+      {
+         "path" : "textures/blocks/iron_block_button.png"
+      },
+      {
+         "path" : "textures/blocks/lobby_button_select_next_block.png"
       },
       {
          "path" : "textures/items/diamond_axe.png"

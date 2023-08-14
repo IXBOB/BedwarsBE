@@ -1,0 +1,1 @@
+structure load bedwars:lobby -223 192 -223

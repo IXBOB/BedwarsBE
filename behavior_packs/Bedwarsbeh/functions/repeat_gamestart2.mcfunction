@@ -10,9 +10,6 @@ execute @a[scores={"分队"=3,respawning=0}] ~~~ detect ~ ~ ~ structure_void 0 t
 execute @a[scores={"分队"=4,respawning=0}] ~~~ detect ~ ~ ~ structure_void 0 tp @s -53 186 0 facing 0 182 0
 #重生中的玩家设置respawning 0
 execute @a[scores={"分队"=1..4,respawning=1}] ~~~ scoreboard players set @s respawning 0
-#gamestart=2,复制告示牌游戏未开始
-structure load bedwars:lobby_wait_start_sign -200 200 -204
-setblock -200 201 -205 air
 #玩家隐身
 execute @e[type=armor_stand,name=main,scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
 #大厅actionbar

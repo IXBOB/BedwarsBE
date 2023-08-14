@@ -1,0 +1,38 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:lobby_button_select_map_next_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact": {
+				"event": "bedwars:lobby_button_select_map_next"
+			}
+		},
+		"events": {
+			"bedwars:lobby_button_select_map_next": {
+				"run_command": {
+					"command": [
+						"tag @s add want_select_next_map",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=!op] ~~~ tellraw @s { \"rawtext\":[{\"translate\":\"text.tellraw.waitinfo.change_map_denied_op\"}]}",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=!op] ~~~ playsound mob.endermen.portal @s",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ scoreboard players add @e[type=armor_stand,name=main] 地图选择 1",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ playsound random.click @s",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=5..}] ~~~ scoreboard players set @s 地图选择 0",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=0}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_map_success_0\"} ] }",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=1}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_map_success_1\"} ] }",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=2}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_map_success_2\"} ] }",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=3}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_map_success_3\"} ] }",
+						"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,地图选择=4}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_map_success_4\"} ] }",
+						"execute @a[tag=want_select_next_map] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ function refresh_map/lobby/change_map",
+						"execute @e[type=armor_stand,name=main,tag=reset_OK] ~~~ execute @a[tag=want_select_next_map] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.change_map_denied_has_reset\"} ] }",
+						"execute @e[type=armor_stand,name=main,tag=reset_OK] ~~~ execute @a[tag=want_select_next_map] ~~~ playsound mob.endermen.portal @s",
+						"tag @s remove want_select_next_map"
+					],
+					"target": "player"
+				}
+			}
+		}
+	}
+}

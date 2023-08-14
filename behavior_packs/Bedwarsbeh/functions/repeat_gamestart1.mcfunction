@@ -10,27 +10,24 @@ execute @e[type=bedwars:diamond_point_revolve] ~~~ tag @a[r=7] add near_diamond
 tag @a remove near_emerald
 execute @e[type=bedwars:emerald_point_revolve] ~~~ tag @a[r=7] add near_emerald
 #复制计分板数值给玩家
-scoreboard players operation @a "钻石等级" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "钻石等级"
-scoreboard players operation @a "钻石time" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "钻石time"
-scoreboard players operation @a "绿宝石time" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿宝石time"
-scoreboard players operation @a "绿宝石等级" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿宝石等级"
-scoreboard players operation @a game.time.sec.1 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.sec.1
-scoreboard players operation @a game.time.sec.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.sec.2
-scoreboard players operation @a game.time.min.1 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.1
-scoreboard players operation @a game.time.min.2 = @e[type=armor_stand,name=main,scores={gameSTART=1}] game.time.min.2
-scoreboard players operation @a "红床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "红床存活"
-scoreboard players operation @a "蓝床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "蓝床存活"
-scoreboard players operation @a "黄床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "黄床存活"
-scoreboard players operation @a "绿床存活" = @e[type=armor_stand,name=main,scores={gameSTART=1}] "绿床存活"
+scoreboard players operation @a "钻石等级" = @s "钻石等级"
+scoreboard players operation @a "钻石time" = @s "钻石time"
+scoreboard players operation @a "绿宝石time" = @s "绿宝石time"
+scoreboard players operation @a "绿宝石等级" = @s "绿宝石等级"
+scoreboard players operation @a game.time.sec.1 = @s game.time.sec.1
+scoreboard players operation @a game.time.sec.2 = @s game.time.sec.2
+scoreboard players operation @a game.time.min.1 = @s game.time.min.1
+scoreboard players operation @a game.time.min.2 = @s game.time.min.2
+scoreboard players operation @a "红床存活" = @s "红床存活"
+scoreboard players operation @a "蓝床存活" = @s "蓝床存活"
+scoreboard players operation @a "黄床存活" = @s "黄床存活"
+scoreboard players operation @a "绿床存活" = @s "绿床存活"
 #无敌时间
-execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players add @s "无敌时间" -1
-execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=20..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ effect @s instant_health 1 255 true
-execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.invincibility_over"} ] }
-execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=0},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ scoreboard players set @s "无敌时间" -1
+execute @a[scores={"分队"=1..4,"存活"=1,"无敌时间"=1..},x=-63,y=90,z=-63,dx=126,dy=114,dz=126] ~~~ function invincibility_time
 #检测胜利
-function test_win
+execute @s[scores={function_tick_5=5}] ~~~ function test_win
 #大厅actionbar
-execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
+execute @s[scores={function_tick_5=5}] ~~~ execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 #玩家隐身
 execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
 #检测队伍剩余人数并显示
@@ -52,7 +49,7 @@ execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @a[scores={"分
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4}] "存活" 1
 #更改游戏模式
 gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,able_to_respawn=1},tag=!insider,m=!0]
-gamemode 2 @a[x=-218,y=193,z=-218,dx=36,dy=50,dz=40,tag=!insider,m=!2]
+gamemode 2 @a[scores={in_lobby=1},tag=!insider,m=!2]
 #红队队伍actionbar
 execute @a[scores={"分队"=1,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.information_line1_red"},{ "text" : "\n" },{"translate":"text.actionbar.ingameinfo.information_line2_red"},{ "selector" :  "@a[scores={分队=1,存活=1,respawning=0,team_id=1..}]"},{"text":" §7"},{ "selector" :  "@a[scores={分队=1,respawning=1,team_id=1..}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line3"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line4"},{"score":{"name":"@s","objective":"击杀数"}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_1"},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_2"},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"translate":"text.actionbar.ingameinfo.information_line5_emerald_1"},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_emerald_2"},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}}]}}]}
 #蓝队队伍actionbar
@@ -67,8 +64,6 @@ titleraw @a[rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1,"存活"=!1
 execute @s[scores={function_tick_20=20}] ~~~ clear @a[scores={"出局观战"=1,respawning=0}]
 #设置重生点
 spawnpoint @a[scores={"分队"=1..4}] 0 210 0
-#增加并计算游戏时间
-execute @s[scores={function_tick_20=20}] ~~~ function add_and_calculate_game_time
 #抬头返回功能
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=90,rxm=-89,scores={able_to_respawn=0,"出局观战"=1}] ~~~ scoreboard players reset @s "抬头返回time"
 execute @a[x=-63,y=80,z=-63,dx=127,dy=200,dz=127,rx=-89,rxm=-90,scores={able_to_respawn=0,"出局观战"=1}] ~~~ function headup_back_to_lobby
@@ -104,8 +99,6 @@ function test_game_uid/test_game_uid
 function delete_non-compliant_item_and_entity
 #杀死掉入虚空的玩家
 execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
-#大厅放置按钮
-execute @s[scores={function_tick_20=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
 #检测游戏开始时按钮被按下并重置按钮(观战)
 execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]
 execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "存活" 0

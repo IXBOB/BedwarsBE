@@ -4,6 +4,52 @@
 		1,
 		0
 	],
+	"bedwars:lobby_button_select_map_next_block": {
+		"textures": {
+			"up": "lobby_button_select_next_block_up",
+			"down": "lobby_button_select_next_block_down",
+			"north": "lobby_button_select_next_block_north",
+			"south": "lobby_button_select_next_block_south",
+			"west": "lobby_button_select_next_block_west",
+			"east": "lobby_button_select_next_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:lobby_button_select_map_last_block": {
+		"textures": {
+			"up": "lobby_button_select_last_block_up",
+			"down": "lobby_button_select_last_block_down",
+			"north": "lobby_button_select_last_block_north",
+			"south": "lobby_button_select_last_block_south",
+			"west": "lobby_button_select_last_block_west",
+			"east": "lobby_button_select_last_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:lobby_button_select_mode_next_block": {
+		"textures": {
+			"up": "lobby_button_select_next_block_up",
+			"down": "lobby_button_select_next_block_down",
+			"north": "lobby_button_select_next_block_north",
+			"south": "lobby_button_select_next_block_south",
+			"west": "lobby_button_select_next_block_west",
+			"east": "lobby_button_select_next_block_east"
+		},
+		"sound": "wood"
+	},
+	"bedwars:lobby_button_select_mode_last_block": {
+		"textures": {
+			"up": "lobby_button_select_last_block_up",
+			"down": "lobby_button_select_last_block_down",
+			"north": "lobby_button_select_last_block_north",
+			"south": "lobby_button_select_last_block_south",
+			"west": "lobby_button_select_last_block_west",
+			"east": "lobby_button_select_last_block_east"
+		},
+		"sound": "wood"
+	},
+
+
 	"bedwars:purchase_red_wool_block": {
 		"textures": {
 			"up": "purchase_red_wool_block_up",

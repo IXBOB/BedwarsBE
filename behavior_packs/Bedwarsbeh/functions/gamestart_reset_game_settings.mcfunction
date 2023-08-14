@@ -313,7 +313,7 @@ execute @s[scores={"显示事件"=0,"游戏模式"=2}] ~~~ scoreboard players se
 scoreboard players set @s[scores={"显示事件"=0}] "显示事件" 1
 
 #复制大厅告示牌
-function refresh_map/lobby/main
+function refresh_map/lobby/start_game
 
 #TP红
 tp @a[scores={"分队"=1}] 0 186 53 facing 0 182 0

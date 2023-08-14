@@ -4,6 +4,44 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
+		"lobby_button_select_next_block_up": {
+			"textures": "textures/blocks/iron_block_button"
+		},
+		"lobby_button_select_next_block_down": {
+			"textures": "textures/blocks/iron_block_button"
+		},
+		"lobby_button_select_next_block_north": {
+			"textures": "textures/blocks/lobby_button_select_next_block"
+		},
+		"lobby_button_select_next_block_east": {
+			"textures": "textures/blocks/lobby_button_select_next_block"
+		},
+		"lobby_button_select_next_block_south": {
+			"textures": "textures/blocks/lobby_button_select_next_block"
+		},
+		"lobby_button_select_next_block_west": {												//WEST
+			"textures": "textures/blocks/lobby_button_select_next_block"
+		},
+		"lobby_button_select_last_block_up": {
+			"textures": "textures/blocks/iron_block_button"
+		},
+		"lobby_button_select_last_block_down": {
+			"textures": "textures/blocks/iron_block_button"
+		},
+		"lobby_button_select_last_block_north": {
+			"textures": "textures/blocks/lobby_button_select_last_block"
+		},
+		"lobby_button_select_last_block_east": {
+			"textures": "textures/blocks/lobby_button_select_last_block"
+		},
+		"lobby_button_select_last_block_south": {
+			"textures": "textures/blocks/lobby_button_select_last_block"
+		},
+		"lobby_button_select_last_block_west": {												//WEST
+			"textures": "textures/blocks/lobby_button_select_last_block"
+		},
+
+
 		"purchase_red_wool_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},

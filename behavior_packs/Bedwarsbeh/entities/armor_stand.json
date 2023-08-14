@@ -61,15 +61,16 @@
       "minecraft:timer": {
         "time": 1,
         "time_down_event": {
-          "event": "bedwars:ore_spawner"
+          "event": "bedwars:1s_time_down"
         }
       }
     },
     "events": {
-      "bedwars:ore_spawner": {
+      "bedwars:1s_time_down": {
         "run_command": {
           "command": [
-            "execute @s[name=main,scores={gameSTART=1}] ~~~ function ore_spawner"
+            "execute @s[name=main,scores={gameSTART=1}] ~~~ function ore_spawner",
+            "execute @s[name=main,scores={gameSTART=1}] ~~~ function add_and_calculate_game_time"
           ],
           "target": "self"
         }

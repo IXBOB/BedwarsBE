@@ -40,7 +40,10 @@
 					"/function gameend_set_game_settings",
 					"/function gameend_set_game_settings_after",
 					//出局观战 -> 0
-					"/scoreboard players set @a 出局观战 0"
+					"/scoreboard players set @a 出局观战 0",
+					//刷新大厅告示牌
+					"/function refresh_map/lobby/change_map",
+					"/function refresh_map/lobby/change_mode"
 				],
 				"17.8": [
 					//tellraw即将重置

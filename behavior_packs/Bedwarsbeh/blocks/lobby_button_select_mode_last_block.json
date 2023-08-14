@@ -1,0 +1,37 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:lobby_button_select_mode_last_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact":{
+				"event" : "bedwars:lobby_button_select_mode_last"
+			}
+		},
+		"events": {
+			"bedwars:lobby_button_select_mode_last": {
+				"run_command":{
+				  "command":[
+					"tag @s add want_select_last_mode",
+                    "execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=!op] ~~~ tellraw @s { \"rawtext\":[{\"translate\":\"text.tellraw.waitinfo.change_mode_denied_op\"}]}",
+					"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=!op] ~~~ playsound mob.endermen.portal @s",
+                    "execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=op] ~~~ scoreboard players add @e[type=armor_stand,name=main] 游戏模式 -1",
+					"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=op] ~~~ playsound random.click @s",
+                    "execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,游戏模式=..0}] ~~~ scoreboard players set @s 游戏模式 2",
+                    "execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,游戏模式=1}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_mode_success_1\"} ] }",
+                    "execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=0,游戏模式=2}] ~~~ tellraw @a { \"rawtext\" : [ {\"translate\":\"text.tellraw.waitinfo.change_mode_success_2\"} ] }",
+					"execute @a[tag=want_select_last_mode] ~~~ execute @s[tag=op] ~~~ execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ function refresh_map/lobby/change_mode",
+					"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ playsound random.click @s[tag=op]",
+					"execute @e[type=armor_stand,name=main,tag=!reset_OK,scores={reseting=0}] ~~~ execute @a[tag=want_select_last_mode] ~~~ playsound mob.endermen.portal @s[tag=!op]",
+					"execute @e[type=armor_stand,name=main,tag=reset_OK] ~~~ execute @a[tag=want_select_last_mode] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.waitinfo.change_mode_denied_has_reset\"} ] }",
+					"execute @e[type=armor_stand,name=main,tag=reset_OK] ~~~ execute @a[tag=want_select_last_mode] ~~~ playsound mob.endermen.portal @s",
+					"tag @s remove want_select_last_mode"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}
