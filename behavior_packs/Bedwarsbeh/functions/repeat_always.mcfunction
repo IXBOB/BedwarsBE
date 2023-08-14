@@ -34,9 +34,6 @@ execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armo
 execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,x=-198,y=197,z=-203,dx=2,dy=6,dz=2] ~~~ tp @s ~ ~0.02 ~
 execute @e[type=armor_stand,x=-197,y=202,z=-202,r=1] ~~~ event entity @s bedwars:remove_self
 
-#跑酷终点粒子效果
-execute @s[scores={function_tick_20=20}] ~~~ particle minecraft:totem_particle -203 223 -192
-
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
