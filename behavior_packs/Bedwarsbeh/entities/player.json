@@ -433,7 +433,6 @@
             //隐身失效
             "execute @s[scores={invisible_time=1..}] ~~~ scoreboard players set @s invisible_time 0",
             "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true",
-            "execute @s[scores={invisible_time=1..}] ~~~ playanimation @s animation.bedwars_player_invisible default 0",
             //*
             "function get_xp_and_coin",
             "scoreboard players reset * got_xp",
@@ -459,8 +458,7 @@
             //隐身失效
             "execute @s[scores={invisible_time=1..}] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.invisible_expired\"} ] }",
             "execute @s[scores={invisible_time=1..}] ~~~ scoreboard players set @s invisible_time 0",
-            "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true",
-            "execute @s[scores={invisible_time=1..}] ~~~ playanimation @s animation.bedwars_player_invisible default 0"
+            "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true"
           ]
         }
       },

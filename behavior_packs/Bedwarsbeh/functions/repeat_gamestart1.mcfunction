@@ -104,8 +104,7 @@ function test_game_uid/test_game_uid
 function delete_non-compliant_item_and_entity
 #杀死掉入虚空的玩家
 execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
-#复制告示牌游戏已开始
-execute @s[scores={function_tick_20=20}] ~~~ structure load bedwars:lobby_click_watch_sign -200 200 -204
+#大厅放置按钮
 execute @s[scores={function_tick_20=20}] ~~~ setblock -200 201 -205 polished_blackstone_button 1
 #检测游戏开始时按钮被按下并重置按钮(观战)
 execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]

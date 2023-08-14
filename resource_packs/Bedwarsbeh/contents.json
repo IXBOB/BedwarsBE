@@ -637,6 +637,9 @@
          "path" : "pack_icon.png"
       },
       {
+         "path" : "render_controllers/player_armor.render_controller.json"
+      },
+      {
          "path" : "textures/blocks/map_dark_prismarine_block.png"
       },
       {
@@ -1088,6 +1091,9 @@
       },
       {
          "path" : "textures/models/armor/green_team_armor_main.png"
+      },
+      {
+         "path" : "textures/models/armor/invisible.png"
       },
       {
          "path" : "textures/models/armor/red_team_armor_legs.png"

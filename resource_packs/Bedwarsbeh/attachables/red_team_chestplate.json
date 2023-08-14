@@ -10,7 +10,8 @@
 			},
 			"textures": {
 				// This is our CUSTOM armor texture we need to make next
-				"default": "textures/models/armor/red_team_armor_main",
+				"visible": "textures/models/armor/red_team_armor_main",
+				"invisible" : "textures/models/armor/invisible",
 				// This texture doesn't actually exist in our RP
 				// but it will blow up without it so leave it in
 				"enchanted": "textures/misc/enchanted_item_glint"
@@ -24,7 +25,7 @@
 				"parent_setup": "variable.chest_layer_visible = 0.0;"
 			},
 			// We tell it what controller to use (default armor one)
-			"render_controllers": ["controller.render.armor"]
+			"render_controllers": ["controller.render.bedwars.player_armor"]
 		}
 	}
 }
