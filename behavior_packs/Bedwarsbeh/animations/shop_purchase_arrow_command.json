@@ -5,7 +5,7 @@
 			"animation_length": 0.1,
 			"loop": false,
 			"timeline": {
-				"0.1": [
+				"0.0": [
 					"/execute @a[tag=shop_purchase_arrow] ~~~ function shop_purchase/shop_purchase_arrow",
 					"/tag @a[tag=shop_purchase_arrow] remove shop_purchase_arrow",
 					"/event entity @s bedwars:remove_self"

@@ -65,6 +65,7 @@ scoreboard players set @e[type=armor_stand,name=main] "多已删除" 0
 scoreboard players set @e[type=armor_stand,name=main] "商已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
+scoreboard players set @e[type=armor_stand,name=main] "箱已重置" 0
 #删除隐身时间
 scoreboard objectives remove invisible_time
 scoreboard objectives add invisible_time dummy

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.get_upgrade_and_trap_help": {
+			"animation_length": 1.0,
+			"loop": false,
+			"timeline": {
+				"0.0":[
+					"/scoreboard players operation @s help_uid_cache = @a[tag=get_page2_help_ready] uid"
+				],
+				"1.0": [
+					"/execute @a[scores={分队=1..4}] ~~~ scoreboard players operation @s help_uid_cache = @s uid",
+					"/scoreboard players operation @a[scores={分队=1..4}] help_uid_cache -= @s help_uid_cache",
+					"/tag @a[scores={help_uid_cache=0}] remove get_page2_help_ready",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

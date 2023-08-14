@@ -1,3 +1,5 @@
+#assign_team_id -> 0
+scoreboard players set @s assign_team_id 0
 #分队
 scoreboard players set @e[type=player] "分队" 0
 #分队

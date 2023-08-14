@@ -33,6 +33,8 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"商已重置"=0,"重�
 execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重置百分数"=35,"游戏模式"=2}] ~~~ function reset_map/rush_bed_protect
 #重置告示牌
 execute @s[type=armor_stand,name=main,scores={reseting=1,"牌已重置"=0,"重置百分数"=47}] ~~~ function reset_map/sign/assign
+#重置箱子
+execute @s[type=armor_stand,name=main,scores={reseting=1,"牌已重置"=0,"重置百分数"=48}] ~~~ function reset_map/chest/assign
 #重置各队基地
 execute @e[type=armor_stand,name=main,scores={reseting=1,"基已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/assign
 #重置钻岛

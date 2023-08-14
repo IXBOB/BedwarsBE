@@ -5,7 +5,7 @@
 			"animation_length": 0.1,
 			"loop": false,
 			"timeline": {
-				"0.1": [
+				"0.0": [
 					"/execute @e[type=armor_stand,name=main,scores={red_trap_sum=..2}] ~~~ execute @a[tag=shop_purchase_team_counter-offensive,scores={分队=1}] ~~~ function shop_purchase/shop_purchase_team_counter-offensive",
 					"/execute @e[type=armor_stand,name=main,scores={blue_trap_sum=..2}] ~~~ execute @a[tag=shop_purchase_team_counter-offensive,scores={分队=2}] ~~~ function shop_purchase/shop_purchase_team_counter-offensive",
 					"/execute @e[type=armor_stand,name=main,scores={yellow_trap_sum=..2}] ~~~ execute @a[tag=shop_purchase_team_counter-offensive,scores={分队=3}] ~~~ function shop_purchase/shop_purchase_team_counter-offensive",

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17.30",
+    "animation_controllers": {
+      "controller.animation.command.get_upgrade_and_trap_help": {
+        "initial_state": "run_timer",
+        "states": {
+          "run_timer": {
+            "animations": [
+              "get_upgrade_and_trap_help"
+           ]
+         }
+        }
+     }
+   }
+}

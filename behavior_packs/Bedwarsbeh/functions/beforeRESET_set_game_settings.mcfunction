@@ -53,6 +53,8 @@ scoreboard players reset * "§b蓝队"
 scoreboard players reset * "§e黄队"
 #reset§b绿队
 scoreboard players reset * "§a绿队"
+#reset team_id
+scoreboard players reset * team_id
 #reset绿宝石time
 scoreboard players set @e[type=armor_stand,name=main] "绿宝石time" 40
 #reset钻石time

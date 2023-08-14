@@ -14,7 +14,10 @@
 			"bedwars:get_upgrade_and_trap_help": {
 				"run_command":{
 				  "command":[
-					"function shop_get_upgrade_and_trap_help_page1"
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!get_page2_help_ready] ~~~ function shop_get_upgrade_and_trap_help_page1",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=get_page2_help_ready] ~~~ function shop_get_upgrade_and_trap_help_page2",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!get_page2_help_ready] ~~~ summon bedwars:get_upgrade_and_trap_help_command",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!get_page2_help_ready] ~~~ tag @s add get_page2_help_ready"
 					],
 					"target": "player"
 				  }
