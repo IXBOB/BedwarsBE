@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:menu2_particle_heart_particle_purchase"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "apple"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

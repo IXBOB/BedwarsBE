@@ -157,14 +157,17 @@ item.bedwars:menu_back=§eBack
 item.bedwars:menu1_particle_item=§cSelect particles §7[click / move to select]
 item.bedwars:menu1_op_disabled_item=§6OP options §cYou don't have permission to open this. §7Enter §o/tag @s add op §r§7 if you are the map operator.
 item.bedwars:menu1_op_enabled_item=§6OP options §7[click / move to select]
-item.bedwars:menu2_particle_fire_click=§6FIRE §7[click / move to select]
-item.bedwars:menu2_particle_fire_disabled=§6FIRE §c[require 10 levels]
-item.bedwars:menu2_particle_fire_selected=§6FIRE §a[selected]
+item.bedwars:menu2_particle_fire_click=§6FIRE particle §7[click / move to select]
+item.bedwars:menu2_particle_fire_disabled=§6FIRE particle §c[require 10 levels]
+item.bedwars:menu2_particle_fire_selected=§6FIRE particle §a[selected]
 item.bedwars:menu2_particle_none_click=§cNONE §7[click / move to select]
 item.bedwars:menu2_particle_none_selected=§cNONE §a[selected]
-item.bedwars:menu2_particle_villager_happy_click=§aGREEN STAR §7[click / move to select]
-item.bedwars:menu2_particle_villager_happy_disabled=§aGREEN STAR §c[require 5 levels]
-item.bedwars:menu2_particle_villager_happy_selected=§aGREEN STAR §a[selected]
+item.bedwars:menu2_particle_villager_happy_click=§aGREEN STAR particle §7[click / move to select]
+item.bedwars:menu2_particle_villager_happy_disabled=§aGREEN STAR particle §c[require 5 levels]
+item.bedwars:menu2_particle_villager_happy_selected=§aGREEN STAR particle §a[selected]
+item.bedwars:menu2_particle_heart_particle_purchase=§aHEART particle §e1000 Coins §7[click / move to select]
+item.bedwars:menu2_particle_heart_particle_click=§aHEART particle §7owned §7[click / move to select]
+item.bedwars:menu2_particle_heart_particle_selected=§aHEART particle §a[selected]
 item.bedwars:menu3_add_start_players_required=§eAdd 1 required player §7[click / move to select]
 item.bedwars:menu3_remove_start_players_required=§eRemove 1 required player §7[click / move to select]
 item.bedwars:menu3_start_players_2=Minimum players to start the game: §a§l2
@@ -176,6 +179,9 @@ item.bedwars:menu3_start_players_7=Minimum players to start the game: §a§l7
 item.bedwars:menu3_start_players_8=Minimum players to start the game: §a§l8
 item.bedwars:menu3_start_players_reachmax=§cIt is no longer possible to add the required players
 item.bedwars:menu3_start_players_reachmin=§cIt is no longer possible to reduce the required players.
+tile.bedwars:menu999_purchase_confirm.name=§aConfirm purchase
+tile.bedwars:menu999_purchase_cancel.name=§cCancel purchase
+item.bedwars:menu999_purchase_failed=§cInsufficient coins, purchase failed.
 
 ##DO NOT EDIT
 

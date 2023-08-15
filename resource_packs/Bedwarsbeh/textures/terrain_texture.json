@@ -4,6 +4,42 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
+		"menu999_purchase_confirm_up": {
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_confirm_down": {
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_confirm_north": {
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_confirm_east": {
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_confirm_south": {
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_confirm_west": {												//WEST
+			"textures": "textures/blocks/menu999_purchase_confirm"
+		},
+		"menu999_purchase_cancel_up": {
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
+		"menu999_purchase_cancel_down": {
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
+		"menu999_purchase_cancel_north": {
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
+		"menu999_purchase_cancel_east": {
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
+		"menu999_purchase_cancel_south": {
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
+		"menu999_purchase_cancel_west": {												//WEST
+			"textures": "textures/blocks/menu999_purchase_cancel"
+		},
 		"lobby_button_select_next_block_up": {
 			"textures": "textures/blocks/iron_block_button"
 		},

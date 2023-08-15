@@ -58,6 +58,9 @@
 
 更换跑酷终点的方块，使用on_step_on触发获得粒子效果事件（own_particle_1 -> 1 并播放tellraw和声音）
 
+
+
+
 ATTENTION:
 1. 画完 help 方块的材质
 2. 制作快速点击 help 方块显示第二页的功能

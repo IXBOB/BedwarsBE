@@ -21,9 +21,14 @@ function inventory_menu/change_to_menu/change_to_menu1
 scoreboard players set @s select_particle 0
 scoreboard players set @s respawning 0
 scoreboard players random @s uid 0 999999999
+scoreboard players set @s buying_particle 0
+scoreboard players set @s invisible_time 0
+
 gamemode 2 @s
 
 #init own_paricle
-scoreboard players set @s own_particle_1 0
+scoreboard players set @s own_particle_3 0
+scoreboard players set @s own_particle_99 0
+
 
 tag @s add registered

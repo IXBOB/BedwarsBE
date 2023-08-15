@@ -4,6 +4,28 @@
 		1,
 		0
 	],
+	"bedwars:menu999_purchase_confirm": {
+		"textures": {
+			"up": "menu999_purchase_confirm_up",
+			"down": "menu999_purchase_confirm_down",
+			"north": "menu999_purchase_confirm_north",
+			"south": "menu999_purchase_confirm_south",
+			"west": "menu999_purchase_confirm_west",
+			"east": "menu999_purchase_confirm_east"
+        },
+		"sound": "wood"
+	},
+	"bedwars:menu999_purchase_cancel": {
+		"textures": {
+			"up": "menu999_purchase_cancel_up",
+			"down": "menu999_purchase_cancel_down",
+			"north": "menu999_purchase_cancel_north",
+			"south": "menu999_purchase_cancel_south",
+			"west": "menu999_purchase_cancel_west",
+			"east": "menu999_purchase_cancel_east"
+        },
+		"sound": "wood"
+	},
 	"bedwars:lobby_button_select_map_next_block": {
 		"textures": {
 			"up": "lobby_button_select_next_block_up",
