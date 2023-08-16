@@ -9,3 +9,6 @@ execute @s[scores={select_particle=1}] ~~~ replaceitem entity @s slot.inventory 
 execute @s[scores={select_particle=!2,等级=10..}] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_click 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
 execute @s[scores={select_particle=!2,等级=..9}] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_disabled 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 execute @s[scores={select_particle=2}] ~~~ replaceitem entity @s slot.inventory 12 bedwars:menu2_particle_fire_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+execute @s[scores={select_particle=!3,own_particle_3=0}] ~~~ replaceitem entity @s slot.inventory 13 bedwars:menu2_particle_heart_particle_purchase 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @s[scores={select_particle=!3,own_particle_3=1}] ~~~ replaceitem entity @s slot.inventory 13 bedwars:menu2_particle_heart_particle_click 1 0 {"minecraft:item_lock":{"mode":"lock_in_inventory"}}
+execute @s[scores={select_particle=3}] ~~~ replaceitem entity @s slot.inventory 13 bedwars:menu2_particle_heart_particle_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

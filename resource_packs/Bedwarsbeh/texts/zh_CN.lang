@@ -165,6 +165,9 @@ item.bedwars:menu2_particle_none_selected=§c无 §a[已选择]
 item.bedwars:menu2_particle_villager_happy_click=§a绿色星星粒子 §7[点击 / 移动 以选择]
 item.bedwars:menu2_particle_villager_happy_disabled=§a绿色星星粒子 §c[要求达到等级 5]
 item.bedwars:menu2_particle_villager_happy_selected=§a绿色星星粒子 §a[已选择]
+item.bedwars:menu2_particle_heart_particle_purchase=§a爱心粒子 §e1000 硬币 §7[点击 / 移动 以选择]
+item.bedwars:menu2_particle_heart_particle_click=§a爱心粒子 §7已拥有 §7[点击 / 移动 以选择]
+item.bedwars:menu2_particle_heart_particle_selected=§a爱心粒子 §a[已选择]
 item.bedwars:menu3_add_start_players_required=§e增加 1 名所需玩家数 §7[点击 / 移动 以选择]
 item.bedwars:menu3_remove_start_players_required=§e减少 1 名所需玩家数 §7[点击 / 移动 以选择]
 item.bedwars:menu3_start_players_2=当前开始游戏所需的最小玩家数： §a2
@@ -176,6 +179,9 @@ item.bedwars:menu3_start_players_7=当前开始游戏所需的最小玩家数：
 item.bedwars:menu3_start_players_8=当前开始游戏所需的最小玩家数： §a8
 item.bedwars:menu3_start_players_reachmax=§c抱歉，已达到上限。 无法继续添加
 item.bedwars:menu3_start_players_reachmin=§c抱歉，已达到下限。 无法继续减少
+tile.bedwars:menu999_purchase_confirm.name=§a确认购买
+tile.bedwars:menu999_purchase_cancel.name=§c取消购买
+item.bedwars:menu999_purchase_failed=§c硬币不足， 购买失败
 
 ##DO NOT EDIT
 

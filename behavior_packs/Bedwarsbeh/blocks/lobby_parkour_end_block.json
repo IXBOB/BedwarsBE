@@ -19,7 +19,7 @@
 			"bedwars:on_step_on_lobby_parkour_end_block": {
 				"run_command": {
 					"command": [
-						"execute @s[scores={own_particle_1=0}] ~~~ function on_player_parkour_finish" 
+						"execute @s[scores={own_particle_99=0}] ~~~ function on_player_parkour_finish" 
 					],
 					"target": "player"
 				}

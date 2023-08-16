@@ -66,9 +66,8 @@ scoreboard players set @e[type=armor_stand,name=main] "商已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "箱已重置" 0
-#删除隐身时间
-scoreboard objectives remove invisible_time
-scoreboard objectives add invisible_time dummy
+#invisible_time -> 0
+scoreboard players set @a invisible_time 0
 #删除资源点旋转的实体
 execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
 execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self

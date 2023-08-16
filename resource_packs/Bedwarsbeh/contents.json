@@ -496,6 +496,9 @@
          "path" : "textures/item_texture.json"
       },
       {
+         "path" : "textures/blocks/menu999_purchase_cancel.png"
+      },
+      {
          "path" : "entity/npc_lobby_guide_4.json"
       },
       {
@@ -704,6 +707,9 @@
       },
       {
          "path" : "texts/pl_PL.lang"
+      },
+      {
+         "path" : "textures/blocks/menu999_purchase_confirm.png"
       },
       {
          "path" : "textures/blocks/lobby_button_select_last_block.png"
