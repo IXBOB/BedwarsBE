@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:dropped_emerald",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/dropped_emerald"},
+            "geometry": {"default":"geometry.dropped_emerald"},
+            "animations": { "dropped_item_revolve_controller": "controller.animation.dropped_item_revolve", "revolve": "animation.dropped_item_revolve.rotation" },
+            "scripts": { "animate": [ "dropped_item_revolve_controller" ] },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}
