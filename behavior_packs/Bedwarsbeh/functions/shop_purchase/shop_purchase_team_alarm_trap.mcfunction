@@ -31,6 +31,10 @@ execute @s[tag=upgrade_red_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ 
 execute @s[tag=upgrade_blue_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/blue/trap
 execute @s[tag=upgrade_yellow_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/yellow/trap
 execute @s[tag=upgrade_green_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/green/trap
+execute @s[tag=upgrade_red_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/red/trap
+execute @s[tag=upgrade_blue_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/blue/trap
+execute @s[tag=upgrade_yellow_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/yellow/trap
+execute @s[tag=upgrade_green_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/green/trap
 tag @s remove want_upgrade_trap
 tag @s remove upgrade_red_trap
 tag @s remove upgrade_blue_trap

@@ -1,6 +1,15 @@
 {
    "content" : [
       {
+         "path" : "attachables/green_team_chestplate.json"
+      },
+      {
+         "path" : "animation_controllers/revolve.json"
+      },
+      {
+         "path" : "animations/dropped_item_revolve.animation.json"
+      },
+      {
          "path" : "texts/bg_BG.lang"
       },
       {
@@ -13,19 +22,22 @@
          "path" : "animations/generate_point_revolve.animation.json"
       },
       {
-         "path" : "attachables/green_team_chestplate.json"
+         "path" : "attachables/chainmail_leggings_protection_ii.json"
       },
       {
-         "path" : "animation_controllers/revolve.json"
+         "path" : "models/blocks/green_bed_foot.geo.json"
       },
       {
-         "path" : "attachables/yellow_team_chestplate_protection_iii.json"
+         "path" : "attachables/red_team_leggings_protection_iii.json"
       },
       {
-         "path" : "attachables/iron_leggings_protection_ii.json"
+         "path" : "attachables/blue_team_chestplate_protection_iv.json"
       },
       {
-         "path" : "attachables/blue_team_chestplate.json"
+         "path" : "textures/models/armor/yellow_team_armor_main.png"
+      },
+      {
+         "path" : "animation_controllers/dropped_item_revolve.json"
       },
       {
          "path" : "textures/blocks/map_dirt_block.png"
@@ -50,6 +62,9 @@
       },
       {
          "path" : "attachables/blue_team_boots_protection_iv.json"
+      },
+      {
+         "path" : "attachables/blue_team_chestplate.json"
       },
       {
          "path" : "textures/items/iron_boots.png"
@@ -86,18 +101,6 @@
       },
       {
          "path" : "attachables/blue_team_chestplate_protection_iii.json"
-      },
-      {
-         "path" : "attachables/chainmail_leggings_protection_ii.json"
-      },
-      {
-         "path" : "models/blocks/green_bed_foot.geo.json"
-      },
-      {
-         "path" : "attachables/red_team_leggings_protection_iii.json"
-      },
-      {
-         "path" : "attachables/blue_team_chestplate_protection_iv.json"
       },
       {
          "path" : "attachables/blue_team_helmet_protection_i.json"
@@ -307,6 +310,12 @@
          "path" : "attachables/iron_leggings_protection_i.json"
       },
       {
+         "path" : "attachables/yellow_team_chestplate_protection_iii.json"
+      },
+      {
+         "path" : "attachables/iron_leggings_protection_ii.json"
+      },
+      {
          "path" : "models/entity/develop_source/diamond_point_revolve.geo.bbmodel"
       },
       {
@@ -478,6 +487,12 @@
          "path" : "contents.json"
       },
       {
+         "path" : "textures/models/armor/green_team_armor_legs.png"
+      },
+      {
+         "path" : "entity/drpped_diamond.json"
+      },
+      {
          "path" : "entity/emerald_point_revolve.json"
       },
       {
@@ -533,6 +548,9 @@
       },
       {
          "path" : "models/blocks/blue_bed_head.geo.json"
+      },
+      {
+         "path" : "textures/entity/dropped_diamond.png"
       },
       {
          "path" : "models/blocks/develop_source/blue_bed_foot.geo.bbmodel"
@@ -598,6 +616,9 @@
          "path" : "models/blocks/yellow_bed_head.geo.json"
       },
       {
+         "path" : "models/entity/develop_source/dropped_diamond.bbmodel"
+      },
+      {
          "path" : "models/entity/develop_source/npc_lobby_guide_2.bbmodel"
       },
       {
@@ -611,6 +632,12 @@
       },
       {
          "path" : "models/entity/diamond_point_revolve.geo.json"
+      },
+      {
+         "path" : "textures/blocks/map_green_wool.png"
+      },
+      {
+         "path" : "models/entity/dropped_diamond.geo.json"
       },
       {
          "path" : "models/entity/emerald_point_revolve.geo.json"
@@ -811,7 +838,7 @@
          "path" : "textures/blocks/map_gray_concrete_block.png"
       },
       {
-         "path" : "textures/blocks/map_green_wool.png"
+         "path" : "textures/blocks/map_iron_block.png"
       },
       {
          "path" : "textures/blocks/map_jungle_log_block/map_jungle_log_block_side.png"
@@ -1099,9 +1126,6 @@
          "path" : "textures/models/armor/develop_source/yellow_team_armor_main.psd"
       },
       {
-         "path" : "textures/models/armor/green_team_armor_legs.png"
-      },
-      {
          "path" : "textures/models/armor/green_team_armor_main.png"
       },
       {
@@ -1112,9 +1136,6 @@
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_legs.png"
-      },
-      {
-         "path" : "textures/models/armor/yellow_team_armor_main.png"
       },
       {
          "path" : "textures/particle/particles.png"

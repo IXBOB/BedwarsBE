@@ -7,3 +7,39 @@ scoreboard objectives add team_id dummy
 scoreboard objectives add assign_team_id dummy
 scoreboard objectives add own_particle_3 dummy
 scoreboard objectives add buying_particle dummy
+scoreboard objectives remove R_spawned_iron_1
+scoreboard objectives remove R_spawned_iron_2
+scoreboard objectives remove R_spawned_iron_3
+scoreboard objectives remove B_spawned_iron_1
+scoreboard objectives remove B_spawned_iron_2
+scoreboard objectives remove B_spawned_iron_3
+scoreboard objectives remove Y_spawned_iron_1
+scoreboard objectives remove Y_spawned_iron_2
+scoreboard objectives remove Y_spawned_iron_3
+scoreboard objectives remove G_spawned_iron_1
+scoreboard objectives remove G_spawned_iron_2
+scoreboard objectives remove G_spawned_iron_3
+scoreboard objectives add R_spawned_iron dummy
+scoreboard objectives add B_spawned_iron dummy
+scoreboard objectives add Y_spawned_iron dummy
+scoreboard objectives add G_spawned_iron dummy
+scoreboard objectives remove R_iron_count_1
+scoreboard objectives remove R_iron_count_2
+scoreboard objectives remove R_iron_count_3
+scoreboard objectives remove B_iron_count_1
+scoreboard objectives remove B_iron_count_2
+scoreboard objectives remove B_iron_count_3
+scoreboard objectives remove Y_iron_count_1
+scoreboard objectives remove Y_iron_count_2
+scoreboard objectives remove Y_iron_count_3
+scoreboard objectives remove G_iron_count_1
+scoreboard objectives remove G_iron_count_2
+scoreboard objectives remove G_iron_count_3
+scoreboard objectives add R_iron_count dummy
+scoreboard objectives add B_iron_count dummy
+scoreboard objectives add Y_iron_count dummy
+scoreboard objectives add G_iron_count dummy
+scoreboard objectives add R_visi_enti_init dummy
+scoreboard objectives add B_visi_enti_init dummy
+scoreboard objectives add Y_visi_enti_init dummy
+scoreboard objectives add G_visi_enti_init dummy

@@ -179,54 +179,22 @@ tag @s remove blue_team_ace_tellrawed
 tag @s remove yellow_team_ace_tellrawed
 #删除green_team_ace_tellrawed tag
 tag @s remove green_team_ace_tellrawed
-#R_iron_count_1 -> 0
 #R_iron_count_2 -> 0
-#R_iron_count_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_1] R_iron_count_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_2] R_iron_count_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_3] R_iron_count_3 0
-#B_iron_count_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.red_iron] R_iron_count 0
 #B_iron_count_2 -> 0
-#B_iron_count_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_1] B_iron_count_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_2] B_iron_count_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_3] B_iron_count_3 0
-#Y_iron_count_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.blue_iron] B_iron_count 0
 #Y_iron_count_2 -> 0
-#Y_iron_count_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_1] Y_iron_count_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_2] Y_iron_count_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_3] Y_iron_count_3 0
-#G_iron_count_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron] Y_iron_count 0
 #G_iron_count_2 -> 0
-#G_iron_count_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_1] G_iron_count_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_2] G_iron_count_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_3] G_iron_count_3 0
-#R_spawned_iron_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.green_iron] G_iron_count 0
 #R_spawned_iron_2 -> 0
-#R_spawned_iron_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_1] R_spawned_iron_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_2] R_spawned_iron_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.red_iron_3] R_spawned_iron_3 0
-#B_spawned_iron_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.red_iron] R_spawned_iron 0
 #B_spawned_iron_2 -> 0
-#B_spawned_iron_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_1] B_spawned_iron_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_2] B_spawned_iron_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.blue_iron_3] B_spawned_iron_3 0
-#Y_spawned_iron_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.blue_iron] B_spawned_iron 0
 #Y_spawned_iron_2 -> 0
-#Y_spawned_iron_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_1] Y_spawned_iron_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_2] Y_spawned_iron_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron_3] Y_spawned_iron_3 0
-#G_spawned_iron_1 -> 0
+scoreboard players set @e[type=armor_stand,name=spawn.yellow_iron] Y_spawned_iron 0
 #G_spawned_iron_2 -> 0
-#G_spawned_iron_3 -> 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_1] G_spawned_iron_1 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_2] G_spawned_iron_2 0
-scoreboard players set @e[type=armor_stand,name=spawn.green_iron_3] G_spawned_iron_3 0
+scoreboard players set @e[type=armor_stand,name=spawn.green_iron] G_spawned_iron 0
 #R_gold_count -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.red_gold] R_gold_count 0
 #B_gold_count -> 0
@@ -274,6 +242,11 @@ execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:di
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_4
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point_1
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20,tag=!emerald_point_1] add emerald_point_2
+#设置各队基地iron_invisible实体初始化状态 -> 0。因mojang bug，加载结构过大时，结构中的实体似乎无法在区块未加载时/tag add
+scoreboard players set @s R_visi_enti_init 0
+scoreboard players set @s B_visi_enti_init 0
+scoreboard players set @s Y_visi_enti_init 0
+scoreboard players set @s G_visi_enti_init 0
 #删除附魔锋利tag
 tag @a remove have_upgraded_sword_sharpness_i
 #清空当局经验和当局金币

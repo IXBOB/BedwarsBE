@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12.0",
+    "animation_controllers": {
+        "controller.animation.dropped_item_revolve": {
+            "initial_state": "revolving",
+            "states": {
+                "revolving": {
+                    "animations": ["revolve"]
+                }
+            }
+        }
+    }
+}

@@ -4,6 +4,24 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
+		"map_iron_block_up": {
+			"textures": "textures/blocks/map_iron_block"
+		},
+		"map_iron_block_down": {
+			"textures": "textures/blocks/map_iron_block"
+		},
+		"map_iron_block_north": {
+			"textures": "textures/blocks/map_iron_block"
+		},
+		"map_iron_block_east": {
+			"textures": "textures/blocks/map_iron_block"
+		},
+		"map_iron_block_south": {
+			"textures": "textures/blocks/map_iron_block"
+		},
+		"map_iron_block_west": {												//WEST
+			"textures": "textures/blocks/map_iron_block"
+		},
 		"menu999_purchase_confirm_up": {
 			"textures": "textures/blocks/menu999_purchase_confirm"
 		},

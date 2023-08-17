@@ -4,6 +4,18 @@
 		1,
 		0
 	],
+	"bedwars:map_iron_block": {
+		"textures": {
+			"up": "map_iron_block_up",
+			"down": "map_iron_block_down",
+			"north": "map_iron_block_north",
+			"south": "map_iron_block_south",
+			"west": "map_iron_block_west",
+			"east": "map_iron_block_east"
+        },
+		"sound": "wood"
+	},
+
 	"bedwars:menu999_purchase_confirm": {
 		"textures": {
 			"up": "menu999_purchase_confirm_up",

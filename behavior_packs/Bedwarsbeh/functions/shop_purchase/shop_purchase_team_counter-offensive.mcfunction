@@ -27,6 +27,10 @@ execute @s[tag=upgrade_red_trap] ~~~ scoreboard players add @e[type=armor_stand,
 execute @s[tag=upgrade_blue_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] blue_trap_sum 1
 execute @s[tag=upgrade_yellow_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] yellow_trap_sum 1
 execute @s[tag=upgrade_green_trap] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=1},name=main] green_trap_sum 1
+execute @s[tag=upgrade_red_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/red/trap
+execute @s[tag=upgrade_blue_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/blue/trap
+execute @s[tag=upgrade_yellow_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/yellow/trap
+execute @s[tag=upgrade_green_trap] ~~~ execute @e[type=armor_stand,name=main] ~~~ function refresh_map/game/sign/green/trap
 tag @s remove want_upgrade_trap
 tag @s remove upgrade_red_trap
 tag @s remove upgrade_blue_trap
