@@ -5,7 +5,7 @@
             "identifier": "bedwars:dropped_iron_ingot",
             "materials": {"default":"npc"},
             "textures": {"default":"textures/entity/dropped_iron_ingot"},
-            "geometry": {"default":"geometry.dropped_iron_ingot"},
+            "geometry": {"default":"geometry.dropped_ingot"},
             "animations": { "dropped_item_revolve_controller": "controller.animation.dropped_item_revolve", "revolve": "animation.dropped_item_revolve.rotation" },
             "scripts": { "animate": [ "dropped_item_revolve_controller" ] },
             "render_controllers": ["controller.render.default"]

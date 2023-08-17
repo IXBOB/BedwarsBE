@@ -3,12 +3,12 @@
 	"animations": {
 		"animation.dropped_item_revolve.rotation": {
 			"loop": true,
-			"animation_length": 20,
+			"animation_length": 19,
 			"bones": {
 				"root": {
 					"rotation": {
 						"0.0": [0, 0, 0],
-						"20.0": [0, 1800, 0]
+						"19.0": [0, 1800, 0]
 					},
 					"position": {
 						"0.0": {
@@ -51,8 +51,8 @@
 							"post": [0, 2, 0],
 							"lerp_mode": "catmullrom"
 						},
-						"20.0": {
-							"post": [0, 7, 0],
+						"19.0": {
+							"post": [0, 4, 0],
 							"lerp_mode": "catmullrom"
 						}
 					}
