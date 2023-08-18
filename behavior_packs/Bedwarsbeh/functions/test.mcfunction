@@ -53,3 +53,19 @@ scoreboard objectives add iron_spawn_rand dummy
 scoreboard objectives add gold_spawn_rand dummy
 scoreboard objectives add diam_spawn_rand dummy
 scoreboard objectives add emer_spawn_rand dummy
+execute @e[type=armor_stand,name=spawn.red_iron_2] ~~~ summon armor_stand spawn.red_iron
+kill @e[name=spawn.red_iron_1]
+kill @e[name=spawn.red_iron_2]
+kill @e[name=spawn.red_iron_3]
+execute @e[type=armor_stand,name=spawn.blue_iron_2] ~~~ summon armor_stand spawn.blue_iron
+kill @e[name=spawn.blue_iron_1]
+kill @e[name=spawn.blue_iron_2]
+kill @e[name=spawn.blue_iron_3]
+execute @e[type=armor_stand,name=spawn.yellow_iron_2] ~~~ summon armor_stand spawn.yellow_iron
+kill @e[name=spawn.yellow_iron_1]
+kill @e[name=spawn.yellow_iron_2]
+kill @e[name=spawn.yellow_iron_3]
+execute @e[type=armor_stand,name=spawn.green_iron_2] ~~~ summon armor_stand spawn.green_iron
+kill @e[name=spawn.green_iron_1]
+kill @e[name=spawn.green_iron_2]
+kill @e[name=spawn.green_iron_3]
