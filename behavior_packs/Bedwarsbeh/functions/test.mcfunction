@@ -6,6 +6,8 @@ scoreboard objectives add help_uid_cache dummy
 scoreboard objectives add team_id dummy
 scoreboard objectives add assign_team_id dummy
 scoreboard objectives add own_particle_3 dummy
+scoreboard objectives add own_particle_4 dummy
+scoreboard objectives add own_particle_5 dummy
 scoreboard objectives add buying_particle dummy
 scoreboard objectives remove R_spawned_iron_1
 scoreboard objectives remove R_spawned_iron_2

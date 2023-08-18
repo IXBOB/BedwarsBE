@@ -28,6 +28,8 @@ gamemode 2 @s
 
 #init own_paricle
 scoreboard players set @s own_particle_3 0
+scoreboard players set @s own_particle_4 0
+scoreboard players set @s own_particle_5 0
 scoreboard players set @s own_particle_99 0
 
 

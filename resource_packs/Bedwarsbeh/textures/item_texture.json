@@ -115,6 +115,9 @@
     },
     "shears": {
       "textures": "textures/items/shears"
+    },
+    "soul_lantern": {
+      "textures": "textures/items/soul_lantern"
     }
   }
 }

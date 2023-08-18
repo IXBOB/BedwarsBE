@@ -838,6 +838,9 @@
          "path" : "textures/blocks/map_bone_block/map_bone_block_top.png"
       },
       {
+         "path" : "textures/items/soul_lantern.png"
+      },
+      {
          "path" : "textures/blocks/map_cobbled_deepslate_block.png"
       },
       {
