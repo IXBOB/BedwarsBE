@@ -1,8 +1,3 @@
-#删除背包内的铁锭，金锭，钻石，绿宝石
-clear @a iron_ingot
-clear @a gold_ingot
-clear @a diamond
-clear @a emerald
 #删除背包内的木箱子
 clear @a chest
 #删除出界的箭

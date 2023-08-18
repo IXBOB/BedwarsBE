@@ -29,17 +29,6 @@
               "display_on_screen_animation": true
             }
           ]
-        },
-        "minecraft:timer": {
-          "time": [
-            0.0,
-            0.0
-          ],
-          "looping": false,
-          "time_down_event": {
-            "event": "minecraft:clear_add_bad_omen",
-            "target": "self"
-          }
         }
       },
       "minecraft:clear_bad_omen_spell_effect": {

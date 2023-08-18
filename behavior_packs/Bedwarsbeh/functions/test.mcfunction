@@ -43,3 +43,11 @@ scoreboard objectives add R_visi_enti_init dummy
 scoreboard objectives add B_visi_enti_init dummy
 scoreboard objectives add Y_visi_enti_init dummy
 scoreboard objectives add G_visi_enti_init dummy
+scoreboard objectives add someone_in_R dummy
+scoreboard objectives add someone_in_B dummy
+scoreboard objectives add someone_in_Y dummy
+scoreboard objectives add someone_in_G dummy
+scoreboard objectives add iron_spawn_rand dummy
+scoreboard objectives add gold_spawn_rand dummy
+scoreboard objectives add diam_spawn_rand dummy
+scoreboard objectives add emer_spawn_rand dummy

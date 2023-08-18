@@ -1,0 +1,2 @@
+scoreboard players set @s someone_in_Y 0
+execute @e[type=bedwars:base_entity_yellow] ~~~ execute @e[type=player,scores={respawning=0,出局观战=0}] ~~~ scoreboard players set @e[type=armor_stand,name=main] someone_in_Y 1
