@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:mystery_box_float_ender_chest",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/mystery_box_float_ender_chest"},
+            "geometry": {"default":"geometry.mystery_box_float_ender_chest"},
+            "render_controllers": ["controller.render.default"],
+            "enable_attachables": false,
+            "hide_armor": false
+        }
+    }
+}

@@ -292,6 +292,9 @@
          "path" : "attachables/green_team_helmet_protection_iii.json"
       },
       {
+         "path" : "sounds/bedwars/levelup.fsb"
+      },
+      {
          "path" : "attachables/green_team_helmet_protection_iv.json"
       },
       {
@@ -514,6 +517,15 @@
          "path" : "entity/ixbob_npc.json"
       },
       {
+         "path" : "textures/items/blue_team_chestplate.png"
+      },
+      {
+         "path" : "LICENSE"
+      },
+      {
+         "path" : "entity/mystery_box_float_ender_chest.json"
+      },
+      {
          "path" : "entity/npc_lobby_guide_1.json"
       },
       {
@@ -539,12 +551,6 @@
       },
       {
          "path" : "font/glyph_E1.png"
-      },
-      {
-         "path" : "textures/items/blue_team_chestplate.png"
-      },
-      {
-         "path" : "LICENSE"
       },
       {
          "path" : "manifest.json"
@@ -679,6 +685,9 @@
          "path" : "models/entity/ixbob_npc.geo.json"
       },
       {
+         "path" : "models/entity/mystery_box_float_ender_chest.geo.json"
+      },
+      {
          "path" : "models/entity/npc_lobby_guide_1.geo.json"
       },
       {
@@ -704,6 +713,15 @@
       },
       {
          "path" : "sounds/random/levelup.ogg"
+      },
+      {
+         "path" : "texts/zh_TW.lang"
+      },
+      {
+         "path" : "texts/nb_NO.lang"
+      },
+      {
+         "path" : "sounds/sound_definitions.json"
       },
       {
          "path" : "textures/models/armor/diamond_armor_main.png"
@@ -755,12 +773,6 @@
       },
       {
          "path" : "texts/ko_KR.lang"
-      },
-      {
-         "path" : "texts/zh_TW.lang"
-      },
-      {
-         "path" : "texts/nb_NO.lang"
       },
       {
          "path" : "textures/blocks/map_grass_block/map_grass_block_top.png"
@@ -1063,6 +1075,12 @@
          "path" : "textures/entity/emerald_point_revolve.png"
       },
       {
+         "path" : "textures/items/red_team_leggings.png"
+      },
+      {
+         "path" : "textures/entity/mystery_box_float_ender_chest.png"
+      },
+      {
          "path" : "textures/items/diamond_boots.png"
       },
       {
@@ -1115,9 +1133,6 @@
       },
       {
          "path" : "textures/items/red_team_helmet.png"
-      },
-      {
-         "path" : "textures/items/red_team_leggings.png"
       },
       {
          "path" : "textures/items/snowball.png"

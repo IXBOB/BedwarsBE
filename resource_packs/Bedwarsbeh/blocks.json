@@ -901,7 +901,7 @@
 	"bedwars:map_grass_block": {
 		"textures": {
 			"up": "map_grass_block_top",
-			"down": "map_grass_block_buttom",
+			"down": "map_grass_block_bottom",
 			"north": "map_grass_block_side",
 			"south": "map_grass_block_side",
 			"west": "map_grass_block_side",

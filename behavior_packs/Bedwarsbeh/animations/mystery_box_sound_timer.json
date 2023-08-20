@@ -1,0 +1,81 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.command.mystery_box_sound_timeline": {
+            "animation_length": 10.0,
+            "loop": false,
+            "timeline": {
+                "0.0": [
+                    "/playsound note.pling @a ~~~ 1 1.0",
+                    "/playsound note.snare @a ~~~ 1 1.2"
+                ],
+                "0.2": [
+                    "/playsound note.pling @a ~~~ 1 1.1"
+                ],
+                "0.4": [
+                    "/playsound note.pling @a ~~~ 1 1.2"
+                ],
+                "0.6": [
+                    "/playsound note.pling @a ~~~ 1 1.3"
+                ], // 4 end
+                "1.0": [ 
+                    "/playsound note.pling @a ~~~ 1 1.2"
+                ],
+                "1.2": [
+                    "/playsound note.pling @a ~~~ 1 1.3"
+                ],
+                "1.4": [
+                    "/playsound note.pling @a ~~~ 1 1.4"
+                ],
+                "1.6": [
+                    "/playsound note.pling @a ~~~ 1 1.5"
+                ], // 4 end
+                "2.0": [ 
+                    "/playsound note.pling @a ~~~ 1 1.4"
+                ],
+                "2.2": [
+                    "/playsound note.pling @a ~~~ 1 1.5"
+                ],
+                "2.4": [
+                    "/playsound note.pling @a ~~~ 1 1.6"
+                ],
+                "2.6": [
+                    "/playsound note.pling @a ~~~ 1 1.7"
+                ], // 4 end
+                "3.0": [ 
+                    "/playsound note.pling @a ~~~ 1 1.6"
+                ],
+                "3.2": [
+                    "/playsound note.pling @a ~~~ 1 1.7"
+                ],
+                "3.4": [
+                    "/playsound note.pling @a ~~~ 1 1.8"
+                ],
+                "3.6": [
+                    "/playsound note.pling @a ~~~ 1 1.9"
+                ], // 4 end
+                "4.0": [ 
+                    "/playsound note.pling @a ~~~ 1 1.8"
+                ],
+                "4.2": [
+                    "/playsound note.pling @a ~~~ 1 1.9"
+                ],
+                "4.4": [
+                    "/playsound note.pling @a ~~~ 1 2.0"
+                ],
+                "4.6": [
+                    "/playsound note.pling @a ~~~ 1 2.1"
+                ], // 4 end
+                "6.5":[
+                    "/playsound random.explode @a ~~~ 1 1"
+                ],
+                "8.0":[
+                    "/playsound bedwars.levelup @a ~~~ 1 1"
+                ],
+                "10.0":[
+                    "/event entity @s bedwars:remove_self"
+                ]
+            }
+        }
+    }
+}
