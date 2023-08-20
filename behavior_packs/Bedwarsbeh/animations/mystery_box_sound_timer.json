@@ -7,7 +7,12 @@
             "timeline": {
                 "0.0": [
                     "/playsound note.pling @a ~~~ 1 1.0",
-                    "/playsound note.snare @a ~~~ 1 1.2"
+                    "/playsound note.snare @a ~~~ 1 1.2",
+                    "/particle bedwars:mystery_box_open_particle_1 ~~2~",
+                    "/particle bedwars:mystery_box_open_particle_2 ~~2~",
+                    "/particle bedwars:mystery_box_open_particle_3 ~~2~",
+                    "/particle bedwars:mystery_box_open_particle_4 ~~2~",
+                    "/particle bedwars:mystery_box_open_particle_5 ~~2~"
                 ],
                 "0.2": [
                     "/playsound note.pling @a ~~~ 1 1.1"
@@ -67,10 +72,22 @@
                     "/playsound note.pling @a ~~~ 1 2.1"
                 ], // 4 end
                 "6.5":[
-                    "/playsound random.explode @a ~~~ 1 1"
+                    "/playsound random.explode @a ~~~ 1 1",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~",
+                    "/particle minecraft:lava_particle ~~~"
                 ],
                 "8.0":[
-                    "/playsound bedwars.levelup @a ~~~ 1 1"
+                    "/playsound bedwars.levelup @a ~~~ 1 1",
+                    "/say 你获得了： 测试",
+                    "/say 你获得了： 测试",
+                    "/say 你获得了： 测试"
                 ],
                 "10.0":[
                     "/event entity @s bedwars:remove_self"
