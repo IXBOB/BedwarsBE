@@ -6,7 +6,7 @@
 				"identifier": "geometry.blue_bed_head",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 2,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -41,9 +41,9 @@
 							}
 						},
 						{
-							"origin": [-8, 3, -8],
+							"origin": [-8, -9, -8],
 							"size": [16, 6, 16],
-							"pivot": [0, 6, 0],
+							"pivot": [0, 0, 0],
 							"rotation": [180, 0, 0],
 							"uv": {
 								"north": {"uv": [0, 6.5], "uv_size": [8, -3]},

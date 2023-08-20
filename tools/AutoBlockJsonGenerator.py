@@ -27,15 +27,23 @@ entry_input.grid(row=0,column=1)
 def action():
     #获取输入值
     input = entry_input.get()
+    str1 = "map_"
+    str2 = "_block"
+    input = str1 + input
+    input = input + str2
 
     #创建文件夹
     file = f"{PATH}\\blockbeh"
     mkdir(file)
     file = f"{PATH}\\blockbeh\\textures"
     mkdir(file)
+    file = f"{PATH}\\blockbeh\\blocks"
+    mkdir(file)
+    file = f"{PATH}\\blockbeh\\blocks\\map"
+    mkdir(file)
 
     #创建文件
-    with open(f"{PATH}\\blockbeh\\blocks.json", mode="w") as file:
+    with open(f"{PATH}\\blockbeh\\blocks.json", mode="a") as file:
         content = f'''	\"bedwars:{input}\": {{
 		\"textures\": {{
 			\"up\": \"{input}_up\",
@@ -46,10 +54,10 @@ def action():
 			\"east\": \"{input}_east\"
         }},
 		\"sound\": \"wood\"
-	}}'''
+	}},\n'''
         file.write(content)
 
-    with open(f"{PATH}\\blockbeh\\textures\\terrain_texture.json", mode="w") as file:
+    with open(f"{PATH}\\blockbeh\\textures\\terrain_texture.json", mode="a") as file:
         content = f'''		\"{input}_up\": {{
 			\"textures\": \"textures/blocks/{input}\"
 		}},
@@ -67,7 +75,22 @@ def action():
 		}},
 		\"{input}_west\": {{												//WEST
 			\"textures\": \"textures/blocks/{input}\"
-		}},'''
+		}},\n'''
+        file.write(content)
+        
+    with open(f"{PATH}\\blockbeh\\blocks\\map\\{input}.json", mode="a") as file:
+        content = f'''{{
+	\"format_version\": \"1.16.100\",
+	\"minecraft:block\": {{
+		\"description\": {{
+			\"identifier\": \"bedwars:{input}\"
+		}},
+
+		\"components\": {{
+			\"minecraft:destroy_time\": 99999
+		}}
+	}}
+}}'''
         file.write(content)
 
 button = Button(text="生成",command=action)
