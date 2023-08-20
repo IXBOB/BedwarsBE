@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:map_crying_obsidian"
+			"identifier": "bedwars:map_crying_obsidian_block"
 		},
 
 		"components": {

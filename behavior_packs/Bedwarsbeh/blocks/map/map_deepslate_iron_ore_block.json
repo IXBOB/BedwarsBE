@@ -1,0 +1,12 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:map_deepslate_iron_ore_block"
+		},
+
+		"components": {
+			"minecraft:destroy_time": 99999
+		}
+	}
+}
