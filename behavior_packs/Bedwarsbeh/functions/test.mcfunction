@@ -1,6 +1,7 @@
 scoreboard objectives add 牌已重置 dummy
 scoreboard objectives add 实已重置 dummy
 scoreboard objectives add 箱已重置 dummy
+scoreboard objectives add 等已重置 dummy
 scoreboard objectives add help_page2_time dummy
 scoreboard objectives add help_uid_cache dummy
 scoreboard objectives add team_id dummy
@@ -69,3 +70,4 @@ execute @e[type=armor_stand,name=spawn.green_iron_2] ~~~ summon armor_stand spaw
 kill @e[name=spawn.green_iron_1]
 kill @e[name=spawn.green_iron_2]
 kill @e[name=spawn.green_iron_3]
+scoreboard objectives add 需要人数 dummy

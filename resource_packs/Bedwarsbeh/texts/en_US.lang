@@ -808,6 +808,9 @@ text.sign.lobby.map_4_locked_line2=§r§2Beach Cities
 text.sign.lobby.map_4_locked_line3=§cPlease change
 text.sign.lobby.map_4_locked_line4=§r§cbefore reset
 
+##WAITING
+text.tellraw.waiting.player_join= joined the start queue
+
 ##others
 
 text.actionbar.others.lobby_information_0=§r§fDeveloper mode enabled. Disable: §o/function console/settings/dev/disable

@@ -1,0 +1,3 @@
+tag @s add waiting
+execute @e[type=player,tag=waiting] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 2
+tellraw @a { "rawtext" : [{"text":"§7"},{"selector":"@s"},{"text":" "},{"text":"§6"},{"translate":"text.tellraw.waiting.player_join"},{"text":" ("},{ "score" : { "name" : "@e[type=armor_stand,name=main]" , "objective" : "大厅人数"}},{"text":"/"},{ "score" : { "name" : "@e[type=armor_stand,name=main]" , "objective" : "需要人数"}},{"text":")"} ] }

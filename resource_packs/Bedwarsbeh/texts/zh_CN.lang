@@ -808,6 +808,9 @@ text.sign.lobby.map_4_locked_line2=§r§2沙滩城区
 text.sign.lobby.map_4_locked_line3=§c仅可在
 text.sign.lobby.map_4_locked_line4=§c游戏重置前修改
 
+##WAITING
+text.tellraw.waiting.player_join= 加入了开始队列
+
 ##others
 
 text.actionbar.others.lobby_information_0=§r§f开发者模式已启用， 输入 §o/function console/settings/dev/disable§r§f 以停用

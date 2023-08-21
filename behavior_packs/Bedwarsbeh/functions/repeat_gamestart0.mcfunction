@@ -21,10 +21,7 @@ execute @s[scores={starting=0}] ~~~ scoreboard players set @s "开始倒计时" 
 #重置地图
 function reset_map
 #游戏未开始传送游戏区玩家到大厅
-execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ effect @s clear
-execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ tp @s[tag=!insider] -200 200 -200
-execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126] ~~~ xp -99999L @s
-execute @a[x=-63,y=92,z=-63,dx=127,dy=120,dz=127] ~~~ clear @s[tag=!insider]
+execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126,tag=!insider] ~~~ function unexpectedly_in_this_game_kick
 #游戏未开始时删除僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 event entity @s bedwars:remove_self
 #重置结束后后复制地图选择告示牌
@@ -55,10 +52,7 @@ execute @s[tag=set.start.players.5] ~~~ execute @a[tag=op,tag=set.start.players.
 execute @s[tag=set.start.players.6] ~~~ execute @a[tag=op,tag=set.start.players.6] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_6_already"} ] }
 execute @s[tag=set.start.players.7] ~~~ execute @a[tag=op,tag=set.start.players.7] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_7_already"} ] }
 execute @s[tag=set.start.players.8] ~~~ execute @a[tag=op,tag=set.start.players.8] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_8_already"} ] }
-#给予tag并调整人数
-function change_start_player_count
-#检测人数
-execute @e[type=player] ~~~ scoreboard players add @e[type=armor_stand,scores={gameSTART=0},tag=reset_OK] "大厅人数" 2
+#复制计分板
 execute @s[tag=reset_OK] ~~~ scoreboard players operation @a "大厅人数" = @s "大厅人数"
 execute @s[tag=reset_OK] ~~~ scoreboard players operation @a "开始倒计时" = @s "开始倒计时"
 #房主更改游戏开始所需人数时tellraw提示
@@ -79,7 +73,7 @@ execute @s[type=armor_stand,name=main,scores={function_tick_20=20}] ~~~ tag * re
 execute @s[type=armor_stand,scores={starting=1,function_tick_20=20,"开始倒计时"=0..20},tag=reset_OK] ~~~ function refresh_starting_scoreboard
 execute @s[type=armor_stand,scores={starting=0..1},tag=reset_OK] ~~~ scoreboard players reset text.scoreboard.waitinfo.preparing "显示"
 #设置starting值
-function set.game.starting
+function set_game_starting
 #传送结束时有分队值的玩家到大厅并清空背包
 tp @a[scores={"分队"=1..4},tag=!insider] -200 200 -200
 scoreboard players set @a[scores={"分队"=1..4}] "分队" 0
@@ -102,3 +96,5 @@ execute @s[scores={starting=1,"开始倒计时"=0..20,function_tick_20=20},tag=r
 scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick_20=20},tag=reset_OK] "开始倒计时" -1
 #RandomDamageUID
 scoreboard players reset @s RandomDamageUID
+#检测玩家加入开始队列
+execute @e[type=player,x=-204,y=193,z=-189,r=3] ~~~ function on_join_waiting_queue

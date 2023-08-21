@@ -27,6 +27,8 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}]
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "显示" -9
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
 
+#重置游戏区域上方等待区域
+execute @e[type=armor_stand,name=main,scores={reseting=1,"等已重置"=0,"重置百分数"=1}] ~~~ function reset_map/waiting_room
 #重置商店方块
 execute @e[type=armor_stand,name=main,scores={reseting=1,"商已重置"=0,"重置百分数"=35}] ~~~ function reset_map/shop/assign
 #重置疾速模式床保护
