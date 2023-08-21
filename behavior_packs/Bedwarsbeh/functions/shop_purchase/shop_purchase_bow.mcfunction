@@ -1,5 +1,5 @@
 tag @s add up_bow
-tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_bow"} ] }
+tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.purchase_upgrade_bow"} ] }
 playsound note.pling @s ~~~
 scoreboard players add @s own_xp -200
 xp -200L @s
