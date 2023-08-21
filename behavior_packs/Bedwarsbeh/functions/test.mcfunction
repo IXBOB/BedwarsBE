@@ -70,4 +70,6 @@ execute @e[type=armor_stand,name=spawn.green_iron_2] ~~~ summon armor_stand spaw
 kill @e[name=spawn.green_iron_1]
 kill @e[name=spawn.green_iron_2]
 kill @e[name=spawn.green_iron_3]
-scoreboard objectives add 需要人数 dummy
+scoreboard objectives add 总需人数 dummy
+scoreboard objectives add 还需人数 dummy
+scoreboard objectives add 弓等级 dummy

@@ -1,5 +1,5 @@
 #TP
-execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ tp @a -200 205 -200
+tp @a -200 205 -200
 #effect.clear
 effect @a clear
 #set menu_page 1

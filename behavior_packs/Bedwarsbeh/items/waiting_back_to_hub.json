@@ -1,0 +1,29 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "bedwars:waiting_back_to_hub"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "waiting_back_to_hub"
+			},
+			"minecraft:max_stack_size": 64,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "bedwars:waiting_back_to_hub",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"bedwars:waiting_back_to_hub": {
+				"run_command": {
+					"command": [
+						"execute @s[tag=waiting] ~~~ function on_leave_waiting_queue"
+					]
+				}
+			}
+		}
+	}
+}

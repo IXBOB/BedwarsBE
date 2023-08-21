@@ -688,6 +688,9 @@
          "path" : "models/entity/develop_source/dropped_ingot.bbmodel"
       },
       {
+         "path" : "models/entity/develop_source/mystery_box_float_ender_chest.bbmodel"
+      },
+      {
          "path" : "models/entity/develop_source/npc_lobby_guide_2.bbmodel"
       },
       {
@@ -749,6 +752,12 @@
       },
       {
          "path" : "pack_icon.png"
+      },
+      {
+         "path" : "textures/entity/dropped_iron_ingot.png"
+      },
+      {
+         "path" : "particles/lobby_portal.particle.json"
       },
       {
          "path" : "particles/mystery_box_open_particle_1.particle.json"
@@ -1243,9 +1252,6 @@
          "path" : "textures/entity/dropped_gold_ingot.png"
       },
       {
-         "path" : "textures/entity/dropped_iron_ingot.png"
-      },
-      {
          "path" : "textures/entity/emerald_point_revolve.png"
       },
       {
@@ -1312,6 +1318,12 @@
          "path" : "textures/items/stone_axe.png"
       },
       {
+         "path" : "textures/models/armor/green_team_armor_main.png"
+      },
+      {
+         "path" : "textures/items/waiting_back_to_hub.png"
+      },
+      {
          "path" : "textures/items/wooden_axe.png"
       },
       {
@@ -1340,9 +1352,6 @@
       },
       {
          "path" : "textures/models/armor/green_team_armor_legs.png"
-      },
-      {
-         "path" : "textures/models/armor/green_team_armor_main.png"
       },
       {
          "path" : "textures/models/armor/invisible.png"

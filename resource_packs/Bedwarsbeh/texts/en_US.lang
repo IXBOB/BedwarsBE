@@ -152,6 +152,7 @@ item.bedwars:green_team_boots=Green leather boots
 
 ##LOBBY ITEMS
 
+item.bedwars:waiting_back_to_hub=§cBack to lobby §7(right click / press)
 item.bedwars:menu_pleasewait=§7§oPlease wait...
 item.bedwars:menu_back=§eBack
 item.bedwars:menu1_particle_item=§cSelect particles §7[click / move to select]
@@ -809,7 +810,8 @@ text.sign.lobby.map_4_locked_line3=§cPlease change
 text.sign.lobby.map_4_locked_line4=§r§cbefore reset
 
 ##WAITING
-text.tellraw.waiting.player_join= joined the start queue
+text.tellraw.waiting.player_join= §6joined the start queue
+text.tellraw.waiting.player_leave= §cleft the start queue
 
 ##others
 

@@ -17,21 +17,28 @@ scoreboard players reset text.scoreboard.waitinfo.players_count_9 "显示"
 scoreboard players reset text.scoreboard.waitinfo.players_count_10 "显示"
 scoreboard players reset text.scoreboard.waitinfo.players_count_11 "显示"
 scoreboard players reset text.scoreboard.waitinfo.players_count_12 "显示"
-scoreboard players set @s[tag=set.start.players.2] "需要人数" 2
-scoreboard players set @s[tag=set.start.players.3] "需要人数" 3
-scoreboard players set @s[tag=set.start.players.4] "需要人数" 4
-scoreboard players set @s[tag=set.start.players.5] "需要人数" 5
-scoreboard players set @s[tag=set.start.players.6] "需要人数" 6
-scoreboard players set @s[tag=set.start.players.7] "需要人数" 7
-scoreboard players set @s[tag=set.start.players.8] "需要人数" 8
-scoreboard players operation @s "需要人数" -= @s "大厅人数"
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=1,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_1 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=2,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_2 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=3,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_3 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=4,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_4 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=5,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_5 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=6,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_6 "显示" -7
-execute @s[type=armor_stand,scores={gameSTART=0,"需要人数"=7,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_7 "显示" -7
+scoreboard players set @s[tag=set.start.players.2] "总需人数" 2
+scoreboard players set @s[tag=set.start.players.3] "总需人数" 3
+scoreboard players set @s[tag=set.start.players.4] "总需人数" 4
+scoreboard players set @s[tag=set.start.players.5] "总需人数" 5
+scoreboard players set @s[tag=set.start.players.6] "总需人数" 6
+scoreboard players set @s[tag=set.start.players.7] "总需人数" 7
+scoreboard players set @s[tag=set.start.players.8] "总需人数" 8
+scoreboard players set @s[tag=set.start.players.2] "还需人数" 2
+scoreboard players set @s[tag=set.start.players.3] "还需人数" 3
+scoreboard players set @s[tag=set.start.players.4] "还需人数" 4
+scoreboard players set @s[tag=set.start.players.5] "还需人数" 5
+scoreboard players set @s[tag=set.start.players.6] "还需人数" 6
+scoreboard players set @s[tag=set.start.players.7] "还需人数" 7
+scoreboard players set @s[tag=set.start.players.8] "还需人数" 8
+scoreboard players operation @s "还需人数" -= @s "大厅人数"
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=1,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_1 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=2,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_2 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=3,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_3 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=4,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_4 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=5,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_5 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=6,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_6 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=7,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_7 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=2,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_2 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=3,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_3 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=4,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_4 "显示" -7

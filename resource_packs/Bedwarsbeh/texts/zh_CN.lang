@@ -152,6 +152,7 @@ item.bedwars:green_team_boots=绿队皮革靴子
 
 ##LOBBY ITEMS
 
+item.bedwars:waiting_back_to_hub=§c返回大厅 §7（右键 / 使用）
 item.bedwars:menu_pleasewait=§7§o请稍候...
 item.bedwars:menu_back=§e返回
 item.bedwars:menu1_particle_item=§c选择粒子效果 §7[点击 / 移动 以选择]
@@ -809,7 +810,8 @@ text.sign.lobby.map_4_locked_line3=§c仅可在
 text.sign.lobby.map_4_locked_line4=§c游戏重置前修改
 
 ##WAITING
-text.tellraw.waiting.player_join= 加入了开始队列
+text.tellraw.waiting.player_join= §6加入了开始队列
+text.tellraw.waiting.player_leave= §c离开了开始队列
 
 ##others
 

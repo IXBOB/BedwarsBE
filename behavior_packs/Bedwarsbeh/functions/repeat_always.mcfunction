@@ -22,9 +22,6 @@ effect @a saturation 2 255 true
 #复制gameSTART给玩家
 scoreboard players operation @a gameSTART = @s gameSTART
 
-#初始化重复检测大厅人数
-scoreboard players reset @s "大厅人数"
-
 #玩家被夺去tag=op时提示
 execute @a[tag=op,tag=!get.op.tellrawed] ~~~ function on_get_op
 execute @a[tag=!op,tag=get.op.tellrawed] ~~~ function on_take_away_op
@@ -37,6 +34,7 @@ execute @e[type=armor_stand,x=-197,y=202,z=-202,r=1] ~~~ event entity @s bedwars
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
+scoreboard players set @a[tag=waiting] in_lobby 1
 
 #inventory_menu
 #menu_page1

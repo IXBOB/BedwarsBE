@@ -97,4 +97,6 @@ scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick
 #RandomDamageUID
 scoreboard players reset @s RandomDamageUID
 #检测玩家加入开始队列
-execute @e[type=player,x=-204,y=193,z=-189,r=3] ~~~ function on_join_waiting_queue
+execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_waiting_queue
+#大厅提示加入游戏粒子
+execute @s[scores={function_tick_40=40}] ~~~ particle bedwars:lobby_portal -204 202 -192
