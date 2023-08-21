@@ -25,25 +25,25 @@ execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126,tag=!insider] ~~~ function unex
 #游戏未开始时删除僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 event entity @s bedwars:remove_self
 #重置结束后后复制地图选择告示牌
-execute @s[scores={reseting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -202 201 -206
-execute @s[scores={reseting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -202 201 -206
-execute @s[scores={reseting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -202 201 -206
-execute @s[scores={reseting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -202 201 -206
-execute @s[scores={starting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -202 201 -206
-execute @s[scores={starting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -202 201 -206
-execute @s[scores={starting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -202 201 -206
-execute @s[scores={starting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -202 201 -206
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -202 201 -206
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -202 201 -206
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -202 201 -206
-execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -202 201 -206
+execute @s[scores={reseting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -200 201 -206
+execute @s[scores={reseting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -200 201 -206
+execute @s[scores={reseting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -200 201 -206
+execute @s[scores={reseting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -200 201 -206
+execute @s[scores={starting=1,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -200 201 -206
+execute @s[scores={starting=1,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -200 201 -206
+execute @s[scores={starting=1,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -200 201 -206
+execute @s[scores={starting=1,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -200 201 -206
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=1,function_tick_20=20}] ~~~ structure load bedwars:lobby_map1_lock_sign -200 201 -206
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=2,function_tick_20=20}] ~~~ structure load bedwars:lobby_map2_lock_sign -200 201 -206
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=3,function_tick_20=20}] ~~~ structure load bedwars:lobby_map3_lock_sign -200 201 -206
+execute @s[tag=reset_OK,scores={starting=0,"游戏地图"=4,function_tick_20=20}] ~~~ structure load bedwars:lobby_map4_lock_sign -200 201 -206
 #复制大厅不可选择告示牌
-execute @s[scores={reseting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -206
-execute @s[scores={reseting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -206
-execute @s[scores={starting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -206
-execute @s[scores={starting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -206
-execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -206
-execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -206
+execute @s[scores={reseting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -200 200 -206
+execute @s[scores={reseting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -200 200 -206
+execute @s[scores={starting=1,"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -200 200 -206
+execute @s[scores={starting=1,"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -200 200 -206
+execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -200 200 -206
+execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -200 200 -206
 #当 即将设置的最少开始玩家数 等于 已设置的最少开始玩家数 时tellraw管理员
 execute @s[tag=set.start.players.2] ~~~ execute @a[tag=op,tag=set.start.players.2] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_2_already"} ] }
 execute @s[tag=set.start.players.3] ~~~ execute @a[tag=op,tag=set.start.players.3] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.custom_commands.set_player_count_3_already"} ] }
@@ -97,6 +97,6 @@ scoreboard players add @s[scores={starting=1,"开始倒计时"=0..,function_tick
 #RandomDamageUID
 scoreboard players reset @s RandomDamageUID
 #检测玩家加入开始队列
-execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_waiting_queue
+execute @s[tag=reset_OK] ~~~ execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_waiting_queue
 #大厅提示加入游戏粒子
-execute @s[scores={function_tick_40=40}] ~~~ particle bedwars:lobby_portal -204 202 -192
+execute @s[scores={function_tick_40=40},tag=reset_OK] ~~~ particle bedwars:lobby_portal -204 202 -192

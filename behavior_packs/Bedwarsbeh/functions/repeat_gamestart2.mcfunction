@@ -34,5 +34,5 @@ function delete_non-compliant_item_and_entity
 scoreboard players reset @s RandomDamageUID
 #重置结束后后复制游戏模式告示牌
 #复制大厅不可选择告示牌
-execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -202 200 -206
-execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -202 200 -206
+execute @s[tag=reset_OK,scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -200 200 -206
+execute @s[tag=reset_OK,scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -200 200 -206

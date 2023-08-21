@@ -97,13 +97,6 @@ function test_game_uid/test_game_uid
 function delete_non-compliant_item_and_entity
 #杀死掉入虚空的玩家
 execute @a[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={"分队"=1..4,"出局观战"=0}] ~~~ detect ~ ~ ~ structure_void 0 kill @s
-#检测游戏开始时按钮被按下并重置按钮(观战)
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 gamemode spectator @e[type=player,x=-200,y=201,z=-205,r=3,c=1]
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "存活" 0
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 tag @e[type=player,x=-200,y=201,z=-205,r=3,c=1] add from_lobby_spectator
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 scoreboard players set @e[type=player,x=-200,y=201,z=-205,r=3,c=1] "出局观战" 1
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 tp @e[type=player,x=-200,y=201,z=-205,r=3,c=1] 0 206 0
-execute @s ~~~ detect -200 201 -205 polished_blackstone_button 9 setblock -200 201 -205 polished_blackstone_button 1
 #游戏区域tag+degrade
 execute @a[scores={"分队"=1..4,"出局观战"=0},x=-63,y=171,z=-63,dx=126,dy=33,dz=126] ~~~ tag @s add degrade
 #游戏开始时自动获取经验和硬币
@@ -115,3 +108,7 @@ execute @s[scores={yellow_trap_sum=1..3}] ~~~ function test_yellow_team_trap_tri
 execute @s[scores={green_trap_sum=1..3}] ~~~ function test_green_team_trap_triggered
 #RandomDamageUID
 scoreboard players random @s RandomDamageUID 1 999999999
+#检测玩家加入观战
+execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_spectate
+#大厅提示加入游戏粒子
+execute @s[scores={function_tick_40=40}] ~~~ particle bedwars:lobby_portal -204 202 -192

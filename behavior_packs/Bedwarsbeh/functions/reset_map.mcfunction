@@ -10,22 +10,14 @@ execute @e[type=armor_stand,scores={reseting=1,"游戏地图"=1..4,function_tick
 #删除重置时掉落的方块
 execute @e[type=armor_stand,scores={reseting=1}] ~~~ execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ barrier 0 kill @e[type=falling_block]
 
-#检测reset完毕
-execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ obsidian 0 tag @s add reset_finish
-execute @e[type=armor_stand,name=reset,tag=reset_finish] ~~~ tag @s remove reset
-execute @e[type=armor_stand,name=reset,tag=reset_finish] ~~~ tag @s remove reset_finish
+#检测删除方块完毕后删除tag reset
+execute @e[type=armor_stand,name=reset,tag=reset] ~~~ detect ~ ~-1 ~ obsidian 0 tag @s remove reset
 #重置百分数 +1--------------------
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick_20=7}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick_20=14}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=..99,function_tick_20=20}] ~~~ scoreboard players add @s "重置百分数" 1
 execute @e[type=armor_stand,name=main,scores={reseting=1}] ~~~ titleraw @a subtitle {"rawtext":[{"translate":"text.title.waitinfo.lobby_reseting","with":{"rawtext":[{ "score" : { "name" : "@s" , "objective" : "重置百分数"}}]}}]}
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ tag @e[type=armor_stand,name=main] add reset_OK
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ title @a times 0 60 0
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ titleraw @a title { "rawtext" : [{"translate":"text.title.waitinfo.lobby_reseting_blank"} ] }
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ titleraw @a subtitle { "rawtext" : [{"translate":"text.subtitle.waitinfo.lobby_reset_complete"} ] }
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.blank_5 "显示" -8
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set text.scoreboard.waitinfo.website "显示" -9
-execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ scoreboard players set @s reseting 0
+execute @e[type=armor_stand,name=main,scores={reseting=1,"重置百分数"=100}] ~~~ function on_reset_ok
 
 #重置游戏区域上方等待区域
 execute @e[type=armor_stand,name=main,scores={reseting=1,"等已重置"=0,"重置百分数"=1}] ~~~ function reset_map/waiting_room

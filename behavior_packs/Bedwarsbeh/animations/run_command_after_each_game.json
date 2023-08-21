@@ -42,8 +42,8 @@
 					//出局观战 -> 0
 					"/scoreboard players set @a 出局观战 0",
 					//刷新大厅告示牌
-					"/function refresh_map/lobby/change_map",
-					"/function refresh_map/lobby/change_mode"
+					"/execute @e[type=armor_stand,name=main] ~~~ function refresh_map/lobby/change_map",
+					"/execute @e[type=armor_stand,name=main] ~~~ function refresh_map/lobby/change_mode"
 				],
 				"17.8": [
 					//tellraw即将重置

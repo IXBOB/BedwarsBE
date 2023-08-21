@@ -2,18 +2,18 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "bedwars:shop_purchase_bow_command",
+            "identifier": "bedwars:shop_purchase_upgrade_bow_command",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false,
             "scripts": {
               "animate": [
-                "shop_purchase_bow_animation_controller"
+                "shop_purchase_upgrade_bow_animation_controller"
               ]
             },
             "animations": {
-              "shop_purchase_bow_animation_controller": "controller.animation.command.shop_purchase_bow",
-              "shop_purchase_bow": "animation.command.shop_purchase_bow"
+              "shop_purchase_upgrade_bow_animation_controller": "controller.animation.command.shop_purchase_upgrade_bow",
+              "shop_purchase_upgrade_bow": "animation.command.shop_purchase_upgrade_bow"
             }
         },
         "components":{

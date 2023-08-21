@@ -1174,9 +1174,6 @@
          "path" : "textures/blocks/purchase_blue_stained_glass_block.png"
       },
       {
-         "path" : "textures/blocks/purchase_bow_block.png"
-      },
-      {
          "path" : "textures/blocks/purchase_endstone_block.png"
       },
       {
@@ -1205,6 +1202,9 @@
       },
       {
          "path" : "textures/blocks/purchase_upgrade_armor_block.png"
+      },
+      {
+         "path" : "textures/blocks/purchase_upgrade_bow_block.png"
       },
       {
          "path" : "textures/blocks/purchase_upgrade_sword_block.png"

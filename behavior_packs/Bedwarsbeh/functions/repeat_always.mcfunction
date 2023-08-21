@@ -28,8 +28,8 @@ execute @a[tag=!op,tag=get.op.tellrawed] ~~~ function on_take_away_op
 
 #大厅滚动字体
 execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,scores={function_tick_40=40}] ~~~ function summon_lobby_scroll_text
-execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,x=-198,y=197,z=-203,dx=2,dy=6,dz=2] ~~~ tp @s ~ ~0.02 ~
-execute @e[type=armor_stand,x=-197,y=202,z=-202,r=1] ~~~ event entity @s bedwars:remove_self
+execute @a[x=-200,y=200,z=-200,c=1,scores={in_lobby=1}] ~~~ execute @e[type=armor_stand,x=-200,y=199,z=-197,dx=2,dy=5,dz=3] ~~~ tp @s ~ ~0.02 ~
+execute @e[type=armor_stand,x=-199,y=203,z=-196,r=1] ~~~ event entity @s bedwars:remove_self
 
 #test in_lobby
 scoreboard players set @a in_lobby 0

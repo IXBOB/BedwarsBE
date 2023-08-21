@@ -1,1 +1,1 @@
-loot give @s loot "ench_bow/ench_bow_1"
+give @s bow
