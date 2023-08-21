@@ -1,0 +1,1 @@
+give @s bedwars:bow_level_4

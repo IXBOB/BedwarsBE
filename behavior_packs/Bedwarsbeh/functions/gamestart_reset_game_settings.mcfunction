@@ -50,6 +50,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "镐等级" 0
 scoreboard players set @a[scores={"分队"=1..4}] "斧等级" 0
 #护甲等级 -> 1
 scoreboard players set @a[scores={"分队"=1..4}] "护甲等级" 1
+##弓等级 -> 0
+scoreboard players set @a[scores={"分队"=1..4}] "弓等级" 0
 #kill经验球
 kill @e[type=xp_orb]
 #删除僵尸猪人

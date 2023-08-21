@@ -227,3 +227,7 @@ execute @e[type=armor_stand,scores={gameSTART=1,"绿保护等级"=4},name=main] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ execute @e[type=player,scores={"分队"=1..4,respawning=1},tag=run_respawn_command] ~~~ effect @s clear
 #tag - run_respawn_command
 tag @s remove run_respawn_command
+
+#bow
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1},tag=run_respawn_command] ~~~ clear @s bow
+execute @e[type=armor_stand,scores={gameSTART=1},name=main] ~~~ execute @a[scores={able_to_respawn=1},tag=run_respawn_command] ~~~ scoreboard players set @s "弓等级" 0
