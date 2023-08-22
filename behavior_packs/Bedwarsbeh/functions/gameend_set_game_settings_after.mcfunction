@@ -88,7 +88,7 @@ event entity @e[type=bedwars:base_entity_blue] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_yellow] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_green] bedwars:remove_self
 #删除dropped_item
-event entity @e[type=bedwars:dropped_iron_ingot] bedwars:remove_self
-event entity @e[type=bedwars:dropped_gold_ingot] bedwars:remove_self
-event entity @e[type=bedwars:dropped_diamond] bedwars:remove_self
-event entity @e[type=bedwars:dropped_emerald] bedwars:remove_self
+event entity @e[type=bedwars:dropped_iron_ingot,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_gold_ingot,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_diamond,tag=!in_guide] bedwars:remove_self
+event entity @e[type=bedwars:dropped_emerald,tag=!in_guide] bedwars:remove_self

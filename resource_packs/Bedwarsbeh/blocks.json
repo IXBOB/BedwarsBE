@@ -812,21 +812,21 @@
 	},
 	"bedwars:map_bone_cross1_block": {
 		"textures": {
-			"up": "map_bone_block_side_cross",
-			"down": "map_bone_block_side_cross",
+			"up": "map_bone_block_side_cross_z",
+			"down": "map_bone_block_side_cross_z",
 			"north": "map_bone_block_top",
 			"south": "map_bone_block_top",
-			"west": "map_bone_block_side_cross",
-			"east": "map_bone_block_side_cross"
+			"west": "map_bone_block_side_cross_x",
+			"east": "map_bone_block_side_cross_x"
 		},
 		"sound": "stone"
 	},
 	"bedwars:map_bone_cross2_block": {
 		"textures": {
-			"up": "map_bone_block_side_cross",
-			"down": "map_bone_block_side_cross",
-			"north": "map_bone_block_side_cross",
-			"south": "map_bone_block_side_cross",
+			"up": "map_bone_block_side_cross_x",
+			"down": "map_bone_block_side_cross_x",
+			"north": "map_bone_block_side_cross_x",
+			"south": "map_bone_block_side_cross_x",
 			"west": "map_bone_block_top",
 			"east": "map_bone_block_top"
 		},

@@ -2,7 +2,7 @@
     "format_version": "1.16.0",
     "minecraft:entity": {
         "description": {
-            "identifier": "bedwars:npc_lobby_guide_4",
+            "identifier": "bedwars:npc_lobby_guide_5_enemy",
             "is_spawnable": true,
             "is_summonable": true,
             "is_experimental": false

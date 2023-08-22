@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "bedwars:lobby_float_text",
+        "materials": {
+          "default": "npc"
+        },
+        "textures": {
+          "default": "textures/entity/empty"
+        },
+        "geometry": {"default":"geometry.lobby_float_text"},
+        "render_controllers": [ "controller.render.default" ],
+        "enable_attachables": true
+      }
+    }
+  }

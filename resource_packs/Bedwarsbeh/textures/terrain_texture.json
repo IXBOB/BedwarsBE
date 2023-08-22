@@ -904,6 +904,12 @@
 		"map_bone_block_side": {
 			"textures": "textures/blocks/map_bone_block/map_bone_block_side"
 		},
+		"map_bone_block_side_cross_x":{
+			"textures": "textures/blocks/map_bone_block/map_bone_block_side_cross_x"
+		},
+		"map_bone_block_side_cross_z":{
+			"textures": "textures/blocks/map_bone_block/map_bone_block_side_cross_z"
+		},
 		"map_cobbled_deepslate_block": {
 			"textures": "textures/blocks/map_cobbled_deepslate_block"
 		},
