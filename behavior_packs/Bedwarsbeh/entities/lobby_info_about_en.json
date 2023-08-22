@@ -1,0 +1,43 @@
+{
+    "format_version": "1.16.210",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:lobby_info_about_en",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "bedwars:remove_self": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:collision_box": {
+                "width": 0.01,
+                "height": 0.01
+            },
+            "minecraft:knockback_resistance": {
+                "value": 99999
+            },
+            "minecraft:nameable": {
+                "alwaysShow": true
+            },
+            "minecraft:persistent": {},
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "bedwars:remove_self": {
+                "add": {
+                    "component_groups": [
+                        "bedwars:remove_self"
+                    ]
+                }
+            }
+        }
+    }
+}

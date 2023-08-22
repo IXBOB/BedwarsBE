@@ -13,21 +13,21 @@
 			"bones": [
 				{
 					"name": "root",
-					"pivot": [-4, 0, -16],
-					"rotation": [-90, 17.5, 0]
+					"pivot": [-7, 0, 15],
+					"rotation": [90, 10, 180]
 				},
 				{
 					"name": "waist",
 					"parent": "root",
-					"pivot": [-4, 12, -16]
+					"pivot": [-11, 12, 15]
 				},
 				{
 					"name": "body",
 					"parent": "waist",
-					"pivot": [-4, 24, -16],
+					"pivot": [-11, 24, 15],
 					"cubes": [
 						{
-							"origin": [-8, 12, -18],
+							"origin": [-15, 12, 13],
 							"size": [8, 12, 4],
 							"uv": {
 								"north": {"uv": [20, 20], "uv_size": [8, 12]},
@@ -43,11 +43,11 @@
 				{
 					"name": "head",
 					"parent": "body",
-					"pivot": [-4, 24, -16],
+					"pivot": [-11, 24, 15],
 					"rotation": [7.5, 0, 0],
 					"cubes": [
 						{
-							"origin": [-8, 24, -20],
+							"origin": [-15, 24, 11],
 							"size": [8, 8, 8],
 							"uv": {
 								"north": {"uv": [8, 8], "uv_size": [8, 8]},
@@ -63,10 +63,10 @@
 				{
 					"name": "hat",
 					"parent": "head",
-					"pivot": [-4, 24, -16],
+					"pivot": [-11, 24, 15],
 					"cubes": [
 						{
-							"origin": [-8, 24, -20],
+							"origin": [-15, 24, 11],
 							"size": [8, 8, 8],
 							"inflate": 0.5,
 							"uv": {
@@ -83,16 +83,16 @@
 				{
 					"name": "cape",
 					"parent": "body",
-					"pivot": [-4, 24, -13]
+					"pivot": [-11, 24, 18]
 				},
 				{
 					"name": "leftArm",
 					"parent": "body",
-					"pivot": [1, 22, -16],
+					"pivot": [-6, 22, 15],
 					"rotation": [0, 0, -60],
 					"cubes": [
 						{
-							"origin": [0, 12, -18],
+							"origin": [-7, 12, 13],
 							"size": [4, 12, 4],
 							"uv": {
 								"north": {"uv": [36, 52], "uv_size": [4, 12]},
@@ -108,10 +108,10 @@
 				{
 					"name": "leftSleeve",
 					"parent": "leftArm",
-					"pivot": [1, 22, -16],
+					"pivot": [-6, 22, 15],
 					"cubes": [
 						{
-							"origin": [0, 12, -18],
+							"origin": [-7, 12, 13],
 							"size": [4, 12, 4],
 							"inflate": 0.25,
 							"uv": {
@@ -128,16 +128,16 @@
 				{
 					"name": "leftItem",
 					"parent": "leftArm",
-					"pivot": [2, 15, -15]
+					"pivot": [-5, 15, 16]
 				},
 				{
 					"name": "rightArm",
 					"parent": "body",
-					"pivot": [-9, 22, -16],
+					"pivot": [-16, 22, 15],
 					"rotation": [0, 0, 20],
 					"cubes": [
 						{
-							"origin": [-12, 12, -18],
+							"origin": [-19, 12, 13],
 							"size": [4, 12, 4],
 							"uv": {
 								"north": {"uv": [44, 20], "uv_size": [4, 12]},
@@ -153,10 +153,10 @@
 				{
 					"name": "rightSleeve",
 					"parent": "rightArm",
-					"pivot": [-9, 22, -16],
+					"pivot": [-16, 22, 15],
 					"cubes": [
 						{
-							"origin": [-12, 12, -18],
+							"origin": [-19, 12, 13],
 							"size": [4, 12, 4],
 							"inflate": 0.25,
 							"uv": {
@@ -173,18 +173,18 @@
 				{
 					"name": "rightItem",
 					"parent": "rightArm",
-					"pivot": [-10, 15, -15],
+					"pivot": [-17, 15, 16],
 					"locators": {
-						"lead_hold": [-10, 15, -15]
+						"lead_hold": [-17, 15, 16]
 					}
 				},
 				{
 					"name": "jacket",
 					"parent": "body",
-					"pivot": [-4, 24, -16],
+					"pivot": [-11, 24, 15],
 					"cubes": [
 						{
-							"origin": [-8, 12, -18],
+							"origin": [-15, 12, 13],
 							"size": [8, 12, 4],
 							"inflate": 0.25,
 							"uv": {
@@ -201,11 +201,11 @@
 				{
 					"name": "leftLeg",
 					"parent": "root",
-					"pivot": [-2.1, 12, -16],
+					"pivot": [-9.1, 12, 15],
 					"rotation": [0, 0, -17.5],
 					"cubes": [
 						{
-							"origin": [-4.1, 0, -18],
+							"origin": [-11.1, 0, 13],
 							"size": [4, 12, 4],
 							"uv": {
 								"north": {"uv": [20, 52], "uv_size": [4, 12]},
@@ -221,10 +221,10 @@
 				{
 					"name": "leftPants",
 					"parent": "leftLeg",
-					"pivot": [-2.1, 12, -16],
+					"pivot": [-9.1, 12, 15],
 					"cubes": [
 						{
-							"origin": [-4.1, 0, -18],
+							"origin": [-11.1, 0, 13],
 							"size": [4, 12, 4],
 							"inflate": 0.25,
 							"uv": {
@@ -241,11 +241,11 @@
 				{
 					"name": "rightLeg",
 					"parent": "root",
-					"pivot": [-5.9, 12, -16],
+					"pivot": [-12.9, 12, 15],
 					"rotation": [0, 0, 15],
 					"cubes": [
 						{
-							"origin": [-7.9, 0, -18],
+							"origin": [-14.9, 0, 13],
 							"size": [4, 12, 4],
 							"uv": {
 								"north": {"uv": [4, 20], "uv_size": [4, 12]},
@@ -261,10 +261,10 @@
 				{
 					"name": "rightPants",
 					"parent": "rightLeg",
-					"pivot": [-5.9, 12, -16],
+					"pivot": [-12.9, 12, 15],
 					"cubes": [
 						{
-							"origin": [-7.9, 0, -18],
+							"origin": [-14.9, 0, 13],
 							"size": [4, 12, 4],
 							"inflate": 0.25,
 							"uv": {

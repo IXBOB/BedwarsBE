@@ -37,10 +37,10 @@
          "path" : "attachables/blue_team_chestplate_protection_iv.json"
       },
       {
-         "path" : "textures/models/armor/yellow_team_armor_main.png"
+         "path" : "animation_controllers/dropped_item_revolve.json"
       },
       {
-         "path" : "animation_controllers/dropped_item_revolve.json"
+         "path" : "models/entity/lobby_info_about.geo.json"
       },
       {
          "path" : "attachables/blue_team_helmet.json"
@@ -74,9 +74,6 @@
       },
       {
          "path" : "attachables/blue_team_chestplate.json"
-      },
-      {
-         "path" : "textures/models/armor/yellow_team_armor_main_rib.png"
       },
       {
          "path" : "attachables/blue_team_leggings_protection_ii.json"
@@ -226,16 +223,19 @@
          "path" : "attachables/diamond_boots_protection_iv.json"
       },
       {
-         "path" : "textures/blocks/planks_big_oak_shop.png"
+         "path" : "textures/models/armor/yellow_team_armor_main_raiser.png"
       },
       {
-         "path" : "textures/models/armor/yellow_team_armor_main_raiser.png"
+         "path" : "textures/blocks/planks_big_oak_shop.png"
       },
       {
          "path" : "attachables/diamond_leggings_protection_i.json"
       },
       {
          "path" : "attachables/diamond_leggings_protection_ii.json"
+      },
+      {
+         "path" : "textures/entity/lobby_info_contact_en.png"
       },
       {
          "path" : "attachables/diamond_leggings_protection_iii.json"
@@ -319,16 +319,16 @@
          "path" : "attachables/yellow_team_boots.json"
       },
       {
-         "path" : "attachables/green_team_helmet_protection_ii.json"
+         "path" : "entity/dropped_diamond.json"
+      },
+      {
+         "path" : "textures/models/armor/blue_team_armor_legs.png"
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main_sentry.png"
       },
       {
-         "path" : "entity/dropped_diamond.json"
-      },
-      {
-         "path" : "textures/models/armor/blue_team_armor_legs.png"
+         "path" : "attachables/green_team_helmet_protection_ii.json"
       },
       {
          "path" : "textures/models/armor/red_team_armor_main.png"
@@ -499,16 +499,16 @@
          "path" : "attachables/yellow_team_helmet_protection_iii.json"
       },
       {
-         "path" : "attachables/yellow_team_chestplate_protection_iv.json"
-      },
-      {
          "path" : "textures/models/armor/red_team_armor_main_wild.png"
       },
       {
-         "path" : "attachables/yellow_team_helmet.json"
+         "path" : "attachables/yellow_team_chestplate_protection_iv.json"
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main_eye.png"
+      },
+      {
+         "path" : "attachables/yellow_team_helmet.json"
       },
       {
          "path" : "attachables/yellow_team_helmet_protection_i.json"
@@ -544,10 +544,10 @@
          "path" : "attachables/yellow_team_leggings_protection_ii.json"
       },
       {
-         "path" : "attachables/yellow_team_leggings_protection_iii.json"
+         "path" : "entity/npc_lobby_guide_5_enemy.json"
       },
       {
-         "path" : "textures/models/armor/yellow_team_armor_main_host.png"
+         "path" : "attachables/yellow_team_leggings_protection_iii.json"
       },
       {
          "path" : "attachables/yellow_team_leggings_protection_iv.json"
@@ -571,6 +571,9 @@
          "path" : "textures/items/chainmail_leggings.png"
       },
       {
+         "path" : "entity/lobby_info_about_cn.json"
+      },
+      {
          "path" : "textures/blocks/player_yellow_stained_glass.png"
       },
       {
@@ -584,6 +587,9 @@
       },
       {
          "path" : "entity/dropped_iron_ingot.json"
+      },
+      {
+         "path" : "textures/entity/lobby_info_about_en.png"
       },
       {
          "path" : "entity/emerald_point_revolve.json"
@@ -610,6 +616,15 @@
          "path" : "textures/blocks/map_cobbled_deepslate_block.png"
       },
       {
+         "path" : "entity/lobby_info_about_en.json"
+      },
+      {
+         "path" : "entity/lobby_info_contact_cn.json"
+      },
+      {
+         "path" : "entity/lobby_info_contact_en.json"
+      },
+      {
          "path" : "entity/mystery_box_float_ender_chest.json"
       },
       {
@@ -626,6 +641,15 @@
       },
       {
          "path" : "entity/npc_lobby_guide_2.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "entity/npc_lobby_guide_2_equip.json"
+      },
+      {
+         "path" : "models/entity/develop_source/lobby_info_about.bbmodel"
       },
       {
          "path" : "entity/npc_lobby_guide_3.json"
@@ -647,9 +671,6 @@
       },
       {
          "path" : "font/glyph_E1.png"
-      },
-      {
-         "path" : "manifest.json"
       },
       {
          "path" : "models/blocks/blue_bed_foot.geo.json"
@@ -745,6 +766,9 @@
          "path" : "models/entity/develop_source/dropped_ingot.bbmodel"
       },
       {
+         "path" : "models/entity/develop_source/lobby_info_contact.bbmodel"
+      },
+      {
          "path" : "models/entity/develop_source/mystery_box_float_ender_chest.bbmodel"
       },
       {
@@ -760,10 +784,7 @@
          "path" : "models/entity/develop_source/npc_lobby_guide_5.bbmodel"
       },
       {
-         "path" : "textures/models/armor/red_team_armor_main_eye.png"
-      },
-      {
-         "path" : "models/entity/develop_source/npc_lobby_guide_5_enemy.bbmodel"
+         "path" : "models/entity/develop_source/npc_lobby_guide_5_enemy.geo.bbmodel"
       },
       {
          "path" : "models/entity/diamond_point_revolve.geo.json"
@@ -802,10 +823,19 @@
          "path" : "models/entity/lobby_float_text.geo.json"
       },
       {
+         "path" : "models/entity/lobby_info_contact.geo.json"
+      },
+      {
+         "path" : "textures/blocks/map_bone_block/map_bone_block_side.png"
+      },
+      {
          "path" : "models/entity/mystery_box_float_ender_chest.geo.json"
       },
       {
          "path" : "models/entity/npc_lobby_guide_1.geo.json"
+      },
+      {
+         "path" : "models/entity/npc_lobby_guide_2_equip.geo.json"
       },
       {
          "path" : "models/entity/npc_lobby_guide_3.geo.json"
@@ -925,6 +955,9 @@
          "path" : "textures/blocks/menu999_purchase_confirm.png"
       },
       {
+         "path" : "textures/entity/lobby_info_contact_cn.png"
+      },
+      {
          "path" : "textures/blocks/lobby_button_select_last_block.png"
       },
       {
@@ -940,13 +973,13 @@
          "path" : "texts/sv_SE.lang"
       },
       {
+         "path" : "textures/models/armor/yellow_team_armor_main_dune.png"
+      },
+      {
          "path" : "texts/tr_TR.lang"
       },
       {
          "path" : "textures/items/green_team_boots.png"
-      },
-      {
-         "path" : "textures/models/armor/yellow_team_armor_main_dune.png"
       },
       {
          "path" : "texts/uk_UA.lang"
@@ -1013,9 +1046,6 @@
       },
       {
          "path" : "textures/blocks/map_blue_stained_glass.png"
-      },
-      {
-         "path" : "textures/blocks/map_bone_block/map_bone_block_side.png"
       },
       {
          "path" : "textures/blocks/map_bone_block/map_bone_block_side_cross_z.png"
@@ -1186,13 +1216,13 @@
          "path" : "textures/blocks/map_red_concrete_block.png"
       },
       {
+         "path" : "textures/models/armor/red_team_armor_main_vex.png"
+      },
+      {
          "path" : "textures/blocks/map_red_sandstone_block/map_red_sandstone_block_top.png"
       },
       {
          "path" : "textures/models/armor/blue_team_armor_main_ward.png"
-      },
-      {
-         "path" : "textures/models/armor/red_team_armor_main_vex.png"
       },
       {
          "path" : "textures/blocks/map_red_sand_block.png"
@@ -1219,13 +1249,13 @@
          "path" : "textures/blocks/map_spruce_planks_block.png"
       },
       {
+         "path" : "textures/models/armor/yellow_team_armor_main_silence.png"
+      },
+      {
          "path" : "textures/blocks/map_stone_block.png"
       },
       {
          "path" : "textures/models/armor/blue_team_armor_main.png"
-      },
-      {
-         "path" : "textures/models/armor/yellow_team_armor_main_silence.png"
       },
       {
          "path" : "textures/blocks/map_stone_bricks_block.png"
@@ -1348,19 +1378,19 @@
          "path" : "textures/entity/empty.png"
       },
       {
+         "path" : "textures/entity/lobby_info_about_cn.png"
+      },
+      {
          "path" : "textures/items/red_team_leggings.png"
       },
       {
          "path" : "textures/entity/mystery_box_float_ender_chest.png"
       },
       {
-         "path" : "textures/models/armor/blue_team_armor_main_eye.png"
+         "path" : "textures/items/snowball.png"
       },
       {
-         "path" : "textures/entity/rtyoop.png"
-      },
-      {
-         "path" : "textures/items/diamond_boots.png"
+         "path" : "textures/entity/steve.png"
       },
       {
          "path" : "textures/items/armor_upgrade.png"
@@ -1376,6 +1406,12 @@
       },
       {
          "path" : "textures/items/develop_source/yellow_team_chestplate.psd"
+      },
+      {
+         "path" : "textures/models/armor/blue_team_armor_main_eye.png"
+      },
+      {
+         "path" : "textures/items/diamond_boots.png"
       },
       {
          "path" : "textures/items/diamond_leggings.png"
@@ -1417,9 +1453,6 @@
          "path" : "textures/models/armor/green_team_armor_main_rib.png"
       },
       {
-         "path" : "textures/items/snowball.png"
-      },
-      {
          "path" : "textures/items/stone_axe.png"
       },
       {
@@ -1445,9 +1478,6 @@
       },
       {
          "path" : "textures/items/yellow_team_helmet.png"
-      },
-      {
-         "path" : "textures/models/armor/red_team_armor_main_wayfinder.png"
       },
       {
          "path" : "textures/models/armor/blue_team_armor_main_dune.png"
@@ -1525,6 +1555,9 @@
          "path" : "textures/models/armor/red_team_armor_main_coast.png"
       },
       {
+         "path" : "textures/models/armor/red_team_armor_main_eye.png"
+      },
+      {
          "path" : "textures/models/armor/red_team_armor_main_rib.png"
       },
       {
@@ -1537,10 +1570,22 @@
          "path" : "textures/models/armor/red_team_armor_main_ward.png"
       },
       {
+         "path" : "textures/models/armor/red_team_armor_main_wayfinder.png"
+      },
+      {
          "path" : "textures/models/armor/yellow_team_armor_legs.png"
       },
       {
+         "path" : "textures/models/armor/yellow_team_armor_main.png"
+      },
+      {
          "path" : "textures/models/armor/yellow_team_armor_main_coast.png"
+      },
+      {
+         "path" : "textures/models/armor/yellow_team_armor_main_host.png"
+      },
+      {
+         "path" : "textures/models/armor/yellow_team_armor_main_rib.png"
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main_shaper.png"
