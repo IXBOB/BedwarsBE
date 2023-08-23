@@ -2,9 +2,9 @@
 	"format_version": "1.13.0",
 	"netease:block_geometry": {
 		"description": {
-			"identifier": "bedwars:blue_bed_foot",
+			"identifier": "bedwars:blue_bed_head",
 			"textures": [
-				"bedwars:blue_bed_foot"
+				"bedwars:blue_bed_head"
 			]
 		},
 		"bones": [
@@ -15,32 +15,27 @@
 					0,
 					0
 				],
+				"rotation": [
+					0,
+					-90,
+					0
+				],
 				"cubes": [
 					{
 						"origin": [
+							13,
 							0,
-							0,
-							-3
+							0
 						],
 						"size": [
 							3,
 							3,
 							3
 						],
-						"pivot": [
-							0,
-							0,
-							0
-						],
-						"rotation": [
-							0,
-							180,
-							0
-						],
 						"uv": {
 							"north": {
 								"uv": [
-									8,
+									6.5,
 									6.5
 								],
 								"uv_size": [
@@ -104,27 +99,17 @@
 						"origin": [
 							13,
 							0,
-							-3
+							13
 						],
 						"size": [
 							3,
 							3,
 							3
 						],
-						"pivot": [
-							0,
-							0,
-							0
-						],
-						"rotation": [
-							0,
-							180,
-							0
-						],
 						"uv": {
 							"north": {
 								"uv": [
-									8,
+									14.5,
 									6.5
 								],
 								"uv_size": [
@@ -134,7 +119,7 @@
 							},
 							"east": {
 								"uv": [
-									8,
+									14.5,
 									6.5
 								],
 								"uv_size": [
@@ -148,13 +133,13 @@
 									6.5
 								],
 								"uv_size": [
-									1.5,
+									-1.5,
 									1.5
 								]
 							},
 							"west": {
 								"uv": [
-									8,
+									14.5,
 									6.5
 								],
 								"uv_size": [
@@ -174,7 +159,7 @@
 							},
 							"down": {
 								"uv": [
-									9.5,
+									16,
 									8
 								],
 								"uv_size": [
@@ -187,7 +172,7 @@
 					{
 						"origin": [
 							0,
-							3,
+							-9,
 							-16
 						],
 						"size": [
@@ -201,64 +186,64 @@
 							0
 						],
 						"rotation": [
-							0,
 							180,
+							0,
 							0
 						],
 						"uv": {
 							"north": {
 								"uv": [
 									0,
-									0
+									6.5
 								],
 								"uv_size": [
 									8,
-									3
+									-3
 								]
 							},
 							"east": {
 								"uv": [
 									0,
-									3.5
+									0
 								],
 								"uv_size": [
-									8,
-									3
+									16,
+									3.5
 								]
 							},
 							"south": {
 								"uv": [
 									8,
-									3.5
+									6.5
 								],
 								"uv_size": [
-									8,
-									3
+									-8,
+									-3
 								]
 							},
 							"west": {
 								"uv": [
 									8,
-									3.5
+									6.5
 								],
 								"uv_size": [
-									-8,
-									3
+									8,
+									-3
 								]
 							},
 							"up": {
 								"uv": [
-									0,
+									16,
 									16
 								],
 								"uv_size": [
-									8,
+									-8,
 									-8
 								]
 							},
 							"down": {
 								"uv": [
-									16,
+									8,
 									16
 								],
 								"uv_size": [

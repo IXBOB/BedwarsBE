@@ -1070,11 +1070,13 @@
 	},
 	"bedwars:red_bed_foot": {
 		"textures": "red_bed_foot",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:red_bed_foot"
 	},
 	"bedwars:red_bed_head": {
 		"textures": "red_bed_head",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:red_bed_head"
 	},
 	"bedwars:blue_bed_foot": {
 		"textures": "blue_bed_foot",
@@ -1083,23 +1085,28 @@
 	},
 	"bedwars:blue_bed_head": {
 		"textures": "blue_bed_head",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:blue_bed_head"
 	},
 	"bedwars:yellow_bed_foot": {
 		"textures": "yellow_bed_foot",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:yellow_bed_foot"
 	},
 	"bedwars:yellow_bed_head": {
 		"textures": "yellow_bed_head",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:yellow_bed_head"
 	},
 	"bedwars:green_bed_foot": {
 		"textures": "green_bed_foot",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:green_bed_foot"
 	},
 	"bedwars:green_bed_head": {
 		"textures": "green_bed_head",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:green_bed_head"
 	},
 	"bedwars:map_barrel_block": {
 		"textures": {

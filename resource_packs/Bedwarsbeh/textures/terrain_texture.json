@@ -940,29 +940,50 @@
 		"red_bed_foot": {
 			"textures": "textures/blocks/red_bed_foot"
 		},
+		"bedwars:red_bed_foot":{
+			"textures":"textures/blocks/netease/red_bed_foot"
+		},
 		"red_bed_head": {
 			"textures": "textures/blocks/red_bed_head"
+		},
+		"bedwars:red_bed_head":{
+			"textures":"textures/blocks/netease/red_bed_head"
 		},
 		"blue_bed_foot": {
 			"textures": "textures/blocks/blue_bed_foot"
 		},
 		"bedwars:blue_bed_foot":{
-			"textures":"textures/blocks/blue_bed_foot"
+			"textures":"textures/blocks/netease/blue_bed_foot"
 		},
 		"blue_bed_head": {
 			"textures": "textures/blocks/blue_bed_head"
 		},
+		"bedwars:blue_bed_head":{
+			"textures":"textures/blocks/netease/blue_bed_head"
+		},
 		"yellow_bed_foot": {
 			"textures": "textures/blocks/yellow_bed_foot"
+		},
+		"bedwars:yellow_bed_foot":{
+			"textures":"textures/blocks/netease/yellow_bed_foot"
 		},
 		"yellow_bed_head": {
 			"textures": "textures/blocks/yellow_bed_head"
 		},
+		"bedwars:yellow_bed_head":{
+			"textures":"textures/blocks/netease/yellow_bed_head"
+		},
 		"green_bed_foot": {
 			"textures": "textures/blocks/green_bed_foot"
 		},
+		"bedwars:green_bed_foot":{
+			"textures":"textures/blocks/netease/green_bed_foot"
+		},
 		"green_bed_head": {
 			"textures": "textures/blocks/green_bed_head"
+		},
+		"bedwars:green_bed_head":{
+			"textures":"textures/blocks/netease/green_bed_head"
 		},
 		"map_barrel_block_up": {
 			"textures": "textures/blocks/map_barrel_top_block"

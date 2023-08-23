@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:block": {
     "description": {
-      "identifier": "bedwars:blue_bed_foot",
+      "identifier": "bedwars:blue_bed_head",
       "register_to_creative_menu": true,
       "is_experimental": false,
       "category": "custom"
@@ -50,12 +50,12 @@
 				}
       },
       "minecraft:on_player_destroyed": {
-        "event": "bedwars:destroy_blue_bed_foot", //检测破坏床
+        "event": "bedwars:destroy_blue_bed_head", //检测破坏床
         "target": "self"
       }
     },
     "events": {
-      "bedwars:destroy_blue_bed_foot": { //检测破坏床
+      "bedwars:destroy_blue_bed_head": { //检测破坏床
         "run_command": {
           "command": [
             "tag @s[scores={分队=!2,\"存活\"=1}] add destroy_blue_bed_success",

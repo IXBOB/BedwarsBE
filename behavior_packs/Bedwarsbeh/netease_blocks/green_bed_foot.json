@@ -1,0 +1,93 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bedwars:green_bed_foot",
+      "register_to_creative_menu": true,
+      "is_experimental": false,
+      "category": "custom"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.3,
+      "minecraft:block_light_absorption": {
+        "value": 0
+      },
+      "netease:solid": {
+        "value": false
+      },
+      "netease:pathable": {
+        "value": true
+      },
+      "netease:render_layer": {
+        "value": "alpha"
+      },
+      "netease:aabb": {
+        "collision": [
+          {
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1,
+              0.5625,
+              1
+            ]
+          }
+        ],
+        "clip": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            1,
+            0.5625,
+            1
+          ]
+				}
+      },
+      "minecraft:on_player_destroyed": {
+        "event": "bedwars:destroy_green_bed_foot", //检测破坏床
+        "target": "self"
+      }
+    },
+    "events": {
+      "bedwars:destroy_green_bed_foot": { //检测破坏床
+        "run_command": {
+          "command": [
+            "tag @s[scores={分队=!4,\"存活\"=1}] add destroy_green_bed_success",
+            "execute @s[scores={分队=4,\"存活\"=1}] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.destroy_self_bed_refuse\"} ] }",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players random @s desbed_tell_num 1 5",
+            "execute @s[tag=!destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床存活\"=1}] ~~~ setblock -46 185 0 bedwars:green_bed_head",
+            "execute @s[tag=!destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,\"绿床存活\"=1}] ~~~ setblock -47 185 0 bedwars:green_bed_foot",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ setblock -46 185 0 air 0 destroy",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ setblock -47 185 0 air 0 destroy",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 titleraw @a[scores={分队=4}] title { \"rawtext\" : [{\"translate\":\"text.title.ingameinfo.bed_destroyed\"} ] }",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 titleraw @a[scores={分队=4}] subtitle { \"rawtext\" : [{\"translate\":\"text.subtitle.ingameinfo.bed_destroyed\"} ] }",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 playsound mob.enderdragon.growl @a[scores={分队=!4}]",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 playsound mob.wither.death @a[scores={分队=4}]",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players set @a[scores={分队=4}] able_to_respawn 0",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=1}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§r\" },{\"translate\":\"text.tellraw.ingameinfo.green_bed_destroyed_1\"},{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..1}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..2}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..3}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=2}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§r\" },{\"translate\":\"text.tellraw.ingameinfo.green_bed_destroyed_2\"},{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..1}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..2}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..3}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=3}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§r\" },{\"translate\":\"text.tellraw.ingameinfo.green_bed_destroyed_3\"},{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..1}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..2}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..3}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=4}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§r\" },{\"translate\":\"text.tellraw.ingameinfo.green_bed_destroyed_4\"},{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..1}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..2}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..3}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ execute @s[scores={desbed_tell_num=5}] ~~~ detect -47 185 0 air 0 tellraw @a { \"rawtext\" : [{ \"text\" : \"\n§r\" },{\"translate\":\"text.tellraw.ingameinfo.green_bed_destroyed_5\"},{ \"translate\": \"%%5\", \"with\": { \"rawtext\": [ { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..1}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..2}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..3}]\"}, { \"selector\": \"@a[tag=destroy_green_bed_success,scores={分队=..4}]\"}, { \"text\": \"§c\" }, { \"text\": \"§b\" }, { \"text\": \"§e\" }, { \"text\": \"§a\" } ] } },{ \"selector\" :  \"@a[tag=destroy_green_bed_success]\" },{ \"text\" : \"\n§r\" }]}",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @a[tag=destroy_green_bed_success] add get.xp.desbed",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @a[tag=destroy_green_bed_success] add get.coin.desbed",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players add @a[tag=destroy_green_bed_success] 总拆床数 1",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 function get_xp_and_coin",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 tag @s add test_bed_exist_and_set",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1,\"绿床存活\"=1}] ~~~ detect -47 185 0 air 0 scoreboard players set @e[type=armor_stand,name=main,scores={gameSTART=1}] \"绿床存活\" 0",
+            "execute @s[tag=destroy_green_bed_success] ~~~ execute @e[type=armor_stand,name=main,tag=test_bed_exist_and_set] ~~~ function scoreboard_team_display/test_bed_exist_and_set",
+            "tag @a remove destroy_green_bed_success",
+            "tag @a remove test_bed_exist_and_set"
+          ],
+          "target": "player"
+        }
+      }
+    }
+  }
+}
