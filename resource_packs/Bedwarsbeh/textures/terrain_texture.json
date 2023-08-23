@@ -4,6 +4,69 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
+
+
+		//NETEASE
+		"bedwars:red_bed_head":{
+			"textures":"textures/blocks/netease/red_bed_head"
+		},
+		"bedwars:blue_bed_foot":{
+			"textures":"textures/blocks/netease/blue_bed_foot"
+		},
+		"bedwars:blue_bed_head":{
+			"textures":"textures/blocks/netease/blue_bed_head"
+		},
+		"bedwars:yellow_bed_foot":{
+			"textures":"textures/blocks/netease/yellow_bed_foot"
+		},
+		"bedwars:yellow_bed_head":{
+			"textures":"textures/blocks/netease/yellow_bed_head"
+		},
+		"bedwars:green_bed_foot":{
+			"textures":"textures/blocks/netease/green_bed_foot"
+		},
+		"bedwars:green_bed_head":{
+			"textures":"textures/blocks/netease/green_bed_head"
+		},
+		"bedwars:player_red_stained_glass":{
+			"textures": "textures/blocks/player_red_stained_glass"
+		},
+		"bedwars:player_blue_stained_glass":{
+			"textures": "textures/blocks/player_blue_stained_glass"
+		},
+		"bedwars:player_yellow_stained_glass":{
+			"textures": "textures/blocks/player_yellow_stained_glass"
+		},
+		"bedwars:player_green_stained_glass":{
+			"textures": "textures/blocks/player_green_stained_glass"
+		},
+		"bedwars:map_light_blue_stained_glass":{
+			"textures": "textures/blocks/map_light_blue_stained_glass_block"
+		},
+		"bedwars:map_white_stained_glass":{
+			"textures": "textures/blocks/map_white_stained_glass_block"
+		},
+		"bedwars:map_blue_stained_glass":{
+			"textures": "textures/blocks/player_blue_stained_glass"
+		},
+		"bedwars:map_cyan_stained_glass":{
+			"textures": "textures/blocks/map_cyan_stained_glass_block"
+		},
+		"bedwars:map_jungle_leaves_block": {
+			"textures": "textures/blocks/map_jungle_leaves_block"
+		},
+		"bedwars:map_dark_oak_leaves_block": {
+			"textures": "textures/blocks/map_dark_oak_leaves_block"
+		},
+
+
+
+
+
+
+
+
+		//VANILLA
 		"map_iron_block_up": {
 			"textures": "textures/blocks/map_iron_block"
 		},
@@ -802,8 +865,8 @@
 		"map_green_wool": {
 			"textures": "textures/blocks/map_green_wool"
 		},
-		"map_white_glass": {
-			"textures": "textures/blocks/map_white_glass"
+		"map_white_stained_glass": {
+			"textures": "textures/blocks/map_white_stained_glass"
 		},
 		"map_sand_block": {
 			"textures": "textures/blocks/map_sand_block"
@@ -946,44 +1009,23 @@
 		"red_bed_head": {
 			"textures": "textures/blocks/red_bed_head"
 		},
-		"bedwars:red_bed_head":{
-			"textures":"textures/blocks/netease/red_bed_head"
-		},
 		"blue_bed_foot": {
 			"textures": "textures/blocks/blue_bed_foot"
-		},
-		"bedwars:blue_bed_foot":{
-			"textures":"textures/blocks/netease/blue_bed_foot"
 		},
 		"blue_bed_head": {
 			"textures": "textures/blocks/blue_bed_head"
 		},
-		"bedwars:blue_bed_head":{
-			"textures":"textures/blocks/netease/blue_bed_head"
-		},
 		"yellow_bed_foot": {
 			"textures": "textures/blocks/yellow_bed_foot"
-		},
-		"bedwars:yellow_bed_foot":{
-			"textures":"textures/blocks/netease/yellow_bed_foot"
 		},
 		"yellow_bed_head": {
 			"textures": "textures/blocks/yellow_bed_head"
 		},
-		"bedwars:yellow_bed_head":{
-			"textures":"textures/blocks/netease/yellow_bed_head"
-		},
 		"green_bed_foot": {
 			"textures": "textures/blocks/green_bed_foot"
 		},
-		"bedwars:green_bed_foot":{
-			"textures":"textures/blocks/netease/green_bed_foot"
-		},
 		"green_bed_head": {
 			"textures": "textures/blocks/green_bed_head"
-		},
-		"bedwars:green_bed_head":{
-			"textures":"textures/blocks/netease/green_bed_head"
 		},
 		"map_barrel_block_up": {
 			"textures": "textures/blocks/map_barrel_top_block"
@@ -1182,6 +1224,9 @@
 		},
 		"map_cracked_stone_bricks_block_west": { //WEST
 			"textures": "textures/blocks/map_cracked_stone_bricks_block"
+		},
+		"map_blue_stained_glass": {
+			"textures": "textures/blocks/player_blue_stained_glass"
 		},
 		"map_cyan_stained_glass_block_up": {
 			"textures": "textures/blocks/map_cyan_stained_glass_block"

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "bedwars:map_white_glass"
+			"identifier": "bedwars:map_white_stained_glass"
 		},
 		"components": {
 			//basic custom glass components
@@ -10,7 +10,7 @@
 			"minecraft:material_instances": {
 				"*": {
 					"render_method": "blend",
-					"texture": "map_white_glass"
+					"texture": "map_white_stained_glass"
 				}
 			},
 			"minecraft:destroy_time": 99999

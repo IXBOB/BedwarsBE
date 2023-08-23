@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bedwars:player_blue_stained_glass",
+            "register_to_creative_menu": true,
+            "is_experimental": false,
+            "category": "custom"
+        },
+        "components": {
+            "minecraft:destroy_time": 0.25,
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "netease:pathable": {
+                "value": true
+            },
+            "netease:render_layer": {
+                "value": "blend"
+            }
+        }
+    }
+}

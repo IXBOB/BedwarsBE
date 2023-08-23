@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bedwars:map_jungle_leaves_block",
+            "register_to_creative_menu": true,
+            "is_experimental": false,
+            "category": "custom"
+        },
+        "components": {
+            "netease:no_crop_face_block":{},
+            "minecraft:destroy_time": 99999,
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "netease:pathable": {
+                "value": true
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            }
+        }
+    }
+}

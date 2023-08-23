@@ -562,14 +562,14 @@
 		},
 		"sound": "stone"
 	},
-	"bedwars:map_white_glass": {
+	"bedwars:map_white_stained_glass": {
 		"textures": {
-			"up": "map_white_glass",
-			"down": "map_white_glass",
-			"north": "map_white_glass",
-			"south": "map_white_glass",
-			"west": "map_white_glass",
-			"east": "map_white_glass"
+			"up": "map_white_stained_glass",
+			"down": "map_white_stained_glass",
+			"north": "map_white_stained_glass",
+			"south": "map_white_stained_glass",
+			"west": "map_white_stained_glass",
+			"east": "map_white_stained_glass"
 		},
 		"sound": "glass"
 	},
@@ -773,12 +773,12 @@
 	},
 	"bedwars:map_blue_stained_glass_block": {
 		"textures": {
-			"up": "player_blue_stained_glass_up",
-			"down": "player_blue_stained_glass_down",
-			"north": "player_blue_stained_glass_north",
-			"south": "player_blue_stained_glass_south",
-			"west": "player_blue_stained_glass_west",
-			"east": "player_blue_stained_glass_east"
+			"up": "map_blue_stained_glass",
+			"down": "map_blue_stained_glass",
+			"north": "map_blue_stained_glass",
+			"south": "map_blue_stained_glass",
+			"west": "map_blue_stained_glass",
+			"east": "map_blue_stained_glass"
 		},
 		"sound": "stone"
 	},

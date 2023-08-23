@@ -7,3 +7,5 @@ event entity @e[type=bedwars:lobby_info_contact_en,x=-200,y=200,z=-200,r=50] bed
 summon bedwars:lobby_float_text "§eCreator: IXBOB" -199 203 -199
 summon bedwars:lobby_info_about_en -205.5 201 -205.5
 summon bedwars:lobby_info_contact_en -205.5 200 -205.5
+execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ function refresh_map/lobby/float_text/display_spectate
+execute @e[type=armor_stand,name=main,scores={gameSTART=0},tag=reset_OK] ~~~ function refresh_map/lobby/float_text/display_join

@@ -1207,9 +1207,6 @@
          "path" : "textures/blocks/map_infested_deepslate_top_block.png"
       },
       {
-         "path" : "textures/blocks/map_white_glass.png"
-      },
-      {
          "path" : "textures/items/blue_team_leggings.png"
       },
       {
@@ -1286,6 +1283,9 @@
       },
       {
          "path" : "textures/blocks/map_white_concrete_block.png"
+      },
+      {
+         "path" : "textures/blocks/map_white_stained_glass.png"
       },
       {
          "path" : "textures/blocks/map_white_wool_block.png"

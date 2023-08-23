@@ -6,3 +6,5 @@ structure load bedwars:lobby_map4_lock_sign -200 201 -206
 #游戏模式不可选择
 execute @s[scores={"游戏模式"=1}] ~~~ structure load bedwars:lobby_mode1_lock_sign -200 200 -206
 execute @s[scores={"游戏模式"=2}] ~~~ structure load bedwars:lobby_mode2_lock_sign -200 200 -206
+#更新大厅悬浮字 加入游戏 -> 加入观战
+function refresh_map/lobby/float_text/display_spectate
