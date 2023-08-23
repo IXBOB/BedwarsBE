@@ -241,6 +241,9 @@
          "path" : "attachables/diamond_leggings_protection_iii.json"
       },
       {
+         "path" : "models/netease_block/blue_bed_foot.json"
+      },
+      {
          "path" : "particles/mystery_box_open_particle_4.particle.json"
       },
       {
@@ -625,16 +628,16 @@
          "path" : "entity/lobby_info_contact_en.json"
       },
       {
-         "path" : "entity/mystery_box_float_ender_chest.json"
+         "path" : "LICENSE"
+      },
+      {
+         "path" : "textures/items/blue_team_chestplate.png"
       },
       {
          "path" : "textures/models/armor/red_team_armor_main_tide.png"
       },
       {
-         "path" : "LICENSE"
-      },
-      {
-         "path" : "textures/items/blue_team_chestplate.png"
+         "path" : "entity/mystery_box_float_ender_chest.json"
       },
       {
          "path" : "entity/npc_lobby_guide_1.json"

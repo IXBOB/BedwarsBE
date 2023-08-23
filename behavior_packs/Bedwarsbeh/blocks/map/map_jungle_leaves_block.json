@@ -4,9 +4,18 @@
 		"description": {
 			"identifier": "bedwars:map_jungle_leaves_block"
 		},
-
 		"components": {
-			"minecraft:destroy_time": 99999
+			"minecraft:unit_cube": {},
+			"minecraft:destroy_time": 99999,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "blend",
+					"texture": "map_jungle_leaves_block",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				}
+			}
 		}
 	}
 }

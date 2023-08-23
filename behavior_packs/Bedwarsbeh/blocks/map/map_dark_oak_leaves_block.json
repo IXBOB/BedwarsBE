@@ -4,9 +4,16 @@
 		"description": {
 			"identifier": "bedwars:map_dark_oak_leaves_block"
 		},
-
 		"components": {
-			"minecraft:destroy_time": 99999
+			"minecraft:unit_cube": {},
+			"minecraft:destroy_time": 99999,
+			"minecraft:block_light_absorption": 0.0,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "blend",
+					"texture": "map_dark_oak_leaves_block"
+				}
+			}
 		}
 	}
 }

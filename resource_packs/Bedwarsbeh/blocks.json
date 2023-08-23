@@ -470,47 +470,19 @@
 		"sound": "stone"
 	},
 	"bedwars:player_red_stained_glass": {
-		"textures": {
-			"up": "player_red_stained_glass_up",
-			"down": "player_red_stained_glass_down",
-			"north": "player_red_stained_glass_north",
-			"south": "player_red_stained_glass_south",
-			"west": "player_red_stained_glass_west",
-			"east": "player_red_stained_glass_east"
-		},
+		"textures": "player_red_stained_glass",
 		"sound": "glass"
 	},
 	"bedwars:player_blue_stained_glass": {
-		"textures": {
-			"up": "player_blue_stained_glass_up",
-			"down": "player_blue_stained_glass_down",
-			"north": "player_blue_stained_glass_north",
-			"south": "player_blue_stained_glass_south",
-			"west": "player_blue_stained_glass_west",
-			"east": "player_blue_stained_glass_east"
-		},
+		"textures": "player_blue_stained_glass",
 		"sound": "glass"
 	},
 	"bedwars:player_yellow_stained_glass": {
-		"textures": {
-			"up": "player_yellow_stained_glass_up",
-			"down": "player_yellow_stained_glass_down",
-			"north": "player_yellow_stained_glass_north",
-			"south": "player_yellow_stained_glass_south",
-			"west": "player_yellow_stained_glass_west",
-			"east": "player_yellow_stained_glass_east"
-		},
+		"textures": "player_yellow_stained_glass",
 		"sound": "glass"
 	},
 	"bedwars:player_green_stained_glass": {
-		"textures": {
-			"up": "player_green_stained_glass_up",
-			"down": "player_green_stained_glass_down",
-			"north": "player_green_stained_glass_north",
-			"south": "player_green_stained_glass_south",
-			"west": "player_green_stained_glass_west",
-			"east": "player_green_stained_glass_east"
-		},
+		"textures": "player_green_stained_glass",
 		"sound": "glass"
 	},
 	"bedwars:log_spruce2": {
@@ -1106,7 +1078,8 @@
 	},
 	"bedwars:blue_bed_foot": {
 		"textures": "blue_bed_foot",
-		"sound": "stone"
+		"sound": "stone",
+		"netease_model":"bedwars:blue_bed_foot"
 	},
 	"bedwars:blue_bed_head": {
 		"textures": "blue_bed_head",
@@ -1360,14 +1333,7 @@
 		"sound": "wood"
 	},
 	"bedwars:map_jungle_leaves_block": {
-		"textures": {
-			"up": "map_jungle_leaves_block_up",
-			"down": "map_jungle_leaves_block_down",
-			"north": "map_jungle_leaves_block_north",
-			"south": "map_jungle_leaves_block_south",
-			"west": "map_jungle_leaves_block_west",
-			"east": "map_jungle_leaves_block_east"
-        },
+		"textures": "map_jungle_leaves_block",
 		"sound": "wood"
 	},
 	"bedwars:map_lime_terracotta_block": {
@@ -1503,14 +1469,7 @@
 		"sound": "wood"
 	},
 	"bedwars:map_dark_oak_leaves_block": {
-		"textures": {
-			"up": "map_dark_oak_leaves_block_up",
-			"down": "map_dark_oak_leaves_block_down",
-			"north": "map_dark_oak_leaves_block_north",
-			"south": "map_dark_oak_leaves_block_south",
-			"west": "map_dark_oak_leaves_block_west",
-			"east": "map_dark_oak_leaves_block_east"
-        },
+		"textures": "map_dark_oak_leaves_block",
 		"sound": "wood"
 	}
 }
