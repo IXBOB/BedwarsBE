@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bedwars:lobby_guide_text_2_cn",
+            "materials": {"default":"npc"},
+            "textures": {"default":"textures/entity/lobby_guide_text_2_cn"},
+            "geometry": {"default":"geometry.lobby_guide_text"},
+            "render_controllers": ["controller.render.default"],
+            "enable_attachables": false,
+            "hide_armor": false
+        }
+    }
+}

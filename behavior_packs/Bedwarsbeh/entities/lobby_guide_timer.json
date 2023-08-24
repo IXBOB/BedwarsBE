@@ -1,0 +1,75 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "bedwars:lobby_guide_timer",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "pivot": [
+                            0,
+                            100,
+                            0
+                        ],
+                        "width": 0,
+                        "height": 0
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage": false
+                }
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.0001,
+                "height": 0.0001
+            },
+            "minecraft:timer": {
+                "time": 5,
+                "time_down_event": {
+                    "event": "bedwars:5s_time_down"
+                }
+            }
+        },
+        "component_groups": {
+            "bedwars:remove_self": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "events": {
+            "bedwars:5s_time_down": {
+                "run_command": {
+                    "command": [
+                        "scoreboard players add @e[type=armor_stand,name=main] lobby_guide_num 1",//num = 1 in init.mcfunction
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=2}] ~~~ function lobby_guide/change_to_guide_2",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=3}] ~~~ function lobby_guide/change_to_guide_3",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=4}] ~~~ function lobby_guide/change_to_guide_4",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=5}] ~~~ function lobby_guide/change_to_guide_5",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=6}] ~~~ execute @e[type=bedwars:lobby_guide_timer] ~~~ execute @e[type=player,r=10,c=1] ~~~ tag @e[type=bedwars:lobby_guide_timer] add continue_guide",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=6}] ~~~ execute @e[type=bedwars:lobby_guide_timer,tag=!continue_guide] ~~~ function lobby_guide/change_to_guide_prepare",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=6}] ~~~ execute @e[type=bedwars:lobby_guide_timer,tag=continue_guide] ~~~ function lobby_guide/delete_guide_5",
+                        "execute @e[type=armor_stand,name=main,scores={lobby_guide_num=6}] ~~~ execute @e[type=bedwars:lobby_guide_timer,tag=continue_guide] ~~~ function lobby_guide/init"
+                    ],
+                    "target": "self"
+                }
+            },
+            "bedwars:remove_self": {
+                "add": {
+                    "component_groups": [
+                        "bedwars:remove_self"
+                    ]
+                }
+            }
+        }
+    }
+}

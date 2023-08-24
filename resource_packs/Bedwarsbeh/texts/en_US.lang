@@ -150,6 +150,10 @@ item.bedwars:green_team_chestplate=Green leather chestplate
 item.bedwars:green_team_leggings=Green leather leggings
 item.bedwars:green_team_boots=Green leather boots
 
+##LOBBY ENTITIES
+
+action.interact.lobby_guide_start=Start
+
 ##LOBBY ITEMS
 
 item.bedwars:waiting_back_to_hub=§cBack to lobby §7(right click / press)

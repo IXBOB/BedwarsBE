@@ -150,6 +150,10 @@ item.bedwars:green_team_chestplate=绿队皮革胸甲
 item.bedwars:green_team_leggings=绿队皮革裤子
 item.bedwars:green_team_boots=绿队皮革靴子
 
+##LOBBY ENTITIES
+
+action.interact.lobby_guide_start=开始
+
 ##LOBBY ITEMS
 
 item.bedwars:waiting_back_to_hub=§c返回大厅 §7（右键 / 使用）

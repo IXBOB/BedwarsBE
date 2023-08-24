@@ -13,5 +13,7 @@ summon bedwars:dropped_gold_ingot -181.98 200.00 -201.77
 summon bedwars:dropped_diamond -181.51 200.00 -199.50
 summon bedwars:dropped_emerald -182.51 200.00 -199.50
 
+execute @e[type=armor_stand,name=main,scores={language=1}] ~~~ function lobby_guide/guide_board/cn/1
+execute @e[type=armor_stand,name=main,scores={language=2}] ~~~ function lobby_guide/guide_board/en/1
 
 tag @e[type=!player,x=-184,y=199,z=-204,dx=2,dy=5,dz=4] add in_guide

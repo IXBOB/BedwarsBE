@@ -73,3 +73,5 @@ kill @e[name=spawn.green_iron_3]
 scoreboard objectives add 总需人数 dummy
 scoreboard objectives add 还需人数 dummy
 scoreboard objectives add 弓等级 dummy
+scoreboard objectives add lobby_guide_num dummy
+scoreboard objectives add guide_running dummy
