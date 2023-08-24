@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "bedwars:map_smooth_stone_slab_block",
+      "register_to_creative_menu": true,
+      "is_experimental": false,
+      "category": "custom"
+    },
+    "components": {
+      "minecraft:destroy_time": 0.3,
+      "minecraft:block_light_absorption": {
+        "value": 0
+      },
+      "netease:solid": {
+        "value": false
+      },
+      "netease:pathable": {
+        "value": true
+      },
+      "netease:render_layer": {
+        "value": "opaque"
+      },
+      "netease:aabb": {
+        "collision": [
+          {
+            "min": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "max": [
+              1,
+              0.5,
+              1
+            ]
+          }
+        ],
+        "clip": {
+          "min": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "max": [
+            1,
+            0.5,
+            1
+          ]
+				}
+      }
+    }
+  }
+}

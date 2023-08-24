@@ -58,6 +58,9 @@
 		"bedwars:map_dark_oak_leaves_block": {
 			"textures": "textures/blocks/map_dark_oak_leaves_block"
 		},
+		"bedwars:map_smooth_stone_slab_block": {
+			"textures": "textures/blocks/map_smooth_stone_slab_block"
+		},
 
 
 
@@ -999,6 +1002,9 @@
 		},
 		"map_green_concrete_block": {
 			"textures": "textures/blocks/map_green_concrete_block"
+		},
+		"map_smooth_stone_slab_block":{
+			"textures": "textures/blocks/map_smooth_stone_slab_block"
 		},
 		"red_bed_foot": {
 			"textures": "textures/blocks/red_bed_foot"

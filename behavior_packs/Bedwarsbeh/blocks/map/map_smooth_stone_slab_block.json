@@ -1,0 +1,43 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+	  "description": {
+		"identifier": "bedwars:map_smooth_stone_slab_block"
+	  },
+	  "components": {
+		"minecraft:material_instances": {
+		  "*": {
+			"texture": "map_smooth_stone_slab_block",
+			"render_method": "opaque"
+		  }
+		},
+		"minecraft:pick_collision": {
+		  "origin": [
+			-8,
+			0,
+			-8
+		  ],
+		  "size": [
+			16,
+			8,
+			16
+		  ]
+		},
+		"minecraft:entity_collision": {
+		  "size": [
+			16,
+			8,
+			16
+		  ],
+		  "origin": [
+			-8,
+			0,
+			-8
+		  ]
+		},
+		"minecraft:geometry": "geometry.map_smooth_stone_slab_block",
+		"minecraft:light_dampening": 0,
+		"minecraft:destroy_time": 99999
+	  }
+	}
+  }

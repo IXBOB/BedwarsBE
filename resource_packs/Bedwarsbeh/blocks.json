@@ -4,6 +4,22 @@
 		1,
 		0
 	],
+	"bedwars:map_smooth_stone_slab_block": {
+		"textures": "map_smooth_stone_slab_block",
+		"sound": "stone",
+		"netease_model":"bedwars:map_smooth_stone_slab_block"
+	},
+
+
+
+
+
+
+
+
+
+
+
 	"bedwars:map_iron_block": {
 		"textures": {
 			"up": "map_iron_block_up",

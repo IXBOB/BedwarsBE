@@ -9,7 +9,7 @@
         },
         "components": {
             "minecraft:scale": {
-                "value": 0.4
+                "value": 0.8
             },
             "minecraft:custom_hit_test": {
                 "hitboxes": [

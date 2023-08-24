@@ -11,5 +11,6 @@ setblock -182 200 -200 bedwars:blue_bed_head
 
 summon bedwars:npc_lobby_guide_4 -182.91 200.00 -201.70
 execute @e[type=bedwars:npc_lobby_guide_4] ~~~ tp @s ~~~ facing -182 200 -199
+summon bedwars:npc_lobby_guide_4_equip -183.00 200.90 -200.80
 
 tag @e[type=!player,x=-184,y=199,z=-204,dx=2,dy=5,dz=4] add in_guide
