@@ -17,6 +17,9 @@
 					    }
 				    ]
 			    },
+                "minecraft:knockback_resistance": {
+                    "value": 99999
+                },
 			"minecraft:damage_sensor": {
 				"triggers": {
 					"deals_damage": false

@@ -20,6 +20,19 @@
             "minecraft:knockback_resistance": {
                 "value": 99999
             },
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "pivot": [
+                            0,
+                            100,
+                            0
+                        ],
+                        "width": 0,
+                        "height": 0
+                    }
+                ]
+            },
             "minecraft:nameable": {
                 "alwaysShow": true
             },
