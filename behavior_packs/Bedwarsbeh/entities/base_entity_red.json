@@ -59,7 +59,8 @@
             "on_block_broken": "bedwars:reset_red_ender_chest"
           }
         ]
-      }
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
     },
     "component_groups": {
       "bedwars:remove_self": {

@@ -3,4 +3,6 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=2}] ~~~ scoreboard playe
 #增加总游戏数
 scoreboard players add @a[scores={"分队"=1..4}] "总游戏数" 1
 #删除大厅悬浮字
-event entity @e[type=bedwars:lobby_float_text,x=-204,y=201,z=-193,c=1,r=1] bedwars:remove_self
+tickingarea add -204 201 -193 -204 201 -193
+event entity @e[type=bedwars:lobby_float_text,x=-204,y=201,z=-193,c=1,r=2] bedwars:remove_self
+tickingarea remove -204 201 -193
