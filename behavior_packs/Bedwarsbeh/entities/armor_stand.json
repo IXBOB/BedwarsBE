@@ -51,8 +51,7 @@
       "bedwars:1s_time_down": {
         "run_command": {
           "command": [
-            "execute @s[name=main,scores={gameSTART=1}] ~~~ function ore_spawner",
-            "execute @s[name=main,scores={gameSTART=1}] ~~~ function add_and_calculate_game_time"
+            "execute @s[scores={gameSTART=1}] ~~~ function repeat_1s_gamestart1"
           ],
           "target": "self"
         }

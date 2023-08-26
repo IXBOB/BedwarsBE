@@ -72,16 +72,16 @@ scoreboard players set @a invisible_time 0
 #清空玩家末影箱
 execute @a ~~~ function clear_enderchest
 #删除资源点旋转的实体
-execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ execute @e[type=bedwars:emerald_point_revolve,r=20] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_1] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_2] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ execute @e[type=bedwars:diamond_point_revolve,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ execute @e[type=bedwars:emerald_point_revolve,r=90] ~~~ event entity @s bedwars:remove_self
 #删除基地资源点隐藏的实体
-execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_red_invisible,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.blue_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_blue_invisible,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.yellow_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_yellow_invisible,r=20] ~~~ event entity @s bedwars:remove_self
-execute @e[type=armor_stand,name=spawn.green_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_green_invisible,r=20] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_red_invisible,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.blue_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_blue_invisible,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.yellow_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_yellow_invisible,r=90] ~~~ event entity @s bedwars:remove_self
+execute @e[type=armor_stand,name=spawn.green_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_green_invisible,r=90] ~~~ event entity @s bedwars:remove_self
 #删除队伍实体
 event entity @e[type=bedwars:base_entity_red] bedwars:remove_self
 event entity @e[type=bedwars:base_entity_blue] bedwars:remove_self
