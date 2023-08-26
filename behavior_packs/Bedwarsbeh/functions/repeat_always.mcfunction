@@ -45,7 +45,3 @@ execute @a[scores={出局观战=0,in_lobby=1,menu_page=2}] ~~~ function inventor
 execute @a[scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 #menu_page3
 execute @a[scores={出局观战=0,in_lobby=1,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999
-
-#粒子显示
-execute @s[scores={function_tick_20=10}] ~~~ execute @e[type=player,scores={respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ function display_particle
-execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={respawning=!1,"出局观战"=!1,invisible_time=0}] ~~~ function display_particle

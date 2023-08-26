@@ -320,6 +320,12 @@
           },
           "event": "minecraft:trigger_raid"
         }
+      },
+      "minecraft:timer": {
+          "time": 0.5,
+          "time_down_event": {
+              "event": "bedwars:display_particle"
+          }
       }
     },
     "events": {
@@ -461,6 +467,13 @@
         "run_command":{
           "command": [
             "tag @s add damaged_player_player"
+          ]
+        }
+      },
+      "bedwars:display_particle":{
+        "run_command":{
+          "command": [
+            "execute @s[scores={respawning=!1,出局观战=!1,invisible_time=0}] ~~~ function display_particle"
           ]
         }
       }
