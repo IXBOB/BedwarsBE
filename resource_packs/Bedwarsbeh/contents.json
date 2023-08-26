@@ -562,7 +562,7 @@
          "path" : "textures/blocks/map_block_of_quartz_top_block.png"
       },
       {
-         "path" : "textures/blocks/map_cyan_terracotta_block.png"
+         "path" : "textures/blocks/map_cyan_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_green_concrete_block.png"
@@ -649,7 +649,7 @@
          "path" : "entity/lobby_float_text.json"
       },
       {
-         "path" : "textures/blocks/map_black_terracotta_block.png"
+         "path" : "textures/blocks/map_black_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_oak_wood_block.png"
@@ -1030,7 +1030,7 @@
          "path" : "textures/entity/lobby_guide_text_3_cn.png"
       },
       {
-         "path" : "textures/blocks/map_lime_terracotta_block.png"
+         "path" : "textures/blocks/map_lime_concrete_block.png"
       },
       {
          "path" : "textures/blocks/purchase_team_its_a_trap_block.png"
@@ -1399,7 +1399,7 @@
          "path" : "textures/blocks/map_yellow_wool.png"
       },
       {
-         "path" : "textures/blocks/map_red_terracotta_block.png"
+         "path" : "textures/blocks/map_red_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_sea_lantern_block.png"

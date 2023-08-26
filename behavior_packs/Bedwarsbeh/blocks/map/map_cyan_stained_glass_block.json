@@ -6,7 +6,16 @@
 		},
 
 		"components": {
-			"minecraft:destroy_time": 99999
+			"minecraft:destroy_time": 99999,
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "blend",
+					"texture": "map_cyan_stained_glass"
+				}
+			},
+
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0.0
 		}
 	}
 }

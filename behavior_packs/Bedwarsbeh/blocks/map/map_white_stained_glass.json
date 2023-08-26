@@ -5,15 +5,16 @@
 			"identifier": "bedwars:map_white_stained_glass"
 		},
 		"components": {
-			//basic custom glass components
-			"minecraft:block_light_absorption": 0,
+			"minecraft:destroy_time": 99999,
 			"minecraft:material_instances": {
 				"*": {
 					"render_method": "blend",
 					"texture": "map_white_stained_glass"
 				}
 			},
-			"minecraft:destroy_time": 99999
+
+			"minecraft:block_light_emission": 0.0,
+			"minecraft:block_light_absorption": 0
 		}
 	}
 }

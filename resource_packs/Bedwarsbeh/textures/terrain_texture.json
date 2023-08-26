@@ -1069,23 +1069,23 @@
 		"map_bedrock_block_west": { //WEST
 			"textures": "textures/blocks/map_bedrock_block"
 		},
-		"map_black_terracotta_block_up": {
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_up": {
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
-		"map_black_terracotta_block_down": {
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_down": {
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
-		"map_black_terracotta_block_north": {
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_north": {
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
-		"map_black_terracotta_block_east": {
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_east": {
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
-		"map_black_terracotta_block_south": {
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_south": {
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
-		"map_black_terracotta_block_west": { //WEST
-			"textures": "textures/blocks/map_black_terracotta_block"
+		"map_black_concrete_block_west": { //WEST
+			"textures": "textures/blocks/map_black_concrete_block"
 		},
 		"map_block_of_quartz_block_up": {
 			"textures": "textures/blocks/map_block_of_quartz_top_block"
@@ -1252,23 +1252,23 @@
 		"map_cyan_stained_glass_block_west": { //WEST
 			"textures": "textures/blocks/map_cyan_stained_glass_block"
 		},
-		"map_cyan_terracotta_block_up": {
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_up": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
-		"map_cyan_terracotta_block_down": {
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_down": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
-		"map_cyan_terracotta_block_north": {
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_north": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
-		"map_cyan_terracotta_block_east": {
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_east": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
-		"map_cyan_terracotta_block_south": {
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_south": {
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
-		"map_cyan_terracotta_block_west": { //WEST
-			"textures": "textures/blocks/map_cyan_terracotta_block"
+		"map_cyan_concrete_block_west": { //WEST
+			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
 		"map_dark_oak_planks_block_up": {
 			"textures": "textures/blocks/map_dark_oak_planks_block"
@@ -1399,23 +1399,23 @@
 		"map_jungle_leaves_block": {
 			"textures": "textures/blocks/map_jungle_leaves_block"
 		},
-		"map_lime_terracotta_block_up": {
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_up": {
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
-		"map_lime_terracotta_block_down": {
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_down": {
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
-		"map_lime_terracotta_block_north": {
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_north": {
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
-		"map_lime_terracotta_block_east": {
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_east": {
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
-		"map_lime_terracotta_block_south": {
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_south": {
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
-		"map_lime_terracotta_block_west": { //WEST
-			"textures": "textures/blocks/map_lime_terracotta_block"
+		"map_lime_concrete_block_west": { //WEST
+			"textures": "textures/blocks/map_lime_concrete_block"
 		},
 		"map_moss_block_up": {
 			"textures": "textures/blocks/map_moss_block"
@@ -1525,23 +1525,23 @@
 		"map_red_sand_block_west": { //WEST
 			"textures": "textures/blocks/map_red_sand_block"
 		},
-		"map_red_terracotta_block_up": {
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_up": {
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
-		"map_red_terracotta_block_down": {
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_down": {
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
-		"map_red_terracotta_block_north": {
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_north": {
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
-		"map_red_terracotta_block_east": {
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_east": {
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
-		"map_red_terracotta_block_south": {
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_south": {
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
-		"map_red_terracotta_block_west": { //WEST
-			"textures": "textures/blocks/map_red_terracotta_block"
+		"map_red_concrete_block_west": { //WEST
+			"textures": "textures/blocks/map_red_concrete_block"
 		},
 		"map_smooth_red_sandstone_block_up": {
 			"textures": "textures/blocks/map_smooth_red_sandstone_top_block"
