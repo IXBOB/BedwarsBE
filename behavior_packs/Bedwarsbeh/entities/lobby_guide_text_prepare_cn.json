@@ -48,6 +48,11 @@
                     "play_sounds": "random.click",
                     "interact_text": "action.interact.lobby_guide_start"
                 }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage": false
+                }
             }
         },
         "events": {
