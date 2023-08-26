@@ -1,134 +1,134 @@
 {
-  "minecraft:entity": {  //火焰弹
-     "format_version": "1.2.0",
- 
-   "component_groups": {
-    "minecraft:exploding": {
-     "minecraft:explode": {
-      "fuseLength": 0,
-      "fuseLit": true,
-      "power": 2,
-      "causesFire": true,
-      "fireAffectedByGriefing": false,
-      "destroyAffectedByGriefing": true
-     }
-    }
-   },
- 
-   "components": {
-    "minecraft:identifier": {
-     "id": "minecraft:snowball"
-    },
-    "minecraft:collision_box": {
-     "width": 0.5,
-     "height": 0.5
-    },
-    "minecraft:scale": {
-     "value": 2.5
-    },
-    "minecraft:projectile": {
-     
-     "onHit": {      "spawn_chance": {
-             "firstSpawnChance": 1,
-             "firstSpawnCount": 1,
-             "spawnMob": "fireball",
-             "spawnBaby": false
-           },
-      "definition_event": {
-       "affectProjectile": true,
-       "eventTrigger": {
-             "event": "minecraft:explode",
-             "target": "self"
-       }
+  "minecraft:entity": { //火焰弹
+    "format_version": "1.2.0",
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuseLength": 0,
+          "fuseLit": true,
+          "power": 2,
+          "causesFire": true,
+          "fireAffectedByGriefing": false,
+          "destroyAffectedByGriefing": true
+        }
       }
-     },
-     "power": 1.0,
-     "gravity": 0,
-     "inertia": 1,
-     "uncertaintyBase": 0,
-     "uncertaintyMultiplier": 0,
-     "anchor": 1,
-     "offset": [ 0, -0.1, 0 ],
-     "reflectOnHurt": true,
-     "catchFire": false
     },
-    "minecraft:physics": {
+    "components": {
+      "minecraft:identifier": {
+        "id": "minecraft:snowball"
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:scale": {
+        "value": 2.5
+      },
+      "minecraft:projectile": {
+        "onHit": {
+          "spawn_chance": {
+            "firstSpawnChance": 1,
+            "firstSpawnCount": 1,
+            "spawnMob": "fireball",
+            "spawnBaby": false
+          },
+          "definition_event": {
+            "affectProjectile": true,
+            "eventTrigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          }
+        },
+        "power": 1.0,
+        "gravity": 0,
+        "inertia": 1,
+        "uncertaintyBase": 0,
+        "uncertaintyMultiplier": 0,
+        "anchor": 1,
+        "offset": [
+          0,
+          -0.1,
+          0
+        ],
+        "reflectOnHurt": true,
+        "catchFire": false
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": [
+            "minecraft:exploding"
+          ]
+        },
+        "run_command": {
+          "command": [
+            "scoreboard players set @s forward_explode 1",
+            "scoreboard players set @s behind_explode 1",
+            "scoreboard players set @s left_explode 1",
+            "scoreboard players set @s right_explode 1",
+            "scoreboard players set @s up_explode 1",
+            "scoreboard players set @s down_explode 1",
+            "execute @s ~~~ detect ~ ~ ~1 bedwars:player_red_stained_glass 0 scoreboard players set @s forward_explode 0",
+            "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_red_stained_glass 0 scoreboard players set @s behind_explode 0",
+            "execute @s ~~~ detect ~1 ~ ~ bedwars:player_red_stained_glass 0 scoreboard players set @s left_explode 0",
+            "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_red_stained_glass 0 scoreboard players set @s right_explode 0",
+            "execute @s ~~~ detect ~ ~1 ~ bedwars:player_red_stained_glass 0 scoreboard players set @s up_explode 0",
+            "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_red_stained_glass 0 scoreboard players set @s down_explode 0",
+            "execute @s ~~~ detect ~ ~ ~1 bedwars:player_blue_stained_glass 0 scoreboard players set @s forward_explode 0",
+            "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_blue_stained_glass 0 scoreboard players set @s behind_explode 0",
+            "execute @s ~~~ detect ~1 ~ ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s left_explode 0",
+            "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s right_explode 0",
+            "execute @s ~~~ detect ~ ~1 ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s up_explode 0",
+            "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s down_explode 0",
+            "execute @s ~~~ detect ~ ~ ~1 bedwars:player_yellow_stained_glass 0 scoreboard players set @s forward_explode 0",
+            "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_yellow_stained_glass 0 scoreboard players set @s behind_explode 0",
+            "execute @s ~~~ detect ~1 ~ ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s left_explode 0",
+            "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s right_explode 0",
+            "execute @s ~~~ detect ~ ~1 ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s up_explode 0",
+            "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s down_explode 0",
+            "execute @s ~~~ detect ~ ~ ~1 bedwars:player_green_stained_glass 0 scoreboard players set @s forward_explode 0",
+            "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_green_stained_glass 0 scoreboard players set @s behind_explode 0",
+            "execute @s ~~~ detect ~1 ~ ~ bedwars:player_green_stained_glass 0 scoreboard players set @s left_explode 0",
+            "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_green_stained_glass 0 scoreboard players set @s right_explode 0",
+            "execute @s ~~~ detect ~ ~1 ~ bedwars:player_green_stained_glass 0 scoreboard players set @s up_explode 0",
+            "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_green_stained_glass 0 scoreboard players set @s down_explode 0",
+            "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks",
+            "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_planks",
+            "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_planks",
+            "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks",
+            "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_planks",
+            "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
+            "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
+            "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
+            "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
+            "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks"
+          ],
+          "target": "self"
+        }
+      }
     }
-   },
-   "events": {
-    "minecraft:explode": {
-     "add": {
-      "component_groups": [
-       "minecraft:exploding"
-      ]
-     },
-     "run_command":{
-       "command" : [
-        "scoreboard players set @s forward_explode 1",
-        "scoreboard players set @s behind_explode 1",
-        "scoreboard players set @s left_explode 1",
-        "scoreboard players set @s right_explode 1",
-        "scoreboard players set @s up_explode 1",
-        "scoreboard players set @s down_explode 1",
-        "execute @s ~~~ detect ~ ~ ~1 bedwars:player_red_stained_glass 0 scoreboard players set @s forward_explode 0",
-        "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_red_stained_glass 0 scoreboard players set @s behind_explode 0",
-        "execute @s ~~~ detect ~1 ~ ~ bedwars:player_red_stained_glass 0 scoreboard players set @s left_explode 0",
-        "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_red_stained_glass 0 scoreboard players set @s right_explode 0",
-        "execute @s ~~~ detect ~ ~1 ~ bedwars:player_red_stained_glass 0 scoreboard players set @s up_explode 0",
-        "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_red_stained_glass 0 scoreboard players set @s down_explode 0",
-        "execute @s ~~~ detect ~ ~ ~1 bedwars:player_blue_stained_glass 0 scoreboard players set @s forward_explode 0",
-        "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_blue_stained_glass 0 scoreboard players set @s behind_explode 0",
-        "execute @s ~~~ detect ~1 ~ ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s left_explode 0",
-        "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s right_explode 0",
-        "execute @s ~~~ detect ~ ~1 ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s up_explode 0",
-        "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_blue_stained_glass 0 scoreboard players set @s down_explode 0",
-        "execute @s ~~~ detect ~ ~ ~1 bedwars:player_yellow_stained_glass 0 scoreboard players set @s forward_explode 0",
-        "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_yellow_stained_glass 0 scoreboard players set @s behind_explode 0",
-        "execute @s ~~~ detect ~1 ~ ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s left_explode 0",
-        "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s right_explode 0",
-        "execute @s ~~~ detect ~ ~1 ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s up_explode 0",
-        "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_yellow_stained_glass 0 scoreboard players set @s down_explode 0",
-        "execute @s ~~~ detect ~ ~ ~1 bedwars:player_green_stained_glass 0 scoreboard players set @s forward_explode 0",
-        "execute @s ~~~ detect ~ ~ ~-1 bedwars:player_green_stained_glass 0 scoreboard players set @s behind_explode 0",
-        "execute @s ~~~ detect ~1 ~ ~ bedwars:player_green_stained_glass 0 scoreboard players set @s left_explode 0",
-        "execute @s ~~~ detect ~-1 ~ ~ bedwars:player_green_stained_glass 0 scoreboard players set @s right_explode 0",
-        "execute @s ~~~ detect ~ ~1 ~ bedwars:player_green_stained_glass 0 scoreboard players set @s up_explode 0",
-        "execute @s ~~~ detect ~ ~-1 ~ bedwars:player_green_stained_glass 0 scoreboard players set @s down_explode 0",
-        "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={forward_explode=1}] ~~~ fill ~1 ~1 ~1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks",
-        "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={behind_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~-1 ~-1 air 0 replace bedwars:player_planks",
-        "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={left_explode=1}] ~~~ fill ~1 ~1 ~-1 ~1 ~-1 ~1 air 0 replace bedwars:player_planks",
-        "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={right_explode=1}] ~~~ fill ~-1 ~1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks",
-        "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={up_explode=1}] ~~~ fill ~1 ~1 ~-1 ~-1 ~1 ~1 air 0 replace bedwars:player_planks",
-        "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_red_wool",
-        "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_yellow_wool",
-        "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_green_wool",
-        "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_blue_wool",
-        "execute @s[scores={down_explode=1}] ~~~ fill ~1 ~-1 ~-1 ~-1 ~-1 ~1 air 0 replace bedwars:player_planks"
-       ],
-       "target" : "self"
-     }
-    }
-   }
   }
- }
- 
+}

@@ -1,1 +1,1 @@
-give @s bedwars:bow_level_1
+give @s bow

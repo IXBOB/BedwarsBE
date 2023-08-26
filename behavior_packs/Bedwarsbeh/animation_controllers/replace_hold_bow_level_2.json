@@ -1,0 +1,29 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.replace_hold_bow_level_2": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "bow_level_2":"query.is_item_name_any('slot.weapon.mainhand','bedwars:bow_level_2')"
+                        }
+                    ]
+                },
+                "bow_level_2":{
+                    "transitions":[
+                        {
+                            "default":"!query.is_item_name_any('slot.weapon.mainhand','bedwars:bow_level_2')"
+                        }
+                    ],
+                    "on_entry":[
+                        "/replaceitem entity @s slot.weapon.mainhand 0 bow 1 0 {\"minecraft:item_lock\":{\"mode\":\"lock_in_inventory\"},\"minecraft:keep_on_death\":{}}",
+                        "/tag @s add bow_enchant_level_2",
+                        "/summon bedwars:bow_enchant_level_2_command"
+                        //enchant新建实体as mojang bug
+                    ]
+                }
+            }
+        }
+    }
+}

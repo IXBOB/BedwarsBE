@@ -121,6 +121,9 @@
     },
     "soul_lantern": {
       "textures": "textures/items/soul_lantern"
+    },
+    "custom_bow":{
+      "textures": "textures/items/custom_bow"
     }
   }
 }

@@ -1,5 +1,6 @@
 scoreboard players set @e[type=armor_stand,name=main] gameSTART 0
 tag @e[type=armor_stand,name=main] add set.start.players.2
+scoreboard players set @e[type=armor_stand,name=main] constant_2 2
 scoreboard players set @e[type=armor_stand,name=main] exp_lv_up_need 1000
 scoreboard players set @e[type=armor_stand,name=main] game_version 2
 scoreboard players set @e[type=armor_stand,name=main] language 1

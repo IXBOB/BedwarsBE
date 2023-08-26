@@ -358,6 +358,9 @@
          "path" : "attachables/green_team_helmet_protection_iv.json"
       },
       {
+         "path" : "textures/items/custom_bow.png"
+      },
+      {
          "path" : "attachables/green_team_leggings_protection_i.json"
       },
       {

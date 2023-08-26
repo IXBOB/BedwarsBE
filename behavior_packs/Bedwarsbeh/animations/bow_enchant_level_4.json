@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.bow_enchant_level_4": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.0": [
+					"/execute @a[tag=bow_enchant_level_4] ~~~ enchant @s punch 2",
+					"/execute @a[tag=bow_enchant_level_4] ~~~ enchant @s power 1",
+					"/tag @a[tag=bow_enchant_level_4] remove bow_enchant_level_4",
+					"/event entity @s bedwars:remove_self"
+				]
+			}
+		}
+	}
+}

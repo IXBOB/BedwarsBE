@@ -21,7 +21,7 @@ execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_
 #弓降级
 execute @s[scores={able_to_respawn=1,"分队"=1..4,"弓等级"=1..},tag=degrade,tag=run_respawn_command] ~~~ tag @s add degrade_bow
 execute @s[scores={able_to_respawn=1,"分队"=1..4,"弓等级"=1..},tag=degrade,tag=degrade_bow,tag=run_respawn_command] ~~~ scoreboard players add @s "弓等级" 0
-execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_bow,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.ingameinfo.respawn_bow_degrade"},{ "score" : { "name" : "@s" , "objective" : "弓等级"}}]}
+execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_bow,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [ {"translate":"text.tellraw.ingameinfo.respawn_bow_degrade"}]}
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s remove degrade_bow
 #检测经验降级
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s add degrade_xp

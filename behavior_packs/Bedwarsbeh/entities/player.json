@@ -9,13 +9,19 @@
       "scripts": {
         "animate": [
           "test_death",
-          "health_display"
+          "health_display",
+          "replace_hold_bow_level_2",
+          "replace_hold_bow_level_3",
+          "replace_hold_bow_level_4"
 //          "check_inventory_empty"
         ]
       },
       "animations": {
         "test_death": "controller.animation.bedwars.test_death",
-        "health_display": "controller.animation.bedwars.health_display"
+        "health_display": "controller.animation.bedwars.health_display",
+        "replace_hold_bow_level_2":"controller.animation.replace_hold_bow_level_2",
+        "replace_hold_bow_level_3":"controller.animation.replace_hold_bow_level_3",
+        "replace_hold_bow_level_4":"controller.animation.replace_hold_bow_level_4"
 //        "check_inventory_empty": "controller.animation.bedwars.check_inventory_empty"
       }
     },
