@@ -125,10 +125,10 @@
 			"textures": "textures/blocks/menu999_purchase_cancel"
 		},
 		"lobby_button_select_next_block_up": {
-			"textures": "textures/blocks/iron_block_button"
+			"textures": "textures/blocks/map_orange_concrete_block"
 		},
 		"lobby_button_select_next_block_down": {
-			"textures": "textures/blocks/iron_block_button"
+			"textures": "textures/blocks/map_orange_concrete_block"
 		},
 		"lobby_button_select_next_block_north": {
 			"textures": "textures/blocks/lobby_button_select_next_block"
@@ -143,10 +143,10 @@
 			"textures": "textures/blocks/lobby_button_select_next_block"
 		},
 		"lobby_button_select_last_block_up": {
-			"textures": "textures/blocks/iron_block_button"
+			"textures": "textures/blocks/map_orange_concrete_block"
 		},
 		"lobby_button_select_last_block_down": {
-			"textures": "textures/blocks/iron_block_button"
+			"textures": "textures/blocks/map_orange_concrete_block"
 		},
 		"lobby_button_select_last_block_north": {
 			"textures": "textures/blocks/lobby_button_select_last_block"
@@ -901,8 +901,14 @@
 		"map_prismarine_block": {
 			"textures": "textures/blocks/map_prismarine_block"
 		},
+		"map_normal_concrete_block": {
+			"textures": "textures/blocks/map_normal_concrete_block"
+		},
 		"map_blue_concrete_block": {
 			"textures": "textures/blocks/map_blue_concrete_block"
+		},
+		"map_blue_concrete2_block": {
+			"textures": "textures/blocks/map_blue_concrete2_block"
 		},
 		"map_bone_block_top": {
 			"textures": "textures/blocks/map_bone_block/map_bone_block_top"
@@ -924,6 +930,9 @@
 		},
 		"map_cyan_concrete_block": {
 			"textures": "textures/blocks/map_cyan_concrete_block"
+		},
+		"map_cyan_concrete2_block": {
+			"textures": "textures/blocks/map_cyan_concrete2_block"
 		},
 		"map_dark_prismarine_block": {
 			"textures": "textures/blocks/map_dark_prismarine_block"
@@ -954,6 +963,9 @@
 		},
 		"map_light_blue_concrete_block": {
 			"textures": "textures/blocks/map_light_blue_concrete_block"
+		},
+		"map_light_blue_concrete2_block": {
+			"textures": "textures/blocks/map_light_blue_concrete2_block"
 		},
 		"map_light_gray_concrete_block": {
 			"textures": "textures/blocks/map_light_gray_concrete_block"

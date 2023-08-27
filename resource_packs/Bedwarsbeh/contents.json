@@ -475,13 +475,13 @@
          "path" : "attachables/red_team_helmet_protection_iv.json"
       },
       {
-         "path" : "attachables/red_team_leggings.json"
+         "path" : "textures/items/develop_source/yellow_team_helmet.psd"
       },
       {
          "path" : "textures/items/potion_bottle_invisibility.png"
       },
       {
-         "path" : "textures/items/develop_source/yellow_team_helmet.psd"
+         "path" : "attachables/red_team_leggings.json"
       },
       {
          "path" : "models/netease_block/map_smooth_stone_slab_block.json"
@@ -560,9 +560,6 @@
       },
       {
          "path" : "textures/blocks/map_block_of_quartz_top_block.png"
-      },
-      {
-         "path" : "textures/blocks/map_cyan_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_green_concrete_block.png"
@@ -647,9 +644,6 @@
       },
       {
          "path" : "entity/lobby_float_text.json"
-      },
-      {
-         "path" : "textures/blocks/map_black_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_oak_wood_block.png"
@@ -773,6 +767,9 @@
       },
       {
          "path" : "entity/npc_lobby_guide_1.json"
+      },
+      {
+         "path" : "textures/blocks/map_normal_concrete_block.png"
       },
       {
          "path" : "entity/npc_lobby_guide_2.json"
@@ -1030,9 +1027,6 @@
          "path" : "textures/entity/lobby_guide_text_3_cn.png"
       },
       {
-         "path" : "textures/blocks/map_lime_concrete_block.png"
-      },
-      {
          "path" : "textures/blocks/purchase_team_its_a_trap_block.png"
       },
       {
@@ -1061,6 +1055,9 @@
       },
       {
          "path" : "particles/footprint.json"
+      },
+      {
+         "path" : "textures/blocks/map_lime_concrete_block.png"
       },
       {
          "path" : "models/entity/npc_lobby_guide_5.geo.json"
@@ -1186,6 +1183,9 @@
          "path" : "texts/sk_SK.lang"
       },
       {
+         "path" : "textures/blocks/map_orange_concrete_block.png"
+      },
+      {
          "path" : "texts/sv_SE.lang"
       },
       {
@@ -1234,10 +1234,16 @@
          "path" : "textures/items/develop_source/green_team_chestplate.psd"
       },
       {
+         "path" : "textures/blocks/map_black_concrete_block.png"
+      },
+      {
          "path" : "textures/blocks/map_block_of_quartz_bottom_block.png"
       },
       {
          "path" : "textures/blocks/map_block_of_quartz_side_block.png"
+      },
+      {
+         "path" : "textures/blocks/map_blue_concrete2_block.png"
       },
       {
          "path" : "textures/items/diamond_axe.png"
@@ -1283,6 +1289,9 @@
       },
       {
          "path" : "textures/blocks/map_cracked_stone_bricks_block.png"
+      },
+      {
+         "path" : "textures/blocks/map_cyan_concrete2_block.png"
       },
       {
          "path" : "textures/blocks/map_cyan_concrete_block.png"
@@ -1345,6 +1354,9 @@
          "path" : "textures/blocks/map_jungle_leaves_block.png"
       },
       {
+         "path" : "textures/blocks/map_light_blue_concrete2_block.png"
+      },
+      {
          "path" : "textures/models/armor/iron_armor_main.png"
       },
       {
@@ -1397,9 +1409,6 @@
       },
       {
          "path" : "textures/blocks/map_yellow_wool.png"
-      },
-      {
-         "path" : "textures/blocks/map_red_concrete_block.png"
       },
       {
          "path" : "textures/blocks/map_sea_lantern_block.png"
@@ -1466,9 +1475,6 @@
       },
       {
          "path" : "textures/blocks/player_yellow_wool.png"
-      },
-      {
-         "path" : "textures/items/iron_pickaxe.png"
       },
       {
          "path" : "textures/blocks/purchase_blue_stained_glass_block.png"
@@ -1637,6 +1643,9 @@
       },
       {
          "path" : "textures/items/green_team_helmet.png"
+      },
+      {
+         "path" : "textures/items/iron_pickaxe.png"
       },
       {
          "path" : "textures/models/armor/red_team_armor_main_host.png"
