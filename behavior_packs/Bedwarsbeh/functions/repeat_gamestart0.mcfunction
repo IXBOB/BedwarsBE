@@ -80,6 +80,8 @@ scoreboard players set @a[scores={"分队"=1..4}] "分队" 0
 #游戏未开始tag-team
 tag @a remove team1
 tag @a remove team2
+tag @a remove team3
+tag @a remove team4
 #游戏未开始时删除火焰弹（雪球）
 execute @e[type=snowball] ~~~ kill @s
 #设置重生时间100
