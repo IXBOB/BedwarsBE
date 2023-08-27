@@ -67,8 +67,8 @@ scoreboard players set @e[type=armor_stand,name=main] "牌已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "实已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "箱已重置" 0
 scoreboard players set @e[type=armor_stand,name=main] "等已重置" 0
-#invisible_time -> 0
-scoreboard players set @a invisible_time 0
+#重置隐身状态
+execute @a ~~~ function invisibility_end
 #清空玩家末影箱
 execute @a ~~~ function clear_enderchest
 #删除资源点旋转的实体

@@ -4,8 +4,8 @@
 		"description": {
 			"identifier": "bedwars:footprint",
 			"basic_render_parameters": {
-				"material": "particles_add",
-				"texture": "textures/particles/footprint.png"
+				"material": "particles_blend",
+				"texture": "textures/particles/footprint"
 			}
 		},
 		"components": {

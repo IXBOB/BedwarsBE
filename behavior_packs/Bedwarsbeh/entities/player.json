@@ -50,6 +50,16 @@
         "minecraft:spell_effects": {
           "remove_effects": "bad_omen"
         }
+      },
+      "bedwars:variant_1":{  //invisible
+        "minecraft:variant":{
+          "value": 1
+        }
+      },
+      "bedwars:variant_0":{  //invisible
+        "minecraft:variant":{
+          "value": 0
+        }
       }
     },
     "components": {
@@ -432,8 +442,7 @@
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add get.xp.kill",
             "tag @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] add get.coin.kill",
             //隐身失效
-            "execute @s[scores={invisible_time=1..}] ~~~ scoreboard players set @s invisible_time 0",
-            "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true",
+            "execute @s[scores={invisible_time=1..}] ~~~ function invisibility_end",
             //*
             "function get_xp_and_coin",
             "scoreboard players reset * got_xp",
@@ -458,8 +467,7 @@
             "tag @s add player_damaged",
             //隐身失效
             "execute @s[scores={invisible_time=1..}] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.invisible_expired\"} ] }",
-            "execute @s[scores={invisible_time=1..}] ~~~ scoreboard players set @s invisible_time 0",
-            "execute @s[scores={invisible_time=1..}] ~~~ effect @s invisibility 0 3 true"
+            "execute @s[scores={invisible_time=1..}] ~~~ function invisibility_end"
           ]
         }
       },
@@ -474,6 +482,25 @@
         "run_command":{
           "command": [
             "execute @s[scores={respawning=!1,出局观战=!1,invisible_time=0}] ~~~ function display_particle"
+          ]
+        }
+      },
+      "bedwars:invisibility_get":{
+        "add":{
+          "component_groups":[
+            "bedwars:variant_1"
+          ]
+        }
+      },
+      "bedwars:invisibility_end":{
+        "remove":{
+          "component_groups":[
+            "bedwars:variant_1"
+          ]
+        },
+        "add":{
+          "component_groups":[
+            "bedwars:variant_0"
           ]
         }
       }

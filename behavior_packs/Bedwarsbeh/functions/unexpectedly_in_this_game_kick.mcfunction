@@ -12,6 +12,7 @@ gamemode 2 @s
 scoreboard players set @s respawning 0
 scoreboard players set @s able_to_respawn 0
 scoreboard players set @s invisible_time 0
+function invisibility_end
 tag @s remove have_upgraded_sword_sharpness_i
 tag @s remove team1
 tag @s remove team2

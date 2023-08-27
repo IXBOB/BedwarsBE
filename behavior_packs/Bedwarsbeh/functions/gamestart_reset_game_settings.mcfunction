@@ -40,8 +40,8 @@ xp -99999L @a
 scoreboard players set @a own_xp 0
 #xp_cache -> 0
 scoreboard players set @a xp_cache 0
-#隐身时间 -> 0
-scoreboard players set @a invisible_time 0
+#重置隐身
+execute @a ~~~ function invisibility_end
 #剑等级 -> 1
 scoreboard players set @a[scores={"分队"=1..4},tag=waiting] "剑等级" 1
 #镐等级 -> 0

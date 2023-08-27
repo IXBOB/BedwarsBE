@@ -34,8 +34,7 @@
 					"command": [
                         "tag @s add stop_command",
                         "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[tag=stop_command,scores={分队=1..4}] remove stop_command",
-						"effect @s[tag=!stop_command] invisibility 30 1 true",
-                        "scoreboard players set @s[tag=!stop_command] invisible_time 30",
+						"execute @s[tag=!stop_command] ~~~ function invisibility_get",
                         "tellraw @s[tag=stop_command] { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_item_denied\"} ] }",
                         "tag @s remove stop_command"
 					],
