@@ -159,7 +159,6 @@ action.interact.lobby_guide_start=开始
 
 ##LOBBY ITEMS
 
-item.bedwars:waiting_back_to_hub=§c返回大厅 §7（右键 / 使用）
 item.bedwars:menu_pleasewait=§7§o请稍候...
 item.bedwars:menu_back=§e返回
 item.bedwars:menu1_particle_item=§c选择粒子效果 §7[点击 / 移动 以选择]
@@ -196,6 +195,16 @@ item.bedwars:menu3_start_players_reachmin=§c抱歉，已达到下限。 无法�
 tile.bedwars:menu999_purchase_confirm.name=§a确认购买
 tile.bedwars:menu999_purchase_cancel.name=§c取消购买
 item.bedwars:menu999_purchase_failed=§c硬币不足， 购买失败
+
+##WAITING
+
+item.bedwars:waiting_back_to_hub=§c返回大厅 §7（右键 / 使用）
+item.bedwars:waiting_force_all_players_join=§e强制所有玩家加入游戏 §7（右键 / 使用）
+text.tellraw.waiting.player_join= §6加入了开始队列
+text.tellraw.waiting.player_leave= §c离开了开始队列
+text.tellraw.waiting.force_players_join_success_host= §e您已成功将所有玩家强制加入开始队列
+text.tellraw.waiting.force_players_join_success_player= §e管理员已将您强制加入开始队列
+text.tellraw.waiting.force_players_join_fail= §c所有玩家都已经加入了开始队列
 
 ##DISABLED_CONTENT
 
@@ -821,10 +830,6 @@ text.sign.lobby.map_4_locked_line1=§f§l地图
 text.sign.lobby.map_4_locked_line2=§r§2沙滩城区
 text.sign.lobby.map_4_locked_line3=§c仅可在
 text.sign.lobby.map_4_locked_line4=§c游戏重置前修改
-
-##WAITING
-text.tellraw.waiting.player_join= §6加入了开始队列
-text.tellraw.waiting.player_leave= §c离开了开始队列
 
 ##others
 

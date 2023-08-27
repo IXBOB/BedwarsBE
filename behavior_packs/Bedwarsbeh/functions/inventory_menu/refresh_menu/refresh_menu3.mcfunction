@@ -14,3 +14,4 @@ execute @e[type=armor_stand,name=main,tag=!set.start.players.8] ~~~ execute @e[t
 execute @e[type=armor_stand,name=main,tag=set.start.players.8] ~~~ execute @e[type=player,scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ replaceitem entity @s slot.inventory 15 bedwars:menu3_start_players_reachmax 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
 replaceitem entity @s[tag=waiting] slot.hotbar 8 bedwars:waiting_back_to_hub 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+replaceitem entity @s[tag=waiting,tag=op] slot.hotbar 4 bedwars:waiting_force_all_players_join 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

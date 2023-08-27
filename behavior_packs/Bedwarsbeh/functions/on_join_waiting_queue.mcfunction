@@ -5,3 +5,4 @@ tellraw @a { "rawtext" : [{"text":"§7"},{"selector":"@s"},{"translate":"text.te
 tp @s 0 240 0
 function set_gameSTART0_waiting_scoreboard
 replaceitem entity @s slot.hotbar 8 bedwars:waiting_back_to_hub 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+replaceitem entity @s[tag=op] slot.hotbar 4 bedwars:waiting_force_all_players_join 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

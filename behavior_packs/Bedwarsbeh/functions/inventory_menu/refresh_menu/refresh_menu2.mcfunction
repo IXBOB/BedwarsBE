@@ -26,3 +26,4 @@ execute @s[scores={select_particle=!5,own_particle_5=1}] ~~~ replaceitem entity 
 execute @s[scores={select_particle=5}] ~~~ replaceitem entity @s slot.inventory 15 bedwars:menu2_particle_soul_selected 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
 replaceitem entity @s[tag=waiting] slot.hotbar 8 bedwars:waiting_back_to_hub 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+replaceitem entity @s[tag=waiting,tag=op] slot.hotbar 4 bedwars:waiting_force_all_players_join 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

@@ -39,9 +39,9 @@ item.bedwars:yellow_team_chestplate_protection_iii=Yellow Leather Chestplate §7
 item.bedwars:yellow_team_leggings_protection_i=Yellow Leather Leggings §7Protection I
 item.bedwars:yellow_team_leggings_protection_ii=Yellow Leather Leggings §7Protection II
 item.bedwars:yellow_team_leggings_protection_iii=Yellow Leather Leggings §7Protection III
-item.bedwars:green_team_boots_protection_i=Green Leather Boots §7Protection I
-item.bedwars:green_team_boots_protection_ii=Green Leather Boots §7Protection II
-item.bedwars:green_team_boots_protection_iii=Green Leather Boots §7Protection III
+item.bedwars:yellow_team_boots_protection_i=Yellow Leather Boots §7Protection I
+item.bedwars:yellow_team_boots_protection_ii=Yellow Leather Boots §7Protection II
+item.bedwars:yellow_team_boots_protection_iii=Yellow Leather Boots §7Protection III
 item.bedwars:green_team_helmet_protection_i=Green Leather Helmet §7Protection I
 item.bedwars:green_team_helmet_protection_ii=Green Leather Helmet §7Protection II
 item.bedwars:green_team_helmet_protection_iii=Green Leather Helmet §7Protection III
@@ -159,7 +159,6 @@ action.interact.lobby_guide_start=Start
 
 ##LOBBY ITEMS
 
-item.bedwars:waiting_back_to_hub=§cBack to lobby §7(right click / press)
 item.bedwars:menu_pleasewait=§7§oPlease wait...
 item.bedwars:menu_back=§eBack
 item.bedwars:menu1_particle_item=§cSelect particles §7[click / move to select]
@@ -196,6 +195,16 @@ item.bedwars:menu3_start_players_reachmin=§cIt is no longer possible to reduce 
 tile.bedwars:menu999_purchase_confirm.name=§aConfirm purchase
 tile.bedwars:menu999_purchase_cancel.name=§cCancel purchase
 item.bedwars:menu999_purchase_failed=§cInsufficient coins, purchase failed.
+
+##WAITING
+
+item.bedwars:waiting_back_to_hub=§cBack to lobby §7(Right click / Use)
+item.bedwars:waiting_force_all_players_join=§eForce all players join §7(Right click / Use)
+text.tellraw.waiting.player_join= §6joined the start queue
+text.tellraw.waiting.player_leave= §cleft the start queue
+text.tellraw.waiting.force_players_join_success_host= §eYou have successfully forced all players into the start queue
+text.tellraw.waiting.force_players_join_success_player= §eAn administrator has forced you into the start queue
+text.tellraw.waiting.force_players_join_fail= §cAll players have joined the start queue
 
 ##DISABLED_CONTENT
 
@@ -821,10 +830,6 @@ text.sign.lobby.map_4_locked_line1=§f§lMAP
 text.sign.lobby.map_4_locked_line2=§r§2Beach Cities
 text.sign.lobby.map_4_locked_line3=§cPlease change
 text.sign.lobby.map_4_locked_line4=§r§cbefore reset
-
-##WAITING
-text.tellraw.waiting.player_join= §6joined the start queue
-text.tellraw.waiting.player_leave= §cleft the start queue
 
 ##others
 

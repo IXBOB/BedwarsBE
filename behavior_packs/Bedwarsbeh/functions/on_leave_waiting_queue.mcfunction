@@ -5,3 +5,4 @@ tellraw @a { "rawtext" : [{"text":"§7"},{"selector":"@s"},{"translate":"text.te
 tp @s -200 200 -200
 function set_gameSTART0_waiting_scoreboard
 clear @s bedwars:waiting_back_to_hub
+clear @s bedwars:waiting_force_all_players_join

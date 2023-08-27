@@ -1687,6 +1687,12 @@
          "path" : "textures/items/waiting_back_to_hub.png"
       },
       {
+         "path" : "textures/models/armor/yellow_team_armor_main_host.png"
+      },
+      {
+         "path" : "textures/items/waiting_force_all_players_join.png"
+      },
+      {
          "path" : "textures/items/wooden_axe.png"
       },
       {
@@ -1832,9 +1838,6 @@
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main_coast.png"
-      },
-      {
-         "path" : "textures/models/armor/yellow_team_armor_main_host.png"
       },
       {
          "path" : "textures/models/armor/yellow_team_armor_main_rib.png"

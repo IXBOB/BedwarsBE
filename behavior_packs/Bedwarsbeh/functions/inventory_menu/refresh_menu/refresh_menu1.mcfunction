@@ -5,3 +5,4 @@ replaceitem entity @s[tag=op] slot.inventory 16 keep bedwars:menu1_op_enabled_it
 replaceitem entity @s[tag=!op] slot.inventory 16 keep bedwars:menu1_op_disabled_item 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 
 replaceitem entity @s[tag=waiting] slot.hotbar 8 bedwars:waiting_back_to_hub 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+replaceitem entity @s[tag=waiting,tag=op] slot.hotbar 4 bedwars:waiting_force_all_players_join 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

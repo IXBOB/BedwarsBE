@@ -5,6 +5,9 @@
     "waiting_back_to_hub": {
       "textures": "textures/items/waiting_back_to_hub"
     },
+    "waiting_force_all_players_join": {
+      "textures": "textures/items/waiting_force_all_players_join"
+    },
     "red_team_helmet": {
       "textures": "textures/items/red_team_helmet"
     },
