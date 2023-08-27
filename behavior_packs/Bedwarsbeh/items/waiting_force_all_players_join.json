@@ -22,7 +22,7 @@
 				"run_command": {
 					"command": [
 						"tag @s add stop_force_players_join",
-						"execute @a[tag=!waiting] ~~~ tag @a[tag=try_force_players_join] remove stop_force_players_join",
+						"execute @a[tag=!waiting] ~~~ tag @a[tag=stop_force_players_join] remove stop_force_players_join",
 						"execute @s[tag=!stop_force_players_join] ~~~ execute @a[tag=!waiting] ~~~ function on_join_waiting_queue",
 						"tellraw @s[tag=!stop_force_players_join] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_success_host\"} ] }",
 						"tellraw @a[tag=!waiting] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_success_player\"} ] }",
