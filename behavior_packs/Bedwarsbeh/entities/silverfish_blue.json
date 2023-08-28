@@ -154,8 +154,7 @@
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true
-      },
-      "minecraft:can_climb": {}
+      }
     },
     "events": {}
   }
