@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.command.silverfish_get_team_tag": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.0": [
+					"/tag @s[type=bedwars:silverfish_red] add team1",
+					"/tag @s[type=bedwars:silverfish_blue] add team2",
+					"/tag @s[type=bedwars:silverfish_yellow] add team3",
+					"/tag @s[type=bedwars:silverfish_green] add team4"
+				]
+			}
+		}
+	}
+}

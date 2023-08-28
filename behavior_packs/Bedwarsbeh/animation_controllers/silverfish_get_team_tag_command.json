@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17.30",
+    "animation_controllers": {
+      "controller.animation.command.silverfish_get_team_tag": {
+        "initial_state": "run_timer",
+        "states": {
+          "run_timer": {
+            "animations": [
+              "silverfish_get_team_tag"
+           ]
+         }
+        }
+     }
+   }
+}

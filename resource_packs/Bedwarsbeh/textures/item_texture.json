@@ -127,6 +127,9 @@
     },
     "custom_bow":{
       "textures": "textures/items/custom_bow"
+    },
+    "custom_snowball":{
+      "textures": "textures/items/custom_snowball"
     }
   }
 }

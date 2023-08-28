@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "bedwars:purchase_silverfish_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 99999,
+			"minecraft:on_interact":{
+				"event" : "bedwars:purchase_silverfish"
+			}
+		},
+		"events": {
+			"bedwars:purchase_silverfish": {
+				"run_command":{
+				  "command":[
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1,own_xp=..49},tag=!already_reach_maxlevel_deny] ~~~ tag @s add own_xp_too_low_deny",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny] ~~~ tag @s add purchase_denied",	
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny,tag=purchase_denied] ~~~ tellraw @s { \"rawtext\" : [ { \"translate\" : \"text.tellraw.ingameinfo.purchase_item_denied\" } ] }",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=purchase_denied] ~~~ playsound mob.endermen.portal @s",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ summon bedwars:shop_purchase_silverfish_command",
+					"execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ tag @s add shop_purchase_silverfish",
+					"tag @s remove own_xp_too_low_deny",
+					"tag @s remove purchase_denied"
+					],
+					"target": "player"
+				  }
+			  }
+		}
+	}
+}

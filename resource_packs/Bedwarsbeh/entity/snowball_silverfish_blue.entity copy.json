@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+      "description": {
+          "identifier": "bedwars:snowball_silverfish_blue",
+          "materials": {"default":"npc"},
+          "textures": {"default":"textures/items/custom_snowball"},
+          "geometry": {"default":"geometry.custom_snowball"},
+          "render_controllers": ["controller.render.default"],
+          "enable_attachables": false,
+          "hide_armor": false
+      }
+  }
+}

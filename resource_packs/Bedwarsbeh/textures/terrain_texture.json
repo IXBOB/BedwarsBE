@@ -772,6 +772,24 @@
 		"purchase_tnt_block_west": { //WEST
 			"textures": "textures/blocks/purchase_tnt_block"
 		},
+		"purchase_silverfish_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_silverfish_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_silverfish_block_north": {
+			"textures": "textures/blocks/purchase_silverfish_block"
+		},
+		"purchase_silverfish_block_east": {
+			"textures": "textures/blocks/purchase_silverfish_block"
+		},
+		"purchase_silverfish_block_south": {
+			"textures": "textures/blocks/purchase_silverfish_block"
+		},
+		"purchase_silverfish_block_west": { //WEST
+			"textures": "textures/blocks/purchase_silverfish_block"
+		},
 		"tnt2_block_up": {
 			"textures": "textures/blocks/tnt2/tnt2_top"
 		},

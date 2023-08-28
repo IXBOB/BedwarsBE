@@ -1,0 +1,156 @@
+{
+  "format_version": "1.17.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "bedwars:silverfish_red",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "silverfish_get_team_tag_animation_controller"
+        ]
+      },
+      "animations": {
+        "silverfish_get_team_tag_animation_controller": "controller.animation.command.silverfish_get_team_tag",
+        "silverfish_get_team_tag": "animation.command.silverfish_get_team_tag"
+      }
+    },
+    "components": {
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 8,
+        "max": 8
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.4,
+        "height": 0.3
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {  //免疫队伍伤害
+            "on_damage": {
+              "filters": {
+                "any_of": [
+                  {
+                    "all_of": [
+                      {
+                        "test": "has_tag",
+                        "value": "team1"
+                      },
+                      {
+                        "test": "has_tag",
+                        "subject": "other",
+                        "value": "team1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      //AI components below
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:buoyant": {
+        "liquid_blocks": [
+          "minecraft:water",
+          "minecraft:flowing_water"
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:jump.static": {
+        "jump_power": 0.6
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 0,
+        "attack_interval": 10,
+        "within_radius": 8,
+        "target_search_height": 8,
+        "must_see": false,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "all_of": [
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    }
+                  ]
+                },
+                {
+                  "any_of": [
+                    {
+                      "test": "has_tag",
+                      "subject": "other",
+                      "value": "team2"
+                    },
+                    {
+                      "test": "has_tag",
+                      "subject": "other",
+                      "value": "team3"
+                    },
+                    {
+                      "test": "has_tag",
+                      "subject": "other",
+                      "value": "team4"
+                    }
+                  ]
+                }
+              ]
+            },
+            "max_dist": 8
+          }
+        ]
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 0,
+        "require_complete_path": true,
+        "track_target": true
+      },
+      "minecraft:follow_range": {
+        "value": 32,
+        "max": 32
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:can_climb": {}
+    },
+    "events": {}
+  }
+}

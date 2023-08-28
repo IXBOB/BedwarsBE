@@ -474,6 +474,17 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:purchase_silverfish_block": {
+		"textures": {
+			"up": "purchase_silverfish_block_up",
+			"down": "purchase_silverfish_block_down",
+			"north": "purchase_silverfish_block_north",
+			"south": "purchase_silverfish_block_south",
+			"west": "purchase_silverfish_block_west",
+			"east": "purchase_silverfish_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:tnt2_block": {
 		"textures": {
 			"up": "tnt2_block_up",

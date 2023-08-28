@@ -75,3 +75,4 @@ scoreboard objectives add 还需人数 dummy
 scoreboard objectives add 弓等级 dummy
 scoreboard objectives add lobby_guide_num dummy
 scoreboard objectives add guide_running dummy
+scoreboard objectives add spawn_sum_cache dummy

@@ -1,0 +1,65 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "bedwars:snowball_silverfish_yellow",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "definition_event": {
+            "affectProjectile": true,
+            "eventTrigger": {
+              "event": "bedwars:summon_and_remove",
+              "target": "self"
+            }
+          }
+        },
+        "anchor": 1,
+        "power": 1.5,
+        "gravity": 0.03,
+        "angle_offset": 0.0,
+        "offset": [ 0, -0.1, 0 ]
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "component_groups":{
+      "bedwars:remove_self": {
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "events":{
+      "bedwars:summon_and_remove":{
+        "run_command": {
+          "command":[ //use scoreboard to controll the summon entity count as mojang bug
+            "scoreboard players add @s spawn_sum_cache 0",
+            "execute @s[scores={spawn_sum_cache=0}] ~~~ summon bedwars:silverfish_yellow ~ ~0.5 ~",
+            "scoreboard players add @s spawn_sum_cache 1",
+            "event entity @s bedwars:remove_self"
+          ],
+          "target": "self"
+        }
+      },
+      "bedwars:remove_self": {
+        "add": {
+          "component_groups": [
+            "bedwars:remove_self"
+          ]
+        }
+      }
+    }
+  }
+}
