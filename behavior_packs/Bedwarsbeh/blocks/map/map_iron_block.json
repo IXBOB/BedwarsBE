@@ -28,6 +28,10 @@
 						"execute @e[type=bedwars:iron_point_yellow_invisible,tag=iron_point_yellow,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_yellow",
 						"execute @e[type=bedwars:iron_point_green_invisible,tag=iron_point_green,r=2] ~~~ tag @a[tag=on_iron_block,r=2] add on_iron_block_green",
 						"function ore_get/iron_and_gold/assign",
+						"execute @e[type=bedwars:iron_point_red_invisible,tag=iron_point_red,r=2] ~~~ execute @a[tag=on_iron_block,r=2] ~~~ function ore_get/iron_and_gold/reset_red",
+						"execute @e[type=bedwars:iron_point_blue_invisible,tag=iron_point_blue,r=2] ~~~ execute @a[tag=on_iron_block,r=2] ~~~ function ore_get/iron_and_gold/reset_blue",
+						"execute @e[type=bedwars:iron_point_yellow_invisible,tag=iron_point_yellow,r=2] ~~~ execute @a[tag=on_iron_block,r=2] ~~~ function ore_get/iron_and_gold/reset_yellow",
+						"execute @e[type=bedwars:iron_point_green_invisible,tag=iron_point_green,r=2] ~~~ execute @a[tag=on_iron_block,r=2] ~~~ function ore_get/iron_and_gold/reset_green",
 						"tag @s remove on_step_on_iron_block"
 					],
 					"target": "player"

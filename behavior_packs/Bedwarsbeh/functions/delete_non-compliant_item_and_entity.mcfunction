@@ -13,8 +13,3 @@ kill @e[type=ender_pearl,x=-63,y=90,z=-63,dx=127,dy=40,dz=127]
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 event entity @s bedwars:remove_self
 #删除屏障上的掉落物
 execute @e[type=item] ~~~ detect ~ ~-1 ~ barrier 0 kill @s
-#清除出界的silver雪球
-execute @e[type=bedwars:snowball_silverfish_red] ~~~ detect ~ 0 ~ deny 0 kill @s
-execute @e[type=bedwars:snowball_silverfish_blue] ~~~ detect ~ 0 ~ deny 0 kill @s
-execute @e[type=bedwars:snowball_silverfish_yellow] ~~~ detect ~ 0 ~ deny 0 kill @s
-execute @e[type=bedwars:snowball_silverfish_green] ~~~ detect ~ 0 ~ deny 0 kill @s
