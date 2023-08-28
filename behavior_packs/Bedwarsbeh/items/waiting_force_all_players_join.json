@@ -23,9 +23,9 @@
 					"command": [
 						"tag @s add stop_force_players_join",
 						"execute @a[tag=!waiting] ~~~ tag @a[tag=stop_force_players_join] remove stop_force_players_join",
+						"tellraw @a[tag=!waiting] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_success_player\"} ] }",
 						"execute @s[tag=!stop_force_players_join] ~~~ execute @a[tag=!waiting] ~~~ function on_join_waiting_queue",
 						"tellraw @s[tag=!stop_force_players_join] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_success_host\"} ] }",
-						"tellraw @a[tag=!waiting] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_success_player\"} ] }",
 						"tellraw @s[tag=stop_force_players_join] { \"rawtext\" : [{\"translate\":\"text.tellraw.waiting.force_players_join_fail\"} ] }",
 						"tag @s remove stop_force_players_join"
 					]
