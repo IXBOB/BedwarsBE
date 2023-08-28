@@ -34,6 +34,12 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
+      },
+      "minecraft:timer": {
+          "time": 5,
+          "time_down_event": {
+              "event": "bedwars:remove_self"
+          }
       }
     },
     "component_groups":{

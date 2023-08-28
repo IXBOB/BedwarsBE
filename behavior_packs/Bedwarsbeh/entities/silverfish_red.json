@@ -76,6 +76,12 @@
           }
         ]
       },
+      "minecraft:timer": {
+          "time": 40,
+          "time_down_event": {
+              "event": "bedwars:remove_self"
+          }
+      },
       //AI components below
       "minecraft:movement": {
         "value": 0.25

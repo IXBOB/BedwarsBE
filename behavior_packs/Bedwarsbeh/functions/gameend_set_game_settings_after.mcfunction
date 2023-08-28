@@ -92,3 +92,8 @@ event entity @e[type=bedwars:dropped_iron_ingot,tag=!in_guide] bedwars:remove_se
 event entity @e[type=bedwars:dropped_gold_ingot,tag=!in_guide] bedwars:remove_self
 event entity @e[type=bedwars:dropped_diamond,tag=!in_guide] bedwars:remove_self
 event entity @e[type=bedwars:dropped_emerald,tag=!in_guide] bedwars:remove_self
+#删除蠹虫
+event entity @e[type=bedwars:silverfish_red] bedwars:remove_self
+event entity @e[type=bedwars:silverfish_blue] bedwars:remove_self
+event entity @e[type=bedwars:silverfish_yellow] bedwars:remove_self
+event entity @e[type=bedwars:silverfish_green] bedwars:remove_self
