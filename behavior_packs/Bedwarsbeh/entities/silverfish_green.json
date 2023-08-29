@@ -60,12 +60,12 @@
                     "all_of": [
                       {
                         "test": "has_tag",
-                        "value": "team1"
+                        "value": "team4"
                       },
                       {
                         "test": "has_tag",
                         "subject": "other",
-                        "value": "team1"
+                        "value": "team4"
                       }
                     ]
                   }
@@ -123,17 +123,17 @@
                     {
                       "test": "has_tag",
                       "subject": "other",
+                      "value": "team1"
+                    },
+                    {
+                      "test": "has_tag",
+                      "subject": "other",
                       "value": "team2"
                     },
                     {
                       "test": "has_tag",
                       "subject": "other",
                       "value": "team3"
-                    },
-                    {
-                      "test": "has_tag",
-                      "subject": "other",
-                      "value": "team4"
                     }
                   ]
                 }
