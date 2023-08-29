@@ -4,6 +4,10 @@
 		"bedwars.levelup": {
 			"category": "neutral",
 			"sounds": ["sounds/bedwars/levelup"]
+		},
+		"bedwars.pick_items_pop":{
+			"category": "neutral",
+			"sounds":["sounds/bedwars/pick_items_pop"]
 		}
 	}
 }
