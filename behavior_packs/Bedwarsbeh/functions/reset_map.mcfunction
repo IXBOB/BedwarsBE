@@ -28,14 +28,12 @@ execute @e[type=armor_stand,name=main,scores={reseting=1,"保已重置"=0,"重�
 #重置告示牌
 execute @s[type=armor_stand,name=main,scores={reseting=1,"牌已重置"=0,"重置百分数"=47}] ~~~ function reset_map/sign/assign
 #重置箱子
-execute @s[type=armor_stand,name=main,scores={reseting=1,"牌已重置"=0,"重置百分数"=48}] ~~~ function reset_map/chest/assign
+execute @s[type=armor_stand,name=main,scores={reseting=1,"箱已重置"=0,"重置百分数"=48}] ~~~ function reset_map/chest/assign
 #重置各队基地
 execute @e[type=armor_stand,name=main,scores={reseting=1,"基已重置"=0,"重置百分数"=50}] ~~~ function reset_map/base/assign
 #重置钻岛
 execute @e[type=armor_stand,name=main,scores={reseting=1,"钻已重置"=0,"重置百分数"=50}] ~~~ function reset_map/diamond_island
 #重置中岛
 execute @e[type=armor_stand,name=main,scores={reseting=1,"中已重置"=0,"重置百分数"=50}] ~~~ function reset_map/emerald_island
-#删除多余的结构方块
-execute @e[type=armor_stand,name=main,scores={reseting=1,"多已删除"=0,"重置百分数"=85}] ~~~ function reset_map/delete_multiple_blocks
 #重置队伍实体
 execute @s[type=armor_stand,name=main,scores={reseting=1,"实已重置"=0,"重置百分数"=99}] ~~~ function reset_map/base_entity/main
