@@ -29,22 +29,6 @@ scoreboard players reset * "绿床存活"
 scoreboard players reset * "重生时间"
 #reset存活
 scoreboard players reset * "存活"
-#红铁time -> 2
-scoreboard players set @e[type=armor_stand,name=main] "红铁time" 2
-#蓝铁time -> 2
-scoreboard players set @e[type=armor_stand,name=main] "蓝铁time" 2
-#黄铁time -> 2
-scoreboard players set @e[type=armor_stand,name=main] "黄铁time" 2
-#绿铁time -> 2
-scoreboard players set @e[type=armor_stand,name=main] "绿铁time" 2
-#red_gold_time -> 8
-scoreboard players set @e[type=armor_stand,name=main] red_gold_time 8
-#blue_gold_time -> 8
-scoreboard players set @e[type=armor_stand,name=main] blue_gold_time 8
-#yellow_gold_time -> 8
-scoreboard players set @e[type=armor_stand,name=main] yellow_gold_time 8
-#green_gold_time -> 8
-scoreboard players set @e[type=armor_stand,name=main] green_gold_time 8
 #reset§c红队
 scoreboard players reset * "§c红队"
 #reset§b蓝队
@@ -55,10 +39,6 @@ scoreboard players reset * "§e黄队"
 scoreboard players reset * "§a绿队"
 #reset team_id
 scoreboard players reset * team_id
-#reset绿宝石time
-scoreboard players set @e[type=armor_stand,name=main] "绿宝石time" 40
-#reset钻石time
-scoreboard players set @e[type=armor_stand,name=main] "钻石time" 25
 #reset剑等级
 scoreboard players reset * "剑等级"
 #reset镐等级

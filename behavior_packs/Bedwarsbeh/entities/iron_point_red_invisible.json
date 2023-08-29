@@ -56,7 +56,12 @@
                     "command": [
                         //激活->armor_stand.json
                         //初始化invisible_entity，因mojang bug，加载结构过大时，结构中的实体似乎无法在区块未加载时/tag add
-                        "execute @s[y=150,dy=100] ~~~ execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ tag @e[type=bedwars:iron_point_red_invisible,c=1,r=20] add iron_point_red"
+                        "execute @s[y=150,dy=100] ~~~ tag @s add start_init",
+                        "execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ tag @e[type=bedwars:iron_point_red_invisible,c=1,r=20] add iron_point_red",
+                        "execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_red_invisible,c=1,r=20,tag=iron_point_red] ~~~ tag @e[tag=start_init] add init_complete",
+                        "scoreboard players set @s[tag=init_complete] iron_spawn_rand 1",
+                        "scoreboard players set @s[tag=init_complete] gold_spawn_rand 1",
+                        "tag @s remove start_init"
                     ]
                 }
             }

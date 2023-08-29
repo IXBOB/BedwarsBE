@@ -139,7 +139,8 @@
                 }
               ]
             },
-            "max_dist": 8
+            "max_dist": 8,
+            "reevaluate_description": true
           }
         ]
       },

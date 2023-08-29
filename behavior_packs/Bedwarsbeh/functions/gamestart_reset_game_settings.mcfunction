@@ -181,6 +181,36 @@ tag @s remove blue_team_ace_tellrawed
 tag @s remove yellow_team_ace_tellrawed
 #删除green_team_ace_tellrawed tag
 tag @s remove green_team_ace_tellrawed
+#set 红铁time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "红铁time" 2
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "红铁time" 1
+#set 蓝铁time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "蓝铁time" 2
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "蓝铁time" 1
+#set 黄铁time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "黄铁time" 2
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "黄铁time" 1
+#set 绿铁time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "绿铁time" 2
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "绿铁time" 1
+#set red_gold_time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] red_gold_time 6
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] red_gold_time 2
+#set blue_gold_time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] blue_gold_time 6
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] blue_gold_time 2
+#set yellow_gold_time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] yellow_gold_time 6
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] yellow_gold_time 2
+#set green_gold_time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] green_gold_time 6
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] green_gold_time 2
+#set 绿宝石time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "绿宝石time" 40
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "绿宝石time" 20
+#set 钻石time
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=1}] "钻石time" 35
+scoreboard players set @e[type=armor_stand,name=main,scores={游戏模式=2}] "钻石time" 15
 #R_iron_count_2 -> 0
 scoreboard players set @e[type=armor_stand,name=spawn.red_iron] R_iron_count 0
 #B_iron_count_2 -> 0
@@ -244,6 +274,13 @@ execute @e[type=armor_stand,name=spawn.diamond_3] ~ 186 ~ tag @e[type=bedwars:di
 execute @e[type=armor_stand,name=spawn.diamond_4] ~ 186 ~ tag @e[type=bedwars:diamond_point_revolve,c=1,r=20] add diamond_point_4
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20] add emerald_point_1
 execute @e[type=armor_stand,name=spawn.emerald] ~ 186 ~ tag @e[type=bedwars:emerald_point_revolve,c=1,r=20,tag=!emerald_point_1] add emerald_point_2
+#初始化生成物状态rand
+scoreboard players set @e[type=bedwars:diamond_point_revolve,tag=diamond_point_1] diam_spawn_rand 1
+scoreboard players set @e[type=bedwars:diamond_point_revolve,tag=diamond_point_2] diam_spawn_rand 1
+scoreboard players set @e[type=bedwars:diamond_point_revolve,tag=diamond_point_3] diam_spawn_rand 1
+scoreboard players set @e[type=bedwars:diamond_point_revolve,tag=diamond_point_4] diam_spawn_rand 1
+scoreboard players set @e[type=bedwars:emerald_point_revolve,tag=emerald_point_1] emer_spawn_rand 1
+scoreboard players set @e[type=bedwars:emerald_point_revolve,tag=emerald_point_2] emer_spawn_rand 1
 #设置各队基地iron_invisible实体初始化状态 -> 0。因mojang bug，加载结构过大时，结构中的实体似乎无法在区块未加载时/tag add
 scoreboard players set @s R_visi_enti_init 0
 scoreboard players set @s B_visi_enti_init 0
@@ -304,6 +341,12 @@ tag @a remove waiting
 
 #删除waiting_room
 structure load bedwars:waiting_room_clear -16 232 -16 0_degrees none layer_by_layer 8
+
+#尝试init资源点
+execute @e[type=bedwars:iron_point_red_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_red_invisible_entity
+execute @e[type=bedwars:iron_point_blue_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_blue_invisible_entity
+execute @e[type=bedwars:iron_point_yellow_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_yellow_invisible_entity
+execute @e[type=bedwars:iron_point_green_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_green_invisible_entity
 
 #starting -> 0
 scoreboard players set @s starting 0
