@@ -17,3 +17,5 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"绿床存活"=0}] 
 function invisibility_end
 #初始化新玩家
 execute @s[tag=!registered] ~~~ function player_register
+#检测若为作者名称，获得op tag
+execute @s[name=IXBOB] ~~~ tag @s add op
