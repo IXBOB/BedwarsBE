@@ -48,7 +48,7 @@ execute @s[scores={"黄床存活"=1}] ~~~ scoreboard players set @e[type=player,
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @a[scores={"分队"=4}] "存活" 0
 execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @e[type=player,scores={"分队"=4}] "存活" 1
 #更改游戏模式
-gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,able_to_respawn=1},tag=!insider,m=!0]
+gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,"出局观战"=0},tag=!insider,m=!0]
 gamemode spectator @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,"出局观战"=1},tag=!insider,m=!spectator]
 gamemode 2 @a[scores={in_lobby=1},tag=!insider,m=!2]
 #红队队伍actionbar
