@@ -234,6 +234,7 @@ item.bedwars:waiting_back_to_hub=§cBack to lobby §7(Right click / Use)
 item.bedwars:waiting_force_all_players_join=§eForce all players join §7(Right click / Use)
 text.tellraw.waiting.player_join= §6joined the start queue
 text.tellraw.waiting.player_leave= §cleft the start queue
+text.tellraw.waiting.player_exit_game= §6A player has left the game, and the number of players in the start queue has been updated
 text.tellraw.waiting.force_players_join_success_host=§eYou have successfully forced all players into the start queue
 text.tellraw.waiting.force_players_join_success_player=§eAn administrator has forced you into the start queue
 text.tellraw.waiting.force_players_join_fail=§cAll players have joined the start queue

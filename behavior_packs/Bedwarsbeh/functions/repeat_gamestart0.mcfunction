@@ -55,6 +55,14 @@ execute @s[tag=set.start.players.8] ~~~ execute @a[tag=op,tag=set.start.players.
 #复制计分板
 execute @s[tag=reset_OK] ~~~ scoreboard players operation @a "大厅人数" = @s "大厅人数"
 execute @s[tag=reset_OK] ~~~ scoreboard players operation @a "开始倒计时" = @s "开始倒计时"
+
+#检测当 上次记录的在线人数不等于现在记录的在线人数时 更新 大厅人数显示
+scoreboard players set @s WaitingPl.cache 0
+execute @e[type=player,tag=waiting] ~~~ scoreboard players add @e[type=armor_stand,name=main] WaitingPl.cache 1
+scoreboard players operation @s WaitingPl.cache2 = @s WaitingPl.cache
+scoreboard players operation @s WaitingPl.cache -= @s 大厅人数
+execute @s[scores={WaitingPl.cache=!0}] ~~~ function on_waiting_player_exit_game
+
 #房主更改游戏开始所需人数时tellraw提示
 execute @s[tag=set.start.players.2,tag=!set.players.2.tellrawed] ~~~ function commands/test_tag/set.players.2.tellrawed
 execute @s[tag=set.start.players.3,tag=!set.players.3.tellrawed] ~~~ function commands/test_tag/set.players.3.tellrawed

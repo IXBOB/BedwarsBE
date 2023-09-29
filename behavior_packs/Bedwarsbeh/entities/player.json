@@ -435,7 +435,7 @@
             "scoreboard players operation @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] xp_cache = @a[tag=fatal_damage_died] xp_cache",
             "scoreboard players operation @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] own_xp += @a[tag=fatal_damage_died] xp_cache",
             "scoreboard players operation @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] got_xp = @a[tag=fatal_damage_died] xp_cache",//this is used for the tellraw below
-            "execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] ~~~ function api/add_xp_by_scoreboard_xp_cache", //DEBUG xp_cache !!!!!!
+            "execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] ~~~ function utils/add_xp_by_scoreboard_xp_cache", //DEBUG xp_cache !!!!!!
             "execute @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] ~~~ tellraw @s { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.get_xplevel_kill\",\"with\":{\"rawtext\":[{\"score\":{\"name\":\"@s\",\"objective\":\"got_xp\"}}]}} ] }",
             "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 击杀数 1",
             "scoreboard players add @a[tag=!fatal_damage_died,scores={fatal_damage_uid=0}] 总击杀数 1",

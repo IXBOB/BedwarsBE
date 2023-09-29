@@ -234,6 +234,7 @@ item.bedwars:waiting_back_to_hub=§c返回大厅 §7（右键 / 使用）
 item.bedwars:waiting_force_all_players_join=§e强制所有玩家加入游戏 §7（右键 / 使用）
 text.tellraw.waiting.player_join= §6加入了开始队列
 text.tellraw.waiting.player_leave= §c离开了开始队列
+text.tellraw.waiting.player_exit_game= §6有玩家离开了游戏， 开始队列玩家数已更新
 text.tellraw.waiting.force_players_join_success_host=§e您已成功将所有玩家强制加入开始队列
 text.tellraw.waiting.force_players_join_success_player=§e管理员已将您强制加入开始队列
 text.tellraw.waiting.force_players_join_fail=§c所有玩家都已经加入了开始队列

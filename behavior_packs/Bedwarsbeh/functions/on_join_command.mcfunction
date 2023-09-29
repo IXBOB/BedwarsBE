@@ -15,6 +15,8 @@ execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"绿床存活"=0}] 
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"绿床存活"=0}] ~~~ tp @a[scores={"分队"=4,joined=0}] 0 210 0
 execute @e[type=armor_stand,name=main,scores={gameSTART=1..2,"绿床存活"=0}] ~~~ gamemode spectator @a[scores={"分队"=4,joined=0}]
 function invisibility_end
+execute @s[tag=waiting] ~~~ function utils/waiting_queue_leave
+
 #初始化新玩家
 execute @s[tag=!registered] ~~~ function player_register
 #检测若为作者名称，获得op tag
