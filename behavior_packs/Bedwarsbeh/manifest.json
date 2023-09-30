@@ -1,18 +1,1 @@
-{
-    "format_version": 2,
-    "header": {
-        "description": "Bedwars behavior pack by IXBOB",
-        "name": "Bedwars behavior pack by IXBOB",
-        "uuid": "37ad6184-50b2-46d9-8b7c-fb0a6ab55d0b",
-        "version": [ 1, 3, 0 ],
-        "min_engine_version": [ 1, 14, 0 ]
-    },
-    "modules": [
-        {
-            "description": "Bedwars behavior pack by IXBOB",
-            "type": "data",
-            "uuid": "c4453df1-7b1d-43da-8441-f69c1f5d6d10",
-            "version": [1, 3, 0]
-        }
-    ]
-}
+{"format_version": 2, "header": {"description": "Bedwars behavior pack by IXBOB", "name": "Bedwars behavior pack by IXBOB", "uuid": "c969dc7b-095e-4b6f-96a2-083dd0f65530", "version": [1, 3, 10002], "min_engine_version": [1, 14, 0]}, "modules": [{"description": "Bedwars behavior pack by IXBOB", "type": "data", "uuid": "261de892-5bd1-4c63-81ec-dc97f9c86740", "version": [1, 3, 10002]}]}
