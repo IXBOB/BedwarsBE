@@ -419,6 +419,17 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:purchase_speed_potion_block": {
+		"textures": {
+			"up": "purchase_speed_potion_block_up",
+			"down": "purchase_speed_potion_block_down",
+			"north": "purchase_speed_potion_block_north",
+			"south": "purchase_speed_potion_block_south",
+			"west": "purchase_speed_potion_block_west",
+			"east": "purchase_speed_potion_block_east"
+		},
+		"sound": "wood"
+	},
 	"bedwars:purchase_jump_boost_potion_block": {
 		"textures": {
 			"up": "purchase_jump_boost_potion_block_up",
