@@ -30,9 +30,10 @@ execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,t
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ function utils/recount_xp_by_scoreboard_own_xp
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ tellraw @s { "rawtext" : [{"translate":"text.tellraw.ingameinfo.respawn_lost_half_xp_levels"} ] }
 execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=degrade_xp,tag=run_respawn_command] ~~~ tag @s remove degrade_xp
-#tag-degrade
-execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ tag @s remove degrade
 
 #转到function_replaceitem
-execute @e[type=armor_stand,name=main,scores={game_version=1}] ~~~ function respawn/respawn_replaceitem
-execute @e[type=armor_stand,name=main,scores={game_version=2}] ~~~ function respawn/respawn_replaceitem_old2
+execute @e[type=armor_stand,name=main,scores={game_version=1,gameSTART=1}] ~~~ function respawn/respawn_replaceitem
+execute @e[type=armor_stand,name=main,scores={game_version=2,gameSTART=1}] ~~~ function respawn/respawn_replaceitem_old2
+
+#tag-degrade
+execute @s[scores={able_to_respawn=1,"分队"=1..4},tag=degrade,tag=run_respawn_command] ~~~ function respawn/respawn_degrade_end
