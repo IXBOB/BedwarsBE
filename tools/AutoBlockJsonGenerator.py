@@ -1,8 +1,6 @@
 from tkinter import *
 import os
 
-PATH = "C:\\Users\\tqy\\Desktop"
-
 def mkdir(path):
 
     folder = os.path.exists(path)
@@ -18,14 +16,21 @@ window = Tk()
 window.title("Auto Block Json Generator for BedwarsBE")
 window.minsize(width=500,height=500)
 
+label_path = Label(text="输出路径: ")
 label_input = Label(text="输入方块ID（不要带命名空间，已默认Bedwars:）: ")
-label_input.grid(row=0, column=0, sticky='nw')
+label_path.grid(row=0, column=0, sticky='nw')
+label_input.grid(row=1, column=0, sticky='nw')
 
+entry_path = Entry(width=50)
+entry_path.insert(END, string="C:\\Users\\tqy\\Desktop")
 entry_input = Entry(width=50)
-entry_input.grid(row=0,column=1)
+entry_path.grid(row=0,column=1)
+entry_input.grid(row=1,column=1)
 
 def action():
     #获取输入值
+    global PATH
+    PATH = entry_path.get()
     input = entry_input.get()
     str1 = "map_"
     str2 = "_block"
@@ -93,7 +98,7 @@ def action():
 }}'''
         file.write(content)
 
-button = Button(text="生成",command=action)
-button.grid(row=1,column=0)
+button = Button(text="生成",command=action,width=10)
+button.grid(row=2,column=1)
 
 window.mainloop()
