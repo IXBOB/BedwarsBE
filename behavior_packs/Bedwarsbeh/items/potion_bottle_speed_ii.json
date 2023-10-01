@@ -2,12 +2,12 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "bedwars:potion_bottle_speed_v",
+            "identifier": "bedwars:potion_bottle_speed_ii",
             "category": "equipment"
         },
         "components": {
             "minecraft:icon": {
-                "texture": "potion_bottle_speed_v"
+                "texture": "potion_bottle_speed_ii"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.potion"
@@ -34,7 +34,7 @@
 					"command": [
                         "tag @s add stop_command",
                         "execute @e[type=armor_stand,name=main,scores={gameSTART=1..2}] ~~~ tag @a[tag=stop_command,scores={分队=1..4}] remove stop_command",
-						"effect @s[tag=!stop_command] speed 45 4",
+						"effect @s[tag=!stop_command] speed 45 1",
                         "tellraw @s[tag=stop_command] { \"rawtext\" : [{\"translate\":\"text.tellraw.ingameinfo.use_item_denied\"} ] }",
                         "tag @s remove stop_command"
 					],
