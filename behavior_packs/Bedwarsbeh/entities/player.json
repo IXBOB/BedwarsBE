@@ -145,7 +145,7 @@
               "target": "other"
             }
           },
-          {
+          { //受到伤害时触发的其它事件（避免bug）
             "on_damage": {
               "event": "bedwars:on_damage",
               "target": "self"
