@@ -17,7 +17,7 @@ function function_tick/assign
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 
 #所有玩家饱和
-effect @a saturation 2 255 true
+execute @s[scores={function_tick_20=20}] ~~~ effect @a saturation 2 255 true
 
 #复制gameSTART给玩家
 scoreboard players operation @a gameSTART = @s gameSTART
