@@ -61,7 +61,7 @@ scoreboard players set @s WaitingPl.cache 0
 execute @e[type=player,tag=waiting] ~~~ scoreboard players add @e[type=armor_stand,name=main] WaitingPl.cache 1
 scoreboard players operation @s WaitingPl.cache2 = @s WaitingPl.cache
 scoreboard players operation @s WaitingPl.cache -= @s 大厅人数
-execute @s[scores={WaitingPl.cache=!0}] ~~~ function on_waiting_player_exit_game
+execute @s[scores={WaitingPl.cache=!0,dev_mode=0}] ~~~ function on_waiting_player_exit_game
 
 #房主更改游戏开始所需人数时tellraw提示
 execute @s[tag=set.start.players.2,tag=!set.players.2.tellrawed] ~~~ function commands/test_tag/set.players.2.tellrawed
