@@ -278,9 +278,9 @@
         }
       },
       "minecraft:timer": {
-        "time": 0.5,
+        "time": 20,
         "time_down_event": {
-          "event": "bedwars:display_particle"
+          "event": "bedwars:reset_uid_cache"
         }
       }
     },
@@ -337,9 +337,7 @@
           "command": [
             "tag @s add stop_command",
             "execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ tag @a[tag=stop_command] remove stop_command",
-
             "execute @s[x=-63,y=88,z=-63,dx=126,dy=4,dz=126,scores={分队=1..4,出局观战=0}] ~~~ detect ~ ~ ~ structure_void 0 function on_player_fell_in_void",
-
             "execute @s[tag=!stop_command] ~~~ tag @s add set_self_fatal_damage_uid",
             "execute @s[tag=!stop_command] ~~~ execute @e[type=armor_stand,name=main,scores={gameSTART=1}] ~~~ scoreboard players operation @a[tag=set_self_fatal_damage_uid] fatal_damage_uid = @s RandomDamageUID",
             "execute @s[tag=!stop_command] ~~~ tag @s remove set_self_fatal_damage_uid",
@@ -420,16 +418,9 @@
             "tag @s add damaged_player_player",
             "scoreboard players operation @s uid.cache = @s uid", // 受到伤害的玩家的uid.cache设为伤害玩家的uid，伤害玩家的uid.cache设为自己的uid
             "scoreboard players operation @a[tag=player_damaged] uid.cache = @s uid",
-            "say @a[tag=damaged_player_player] damaged @a[tag=player_damaged] (damaged_player_player component)",  //<---- 较后执行，此时已经可以正确获取被伤害的玩家和伤害了玩家的玩家
+            "say @a[tag=damaged_player_player] damaged @a[tag=player_damaged] (damaged_player_player component)", //<---- 较后执行，此时已经可以正确获取被伤害的玩家和伤害了玩家的玩家
             "tag @a remove player_damaged",
             "tag @a remove damaged_player_player"
-          ]
-        }
-      },
-      "bedwars:display_particle": {
-        "run_command": {
-          "command": [
-            "execute @s[scores={respawning=!1,出局观战=!1,invisible_time=0}] ~~~ function display_particle"
           ]
         }
       },
@@ -486,6 +477,13 @@
             }
           }
         ]
+      },
+      "bedwars:reset_uid_cache":{
+        "run_command":{
+          "command":[
+            "scoreboard players reset @s uid.cache"
+          ]
+        }
       },
       "bedwars:invisibility_get": {
         "add": {

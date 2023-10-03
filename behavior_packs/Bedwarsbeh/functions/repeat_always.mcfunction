@@ -45,3 +45,6 @@ execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=2}] ~~~ function inven
 execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 #menu_page3
 execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999
+
+#玩家粒子效果
+execute @s[scores={function_tick_20=20}] ~~~ execute @a[scores={respawning=!1,出局观战=!1,invisible_time=0}] ~~~ function display_particle
