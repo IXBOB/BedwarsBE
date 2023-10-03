@@ -21,7 +21,7 @@ execute @s[scores={starting=0}] ~~~ scoreboard players set @s "开始倒计时" 
 #重置地图
 function reset_map
 #游戏未开始传送游戏区玩家到大厅
-#execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126,tag=!insider] ~~~ function unexpectedly_in_this_game_kick
+execute @a[x=-63,y=92,z=-63,dx=126,dy=120,dz=126,tag=!insider] ~~~ function unexpectedly_in_this_game_kick
 #游戏未开始时删除僵尸猪人
 execute @e[type=zombie_pigman] ~~~ detect ~ ~-1 ~ barrier 0 event entity @s bedwars:remove_self
 #重置结束后后复制地图选择告示牌
@@ -110,3 +110,5 @@ scoreboard players reset @s RandomDamageUID
 execute @s[tag=reset_OK] ~~~ execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_waiting_queue
 #大厅提示加入游戏粒子
 execute @s[scores={function_tick_40=40},tag=reset_OK] ~~~ particle bedwars:lobby_portal -204 202 -192
+#在等待大厅时设置in_lobby 2
+scoreboard players set @a[x=0,y=240,z=0,r=30] in_lobby 2

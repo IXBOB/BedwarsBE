@@ -34,14 +34,14 @@ execute @e[type=armor_stand,x=-199,y=203,z=-196,r=1] ~~~ event entity @s bedwars
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
-scoreboard players set @a[tag=waiting] in_lobby 1
+#in_lobby 2 在repeat_gamestart0.mcfunction
 
 #inventory_menu
 #menu_page1
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
 #menu_page2
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
 #menu_page3
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 #menu_page3
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999

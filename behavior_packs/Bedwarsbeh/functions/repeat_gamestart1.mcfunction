@@ -1,8 +1,7 @@
 #设置游戏规则
 function set_gamerule/set_gamestart1_gamerule
 #检测大厅有游戏内玩家移出游戏
-#tag @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] add unexpected_return_to_lobby
-#execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
+execute @a[scores={in_lobby=1,"分队"=1..4,"存活"=1}] ~~~ function back_to_lobby_unexpectedly_kick
 #设置near_diamond
 tag @a remove near_diamond
 execute @e[type=bedwars:diamond_point_revolve] ~~~ tag @a[r=7] add near_diamond
@@ -50,7 +49,7 @@ execute @s[scores={"绿床存活"=1}] ~~~ scoreboard players set @e[type=player,
 #更改游戏模式
 gamemode 0 @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,respawning=0,"出局观战"=0},tag=!insider,m=!0]
 gamemode spectator @a[x=-63,y=90,z=-63,dx=126,dy=114,dz=126,scores={"分队"=1..4,"出局观战"=1},tag=!insider]
-gamemode 2 @a[scores={in_lobby=1},tag=!insider,m=!2]
+gamemode 2 @a[scores={in_lobby=1..2},tag=!insider,m=!2]
 #红队队伍actionbar
 execute @a[scores={"分队"=1,"存活"=1},x=-63,y=90,z=-63,dx=126,dy=150,dz=126] ~~~ titleraw @s actionbar { "rawtext" : [{"translate":"text.actionbar.ingameinfo.information_line1_red"},{ "text" : "\n" },{"translate":"text.actionbar.ingameinfo.information_line2_red"},{ "selector" :  "@a[scores={分队=1,存活=1,respawning=0,team_id=1..}]"},{"text":" §7"},{ "selector" :  "@a[scores={分队=1,respawning=1,team_id=1..}]"},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line3"},{ "score" : { "name" : "@s" , "objective" : "game.time.min.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.min.1"}},{ "text" : " : " },{ "score" : { "name" : "@s" , "objective" : "game.time.sec.2"}},{ "score" : { "name" : "@s" , "objective" : "game.time.sec.1"}},{"text":"\n"},{"translate":"text.actionbar.ingameinfo.information_line4"},{"score":{"name":"@s","objective":"击杀数"}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"selector":"@s[tag=near_diamond]"},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_1"},{ "score" : { "name" : "@s" , "objective" : "钻石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_diamond_2"},{ "score" : { "name" : "@s" , "objective" : "钻石time"}}]}},{"translate":"%%2","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"text":"\n"}]}},{"translate":"%%5%%6%%7%%8","with":{"rawtext":[{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"selector":"@s[tag=near_emerald]"},{"translate":"text.actionbar.ingameinfo.information_line5_emerald_1"},{ "score" : { "name" : "@s" , "objective" : "绿宝石等级"}},{"translate":"text.actionbar.ingameinfo.information_line5_emerald_2"},{ "score" : { "name" : "@s" , "objective" : "绿宝石time"}}]}}]}
 #蓝队队伍actionbar
