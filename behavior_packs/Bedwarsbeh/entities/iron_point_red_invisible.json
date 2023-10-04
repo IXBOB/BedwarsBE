@@ -10,25 +10,29 @@
         "component_groups": {
             "bedwars:remove_self": {
                 "minecraft:instant_despawn": {}
+            },
+            "bedwars:knockback_resistance":{
+                "minecraft:custom_hit_test": {
+                    "hitboxes": [
+                        {
+                            "pivot": [
+                                0,
+                                100,
+                                0
+                            ],
+                            "width": 0,
+                            "height": 0
+                        }
+                    ]
+                }
             }
         },
         "components": {
-            "minecraft:custom_hit_test": {
-                "hitboxes": [
-                    {
-                        "pivot": [
-                            0,
-                            100,
-                            0
-                        ],
-                        "width": 0,
-                        "height": 0
-                    }
-                ]
-            },
+
             "minecraft:knockback_resistance": {
                 "value": 99999
             },
+
             "minecraft:damage_sensor": {
                 "triggers": {
                     "deals_damage": false
@@ -61,7 +65,23 @@
                         "execute @e[type=armor_stand,name=spawn.red_iron] ~ 186 ~ execute @e[type=bedwars:iron_point_red_invisible,c=1,r=20,tag=iron_point_red] ~~~ tag @e[tag=start_init] add init_complete",
                         "scoreboard players set @s[tag=init_complete] iron_spawn_rand 1",
                         "scoreboard players set @s[tag=init_complete] gold_spawn_rand 1",
-                        "tag @s remove start_init"
+                        "tag @s remove start_init",
+                        "event entity @s bedwars:remove_knockback_resistance",
+                        "event entity @s bedwars:add_knockback_resistance"
+                    ]
+                }
+            },
+            "bedwars:remove_knockback_resistance":{
+                "remove":{
+                    "component_groups":[
+                        "bedwars:knockback_resistance"
+                    ]
+                }
+            },
+            "bedwars:add_knockback_resistance":{
+                "add":{
+                    "component_groups":[
+                        "bedwars:knockback_resistance"
                     ]
                 }
             }

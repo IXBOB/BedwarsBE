@@ -34,7 +34,7 @@ execute @e[type=armor_stand,x=-199,y=203,z=-196,r=1] ~~~ event entity @s bedwars
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
-#in_lobby 2 在repeat_gamestart0.mcfunction
+execute @s[scores={gameSTART=0}] ~~~ scoreboard players set @a[x=0,y=240,z=0,r=30] in_lobby 2
 
 #inventory_menu
 #menu_page1

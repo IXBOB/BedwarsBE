@@ -110,5 +110,3 @@ scoreboard players reset @s RandomDamageUID
 execute @s[tag=reset_OK] ~~~ execute @e[type=player,x=-207,y=191,z=-192,dx=7,dy=5,dz=12] ~~~ function on_join_waiting_queue
 #大厅提示加入游戏粒子
 execute @s[scores={function_tick_40=40},tag=reset_OK] ~~~ particle bedwars:lobby_portal -204 202 -192
-#在等待大厅时设置in_lobby 2
-scoreboard players set @a[x=0,y=240,z=0,r=30] in_lobby 2
