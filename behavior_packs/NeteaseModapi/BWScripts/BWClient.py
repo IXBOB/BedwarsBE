@@ -3,9 +3,9 @@ import __future__
 import mod.client.extraClientApi as clientApi
 comp = clientApi.GetEngineCompFactory()
 
-class VTClient(clientApi.GetClientSystemCls()):
+class BWClient(clientApi.GetClientSystemCls()):
     def __init__(self, namespace, name):
-        super(VTClient, self).__init__(namespace, name)
+        super(BWClient, self).__init__(namespace, name)
         print('======ModApi CLIENT init======')
         
         self.ListenEvent()
@@ -29,7 +29,7 @@ class VTClient(clientApi.GetClientSystemCls()):
         self.NotifyToServer('ClientOnKeyPressInGame', args)
         
     def MenuUI(self):
-        clientApi.RegisterUI("VTSripts", "MenuUI", "VTScripts.uiScript.MenuUIScreenNode", "MenuUI.screen")
-        self.HCUI = clientApi.CreateUI("VTScripts", "MenuUI", {"isHud": 1})
+        clientApi.RegisterUI("BWSripts", "MenuUI", "BWScripts.uiScript.MenuUIScreenNode", "MenuUI.screen")
+        self.HCUI = clientApi.CreateUI("BWScripts", "MenuUI", {"isHud": 1})
         if self.HCUI:
             self.HCUI.init()
