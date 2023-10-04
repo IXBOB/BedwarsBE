@@ -4,15 +4,15 @@ import mod.client.extraClientApi as clientApi
 import mod.server.extraServerApi as serverApi
 
 
-@Mod.Binding(name='VanillaTest', version="1.0")
-class VanillaTestMod(object):
+@Mod.Binding(name='bedwarsModapi', version="1.0")
+class bedwarsModapiMod(object):
     def __init__(self):
         pass
 
     @Mod.InitServer()
     def initMod(self):
-        serverApi.RegisterSystem('VanillaTest', 'VTServer', 'VTScripts.VTServer.VTServer')
+        serverApi.RegisterSystem('bedwarsModapi', 'BWServer', 'BWScripts.BWServer.BWServer')
 
     @Mod.InitClient()
     def init(self):
-        clientApi.RegisterSystem('VanillaTest', 'VTClient', 'VTScripts.VTClient.VTClient')
+        clientApi.RegisterSystem('bedwarsModapi', 'BWClient', 'BWScripts.BWClient.BWClient')
