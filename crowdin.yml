@@ -1,0 +1,3 @@
+files:
+  - source: /resource_packs/Bedwarsbeh/texts/*.lang
+    translation: '%original_path%'
