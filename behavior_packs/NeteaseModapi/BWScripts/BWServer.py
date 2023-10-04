@@ -6,9 +6,9 @@ import mod.client.extraClientApi as clientApi
 from sys import platform
 comp = serverApi.GetEngineCompFactory()
 
-class VTServer(serverApi.GetServerSystemCls()):
+class BWServer(serverApi.GetServerSystemCls()):
     def __init__(self, namespace, name):
-        super(VTServer, self).__init__(namespace, name)
+        super(BWServer, self).__init__(namespace, name)
         print('======ModApi SERVER init======')
         self.ListenApiEvent = lambda eventName, callbackFunc: self.ListenForEvent(serverApi.GetEngineNamespace(), serverApi.GetEngineSystemName(), eventName, self, callbackFunc)
         
@@ -16,7 +16,7 @@ class VTServer(serverApi.GetServerSystemCls()):
 
     def ListenEvent(self):
         self.ListenApiEvent = lambda eventName, callbackFunc: self.ListenForEvent(serverApi.GetEngineNamespace(), serverApi.GetEngineSystemName(), eventName, self, callbackFunc)
-        self.ListenClientEvent = lambda eventName, callbackFunc: self.ListenForEvent('VanillaTest', 'VTClient', eventName, self, callbackFunc)
+        self.ListenClientEvent = lambda eventName, callbackFunc: self.ListenForEvent('bedwarsModapi', 'BWClient', eventName, self, callbackFunc)
 
         self.ListenClientEvent('ClientOnKeyPressInGame', self.OnKeyPressInGame)
         
