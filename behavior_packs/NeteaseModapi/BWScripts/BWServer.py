@@ -16,7 +16,7 @@ class BWServer(serverApi.GetServerSystemCls()):
 
     def ListenEvent(self):
         self.ListenApiEvent = lambda eventName, callbackFunc: self.ListenForEvent(serverApi.GetEngineNamespace(), serverApi.GetEngineSystemName(), eventName, self, callbackFunc)
-        self.ListenClientEvent = lambda eventName, callbackFunc: self.ListenForEvent('VanillaTest', 'BWClient', eventName, self, callbackFunc)
+        self.ListenClientEvent = lambda eventName, callbackFunc: self.ListenForEvent('bedwarsModapi', 'BWClient', eventName, self, callbackFunc)
 
         self.ListenClientEvent('ClientOnKeyPressInGame', self.OnKeyPressInGame)
         
