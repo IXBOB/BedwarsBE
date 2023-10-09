@@ -17,7 +17,7 @@ function function_tick/assign
 execute @a[x=-200,y=180,z=-200,r=50] ~~~ detect ~ ~ ~ structure_void 0 tp @s -200 200 -200
 
 #所有玩家饱和
-effect @a saturation 2 255 true
+execute @s[scores={function_tick_20=20}] ~~~ effect @a saturation 2 255 true
 
 #复制gameSTART给玩家
 scoreboard players operation @a gameSTART = @s gameSTART
@@ -34,14 +34,17 @@ execute @e[type=armor_stand,x=-199,y=203,z=-196,r=1] ~~~ event entity @s bedwars
 #test in_lobby
 scoreboard players set @a in_lobby 0
 scoreboard players set @a[x=-200,y=180,z=-200,r=50] in_lobby 1
-scoreboard players set @a[tag=waiting] in_lobby 1
+execute @s[scores={gameSTART=0}] ~~~ scoreboard players set @a[x=0,y=240,z=0,r=30] in_lobby 2
 
 #inventory_menu
 #menu_page1
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=1}] ~~~ function inventory_menu/menu_page/menu_page1
 #menu_page2
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=2}] ~~~ function inventory_menu/menu_page/menu_page2
 #menu_page3
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=3}] ~~~ function inventory_menu/menu_page/menu_page3
 #menu_page3
-execute @a[scores={出局观战=0,in_lobby=1,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999
+execute @a[scores={出局观战=0,in_lobby=1..2,menu_page=999}] ~~~ function inventory_menu/menu_page/menu_page999
+
+#玩家粒子效果
+execute @s[scores={function_tick_20=20}] ~~~ execute @a[scores={respawning=!1,出局观战=!1,invisible_time=0}] ~~~ function display_particle

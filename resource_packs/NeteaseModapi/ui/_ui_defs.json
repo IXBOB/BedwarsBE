@@ -1,0 +1,6 @@
+{
+    "ui_defs": [
+        "ui/MenuUI.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

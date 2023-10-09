@@ -20,7 +20,8 @@
             },
             "netease:render_layer": {
                 "value": "blend"
-            }
+            },
+            "minecraft:loot": "loot_tables/empty.json"
         }
     }
 }

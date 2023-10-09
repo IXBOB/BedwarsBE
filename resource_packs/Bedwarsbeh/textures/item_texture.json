@@ -56,6 +56,9 @@
     "green_team_boots": {
       "textures": "textures/items/green_team_boots"
     },
+    "potion_bottle_speed_ii": {
+      "textures": "textures/items/potion_bottle_speed_ii"
+    },
     "potion_bottle_jump_boost_v": {
       "textures": "textures/items/potion_bottle_jump_boost_v"
     },

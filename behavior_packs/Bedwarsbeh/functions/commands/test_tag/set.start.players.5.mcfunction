@@ -11,4 +11,4 @@ tag @s remove have.set.start.players.6
 tag @s remove have.set.start.players.7
 tag @s remove have.set.start.players.8
 tag @s add have.set.start.players.5
-execute @e[type=player,scores={出局观战=0,in_lobby=1}] ~~~ function inventory_menu/refresh_menu/refresh_menu3
+execute @e[type=player,scores={出局观战=0,in_lobby=1..2}] ~~~ function inventory_menu/refresh_menu/refresh_menu3

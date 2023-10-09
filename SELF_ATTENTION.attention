@@ -67,6 +67,15 @@ ATTENTION:
 
 1.add tag creator_info相关功能
    (更新地图时不要忘记更新creator_info.mcfunction中写的version)
+2. 运行 test.mcfunction
+  
+
+
+
+
+
+
+
 
 
 

@@ -664,6 +664,24 @@
 		"purchase_fireball_block_west": { //WEST
 			"textures": "textures/blocks/purchase_fireball_block"
 		},
+		"purchase_speed_potion_block_up": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_speed_potion_block_down": {
+			"textures": "textures/blocks/planks_big_oak_shop"
+		},
+		"purchase_speed_potion_block_north": {
+			"textures": "textures/blocks/purchase_speed_potion_block"
+		},
+		"purchase_speed_potion_block_east": {
+			"textures": "textures/blocks/purchase_speed_potion_block"
+		},
+		"purchase_speed_potion_block_south": {
+			"textures": "textures/blocks/purchase_speed_potion_block"
+		},
+		"purchase_speed_potion_block_west": { //WEST
+			"textures": "textures/blocks/purchase_speed_potion_block"
+		},
 		"purchase_jump_boost_potion_block_up": {
 			"textures": "textures/blocks/planks_big_oak_shop"
 		},

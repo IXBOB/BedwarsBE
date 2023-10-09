@@ -39,6 +39,7 @@ execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=4,starting=0},tag
 execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=5,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_5 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=6,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_6 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=7,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_7 "显示" -7
+execute @s[type=armor_stand,scores={gameSTART=0,"还需人数"=7,starting=0},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.player_need_more_8 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=2,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_2 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=3,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_3 "显示" -7
 execute @s[type=armor_stand,scores={gameSTART=0,"大厅人数"=4,starting=1},tag=reset_OK] ~~~ scoreboard players set text.scoreboard.waitinfo.players_count_4 "显示" -7
