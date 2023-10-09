@@ -1931,7 +1931,13 @@
       },
       {
          "path" : "textures/ui/title.png"
-      }
+      },
+      {
+         "path" : "textures/items/jxldp_milk.png"
+      },
+      {
+         "path" : "textures/blocks/custom_milk.png"
+      } 
    ],
    "version" : 1
 }

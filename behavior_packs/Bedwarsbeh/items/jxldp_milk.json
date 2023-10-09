@@ -1,0 +1,32 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "a:jxldp_milk"
+		},
+		"components": {
+			"minecraft:foil": true,
+			"minecraft:icon": {
+				"texture": "a:jxldp_milk"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "milk2",
+					"target": "self"
+				}
+			}
+		},
+		"events": {
+			"milk2": {
+				"run_command": {
+					"command": [		
+						"effect @s water_breathing 30",
+						"scoreboard players set @s milk 600",
+						"clear @s a:jxldp_milk 0 1"
+					]
+				}
+			}
+		}
+	}
+}

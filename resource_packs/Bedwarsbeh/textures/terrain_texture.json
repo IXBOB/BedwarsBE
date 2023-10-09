@@ -1701,6 +1701,9 @@
 		},
 		"map_deepslate_gold_ore_block_west": {												//WEST
 			"textures": "textures/blocks/map_deepslate_gold_ore_block"
+		},
+		"a:custom_milk": {
+            "textures": "textures/blocks/custom_milk"
 		}
 	}
 }

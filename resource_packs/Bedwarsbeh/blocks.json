@@ -1538,5 +1538,8 @@
 	"bedwars:map_dark_oak_leaves_block": {
 		"textures": "map_dark_oak_leaves_block",
 		"sound": "wood"
-	}
+	},
+	"a:custom_milk": {
+        "textures": "a:custom_milk"
+    }
 }
