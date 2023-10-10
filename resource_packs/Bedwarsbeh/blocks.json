@@ -1539,7 +1539,14 @@
 		"textures": "map_dark_oak_leaves_block",
 		"sound": "wood"
 	},
-	"a:custom_milk": {
-        "textures": "a:custom_milk"
+	"bedwars:magic_milk_block": {
+		"textures": {
+			"up": "bedwars:muban",
+			"down": "bedwars:muban",
+			"north": "bedwars:magic_milk_block",
+			"south": "bedwars:magic_milk_block",
+			"west": "bedwars:magic_milk_block",
+			"east": "bedwars:magic_milk_block"
+        }
     }
 }

@@ -7,6 +7,9 @@
 
 
 		//NETEASE
+		"bedwars:muban":{
+			"textures":"textures/blocks/planks_big_oak_shop"
+		},		
 		"bedwars:red_bed_head":{
 			"textures":"textures/blocks/netease/red_bed_head"
 		},
@@ -61,10 +64,6 @@
 		"bedwars:map_smooth_stone_slab_block": {
 			"textures": "textures/blocks/map_smooth_stone_slab_block"
 		},
-
-
-
-
 
 
 
@@ -1700,9 +1699,9 @@
 			"textures": "textures/blocks/map_deepslate_gold_ore_block"
 		},
 		"map_deepslate_gold_ore_block_west": {												//WEST
-			"textures": "textures/blocks/map_deepslate_gold_ore_block"
+			"textures": "textures/blocks/map_deepslate_gold_ore_block"	
 		},
-		"a:custom_milk": {
+		"bedwars:magic_milk_block": {
             "textures": "textures/blocks/custom_milk"
 		}
 	}

@@ -6,7 +6,7 @@ entity.snowball.name=Fireball
 
 ##IN-GAME ITEMS AND BLOCKS
 ##OLD
-item.a:jxldp_milk=§l§f魔法牛奶
+item.bedwars:magic_milk=§f魔法牛奶
 item.bedwars:red_team_helmet_protection_i=红色皮革帽子 §7保护 I
 item.bedwars:red_team_helmet_protection_ii=红色皮革帽子 §7保护 II
 item.bedwars:red_team_helmet_protection_iii=红色皮革帽子 §7保护 III
