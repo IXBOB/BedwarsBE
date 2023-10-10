@@ -1702,7 +1702,7 @@
 			"textures": "textures/blocks/map_deepslate_gold_ore_block"	
 		},
 		"bedwars:magic_milk_block": {
-            "textures": "textures/blocks/custom_milk"
+            "textures": "textures/blocks/magic_milk_block"
 		}
 	}
 }
