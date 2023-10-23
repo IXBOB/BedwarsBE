@@ -6,7 +6,6 @@ entity.snowball.name=Fireball
 
 ##IN-GAME ITEMS AND BLOCKS
 ##OLD
-item.bedwars:magic_milk=§f魔法牛奶
 item.bedwars:red_team_helmet_protection_i=红色皮革帽子 §7保护 I
 item.bedwars:red_team_helmet_protection_ii=红色皮革帽子 §7保护 II
 item.bedwars:red_team_helmet_protection_iii=红色皮革帽子 §7保护 III
@@ -143,6 +142,7 @@ tile.bedwars:red_popup_tower.name=紧凑型速建防御塔
 tile.bedwars:blue_popup_tower.name=紧凑型速建防御塔
 tile.bedwars:yellow_popup_tower.name=紧凑型速建防御塔
 tile.bedwars:green_popup_tower.name=紧凑型速建防御塔
+item.bedwars:magic_milk=§f魔法牛奶
 item.snowball.name=火焰弹
 item.bedwars:xp_bottle=§a经验存储瓶 §7100 经验
 item.egg.name=搭桥蛋
@@ -543,6 +543,7 @@ text.tellraw.ingameinfo.purchase_speed_potion=§a您购买了 §r§6速度提升
 text.tellraw.ingameinfo.purchase_jump_boost_potion=§a您购买了 §r§6跳跃提升 V 药水 （45秒）
 text.tellraw.ingameinfo.purchase_invisibility_potion=§a您购买了 §r§6隐身 II 药水 （30秒）
 text.tellraw.ingameinfo.purchase_xp_bottle=§a您购买了 §r§6经验存储瓶 （100级）
+text.tellraw.ingameinfo.purchase_magic_milk=§a您购买了 §r§6魔法牛奶
 text.tellraw.ingameinfo.purchase_fireball=§a您购买了 §r§6火焰弹
 text.tellraw.ingameinfo.purchase_tnt=§a您购买了 §r§6炸药
 text.tellraw.ingameinfo.purchase_golden_apple=§a您购买了 §r§6金苹果
@@ -776,6 +777,7 @@ text.sign.ingame.shop_speed_potion=§f速度药水 （45秒）
 text.sign.ingame.shop_jump_boost_potion=§f跳跃提升药水 （45秒）
 text.sign.ingame.shop_invisibility_potion=§f隐身药水 （30秒）
 text.sign.ingame.shop_xp_bottle=§f经验存储瓶 （100级）
+text.sign.ingame.shop_magic_milk=§f魔法牛奶
 text.sign.ingame.shop_fireball=§f火球
 text.sign.ingame.shop_tnt=§f炸药
 text.sign.ingame.shop_golden_apple=§f金苹果
