@@ -29,6 +29,8 @@ execute @s[scores={function_tick_5=5}] ~~~ function test_win
 execute @s[scores={function_tick_5=5}] ~~~ execute @a[x=-218,y=193,z=-218,r=50] ~~~ function lobby_actionbar
 #玩家隐身
 execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={invisible_time=1..}] ~~~ function invisible_time
+#牛奶倒计时-1
+execute @s[scores={function_tick_20=20}] ~~~ execute @e[type=player,scores={milk_time=1..}] ~~~ scoreboard players add @s milk_time -1
 #检测队伍剩余人数并显示
 function scoreboard_team_display/test/red_player_count
 function scoreboard_team_display/test/blue_player_count

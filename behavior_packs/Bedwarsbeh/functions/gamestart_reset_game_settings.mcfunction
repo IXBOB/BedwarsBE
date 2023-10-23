@@ -348,5 +348,8 @@ execute @e[type=bedwars:iron_point_blue_invisible,x=0,y=200,z=0,c=1] ~~~ event e
 execute @e[type=bedwars:iron_point_yellow_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_yellow_invisible_entity
 execute @e[type=bedwars:iron_point_green_invisible,x=0,y=200,z=0,c=1] ~~~ event entity @s[tag=!init_complete] bedwars:init_green_invisible_entity
 
+#初始化玩家milk_time -> 0
+scoreboard players set @a[scores={"分队"=1..4}] milk_time 0
+
 #starting -> 0
 scoreboard players set @s starting 0

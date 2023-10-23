@@ -1,0 +1,32 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:destroy_time": 99999,
+            "minecraft:on_interact": {
+                "event": "bedwars:purchase_magic_milk"
+            }
+        },
+        "description": {
+            "identifier": "bedwars:purchase_magic_milk_block",
+            "register_to_creative_menu": true
+        },
+        "events": {
+            "bedwars:purchase_magic_milk": {
+                "run_command": {
+                    "command": [
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1,own_xp=..99},tag=!already_reach_maxlevel_deny] ~~~ tag @s add own_xp_too_low_deny",
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny] ~~~ tag @s add purchase_denied",	
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=own_xp_too_low_deny,tag=purchase_denied] ~~~ tellraw @s { \"rawtext\" : [ { \"translate\" : \"text.tellraw.ingameinfo.purchase_item_denied\" } ] }",
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=purchase_denied] ~~~ playsound mob.endermen.portal @s",
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ summon bedwars:shop_purchase_magic_milk_command",
+                        "execute @s[scores={分队=1..4,出局观战=0,gameSTART=1},tag=!purchase_denied] ~~~ tag @s add shop_purchase_magic_milk",
+                        "tag @s remove own_xp_too_low_deny",
+                        "tag @s remove purchase_denied"
+                    ],
+                    "target": "player"
+                }
+            }
+        }
+    }
+}

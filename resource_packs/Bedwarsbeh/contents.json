@@ -1936,7 +1936,7 @@
          "path" : "textures/items/magic_milk.png"
       },
       {
-         "path" : "textures/blocks/magic_milk_block.png"
+         "path" : "textures/blocks/purchase_magic_milk_block.png"
       } 
    ],
    "version" : 1
