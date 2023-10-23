@@ -1931,7 +1931,13 @@
       },
       {
          "path" : "textures/ui/title.png"
-      }
+      },
+      {
+         "path" : "textures/items/magic_milk.png"
+      },
+      {
+         "path" : "textures/blocks/magic_milk_block.png"
+      } 
    ],
    "version" : 1
 }

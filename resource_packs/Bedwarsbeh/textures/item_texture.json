@@ -133,6 +133,9 @@
     },
     "custom_snowball":{
       "textures": "textures/items/custom_snowball"
+    },
+    "bedwars:magic_milk": {
+      "textures": "textures/items/magic_milk"
     }
   }
 }
