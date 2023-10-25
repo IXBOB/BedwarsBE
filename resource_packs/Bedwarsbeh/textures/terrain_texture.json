@@ -160,470 +160,190 @@
 			"textures": "textures/blocks/lobby_button_select_last_block"
 		},
 
-		"purchase_red_wool_block_north": {
-			"textures": "textures/blocks/purchase_red_wool_block"
-		},
-		"purchase_red_wool_block_east": {
-			"textures": "textures/blocks/purchase_red_wool_block"
-		},
-		"purchase_red_wool_block_south": {
-			"textures": "textures/blocks/purchase_red_wool_block"
-		},
-		"purchase_red_wool_block_west": { //WEST
+
+		"purchase_red_wool_block": { //WEST
 			"textures": "textures/blocks/purchase_red_wool_block"
 		},
 
-		"purchase_blue_wool_block_north": {
-			"textures": "textures/blocks/purchase_blue_wool_block"
-		},
-		"purchase_blue_wool_block_east": {
-			"textures": "textures/blocks/purchase_blue_wool_block"
-		},
-		"purchase_blue_wool_block_south": {
-			"textures": "textures/blocks/purchase_blue_wool_block"
-		},
-		"purchase_blue_wool_block_west": { //WEST
+	
+		"purchase_blue_wool_block": { //WEST
 			"textures": "textures/blocks/purchase_blue_wool_block"
 		},
 
-		"purchase_yellow_wool_block_north": {
-			"textures": "textures/blocks/purchase_yellow_wool_block"
-		},
-		"purchase_yellow_wool_block_east": {
-			"textures": "textures/blocks/purchase_yellow_wool_block"
-		},
-		"purchase_yellow_wool_block_south": {
-			"textures": "textures/blocks/purchase_yellow_wool_block"
-		},
-		"purchase_yellow_wool_block_west": { //WEST
+
+		"purchase_yellow_wool_block": { //WEST
 			"textures": "textures/blocks/purchase_yellow_wool_block"
 		},
 	
-		"purchase_green_wool_block_north": {
-			"textures": "textures/blocks/purchase_green_wool_block"
-		},
-		"purchase_green_wool_block_east": {
-			"textures": "textures/blocks/purchase_green_wool_block"
-		},
-		"purchase_green_wool_block_south": {
-			"textures": "textures/blocks/purchase_green_wool_block"
-		},
-		"purchase_green_wool_block_west": { //WEST
+
+		"purchase_green_wool_block": { //WEST
 			"textures": "textures/blocks/purchase_green_wool_block"
 
 		},
-		"purchase_endstone_block_north": {
-			"textures": "textures/blocks/purchase_endstone_block"
-		},
-		"purchase_endstone_block_east": {
-			"textures": "textures/blocks/purchase_endstone_block"
-		},
-		"purchase_endstone_block_south": {
-			"textures": "textures/blocks/purchase_endstone_block"
-		},
-		"purchase_endstone_block_west": { //WEST
+
+		"purchase_endstone_block": { //WEST
 			"textures": "textures/blocks/purchase_endstone_block"
 		},
 	
-		"purchase_planks_block_north": {
-			"textures": "textures/blocks/purchase_planks_block"
-		},
-		"purchase_planks_block_east": {
-			"textures": "textures/blocks/purchase_planks_block"
-		},
-		"purchase_planks_block_south": {
-			"textures": "textures/blocks/purchase_planks_block"
-		},
-		"purchase_planks_block_west": { //WEST
+
+		"purchase_planks_block": { //WEST
 			"textures": "textures/blocks/purchase_planks_block"
 		},
 	
-		"purchase_red_stained_glass_block_north": {
-			"textures": "textures/blocks/purchase_red_stained_glass_block"
-		},
-		"purchase_red_stained_glass_block_east": {
-			"textures": "textures/blocks/purchase_red_stained_glass_block"
-		},
-		"purchase_red_stained_glass_block_south": {
-			"textures": "textures/blocks/purchase_red_stained_glass_block"
-		},
-		"purchase_red_stained_glass_block_west": { //WEST
+
+		"purchase_red_stained_glass_block": { //WEST
 			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
 	
-		"purchase_blue_stained_glass_block_north": {
-			"textures": "textures/blocks/purchase_blue_stained_glass_block"
-		},
-		"purchase_blue_stained_glass_block_east": {
-			"textures": "textures/blocks/purchase_blue_stained_glass_block"
-		},
-		"purchase_blue_stained_glass_block_south": {
-			"textures": "textures/blocks/purchase_blue_stained_glass_block"
-		},
-		"purchase_blue_stained_glass_block_west": { //WEST
+
+		"purchase_blue_stained_glass_block": { //WEST
 			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
 	
-		"purchase_yellow_stained_glass_block_north": {
+
+		"purchase_yellow_stained_glass_block": { //WEST
 			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
-		"purchase_yellow_stained_glass_block_east": {
-			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
-		},
-		"purchase_yellow_stained_glass_block_south": {
-			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
-		},
-		"purchase_yellow_stained_glass_block_west": { //WEST
-			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
-		},
-		"purchase_green_stained_glass_block_north": {
+
+		"purchase_green_stained_glass_block": { //WEST
 			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
-		"purchase_green_stained_glass_block_east": {
-			"textures": "textures/blocks/purchase_green_stained_glass_block"
-		},
-		"purchase_green_stained_glass_block_south": {
-			"textures": "textures/blocks/purchase_green_stained_glass_block"
-		},
-		"purchase_green_stained_glass_block_west": { //WEST
-			"textures": "textures/blocks/purchase_green_stained_glass_block"
-		},
-	
-		"purchase_upgrade_armor_block_north": {
+
+
+		"purchase_upgrade_armor_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_armor_block"
 		},
-		"purchase_upgrade_armor_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_armor_block"
-		},
-		"purchase_upgrade_armor_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_armor_block"
-		},
-		"purchase_upgrade_armor_block_west": { //WEST
-			"textures": "textures/blocks/purchase_upgrade_armor_block"
-		},
-	
-		"purchase_upgrade_sword_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_sword_block"
-		},
-		"purchase_upgrade_sword_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_sword_block"
-		},
-		"purchase_upgrade_sword_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_sword_block"
-		},
-		"purchase_upgrade_sword_block_west": { //WEST
+
+
+		"purchase_upgrade_sword_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_sword_block"
 		},
 
-		"purchase_upgrade_pickaxe_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_pickaxe_block"
-		},
-		"purchase_upgrade_pickaxe_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_pickaxe_block"
-		},
-		"purchase_upgrade_pickaxe_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_pickaxe_block"
-		},
-		"purchase_upgrade_pickaxe_block_west": { //WEST
+
+		"purchase_upgrade_pickaxe_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_pickaxe_block"
 		},
 
-		"purchase_upgrade_axe_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_axe_block"
-		},
-		"purchase_upgrade_axe_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_axe_block"
-		},
-		"purchase_upgrade_axe_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_axe_block"
-		},
-		"purchase_upgrade_axe_block_west": { //WEST
+	
+		"purchase_upgrade_axe_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_axe_block"
 		},
 	
-		"purchase_upgrade_bow_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_bow_block"
-		},
-		"purchase_upgrade_bow_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_bow_block"
-		},
-		"purchase_upgrade_bow_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_bow_block"
-		},
-		"purchase_upgrade_bow_block_west": { //WEST
+
+		"purchase_upgrade_bow_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_bow_block"
 		},
 	
-		"purchase_arrow_block_north": {
-			"textures": "textures/blocks/purchase_arrow_block"
-		},
-		"purchase_arrow_block_east": {
-			"textures": "textures/blocks/purchase_arrow_block"
-		},
-		"purchase_arrow_block_south": {
-			"textures": "textures/blocks/purchase_arrow_block"
-		},
-		"purchase_arrow_block_west": { //WEST
+
+		"purchase_arrow_block": { //WEST
 			"textures": "textures/blocks/purchase_arrow_block"
 		},
 
-		"get_trap_info_block_north": {
-			"textures": "textures/blocks/get_trap_info_block"
-		},
-		"get_trap_info_block_east": {
-			"textures": "textures/blocks/get_trap_info_block"
-		},
-		"get_trap_info_block_south": {
-			"textures": "textures/blocks/get_trap_info_block"
-		},
-		"get_trap_info_block_west": { //WEST
+
+		"get_trap_info_block": { //WEST
 			"textures": "textures/blocks/get_trap_info_block"
 		},
 
-		"get_upgrade_and_trap_help_block_north": {
-			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
-		},
-		"get_upgrade_and_trap_help_block_east": {
-			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
-		},
-		"get_upgrade_and_trap_help_block_south": {
-			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
-		},
-		"get_upgrade_and_trap_help_block_west": { //WEST
+	
+		"get_upgrade_and_trap_help_block": { //WEST
 			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
 		},
 
-		"purchase_upgrade_team_sharpness_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
-		},
-		"purchase_upgrade_team_sharpness_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
-		},
-		"purchase_upgrade_team_sharpness_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
-		},
-		"purchase_upgrade_team_sharpness_block_west": { //WEST
+
+		"purchase_upgrade_team_sharpness_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
 		},
 
-		"purchase_upgrade_team_protection_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
-		},
-		"purchase_upgrade_team_protection_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
-		},
-		"purchase_upgrade_team_protection_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
-		},
-		"purchase_upgrade_team_protection_block_west": { //WEST
+
+		"purchase_upgrade_team_protection_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
 		},
 
-		"purchase_upgrade_team_forge_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
-		},
-		"purchase_upgrade_team_forge_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
-		},
-		"purchase_upgrade_team_forge_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
-		},
-		"purchase_upgrade_team_forge_block_west": { //WEST
+
+		"purchase_upgrade_team_forge_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
 		},
 
-		"purchase_upgrade_team_maniac_miner_block_north": {
-			"textures": "textures/blocks/purchase_upgrade_team_maniac_miner_block"
-		},
-		"purchase_upgrade_team_maniac_miner_block_east": {
-			"textures": "textures/blocks/purchase_upgrade_team_maniac_miner_block"
-		},
-		"purchase_upgrade_team_maniac_miner_block_south": {
-			"textures": "textures/blocks/purchase_upgrade_team_maniac_miner_block"
-		},
-		"purchase_upgrade_team_maniac_miner_block_west": { //WEST
+
+		"purchase_upgrade_team_maniac_miner_block": { //WEST
 			"textures": "textures/blocks/purchase_upgrade_team_maniac_miner_block"
 		},
 
-		"purchase_team_miner_fatigue_trap_block_north": {
-			"textures": "textures/blocks/purchase_team_miner_fatigue_trap_block"
-		},
-		"purchase_team_miner_fatigue_trap_block_east": {
-			"textures": "textures/blocks/purchase_team_miner_fatigue_trap_block"
-		},
-		"purchase_team_miner_fatigue_trap_block_south": {
-			"textures": "textures/blocks/purchase_team_miner_fatigue_trap_block"
-		},
-		"purchase_team_miner_fatigue_trap_block_west": { //WEST
+
+		"purchase_team_miner_fatigue_trap_block": { //WEST
 			"textures": "textures/blocks/purchase_team_miner_fatigue_trap_block"
 		},
 
-		"purchase_team_alarm_trap_block_north": {
-			"textures": "textures/blocks/purchase_team_alarm_trap_block"
-		},
-		"purchase_team_alarm_trap_block_east": {
-			"textures": "textures/blocks/purchase_team_alarm_trap_block"
-		},
-		"purchase_team_alarm_trap_block_south": {
-			"textures": "textures/blocks/purchase_team_alarm_trap_block"
-		},
-		"purchase_team_alarm_trap_block_west": { //WEST
+
+		"purchase_team_alarm_trap_block": { //WEST
 			"textures": "textures/blocks/purchase_team_alarm_trap_block"
 		},
 
-		"purchase_team_its_a_trap_block_north": {
-			"textures": "textures/blocks/purchase_team_its_a_trap_block"
-		},
-		"purchase_team_its_a_trap_block_east": {
-			"textures": "textures/blocks/purchase_team_its_a_trap_block"
-		},
-		"purchase_team_its_a_trap_block_south": {
-			"textures": "textures/blocks/purchase_team_its_a_trap_block"
-		},
-		"purchase_team_its_a_trap_block_west": { //WEST
+
+		"purchase_team_its_a_trap_block": { //WEST
 			"textures": "textures/blocks/purchase_team_its_a_trap_block"
 		},
 	
-		"purchase_team_counter-offensive_block_north": {
+		"purchase_team_counter-offensive_block": {
 			"textures": "textures/blocks/purchase_team_counter-offensive_block"
 		},
-		"purchase_team_counter-offensive_block_east": {
+		"purchase_team_counter-offensive_block": {
 			"textures": "textures/blocks/purchase_team_counter-offensive_block"
 		},
-		"purchase_team_counter-offensive_block_south": {
+		"purchase_team_counter-offensive_block": {
 			"textures": "textures/blocks/purchase_team_counter-offensive_block"
 		},
-		"purchase_team_counter-offensive_block_west": { //WEST
+		"purchase_team_counter-offensive_block": { //WEST
 			"textures": "textures/blocks/purchase_team_counter-offensive_block"
 		},
 	
-		"purchase_golden_apple_block_north": {
-			"textures": "textures/blocks/purchase_golden_apple_block"
-		},
-		"purchase_golden_apple_block_east": {
-			"textures": "textures/blocks/purchase_golden_apple_block"
-		},
-		"purchase_golden_apple_block_south": {
-			"textures": "textures/blocks/purchase_golden_apple_block"
-		},
-		"purchase_golden_apple_block_west": { //WEST
+
+		"purchase_golden_apple_block": { //WEST
 			"textures": "textures/blocks/purchase_golden_apple_block"
 		},
 
-		"purchase_fireball_block_north": {
-			"textures": "textures/blocks/purchase_fireball_block"
-		},
-		"purchase_fireball_block_east": {
-			"textures": "textures/blocks/purchase_fireball_block"
-		},
-		"purchase_fireball_block_south": {
-			"textures": "textures/blocks/purchase_fireball_block"
-		},
-		"purchase_fireball_block_west": { //WEST
+
+		"purchase_fireball_block": { //WEST
 			"textures": "textures/blocks/purchase_fireball_block"
 		},
 
-		"purchase_speed_potion_block_north": {
-			"textures": "textures/blocks/purchase_speed_potion_block"
-		},
-		"purchase_speed_potion_block_east": {
-			"textures": "textures/blocks/purchase_speed_potion_block"
-		},
-		"purchase_speed_potion_block_south": {
-			"textures": "textures/blocks/purchase_speed_potion_block"
-		},
-		"purchase_speed_potion_block_west": { //WEST
+
+		"purchase_speed_potion_block": { //WEST
 			"textures": "textures/blocks/purchase_speed_potion_block"
 		},
 	
-		"purchase_jump_boost_potion_block_north": {
-			"textures": "textures/blocks/purchase_jump_boost_potion_block"
-		},
-		"purchase_jump_boost_potion_block_east": {
-			"textures": "textures/blocks/purchase_jump_boost_potion_block"
-		},
-		"purchase_jump_boost_potion_block_south": {
-			"textures": "textures/blocks/purchase_jump_boost_potion_block"
-		},
-		"purchase_jump_boost_potion_block_west": { //WEST
+
+		"purchase_jump_boost_potion_block": { //WEST
 			"textures": "textures/blocks/purchase_jump_boost_potion_block"
 		},
 	
-		"purchase_invisibility_potion_block_north": {
-			"textures": "textures/blocks/purchase_invisibility_potion_block"
-		},
-		"purchase_invisibility_potion_block_east": {
-			"textures": "textures/blocks/purchase_invisibility_potion_block"
-		},
-		"purchase_invisibility_potion_block_south": {
-			"textures": "textures/blocks/purchase_invisibility_potion_block"
-		},
-		"purchase_invisibility_potion_block_west": { //WEST
+
+		"purchase_invisibility_potion_block": { //WEST
 			"textures": "textures/blocks/purchase_invisibility_potion_block"
 		},
 
-		"purchase_xp_bottle_block_north": {
-			"textures": "textures/blocks/purchase_xp_bottle_block"
-		},
-		"purchase_xp_bottle_block_east": {
-			"textures": "textures/blocks/purchase_xp_bottle_block"
-		},
-		"purchase_xp_bottle_block_south": {
-			"textures": "textures/blocks/purchase_xp_bottle_block"
-		},
-		"purchase_xp_bottle_block_west": { //WEST
+
+		"purchase_xp_bottle_block": { //WEST
 			"textures": "textures/blocks/purchase_xp_bottle_block"
 		},
 	
-		"purchase_popup_tower_block_north": {
-			"textures": "textures/blocks/purchase_popup_tower_block"
-		},
-		"purchase_popup_tower_block_east": {
-			"textures": "textures/blocks/purchase_popup_tower_block"
-		},
-		"purchase_popup_tower_block_south": {
-			"textures": "textures/blocks/purchase_popup_tower_block"
-		},
-		"purchase_popup_tower_block_west": { //WEST
+
+		"purchase_popup_tower_block": { //WEST
 			"textures": "textures/blocks/purchase_popup_tower_block"
 		},
 
-		"purchase_bridge_egg_block_north": {
-			"textures": "textures/blocks/purchase_bridge_egg_block"
-		},
-		"purchase_bridge_egg_block_east": {
-			"textures": "textures/blocks/purchase_bridge_egg_block"
-		},
-		"purchase_bridge_egg_block_south": {
-			"textures": "textures/blocks/purchase_bridge_egg_block"
-		},
-		"purchase_bridge_egg_block_west": { //WEST
+
+		"purchase_bridge_egg_block": { //WEST
 			"textures": "textures/blocks/purchase_bridge_egg_block"
 		},
 
-		"purchase_tnt_block_north": {
-			"textures": "textures/blocks/purchase_tnt_block"
-		},
-		"purchase_tnt_block_east": {
-			"textures": "textures/blocks/purchase_tnt_block"
-		},
-		"purchase_tnt_block_south": {
-			"textures": "textures/blocks/purchase_tnt_block"
-		},
-		"purchase_tnt_block_west": { //WEST
+
+		"purchase_tnt_block": { //WEST
 			"textures": "textures/blocks/purchase_tnt_block"
 		},
 		
-		"purchase_silverfish_block_north": {
-			"textures": "textures/blocks/purchase_silverfish_block"
-		},
-		"purchase_silverfish_block_east": {
-			"textures": "textures/blocks/purchase_silverfish_block"
-		},
-		"purchase_silverfish_block_south": {
-			"textures": "textures/blocks/purchase_silverfish_block"
-		},
-		"purchase_silverfish_block_west": { //WEST
+
+		"purchase_silverfish_block": { //WEST
 			"textures": "textures/blocks/purchase_silverfish_block"
 		},
 		"tnt2_block_up": {
