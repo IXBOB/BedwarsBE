@@ -5,11 +5,11 @@
 	"num_mip_levels": 4,
 	"texture_data": {
 
+		"bedwars:oak_planks":{
+			"textures":"textures/blocks/planks_big_oak_shop"
+		},	
 
 		//NETEASE
-		"planks":{
-			"textures":"textures/blocks/planks_big_oak_shop"
-		},		
 		"bedwars:red_bed_head":{
 			"textures":"textures/blocks/netease/red_bed_head"
 		},
