@@ -92,189 +92,181 @@
 			"textures": "textures/blocks/map_orange_concrete_block"
 		},	
 
-		"purchase_red_wool_block": { //WEST
+		"purchase_red_wool_block": {
 			"textures": "textures/blocks/purchase_red_wool_block"
 		},
 
 	
-		"purchase_blue_wool_block": { //WEST
+		"purchase_blue_wool_block": {
 			"textures": "textures/blocks/purchase_blue_wool_block"
 		},
 
 
-		"purchase_yellow_wool_block": { //WEST
+		"purchase_yellow_wool_block": {
 			"textures": "textures/blocks/purchase_yellow_wool_block"
 		},
 	
 
-		"purchase_green_wool_block": { //WEST
+		"purchase_green_wool_block": {
 			"textures": "textures/blocks/purchase_green_wool_block"
 
 		},
 
-		"purchase_endstone_block": { //WEST
+		"purchase_endstone_block": {
 			"textures": "textures/blocks/purchase_endstone_block"
 		},
 	
 
-		"purchase_planks_block": { //WEST
+		"purchase_planks_block": {
 			"textures": "textures/blocks/purchase_planks_block"
 		},
 	
 
-		"purchase_red_stained_glass_block": { //WEST
+		"purchase_red_stained_glass_block": {
 			"textures": "textures/blocks/purchase_red_stained_glass_block"
 		},
 	
 
-		"purchase_blue_stained_glass_block": { //WEST
+		"purchase_blue_stained_glass_block": {
 			"textures": "textures/blocks/purchase_blue_stained_glass_block"
 		},
 	
 
-		"purchase_yellow_stained_glass_block": { //WEST
+		"purchase_yellow_stained_glass_block": {
 			"textures": "textures/blocks/purchase_yellow_stained_glass_block"
 		},
 
-		"purchase_green_stained_glass_block": { //WEST
+		"purchase_green_stained_glass_block": {
 			"textures": "textures/blocks/purchase_green_stained_glass_block"
 		},
 
 
-		"purchase_upgrade_armor_block": { //WEST
+		"purchase_upgrade_armor_block": {
 			"textures": "textures/blocks/purchase_upgrade_armor_block"
 		},
 
 
-		"purchase_upgrade_sword_block": { //WEST
+		"purchase_upgrade_sword_block": {
 			"textures": "textures/blocks/purchase_upgrade_sword_block"
 		},
 
 
-		"purchase_upgrade_pickaxe_block": { //WEST
+		"purchase_upgrade_pickaxe_block": {
 			"textures": "textures/blocks/purchase_upgrade_pickaxe_block"
 		},
 
 	
-		"purchase_upgrade_axe_block": { //WEST
+		"purchase_upgrade_axe_block": {
 			"textures": "textures/blocks/purchase_upgrade_axe_block"
 		},
 	
 
-		"purchase_upgrade_bow_block": { //WEST
+		"purchase_upgrade_bow_block": {
 			"textures": "textures/blocks/purchase_upgrade_bow_block"
 		},
 	
 
-		"purchase_arrow_block": { //WEST
+		"purchase_arrow_block": {
 			"textures": "textures/blocks/purchase_arrow_block"
 		},
 
 
-		"get_trap_info_block": { //WEST
+		"get_trap_info_block": {
 			"textures": "textures/blocks/get_trap_info_block"
 		},
 
 	
-		"get_upgrade_and_trap_help_block": { //WEST
+		"get_upgrade_and_trap_help_block": {
 			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
 		},
 
 
-		"purchase_upgrade_team_sharpness_block": { //WEST
+		"purchase_upgrade_team_sharpness_block": {
 			"textures": "textures/blocks/purchase_upgrade_team_sharpness_block"
 		},
 
 
-		"purchase_upgrade_team_protection_block": { //WEST
+		"purchase_upgrade_team_protection_block": {
 			"textures": "textures/blocks/purchase_upgrade_team_protection_block"
 		},
 
 
-		"purchase_upgrade_team_forge_block": { //WEST
+		"purchase_upgrade_team_forge_block": {
 			"textures": "textures/blocks/purchase_upgrade_team_forge_block"
 		},
 
 
-		"purchase_upgrade_team_maniac_miner_block": { //WEST
+		"purchase_upgrade_team_maniac_miner_block": {
 			"textures": "textures/blocks/purchase_upgrade_team_maniac_miner_block"
 		},
 
 
-		"purchase_team_miner_fatigue_trap_block": { //WEST
+		"purchase_team_miner_fatigue_trap_block": {
 			"textures": "textures/blocks/purchase_team_miner_fatigue_trap_block"
 		},
 
 
-		"purchase_team_alarm_trap_block": { //WEST
+		"purchase_team_alarm_trap_block": {
 			"textures": "textures/blocks/purchase_team_alarm_trap_block"
 		},
 
 
-		"purchase_team_its_a_trap_block": { //WEST
+		"purchase_team_its_a_trap_block": {
 			"textures": "textures/blocks/purchase_team_its_a_trap_block"
 		},
 	
+
 		"purchase_team_counter-offensive_block": {
-			"textures": "textures/blocks/purchase_team_counter-offensive_block"
-		},
-		"purchase_team_counter-offensive_block": {
-			"textures": "textures/blocks/purchase_team_counter-offensive_block"
-		},
-		"purchase_team_counter-offensive_block": {
-			"textures": "textures/blocks/purchase_team_counter-offensive_block"
-		},
-		"purchase_team_counter-offensive_block": { //WEST
 			"textures": "textures/blocks/purchase_team_counter-offensive_block"
 		},
 	
 
-		"purchase_golden_apple_block": { //WEST
+		"purchase_golden_apple_block": {
 			"textures": "textures/blocks/purchase_golden_apple_block"
 		},
 
 
-		"purchase_fireball_block": { //WEST
+		"purchase_fireball_block": {
 			"textures": "textures/blocks/purchase_fireball_block"
 		},
 
 
-		"purchase_speed_potion_block": { //WEST
+		"purchase_speed_potion_block": {
 			"textures": "textures/blocks/purchase_speed_potion_block"
 		},
 	
 
-		"purchase_jump_boost_potion_block": { //WEST
+		"purchase_jump_boost_potion_block": {
 			"textures": "textures/blocks/purchase_jump_boost_potion_block"
 		},
 	
 
-		"purchase_invisibility_potion_block": { //WEST
+		"purchase_invisibility_potion_block": {
 			"textures": "textures/blocks/purchase_invisibility_potion_block"
 		},
 
 
-		"purchase_xp_bottle_block": { //WEST
+		"purchase_xp_bottle_block": {
 			"textures": "textures/blocks/purchase_xp_bottle_block"
 		},
 	
 
-		"purchase_popup_tower_block": { //WEST
+		"purchase_popup_tower_block": {
 			"textures": "textures/blocks/purchase_popup_tower_block"
 		},
 
 
-		"purchase_bridge_egg_block": { //WEST
+		"purchase_bridge_egg_block": {
 			"textures": "textures/blocks/purchase_bridge_egg_block"
 		},
 
 
-		"purchase_tnt_block": { //WEST
+		"purchase_tnt_block": {
 			"textures": "textures/blocks/purchase_tnt_block"
 		},
 		
 
-		"purchase_silverfish_block": { //WEST
+		"purchase_silverfish_block": {
 			"textures": "textures/blocks/purchase_silverfish_block"
 		},
 		"tnt2_block_up": {
@@ -302,7 +294,7 @@
 			"textures": "textures/blocks/log_spruce2/log_spruce_top2"
 		},
 		
-		"log_spruce_side2": { //WEST
+		"log_spruce_side2": {
 			"textures": "textures/blocks/log_spruce2/log_spruce_side2"
 		},
 		"map_diamond_block": {
@@ -509,7 +501,7 @@
 			"textures": "textures/blocks/map_barrel_bottom_block"
 		},
 
-		"map_barrel_block_side": { //WEST
+		"map_barrel_block_side": {
 			"textures": "textures/blocks/map_barrel_side_block"
 		},
 		"map_bedrock_block": {
@@ -526,7 +518,7 @@
 		"map_block_of_quartz_block_down": {
 			"textures": "textures/blocks/map_block_of_quartz_bottom_block"
 		},
-		"map_block_of_quartz_block_side": { //WEST
+		"map_block_of_quartz_block_side": {
 			"textures": "textures/blocks/map_block_of_quartz_side_block"
 		},
 		"map_brick_block": {
@@ -548,86 +540,86 @@
 		},
 
 		
-		"map_cobblestone_block": { //WEST
+		"map_cobblestone_block": {
 			"textures": "textures/blocks/map_cobblestone_block"
 		},
 		
-		"map_copper_ore_block": { //WEST
+		"map_copper_ore_block": {
 			"textures": "textures/blocks/map_copper_ore_block"
 		},
 		
-		"map_cracked_deepslate_tiles_block": { //WEST
+		"map_cracked_deepslate_tiles_block": {
 			"textures": "textures/blocks/map_cracked_deepslate_tiles_block"
 		},
 		
-		"map_cracked_stone_bricks_block": { //WEST
+		"map_cracked_stone_bricks_block": {
 			"textures": "textures/blocks/map_cracked_stone_bricks_block"
 		},
 		"map_blue_stained_glass": {
 			"textures": "textures/blocks/player_blue_stained_glass"
 		},
 		
-		"map_cyan_stained_glass_block": { //WEST
+		"map_cyan_stained_glass_block": {
 			"textures": "textures/blocks/map_cyan_stained_glass_block"
 		},
 		
-		"map_cyan_concrete_block2": { //WEST
+		"map_cyan_concrete_block2": {
 			"textures": "textures/blocks/map_cyan_concrete_block"
 		},
 		
-		"map_dark_oak_planks_block": { //WEST
+		"map_dark_oak_planks_block": {
 			"textures": "textures/blocks/map_dark_oak_planks_block"
 		},
 		
-		"map_deepslate_diamond_ore_block": { //WEST
+		"map_deepslate_diamond_ore_block": {
 			"textures": "textures/blocks/map_deepslate_diamond_ore_block"
 		},
 		
-		"map_deepslate_iron_ore_block": { //WEST
+		"map_deepslate_iron_ore_block": {
 			"textures": "textures/blocks/map_deepslate_iron_ore_block"
 		},
 		"map_dried_kelp_block_up": {
 			"textures": "textures/blocks/map_dried_kelp_top_block"
 		},
 
-		"map_dried_kelp_block_side": { //WEST
+		"map_dried_kelp_block_side": {
 			"textures": "textures/blocks/map_dried_kelp_side_block"
 		},
 
-		"map_gravel_block": { //WEST
+		"map_gravel_block": {
 			"textures": "textures/blocks/map_gravel_block"
 		},
 		"map_hay_bale_block_up": {
 			"textures": "textures/blocks/map_hay_bale_top_block"
 		},
 
-		"map_hay_bale_block_side": { //WEST
+		"map_hay_bale_block_side": {
 			"textures": "textures/blocks/map_hay_bale_side_block"
 		},
 		"map_infested_deepslate_block_up": {
 			"textures": "textures/blocks/map_infested_deepslate_top_block"
 		},
 		
-		"map_infested_deepslate_block_side": { //WEST
+		"map_infested_deepslate_block_side": {
 			"textures": "textures/blocks/map_infested_deepslate_side_block"
 		},
 		"map_jungle_leaves_block": {
 			"textures": "textures/blocks/map_jungle_leaves_block"
 		},
 		
-		"map_lime_concrete_block": { //WEST
+		"map_lime_concrete_block": {
 			"textures": "textures/blocks/map_lime_concrete_block"
 		},
 		
-		"map_moss_block": { //WEST
+		"map_moss_block": {
 			"textures": "textures/blocks/map_moss_block"
 		},
 
-		"map_mossy_cobblestone_block": { //WEST
+		"map_mossy_cobblestone_block": {
 			"textures": "textures/blocks/map_mossy_cobblestone_block"
 		},
 		
-		"map_oak_wood_block": { //WEST
+		"map_oak_wood_block": {
 			"textures": "textures/blocks/map_oak_wood_block"
 		},
 		"map_obsidian_block_up": {
@@ -645,18 +637,18 @@
 		"map_obsidian_block_south": {
 			"textures": "textures/blocks/map_obsidian_block"
 		},
-		"map_obsidian_block_west": { //WEST
+		"map_obsidian_block_west": {
 			"textures": "textures/blocks/map_obsidian_block"
 		},
 		"map_pillar_quartz_block_up": {
 			"textures": "textures/blocks/map_pillar_quartz_top_block"
 		},
 
-		"map_pillar_quartz_block_side": { //WEST
+		"map_pillar_quartz_block_side": {
 			"textures": "textures/blocks/map_pillar_quartz_side_block"
 		},
 
-		"map_red_sand_block": { //WEST
+		"map_red_sand_block": {
 			"textures": "textures/blocks/map_red_sand_block"
 		},
 	
@@ -667,7 +659,7 @@
 			"textures": "textures/blocks/map_smooth_red_sandstone_bottom_block"
 		},
 	
-		"map_smooth_red_sandstone_block_side": { //WEST
+		"map_smooth_red_sandstone_block_side": {
 			"textures": "textures/blocks/map_smooth_red_sandstone_side_block"
 		},
 		"map_smooth_sandstone_block_up": {
@@ -677,25 +669,25 @@
 			"textures": "textures/blocks/map_smooth_sandstone_bottom_block"
 		},
 
-		"map_smooth_sandstone_block_side": { //WEST
+		"map_smooth_sandstone_block_side": {
 			"textures": "textures/blocks/map_smooth_sandstone_side_block"
 		},
 
-		"map_smooth_stone_block": { //WEST
+		"map_smooth_stone_block": {
 			"textures": "textures/blocks/map_smooth_stone_block"
 		},
 		
-		"map_spruce_planks_block": { //WEST
+		"map_spruce_planks_block": {
 			"textures": "textures/blocks/map_spruce_planks_block"
 		},
 
-		"map_stone_bricks_block": { //WEST
+		"map_stone_bricks_block": {
 			"textures": "textures/blocks/map_stone_bricks_block"
 		},
 		"map_dark_oak_leaves_block": {
 			"textures": "textures/blocks/map_dark_oak_leaves_block"
 		},
-		"map_deepslate_gold_ore_block": {												//WEST
+		"map_deepslate_gold_ore_block": {
 			"textures": "textures/blocks/map_deepslate_gold_ore_block"	
 		},
 		"purchase_magic_milk_block": {
