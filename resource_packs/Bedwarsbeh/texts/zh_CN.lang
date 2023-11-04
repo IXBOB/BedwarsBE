@@ -761,6 +761,11 @@ text.sign.ingame.shop_400_levels=§a400 经验
 text.sign.ingame.shop_500_levels=§a500 经验
 text.sign.ingame.shop_600_levels=§a600 经验
 
+text.sign.ingame.shop_4_iron=§f4 铁锭
+text.sign.ingame.shop_12_iron=§f12 铁锭
+text.sign.ingame.shop_24_iron=§f24 铁锭
+text.sign.ingame.shop_4_gold=§e4 金锭
+
 text.sign.ingame.shop_wool=§f16x 羊毛
 text.sign.ingame.shop_glass=§f4x 防爆玻璃
 text.sign.ingame.shop_endstone=§f16x 末地石
