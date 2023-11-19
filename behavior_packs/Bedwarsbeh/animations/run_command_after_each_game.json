@@ -145,7 +145,7 @@
 					//额外删除地图底部方块y176
 					"/fill 63 176 63 -63 176 -63 air",
 					"/function afterRESET_set_scoreboard_display",
-					//删除自身!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+					//删除自身
 					"/event entity @s bedwars:remove_self"
 				]
 			}
