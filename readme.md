@@ -1,7 +1,7 @@
 # BedwarsBE
 
 </br>Minecraft Bedrock Edition BedWars, created by IXBOB
-</br> Applicable version: 1.20.31
+</br> Applicable version: 1.20.41
 </br> China Edition: 1.18.33 (2.8)
 </br>
 </br>Using the MIT open source license
