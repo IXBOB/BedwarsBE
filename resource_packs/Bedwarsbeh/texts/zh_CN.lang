@@ -296,7 +296,7 @@ text.tellraw.custom_commands.set_player_count_8_already=§c已将开始游戏所
 
 ##wait
 
-text.tellraw.waitinfo.creator_info_line1=§f§l关于 >> §r§7您正在运行BedwarsBE v1.3.0
+text.tellraw.waitinfo.creator_info_line1=§f§l关于 >> §r§7您正在运行BedwarsBE v1.3.0.1
 text.tellraw.waitinfo.creator_info_line2=§7主要由IXBOB创建
 text.tellraw.waitinfo.creator_info_line3=§7变更日志：mtw.so/6nID9e
 text.tellraw.waitinfo.creator_info_line4=§7或：suo.nz/3d6ftS

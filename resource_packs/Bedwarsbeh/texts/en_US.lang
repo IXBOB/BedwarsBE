@@ -296,7 +296,7 @@ text.tellraw.custom_commands.set_player_count_8_already=§cThe minimum number of
 
 ##wait
 
-text.tellraw.waitinfo.creator_info_line1=§f§lInfo >> §r§7You are running BedwarsBE v1.3.0
+text.tellraw.waitinfo.creator_info_line1=§f§lInfo >> §r§7You are running BedwarsBE v1.3.0.1
 text.tellraw.waitinfo.creator_info_line2=§7Mainly created by IXBOB
 text.tellraw.waitinfo.creator_info_line3=§7Change log: ixbob.github.io/changelog/map1.html
 text.tellraw.waitinfo.creator_info_line4=§7OR: suo.nz/3d6ftS
