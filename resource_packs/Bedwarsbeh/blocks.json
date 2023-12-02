@@ -238,6 +238,17 @@
 		},
 		"sound": "wood"
 	},
+	"bedwars:get_upgrade_info_block": {
+		"textures": {
+			"up": "bedwars:oak_planks",
+			"down": "bedwars:oak_planks",
+			"north": "get_upgrade_info_block",
+			"south": "get_upgrade_info_block",
+			"west": "get_upgrade_info_block",
+			"east": "get_upgrade_info_block"
+		},
+		"sound": "wood"
+	},
 	"bedwars:get_upgrade_and_trap_help_block": {
 		"textures": {
 			"up": "bedwars:oak_planks",

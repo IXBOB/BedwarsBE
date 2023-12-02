@@ -175,6 +175,9 @@
 			"textures": "textures/blocks/get_trap_info_block"
 		},
 
+		"get_upgrade_info_block": {
+			"textures": "textures/blocks/get_upgrade_info_block"
+		},
 	
 		"get_upgrade_and_trap_help_block": {
 			"textures": "textures/blocks/get_upgrade_and_trap_help_block"
