@@ -10,6 +10,5 @@
 </br>Change log: <https://github.com/IXBOB/BedwarsBE/commits/main>
 </br>
 </br>Discord: <https://discord.gg/NFdcTX3NPz>
-</br>QQ: <http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=w8ZBk5QCBSiJ_JP_OCfCu3fctp7OTogI&authKey=xx36cqwojd4vU3ipgKmuBCErxh9KL%2FgojKjgnrmgT90TvjwfCTgihvSUaecnOgeT&noverify=0&group_code=746157993>
 </br>Report Issues: <https://github.com/IXBOB/BedwarsBE/issues>
 </br>中国版反馈问题: <https://txc.qq.com/products/601665>
